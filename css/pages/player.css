@@ -338,6 +338,10 @@
     padding-bottom: 10rem;
 }
 
+.ply--pt20 {
+    padding-top: 2rem;
+}
+
 .ply .inner {
     max-width: 110rem;
 }
@@ -1738,6 +1742,10 @@
     margin-top: 5rem;
 }
 
+.ply-bsc--block {
+    display: block;
+}
+
 .ply-bsc.on {
     margin-top: 5rem;
 }
@@ -2570,8 +2578,8 @@
     max-width: 20rem;
 }
 
-.ply-reg__input--min470 {
-    min-width: 47rem;
+.ply-reg__input--min750 {
+    min-width: 75rem;
 }
 
 .ply-reg__input--max173 {
