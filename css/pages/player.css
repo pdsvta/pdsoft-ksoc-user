@@ -3114,6 +3114,11 @@
     color: #fff;
 }
 
+.ply-reg__btn--white {
+    background: #fff;
+    color: #111;
+}
+
 .ply-reg__btn--small {
     padding-left: 2rem;
 }
