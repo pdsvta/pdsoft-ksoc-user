@@ -1775,6 +1775,14 @@
     height: 3rem;
 }
 
+.hpy-reg__input--date {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 400;
+    letter-spacing: -1px;
+    padding: 1rem 1.3rem;
+}
+
 .hpy-reg__btn {
     min-width: 12rem;
     height: 4rem;
