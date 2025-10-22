@@ -2464,6 +2464,7 @@
     max-width: 21rem;
 }
 
+
 .ply-reg__label {
     padding: 1rem;
     font-size: 1.3rem;
@@ -2532,6 +2533,15 @@
     color: #111;
 }
 
+.ply-reg__input--placeholder {
+    padding: 1.7rem;
+    resize: none;
+}
+
+.ply-reg__input--h250 {
+    height: 25rem;
+}
+
 .ply-reg__input--max100 {
     max-width: 10rem;
 }
@@ -2558,6 +2568,14 @@
 
 .ply-reg__input--max200 {
     max-width: 20rem;
+}
+
+.ply-reg__input--min470 {
+    min-width: 47rem;
+}
+
+.ply-reg__input--max173 {
+    max-width: 17.3rem;
 }
 
 .ply-reg__card .date-input.ply-reg__input--w200,
@@ -2658,6 +2676,18 @@
 
 .ply-reg__card.ply-reg__card--end {
     justify-content: end;
+}
+
+.ply-reg__card--max130 {
+    min-width: 13rem;
+}
+
+.ply-reg__card--min160 {
+    min-width: 16rem;
+}
+
+.ply-reg__card--min160 select {
+    width: 100%;
 }
 
 .ply-reg__agree {
@@ -3030,8 +3060,17 @@
 
 
 .ply-reg__btn--min50 {
-    min-width: 50px;
+    min-width: 5rem;
     padding: 1.2rem 1.3rem;
+}
+
+.ply-reg__btn--min40 {
+    min-width: 4rem;
+    padding: 0;
+}
+
+.ply-reg__btn--bd10 {
+    border-radius: 1rem;
 }
 
 .ply-reg__btn--min160 {
@@ -5153,4 +5192,103 @@
 .ply__btn--img img {
     width: 1.9rem;
     height: 1.8rem;
+}
+
+.ply-bsc__filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ply-bsc__filter--mb10 {
+    margin-bottom: 1rem;
+}
+
+.ply-bsc__filter p {
+    font-size: 1.8rem;
+    color: #111;
+    font-weight: 400;
+}
+
+.ply-bsc__group {
+    display: flex;
+    gap: .5rem;
+}
+
+.ply-bsc__group button {
+    font-weight: 400;
+}
+
+.ply-bsc__table026 {
+    background: #F5F5F5;
+}
+
+.ply-bsc__table026 .ply-bsc__table th {
+    height: 5rem;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: auto;
+}
+
+.ply-bsc__table026 .ply-bsc__table {
+    margin: 1.4rem 0 1.6rem;
+}
+
+.ply-bsc__text026 {
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.ply-bsc__027 {
+    padding: 0 2rem;
+}
+
+.ply-bsc__error {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 3rem;
+}
+
+.ply-bsc__error img {
+    width: 6.8rem;
+    height: 6.2rem;
+}
+
+.ply-bsc__text027 p {
+    margin-bottom: .5rem;
+    color: #666666;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.ply-bsc__text027 span {
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.ply-bsc__captcha {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.ply-bsc__captcha img {
+    height: 4rem;
+    width: auto;
+}
+
+.ply-bsc__captcha button img {
+    width: 1.9rem;
+    height: auto;
+}
+
+.ply-bsc__captcha button:hover {
+    opacity: .7;
 }

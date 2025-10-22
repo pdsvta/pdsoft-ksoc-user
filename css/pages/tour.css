@@ -169,6 +169,14 @@
     background: #fff;
 }
 
+.tour__btn--w110 {
+    min-width: 11rem;
+}
+
+.tour__btn--w90 {
+    min-width: 9rem;
+}
+
 .tour__btn--blue {
     border: 0;
     background: #0C54B8;
