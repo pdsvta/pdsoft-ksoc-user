@@ -2594,6 +2594,10 @@
     padding: 0 2rem;
 }
 
+.hpy02__filter--mb30 {
+    margin-bottom: 3rem;
+}
+
 .hpy02__item {
     display: flex;
     gap: .5rem;
@@ -3160,6 +3164,13 @@
 .tour__table .tour__btn106 {
     color: #fff;
     width: 6rem;
+    height: 2.5rem;
+    background: #666;
+}
+
+.tour__table .tour__btn108 {
+    color: #fff;
+    width: 8rem;
     height: 2.5rem;
     background: #666;
 }
