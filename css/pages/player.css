@@ -2592,6 +2592,10 @@
     max-width: 17.3rem;
 }
 
+.ply-reg__input--mt10 {
+    margin-top: 1rem;
+}
+
 .ply-reg__card .date-input.ply-reg__input--w200,
 .ply-reg__input--w200 {
     width: 20rem;
@@ -2615,6 +2619,7 @@
 
 .ply-reg__input--max310 {
     max-width: 31rem;
+    min-width: 31rem;
 }
 
 .ply-reg__input--max410 {
@@ -2912,6 +2917,10 @@
 
 .ply-reg__card--mt10 {
     margin-top: 1rem;
+}
+
+.ply-reg__card--mt5 {
+    margin-top: .5rem;
 }
 
 .ply-reg__card--p02 {
