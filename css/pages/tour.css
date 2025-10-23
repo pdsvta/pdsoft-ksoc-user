@@ -2966,6 +2966,10 @@
     margin-bottom: 3rem;
 }
 
+.tour__group--p0 {
+    padding: 0;
+}
+
 .tour__group--mb20 {
     margin-bottom: 2rem;
 }
@@ -3158,4 +3162,165 @@
     width: 6rem;
     height: 2.5rem;
     background: #666;
+}
+
+.title0102 {
+    justify-content: space-between;
+}
+
+.pstn__title2 {
+    font-size: 2.1rem;
+    color: #111;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pstn__tell2 {
+    padding: 3rem;
+}
+
+.pstn__des2 li {
+    position: relative;
+    margin-left: 1.5rem;
+    line-height: 150%;
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.pstn__des2 li::before {
+    content: '•';
+    color: #666;
+    position: absolute;
+    left: -1.5rem;
+    right: 0;
+}
+
+.tour__text0102 {
+    letter-spacing: -1px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.tour__table0102 thead th {
+    vertical-align: middle;
+    padding: 0;
+}
+
+.tour0102__tag {
+    font-size: .9rem;
+    font-weight: 400;
+    border: 1px solid #0C54B8;
+    border-radius: 10rem;
+    color: #0C54B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 2rem;
+}
+
+.tour__box .tour0102__link {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour0102__link {
+    font-size: 1.3rem;
+    color: #000;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+
+.tour__btn0102 {
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+}
+
+.tour__btn0102--ddd {
+    color: #DDDDDD;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.tour__btn0102--blue {
+    color: #fff;
+    background: #0C54B8;
+}
+
+.tour__btn0102--white {
+    color: #0C54B8;
+    border: 1px solid #0C54B8;
+    background: #fff;
+}
+
+.tour__btn0102--gray {
+    color: #fff;
+    background: #666;
+}
+
+.tour__cta0102 {
+    border-radius: .5rem;
+    height: 2rem;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 400;
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+
+.tour__cta0102--max100 {
+    max-width: 10rem;
+}
+
+.tour__cta0102--max60 {
+    max-width: 6rem;
+}
+
+.tour__cta0102--max90 {
+    max-width: 9rem;
+}
+
+.tour__cta0102--dis {
+    color: #fff;
+    background: #DDDDDD;
+}
+
+.tour__cta0102--white {
+    background: #fff;
+    color: #111;
+    border: 1px solid #ddd;
+
+}
+
+.tour0102__end {
+    place-items: center;
+}
+
+.tour0102__end .selectbox {
+    min-width: 9rem;
+    height: 2rem;
+    padding: 0 1rem;
+    font-size: .9rem;
+    width: 100%;
+}
+
+.tour0102__end .tour0102__col {
+    display: flex;
+    gap: .2rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
