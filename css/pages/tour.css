@@ -1656,6 +1656,23 @@
     width: 13rem;
 }
 
+.hpy-reg__select--max140 {
+    max-width: 14rem;
+}
+
+.hpy-reg__select--max120 {
+    max-width: 12rem;
+    min-width: 12rem;
+}
+
+.hpy-reg__select--max120 select {
+    width: 100%;
+}
+
+.hpy-reg__select--max140 select {
+    width: 100%;
+}
+
 .hpy-reg__select--max180 {
     min-width: 18rem;
 }
@@ -1735,6 +1752,10 @@
 
 .hpy-reg__input--max120 {
     max-width: 12rem;
+}
+
+.hpy-reg__input--max140 {
+    max-width: 14rem;
 }
 
 .hpy-reg__input--max130 {
@@ -1824,6 +1845,10 @@
 
 .hpy-reg__btn--min80 {
     min-width: 8rem;
+}
+
+.hpy-reg__btn--min74 {
+    min-width: 7.4rem;
 }
 
 .hpy-reg__btn--h30 {
@@ -2620,6 +2645,10 @@
     padding: 0;
 }
 
+.ply-reg__label--pb10 {
+    padding: 0 1rem 1rem;
+}
+
 .hpy02__dash {
     font-size: 1.5rem;
     font-weight: 600;
@@ -2921,6 +2950,10 @@
     width: 100%;
 }
 
+.tour__wrapper--mb2 {
+    margin-bottom: 2rem;
+}
+
 .tour__group {
     display: flex;
     align-items: center;
@@ -2928,14 +2961,23 @@
     padding: 0 2rem;
 }
 
+
 .tour__group--mb30 {
     margin-bottom: 3rem;
+}
+
+.tour__group--mb20 {
+    margin-bottom: 2rem;
 }
 
 .tour__group--input {
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+
+.tour__group--input.gap10 {
+    gap: 1rem;
 }
 
 .tour__table .tour__btn {
@@ -3030,4 +3072,90 @@
 .required {
     color: #FF0000;
     margin-right: 1px;
+}
+
+.tour__text105 {
+    padding: 0 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.tour__text105 li {
+    position: relative;
+    margin-left: 2.5rem;
+
+}
+
+.tour__text105 li::before {
+    content: '•';
+    color: #666;
+    position: absolute;
+    left: -1.3rem;
+    right: 0;
+}
+
+.tour__picture105 {
+    margin: 0 auto;
+    background: #d9d9d9;
+    border-radius: 2rem;
+    width: 60rem;
+    height: 37.6rem;
+    margin-top: 3rem;
+}
+
+.tour__title105 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 3rem 2rem;
+}
+
+.tour__title105--pb2 {
+    padding: 3rem 2rem 2rem;
+}
+
+.tour__title105::before {
+    content: '';
+    width: .9rem;
+    height: .9rem;
+    border-radius: 10rem;
+    background: #111;
+}
+
+.tour__box105 {
+    margin: 3.8rem 0 0;
+    padding: 0 2rem;
+}
+
+.tour__box105 .hpy02__table {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tour__btn105 {
+    width: 5rem;
+    height: 3rem;
+    padding: .7rem .7rem .7rem 2.7rem;
+    color: #666;
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.tour__total {
+    padding: 0rem 2rem 3rem;
+}
+
+.tour__table .tour__btn106 {
+    color: #fff;
+    width: 6rem;
+    height: 2.5rem;
+    background: #666;
 }

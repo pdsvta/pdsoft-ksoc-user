@@ -2615,6 +2615,21 @@
     max-width: 41rem;
 }
 
+.ply-reg__input--max440 {
+    max-width: 44rem;
+    min-width: 44rem;
+}
+
+.ply-reg__input--max460 {
+    max-width: 46rem;
+    min-width: 46rem;
+}
+
+.ply-reg__input--max920 {
+    max-width: 92rem;
+    min-width: 92rem;
+}
+
 .ply-reg__input--max660 {
     max-width: 66rem;
 }
@@ -2887,6 +2902,14 @@
 .ply-reg__card>dl {
     font-size: 1.3rem;
     color: #333;
+}
+
+.ply-reg__card--mt10 {
+    margin-top: 1rem;
+}
+
+.ply-reg__card--p02 {
+    padding: 0 2rem;
 }
 
 .ply-reg__btwn {
