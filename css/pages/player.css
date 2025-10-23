@@ -4475,12 +4475,6 @@
     margin-bottom: 2rem;
 }
 
-.nmbr__table2 td,
-.nmbr__table2 th {
-    height: 3rem;
-    max-height: 3rem;
-}
-
 .nmbr__table2 th {
     font-size: 1.5rem;
 }
@@ -4491,7 +4485,23 @@
 }
 
 .nmbr__table2 td.twoLine {
-    height: 6rem;
+    height: 10rem;
+}
+
+.nmbr__table td ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nmbr__table td ul li::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #111;
 }
 
 .nmbr__info {
@@ -4508,6 +4518,10 @@
 .nmbr__info--red {
     color: #ff0000;
     font-weight: 600;
+}
+
+.nmbr__info--blue {
+    color: #0C54B8;
 }
 
 .nmbr__info li {
