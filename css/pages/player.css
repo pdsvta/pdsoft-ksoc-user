@@ -4471,6 +4471,69 @@
     border: 1px solid #ddd;
 }
 
+.nmbr__table--mb20 {
+    margin-bottom: 2rem;
+}
+
+.nmbr__table2 td,
+.nmbr__table2 th {
+    height: 3rem;
+    max-height: 3rem;
+}
+
+.nmbr__table2 th {
+    font-size: 1.5rem;
+}
+
+.nmbr__table2 td {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.nmbr__table2 td.twoLine {
+    height: 6rem;
+}
+
+.nmbr__info {
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.nmbr__info:last-child {
+    margin-bottom: 0;
+}
+
+.nmbr__info--red {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.nmbr__info li {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.nmbr__info li.nmbr__info--tit::after {
+    display: none;
+}
+
+.nmbr__info li::after {
+    content: '';
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #666;
+    position: absolute;
+    left: 1rem;
+    top: .8rem;
+}
+
+.nmbr__info--red li::after {
+    background: #ff0000;
+}
+
 .ply-table {
     position: relative;
     margin-top: 8rem;
@@ -4533,6 +4596,18 @@
     background: #fff;
 }
 
+.annc__wrap {
+    display: flex;
+    gap: 4rem;
+}
+
+.annc__wrap .annc {
+    background: #F5F5F5;
+    padding: 3rem 5rem;
+    border-radius: 3rem;
+    width: calc(50% - 2rem);
+}
+
 .annc-title {
     text-align: center;
     font-size: 1.5rem;
@@ -4540,6 +4615,54 @@
     color: #666;
     margin-bottom: 2rem;
     line-height: 1;
+}
+
+.annc__wrap .annc-title {
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #111;
+}
+
+.annc__wrap .qz__item .qz__item_list {
+    background: #fff;
+}
+
+.annc__wrap .qz__toggle {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 2.5rem;
+    height: 4rem;
+}
+
+.annc__wrap .qz__item img {
+    width: 1.1rem;
+}
+
+.annc__wrap .qz__dot {
+    width: 6px;
+    height: 6px;
+}
+
+.annc__wrap .qz__cntn {
+    padding: 0;
+}
+
+.annc__wrap .qz__block {
+    padding: 0 2.5rem;
+}
+
+.annc__wrap .qz__anser {
+    margin: 2rem 0;
+    color: #666;
+}
+
+.annc__wrap .qz__item_list {
+    border-radius: 1rem;
+}
+
+.annc__wrap .qz__list>li+li {
+    margin-top: 1rem;
 }
 
 .annc-title a {
