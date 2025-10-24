@@ -2700,6 +2700,7 @@
     padding: 1.6rem 0;
     font-weight: 600;
     font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 .hpy02__table tbody td {
@@ -2782,6 +2783,11 @@
     margin-bottom: 3rem;
     border-bottom: 1px solid #ddd;
 
+}
+
+.hpy0220__box--bd0 {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .hpy0220__box--pd0 {
@@ -2891,6 +2897,7 @@
     font-size: 1.5rem;
     color: #666;
     line-height: 150%;
+    letter-spacing: -1px;
 }
 
 .hpy0220__contact {
@@ -3385,4 +3392,20 @@
 
 .tour__box--p0 {
     padding: 3rem 0 0;
+}
+
+.tour204002__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tour204002__link img {
+    width: 1rem;
+    height: .5rem;
+}
+
+.tour204002__table thead th {
+    padding: 0;
 }
