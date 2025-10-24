@@ -2743,6 +2743,13 @@
     cursor: pointer;
 }
 
+.ply-reg__agree .ply-reg__radio.w-16 {
+    width: 16px;
+    height: 16px;
+    accent-color: #0C54B8;
+    cursor: pointer;
+}
+
 .ply-reg__agree .ply-reg__radio:checked {
     accent-color: #0C54B8;
 }
@@ -2962,6 +2969,21 @@
     width: 7px;
     height: 4px;
     border: 3px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%) rotate(-45deg);
+    transform-origin: 25% 25%;
+}
+
+.ply-reg__radio.w-16::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 3px;
+    border: 2px solid #fff;
     border-top: 0;
     border-right: 0;
     position: absolute;
