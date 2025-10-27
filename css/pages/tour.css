@@ -1353,7 +1353,16 @@
     min-width: 17rem;
 }
 
+
 .hpy__select--min170 select {
+    width: 100%;
+}
+
+.hpy__select--min200 {
+    min-width: 20rem;
+}
+
+.hpy__select--min200 select {
     width: 100%;
 }
 
@@ -1857,6 +1866,11 @@
     color: #fff;
 }
 
+.hpy-reg__btn.fs-17 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
 .hpy-reg__btn.br-10 {
     border-radius: 1rem;
 }
@@ -1871,6 +1885,10 @@
 
 .hpy-reg__btn--h30 {
     height: 3rem;
+}
+
+.hpy-reg__btn--h25 {
+    height: 2.5rem;
 }
 
 .hpy-reg__btn--min70 {
@@ -1895,6 +1913,10 @@
 
 .hpy-reg__btn--min145 {
     min-width: 14.5rem;
+}
+
+.hpy-reg__btn--min300 {
+    min-width: 30rem;
 }
 
 .hpy-reg__btn--min83 {
@@ -3563,4 +3585,285 @@
 .tour__group--checked {
     display: flex;
     flex-direction: column;
+}
+
+.hpy02__wrapper--401005 .tour204002__title {
+    padding: 0 2rem;
+    font-weight: 400;
+}
+
+.hpy02__wrapper--401005 .tour204002__title b {
+    font-weight: 600;
+}
+
+.hpy02__wrapper--401005 .tour204002__line {
+    margin: 3rem 2rem 0;
+    padding: 3rem 0;
+}
+
+.tour401005-3__box {
+    display: flex;
+    gap: 1rem;
+    padding: 3rem 0 0;
+    border-top: 1px solid #DDDDDD;
+    margin: 3rem 2rem 0;
+}
+
+.tour401005-3__item {
+    width: 30rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 1rem;
+}
+
+.tour401005-3__text {
+    padding: 1.5rem 2rem 2rem;
+    text-align: left;
+}
+
+.tour401005-3__text p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: .5rem;
+}
+
+.tour401005-3__text span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.tour401007__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.tour401007__container {
+    display: flex;
+    gap: 20px;
+}
+
+.tour401007__sidebar {
+    flex: 0 0 32rem;
+    border-radius: 5rem;
+    padding: 5rem;
+    border: 1px solid #DDDDDD;
+}
+
+.tour401007__title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.tour401007__searchbox {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.tour401007__searchbtn {
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tour401007__searchbtn img {
+    width: 1.608rem;
+    height: 1.608rem;
+}
+
+.tour401007__result {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.tour401007__result b {
+    font-weight: 600;
+}
+
+.tour401007__card {
+    overflow: hidden;
+    margin-bottom: 4.4rem;
+}
+
+.tour401007__card img {
+    width: 22rem;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.tour401007__cardinfo h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0 .5rem;
+    color: #000;
+}
+
+.tour401007__cardinfo p {
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.tour401007__cardinfo b {
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.tour401007__cardinfo b img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.tour401007__btns {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.tour401007__btns .hpy-reg__btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.tour401007__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.tour401007__pagination button {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+.tour401007__map {
+    flex: 1;
+    border-radius: 5rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    border: 1px solid #DDDDDD;
+    position: relative;
+}
+
+.tour401007__map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour401007-popup__wrapper .tour401007__sidebar {
+    padding: 5rem 0;
+}
+
+.tour401007-popup__wrapper .tour401007__title {
+    padding: 0 5rem;
+}
+
+.tour401007-popup__wrapper .tour401007__searchbox {
+    margin: 0 5rem 3rem;
+}
+
+.tour401007-popup__wrapper .tour401007__result {
+    padding: 0 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tour401007-popup__wrapper .tour401007__card {
+    background: #f5f5f5;
+    padding: 1.5rem 5rem;
+    margin-bottom: 3rem;
+}
+
+.tour401007__popup-container {
+    position: absolute;
+    bottom: 8.4rem;
+    left: 5.8rem;
+    width: 42rem;
+    background: #fff;
+    border-radius: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tour401007__popup-header {
+    background: #0C54B8;
+    color: #fff;
+    height: 6rem;
+    padding: 0 1.7rem 0rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour401007__popup-header h4 {
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.tour401007__popup-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+    border: 2px solid #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tour401007__popup-body {
+    padding: 1.2rem 4rem 1.8rem;
+}
+
+.tour401007__popup-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tour401007__map .tour401007__popup-row img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.tour401007__popup-row p {
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1.38;
+}
+
+.tour401007__popup-container .hpy-reg__btn {
+    border: 1px solid #0C54B8;
+    color: #0C54B8;
+    background: #fff;
+}
+
+.tour401007__popup-more {
+    padding-left: 4rem;
 }
