@@ -1771,6 +1771,11 @@
     max-width: 12rem;
 }
 
+.hpy-reg__input--max150 {
+    max-width: 15rem;
+    min-width: 15rem;
+}
+
 .hpy-reg__input--max140 {
     max-width: 14rem;
 }
@@ -2733,6 +2738,16 @@
 
 .hpy02__label--600 {
     font-weight: 600;
+}
+
+.hpy02__label.fs13 {
+    color: #666;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+}
+
+.hpy02__label.fw400 {
+    font-weight: 400;
 }
 
 .ply-reg__label--w78 {

@@ -9,6 +9,7 @@
     z-index: 9;
 }
 
+
 .ply-hdr .inner {
     max-width: 110rem;
     height: 100%;
@@ -338,6 +339,10 @@
     padding-bottom: 10rem;
 }
 
+.ply.pt5 {
+    padding-top: 5rem;
+}
+
 .ply--pt20 {
     padding-top: 2rem;
 }
@@ -369,6 +374,18 @@
 
 .ply__tit--mb50 {
     margin-bottom: 5rem;
+}
+
+.ply__tit.mt0 {
+    margin-top: 0;
+}
+
+.ply__tit.jc-sb {
+    justify-content: space-between;
+}
+
+.ply__tit.p2 {
+    padding: 0 2rem;
 }
 
 .ply__tit_desc {
@@ -2580,6 +2597,11 @@
     max-width: 16rem;
 }
 
+.ply-reg__input--max165 {
+    max-width: 16.5rem;
+    min-width: 16.5rem;
+}
+
 .ply-reg__input--max170 {
     max-width: 17rem;
 }
@@ -2657,6 +2679,11 @@
 
 .ply-reg__input--max660 {
     max-width: 66rem;
+}
+
+.selectbox:disabled {
+    background-color: #F5F5F5;
+    color: #ccc;
 }
 
 .ply-reg__input:disabled,
@@ -2975,6 +3002,14 @@
     color: #111;
     font-size: 1.5rem;
     padding-top: 1rem;
+}
+
+.ply-reg__agree.p0 {
+    padding: 0;
+}
+
+.ply-reg__agree.mr14 {
+    margin-right: 1.4rem;
 }
 
 .ply-reg__radio {
@@ -3487,6 +3522,14 @@
     font-size: 1.5rem;
     color: #111111;
     font-weight: 500
+}
+
+.transfer-text.fs13 {
+    font-size: 1.3rem;
+}
+
+.transfer-text.fs17 {
+    font-size: 1.7rem;
 }
 
 .transfer-buttons {
@@ -5783,6 +5826,11 @@
     margin-bottom: 2rem;
 }
 
+
+.ply__title.mt30 {
+    margin-top: 3rem;
+}
+
 .ply__title.blue {
     color: #0C54B8;
     display: flex;
@@ -5848,6 +5896,14 @@
     min-width: 17rem;
 }
 
+.selectbox.min120 {
+    min-width: 12rem;
+}
+
+.selectbox.min300 {
+    min-width: 30rem;
+}
+
 .ply102002__note {
     font-size: 1.3rem;
     font-weight: 400;
@@ -5905,6 +5961,10 @@
     font-weight: 400;
     line-height: 150%;
     margin-bottom: 3rem;
+}
+
+.ply102003__text.fs13 {
+    font-size: 1.3rem;
 }
 
 .ply102003__text.mb0 {
@@ -5974,6 +6034,10 @@
     padding: 0 2rem;
 }
 
+.ply102007__group.flex-start {
+    align-items: start;
+}
+
 .ply102007__group.mt1 {
     margin-top: 1rem;
 }
@@ -5994,4 +6058,122 @@
     color: #666;
     margin-top: .5rem;
     text-align: right;
+}
+
+.ply102009__phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    width: 14.4rem;
+    border: 1px solid #DDDDDD;
+    border-radius: .5rem;
+    height: 3.5rem;
+}
+
+.ply102009__phone img {
+    width: .842rem;
+    height: 1.071rem;
+}
+
+.ply102009__table {
+    padding: 0 2rem;
+}
+
+.ply102009__table .hpy02__table {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.ply102009__table .hpy02__table thead th {
+    padding: 0;
+}
+
+.ply102009__text {
+    text-align: left;
+    padding: 0 1.6rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.ply102009__tag {
+    color: #0C54B8;
+    border: 1px solid #0C54B8;
+    font-size: .9rem;
+    font-weight: 400;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    line-height: 138%;
+}
+
+.ply102011__box {
+    width: 100%;
+    font-size: 1.3rem;
+    color: #111;
+    border-top: 1px solid #ddd;
+}
+
+.ply102011__item {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    border-bottom: 1px solid #ddd;
+
+    padding: 3rem 2rem;
+}
+
+.ply102011__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ply102011__row {
+    display: flex;
+    gap: 4rem;
+}
+
+.ply102011__group {
+    gap: 2rem;
+    display: flex;
+}
+
+.ply102011__label {
+    font-weight: 400;
+}
+
+.ply102011__value {
+    font-weight: 600;
+}
+
+.ply102011__checkbox {
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .5rem;
+    border: 1px solid #ddd;
+    appearance: none;
+    display: inline-block;
+}
+
+.ply102011__checkbox::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 4px;
+    border: 3px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%) rotate(-45deg);
+    transform-origin: 25% 25%;
 }

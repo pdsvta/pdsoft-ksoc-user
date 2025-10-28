@@ -3316,6 +3316,11 @@ a.ui-button:active,
     transition: all 0.3s;
 }
 
+.checkbox.disabled {
+    background: #ddd;
+    border: none;
+}
+
 .checkbox.w20 {
     width: 2rem;
     height: 2rem;
@@ -3331,6 +3336,21 @@ a.ui-button:active,
     width: 10px;
     height: 4px;
     border: 3px solid #999;
+    border-top: 0;
+    border-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%) rotate(-45deg);
+    transform-origin: 25% 25%;
+}
+
+.checkbox.disabled::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 4px;
+    border: 3px solid #fff;
     border-top: 0;
     border-right: 0;
     position: absolute;

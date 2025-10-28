@@ -131,7 +131,7 @@
             <div class="inner">
                 <div class="ply__group">
                     <div class="ply__tit">
-                        <h3>인터넷 증명서발급</h3>
+                        <h3>인터넷 증명서발급 신청</h3>
                     </div>
                     <div class="ply__group--list">
                         <div class="ply__group--item">
@@ -153,117 +153,126 @@
                     </div>
                 </div>
                 <div class="ply__wrapper mt5">
-                    <div class="ply__title">
-                        <h4>신청자 정보</h4>
+                    <div class="ply__title flex mb2">
+                        <h4>증명서발급양식 작성</h4>
                     </div>
-                    <div class="ply102002__box">
-                        <div class="ply102002__info">
-                            <div class="ply102002__row mb2">
-                                <span>이름</span>
-                                <p>OOO</p>
-                            </div>
-
-                            <div class="ply102002__row mb2">
-                                <span>생년월일(성별)</span>
-                                <p>19850112 (남자)</p>
+                    <div class="ply102007__group">
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">신청지명</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max300" value="박" disabled>
+                        </div>
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">이름</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max290" value="박" disabled>
+                        </div>
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">생년월일</label>
+                            <input type="date" class="ply-reg__input ply-reg__input--max290" disabled>
+                        </div>
+                    </div>
+                    <div class="ply102007__group mt1">
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">최종소속</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max300" value="한양대학교" disabled>
+                        </div>
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">최종소속년도</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max290" value="2018" disabled>
+                        </div>
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label" aria-required="true">E-mail</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max290"
+                                placeholder="sample@email.com" disabled>
+                        </div>
+                    </div>
+                    <div class="ply102007__group mt1">
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label" aria-required="true">연락처</label>
+                        </div>
+                    </div>
+                    <div class="ply102007__group">
+                        <div class="ply-reg__card">
+                            <input type="text" class="ply-reg__input ply-reg__input--max300" value="박" disabled>
+                        </div>
+                        <div class="ply102007__label">
+                            숫자만 입력합니다. (승인안내 수신 받으실 연락처를 적어주세요)
+                        </div>
+                    </div>
+                    <div class="ply102007__group">
+                        <div class="ply-reg__agree pl10">
+                            <input type="checkbox" class="checkbox w20 disabled" disabled>
+                            <span class="transfer-text fs13">체크 하시면 증명서 발급신청 승인 완료 시 발급 가능 상태를 문자메세지로 알려 드립니다.</span>
+                        </div>
+                    </div>
+                    <div class="ply102007__group mt1">
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label" aria-required="true">주소</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max300" value="우편번호" disabled>
+                        </div>
+                    </div>
+                    <div class="ply102007__group mt1">
+                        <div class="ply-reg__card">
+                            <input type="text" class="ply-reg__input ply-reg__input--max920" value="상세주소 1" disabled>
+                        </div>
+                    </div>
+                    <div class="ply102007__group mt1">
+                        <div class="ply-reg__card">
+                            <input type="text" class="ply-reg__input ply-reg__input--max920" value="상세주소 2" disabled>
+                        </div>
+                    </div>
+                    <div class="ply102007__group flex-start mt1">
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label" aria-required="true">발급용도</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max300" value="박" disabled>
+                            <div class="ply102007__note">
+                                에) 서류제출용 등
                             </div>
                         </div>
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label" aria-required="true">제출처</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max290" value="박" disabled>
+                            <div class="ply102007__note">
+                                에) 관공서, 학교 등
+                            </div>
+                        </div>
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label" aria-required="true">신청부수</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max290" value="박" disabled>
+                        </div>
+                    </div>
+                    <div class="ply__title mt30">
+                        <h4>증명서발급양식 작성</h4>
+                    </div>
+                    <div class="ply102007__group mt1">
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">결제금액</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max300" value="3,000원" disabled>
+                        </div>
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">결제자</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max290" value="김용진" disabled>
+                        </div>
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">결제일</label>
+                            <input type="text" class="ply-reg__input ply-reg__input--max290" value="2021/10/25"
+                                disabled>
+                        </div>
+                    </div>
 
-                        <div class="ply102002__selectbox">
-                            <select name="" id="" class="selectbox min170">
-                                <option value="">과거 등록이력</option>
+                    <div class="ply102007__group mt1">
+                        <div class="ply-reg__card">
+                            <label for="" class="ply-reg__label">결제방법</label>
+                        </div>
+                    </div>
+                    <div class="ply102007__group gap05">
+                        <div class="ply-reg__card">
+                            <select name="" id="" class="selectbox min300" disabled>
+                                <option value="">결제방법 선택</option>
                             </select>
-                            <button type="button"
-                                class="ply-reg__btn ply-reg__btn--min60 ply-reg__btn--gray">찾기</button>
                         </div>
-                    </div>
-                    <p class="ply102002__note">
-                        • 과거 대한체육회 시스템에 등록한 이력이 있는 경우 본인과거등록이력을 찾을 수 있습니다.
-                    </p>
-                </div>
-                <div class="ply__wrapper bd-blue mt2">
-                    <div class="ply__title blue">
-                        <h4>블록체인 증명서발급 신청 (선수)</h4> <span>?</span>
-                    </div>
-                    <div class="ply102002__box">
-                        <div class="ply102002__row blue mb2">
-                            <span>개인번호/실적건수</span>
-                            <p>20182002838/0</p>
-                        </div>
-                    </div>
-                    <div class="ply102002__btns">
-                        <button type="button"
-                            class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--blue ply-reg__btn--fw600">선수실적증명서</button>
-                        <button type="button"
-                            class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--blue ply-reg__btn--fw600">선수등록확인서</button>
+                        <button type="button" class="ply-reg__btn ply-reg__btn--min100 ply-reg__btn--gray">결제하기</button>
                     </div>
                 </div>
-                <div class="ply__wrapper mt2">
-                    <div class="ply__title">
-                        <h4>증명서발급 신청 (선수)</h4>
-                    </div>
-                    <div class="ply102002__box">
-                        <div class="ply102002__row mb2">
-                            <span>개인번호/실적건수</span>
-                            <p>20182002838/0</p>
-                        </div>
-                    </div>
-                    <div class="ply102002__btns">
-                        <button type="button"
-                            class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--white">선수실적증명서</button>
-                        <button type="button"
-                            class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--white">선수등록확인서</button>
-                    </div>
-                </div>
-                <div class="ply__wrapper mt2">
-                    <div class="ply__title">
-                        <h4>대표선수 확인서 신청</h4>
-                    </div>
-                    <div class="ply102002__box">
-                        <div class="ply102002__row mb2">
-                            <span>개인번호</span>
-                            <p>20182002838</p>
-                        </div>
-                    </div>
-                    <div class="ply102002__btns">
-                        <button type="button"
-                            class="ply-reg__btn ply-reg__btn--min150 ply-reg__btn--white">강화훈련참가선수확인서</button>
-                        <button type="button"
-                            class="ply-reg__btn ply-reg__btn--min150 ply-reg__btn--white">국가대표선수확인서</button>
-
-                        <button type="button" class="ply-reg__btn ply-reg__btn--min170 ply-reg__btn--white"
-                            disabled>국가대표 후보선수
-                            훈련확인서</button>
-                        <button type="button" class="ply-reg__btn ply-reg__btn--min110 ply-reg__btn--white"
-                            disabled>후보선수확인서</button>
-                        <button type="button" class="ply-reg__btn ply-reg__btn--min150 ply-reg__btn--white" disabled>꿈나무
-                            선수
-                            훈련확인서</button>
-                        <button type="button" class="ply-reg__btn ply-reg__btn--min120 ply-reg__btn--white"
-                            disabled>꿈나무선수확인서</button>
-                    </div>
-                    <div class="ply102002__btns mt05">
-                        <button type="button" class="ply-reg__btn ply-reg__btn--min170 ply-reg__btn--white"
-                            disabled>청소년대표 선수 훈력확인서</button>
-                        <button type="button" class="ply-reg__btn ply-reg__btn--min140 ply-reg__btn--white"
-                            disabled>청소년대표선수확인서</button>
-                        <button type="button" class="ply-reg__btn ply-reg__btn--min160 ply-reg__btn--white"
-                            disabled>미래국가대표 선수 확인서</button>
-                    </div>
-                </div>
-                <div class="ply__wrapper mt2">
-                    <div class="ply__title">
-                        <h4>팀 관련 신청</h4>
-                    </div>
-                    <div class="ply102002__btns">
-                        <button type="button" class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--white">팀 등록
-                            확인서</button>
-                    </div>
-                    <p class="ply102002__note mt2">
-                        • 팀 관련 신청서는 위 신청서 버튼을 클릭하시면 바로 작성이 가능합니다.
-                    </p>
-                </div>
-
             </div>
         </section>
         <!-- // contents -->
