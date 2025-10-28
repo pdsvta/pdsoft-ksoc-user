@@ -3302,6 +3302,11 @@ a.ui-button:active,
     transition: all 0.3s;
 }
 
+.checkbox.w20 {
+    width: 2rem;
+    height: 2rem;
+}
+
 .checkbox:focus {
     outline: none;
 }
