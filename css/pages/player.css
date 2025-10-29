@@ -6311,3 +6311,35 @@
     left: -1.5rem;
     right: 0;
 }
+
+.ply102021__box {
+    background: #F5F5F5;
+    margin: 0 2rem;
+    padding: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
+}
+
+.ply102021__info {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    width: 19rem;
+    color: #111;
+}
+
+.ply102021__row {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.ply102021__row span {
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.ply102021__row b {
+    font-weight: 600;
+}
