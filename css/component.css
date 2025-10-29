@@ -1,0 +1,745 @@
+.formInput-radio .radioArea label::before, .formInput-check .checkArea.checkSquare label::before, .formInput-check .checkArea.checkRound label::before {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.formInput-radio .radioArea label, .formInput-check .checkArea.checkSquare label, .formInput-check .checkArea.checkRound label {
+  font-weight: 400;
+}
+.formInput-radio .radioArea label, .formInput-check .checkArea.checkSquare label, .formInput-check .checkArea.checkRound label {
+  font-size: 15px;
+}
+.graph .b-ltb {
+  border-top: 1px solid #d2d2d2 !important;
+  border-left: 1px solid #d2d2d2 !important;
+  border-bottom: 1px solid #d2d2d2 !important;
+}
+.graph .b-r-3 {
+  border-right: 1px solid #3d3d3d !important;
+}
+.graph .b-r-d {
+  border-right: 1px solid #d2d2d2 !important;
+}
+.graph-blue {
+  background-color: #00b3ca;
+}
+.graph-mint {
+  background-color: #7dd0b6;
+}
+.graph-green {
+  background-color: #98b97c;
+}
+.graph-pink {
+  background-color: #e38690;
+}
+.graph-scroll {
+  width: 100%;
+}
+.graph-scroll--table {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.graph-scroll--table table {
+  min-width: 100%;
+  border: 1px solid #3d3d3d;
+}
+.graph-scroll--table table tr:last-child td,
+.graph-scroll--table table tr:last-child th {
+  border-bottom: 1px solid #3d3d3d !important;
+}
+.graph-scroll--table table .center {
+  text-align: center;
+}
+.graph-scroll--table table thead th {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  background-color: #f1f4f6;
+  padding: 0px 8px;
+  height: 40px;
+  text-align: left;
+  border-bottom: 1px solid #d2d2d2;
+}
+.graph-scroll--table table thead th.title {
+  height: 138px;
+}
+.graph-scroll--table table thead th.title4 {
+  height: 187px;
+}
+.graph-scroll--table .thead {
+  width: 207px;
+  left: 0;
+  z-index: 1;
+}
+.graph-scroll--table .thead table {
+  width: 207px;
+}
+.graph-scroll--table .container {
+  position: relative;
+  padding:0;
+  overflow: hidden;
+}
+.graph-scroll--table .container table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  min-width: unset !important;
+  border-left: none;
+}
+.graph-scroll--table .container table thead tr td {
+  width: 50px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: normal;
+  border: solid 1px #d2d2d2;
+  text-align: center;
+  padding: 0 10px;
+}
+.graph-scroll--table .container table thead tr th {
+  text-align: center;
+}
+.graph-scroll--table .container table thead tr:first-child th {
+  height: 49px;
+  padding: 0;
+  border-bottom: none;
+  border-right: 1px solid #3d3d3d;
+}
+.graph-scroll--table .container table thead tr:nth-child(2) th {
+  height: 49px;
+  padding: 0;
+  border-top: solid 1px #d2d2d2;
+  border-bottom: none;
+  border-right: 1px solid #3d3d3d;
+}
+.graph-scroll--table .container table thead tr:nth-child(3) th {
+  height: 49px;
+  padding: 0;
+  border-top: solid 1px #d2d2d2;
+  border-bottom: none;
+  border-right: 1px solid #3d3d3d;
+}
+.graph-scroll--table .container table thead tr.kind th {
+  height: 40px;
+  min-width: 50px;
+  padding: 0;
+  background-color: #f5f4ef;
+  text-align: center;
+  border: solid 1px #d2d2d2;
+  border-bottom: 1px solid #3d3d3d;
+}
+.graph-scroll--table .container table thead tr.kind th:last-child {
+  border-right: 1px solid #3d3d3d;
+}
+.graph-scroll--bar .parent {
+  height: 390px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.graph-scroll--bar .parent .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0;
+  pointer-events: none;
+  text-align: center;
+  overflow: hidden;
+}
+.graph-scroll--bar .parent .container::after {
+  background-color: #bebebe;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  content: "";
+  bottom: 130px;
+  z-index: 0;
+}
+.graph-scroll--bar .parent .container li {
+  height: 100%;
+  position: relative;
+  padding-right: 88px;
+}
+.graph-scroll--bar .parent .container li:last-child {
+  padding-right: 0;
+}
+.graph-scroll--bar .parent .container-graph {
+  height: 258px;
+}
+.graph-scroll--bar .parent .container-graph .data-title {
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  bottom: -45px;
+  margin-left: 5px;
+}
+.graph-scroll--bar .parent .container-graph .data-option {
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  min-width: 50px;
+  margin-left: -14px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+.graph-scroll--bar .parent .container-graph div.item {
+  position: relative;
+  width: 12px;
+  float: left;
+  margin-right: 25px;
+  height: 258px;
+}
+.graph-scroll--bar .parent .container-graph div.item:last-child {
+  margin-right: 0;
+}
+.graph-scroll--bar .parent .container-graph div.item span {
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  bottom: -5px;
+  min-height: 20px;
+  z-index: 1;
+}
+.graph-scroll--bar .parent .container-title {
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 94px;
+  min-height: 35px;
+  padding: 7px 20px;
+  border-radius: 18px;
+  border: solid 1px #969eb2;
+  margin-top: 57px;
+  display: inline-block;
+}
+
+.graph-slider {
+  width: 500px;
+  height: 390;
+  overflow: hidden;
+}
+.graph-slider .slider-inner .slider-item .container-graph .item .graph-blue {
+  background-color: #00b3ca;
+}
+.graph-slider .slider-inner .slider-item .container-graph .item .graph-mint {
+  background-color: #7dd0b6;
+}
+.graph-slider .slider-inner .slider-item .container-graph .item .graph-green {
+  background-color: #98b97c;
+}
+.graph-slider .slider-inner .slider-item .container-graph .item .graph-pink {
+  background-color: #e38690;
+}
+
+.formInput input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #B1B1B1;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.formInput input:disabled {
+  background-color: #F3F3F3;
+  color: #959595;
+}
+.formInput .select-group {
+  position: relative;
+}
+.formInput .select-group .icon-select__arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.formInput .select-group select {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+  padding-right: 30px;
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+  appearance: none;
+  text-overflow: ellipsis;
+  font-family: "NotoSerifCJKkr", "roboto", "Malgun Gothic", sans-serif;
+}
+.formInput .select-group select:disabled {
+  background-color: #F3F3F3;
+  color: #959595;
+}
+.formInput-check .checkArea {
+  position: relative;
+}
+.formInput-check .checkArea input[type=checkbox] {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  z-index: 1;
+  opacity: 0;
+}
+.formInput-check .checkArea.checkRound {
+  height: 27px;
+}
+.formInput-check .checkArea.checkRound label {
+  display: block;
+  position: relative;
+  height: inherit;
+  padding-left: 32px;
+  line-height: 25px;
+}
+.formInput-check .checkArea.checkRound label::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  margin: 0 5px 0 0;
+  border: 1px solid #B1B1B1;
+  background-color: #fff;
+}
+.formInput-check .checkArea.checkRound label:hover::before {
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+}
+.formInput-check .checkArea.checkRound label::before {
+  border-radius: 100%;
+  background: url("../img/common/check-round.svg") no-repeat center #8d8d8d;
+  border: 1px solid #8d8d8d;
+}
+.formInput-check .checkArea.checkRound label.is_active::before, .formInput-check .checkArea.checkRound label:hover::before {
+  background-color: #df3818;
+  border-color: #df3818;
+}
+.formInput-check .checkArea.checkRound.disabled label {
+  color: #959595;
+}
+.formInput-check .checkArea.checkRound.disabled label::before {
+  border-color: #959595;
+  background-color: #959595;
+}
+.formInput-check .checkArea.checkRound.disabled label:hover::before {
+  border-color: #959595;
+}
+.formInput-check .checkArea.checkSquare label {
+  display: block;
+  position: relative;
+  height: inherit;
+  padding-left: 23px;
+  line-height: 16px;
+}
+.formInput-check .checkArea.checkSquare label::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 0;
+  border: 1px solid #B1B1B1;
+  background-color: #fff;
+}
+.formInput-check .checkArea.checkSquare label:hover::before {
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+}
+.formInput-check .checkArea.checkSquare label::before {
+  border-radius: 3px;
+  background-position: 60% 50%;
+  background-image: url("../img/common/check-square.svg");
+}
+.formInput-check .checkArea.checkSquare label.is_active::before {
+  background-color: #224B9E;
+  border-color: #224B9E;
+}
+.formInput-check .checkArea.checkSquare.disabled label {
+  color: #959595;
+}
+.formInput-check .checkArea.checkSquare.disabled label::before {
+  border-color: #959595;
+  background-color: #959595;
+}
+.formInput-check .checkArea.checkSquare.disabled label:hover::before {
+  border-color: #959595;
+}
+.formInput-radio .radioArea {
+  padding: 5px 0;
+}
+.formInput-radio .radioArea input[type=radio] {
+  display: none;
+}
+.formInput-radio .radioArea label {
+  display: block;
+  position: relative;
+  height: inherit;
+  padding-left: 23px;
+  line-height: 16px;
+}
+.formInput-radio .radioArea label::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 0;
+  border: 1px solid #B1B1B1;
+  background-color: #fff;
+}
+.formInput-radio .radioArea label:hover::before {
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+}
+.formInput-radio .radioArea label::before {
+  border: 0;
+  border-radius: 100%;
+  background-image: url("../img/common/radio.svg");
+}
+.formInput-radio .radioArea label:hover::before {
+  background-image: url("../img/common/radio-hover.svg");
+}
+.formInput-radio .radioArea label.is_active::before {
+  background-image: url("../img/common/radio-active.svg");
+}
+.formInput-radio .radioArea.disabled label {
+  color: #959595;
+}
+.formInput-radio .radioArea.disabled label::before {
+  background-image: url("../img/common/radio-disabled.svg");
+}
+.formInput-radio .radioArea.disabled label.checkInput {
+  background-color: #F3F3F3;
+}
+.formInput-radio .radioArea.disabled label.checkInput::after {
+  background-color: #959595;
+}
+.formInput textarea {
+  width: 100%;
+  border: 1px solid #B1B1B1;
+  border-radius: 3px;
+}
+.formInput .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.formInput .btn.btn-block {
+  background-color: #3D3D3D;
+  color: #fff;
+}
+.formInput .btn.btn-grey {
+  background-color: #F5F5F5;
+  border: 1px solid #B1B1B1;
+}
+.formInput .btn.btn-grey:hover {
+  border-color: #3D3D3D;
+}
+.formInput .btn.btn-md {
+  font-size: 20px;
+  font-weight: 500;
+  height: 50px;
+  min-width: 100px;
+  padding: 0 32px;
+}
+.formInput .btn.no-radius {
+  border-radius: 0;
+}
+
+.modal-wrap {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 0;
+  top: 0;
+  /*z-index: 30;*/
+  z-index: 9999;
+}
+.modal-wrap .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.modal-inner {
+  margin:  40px;
+  /*
+  overflow-x: hidden;
+  overflow-y:  scroll;
+  */
+}
+
+.modal-wrap .modal-header {
+  padding: 35px 0 20px 25px;
+  border-bottom: 1px solid #BFBFBF;
+}
+.modal-wrap .modal-header h1 {
+  font-size: 20px;
+}
+
+.modal .modal-header img.icon {
+  position: absolute;
+  top: 22px;
+  left: 24px;
+}
+
+.modal .modal-header .btn_close_popup {
+  position: absolute;
+  display: block;
+  top: 36px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url(../img/ggin_golf/icon_close.svg) no-repeat center #3d3d3d;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.modal-wrap .modal-body {
+  padding: 25px 23px 25px 25px;
+  min-height: 114px;
+}
+.modal-wrap .modal-body p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.modal-wrap .modal-footer {
+  display: flex;
+}
+.modal-wrap .modal-footer .button-grey {
+  width: 30%;
+  height: 52px;
+  background-color: #A1A1A1;
+  border-bottom-left-radius: 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+}
+.modal-wrap .modal-footer .button-blue {
+  width: 70%;
+  height: 52px;
+  background-color: #092B8D;
+  color: #fff;
+  border-bottom-right-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.blue-table table {
+  border: 1px solid #d2d2d2;
+}
+.blue-table table thead th {
+  background: #f1f4f6;
+  border: 1px solid #d2d2d2;
+}
+.blue-table table thead td {
+  background: #fff;
+  border: 1px solid #d2d2d2;
+}
+.blue-table table tbody th {
+  padding: 8px 11px;
+  line-height: 24px;
+  border: 1px solid #d2d2d2;
+}
+.blue-table table tbody td {
+  padding: 8px 11px;
+  line-height: 24px;
+  border: 1px solid #d2d2d2;
+}
+
+.table-wrap table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-top: 2px solid #3D3D3D;
+}
+.table-wrap table caption {
+  text-align: left;
+  margin-bottom: 23px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.table-wrap table thead th {
+  background-color: #F5F5F5;
+  padding: 13px 0;
+  font-weight: 500;
+}
+.table-wrap table tbody td {
+  padding: 9px 10px 8px;
+  background-color: #fff;
+}
+.table-wrap table th,
+.table-wrap table td {
+  border: 1px solid #D2D2D2;
+  font-size: 16px;
+  font-weight: 400;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination button {
+    font-size: 0;
+    position: relative;
+}
+/* 2211추가 */
+.pagination button.first {
+    font-size: 0;
+    background: url(../img/common/pagination_arrow_d.svg) no-repeat center;
+}
+.pagination button.first:hover {
+  background: url(../img/common/pagination_arrow_d.svg) no-repeat center;
+}
+.pagination button.prev {
+    font-size: 0;
+    background: url(../img/common/pagination_arrow.svg) no-repeat center;
+/*    background-size: 5px 10px;*/
+}
+.pagination button.prev:hover {
+  background:#fff  url(../img/common/pagination_arrow.svg) no-repeat center;
+}
+.pagination button i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pagination button .icon-pagination-white, .pagination button .icon-pagination--d-white {
+  display: none;
+}
+.pagination button:hover .icon-pagination-white, .pagination button:hover .icon-pagination--d-white {
+  display: block;
+}
+.pagination button{
+  min-width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #BCBCBC;
+  background-color: #fff;
+  text-align: center;
+  line-height: 35px;
+  position: relative;
+  /* margin-right: 5px; */
+}
+.pagination li {
+  min-width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #BCBCBC;
+  background-color: #fff;
+  text-align: center;
+  line-height: 35px;
+  position: relative;
+  margin-right: 5px;
+}
+.pagination button:hover,
+.pagination li:hover {
+  background: #3D3D3D;
+  border: 1px solid #3D3D3D;
+}
+.pagination button:hover a,
+.pagination li:hover a {
+  color: #fff;
+}
+.pagination button a,
+.pagination li a {
+  display: block;
+  /* height: 100%; */
+  height: 35px;
+  min-width: 35px;
+  /* margin: 5px; */
+  padding: 0 5px;
+  line-height: 35px;
+}
+.pagination-list {
+  display: flex;
+}
+.pagination-list li {
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.pagination-list li:last-child {
+  margin-right: 0;
+}
+.pagination li.is_active {
+  background-color: #686868;
+  border: none;
+  color: #fff;
+}
+.pagination li.is_active a {
+  color: inherit;
+}
+/* 2211수정 */
+.pagination-control--prev {
+    display: flex;
+    font-size: 0;
+    margin-right: 25px;
+}
+.pagination-control--prev .prev {
+  margin-left: 5px;
+}
+.pagination-control--next {
+    display: flex;
+    font-size: 0;
+    margin-left: 25px;
+}
+.pagination-control--next button {
+    transform: rotate(180deg);
+}
+.pagination-control--next i {
+  transform: rotate(180deg);
+}
+.pagination-control--next .next {
+    margin-right: 5px;
+    background: url(../img/common/pagination_arrow.svg) no-repeat center;
+}
+.pagination-control--next .next:hover {
+  background: url(../img/common/pagination_arrow.svg) no-repeat center;
+}
+.pagination-control--next .last,
+.pagination-control--next .last:hover {
+    background: url(../img/common/pagination_arrow_d.svg) no-repeat center;
+}
+.calender {
+  background: url("../img/common/calender.svg") #fff no-repeat 93% 50%;
+}
+.calender.disabled {
+  background-image: url("../img/common/calender-gray.svg");
+}
+.calender.error {
+  background-image: url("../img/common/calender-orange.svg");
+  border-color: #EB8423;
+  background-color: #FFF6F6;
+  color: #EB8423;
+}
+.calender.error::placeholder {
+  color: #EB8423;
+}
+.calender.error:hover, .calender.error:focus {
+  border-color: #EB8423;
+}
