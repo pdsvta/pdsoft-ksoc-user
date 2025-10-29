@@ -4459,6 +4459,10 @@ a.ui-button:active,
     top: 4px;
 }
 
+.indv__list--text li.indv__list--text-3::before {
+    content: '3';
+}
+
 .indv__list--text-tit>li {
     margin-bottom: 2rem;
 }
@@ -4515,6 +4519,18 @@ a.ui-button:active,
     height: 13.5rem;
     width: auto;
     object-fit: contain;
+}
+
+.indv__flex-imgGroup {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    margin-top: 2rem;
+}
+
+.indv__flex-imgGroup img {
+    height: 30rem;
+    margin-bottom: 2rem;
 }
 
 .guide__content .guide__content-extra {
