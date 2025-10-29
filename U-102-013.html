@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지도자등록 신청안내</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header class="ply-hdr">
+            <div class="inner">
+                <div class="ply-hdr__lf">
+                    <h1 class="ply-hdr__logo">
+                        <img src="images/ptu_m1_0501/image01.png" alt="">
+                        <span>(사)대한골프협회</span>
+                    </h1>
+                    <div class="ply-hdr__pop">
+                        <div class="game__pop">
+                            <div class="game__tit">
+                                <span><b>대한골프협회</b> 경기인 선택</span>
+                            </div>
+                            <ul class="game__list">
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/player-icon.png" alt="">
+                                        <span>선수</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/director-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/judgment-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/manager-icon.png" alt="">
+                                        <span>선수관리<br>담당자</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="game__desc">신청 유형을 선택하세요.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ply-hdr__rt">
+                    <ul class="ply-hdr__list">
+                        <li>
+                            <a href="#">종목변경</a>
+                        </li>
+                        <li>
+                            <a href="#">스포츠지원포털</a>
+                        </li>
+                        <li>
+                            <a href="#">화면번호</a>
+                        </li>
+                    </ul>
+                    <div class="ply-hdr__help">
+                        <a href="#"><b>430</b></a>
+                        <a href="#">화면도움말</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+        <!-- gnb -->
+        <nav class="ply-nav">
+            <div class="inner">
+                <ul class="ply-nav__list">
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__home">
+                            <img src="images/icons/home-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">지도자등록개요</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">신청서작성</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">신청서출력</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">소속변경신청</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">전문체육팀</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">전화번호안내</a>
+                    </li>
+                </ul>
+                <div class="ply-nav__rt">
+                    <ul class="ply-nav__quik">
+                        <li>
+                            <a href="#">사용자메뉴얼</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">자주하는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1문의</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="ply-nav__logout">로그아웃</button>
+                </div>
+            </div>
+        </nav>
+        <!-- // gnb -->
+
+        <!-- contents -->
+        <section class="ply pt5">
+            <div class="inner">
+                <div class="ply__group">
+                    <div class="ply__tit">
+                        <h3>인터넷 증명서발급 내역</h3>
+                    </div>
+                    <div class="ply__group--list">
+                        <div class="ply__group--item">
+                            <img src="images/u-102-002/image01.png" alt="">
+                            <p>증명서 발급</p>
+                        </div>
+                        <div class="ply__group--item">
+                            <img src="images/u-102-002/image02.png" alt="">
+                            <p>정정요청</p>
+                        </div>
+                        <div class="ply__group--item">
+                            <img src="images/u-102-002/image03.png" alt="">
+                            <p>원본검증</p>
+                        </div>
+                        <div class="ply__group--item">
+                            <img src="images/u-102-002/image04.png" alt="">
+                            <p>등록이력</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ply__wrapper mt5">
+                    <div class="ply__tit jc-sb ply__tit--mb30 mt0 p2">
+                        <div class="ply-reg__agree p0 mr14">
+                            <input type="checkbox" class="ply102011__checkbox checkbox w20">
+                            <span class="transfer-text fs17">전체선택</span>
+                        </div>
+                        <div class="tour__group tour__group--p0">
+                            <div class="tour__group--input">
+                                <input type="date"
+                                    class="hpy-reg__input hpy-reg__input--date hpy-reg__input--max150 hpy-reg__input--h35">
+                                <span class="hpy02__dash">-</span>
+                                <input type="date"
+                                    class="hpy-reg__input hpy-reg__input--date hpy-reg__input--max150 hpy-reg__input--h35">
+                            </div>
+                            <select name="" id="" class="selectbox min170  hpy-reg__input--h35">
+                                <option value="">국내국제선택</option>
+                            </select>
+                            <button type="button"
+                                class="hpy-reg__btn hpy-reg__btn--min80 hpy-reg__btn--h35 ply-reg__btn--gray">기간조회</button>
+                        </div>
+                    </div>
+                    <div class="ply102011__box">
+                        <div class="ply102011__item">
+                            <label class="ply102011__check">
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20" checked>
+                            </label>
+                            <div class="ply102011__content">
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회명</span>
+                                        <span class="ply102011__value">문화체육관광부장관컵 전국 바이애슬론대회 국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">국내 /외</span>
+                                        <span class="ply102011__value">국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">출전여부</span>
+                                        <span class="ply102011__value">출전</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">순위</span>
+                                        <span class="ply102011__value">1위</span>
+                                    </div>
+                                </div>
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회기간</span>
+                                        <span class="ply102011__value">021/09/06~2021/09/06</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">참가팀</span>
+                                        <span class="ply102011__value">16</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">경기방식</span>
+                                        <span class="ply102011__value">기록경기</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">소속</span>
+                                        <span class="ply102011__value">성균관대학교</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">포지션</span>
+                                        <span class="ply102011__value">RW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ply102011__item">
+                            <label class="ply102011__check">
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20">
+                            </label>
+                            <div class="ply102011__content">
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회명</span>
+                                        <span class="ply102011__value">문화체육관광부장관컵 전국 바이애슬론대회 국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">국내 /외</span>
+                                        <span class="ply102011__value">국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">출전여부</span>
+                                        <span class="ply102011__value">출전</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">순위</span>
+                                        <span class="ply102011__value">1위</span>
+                                    </div>
+                                </div>
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회기간</span>
+                                        <span class="ply102011__value">021/09/06~2021/09/06</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">참가팀</span>
+                                        <span class="ply102011__value">16</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">경기방식</span>
+                                        <span class="ply102011__value">기록경기</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">소속</span>
+                                        <span class="ply102011__value">성균관대학교</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">포지션</span>
+                                        <span class="ply102011__value">RW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ply102011__item">
+                            <label class="ply102011__check">
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20">
+                            </label>
+                            <div class="ply102011__content">
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회명</span>
+                                        <span class="ply102011__value">문화체육관광부장관컵 전국 바이애슬론대회 국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">국내 /외</span>
+                                        <span class="ply102011__value">국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">출전여부</span>
+                                        <span class="ply102011__value">출전</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">순위</span>
+                                        <span class="ply102011__value">1위</span>
+                                    </div>
+                                </div>
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회기간</span>
+                                        <span class="ply102011__value">021/09/06~2021/09/06</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">참가팀</span>
+                                        <span class="ply102011__value">16</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">경기방식</span>
+                                        <span class="ply102011__value">기록경기</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">소속</span>
+                                        <span class="ply102011__value">성균관대학교</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">포지션</span>
+                                        <span class="ply102011__value">RW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ply102011__item">
+                            <label class="ply102011__check">
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20">
+                            </label>
+                            <div class="ply102011__content">
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회명</span>
+                                        <span class="ply102011__value">문화체육관광부장관컵 전국 바이애슬론대회 국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">국내 /외</span>
+                                        <span class="ply102011__value">국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">출전여부</span>
+                                        <span class="ply102011__value">출전</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">순위</span>
+                                        <span class="ply102011__value">1위</span>
+                                    </div>
+                                </div>
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회기간</span>
+                                        <span class="ply102011__value">021/09/06~2021/09/06</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">참가팀</span>
+                                        <span class="ply102011__value">16</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">경기방식</span>
+                                        <span class="ply102011__value">기록경기</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">소속</span>
+                                        <span class="ply102011__value">성균관대학교</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">포지션</span>
+                                        <span class="ply102011__value">RW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ply102011__item">
+                            <label class="ply102011__check">
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20">
+                            </label>
+                            <div class="ply102011__content">
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회명</span>
+                                        <span class="ply102011__value">문화체육관광부장관컵 전국 바이애슬론대회 국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">국내 /외</span>
+                                        <span class="ply102011__value">국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">출전여부</span>
+                                        <span class="ply102011__value">출전</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">순위</span>
+                                        <span class="ply102011__value">1위</span>
+                                    </div>
+                                </div>
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회기간</span>
+                                        <span class="ply102011__value">021/09/06~2021/09/06</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">참가팀</span>
+                                        <span class="ply102011__value">16</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">경기방식</span>
+                                        <span class="ply102011__value">기록경기</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">소속</span>
+                                        <span class="ply102011__value">성균관대학교</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">포지션</span>
+                                        <span class="ply102011__value">RW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ply102011__item">
+                            <label class="ply102011__check">
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20">
+                            </label>
+                            <div class="ply102011__content">
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회명</span>
+                                        <span class="ply102011__value">문화체육관광부장관컵 전국 바이애슬론대회 국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">국내 /외</span>
+                                        <span class="ply102011__value">국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">출전여부</span>
+                                        <span class="ply102011__value">출전</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">순위</span>
+                                        <span class="ply102011__value">1위</span>
+                                    </div>
+                                </div>
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회기간</span>
+                                        <span class="ply102011__value">021/09/06~2021/09/06</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">참가팀</span>
+                                        <span class="ply102011__value">16</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">경기방식</span>
+                                        <span class="ply102011__value">기록경기</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">소속</span>
+                                        <span class="ply102011__value">성균관대학교</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">포지션</span>
+                                        <span class="ply102011__value">RW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ply102011__item">
+                            <label class="ply102011__check">
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20">
+                            </label>
+                            <div class="ply102011__content">
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회명</span>
+                                        <span class="ply102011__value">문화체육관광부장관컵 전국 바이애슬론대회 국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">국내 /외</span>
+                                        <span class="ply102011__value">국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">출전여부</span>
+                                        <span class="ply102011__value">출전</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">순위</span>
+                                        <span class="ply102011__value">1위</span>
+                                    </div>
+                                </div>
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회기간</span>
+                                        <span class="ply102011__value">021/09/06~2021/09/06</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">참가팀</span>
+                                        <span class="ply102011__value">16</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">경기방식</span>
+                                        <span class="ply102011__value">기록경기</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">소속</span>
+                                        <span class="ply102011__value">성균관대학교</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">포지션</span>
+                                        <span class="ply102011__value">RW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ply102011__item">
+                            <label class="ply102011__check">
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20">
+                            </label>
+                            <div class="ply102011__content">
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회명</span>
+                                        <span class="ply102011__value">문화체육관광부장관컵 전국 바이애슬론대회 국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">국내 /외</span>
+                                        <span class="ply102011__value">국내</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">출전여부</span>
+                                        <span class="ply102011__value">출전</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">순위</span>
+                                        <span class="ply102011__value">1위</span>
+                                    </div>
+                                </div>
+                                <div class="ply102011__row">
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">대회기간</span>
+                                        <span class="ply102011__value">021/09/06~2021/09/06</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">참가팀</span>
+                                        <span class="ply102011__value">16</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">경기방식</span>
+                                        <span class="ply102011__value">기록경기</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">소속</span>
+                                        <span class="ply102011__value">성균관대학교</span>
+                                    </div>
+                                    <div class="ply102011__group">
+                                        <span class="ply102011__label">포지션</span>
+                                        <span class="ply102011__value">RW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tour__bm tour__bm--end  tour__bm--end-p4">
+                    <button type="button" class="tour__btn tour__btn--gray tour__btn--max150">증명서 제출</button>
+                </div>
+            </div>
+        </section>
+        <!-- // contents -->
+
+
+        <!-- footer -->
+        <footer class="ply-ftr">
+            <div class="inner">
+                <h2 class="ply-ftr__tit">(사)대한골프협회</h2>
+                <div class="ply-ftr__adr">
+                    <dl>
+                        <dt>연락처</dt>
+                        <dd>031-540-5700 (안내2번)</dd>
+                        <dd>031-540-5731</dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>(10881) 경기도 파주시 회동길 174(문발동)</dd>
+                    </dl>
+                    <dl>
+                        <dt>사업자등록번호</dt>
+                        <dd>141-82-01607</dd>
+                    </dl>
+                </div>
+                <a href="#" class="ply-ftr__link">개인정보처리방침</a>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+    <!-- popup -->
+    <div class="popup on" role="dialog" aria-modal="true">
+        <section class="ply-pop ply-pop102012" role="document">
+            <div class="ply-pop102012__header">
+                블럭체인 발급은 헨드폰 스포츠지원 포털APP에서 가능합니다
+            </div>
+            <ul class="ply-pop102012__icon">
+                <img src="images/u-102-013/image01.png" alt="info icon">
+            </ul>
+
+            <div class="ply-pop102012__footer">
+                증명서 신청시 입력학 휴대폰 번호로 어플리케 인션 주 <br>소를 전송하시겠습니까?
+            </div>
+
+            <div class="ply-pop__btbx">
+                <button type="button" class="ply-pop__btn ply-pop__btn--gray">취소</button>
+                <button type="button" class="ply-pop__btn ply-pop__btn--primary">확인</button>
+            </div>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $('.tour__btn--gray').on('click', function () {
+                $('.popup').addClass('on').fadeIn(200);
+
+            });
+            $('.ply-pop__btn--gray').on('click', function () {
+                $('.popup').removeClass('on').fadeOut(200);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

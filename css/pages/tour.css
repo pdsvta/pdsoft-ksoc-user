@@ -203,6 +203,10 @@
     min-width: 18rem;
 }
 
+.tour__btn--max280 {
+    min-width: 28rem;
+}
+
 .tour__btn--max150 {
     min-width: 15rem;
 }
@@ -1776,6 +1780,11 @@
     min-width: 15rem;
 }
 
+.hpy-reg__input--max100 {
+    max-width: 10rem;
+    min-width: 10rem;
+}
+
 .hpy-reg__input--max140 {
     max-width: 14rem;
 }
@@ -1914,6 +1923,10 @@
 
 .hpy-reg__btn--min80 {
     min-width: 8rem;
+}
+
+.hpy-reg__btn--min90 {
+    min-width: 9rem;
 }
 
 .hpy-reg__btn--min145 {
@@ -2497,6 +2510,10 @@
 
 .tour__bm--end-p4 {
     padding: 4rem 5rem 0;
+}
+
+.tour__bm--end-p2 {
+    padding: 2rem 5rem 0;
 }
 
 .tour__bm--end-pr5 {
@@ -3090,6 +3107,10 @@
     align-items: center;
     gap: 2rem;
     padding: 0 2rem;
+}
+
+.tour__group.jc-ct {
+    justify-content: center;
 }
 
 .tour__group.gap10 {

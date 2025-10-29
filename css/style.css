@@ -4,6 +4,7 @@
 @import url("font.css");
 @import url("variables.css");
 @import url("layout.css");
+@import url("component.css");
 @import url("pages/home.css");
 @import url("pages/certificate.css");
 @import url("pages/player.css");

@@ -546,7 +546,109 @@
             </div>
         </section>
         <!-- // contents -->
+        <div class="modal-wrap" style="display: block;">
+            <div class="modal" style="width: 780px;">
+                <div class="modal-inner">
+                    <div class="modal-header mb-20">
+                        <div class="btn btn_close_popup btn-close"></div>
+                        <div class="teamSelect-head__left font-20 font-b">
+                            <span>선수 등록신청접수 확인</span>
+                        </div>
+                    </div>
 
+                    <div class="modal-main">
+                        <h4>※ 선수 수기등록신청서에 기재한 내용을 정확하게 입력하세요</h4>
+                        <div class="mt-20">
+                            <ul class="formInput mt-20">
+                                <li class="searchBox-item" style="display:inline-block;">
+                                    <span class="searchTitle">종목</span>
+                                    <div class="select-group wd-250 mt-05">
+                                        <select id="txtClassCd" title="종목">
+                                            <option value="">선택</option>
+                                            <option value="item.minorCd" label="item.codeNm1"></option>
+                                        </select>
+                                        <i class="icon icon-select__arrow" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="formInput mt-20">
+                                <li class="searchBox-item" style="display:inline-block;">
+                                    <span class="searchTitle">이름</span>
+                                    <div class="wd-250 mt-05">
+                                        <input type="text" id="txtKorNm" maxlength="50" placeholder="이름을 입력하세요"
+                                            title="이름" />
+                                    </div>
+                                </li>
+                                <li class="searchBox-item" style="display:inline-block;">
+                                    <span class="searchTitle">생년월일</span>
+                                    <div class="wd-250 mt-05">
+                                        <input type="text" id="txtBirthDt" maxlength="8" placeholder="생년월일을 8자리로 입력하세요"
+                                            title="생년월일" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="formInput mt-20">
+                                <li class="searchBox-item" style="display:inline-block;">
+                                    <span class="searchTitle">성별</span>
+                                    <div class="select-group wd-250 mt-05">
+                                        <select id="txtSex" title="성별">
+                                            <option value="">선택</option>
+                                            <option value="M">남자</option>
+                                            <option value="W">여자</option>
+                                        </select>
+                                        <i class="icon icon-select__arrow" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                                <li class="searchBox-item" style="display:inline-block;">
+                                    <span class="searchTitle">휴대폰번호</span>
+                                    <div class="wd-250 mt-05">
+                                        <input type="text" id="txtMobileNo" maxlength="15"
+                                            placeholder="신청서에 기재한 휴대폰 번호를 입력하세요" title="휴대폰번호" />
+                                    </div>
+                                </li>
+                                <li class="searchBox-item searchBox-btn" style="display:inline-block;">
+                                    <button class="btn btn-block" onclick="confirmRegist()">등록신청접수확인</button>
+                                </li>
+                            </ul>
+
+                            <ul class="formInput mt-10" id="divResult"
+                                style="display: none; border-top: 1px solid #cdcdcd;">
+                                <li class="searchBox-item mt-20">
+                                    <span class="searchTitle" style="font-weight:500;">등록신청접수 내역</span>
+                                    <div id="contents1" style="padding: 20px 0px 0px 0px;"></div>
+                                </li>
+                            </ul>
+
+                            <ul class="formInput mt-10" id="divEduRight"
+                                style="display: none; border-top: 1px solid #cdcdcd;">
+                                <li class="searchBox-item mt-20" style="display:inline-block;">
+                                    <span class="searchTitle">스포츠윤리센터 교육홍보영상</span>
+                                    <div class="wd-300 mr-20">
+                                        <!--     <input type="text" id="txtEduRight" disabled="true" value="미수료" title="스포츠인권교육수료여부"/> -->
+                                        <button class="btn btn-block" onclick="goEduRIGHT()">영상재생하기</button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="formInput mt-10" id="divEduKada"
+                                style="display: none; border-top: 1px solid #cdcdcd;">
+                                <li class="searchBox-item mt-20" style="display:inline-block;">
+                                    <span class="searchTitle">도핑방지교육</span>
+                                    <div class="wd-300 mr-20">
+                                        <input type="text" id="txtEduKada" disabled="disabled" value="미수료"
+                                            title="도핑방지교육수료여부" />
+                                    </div>
+                                </li>
+                                <li class="searchBox-item searchBox-btn" style="display:inline-block;" id="btnKada">
+                                    <button class="btn btn-block" onclick="goEduKADA()">교육수료하기</button>
+                                    <button class="btn btn-block" onclick="reloadEduHistory()">새로고침</button>
+                                </li>
+                            </ul>
+                            <div class="searchBox-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- footer -->
         <footer id="footer" class="footer">
