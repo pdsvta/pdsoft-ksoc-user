@@ -384,6 +384,7 @@
     justify-content: space-between;
 }
 
+
 .ply__tit.p2 {
     padding: 0 2rem;
 }
@@ -5742,10 +5743,27 @@
     padding: 0 7rem;
 }
 
+.ply__group.p5 {
+    padding: 0 5rem;
+}
+
+.ply__group.mt5 {
+    margin-top: 5rem;
+}
+
 .ply__tit {
     display: flex;
     gap: 2rem;
     align-items: center;
+}
+
+.ply__tit.center {
+    justify-content: center;
+}
+
+.ply__tit.m0 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .ply__tit h3 {
@@ -6105,6 +6123,10 @@
     padding: 0 2rem;
 }
 
+.ply102009__table.p0 {
+    padding: 0;
+}
+
 .ply102009__table .hpy02__table {
     border-bottom: 1px solid #DDDDDD;
 }
@@ -6428,4 +6450,10 @@
     text-align: center;
     line-height: 150%;
     margin-top: 1rem;
+}
+
+.ply__total {
+    font-size: 1.8rem;
+    color: #111;
+    font-weight: 400;
 }

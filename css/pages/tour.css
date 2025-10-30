@@ -1785,6 +1785,11 @@
     min-width: 10rem;
 }
 
+.hpy-reg__input--max160 {
+    max-width: 16rem;
+    min-width: 16rem;
+}
+
 .hpy-reg__input--max140 {
     max-width: 14rem;
 }
