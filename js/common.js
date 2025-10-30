@@ -5,22 +5,31 @@ $(function() {
         $(this).stop().toggleClass('active');
         if ($(this).hasClass('active')) {
             $(this).find('img').attr({
-                'src': 'images/icons/view-disabled-icon.png',
+                'src': '../images/icons/view-disabled-icon.png',
                 'alt': '비밀번호 가리기'
             });
             $(this).prev().attr('type', 'text');
         } else {
             $(this).find('img').attr({
-                'src': 'images/icons/view-icon.png',
+                'src': '../images/icons/view-icon.png',
                 'alt': '비밀번호 보기'
             });
             $(this).prev().attr('type', 'password');
         }
     });
 
+    // 로그인 버튼 활성화
+    $('#userId, #password').keyup(function() {
+        if ($('#userId').val() && $('#password').val()) {
+            $('#loginBtn').attr('disabled', false);
+        } else {
+            $('#loginBtn').attr('disabled', true);
+        }
+    });
+
     // 비밀번호 변경 저장 버튼 활성화
-    $('#userPw, #userPwChk').keyup(function() {
-        if ($('#userPw').val() && $('#userPwChk').val()) {
+    $('#userPw, #password').keyup(function() {
+        if ($('#userPw').val() && $('#password').val()) {
             $('#pwSaveBtn').attr('disabled', false);
         } else {
             $('#pwSaveBtn').attr('disabled', true);
@@ -110,7 +119,7 @@ $(function() {
     // 생애주기별 서비스
     const $hubTab = $('.hub-cyc__tabbtn');
     const $hubBlock = $('.hub-cyc__cntn');
-    
+
     $hubTab.click(function() {
         $hubTab.removeClass('active');
         $hubBlock.removeClass('active');
@@ -148,7 +157,7 @@ $(function() {
             $('.spr__stts-btn').removeClass('active');
             $('.spr__stts-btn').eq(sprPage).addClass('active');
         }
-        
+
     });
 
     $('#sprPrevBtn').click(function() {
@@ -198,7 +207,7 @@ $(function() {
         }
     });
 
-    // 증명서 발급안내 탭 
+    // 증명서 발급안내 탭
     $('.tab3__btn').click(function() {
         let elIndex = $(this).index();
 
@@ -250,7 +259,7 @@ $(function() {
         $('.chc__list').addClass('chc__list--img');
     });
 
-    // 종목선택 팝업 
+    // 종목선택 팝업
     $('.chc__link').click(function(e) {
         e.preventDefault();
         e.stopPropagation();
@@ -320,7 +329,7 @@ $.datepicker.setDefaults({
     changeMonth: true,
     changeYear: true,
     showOn: "both",
-    buttonImage: 'images/icons/calendar-gray-icon.png',
+    buttonImage: '../images/icons/calendar-gray-icon.png',
     buttonImageOnly: true,
     beforeShow: function(input, inst) {
         setTimeout(() => {
@@ -402,7 +411,7 @@ $(function() {
     // 추가정보 입력 탭
     $('.adtn__tab button').click(function() {
         let currentIndex = $(this).index();
-        console.log(currentIndex);
+//        console.log(currentIndex);
         $('.adtn__tab button').removeClass('active');
         $(this).addClass('active');
         $('.adtn__section').removeClass('active');
@@ -424,7 +433,7 @@ $(function() {
             $galleryItems.eq(galleryPage).stop().animate({'left': '0'});
             $('.dtl__status').text(galleryPage+1);
         }
-        
+
     });
 
     $('#galleryPrev').click(function() {
@@ -485,7 +494,7 @@ $(document).ready(function() {
     });
 });
 
-// 신청서작성 탭 
+// 신청서작성 탭
 $(function() {
     $('.step__item').click(function() {
         const currentItem = $(this).index();
@@ -516,9 +525,39 @@ $(function() {
         $('.pstn__list li').eq(currentCnt).addClass('active');
 
         $(window).scrollTop(0);
-        
+
     });
 
+//  *********************** kms***********************추가 // 
+    $('.btn-open').on('click', function(){
+        var modalData = $(this).data().name;
+        
+        if(modalData == "applySubmit"){ // 신청서제출 하기전에
+    		if(applySubmitCheck() === false){
+    			return;
+    		}
+    		checkAgree(); // 인권서약서 동의
+    		return;
+        }
+        if(modalData == "appEditSave"){ // 제출한 신청서 수정 때
+        	if(appEditSaveCheck() === false){
+        		return;
+        	}
+        }
+        if(modalData == "selectTeam_pop"){
+        	$('.modal-wrap').fadeOut(); // 기존 팝업창은 닫고 시작	
+        }
+        $('#' + modalData).fadeIn();
+    });
+
+    $('.btn-close').on('click', function(){
+        $('.modal-wrap').fadeOut();
+        $('.popup').fadeOut();
+    });
+    
+//!  *********************** kms***********************추가 !// 
+    
+    
 });
 
 // breadcrumbs toggle
