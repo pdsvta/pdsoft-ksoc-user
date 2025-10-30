@@ -2607,8 +2607,16 @@
     max-width: 17rem;
 }
 
+.ply-reg__input--max180 {
+    max-width: 18rem;
+}
+
 .ply-reg__input--max200 {
     max-width: 20rem;
+}
+
+.ply-reg__input--max400 {
+    max-width: 40rem;
 }
 
 .ply-reg__input--min750 {
@@ -3171,6 +3179,11 @@
 }
 
 .ply-reg__adr-group .ply-reg__textarea:focus {
+    outline: none;
+    border: 1px solid var(--color-primary-normal);
+}
+
+.ply102026__box textarea:focus {
     outline: none;
     border: 1px solid var(--color-primary-normal);
 }
@@ -6112,6 +6125,10 @@
     margin-top: 1rem;
 }
 
+.ply102007__group.mb2 {
+    margin-bottom: 2rem;
+}
+
 .ply102007__group.gap05 {
     gap: .5rem;
 }
@@ -6547,7 +6564,8 @@
 .ply102024__question {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 2rem;
+    margin-top: 5rem;
 }
 
 .ply102024__item {
@@ -6555,11 +6573,12 @@
     align-items: center;
     justify-content: space-between;
     background: #fff;
-    border-radius: 12px;
-    padding: 14px 18px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 2rem;
+    padding: 0 7rem;
+    height: 7rem;
     cursor: pointer;
     transition: background 0.2s ease;
+    border: 1px solid #ddd;
 }
 
 .ply102024__item:hover {
@@ -6567,30 +6586,171 @@
 }
 
 .ply102024__dot {
-    width: 6px;
-    height: 6px;
-    background: #c4c4c4;
+    width: 1rem;
+    height: 1rem;
+    background: #d9d9d9;
     border-radius: 50%;
     flex-shrink: 0;
-    margin-right: 10px;
+    margin-right: 2rem;
 }
 
 .ply102024__title {
     flex: 1;
-    color: #222;
-    font-size: 15px;
-    line-height: 1.5;
+    color: #333;
+    font-size: 2.1rem;
+    font-weight: 400;
 }
 
 .ply102024__icon {
-    width: 16px;
-    height: 16px;
+    width: 1.5rem;
+    height: .8rem;
     flex-shrink: 0;
-    margin-left: 12px;
     transition: transform 0.3s ease;
 }
 
-/* nếu sau này bạn toggle mở câu trả lời thì có thể thêm class .active để xoay mũi tên */
 .ply102024__item.active .ply102024__icon {
     transform: rotate(180deg);
+}
+
+.ply102025__text-left {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.ply102026__row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.ply102026__text {
+    font-weight: 400;
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 150%;
+    letter-spacing: -1px;
+}
+
+.ply102026__text p {
+    font-weight: 600;
+    margin-bottom: .5rem;
+    font-size: 1.7rem;
+}
+
+.ply102026__row img {
+    width: 6.8rem;
+    height: 6.2rem;
+}
+
+.ply102026__box {
+    padding: 0 2rem;
+}
+
+.ply102026__group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.ply102026__img {
+    width: 16rem;
+    height: 4rem;
+}
+
+.ply102026__btn {
+    width: 1.9rem;
+    height: 1.8rem;
+}
+
+.hpy02__table tbody .ply102027__note--blue {
+    color: #0C54B8;
+}
+
+.hpy02__table tbody .ply102027__note--red {
+    color: #C60000;
+}
+
+.ply__group--list2 {
+    display: flex;
+    gap: 1rem;
+    padding: 5rem 7rem 3rem;
+    justify-content: end;
+}
+
+.ply__group--item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 4rem;
+    color: #111;
+    border-radius: .5rem;
+    border: 1px solid #DDDDDD;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 1.7rem;
+    transition: all 0.2s ease;
+}
+
+.ply__group--item2.active {
+    color: #0C54B8;
+    border: 1px solid #0C54B8;
+}
+
+.ply__group--item2:nth-child(1).active img {
+    content: url("../../images/icons/document-blue-icon.png");
+}
+
+.ply__group--item2:nth-child(2).active img {
+    content: url("../../images/icons/mouse-blue-icon.png");
+}
+
+.ply__group--item2:nth-child(3).active img {
+    content: url("../../images/icons/search-blue-icon.png");
+}
+
+.ply__group--item2:hover {
+    color: #0C54B8;
+    border: 1px solid #0C54B8;
+    cursor: pointer;
+}
+
+.ply__group--item2:nth-child(1) img {
+    width: auto;
+    height: 2rem;
+    transition: all 0.2s ease;
+}
+
+.ply__group--item2:nth-child(2) img {
+    width: auto;
+    height: 2.4rem;
+    transition: all 0.2s ease;
+}
+
+.ply__group--item2:nth-child(3) img {
+    width: auto;
+    height: 2.02rem;
+    transition: all 0.2s ease;
+}
+
+.ply__group--item2:nth-child(1):hover img {
+    content: url("../../images/icons/document-blue-icon.png");
+}
+
+.ply__group--item2:nth-child(2):hover img {
+    content: url("../../images/icons/mouse-blue-icon.png");
+}
+
+.ply__group--item2:nth-child(3):hover img {
+    content: url("../../images/icons/search-blue-icon.png");
+}
+
+.ply102028__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem 0;
 }
