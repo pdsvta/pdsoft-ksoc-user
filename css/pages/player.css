@@ -5783,7 +5783,7 @@
 }
 
 .ply__group--item {
-    border: 1px solid #ddd;
+    border: 1.5px solid #ddd;
     border-radius: 1.5rem;
     width: 10rem;
     height: 9.3rem;
@@ -5812,11 +5812,12 @@
 
 .ply__group--item:hover {
     transform: translateY(-2px);
-    border: 1px solid #0C54B8;
+    border: 1.5px solid #0C54B8;
 }
 
 .ply__group--item:hover p {
     color: #0C54B8;
+    font-weight: 600;
 }
 
 .ply__group--item:nth-child(1):hover img {
