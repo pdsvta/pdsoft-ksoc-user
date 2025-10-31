@@ -3243,6 +3243,12 @@
     font-size: 1.5rem;
 }
 
+.tour__infoTable2 th,
+.tour__infoTable2 td {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .info__inputwrap {
     display: flex;
     align-items: center;

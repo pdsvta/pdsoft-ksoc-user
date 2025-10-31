@@ -3166,7 +3166,7 @@ a.ui-button:active,
 .indv__block {
     border: 1px solid #ddd;
     border-radius: 30px;
-    padding: 6rem;
+    padding: 5rem;
     background: #fff;
     overflow: hidden;
 }
@@ -3626,6 +3626,10 @@ a.ui-button:active,
 
 .indv__btn2:hover {
     opacity: 0.7;
+}
+
+.indv__btn2.ml30 {
+    margin-left: 3rem;
 }
 
 .indv__para--h1 {
@@ -4605,4 +4609,18 @@ a.ui-button:active,
 
 .guide__content-5-1 .guide__content-extra:first-child:after {
     content: '5'
+}
+
+.videoMoviePreview {
+    cursor: pointer;
+    height: 38rem;
+    width: 70rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 3rem auto 0;
+}
+
+.table__row-normal td,
+.table__row-normal th {
+    font-weight: 400 !important;
 }
