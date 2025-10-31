@@ -2780,6 +2780,10 @@
     letter-spacing: -1px;
 }
 
+.hpy02__label.fs17 {
+    font-size: 1.7rem;
+}
+
 .hpy02__label.fw400 {
     font-weight: 400;
 }
@@ -3142,6 +3146,10 @@
     gap: 4.3rem;
 }
 
+.tour__group.gap50 {
+    gap: 5rem;
+}
+
 .tour__group.m10 {
     margin: 1rem 0;
 }
@@ -3166,6 +3174,10 @@
 
 .tour__group--input.gap10 {
     gap: 1rem;
+}
+
+.tour__group--input.gap30 {
+    gap: 3rem;
 }
 
 .tour__table .tour__btn {
@@ -3930,4 +3942,84 @@
 
 .tour401007__popup-more {
     padding-left: 4rem;
+}
+
+.hpy__subtitle {
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.tour401008__text {
+    text-align: center;
+    font-size: 2.1rem;
+    font-size: 400;
+    color: #666;
+}
+
+.tour401008__text b {
+    font-weight: 600;
+}
+
+.tour401008__title {
+    text-align: center;
+    color: #111;
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+.tour401008__title b {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
+.tour401008__box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+
+.tour401008__item {
+    border-radius: 2rem;
+    border: 1px solid #ddd;
+    padding: 3rem 4rem;
+    height: 14.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #111;
+}
+
+.tour401008__des h4 {
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+
+.tour401008__des p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: .5rem 0 1rem;
+}
+
+.tour401008__des p b {
+    font-weight: 600;
+}
+
+.tour401008__tag {
+    height: 2.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.tour401008__tag span {
+    background: #0C54B8;
+    border-radius: .5rem;
+    padding: .4rem .9rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
 }

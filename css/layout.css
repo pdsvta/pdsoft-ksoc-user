@@ -79,6 +79,10 @@ legend {
     margin-bottom: 5rem;
 }
 
+.title.mb2 {
+    margin-bottom: 2rem;
+}
+
 .title h2 {
     font-weight: 600;
     font-size: 2.4rem;
