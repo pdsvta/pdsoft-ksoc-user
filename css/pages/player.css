@@ -390,6 +390,7 @@
 }
 
 
+
 .ply__tit_desc {
     width: 100%;
     text-align: center;
@@ -5199,7 +5200,7 @@
     color: #333;
     padding: 0 7rem;
     border-radius: 2rem;
-    font-size: 2.1rem;
+    font-size: 1.7rem;
     height: 7rem;
 }
 
@@ -5233,7 +5234,7 @@
 }
 
 .qz__item img {
-    width: 1.5rem;
+    width: 1.2rem;
     height: auto;
     object-fit: contain;
     transform: rotate(180deg);
@@ -6153,7 +6154,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .3rem;
+    gap: .4rem;
     font-size: 1.5rem;
     font-weight: 600;
     color: #333;
@@ -6170,8 +6171,8 @@
 }
 
 .ply102009__phone img {
-    width: .842rem;
-    height: 1.071rem;
+    width: auto;
+    height: 1.751rem;
 }
 
 .ply102009__table {
@@ -6216,7 +6217,7 @@
 .ply102009__tag {
     color: #0C54B8;
     border: 1px solid #0C54B8;
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 400;
     width: 5rem;
     height: 2rem;
@@ -6284,6 +6285,7 @@
     border: 1px solid #ddd;
     appearance: none;
     display: inline-block;
+    cursor: pointer;
 }
 
 .ply102011__checkbox::before {
@@ -6573,49 +6575,6 @@
     margin-top: 5rem;
 }
 
-.ply102024__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    border-radius: 2rem;
-    padding: 0 7rem;
-    height: 7rem;
-    cursor: pointer;
-    transition: background 0.2s ease;
-    border: 1px solid #ddd;
-}
-
-.ply102024__item:hover {
-    background: #fafafa;
-}
-
-.ply102024__dot {
-    width: 1rem;
-    height: 1rem;
-    background: #d9d9d9;
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin-right: 2rem;
-}
-
-.ply102024__title {
-    flex: 1;
-    color: #333;
-    font-size: 2.1rem;
-    font-weight: 400;
-}
-
-.ply102024__icon {
-    width: 1.5rem;
-    height: .8rem;
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-}
-
-.ply102024__item.active .ply102024__icon {
-    transform: rotate(180deg);
-}
 
 .ply102025__text-left {
     text-align: left;
@@ -6768,6 +6727,7 @@
     border: 1px solid #ddd;
     appearance: none;
     display: inline-block;
+    cursor: pointer;
     background: #DDDDDD;
 }
 
@@ -6784,4 +6744,44 @@
     left: 50%;
     transform: translate(-50%, -35%) rotate(-45deg);
     transform-origin: 25% 25%;
+}
+
+.ply102004__box {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ply102004__text {
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.ply102004__text p {
+    line-height: 150%;
+}
+
+.ply102004__text span {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.ply102004__pic {
+    max-width: 70rem;
+    margin: 3rem auto;
+}
+
+.ply102004__bottom {
+    padding: 3rem 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #DDDDDD;
+}
+
+.ply102004__top {
+    padding: 0 2rem;
 }

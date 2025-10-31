@@ -1323,6 +1323,7 @@
     font-weight: 400;
     font-size: 1.3rem;
     color: #333333;
+    cursor: pointer;
 }
 
 .selectbox option {
@@ -3134,6 +3135,10 @@ a.ui-button:active,
     font-weight: 600;
 }
 
+.indv__tit.mb5 {
+    margin-bottom: 5rem;
+}
+
 .indv__tit--mt30 {
     margin-top: 3rem;
 }
@@ -3164,6 +3169,10 @@ a.ui-button:active,
     padding: 6rem;
     background: #fff;
     overflow: hidden;
+}
+
+.indv__block.bd5 {
+    border-radius: 5rem;
 }
 
 .indv__block--mt20 {
@@ -3202,9 +3211,15 @@ a.ui-button:active,
     color: #666;
 }
 
+.indv__block h4.gray span {
+    color: #0C54B8;
+    font-weight: 600;
+}
+
 .indv__block h4.blue {
     color: #0C54B8;
     font-weight: 600;
+    background: transparent;
 }
 
 .indv__sub--tit {
@@ -3214,12 +3229,20 @@ a.ui-button:active,
     margin-bottom: .5rem;
 }
 
+.indv__sub--tit.fs15 {
+    font-size: 1.5rem;
+}
+
 .indv__sub--mt10 {
     margin-top: 1rem;
 }
 
 .indv__sub--mt20 {
     margin-top: 2rem;
+}
+
+.indv__sub--mb20 {
+    margin-bottom: 2rem;
 }
 
 .indv__block--text {
@@ -3352,6 +3375,10 @@ a.ui-button:active,
     bottom: 47px;
     left: 374px;
     height: 80px;
+}
+
+.indv__guide.mb3 {
+    margin-bottom: 3rem;
 }
 
 .indv__note-img {
@@ -4317,6 +4344,10 @@ a.ui-button:active,
 
 .guide__container {
     padding: 0 1rem;
+}
+
+.guide__container.p0 {
+    padding: 3rem 0 0;
 }
 
 .guide__tab {
