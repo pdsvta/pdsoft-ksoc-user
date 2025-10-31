@@ -215,6 +215,10 @@
     min-width: 11rem;
 }
 
+.tour__btn--max90 {
+    min-width: 9rem;
+}
+
 .tour__info {
     position: relative;
     background: #F9F9F9;
@@ -1926,6 +1930,10 @@
     min-width: 15rem;
 }
 
+.hpy-reg__btn--min100 {
+    min-width: 10rem;
+}
+
 .hpy-reg__btn--min80 {
     min-width: 8rem;
 }
@@ -1944,6 +1952,10 @@
 
 .hpy-reg__btn--min83 {
     min-width: 8.3rem;
+}
+
+.hpy-reg__btn--min40 {
+    min-width: 4rem;
 }
 
 .hpy-reg__btn--min74 {
