@@ -389,6 +389,7 @@
     padding: 0 2rem;
 }
 
+
 .ply__tit_desc {
     width: 100%;
     text-align: center;
@@ -6239,8 +6240,11 @@
     align-items: center;
     gap: 5rem;
     border-bottom: 1px solid #ddd;
-
     padding: 3rem 2rem;
+}
+
+.ply102011__item.bt1 {
+    border-top: 1px solid #ddd;
 }
 
 .ply102011__content {
@@ -6754,4 +6758,30 @@
     gap: 2rem;
     font-size: 1.5rem;
     padding: 1rem 2rem 0;
+}
+
+.ply102029__checkbox {
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: .5rem;
+    border: 1px solid #ddd;
+    appearance: none;
+    display: inline-block;
+    background: #DDDDDD;
+}
+
+.ply102029__checkbox::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 4px;
+    border: 3px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%) rotate(-45deg);
+    transform-origin: 25% 25%;
 }
