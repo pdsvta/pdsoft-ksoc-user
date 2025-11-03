@@ -3154,6 +3154,10 @@
     margin: 1rem 0;
 }
 
+.tour__group.mt10 {
+    margin-top: 1rem;
+}
+
 .tour__group--mb30 {
     margin-bottom: 3rem;
 }
@@ -4022,4 +4026,216 @@
     color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.tour401010__box1 {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    box-sizing: border-box;
+}
+
+.school-card__image {
+    flex: 0 0 36rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.school-card__image img {
+    width: 36rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.school-card__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.school-card__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    color: #111;
+}
+
+.school-card__title.fs21 {
+    font-size: 2.1rem;
+}
+
+
+
+
+
+
+
+.tour401010__box2 {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tour401010__item {
+    height: 26.5rem;
+    width: 46rem;
+    background: #F5F5F5;
+    border-radius: 5rem;
+    border: 1px solid #DDDDDD;
+}
+
+.tour401010__item.w580 {
+    width: 58rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 7rem;
+}
+
+.tour401010__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+    padding: 8.2rem 7rem;
+}
+
+.tour401010__icon img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.tour401010__icon {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour401010__number p {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: -1px;
+    line-height: 138%;
+}
+
+.tour401010__number a {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: -1px;
+}
+
+.tour401010__pic {
+    min-width: 15rem;
+}
+
+.school__section {
+    position: relative;
+}
+
+.school-detail {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+}
+
+.school-detail li {
+    display: contents;
+}
+
+.school-detail .label {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #111;
+    position: relative;
+    padding: 1.3rem 2rem 1.3rem 2rem;
+    white-space: nowrap;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.school-detail .label::before {
+    content: "•";
+    position: absolute;
+    left: .5rem;
+    top: 12px;
+    color: #111;
+}
+
+.school-detail .value {
+    padding: 1.3rem 0;
+    word-break: keep-all;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+}
+
+.school-detail li:last-child .label,
+.school-detail li:last-child .value {
+    border-bottom: none;
+}
+
+.school-detail li:first-child .label,
+.school-detail li:first-child .value {
+    margin-top: -1.3rem;
+}
+
+
+
+
+
+
+
+
+
+.info-list {
+    border-top: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.info-list li {
+    display: contents;
+    color: #111;
+}
+
+
+.info-list .label {
+    font-weight: 600;
+    position: relative;
+    padding-left: 2.5rem;
+    white-space: nowrap;
+    border-bottom: 1px solid #ddd;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-list .label::before {
+    content: "•";
+    position: absolute;
+    left: 1rem;
+    color: #111;
+}
+
+.info-list .value {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid #ddd;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
 }

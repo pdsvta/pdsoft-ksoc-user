@@ -3291,23 +3291,23 @@ a.ui-button:active,
 }
 
 .indv__guide a.linkBtn_01 {
-    left: 208px;
-    top: 130px;
+    left: 214px;
+    top: 134px;
 }
 
 .indv__guide a.linkBtn_02 {
-    left: 374px;
-    top: 47px;
+    left: 384px;
+    top: 50px;
 }
 
 .indv__guide a.linkBtn_03 {
-    left: 372px;
-    top: 210px;
+    left: 385px;
+    top: 217px;
     width: 315px;
 }
 
 .indv__guide .linkBtn_03_1 {
-    left: 0;
+    left: -.3rem;
     top: 0;
 }
 
@@ -3317,25 +3317,25 @@ a.ui-button:active,
 }
 
 .indv__guide a.linkBtn_04 {
-    left: 706px;
-    top: 130px;
+    left: 723px;
+    top: 135px;
 }
 
 .indv__guide a.linkBtn_05 {
-    left: 706px;
-    top: 295px;
+    left: 723px;
+    top: 304px;
 }
 
 .indv__guide a.linkBtn_06 {
-    left: 375px;
-    top: 45px;
+    left: 388px;
+    top: 48px;
     width: 315px;
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_06_1 {
     top: 0;
-    left: 0;
-    width: 14.5rem;
+    left: -.6rem;
+    width: 15rem;
 }
 
 .indv__guide .linkBtn_06_2 {
@@ -3344,25 +3344,25 @@ a.ui-button:active,
 
 .indv__guide a.linkBtn_07 {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 50%, 0 50%);
-    width: 483px;
-    top: 211px;
-    left: 375px;
-    height: 320px;
+    width: 494px;
+    top: 218px;
+    left: 382px;
+    height: 324px;
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_07_1 {
     left: 0;
     top: 0;
-    width: 14.5rem;
+    width: 15rem;
 }
 
 .indv__guide .linkBtn_07_2 {
-    left: 163px;
+    left: 170px;
     top: 0;
 }
 
 .indv__guide .linkBtn_07_3 {
-    left: 329px;
+    left: 340px;
     top: 0;
 }
 
@@ -3372,8 +3372,8 @@ a.ui-button:active,
 }
 
 .indv__guide .linkBtn_08 {
-    bottom: 47px;
-    left: 374px;
+    bottom: 49px;
+    left: 384px;
     height: 80px;
 }
 
