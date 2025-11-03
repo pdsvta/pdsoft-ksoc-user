@@ -1798,6 +1798,11 @@
     max-width: 14rem;
 }
 
+.hpy-reg__input--max190 {
+    max-width: 19rem;
+    min-width: 19rem;
+}
+
 .hpy-reg__input--max130 {
     max-width: 13rem;
 }
@@ -1961,6 +1966,11 @@
 .hpy-reg__btn--min74 {
     min-width: 7.4rem;
 }
+
+.hpy-reg__btn--min500 {
+    min-width: 50rem;
+}
+
 
 .hpy-reg__btn--h30 {
     height: 3rem;
@@ -4064,8 +4074,14 @@
 
 .school-card__title.fs21 {
     font-size: 2.1rem;
+    padding: 0 2rem 2rem;
 }
 
+.school-card__title.bd1 {
+    border-top: 1px solid #DDDDDD;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
 
 
 
@@ -4202,6 +4218,7 @@
     border-top: 1px solid #ddd;
     display: grid;
     grid-template-columns: max-content 1fr;
+    margin: 2rem 2rem 0;
 }
 
 .info-list li {
@@ -4238,4 +4255,46 @@
     height: 5rem;
     display: flex;
     align-items: center;
+}
+
+.tour401010__box3 .hpy__input {
+    text-align: center;
+    font-weight: 600;
+    color: #111;
+}
+
+.tour401010__box3 .hpy02__table thead th {
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    border-left: none;
+    border-right: none;
+}
+
+.tour401010__box3 .hpy02__table {
+    border-left: none;
+    border-right: none;
+}
+
+.tour401010__box3 .tour401010__btn {
+    margin: 2rem 0 0;
+}
+
+.tour401010__card3 {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.tour401010__text3 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: center;
+    color: #666;
+    height: 5rem;
+    padding: 1.6rem 2rem;
+}
+
+.tour401010__image {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
 }
