@@ -7449,3 +7449,269 @@ legend {
 .indv__guide.mb3 {
 	margin-bottom: 3rem;
 }
+
+
+.guide__container {
+	padding: 0 1rem;
+}
+
+.guide__container.p0 {
+	padding: 3rem 0 0;
+}
+
+.guide__tab {
+	margin-bottom: 3rem;
+}
+
+.guide__tab ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 6rem;
+}
+
+.guide__tab ul li {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ddd;
+	border-radius: 2rem;
+	padding: 0 1rem;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #111;
+	height: 100%;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.guide__tab ul li:hover,
+.guide__tab ul li.on {
+	border: 1px solid #0C54B8;
+	background: #0C54B8;
+	color: #fff;
+}
+
+.guide__contents .guide__content {
+	display: none;
+	position: relative;
+}
+
+.guide__contents .guide__content.on {
+	display: block;
+}
+
+.guide__contents .guide__content>* {
+	z-index: 1;
+	position: relative;
+}
+
+.guide__contents .guide__content::after {
+	content: '';
+	color: #0C54B8;
+	font-weight: 800;
+	font-size: 50rem;
+	position: absolute;
+	bottom: -30rem;
+	right: -8rem;
+	opacity: 7%;
+	z-index: 0;
+}
+
+.guide__contents .guide__content-1::after {
+	content: '1';
+}
+
+.guide__contents .guide__content-2::after {
+	content: '2';
+}
+
+.guide__contents .guide__content-3::after {
+	content: '3';
+}
+
+.guide__contents .guide__content-3-1::after {
+	content: '3-1';
+}
+
+.guide__contents .guide__content-4::after {
+	content: '4';
+}
+
+.guide__contents .guide__content-5::after {
+	content: '5';
+}
+
+.guide__contents .guide__content-5-1::after {
+	content: '5-1';
+}
+
+.guide__contents .guide__content-6::after {
+	content: '6';
+}
+
+.guide__contents .guide__content .mb20 {
+	margin-bottom: 2rem;
+}
+
+.guide__container .indv__flex {
+	display: flex;
+}
+
+.indv__flex .indv__flex-l,
+.indv__flex .indv__flex-r {
+	width: 100%;
+}
+
+.indv__list--text li {
+	position: relative;
+}
+
+.indv__list--text li em {
+	font-weight: 600;
+}
+
+.indv__list--text>li {
+	padding-left: 2.5rem;
+	counter-increment: nmbr;
+	margin-bottom: 1rem;
+}
+
+.indv__list--text>li:last-child {
+	margin-bottom: 0;
+}
+
+.indv__list--text li::before {
+	content: counter(nmbr);
+	border: 2px solid #FF0000;
+	border-radius: 50%;
+	display: inline-flex;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #FF0000;
+	width: 1.3rem;
+	height: 1.3rem;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
+
+.indv__list--text li.indv__list--text-3::before {
+	content: '3';
+}
+
+.indv__list--text-tit>li {
+	margin-bottom: 2rem;
+}
+
+.indv__list--text-tit>li:last-child {
+	margin-bottom: 0;
+}
+
+.indv__list--text-tit>li::before {
+	top: 8px;
+}
+
+.indv__list--text-tit>li>h1 {
+	font-size: 2.1rem;
+	font-weight: 600;
+}
+
+.indv__list--text-tit>li>ul {
+	margin-top: 1rem;
+}
+
+.indv__list--text-tit>li>ul>li {
+	padding-left: 2rem;
+	color: #666;
+}
+
+.indv__list--text-tit>li>ul>li::before {
+	content: '';
+	background: #666;
+	width: 4px;
+	height: 4px;
+	border: 0;
+	top: 10px;
+}
+
+.indv__text-blue {
+	color: #0C54B8;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.mt20 {
+	margin-top: 2rem;
+}
+
+.indv__flex-img {
+	display: flex;
+	justify-content: end;
+	gap: 5rem;
+	margin-top: -5rem;
+}
+
+.indv__flex-img>img {
+	height: 13.5rem;
+	width: auto;
+	object-fit: contain;
+}
+
+.indv__flex-imgGroup {
+	display: flex;
+	align-items: center;
+	gap: 8rem;
+	margin-top: 2rem;
+}
+
+.indv__flex-imgGroup img {
+	height: 30rem;
+	margin-bottom: 2rem;
+}
+
+.guide__content .guide__content-extra {
+	margin-bottom: 3rem;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 3.5rem;
+	position: relative;
+}
+
+.guide__content .guide__content-extra:last-child {
+	margin-bottom: 0;
+	border: 0;
+	padding: 0;
+}
+
+.guide__content .guide__content-extra:first-child:after {
+	content: '';
+	color: #0C54B8;
+	font-weight: 800;
+	font-size: 50rem;
+	position: absolute;
+	bottom: -23rem;
+	right: -5.5rem;
+	opacity: 7%;
+	z-index: 0;
+}
+
+.guide__content .guide__content-extra:first-child::before {
+	content: '';
+	width: 100%;
+	height: 4rem;
+	background: #fff;
+	position: absolute;
+	bottom: -4.1rem;
+	z-index: 1;
+}
+
+.guide__content-3-1 .guide__content-extra:first-child:after {
+	content: '3'
+}
+
+.guide__content-5-1 .guide__content-extra:first-child:after {
+	content: '5'
+}
