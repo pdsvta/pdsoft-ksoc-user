@@ -1868,6 +1868,14 @@
     cursor: pointer;
 }
 
+.hpy-reg__btn--white {
+    background: #fff;
+    color: #111;
+    border: 1px solid #DDDDDD;
+    border-radius: .5rem;
+}
+
+
 
 .hpy-reg__btn.white {
     background: #fff;
@@ -1965,6 +1973,10 @@
 
 .hpy-reg__btn--min74 {
     min-width: 7.4rem;
+}
+
+.hpy-reg__btn--min190 {
+    min-width: 19rem;
 }
 
 .hpy-reg__btn--min500 {
@@ -4044,6 +4056,7 @@
     align-items: center;
     gap: 5rem;
     box-sizing: border-box;
+    padding: 0 2rem;
 }
 
 .school-card__image {
@@ -4083,9 +4096,26 @@
     padding-top: 3rem;
 }
 
+.school-card__list {
+    display: flex;
+}
+
+.tour401010__box1 .info-list {
+    margin: 0;
+}
+
+.school-card__list .w260 {
+    width: 26rem;
+}
 
 
+.school-card__list .w250 {
+    width: 25rem;
+}
 
+.info-list.bd0 {
+    border-top: none;
+}
 
 
 .tour401010__box2 {
@@ -4207,13 +4237,6 @@
 }
 
 
-
-
-
-
-
-
-
 .info-list {
     border-top: 1px solid #ddd;
     display: grid;
@@ -4277,6 +4300,10 @@
 
 .tour401010__box3 .tour401010__btn {
     margin: 2rem 0 0;
+}
+
+.tour401010__box3 .tour401010__btn.right {
+    text-align: right;
 }
 
 .tour401010__card3 {
