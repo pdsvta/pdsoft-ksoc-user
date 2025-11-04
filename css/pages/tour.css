@@ -1374,6 +1374,14 @@
     width: 100%;
 }
 
+.hpy__select--min150 {
+    min-width: 15rem;
+}
+
+.hpy__select--min150 select {
+    width: 100%;
+}
+
 .hpy__select .custom-select-trigger {
     min-width: 12rem;
     height: 4.5rem;
@@ -1823,6 +1831,11 @@
 .hpy-reg__input--max200 {
     max-width: 20rem;
     min-width: 20rem;
+}
+
+.hpy-reg__input--max225 {
+    max-width: 22.5rem;
+    min-width: 22.5rem;
 }
 
 .hpy-reg__input--max140 {
@@ -2837,12 +2850,23 @@
     color: #111;
 }
 
+.hpy02__total.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hpy02__total--p30 {
     padding: 3rem 2rem 3rem;
 }
 
 .hpy02__total--p023 {
     padding: 0 2rem 3rem;
+
+}
+
+.hpy02__total--p322 {
+    padding: 3rem 2rem 2rem;
 
 }
 
@@ -3204,6 +3228,10 @@
 
 .tour__group--input.gap30 {
     gap: 3rem;
+}
+
+.tour__group--input.p02 {
+    padding: 0 2rem;
 }
 
 .tour__table .tour__btn {
@@ -4324,4 +4352,24 @@
     display: flex;
     gap: 2rem;
     padding: 0 2rem;
+}
+
+.tour204002__table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.tour204002__table tbody tr:hover td:nth-child(1) {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
+
+.tour401008__item:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.tour401008__item:hover .tour401008__des h4 {
+    color: #0C54B8;
 }
