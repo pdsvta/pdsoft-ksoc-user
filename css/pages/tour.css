@@ -1944,6 +1944,10 @@
     min-width: 7rem;
 }
 
+.hpy-reg__btn--min180 {
+    min-width: 18rem;
+}
+
 .hpy-reg__btn--min60 {
     min-width: 6rem;
 }
@@ -2881,12 +2885,21 @@
     border-bottom: 1px solid #ddd;
 }
 
+.hpy02__box.p2 {
+    padding: 0 2rem;
+    border-bottom: none;
+}
+
 .hpy02__table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
+}
+
+.hpy02__table.bd {
+    border-bottom: 1px solid #ddd;
 }
 
 .hpy02__table thead th {
@@ -3651,6 +3664,11 @@
     font-weight: 600;
 }
 
+.hpy02__table.height-auto tbody td {
+    height: auto;
+    padding: 0.4rem 0;
+}
+
 .hpy02__table tbody .tour__text--left {
     text-align: left;
     padding-left: 1.5rem;
@@ -4371,5 +4389,15 @@
 }
 
 .tour401008__item:hover .tour401008__des h4 {
+    color: #0C54B8;
+}
+
+.tour305001__table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.tour305001__table tbody tr:hover td:nth-child(2) {
+    font-weight: 600;
     color: #0C54B8;
 }

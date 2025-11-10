@@ -4756,3 +4756,37 @@ a.ui-button:active,
     font-weight: 400;
     color: #111;
 }
+
+.indv__grouptit {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.indv__grouptit p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #111;
+}
+
+.indv__305--line {
+    padding: 3.8rem 2rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 2rem;
+}
+
+.indv__305--line.p27 {
+    padding: 2.7rem 0;
+}
+
+.indv__filter {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    padding: 3rem 5rem 2rem;
+}
