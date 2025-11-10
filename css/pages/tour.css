@@ -1811,6 +1811,11 @@
     min-width: 19rem;
 }
 
+.hpy-reg__input--max180 {
+    max-width: 18rem;
+    min-width: 18rem;
+}
+
 .hpy-reg__input--max130 {
     max-width: 13rem;
 }
@@ -3189,8 +3194,16 @@
     padding: 0 2rem;
 }
 
+.tour__group.p05 {
+    padding: 0 5rem;
+}
+
 .tour__group.jc-ct {
     justify-content: center;
+}
+
+.tour__group.jc-sb {
+    justify-content: space-between;
 }
 
 .tour__group.gap10 {
@@ -4372,15 +4385,6 @@
     padding: 0 2rem;
 }
 
-.tour204002__table tbody tr:hover {
-    background-color: #f9fbff;
-    cursor: pointer;
-}
-
-.tour204002__table tbody tr:hover td:nth-child(1) {
-    font-weight: 600;
-    color: #0C54B8;
-}
 
 
 .tour401008__item:hover {
@@ -4400,4 +4404,326 @@
 .tour305001__table tbody tr:hover td:nth-child(2) {
     font-weight: 600;
     color: #0C54B8;
+}
+
+.date-selector {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    background-color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    gap: 1.5rem;
+    height: 4rem;
+    min-width: 15rem;
+    width: 100%;
+}
+
+.date-selector .arrow-btn {
+    border: none;
+    border-radius: 10rem;
+}
+
+.date-selector .arrow-btn img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 10rem;
+}
+
+.date-selector .arrow-btn:hover {
+    color: #000;
+}
+
+.tour402001__icon.pl20 {
+    padding-left: 2rem;
+}
+
+.tour402001__icon.pr20 {
+    padding-right: 2rem;
+}
+
+.tour402001__icon img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.tour402001__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    border-radius: 5rem;
+    border: 1px solid #ddd;
+    margin: 2rem 0;
+}
+
+.tour402001__item {
+    width: 13.1rem;
+    text-align: center;
+    color: #111;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tour402001__item:hover {
+    color: #FF0000;
+}
+
+.tour402001__item.active {
+    color: #FF0000;
+}
+
+.tour402001__item p {
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.tour402001__item span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.tour402001__table {
+    width: 100%;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 2rem;
+}
+
+.tour402001__table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.tour402001__table tbody tr:hover td:nth-child(2) {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
+.tour402001__table table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #111;
+    border: 1px solid #ddd;
+}
+
+.tour402001__table td {
+    padding: 1.7rem 0;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    font-weight: 400;
+    height: 7rem;
+}
+
+.tour402001__table thead th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    vertical-align: middle;
+    height: 5rem;
+}
+
+.tour402001__table .day-row {
+    border-top: 1px solid #DDDDDD;
+    padding-top: 1.7rem;
+}
+
+.tour402001__table .day-row td {
+    padding: 3.4rem 0 1.7rem;
+}
+
+.tour402001__table .day-row-bottom td {
+    padding: 1.7rem 0 3.4rem;
+}
+
+.tour402001__table .day-row td.day {
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 100%;
+}
+
+.tour402001__table .day-row td.day span {
+    font-size: 1.3rem;
+}
+
+.tour402001__table td {
+    white-space: nowrap;
+}
+
+.tour402001__table td:nth-child(3) {
+    white-space: normal;
+}
+
+.tour402001__table td:last-child {
+    text-align: center;
+}
+
+.tour402001__table .tour402001__center {
+    text-align: center;
+}
+
+.tour402002__box {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tour402002__box .tour402002__calendar {
+    width: 45rem;
+}
+
+.tour402002__box .calendar-box {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 5rem;
+    padding: 5rem;
+}
+
+.tour402002__box .calendar-header {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar-header h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.calendar-header p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: .5rem;
+}
+
+.tour402002__box .calendar-legend {
+    text-align: right;
+    font-size: 1.3rem;
+    padding: 4rem 0 2rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.tour402002__box .dot {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+    margin-left: 2rem;
+}
+
+.tour402002__box .green {
+    background: #179432;
+}
+
+.tour402002__box .purple {
+    background: #551FA0;
+}
+
+.tour402002__box .blue {
+    background: #0C54B8;
+}
+
+.tour402002__box .gray {
+    background: #666666;
+}
+
+.tour402002__box .calendar {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tour402002__box .calendar th {
+    color: #000;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.tour402002__box .calendar td {
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.tour402002__dot {
+    display: flex;
+    gap: .2rem;
+    justify-content: center;
+    margin-top: .3rem;
+}
+
+.tour402002__dot .dot {
+    margin-left: 0;
+    margin-right: 0;
+    width: .8rem;
+    height: .8rem;
+}
+
+.tour402002__box .list-box {
+    flex: 1;
+    border: 1px solid #e5e5e5;
+    border-radius: 5rem;
+    padding: 5rem;
+}
+
+.tour402002__box .section {
+    border: 1px solid #ddd;
+}
+
+.tour402002__box .section.bd0 {
+    border-bottom: none;
+}
+
+.tour402002__box .section h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+    height: 5rem;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.tour402002__box .section ul {
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 2rem 3rem;
+    color: #111;
+}
+
+.tour402002__box .section li {
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.tour402002__box .section li:last-child {
+    margin-bottom: 0;
+}
+
+.tour402002__box .section strong {
+    display: block;
+    font-weight: 600;
 }

@@ -6015,6 +6015,10 @@
     min-width: 30rem;
 }
 
+.selectbox.min100 {
+    min-width: 10rem;
+}
+
 .ply102002__note {
     font-size: 1.3rem;
     font-weight: 400;
