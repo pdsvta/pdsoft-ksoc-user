@@ -4477,9 +4477,9 @@
     cursor: pointer;
 }
 
-.tour402001__item:hover {
-    color: #FF0000;
-}
+/*.tour402001__item:hover {*/
+/*    color: #FF0000;*/
+/*}*/
 
 .tour402001__item.active {
     color: #FF0000;
