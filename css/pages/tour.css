@@ -4922,3 +4922,154 @@
     font-weight: 600;
     color: #0C54B8;
 }
+
+.tour404001__list ul {
+    padding-left: 2rem;
+}
+
+.tour404001__list ul li {
+    list-style: disc;
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.tour404001__line {
+    border: 1px solid #DDDDDD;
+    margin: 3rem 0;
+}
+
+.tour404001__banner {
+    background: #D9D9D9;
+    width: 37.5rem;
+    height: 7.5rem;
+    border-radius: 2rem;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.tour404002__box {
+    border: none;
+}
+
+.tour404002__list p {
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.tour404002__line {
+    border: 1px solid #DDDDDD;
+    margin: 3rem 0;
+}
+
+.tour404002__banner {
+    background: #D9D9D9;
+    width: 37.5rem;
+    height: 7.5rem;
+    border-radius: 2rem;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.tour404003__filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3rem;   
+    margin-bottom: 3rem;
+}
+
+.tour404003__titleFilter {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.tour404003__boxInput {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tour404003__boxInput input[type="text"] {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    color: #CCCCCC;
+    font-size: 1.3rem;
+    padding: 10px 12px;
+}
+
+.tour404003__boxInput input[type="text"]:nth-child(1) {
+    width: 150px;
+}
+
+.tour404003__boxInput input[type="text"]:nth-child(2) {
+    width: 225px;
+}
+
+.tour404003__btnFilter {
+    background: #666666;
+    border: 1px solid #666666;
+    color: #fff;
+    border-radius: 5px;
+    width: 7rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.tour404003__btnFilter:hover {
+    opacity: 0.7;
+}
+
+.tour404003__table tbody td {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tour404003__table thead th {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.tour404003__table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.tour404003__table tbody tr:hover td:nth-child(2) {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
+.tour404004__line {
+    border: 1px solid #DDDDDD;
+    margin: 3rem 0;
+}
+
+.tour404004__banner img {
+    width: 70rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tour404004__btn {
+    background: #666666;
+    border: 1px solid #666666;
+    color: #fff;
+    border-radius: 5px;
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: block;
+    margin: 50px auto 0;
+}
+
+.tour404004__btn:hover {
+    opacity: 0.7;
+}
