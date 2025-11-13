@@ -6007,6 +6007,10 @@
     min-width: 13rem;
 }
 
+.selectbox.min150 {
+    min-width: 15rem;
+}
+
 .selectbox.min120 {
     min-width: 12rem;
 }
