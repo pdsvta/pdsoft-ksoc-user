@@ -2048,6 +2048,10 @@
     min-width: 18rem;
 }
 
+.hpy-reg__btn--min160 {
+    min-width: 16rem;
+}
+
 .hpy-reg__btn--min60 {
     min-width: 6rem;
 }
@@ -5347,4 +5351,137 @@
     color: #111;
     font-weight: 600;
     padding-left: 5rem;
+}
+
+.tour406001__pic img {
+    width: 70rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.tour406001__pic {
+    padding-bottom: 3rem;
+}
+
+.tour406001__pic.bd {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 3rem;
+}
+
+.tour406001__btn {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.tour406002__note {
+    padding: 0 2rem;
+    color: #666;
+}
+
+.tour406002__note span {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.tour406002__note p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tour406002__note ul {
+    line-height: 150%;
+    margin-bottom: 2rem;
+}
+
+.tour406002__note.mt20 {
+    margin-top: 2rem;
+}
+
+.tour406002__note img {
+    width: 70rem;
+    height: auto;
+    margin: 1rem auto 3rem;
+}
+
+.tour406002__wrapper li {
+    position: relative;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tour406002__wrapper li::before {
+    content: '•';
+    position: absolute;
+    left: -1.5rem;
+    right: 0;
+}
+
+.tour406002__pic {
+    text-align: center;
+}
+
+.tour406002__pic img {
+    width: 70rem;
+    height: auto;
+    margin: 3rem auto 2rem;
+}
+
+.tour406002__pic span {
+    text-align: center;
+    color: #111;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.tour406002__table.bd {
+    padding: 0 2rem 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tour406002__table.p02 {
+    padding: 0 2rem 1rem;
+}
+
+.tour406002__table table {
+    width: 100%;
+    border-top: 1px solid #DDDDDD;
+}
+
+.tour406002__table table th {
+    font-weight: 600;
+    background: #F5F5F5;
+    border-bottom: 1px solid #DDDDDD;
+    width: 25rem;
+    padding: 0 2rem;
+    vertical-align: middle;
+    height: 6rem;
+    color: #666;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.tour406002__table table td {
+    border-bottom: 1px solid #DDDDDD;
+    width: 67rem;
+    padding: 0 2rem;
+    vertical-align: middle;
+    height: 6rem;
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.tour406002__table .tour403001__table th {
+    text-align: center;
+}
+
+.tour406002__table .tour403001__table tbody td {
+    text-align: center;
+}
+
+.tour406002__table .tour403001__table {
+    border-bottom: 1px solid #DDDDDD;
 }
