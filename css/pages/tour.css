@@ -5073,3 +5073,608 @@
 .tour404004__btn:hover {
     opacity: 0.7;
 }
+
+.tour405001__titleChild {
+    padding: 0 1.6rem;
+}
+
+.tour405001__box {
+    display: block;
+    padding: 0 1.6rem;
+}
+
+.tour405001__box1 {
+    display: flex;
+    align-items: center;
+}
+
+.tour405001__textLeft {
+    background-color: #F5F5F5;
+    width: 16rem;
+    height: 12rem;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    color: #111111;
+    font-size: 1.7rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour405001__textRight {
+    width: 76rem;
+    height: 12rem;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 22px 30px;
+}
+
+.tour405001__textRight p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 2.2rem;
+}
+
+.tour405001__note {
+    background-color: #F5F5F5;
+    color: #666666;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 6px 10px;
+    margin-top: 5px;
+}
+
+.tour405001__line {
+    border: 1px solid #DDDDDD;
+    margin: 3rem 0;
+}
+
+.tour405001__banner img {
+    width: 92rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tour405001__boxNote {
+    margin-top: 8rem;
+}
+
+.tour405001__box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.tour405001__logo img {
+    width: 13.8rem;
+    height: auto;
+}
+
+.tour405001__subText p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 2.2rem;
+}
+
+.tour405001__subText p:nth-child(3) {
+    text-decoration: underline;
+}
+
+.tour405002__list ul li {
+    list-style: disc;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: #666666;
+    margin: 0 1.2rem 0 3.3rem;
+}
+
+.tour405002__banner {
+    margin: 2.5rem 0;
+}
+
+.tour405002__banner img {
+    width: 70rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tour405002__banner img:nth-child(1) {
+    margin-bottom: 2.5rem;
+}
+
+.tour405002__allBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tour405002__allBtn button {
+    background-color: #666666;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.2rem;
+}
+
+.tour405002__allBtn button:hover {
+    opacity: 0.7;
+}
+
+.tour405003__titleSub {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #666666;
+    padding: 0 1.6rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.tour405003__boxItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tour405003__item {
+    border: 1px solid #DDDDDD;
+    border-radius: 2rem;
+    width: 14.5rem;
+    height: 14.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour405003__item .img1 {
+    width: 36px;
+    height: auto;
+}
+
+.tour405003__item .img2 {
+    width: 30px;
+    height: auto;
+}
+
+.tour405003__item .img3 {
+    width: 35px;
+    height: auto;
+}
+
+.tour405003__item .img4 {
+    width: 39px;
+    height: auto;
+}
+
+.tour405003__item .img5 {
+    width: 57px;
+    height: auto;
+}
+
+.tour405003__item p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111111;
+    margin-top: 1rem;
+}
+
+.tour405003__banner img {
+    width: 76.8rem;
+    height: auto;
+    display: block;
+    margin: 3rem auto 0;
+}
+
+.tour405003__boxService {   
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.tour405003__service {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tour405003__service img {
+    width: 200px;
+    height: auto;
+}
+
+.tour405004__handbook {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tour405004__itemHandbook {
+    border: 1px solid #DDDDDD;
+    border-radius: 20px;
+}
+
+.tour405004__itemHandbook img {
+    width: 215px;
+    height: auto;
+}
+
+.tour405004__itemHandbook p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111111;
+    text-align: center;
+    padding: 1.1rem 0;
+}
+
+.tour405005__handbook {
+    display: flex;
+    gap: 5rem;
+}
+
+.tour405005__imgBook img {
+    width: 215px;
+    height: auto;
+}
+
+.tour405005__nameBook {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.tour405005__tagBook {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.tour405005__tag {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #666666;
+}
+
+.tour405005__desc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour405005__allBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tour405005__allBtn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: #666666;
+    border: 1px solid #666666;
+    color: #fff;
+    border-radius: 5px;
+    width: 11rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tour405005__allBtn button:hover {
+    opacity: 0.7;
+}
+
+.tour405005__allBtn button .img-icon1 {
+    width: 13.97px;
+    height: 14.5px;
+}
+
+.tour405005__allBtn button .img-icon2 {
+    width: 15.98px;
+    height: 8.88px;
+}
+
+.tour405005__btnList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 4rem 5rem 0 0;
+}
+
+.tour405005__btnList button {
+    background: #666666;
+    border: 1px solid #666666;
+    color: #fff;
+    border-radius: 35px;
+    width: 11rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 1.5rem 0px;
+}
+
+.tour405005__btnList:hover {
+    opacity: 0.7;
+}
+
+.tour405006__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5rem 2rem 5rem;
+}
+
+.tour405006__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #111111;
+}
+
+.tour405006__text span {
+    color: #0C54B8;
+}
+
+.tour405006__boxInput {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tour405006__select1 {
+    width: 19rem;
+    height: 4rem;
+    color: #333333;
+    padding: 0.8rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.tour405006__select1 option {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tour405006__select2 {
+    width: 9rem;
+    height: 4rem;
+    color: #333333;
+    padding: 0.8rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.tour405006__select2 option {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tour405006__boxInput input {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    color: #CCCCCC;
+    padding: 0.8rem;
+}
+
+.tour405006__boxImg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.tour405006__item img {
+    width: 290px;
+    height: auto;
+}
+
+.tour405006__desc {
+    padding: 2rem;
+}
+
+.tour405006__text1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 0.5rem;
+}
+
+.tour405006__text2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111111;
+}
+
+.tour405006__wrap-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
+
+.tour405006__pagination-arrow.icon {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tour405006__pagination-arrow.icon:hover {
+    background-color: #eee;
+}
+
+.tour405006__wrap-pagination .icon::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.tour405006__wrap-pagination .icon-start::after {
+    background-image: url(../../images/u-405-006/chevrons-left.svg);
+    height: 15px;
+}
+
+.tour405006__wrap-pagination .icon-prev::after {
+    background-image: url(../../images/u-405-006/chevron-left.svg);
+    height: 15px;
+}
+
+.tour405006__wrap-pagination .icon-next::after {
+    background-image: url(../../images/u-405-006/chevron-right.svg);
+    height: 15px;
+}
+
+.tour405006__wrap-pagination .icon-end::after {
+    background-image: url(../../images/u-405-006/chevrons-right.svg);
+    height: 15px;
+}
+
+.pagination-arrow.icon-next:after {
+    transform: translateX(1px);
+}
+
+.tour405006__pagination-number {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.tour405006__pagination-number li a {
+    width: max-content;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666666;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+
+.tour405006__pagination-number li.active a, .tour405006__pagination-number li:hover a {
+    font-weight: 700;
+    background: #0C54B8;
+    color: #fff;
+}
+
+.tour405007__select {
+    width: 13rem;
+}
+
+.tour404007__table {
+    margin-top: 3rem;
+}
+
+.tour405008__infoPost {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.tour405008__infoPost p {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.tour405008__itemInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tour405008__itemInfo .img-views {
+    width: 17px;
+    height: auto;
+}
+
+.tour405008__itemInfo .img-meta {
+    width: 12.92px;
+    height: auto;
+}
+
+.tour405008__contentPost img {
+    width: 70rem;
+    height: auto;
+    display: block;
+    margin: 5rem auto 0;
+}
+
+.tour405008__note p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour404008__btn {
+    width: 19rem;
+    font-size: 1.5rem;
+}
+
+.tour405008__related {
+    background-color: #F5F5F5;
+    padding: 5rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 5rem;
+    margin-top: 2rem;
+}
+
+.tour405008__itemRelated {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 1.7rem 0;
+}
+
+.tour405008__itemRelated:nth-child(2) {
+    border-top: 0;
+}
+
+.tour405008__postRelated {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.tour405008__btnRelated {
+    display: flex;
+    justify-content: flex-end;
+    margin: 4rem 5.2rem 0 0;
+}
+
+.tour405008__btnRelated button {
+    background-color: #0C54B8;
+    color: #fff;
+    border: 0;
+    border-radius: 3.5rem;
+    padding: 1.5rem 3rem;
+}
+
+.tour405008__btnRelated button:hover {
+    opacity: 0.7;
+}
