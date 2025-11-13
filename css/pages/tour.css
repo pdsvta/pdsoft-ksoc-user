@@ -5460,6 +5460,21 @@
     padding: 0.8rem;
 }
 
+.tour405006__btnFilter {
+    width: 7rem;
+    height: 4rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: #666666;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.tour405006__btnFilter:hover {
+    opacity: 0.7;
+}
+
 .tour405006__boxImg {
     display: flex;
     flex-wrap: wrap;
