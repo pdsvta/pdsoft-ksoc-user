@@ -5485,3 +5485,99 @@
 .tour406002__table .tour403001__table {
     border-bottom: 1px solid #DDDDDD;
 }
+
+.tour4070011__table table {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tour4070011__table table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.tour4070011__table table tbody tr:hover td:nth-child(3) {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
+.tour4070011__table table tbody td:nth-child(3) {
+    text-align: left;
+    padding: 0 2rem;
+    letter-spacing: -1px;
+}
+
+.tour4070012__card {
+    gap: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.tour4070012__card img {
+    width: auto;
+    height: 5.1rem;
+}
+
+.tour4070012__card p {
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.tour4070012__card span {
+    font-weight: 600;
+}
+
+.tour407002__table table {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tour407002__table table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.tour407002__table table tbody tr:hover td:nth-child(2) {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
+.tour407002__table table tbody td:nth-child(2) {
+    text-align: left;
+    padding: 0 2rem;
+    letter-spacing: -1px;
+}
+
+.tour407003__box {
+    display: flex;
+    gap: 5rem;
+    padding: 0 2rem;
+}
+
+.tour407003__banner img {
+    width: 21.5rem;
+    height: auto;
+}
+
+.tour407003__list {
+    flex: 1;
+}
+
+.tour407003__group {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.tour407003__btns {
+    display: flex;
+    gap: .5rem;
+    margin-top: 5rem;
+}
+
+.tour407003__btns img {
+    width: 1.45rem;
+    height: auto;
+    margin-right: .8rem;
+}
