@@ -5671,6 +5671,7 @@
     margin: 4rem 5.2rem 0 0;
 }
 
+<<<<<<< Updated upstream
 .tour405008__btnRelated button {
     background-color: #0C54B8;
     color: #fff;
@@ -5681,4 +5682,52 @@
 
 .tour405008__btnRelated button:hover {
     opacity: 0.7;
+=======
+.tour407003__btns img {
+    width: 1.45rem;
+    height: auto;
+    margin-right: .8rem;
+}
+
+.tour501001__box {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.tour501001__item {
+    width: calc((100% - 5rem)/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tour501001__item p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111;
+    padding: 2rem 2rem;
+}
+
+.tour501001__number {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.tour501001__icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tour501001__icon img {
+    width: 1.7rem;
+    height: auto;
+>>>>>>> Stashed changes
 }
