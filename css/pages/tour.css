@@ -5266,7 +5266,7 @@
     margin: 3rem auto 0;
 }
 
-.tour405003__boxService {   
+.tour405003__boxService {
     width: 80%;
     display: block;
     margin: 0 auto;
@@ -5578,7 +5578,8 @@
     line-height: 1.6rem;
 }
 
-.tour405006__pagination-number li.active a, .tour405006__pagination-number li:hover a {
+.tour405006__pagination-number li.active a,
+.tour405006__pagination-number li:hover a {
     font-weight: 700;
     background: #0C54B8;
     color: #fff;
@@ -5671,7 +5672,6 @@
     margin: 4rem 5.2rem 0 0;
 }
 
-<<<<<<< Updated upstream
 .tour405008__btnRelated button {
     background-color: #0C54B8;
     color: #fff;
@@ -5682,7 +5682,8 @@
 
 .tour405008__btnRelated button:hover {
     opacity: 0.7;
-=======
+}
+
 .tour407003__btns img {
     width: 1.45rem;
     height: auto;
@@ -5729,5 +5730,4 @@
 .tour501001__icon img {
     width: 1.7rem;
     height: auto;
->>>>>>> Stashed changes
 }
