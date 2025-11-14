@@ -5114,7 +5114,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 3rem;   
+    gap: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -5831,7 +5831,6 @@
     opacity: 0.7;
 }
 
-<<<<<<< HEAD
 .tour406001__pic img {
     width: 70rem;
     height: auto;
@@ -6055,15 +6054,12 @@
     margin-top: 5rem;
 }
 
-=======
->>>>>>> 8f192c1475b3a418d3f16c3115da0e24a8978834
 .tour407003__btns img {
     width: 1.45rem;
     height: auto;
     margin-right: .8rem;
 }
 
-<<<<<<< HEAD
 .tour701001__box {
     display: flex;
     flex-wrap: wrap;
@@ -6116,9 +6112,7 @@
     color: #666666;
 }
 
-.tour701002__titleChild {
 
-=======
 .tour501001__box {
     padding: 0 2rem;
     display: flex;
@@ -6159,5 +6153,4 @@
 .tour501001__icon img {
     width: 1.7rem;
     height: auto;
->>>>>>> 8f192c1475b3a418d3f16c3115da0e24a8978834
 }
