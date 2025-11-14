@@ -5740,6 +5740,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -5749,7 +5750,7 @@
 }
 
 .tour405004__itemHandbook img {
-    width: 215px;
+    width: 21.5rem;
     height: auto;
 }
 
@@ -6085,10 +6086,10 @@
     color: #666666;
 }
 
-/* .tour404008__btn {
+.tour405008__btnNote {
     width: 19rem;
     font-size: 1.5rem;
-} */
+}
 
 .tour405008__related {
     background-color: #F5F5F5;
@@ -6115,6 +6116,21 @@
     display: flex;
     align-items: center;
     gap: 5rem;
+}
+
+.tour405008__postRelated .tour405008__textRelated,
+.tour405008__timeRelated {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tour405008__postRelated .post1,
+.tour405008__timeRelated {
+    color: #666666;
+}
+
+.tour405008__postRelated .post2 {
+    color: #111111;
 }
 
 .tour405008__btnRelated {
@@ -6416,6 +6432,215 @@
     color: #666666;
 }
 
+.tour701002__titleChild {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+    margin: 5rem 0;
+}
+
+.tour701002__boxFile {
+    display: flex;
+}
+
+.tour701002__boxFileLeft {
+    background: #F5F5F5;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tour701002__boxFileLeft p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.tour701002__boxFileRight {
+    width: 76rem;
+}
+
+.tour701002__itemFile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 2rem;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tour701002__mainChild {   
+    margin: 2rem 0;
+}
+
+.tour701002__box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.tour701002__box2 img {
+    width: 20.1rem;
+    height: 5.1rem;
+}
+
+.tour701002__textNote p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #666666;
+}
+
+.tour701002__itemFile:nth-child(2),
+.tour701002__itemFile:nth-child(3),
+.tour701002__itemFile:nth-child(4),
+.tour701002__itemFile:nth-child(5) {
+    border-top: 0;
+}
+
+.tour701002__itemFile:nth-child(5) {
+    border-bottom: 0;
+}
+
+.tour701002__nameFile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tour701002__nameFile img {
+    width: 12.92px;
+    height: auto;
+}
+
+.tour701002__nameFile p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour701002__actionFile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tour701002__actionFile a {
+    border-radius: 50%;
+    border: 1px solid #DDDDDD;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour701002__actionFile a:hover {
+    background-color: #F5F5F5;
+}
+
+.tour701002__actionFile a:nth-child(1) img {
+    width: 12.23px;
+    height: 12.71px;
+}
+
+.tour701002__actionFile a:nth-child(2) img {
+    width: 15.98px;
+    height: 8.88px;
+}
+
+.tour701002__btnRelated button{
+    background: #666666;
+}
+
+.tour701001-1__itemBook1 p {
+    padding: 2rem 0;
+}
+
+.tour701001-1__main {
+    margin-top: 2rem;
+}
+
+.tour701001-1__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.tour701001-1__item1 {
+    width: 29rem;
+}
+
+.tour701001-1__item1 img {
+    width: 29rem;
+    height: auto;
+}
+
+.tour701001-1__titlePost {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111111;
+    padding: 2rem 2rem 3.8rem 2rem;
+}
+
+.tour701001-1__infoPost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.tour701001-1__time {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour701001-1__views {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tour701001-1__views img {
+    width: 1.7rem;
+    height: auto;
+}
+
+.tour701001-1__views p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour701001-1__boxNote {
+    margin-top: 2rem;
+}
+
+.tour701002-1__imgPost img {
+    width: 30rem;
+    height: auto;
+    display: block;
+    margin: 5rem auto 2rem;
+}
+
+.tour701002-1__titlePost p {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 5rem;
+}
+
+.tour701003__video img {
+    width: 70rem;
+    height: auto;
+}
 
 .tour501001__box {
     padding: 0 2rem;
