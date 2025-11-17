@@ -808,7 +808,7 @@ legend {
 
 .gnb-pop .gnb-pop__dep1 .gnb-pop__dep2-inner .gnb-pop__dep2-list .gnb-pop__dep2>li .gnb-pop__dep3>li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.3rem;
 }
 
 .gnb-pop .gnb-pop__dep1 .gnb-pop__dep2-inner .gnb-pop__dep2-list .gnb-pop__dep2>li .gnb-pop__dep3>li::after {
