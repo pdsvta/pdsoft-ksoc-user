@@ -7896,3 +7896,344 @@
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+.tour003005__title {
+    margin-bottom: 2rem;
+}
+
+.tour003005__subTitle {
+    text-align: center;
+    color: #111111;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.tour003005__mainBox {
+    background: #fff;
+    width: 60.3rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.tour003005__titleForm {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.tour003005__form {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.tour003005__form input {
+    width: 33.5rem;
+    height: 5rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 3.5rem;
+    color: #666666;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1.8rem 3rem;
+}
+
+.tour003005__form button {
+    background: #666666;
+    width: 13.3rem;
+    height: 5rem;
+    border: 1px solid #666666;
+    border-radius: 3.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 1.3rem 0;
+}
+
+.tour003005__form button:hover {
+    opacity: 0.7;
+}
+
+.tour003006__mainBox {
+    background: #fff;
+}
+
+.tour003006__boxTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tour003006__titleForm {
+    margin-bottom: 0;
+}
+
+.tour003006__note {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111111;
+}
+
+.tour003006__note span {
+    color: #FF0000;
+}
+
+.tour003006__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2.8rem;
+}
+
+.tour003006__formChild {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tour003006__itemForm,
+.tour003006__formChild {
+    width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.tour003006__itemForm label {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+.tour003006__itemForm label span {
+    color: #FF0000;
+}
+
+.tour003006__itemForm input[type="text"] {
+    width: 30rem;
+    height: 4rem;
+    margin: 1rem 0 0 0;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5rem;
+    padding: 1.2rem 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tour003006__itemFormChild input[type="text"] {
+    width: 14rem;
+    height: 4rem;
+    margin: 1rem 0;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5rem;
+    padding: 1.2rem 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 400;  
+}
+
+.tour003006__itemForm .tour003006__inputGrey,
+.tour003006__itemFormChild .tour003006__inputGrey {
+    background: #F5F5F5;
+    color: #666666;
+}
+
+.tour003006__itemForm .tour003006__inputWhite {
+    background: #fff;
+    color: #666666;
+}
+
+.tour003006__itemForm .inputTop,
+.tour003006__checkbox label {
+    color: #111111;
+}
+
+.tour003006__itemForm .inputBottom {
+    color: #DDDDDD;
+}
+
+.tour003006__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tour003006__formLogin {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+}
+
+.tour003006__formInfo ul {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    width: 30rem;
+}
+
+.tour003006__formInfo ul li {
+    list-style: disc;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour003006__formLogin .tour003006__itemForm {
+    margin-bottom: 0;
+}
+
+.tour003006__formLogin .tour003006__itemForm input {
+    margin-bottom: 0.5rem;
+}
+
+.tour003006__formCodeBottom,
+.tour003006__formCodeBottom input[type="text"] {
+    width: 100%;
+}
+
+.tour003006__formCode {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.tour003006__formCode input[type="text"] {
+    width: 30rem;
+}
+
+.tour003006__formCode button {
+    background: #666666;
+    width: 10rem;
+    height: 4rem;
+    border: 1px solid #666666;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1.2rem 0;
+}
+
+.tour003006__btnMain button {
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.tour003007__mainBox {
+    background: #fff;
+}
+
+.tour003007__titleChild {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #666666;
+}
+
+.tour003007__steps {
+    margin: 1.5rem 2.1rem 2.2rem 2.1rem;
+}
+
+.tour003007__step {
+    align-items: flex-start;
+}
+
+.tour003007__step span {
+    color: #666666;
+    border: 1px solid #666666;
+    line-height: unset;
+}
+
+.tour003007__step p {
+    flex: 1;
+}
+
+.tour003007__noteCheck {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2.1rem;
+}
+
+.tour003007__noteCheck p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111111;
+}
+
+.tour003007__titleNote {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #111111;
+    margin: 5rem 0 3rem 0;
+}
+
+.tour003007__titleChildNote {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 2rem;
+}
+
+.tour003007__boxRadio {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.tour003007__itemRadio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tour003007__itemRadio p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+.tour003007__form {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.tour003007__itemInput label {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #333333;
+    margin-left: 1rem;
+}
+
+.tour003007__itemInput input {
+    width: 30rem;
+    height: 4rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5rem;
+    padding: 1.2rem 1.7rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #DDDDDD;
+}
+
+.tour003007__form button {
+    background: #666666;
+    color: #fff;
+    width: 12rem;
+    height: 4rem;
+    border: 1px solid #666666;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tour003007__form button:hover {
+    opacity: 0.7;
+}
+
+.tour003007__btnMain button {
+    background: #C70000;
+    width: 14rem;
+    height: 5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
