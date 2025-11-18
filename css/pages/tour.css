@@ -6787,6 +6787,7 @@
     font-size: 1.3rem;
     font-weight: 400;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .screen2__link a:hover {
@@ -6834,6 +6835,30 @@
 }
 
 .screen2__item:nth-child(3) {
+    background: #E3F0C2;
+}
+
+.screen2__item:nth-child(4) {
+    background: #C6E7F7;
+}
+
+.screen2__item:nth-child(5) {
+    background: #FBE1BB;
+}
+
+.screen2__item:nth-child(6) {
+    background: #E3F0C2;
+}
+
+.screen2__item:nth-child(7) {
+    background: #C6E7F7;
+}
+
+.screen2__item:nth-child(8) {
+    background: #FBE1BB;
+}
+
+.screen2__item:nth-child(9) {
     background: #E3F0C2;
 }
 
@@ -7040,6 +7065,14 @@
     font-weight: 400;
     padding: 2rem 0;
     border-bottom: 1px solid #ddd;
+}
+
+.screen2__content:last-child {
+    padding: 2rem 0 0;
+}
+
+.screen2__card-text .screen2__content:last-child {
+    padding: 1rem 0 0;
 }
 
 .screen2__content:last-child {
@@ -7392,6 +7425,7 @@
     position: fixed;
     top: 40%;
     right: 5rem;
+    z-index: 9;
 }
 
 .tool__wrapper {

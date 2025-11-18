@@ -1175,6 +1175,7 @@ legend {
 
 .footer-main__sponsor-logos {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -1186,13 +1187,13 @@ legend {
 }
 
 .footer-main__logo2 {
-    height: auto;
+    width: auto;
     height: 2.2rem;
     object-fit: contain;
 }
 
 .footer-main__logo3 {
-    height: auto;
+    width: auto;
     height: 1.8rem;
     object-fit: contain;
 }
@@ -1201,7 +1202,6 @@ legend {
     font-size: 1.2rem;
     font-weight: 500;
     color: #37383C9C;
-    white-space: nowrap;
 }
 
 .footer-main__right {

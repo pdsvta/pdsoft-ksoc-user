@@ -1369,6 +1369,49 @@
     </script>
     <script>
         $(document).ready(function () {
+
+            if ($(window).width() >= 767) return; // Chỉ chạy dưới 767px
+
+            const box = $(".screen2__box");
+
+            // Tạo track bọc item (nếu chưa có)
+            if (!$(".screen2__track").length) {
+                const track = $('<div class="screen2__track"></div>');
+                $(".screen2__item").appendTo(track);
+                box.append(track);
+            }
+
+            const track = $(".screen2__track");
+
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            track.on("mousedown touchstart", function (e) {
+                isDown = true;
+                track.addClass("active");
+
+                startX = (e.pageX || e.originalEvent.touches[0].pageX);
+                scrollLeft = track.scrollLeft();
+            });
+
+            track.on("mousemove touchmove", function (e) {
+                if (!isDown) return;
+
+                const x = (e.pageX || e.originalEvent.touches[0].pageX);
+                const walk = (startX - x); // hướng kéo
+                track.scrollLeft(scrollLeft + walk);
+            });
+
+            track.on("mouseleave mouseup touchend", function () {
+                isDown = false;
+                track.removeClass("active");
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
             const track = $(".screen4__track");
             const items = $(".screen4__item");
             const itemWidth = items.outerWidth(true);
