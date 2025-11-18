@@ -7567,3 +7567,332 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.tour001001__mainBox {
+    background: #fff;
+}
+
+.tour001001__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tour001001__itemTab {
+    background: #fff;
+    border: 1px solid #DDDDDD;
+    border-radius: 1rem;
+    width: 17.6rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tour001001__itemTab:hover {
+    opacity: 0.7;
+}
+
+.tour001001__itemTab.active {
+    border: 1px solid #0C54B8;
+    color: #0C54B8;
+}
+
+.tour001001__subTitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour001001__titleChild {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #666666;
+    margin: 2rem 0 1rem 0;
+}
+
+.tour001001__boxList ul {
+    list-style: disc;
+    padding-left: 2.5rem;
+}
+
+.tour001001__boxList ul li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 2.5rem;
+}
+
+.tour001002__allBtn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.tour001002__btn {
+    width: 13rem;
+    height: 4rem;
+    background: #666666;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1.2rem 0;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.tour001002__btn:hover {
+    opacity: 0.7;
+}
+
+.tour001002__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 2.5rem;
+}
+
+.tour001002__text span {
+    color: #0C54B8;
+}
+
+.tour001002__text.textBottom {
+    padding-top: 1.6rem;
+}
+
+.tour001002__imgBanner {
+    width: 100%;
+    height: auto;
+}
+
+.tour001002__imgBanner.banner2 {
+    margin-top: 2rem;
+}
+
+.tour001003__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 2.5rem;
+}
+
+.tour001003__text span{
+    font-weight: 600;
+}
+
+.tour001003__text.textContent {
+    padding-top: 1.6rem;
+}
+
+.tour001003__boxBtn {
+    margin-top: 2rem;
+}
+
+.tour001003__allBtn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tour001003__allBtn:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
+.tour001003__btn {
+    width: 16rem;
+}
+
+.tour001003__boxBottomTabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.5rem;
+    background: #F5F5F5;
+    border-radius: 0.5rem;
+    margin-top: 3.1rem;
+    padding: 1rem 2rem;
+}
+
+.tour001003__titleTab {
+    background: #fff;
+    color: #171719;
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5rem;
+    width: 20rem;
+    padding: 1.2rem 1rem;
+}
+
+.tour001003__tabRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.tour001003__itemTabBtn {
+    height: 3rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+    color: #171719;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    cursor: pointer;
+}
+
+.tour001003__itemTabBtn.active {
+    border: 1px solid #0C54B8;
+    background: #0C54B8;
+    color: #fff;
+}
+
+.tour001003__itemTabBtn.item1 {
+    width: 12rem;
+}
+
+.tour001003__itemTabBtn.item2 {
+    width: 12rem;
+}
+
+.tour001003__itemTabBtn.item3 {
+    width: 8rem;
+}
+
+.tour001003__textYear span {
+    font-weight: 600;
+    color: #666666;
+    margin-right: 2rem;
+}
+
+.tour001003__textYear span:nth-child(2) {
+    margin-left: 4rem;
+}
+
+.tour001004__boxApp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour001004__step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.tour001004__step span {
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tour001004__step p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour001004__note {
+    color: #0C54B8;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.tour001004__qrApp {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.tour001004__btn {
+    width: 10rem;
+    margin-top: 2rem;
+}
+
+.tour001005__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.tour001005__item {
+    border: 1px solid #DDDDDD;
+    border-radius: 2rem;
+    width: 29rem;
+    height: 29.6rem;
+    padding: 5rem 0;
+}
+
+.tour001005__item.active {
+    border: 1px solid #111111;
+}
+
+.tour001005__itemTitle {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #111111;
+    text-align: center;
+}
+
+.tour001005__item img {
+    margin: 3rem auto;
+}
+
+.tour001005__item .icon1 {
+    width: 7rem;
+    height: auto;
+}
+
+.tour001005__item .icon2 {
+    width: 4.8rem;
+    height: auto;
+}
+
+.tour001005__item .icon3 {
+    width: 9.5rem;
+    height: auto;
+}
+
+.tour001005__desc {
+    text-align: center;
+    color: #666666;
+    font-weight: 1.5rem;
+    font-weight: 400;
+}
+
+.tour001006__titleChild {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #666666;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.tour001006__listContent {
+    list-style: disc;
+    line-height: 2.5rem;
+    padding-left: 2.5rem;
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
