@@ -8237,3 +8237,152 @@
     font-size: 1.7rem;
     font-weight: 600;
 }
+
+.tour004033__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5.4rem;
+    margin-bottom: 2rem;
+}
+
+.tour004033__titleChild {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+
+.tour004033__list ul {
+    list-style: disc;
+    margin-bottom: 2rem;
+    margin-left: 2.5rem;
+}
+
+.tour004033__list ul li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.tour004033__boxItem {
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tour004033__item {
+    display: flex;
+    align-items: center;
+}
+
+.tour004033__itemLeft {
+    background: #F5F5F5;
+    width: 16rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    color: #111111;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+}
+
+.tour004033__itemRight {
+    flex: 1;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    color: #666666;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tour004033__itemRight ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+.tour004033__line {
+    border-top: 1px solid #DDDDDD;
+}
+
+.tour004033__titleTable {
+    margin: 2rem 0;
+}
+
+.tour004034__itemTab {
+    width: 14.5rem;
+}
+
+.tour004034__filter {
+    padding: 0 2rem;
+}
+
+.tour004035__boxFilter {
+    gap: 1rem;
+}
+
+.tour004035__boxFilter .selectbox {
+    width: 14.5rem;
+}
+
+.tour004035__inputDate {
+    width: 30rem;
+}
+
+.tour004035__inputNote {
+    width: 22rem;
+}
+
+.tour004035__table {
+    margin-top: 3rem;
+}
+
+.tour004035__table tbody td img {
+    width: auto;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.tour004040__titleChild {
+    margin-bottom: 2rem;
+}
+
+.tour004040__allBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 4rem;
+}
+
+.tour004040__allBtn button {
+    background: #666666;
+    width: 21rem;
+    height: 4rem;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1.2rem 0;
+}
+
+.tour004040__allBtn button:hover {
+    opacity: 0.7;
+}
+
+.tour004041__list {
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+}
+
+.tour004041__list p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+}
