@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행복나눔교실 강습일지</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="체육정보 종합포털">
+                    </a>
+                </h1>
+
+                <div class="nav">
+                    <ul class="goto__list">
+                        <li class="goto__item">
+                            <a href="#" class="goto__link">로그인</a>
+                        </li>
+                        <li class="goto__item">
+                            <a href="#" class="goto__link">회원가입</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="goto__nt">이용안내</a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">체육인서비스</a>
+                        <div class="gnb">
+                            <div class="inner">
+                                <div class="gnb__block">
+                                    <figure>
+                                        <img src="./images/depth.png" alt="">
+                                        <figcaption>체육인서비스</figcaption>
+                                    </figure>
+                                    <div class="gnb__grid">
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit">증명서 발급</li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">증명서 발급</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">교육수료증발급</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">선수촌 견학</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">견학 신청</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">견학 후기</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">견학 갤러리</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">경기인 등록</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">온라인상장 발급</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">클럽대회 참가확인서</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">메디컬센터 진료기록</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">클럽강좌 수강신청</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">태릉국제스케이트장 강습신청</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">체육인단체서비스</a>
+                        <div class="gnb">
+                            <div class="inner">
+                                <div class="gnb__block">
+                                    <figure>
+                                        <img src="./images/depth.png" alt="">
+                                        <figcaption>체육인단체서비스</figcaption>
+                                    </figure>
+                                    <div class="gnb__grid">
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">행복나눔교실 참가신청</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">프로그램 소개</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">강습회 신청</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">내가 신청한 강습회</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">강습일지</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">클럽대회 참가신청</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠클럽 대관신청</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">태릉국제스케이트장 대관신청</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">빙상장 대관안내</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">빙상장 대관신청 현황</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">컬링장 대관안내</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">컬링장 대관신청 현황</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">문의 및 상담</a>
+                        <div class="gnb">
+                            <div class="inner">
+                                <div class="gnb__block">
+                                    <figure>
+                                        <img src="./images/depth.png" alt="">
+                                        <figcaption>문의 및 상담</figcaption>
+                                    </figure>
+                                    <div class="gnb__grid">
+                                        <ul class="gnb__list gnb__list--pb40">
+                                            <li class="gnb__tit"><a href="#">경기인 등록안내</a></li>
+                                        </ul>
+                                        <ul class="gnb__list gnb__list--pb40">
+                                            <li class="gnb__tit"><a href="#">증명서 발급안내</a></li>
+                                        </ul>
+                                        <ul class="gnb__list gnb__list--pb40">
+                                            <li class="gnb__tit"><a href="#">체육인 전자지갑 안내</a></li>
+                                        </ul>
+                                        <ul class="gnb__list gnb__list--pb40">
+                                            <li class="gnb__tit"><a href="#">전자증명서 서비스 안내</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">문의처 안내</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">체육정보센터</a>
+                        <div class="gnb">
+                            <div class="inner">
+                                <div class="gnb__block">
+                                    <figure>
+                                        <img src="./images/depth.png" alt="">
+                                        <figcaption>체육정보센터</figcaption>
+                                    </figure>
+                                    <div class="gnb__grid">
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">체육시설 안내</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠클럽 검색</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">내 주변 체육시설 검색</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">개방학교 찾기</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">체육시설 알리미</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">대회정보 안내</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">대회일정</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link" class="tour402001__center">국내대회</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">국제대회</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠 채용정보</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">체육단체 채용정보</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">국제스포츠 채용정보</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠클럽 채용정보</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠 프로그램</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">신나는 주말체육학교</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">청소년스포츠 한마당</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">해달맞이 체육교실</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠 안전</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠안전 소개</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠안전 연구</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠안전 공제</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠안전 매뉴얼</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠안전 교육영상</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠안전 뉴스레터</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠 교육</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠교육비전 2030</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">대한민국체육인재개발원</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠교육 소식</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">뉴스와 정보</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">체육자료</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">체육단체소식</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠클럽 공지</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">체육통계</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">등록현황</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">통계분석</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">통계조회</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">조사데이터</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">스포츠미디어</a>
+                        <div class="gnb">
+                            <div class="inner">
+                                <div class="gnb__block">
+                                    <figure>
+                                        <img src="./images/depth.png" alt="">
+                                        <figcaption>스포츠미디어</figcaption>
+                                    </figure>
+                                    <div class="gnb__grid">
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">홍보영상</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">대회경기영상</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠 히어로</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">동호회/클럽</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠 스타</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">동영상 갤러리</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">배워봅시다</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">생생스포츠</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠원 이북</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">카드뉴스</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">포토뱅크</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠클럽 포토갤러리</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">아카이브</a>
+                        <div class="gnb">
+                            <div class="inner">
+                                <div class="gnb__block">
+                                    <figure>
+                                        <img src="./images/depth.png" alt="">
+                                        <figcaption>아카이브</figcaption>
+                                    </figure>
+                                    <div class="gnb__grid">
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">기록물 아카이브 검색</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠 영웅</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">국가대표 아카이브</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">메달 리스트</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">디지털 컬렉션</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">디지털 전시</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">스포츠 역사</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠 기증관</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">기증 안내</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">기증 현황</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">이벤트&캠페인</a>
+                        <div class="gnb">
+                            <div class="inner">
+                                <div class="gnb__block">
+                                    <figure>
+                                        <img src="./images/depth.png" alt="">
+                                        <figcaption>이벤트&캠페인</figcaption>
+                                    </figure>
+                                    <div class="gnb__grid">
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">7330 캠페인</a></li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">스포츠안전캠페인</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">기타</a>
+                        <div class="gnb">
+                            <div class="inner">
+                                <div class="gnb__block">
+                                    <figure>
+                                        <img src="./images/depth.png" alt="">
+                                        <figcaption>기타</figcaption>
+                                    </figure>
+                                    <div class="gnb__grid">
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">이용약관</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">서비스안내</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">이용약관</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">개인정보처리방침</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">저작권정책</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">이메일무단수집거부</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">내 생애주기</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">기본정보</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">맞춤설정</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">맞춤정보</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="gnb__list">
+                                            <li class="gnb__tit"><a href="#">로그인</a></li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">로그인</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">회원가입</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">아이디 찾기</a>
+                                            </li>
+                                            <li class="gnb__item">
+                                                <a href="#" class="gnb__link">비밀번호 찾기</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="menu-btn">
+                            <span class="blind">전체메뉴 펼치기</span>
+                            <div class="menu-btn__icon">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- // header -->
+
+        <!-- breadcrumbs -->
+        <div class="brdc">
+            <div class="inner">
+                <ul class="brdc__list">
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__home">
+                            <img src="images/icons/home-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__link">스포츠원클릭</a>
+                    </li>
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__link">증명서 발급</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- // breadcrumbs -->
+
+        <!-- contents -->
+        <section class="hpy">
+            <div class="inner">
+                <div class="title">
+                    <h2>동호회/클럽</h2>
+                </div>
+                <div class="tour402004__filter p05 mb20">
+                    <p class="hpy__total">
+                        총 <span>51</span> 건, 페이지 1/6
+                    </p>
+
+                    <div class="tour__group--input gap5">
+                        <input type="text" class="hpy__input hpy-reg__input--max200" placeholder="동호회/클럽 이름을 검색하세요">
+                        <button type="button" class="hpy-reg__btn hpy-reg__btn--min70 ply-reg__btn--gray">검색</button>
+                    </div>
+                </div>
+                <div class="hpy02__wrapper mt20">
+                    <div class="tour504001__box">
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image01.png" alt="">
+                            <div class="tour504001__text">
+                                <p>클럽/동호회 사진 플로어볼 동호회 <서울해치스>
+                                </p>
+                                <h5>스틱으로 주고받는 ‘팀’이라는 유대감</h5>
+                                <span>아이스하키, 필드하키는 유명하지만, 실내 하키인 ‘플로어볼’은 아직 많은 이들에게 낯선 스포츠다. 그러나 여기, 일찍이 플로어볼의 즐거움에 매료되어
+                                    매주 화요일 저녁, 스틱을 들고 체육관을 누비는 이들이 있다. 결성된 지 어느덧 10년이 지난 플로어볼 동호회 <서울해치스>를 만나 플로어볼의 매력이
+                                        무엇인지 이야기를 들어봤다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image02.png" alt="">
+                            <div class="tour504001__text">
+                                <p>클럽/동호회 사진 수원 씨름 동호회 <밀당>
+                                </p>
+                                <h5>모래판 위 밀고 당기는 재미에 푹 빠지다</h5>
+                                <span>출근이 코앞으로 다가오는 일요일 저녁. 끝나가는 주말이 아까워 울적할 법도 한데, 경기대학교 수원캠퍼스 광교씨름체육관에 모인 이들은 오히려 에너지가
+                                    넘친다. 서로의 샅바를 붙잡고 힘을 겨루는 이들의 눈빛은 즐거운 승부욕으로 빛난다. 땀으로 일주일의 피로를 말끔히 씻어내고, 기합으로 한 주를 살아갈
+                                    힘을 얻어가는 씨름 동호회 <밀당> 회원들이다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image03.png" alt="">
+                            <div class="tour504001__text">
+                                <p>여자 풋살 동호회 <당근FC>
+                                </p>
+                                <h5>혹시, 풋살 하실래요?</h5>
+                                <span>“혹시…당근이세요?” 중고 거래 전 인사말이 이들에게는 “풋살 하실래요?”로 통한다. 중고 거래 플랫폼 ‘당근마켓’에서 필요한 물건 대신 함께
+                                    풋살할 동료를 찾으며 시작된 당근FC. 이들이 주고받는 것은 함께 공을 차는 즐거움이었다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image04.png" alt="">
+                            <div class="tour504001__text">
+                                <p>서울 소방 주짓수 동호회 <팀 플래시오버>
+                                </p>
+                                <h5>불꽃을 제압하는 더 뜨거운 열정</h5>
+                                <span>수요일 오전 10시쯤. 도복을 갖춰 입은 사람들이 한두 명씩 주짓수 체육관에 모여들었다. 가벼운 인사 후 매트 위에 앉아 제각기 몸을 풀기 시작한
+                                    이들은 서울 소방 주짓수 동호회 '팀 플래시오버' 회원이다. 소방관 업무 특성상 타 동호회와는 다르게 가장 많은 인원이 모일 수 있는 날을 단체 메시지
+                                    방에서 투표로 정한다. 어느새 체육관은 20여 명의 회원들로 가득 채워졌다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image05.png" alt="">
+                            <div class="tour504001__text">
+                                <p>2030 피클볼 동호회 <투덜새>
+                                </p>
+                                <h5>건강한 저녁이 있는 삶</h5>
+                                <span>피클볼 동호회 투덜새(T.T.S)의 정기 모임이 있는 토요일. 서울중산초등학교(이하 ‘중산초등학교’) 체육관에 모인 회원들이 자신의 연습 차례를
+                                    기다리며 유쾌하게 안부를 나눴다. 패들로 공을 칠 때 울려 퍼지는 경쾌한 소리가 코트를 누비는 동호인들의 흥을 돋우며 체육관에 열기를
+                                    더했다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image06.png" alt="">
+                            <div class="tour504001__text">
+                                <p>인라인하키 동호회 <스택스>
+                                </p>
+                                <h5>모두 함께 즐기는 패밀리 스포츠</h5>
+                                <span>부쩍 차가워진 바람이 코끝을 스치는 저녁, 인라인하키 경기장 한편에 조그맣게 마련된 객석에 앉아 선수들의 연습을 지켜보는 사람들에게 '스택스'
+                                    멤버들이 따뜻한 유자차 한 잔을 건넸다. 손안에 퍼져오는 따스한 온기가 스택스가 얼마나 훈훈하고 다복한 동호회인지 대신 전해주었다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image07.png" alt="">
+                            <div class="tour504001__text">
+                                <p>포켓볼 동호회 <팝콘>
+                                </p>
+                                <h5>큐를 잡고 친구를 만나다</h5>
+                                <span>서울 광진구에 자리한 어느 포켓볼 전용 클럽. 타-악 타-악 당구공들이 서로 부딪히는 소리가 구장을 울린다. 매주 금요일 밤에 진행되는 나이트
+                                    토너먼트는 저녁 10시에 시작되어 다음 날 새벽 3~4시까지 진행되지만, 동호인들은 피곤함도 잊은 채 플레이에 여념이 없다. 공을 맞히는 재미에 한 번
+                                    빠지면 헤어 나올 수 없다는 포켓볼. 오늘도 구장에 모인 팝콘 회원들은 유쾌하게 인사하며 큐를 잡는다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image08.png" alt="">
+                            <div class="tour504001__text">
+                                <p>아르헨티나 탱고 동호회 <탱고카페>
+                                </p>
+                                <h5>자유롭고 유쾌한 소셜댄스의 매력</h5>
+                                <span>충무로 인쇄소 골목, 묵직한 기계음들 사이로 들리는 희미한 음악 소리가 발길을 붙잡는다. 음악 소리를 따라 건물 2층으로 올라서니 남미에 있을 법한
+                                    이국적인 호텔을 연상케 하는 스튜디오가 모습을 드러냈다. 이곳은 탱고 연습실 스튜디오호텔땅고, 소셜댄스(사교댄스)의 매력에 푹 빠진 사람들이 우아한
+                                    샹들리에 조명 아래에서 정열의 나라 아르헨티나에서 건너온 탱고에 몸을 맡긴다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image09.png" alt="">
+                            <div class="tour504001__text">
+                                <p>서프스케이트 동호회 <랜드서퍼스코리아>
+                                </p>
+                                <h5>맨땅에서 즐기는 ‘파도타기’</h5>
+                                <span>랜드서퍼스코리아(이하 “랜드서퍼스”)는 2017년부터 활동하기 시작한 서프스케이트 동호회다. 서프스케이트라는 종목이 다소 생소하게 느껴지지만
+                                    랜드서퍼스는 서울 지역 회원만 해도 무려 100여 명에 달하는 전국적인 동호회다. 평범한 스케이트보드와는 또 다른 매력에 빠진 5명의 운영진과
+                                    4,700여 명의 회원은 때로는 땅 위에서 때로는 바다 위에서 서핑을 즐기며 즐겁게 활동하고 있다.</span>
+                            </div>
+                        </div>
+                        <div class="tour504001__item">
+                            <img src="images/u-504-001/image10.png" alt="">
+                            <div class="tour504001__text">
+                                <p>여자 레슬링 동호회 레슬링코리아 팀우먼
+                                </p>
+                                <h5>맨몸으로 부딪히는 스파링의 짜릿함</h5>
+                                <span>레슬링이 남자들만 하는 운동이라고? NO! 여성 레슬링 동호회 <레슬링코리아 팀우먼>이 고정관념을 깨트린다. 맨몸으로 뛰고 뒹굴고 부딪히며 온몸의
+                                        감각을 정면으로 마주하는 레슬러들. '나'를 느끼기 위해 오늘도 레슬링장에 입장하는, 멋져도 너무 멋진 그녀들을 따라가 보자.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paging-ui">
+                        <ul>
+                            <li>
+                                <a href="#" class="first-move">
+                                    <span class="blind">첫 페이지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="prev-move">
+                                    <span class="blind">이전 페이지</span>
+                                </a>
+                            </li>
+                            <li class="current">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#" class="next-move">
+                                    <span class="blind">다음 페이지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="last-move">
+                                    <span class="blind">끝 페이지</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tour503001__note">
+                        본 콘텐츠는 대한체육회에서 발행하는 월간지
+                        <img src="images/u-503-001/image13.png" alt="">
+                        에서 발췌 되었습니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // contents -->
+
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            <div class="inner">
+                <div class="footer__top">
+                    <h3 class="footer__logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">개인정보 처리방침</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">이용약관</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">저작권 정책</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">체육정보 종합포털 소개</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__md">
+                    <address class="footer__adr">
+                        <span>체육정보 종합포털</span>
+                        <span>대표이사 이주현</span>
+                    </address>
+                    <address class="footer__adr">
+                        <span>[05540] 서울특별시 송파구 올림픽로 424 올림픽회관</span>
+                        <span>대표전화: 02-2144-8114</span>
+                    </address>
+                </div>
+                <div class="footer__bm">
+                    <p class="footer__copy">© Copyright©2016 Korean Sport & Olympic Committee. All rights reserved.</p>
+                    <div class="sns">
+                        <ul class="sns__list">
+                            <li class="sns__item">
+                                <a href="#" class="sns__link">
+                                    <img src="images/icons/instagram-icon.png" alt="인스타그램">
+                                </a>
+                            </li>
+                            <li class="sns__item">
+                                <a href="#" class="sns__link">
+                                    <img src="images/icons/youtube-icon.png" alt="유튜브">
+                                </a>
+                            </li>
+                            <li class="sns__item">
+                                <a href="#" class="sns__link">
+                                    <img src="images/icons/facebook-icon.png" alt="페이스북">
+                                </a>
+                            </li>
+                            <li class="sns__item">
+                                <a href="#" class="sns__link">
+                                    <img src="images/icons/blog-icon.png" alt="네이버블로그">
+                                </a>
+                            </li>
+                            <li class="sns__item">
+                                <a href="#" class="sns__link">
+                                    <img src="images/icons/apple-icon.png" alt="앱스토어">
+                                </a>
+                            </li>
+                            <li class="sns__item">
+                                <a href="#" class="sns__link">
+                                    <img src="images/icons/play-icon.png" alt="구글플레이">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+    <div class="popup" id="all-menu">
+        <section class="gnb-pop">
+            <h3 class="gnb-pop__tit">사이트맵
+                <button type="button" class="game__close">
+                    <img src="./images/icons/delete.png" alt="">
+                </button>
+            </h3>
+            <ul class="gnb-pop__dep1">
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">체육인서비스</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">증명서 발급</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">증명서 발급</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">교육수료증발급</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">선수촌 견학</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">견학 신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">견학 후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">견학 갤러리</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">경기인 등록</a>
+                                </li>
+                                <li>
+                                    <a href="#">온라인상장 발급</a>
+                                </li>
+                                <li>
+                                    <a href="#">클럽대회 참가확인서</a>
+                                </li>
+                                <li>
+                                    <a href="#">메디컬센터 진료기록</a>
+                                </li>
+                                <li>
+                                    <a href="#">클럽강좌 수강신청</a>
+                                </li>
+                                <li>
+                                    <a href="#">태릉국제스케이트장 강습신청</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">체육인단체서비스</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">행복나눔교실 참가신청</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">프로그램 소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">강습회 신청</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">내가 신청한 강습회</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">강습일지</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">클럽대회 참가신청</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠클럽 대관신청</a>
+                                </li>
+                                <li>
+                                    <a href="#">태릉국제스케이트장 대관신청</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">빙상장 대관안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">빙상장 대관신청 현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">컬링장 대관안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">컬링장 대관신청 현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">문의 및 상담</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">경기인 등록안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">증명서 발급안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">체육인 전자지갑 안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">전자증명서 서비스 안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">문의처 안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">체육정보센터</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">체육시설 안내</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">스포츠클럽 검색</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">내 주변 체육시설 검색</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개방학교 찾기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">체육시설 알리미</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">대회정보 안내</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">대회일정</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="tour402001__center">국내대회</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">국제대회</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 채용정보</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">체육단체 채용정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">국제스포츠 채용정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠클럽 채용정보</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 프로그램</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">신나는 주말체육학교</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">청소년스포츠 한마당</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">해달맞이 체육교실</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 안전</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">스포츠안전 소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠안전 연구</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠안전 공제</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠안전 매뉴얼</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠안전 교육영상</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠안전 뉴스레터</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 교육</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">스포츠교육비전 2030</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">대한민국체육인재개발원</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠교육 소식</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">뉴스와 정보</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">체육자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">체육단체소식</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠클럽 공지</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">체육통계</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">등록현황</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">통계분석</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">통계조회</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">조사데이터</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">스포츠미디어</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">홍보영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">대회경기영상</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 히어로</a>
+                                </li>
+                                <li>
+                                    <a href="#">동호회/클럽</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 스타</a>
+                                </li>
+                                <li>
+                                    <a href="#">동영상 갤러리</a>
+                                </li>
+                                <li>
+                                    <a href="#">배워봅시다</a>
+                                </li>
+                                <li>
+                                    <a href="#">생생스포츠</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠원 이북</a>
+                                </li>
+                                <li>
+                                    <a href="#">카드뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="#">포토뱅크</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠클럽 포토갤러리</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">아카이브</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">기록물 아카이브 검색</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 영웅</a>
+                                </li>
+                                <li>
+                                    <a href="#">국가대표 아카이브</a>
+                                </li>
+                                <li>
+                                    <a href="#">메달 리스트</a>
+                                </li>
+                                <li>
+                                    <a href="#">디지털 컬렉션</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">디지털 전시</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠 역사</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 기증관</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">기증 안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기증 현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">아카이브</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">기록물 아카이브 검색</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 영웅</a>
+                                </li>
+                                <li>
+                                    <a href="#">국가대표 아카이브</a>
+                                </li>
+                                <li>
+                                    <a href="#">메달 리스트</a>
+                                </li>
+                                <li>
+                                    <a href="#">디지털 컬렉션</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">디지털 전시</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">스포츠 역사</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠 기증관</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">기증 안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">기증 현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">이벤트&캠페인</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">7330 캠페인</a>
+                                </li>
+                                <li>
+                                    <a href="#">스포츠안전캠페인</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="gnb-pop__dep2-inner">
+                        <div class="gnb-pop__dep2-tit">기타</div>
+                        <div class="gnb-pop__dep2-list">
+                            <ul class="gnb-pop__dep2">
+                                <li>
+                                    <a href="#">이용약관</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">서비스안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이용약관</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개인정보처리방침</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">저작권정책</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이메일무단수집거부</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">내 생애주기</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">기본정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤설정</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">맞춤정보</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">로그인</a>
+                                    <ul class="gnb-pop__dep3">
+                                        <li>
+                                            <a href="#">로그인</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">회원가입</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">아이디 찾기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">비밀번호 찾기</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        $(document).on('click', '.menu-btn', function () {
+            $('.gnb-pop').parent().addClass('on');
+        });
+        $(document).on('click', '.game__close', function () {
+            $('.gnb-pop').parent().removeClass('on');
+        });
+    </script>
+</body>
+
+</html>
