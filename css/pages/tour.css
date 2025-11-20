@@ -5404,7 +5404,8 @@
 }
 
 .tour404002__line {
-    border: 1px solid #DDDDDD;
+    height: 1px;
+    background: #DDDDDD;
     margin: 3rem 0;
 }
 
@@ -8977,4 +8978,97 @@
 .tour510002__list img {
     width: 10rem;
     height: 10rem;
+}
+
+.tour004042__boxFilter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tour004042__filter {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tour004042__boxTitle h3 {
+    margin-bottom: 0.5rem;
+}
+
+.tour004042__boxTitle p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #111111;
+}
+
+.tour004042__boxTitle p span {
+    color: #0C54B8;
+}
+
+.tour004042__filter p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #111111;
+}
+
+.tour004043__text {
+    text-align: center;
+    color: #666666;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.tour004045__boxFilter {
+    justify-content: center;
+    margin: 5rem 0 2rem 0;
+}
+
+.tour004046__boxFilter {
+    justify-content: flex-end;
+    margin: 5rem 0 2rem 0;
+}
+
+.tour004047__boxMain {
+    margin-bottom: 2rem;
+}
+
+.tour004047__subTitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 3rem;
+}
+
+.tour004047__boxChild {
+    width: 35rem;
+    height: 17.1rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.tour004047__boxChild:hover {
+    background: #F5F5F5;
+}
+
+.tour004047__content p {
+    text-align: center;
+}
+
+.tour004047__titleChild {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.tour004047__desc {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666666;
+    margin-top: 0.5rem;
 }
