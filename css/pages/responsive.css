@@ -31,9 +31,44 @@
         min-width: 15.5rem;
     }
 
+    .popup-main {
+        width: 90rem;
+        padding-top: 5rem;
+    }
+
+    .popup-main__sidebar {
+        width: 20rem;
+        padding: 2rem;
+    }
+
+    .popup-main__col {
+        width: 14rem;
+    }
+
+    .popup-main__content {
+        flex: 1;
+        padding: 13rem 3rem 5rem;
+    }
+
+    .popup-main__cols {
+        gap: 2rem;
+    }
+
+    .popup-main__col-title {
+        font-size: 1.5rem;
+    }
+
+    .popup-main__links li a {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 912px) {
+
+    .header-main .nav__item {
+        padding: 0 1.7rem;
+    }
+
     .screen2__title p {
         font-size: 1.8rem;
     }
@@ -105,6 +140,230 @@
         padding: 7rem 0 12rem;
         position: relative;
     }
+
+    .popup-main__col {
+        width: 11rem;
+    }
+
+    .popup-main__sidebar {
+        width: 17rem;
+    }
+
+    .popup-main__col-title br {
+        display: none;
+    }
+}
+
+@media (max-width: 819px) {
+    .popup {
+        background-color: #fff !important;
+        padding: 0 !important;
+    }
+
+    .popup-main {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100vh;
+    }
+
+    .popup-main__container {
+        border-radius: 2rem;
+    }
+
+    .popup-main__col-title {
+        position: relative;
+        padding-right: 18px;
+        display: inline-block;
+    }
+
+    .popup-main__col:has(.popup-main__links)>.popup-main__col-title::after {
+        content: "";
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: .9rem;
+        height: .6rem;
+        background-image: url('/images/main-pc/image18.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .popup-main__col.open>.popup-main__col-title::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .popup-main__links {
+        display: none;
+    }
+
+    .popup-main__col.open>.popup-main__col-title::after {
+        transform: rotate(180deg);
+    }
+
+    .popup-main__title {
+        display: none;
+    }
+
+    .popup-main__menu-btn {
+        border-radius: 0;
+        font-size: 1.5rem;
+        padding: 1.6rem 0;
+        height: 5rem;
+    }
+
+    .popup-main__menu-item {
+        margin-bottom: 0;
+    }
+
+    .popup-main__col-title br {
+        display: none;
+    }
+
+    .popup-main__content {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        padding: .3rem 2rem 2rem;
+    }
+
+    .popup-main__btns {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .popup-main__input {
+        display: block;
+    }
+
+    .popup-main__close {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: unset;
+        padding: 2rem 1.6rem 2rem;
+        background: #F5F5F5;
+    }
+
+    .popup-main__close img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .popup-main__btns a {
+        width: 7rem;
+        height: 2.5rem;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #171719;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popup-main__input {
+        position: relative;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .popup-main__input input {
+        width: 100%;
+        height: 4rem;
+        border-radius: 1rem;
+        border: 1px solid #ddd;
+        padding: 0 1rem;
+        font-size: 1.2rem;
+    }
+
+    .popup-main__searchbtn {
+        position: absolute;
+        right: 1.7rem;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .popup-main__searchbtn img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .popup-main__linksMb {
+        display: flex;
+        height: 4rem;
+    }
+
+    .popup-main__linksMb a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #666;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        width: 50%;
+        height: 4rem;
+    }
+
+    .popup-main__linksMb a:last-child {
+        border-left: 1px solid #fff;
+    }
+
+    .popup-main__cols {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .popup-main__cols.mt5 {
+        margin-top: 0rem;
+    }
+
+    .popup-main__col {
+        width: 100%;
+    }
+
+    .popup-main__menu-item--active .popup-main__menu-btn {
+        background: #F5F5F5;
+        color: #111;
+        box-shadow: none;
+    }
+
+    .popup-main__col-title {
+        font-size: 1.3rem;
+        padding: 1.7rem 1rem;
+        margin-bottom: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .popup-main__links {
+        padding-left: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .popup-main__links li {
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+
+    .popup-main__links li a {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 767px) {
@@ -112,7 +371,9 @@
     .header-main .header-main__center,
     .header-main .nav .nav__list,
     .header-main .header-main__search,
-    .header-main .header-main__item {
+    .header-main .header-main__item,
+    .tool-main,
+    .scroll-bg {
         display: none;
     }
 
@@ -497,6 +758,12 @@
     .footer-main__logo3 {
         height: 1.7rem;
     }
+
+    .popup-main__sidebar {
+        width: 15rem;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 @media (max-width: 390px) {
@@ -521,6 +788,10 @@
 
     .screen2__slide-item {
         min-width: 11rem;
+    }
+
+    .popup-main__sidebar {
+        width: 14rem;
     }
 }
 
