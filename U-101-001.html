@@ -1564,8 +1564,18 @@
     </div>
     <script>
         $(document).on('click', '.menu-btn', function () {
-            $('.popup-main').parent().addClass('on');
+            const $popup = $('.popup-main').parent().addClass('on');
+            const $firstMenu = $('.popup-main__menu-item').removeClass('popup-main__menu-item--active').first().addClass('popup-main__menu-item--active');
+            const firstTabId = $firstMenu.data('tab');
+            $('.popup-main__tab').stop(true, true).hide().removeClass('popup-main__tab--active')
+                .filter('#' + firstTabId)
+            [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
+                .addClass('popup-main__tab--active');
+
+            $('.popup-main__col').removeClass('open');
+            $('.popup-main__links').hide();
         });
+
         $(document).on('click', '.popup-close', function () {
             $('.popup-main').parent().removeClass('on');
         });
