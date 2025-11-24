@@ -8831,6 +8831,7 @@
 
 .tour505001__item {
     width: calc((100% - 5rem)/3);
+    cursor: pointer;
 }
 
 .tour506001__item {
@@ -8839,6 +8840,10 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 2.5rem;
+}
+
+.tour508001__box .tour506001__item {
+    cursor: pointer;
 }
 
 .tour506001__text {
@@ -8977,4 +8982,70 @@
 .tour510002__list img {
     width: 10rem;
     height: 10rem;
+}
+
+.tour505002-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+    display: none;
+}
+
+.tour505002 {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.tour505002__box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5rem;
+    padding: 5rem;
+    max-width: 70rem;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.tour505002__text {
+    padding: 2rem 0 5rem;
+}
+
+.tour505002__text button {
+    border-radius: 1rem;
+    border: 1px solid #111;
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    color: #111;
+    background: #fff;
+}
+
+.tour505002__text p {
+    font-size: 1.7rem;
+    color: #111;
+    font-weight: 600;
+    padding: 1rem 0 .5rem;
+}
+
+.tour505002__text span {
+    font-weight: 400;
+    color: #666;
+    font-size: 1.3rem;
+}
+
+.tour505002__close img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    cursor: pointer;
 }

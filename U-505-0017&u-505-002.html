@@ -667,6 +667,22 @@
                         </ul>
                     </div>
                 </div>
+                <div class="tour505002-overlay"></div>
+                <div class="tour505002">
+                    <div class="tour505002__box">
+                        <div class="tour505002__video">
+                            <img src="images/u-505-001/video.png" alt="">
+                        </div>
+                        <div class="tour505002__text">
+                            <button type="button">육상(필드)</button>
+                            <p>세계 1등! 우상혁 선수가 말하는 높이뛰기의 매력! 대한체육회TV가 만나봤습니다.</p>
+                            <span>2022.10.14</span>
+                        </div>
+                        <div class="tour505002__close">
+                            <img src="images/u-505-001/close.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- // contents -->
@@ -1230,6 +1246,20 @@
         });
         $(document).on('click', '.game__close', function () {
             $('.gnb-pop').parent().removeClass('on');
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.tour505002, .tour505002-overlay').hide();
+
+            $('.tour505001__item').on('click', function () {
+                $('.tour505002-overlay').fadeIn(150);
+                $('.tour505002').fadeIn(200);
+            });
+
+            $('.tour505002__close, .tour505002-overlay').on('click', function () {
+                $('.tour505002, .tour505002-overlay').fadeOut(200);
+            });
         });
     </script>
 </body>

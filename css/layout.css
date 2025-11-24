@@ -949,6 +949,7 @@ legend {
     border-bottom: 1px solid #ddd;
     padding-bottom: 2rem;
     padding-left: 1rem;
+    transition: all 0.3s ease;
 }
 
 .popup-main__links {
@@ -979,6 +980,24 @@ legend {
 .popup-main__links li a {
     position: relative;
     z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.popup-main__links li a:hover {
+    color: #0C54B8;
+    font-weight: 600;
+}
+
+.popup-main__col-title:not(:has(+ .popup-main__links)):hover {
+    color: #0C54B8;
+}
+
+.popup-main__col:has(.popup-main__links li a:hover) .popup-main__col-title {
+    border-bottom-color: #0C54B8;
+}
+
+.popup-main__col-title:not(:has(+ .popup-main__links)):hover {
+    border-bottom-color: #0C54B8;
 }
 
 .menu-btn {
