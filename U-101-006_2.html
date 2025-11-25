@@ -123,14 +123,31 @@
         <!-- // gnb -->
 
         <!-- contents -->
-        <section class="ply">
+        <section class="ply tour101006__main">
             <div class="inner">
-                <h3 class="ply__tit">신청서작성</h3>
+                <h3 class="ply__tit tour101006__title">신청정보 확인/수정</h3>
+                <div class="tour001001__tabs">
+                    <div class="tour001001__itemTab active">
+                        승인현황
+                    </div>
+                    <div class="tour001001__itemTab">
+                        신상정보
+                    </div>
+                    <div class="tour001001__itemTab">
+                        신상정보
+                    </div>
+                    <div class="tour001001__itemTab">
+                        학력정보
+                    </div>
+                    <div class="tour001001__itemTab">
+                        결제안내
+                    </div>
+                </div>
                 <div class="ply-bsc">
                     <div class="ply-bsc__lf">
                         <div class="ply-bsc__container">
                             <!-- step 01 -->
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <div class="ply-bsc__maintitle">
                                         승인현황
@@ -164,7 +181,7 @@
                             </div>
                             <!-- // step 01 -->
                             <!-- step 02 -->
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <div class="ply-bsc__maintitle">
                                         신상정보
@@ -316,7 +333,7 @@
                             </div>
                             <!-- // step 02 -->
                             <!-- step 03 -->
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <div class="ply-bsc__maintitle ply-bsc__maintitle--line">
                                         신상정보
@@ -374,7 +391,7 @@
                             </div>
                             <!-- // step 03 -->
                             <!-- step 04 -->
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <h4 class="ply-bsc__maintitle ply-bsc__maintitle--line">
                                         학력정보
@@ -418,7 +435,7 @@
                             </div>
                             <!-- // step 04 -->
                             <!-- step 05 -->
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <div class="ply-bsc__maintitle">
                                         결제안내
@@ -516,24 +533,34 @@
                                             반드시 기입하시기 바랍니다.
                                         </p>
                                     </div>
+                                    <div class="ply-bsc__bm tour101006__btnReload">
+                                        <div class="ply-bsc__bm-group">
+                                            <button type="button" class="ply__btn ply__btn--img"><img
+                                                    src="images/ptu_m1_0507/image23.png" alt=""></button>
+                                            <button type="button" class="ply__btn ply__btn--sbmt">결제</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- // step 05 -->
-                            <div class="ply-bsc__bm">
+                            <div class="ply-bsc__bm tour101006__allBtn">
                                 <div class="ply-bsc__bm-group">
                                     <button type="button" class="ply__btn">
                                         <img src="./images/icons/delete-2.png" alt="">
                                         신청취소
                                     </button>
-                                    <button type="button" class="ply__btn">
+                                    <!-- <button type="button" class="ply__btn">
                                         <img src="./images/icons/download.png" alt="">
                                         임시저장
-                                    </button>
+                                    </button> -->
                                 </div>
                                 <div class="ply-bsc__bm-group">
-                                    <button type="button" class="ply__btn ply__btn--img"><img
-                                            src="images/ptu_m1_0507/image23.png" alt=""></button>
-                                    <button type="button" class="ply__btn ply__btn--sbmt">결제</button>
+                                    <button type="button" class="ply__btn">
+                                        신청서 출력
+                                    </button>
+                                    <button type="button" class="ply__btn ply__btn--sbmt">
+                                        저장
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -594,6 +621,25 @@
         </footer>
         <!-- // footer -->
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".tour001001__itemTab");
+        const contents = document.querySelectorAll(".tour001001__mainBox");
+
+        tabs.forEach((tab, i) => {
+            tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("active"));
+            contents.forEach(c => c.style.display = "none");
+
+            tab.classList.add("active");
+            contents[i].style.display = "block";
+            });
+        });
+
+        contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+        });
+    </script>
 </body>
 
 </html>
