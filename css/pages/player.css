@@ -9,6 +9,9 @@
     z-index: 9;
 }
 
+.menu-btn-ply {
+    display: none;
+}
 
 .ply-hdr .inner {
     max-width: 110rem;
@@ -335,7 +338,7 @@
 }
 
 .ply {
-    padding-top: 9rem;
+    padding-top: 2rem;
     padding-bottom: 10rem;
 }
 
@@ -5791,6 +5794,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
 }
 
 .ply__tit.center {

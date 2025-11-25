@@ -1055,6 +1055,13 @@
         padding-bottom: 6rem;
     }
 
+    .indv::before {
+        width: 53.2rem;
+        height: 53.2rem;
+        left: 13.4rem;
+        top: -20.2rem;
+    }
+
     .title {
         margin-bottom: 4rem;
     }
@@ -1063,12 +1070,21 @@
         font-size: 2.1rem;
     }
 
+    .title.mb10 {
+        margin-bottom: 1rem;
+    }
+
     .indv__block {
         padding: 2rem;
+        border-radius: 2rem;
     }
 
     .indv__tit {
         font-size: 1.5rem;
+    }
+
+    .indv__tit.fs16 {
+        font-size: 1.6rem;
     }
 
     .indv__block h4 {
@@ -1140,6 +1156,481 @@
         height: 3.5rem;
     }
 
+    .indv__link figure img.icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .indv__form {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .indv__form .indv__link {
+        padding: 2rem;
+        gap: 0;
+        border-radius: 2rem;
+    }
+
+    .indv__form .indv__link figure {
+        margin-bottom: 2rem;
+    }
+
+    .indv__form .indv__cap {
+        font-size: 1.2rem;
+        line-height: 150%;
+        margin-bottom: 2rem;
+    }
+
+    .indv__form .indv__form-group {
+        gap: 1rem;
+    }
+
+    .indv__form .indv__form-group .indv__form-group-flex {
+        gap: .5rem;
+        height: 4rem;
+    }
+
+    .indv__form .indv__form-group .indv__input {
+        height: 4rem;
+    }
+
+    .indv__form .indv__form-group .indv__btn {
+        font-size: 1.2rem;
+        padding: 0;
+        height: 4rem;
+        width: 9rem;
+    }
+
+    .indv__btn--large {
+        height: 5rem;
+        width: 100%;
+        gap: .7rem;
+    }
+
+    .indv__btn--large>img {
+        width: 2.137rem;
+        height: 2.137rem;
+    }
+
+    .checkbox {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .indv__desc--center {
+        margin-bottom: 4rem;
+    }
+
+    .indv__btn--large--ipin {
+        margin-bottom: 1rem;
+    }
+
+    .indv__prv {
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .indv__prv h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem !important;
+    }
+
+    .indv__prv p {
+        font-size: 1.2rem;
+        line-height: 150%;
+    }
+
+    .has-circle-number::before {
+        width: 12px;
+        height: 12px;
+        color: #666;
+        border: 1px solid #666;
+    }
+
+    .indv__prv__info a {
+        font-size: 1.2rem;
+    }
+
+    .indv__prv__info ul {
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .indv__prv__info ul li {
+        font-size: 1.2rem;
+    }
+
+    .indv__prv__info ps {
+        font-size: 1.2rem;
+    }
+
+    .indv__prv .has-circle-number {
+        padding-bottom: .5rem;
+    }
+
+    .indv__prv .mb30 {
+        margin-bottom: 2rem !important;
+    }
+
+    .indv101028__table {
+        flex-direction: column;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .indv101028__table .indv101002__item.w178 {
+        background: #f5f5f5;
+        max-width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .indv101028__table .indv101002__item.w178 .indv101002__title {
+        border-bottom: none;
+        height: auto;
+        padding: 1rem 2rem .5rem;
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .indv101028__table .indv101002__item.w178 .indv101002__content {
+        display: block;
+        padding: 0 2rem 1rem;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .indv101028__table .indv101002__item.w178 .indv101002__content a {
+        font-size: 1.2rem;
+    }
+
+    .indv101028__table .indv101002__item.w178 .indv101002__content br {
+        display: none;
+    }
+
+    .indv101028__table .indv101002__item.w368,
+    .indv101028__table .indv101002__item.w198,
+    .indv101028__table .indv101002__item.w176 {
+        border-radius: 0;
+        max-width: 100%;
+        border: none;
+    }
+
+    .indv101028__table .indv101002__item.w176 {
+        display: flex;
+    }
+
+    .indv101028__table .indv101002__title br {
+        display: none;
+    }
+
+    .indv101028__table .indv101002__item.w368 .indv101002__title,
+    .indv101028__table .indv101002__item.w198 .indv101002__title,
+    .indv101028__table .indv101002__item.w176 .indv101002__title {
+        background: #fff;
+        border-radius: 1rem;
+        border-bottom: none;
+        height: auto;
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .indv101028__table .indv101002__item.w368 .indv101002__content,
+    .indv101028__table .indv101002__item.w198 .indv101002__content {
+        padding: 0 0 1rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        align-items: flex-start;
+    }
+
+    .indv101028__table .indv101002__item.w176 .indv101002__title::after {
+        content: ':';
+        font-weight: 600;
+        color: #111;
+    }
+
+    .indv101028__table .indv101002__item.w176 .indv101002__content {
+        padding: 1rem 0;
+    }
+
+    .indv101028__table .indv101002__content ol li br {
+        display: none;
+    }
+
+    .indv101028__table .indv101002__item.w176 .indv101002__content b {
+        font-weight: 400;
+    }
+
+    .indv101028__table:last-child {
+        margin-bottom: 2rem;
+    }
+
+    .indv101002__titleMb {
+        display: block;
+        border-radius: 1rem;
+    }
+
+    .ply {
+        padding-bottom: 6rem;
+    }
+
+    .ply__tit {
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .ply__desc {
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+    }
+
+    .ply-ftr {
+        padding: 6rem 2rem 4rem;
+    }
+
+    .ply-ftr__tit {
+        margin-bottom: 2rem;
+    }
+
+    .ply-ftr__adr {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    .ply-ftr__adr dl {
+        font-size: 1.3rem;
+    }
+
+    .ply__flex {
+        flex-direction: column;
+    }
+
+    .ply__info {
+        flex-direction: column;
+    }
+
+    .ply__bg {
+        width: 100%;
+        height: 14rem;
+    }
+
+    .ply__info .ply__content {
+        border-radius: 0 0 2rem 2rem;
+        padding: 2rem;
+    }
+
+    .ply__info {
+        border-radius: 2rem;
+    }
+
+    .ply__side {
+        width: 100%;
+    }
+
+    .ply__info .ply__content .ply__status {
+        font-size: 1.3rem;
+        padding: 0;
+        width: 10rem;
+        height: 3rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .ply__name {
+        margin-top: 0;
+        font-size: 2.1rem;
+    }
+
+    .ply__info .ply__content .ply__task--element .ply__task--text {
+        font-size: 1.5rem;
+    }
+
+    .ply__info .ply__content .ply__task--element .ply__task--status {
+        font-size: .9rem;
+        height: 1.6rem;
+        width: 4rem;
+    }
+
+    .ply__print {
+        gap: 1rem;
+    }
+
+    .ply__print a img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .ply__print a {
+        font-size: 1.3rem;
+    }
+
+    .ply__grid {
+        gap: 1rem;
+    }
+
+    /* header */
+    .ply-nav,
+    .menu-btn-ply {
+        display: block;
+    }
+
+    .ply-nav__list {
+        flex-direction: column;
+        height: 3.5rem;
+        gap: 0;
+    }
+
+    .ply-nav .brdc__item,
+    .ply-nav__logout {
+        display: none;
+    }
+
+    .ply-hdr__list,
+    .ply-hdr__help {
+        display: none;
+    }
+
+    .ply-nav {
+        height: 3.5rem;
+        top: 6rem;
+    }
+
+    .ply-nav__item:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .ply-nav__item {
+        background: #fff;
+        padding: 0 1.5rem;
+        width: 10.5rem;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+
+    .ply-nav__item:last-child {
+        border-bottom: 1px solid #ddd;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .ply-nav__item.has-arrow {
+        width: 10.5rem;
+        padding: 0 1rem;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: none;
+        background: transparent;
+    }
+
+    .ply-nav__link {
+        font-size: 1.1rem;
+        justify-content: space-between;
+        text-align: left;
+        padding: 1rem .2rem 1rem;
+        align-items: baseline;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .ply-nav__item:last-child .ply-nav__link {
+        border-bottom: none;
+    }
+
+
+    .ply-nav__item.has-arrow>.ply-nav__link {
+        position: relative;
+        height: 3.5rem;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        border-bottom: none;
+        padding: 0;
+        align-items: center;
+        color: #0C54B8;
+    }
+
+
+    .ply-nav__item.has-arrow>.ply-nav__link::after {
+        content: '';
+        display: block;
+        width: 1.1rem;
+        height: 1.1rem;
+        background: url(/images/icons/select-icon.png) no-repeat center / contain;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .ply-nav__item.has-arrow.open>.ply-nav__link::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .ply-nav__quik li a {
+        font-size: 1rem;
+    }
+
+    .ply-menu-open .ply-hdr__list,
+    .ply-menu-open .ply-hdr__help {
+        display: flex;
+    }
+
+    .ply-hdr__rt {
+        position: relative;
+    }
+
+    .ply-hdr {
+        height: 6rem;
+    }
+
+    .ply-menu-open .ply-hdr__rt {
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: 6rem;
+        justify-content: end;
+        right: 0;
+        padding-right: 1.6rem;
+    }
+
+    .ply-hdr__list a {
+        font-size: 1rem;
+    }
+
+    .ply-hdr__list {
+        gap: 2rem;
+    }
+
+    .ply-hdr__list li+li::before {
+        left: -1rem;
+    }
+
+    .ply-hdr__help a {
+        font-size: 1rem;
+    }
+
+
+    .menu-btn-ply.is-open .menu-btn__icon {
+        display: none;
+    }
+
+    .menu-btn-ply.is-open::after {
+        content: "";
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url(/images/main-pc/close.png) no-repeat center / contain;
+        display: block;
+    }
+
+    .menu-btn-ply.is-open {
+        padding: 0;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 390px) {
