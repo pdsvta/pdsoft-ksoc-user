@@ -9544,3 +9544,53 @@
 .tour004053__inputNote {
     width: 23rem;
 }
+
+.tour101006__main {
+    padding-top: 5rem;
+}
+
+.tour101006__title {
+    justify-content: center;
+}
+
+.tour101006__allBtn {
+    padding: 4rem 0 0;
+}
+
+.tour101011__item dl {
+    width: 100%;
+}
+
+.tour101011__item dl dt {
+    width: 10rem;
+}
+
+.tour101011__item dl dd {
+    flex: 1;
+}
+
+.tour101006__btnReload {
+    justify-content: flex-end;
+    padding: 4rem 0 0;
+}
+
+.tour101020__transferLine {
+    width: 100%;
+}
+
+.tour101020__transferLine .tour101020__inputChecked {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 22%;
+}
+
+.tour101020__transferLine .transfer-buttons {
+    flex: 1;
+    margin-left: 0;
+    justify-content: flex-end;
+}
+
+.tour101020__transferLine .transfer-btn {
+    padding: 1.2rem 1rem;
+}

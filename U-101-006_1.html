@@ -93,14 +93,28 @@
         <!-- // gnb -->
 
         <!-- contents -->
-        <section class="ply">
+        <section class="ply tour101006__main">
             <div class="inner">
-                <h3 class="ply__tit">신청서작성</h3>
+                <h3 class="ply__tit tour101006__title">신청서작성</h3>
+                <div class="tour001001__tabs">
+                    <div class="tour001001__itemTab active">
+                        기본정보 확인
+                    </div>
+                    <div class="tour001001__itemTab">
+                        신상정보 입력
+                    </div>
+                    <div class="tour001001__itemTab">
+                        소속팀 선택
+                    </div>
+                    <div class="tour001001__itemTab">
+                        학력정보 입력
+                    </div>
+                </div>
                 <div class="ply-bsc">
                     <!-- main content -->
                     <div class="ply-bsc__lf">
                         <div class="ply-bsc__container">
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <div class="ply-bsc__maintitle ply-bsc__maintitle--line">기본정보 확인</div>
                                     <table class="ply-bsc__table ply-bsc__table--black">
@@ -154,7 +168,7 @@
                             </div>
                             <!-- // step 01 -->
                             <!-- step 02 -->
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <div class="ply-bsc__maintitle ply-bsc__maintitle--step03">신상정보 입력</div>
                                     <div class="ply-reg__up">
@@ -289,7 +303,7 @@
                             </div>
                             <!-- // step 02 -->
                             <!-- step 03 -->
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <div class="ply-bsc__maintitle ply-bsc__maintitle--line">소속팀 선택</div>
                                     <ul class="ply-reg__list ply-reg__list--pt10">
@@ -326,7 +340,7 @@
                             </div>
                             <!-- // step 03 -->
                             <!-- step 04 -->
-                            <div class="ply-bsc__item">
+                            <div class="ply-bsc__item tour001001__mainBox">
                                 <div class="ply-bsc__block">
                                     <div class="ply-bsc__maintitle ply-bsc__maintitle--line">학력정보 입력</div>
                                     <div class="edc-group">
@@ -367,7 +381,7 @@
                                 </div>
                             </div>
                             <!-- // step 04 -->
-                            <div class="ply-bsc__bm">
+                            <div class="ply-bsc__bm tour101006__allBtn">
                                 <div class="ply-bsc__bm-group">
                                     <button type="button" class="ply__btn">
                                         <img src="./images/icons/delete-2.png" alt="">
@@ -440,6 +454,25 @@
         </footer>
         <!-- // footer -->
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".tour001001__itemTab");
+        const contents = document.querySelectorAll(".tour001001__mainBox");
+
+        tabs.forEach((tab, i) => {
+            tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("active"));
+            contents.forEach(c => c.style.display = "none");
+
+            tab.classList.add("active");
+            contents[i].style.display = "block";
+            });
+        });
+
+        contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+        });
+    </script>
 </body>
 
 </html>
