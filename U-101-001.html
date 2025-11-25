@@ -1565,22 +1565,35 @@
     <script>
         $(document).on('click', '.menu-btn', function () {
             const $popup = $('.popup-main').parent().addClass('on');
-            const $firstMenu = $('.popup-main__menu-item').removeClass('popup-main__menu-item--active').first().addClass('popup-main__menu-item--active');
+
+            const $firstMenu = $('.popup-main__menu-item')
+                .removeClass('popup-main__menu-item--active')
+                .first()
+                .addClass('popup-main__menu-item--active');
+
             const firstTabId = $firstMenu.data('tab');
-            $('.popup-main__tab').stop(true, true).hide().removeClass('popup-main__tab--active')
+
+            $('.popup-main__tab')
+                .stop(true, true)
+                .hide()
+                .removeClass('popup-main__tab--active')
                 .filter('#' + firstTabId)
             [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
                 .addClass('popup-main__tab--active');
 
-            $('.popup-main__col').removeClass('open');
-            $('.popup-main__links').hide();
+            if (window.innerWidth < 1200) {
+                $('.popup-main__col').removeClass('open');
+                $('.popup-main__links').hide();
+            } else {
+                $('.popup-main__col').addClass('open');
+                $('.popup-main__links').show();
+            }
         });
-
         $(document).on('click', '.popup-close', function () {
             $('.popup-main').parent().removeClass('on');
         });
-    </script>
-    <script>
+
+
         function activateMobileAccordion() {
             if (window.innerWidth < 1200) {
                 $('.popup-main__menu-item').off('click').on('click', function () {
@@ -1598,6 +1611,10 @@
                     $('.popup-main__tab').slideUp();
                     $('#' + tabId).slideDown();
                 });
+
+                $('.popup-main__col').removeClass('open');
+                $('.popup-main__links').hide();
+
             } else {
                 $('.popup-main__menu-item').off('click').on('click', function () {
                     let tabId = $(this).data('tab');
@@ -1607,7 +1624,13 @@
 
                     $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
                     $('#' + tabId).fadeIn(150).addClass('popup-main__tab--active');
+
+                    $('.popup-main__col').addClass('open');
+                    $('.popup-main__links').show();
                 });
+
+                $('.popup-main__col').addClass('open');
+                $('.popup-main__links').show();
             }
         }
 
@@ -1626,8 +1649,9 @@
             });
 
             $(document).on('click', '.popup-main__col', function (e) {
-                let submenu = $(this).find('.popup-main__links');
 
+                if (window.innerWidth >= 1200) return;
+                let submenu = $(this).find('.popup-main__links');
                 if (submenu.length === 0) return;
 
                 e.stopPropagation();
