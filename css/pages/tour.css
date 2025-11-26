@@ -9660,6 +9660,10 @@
     width: 25%;
 }
 
+.tour401002__listChecked .tour401002__groupInput {
+    width: 30%;
+}
+
 .tour401002__listChecked .tour401002__group {
     flex: 1;
     gap: 1rem;
