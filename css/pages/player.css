@@ -1471,6 +1471,11 @@
     color: #666;
 }
 
+.ply-pop__box span {
+    display: flex;
+    gap: .5rem;
+}
+
 .ply-pop__box p {
     padding-left: 2rem;
 }
@@ -1478,21 +1483,20 @@
 .ply-pop__box span::before {
     content: counter(item) '';
     counter-increment: item;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 10px;
-    height: 10px;
-    border: 1.5px solid #666;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #666;
     color: #666;
     background: #fff;
     border-radius: 50%;
     text-align: center;
-    line-height: 0;
     position: relative;
-    top: -2px;
+    top: 3px;
 }
 
 .ply-pop__txt {
@@ -2446,6 +2450,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 1rem;
+    row-gap: 1rem;
 }
 
 .ply-reg__item--max190 {

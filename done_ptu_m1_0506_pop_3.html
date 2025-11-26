@@ -73,6 +73,14 @@
                         <a href="#"><b>430</b></a>
                         <a href="#">화면도움말</a>
                     </div>
+                    <button type="button" class="menu-btn menu-btn-ply ">
+                        <span class="blind">전체메뉴 펼치기</span>
+                        <div class="menu-btn__icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -98,9 +106,9 @@
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">소속변경신청</a>
                     </li>
-                    <li class="ply-nav__item">
+                    <!-- <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전문체육팀</a>
-                    </li>
+                    </li> -->
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전화번호안내</a>
                     </li>
@@ -208,7 +216,7 @@
     </div>
 
     <!-- popup -->
-    <div class="popup on">
+    <div class="popup on popup0506">
         <section class="ply-pop up">
             <ul class="ply-pop__icon up">
                 <li>
@@ -228,6 +236,58 @@
         </section>
     </div>
     <!-- // popup -->
+
+
+    <script>
+        $(document).on("click", ".menu-btn-ply", function () {
+            const $btn = $(this);
+            const $header = $(".ply-hdr");
+
+            if ($header.hasClass("ply-menu-open")) {
+                $header.removeClass("ply-menu-open");
+                $btn.removeClass("is-open");
+            } else {
+                $header.addClass("ply-menu-open");
+                $btn.addClass("is-open");
+            }
+        });
+        $(document).ready(function () {
+
+            function setupThirdMenu() {
+                const isMobile = window.innerWidth < 1200;
+
+                const $list = $('.ply-nav__list');
+                const $items = $list.find('.ply-nav__item');
+                const $first = $items.first();
+                const $others = $items.not(':first');
+
+                if (isMobile) {
+                    $others.hide();
+
+                    $first.addClass('has-arrow');
+
+                    $first.off('click.mobileToggle').on('click.mobileToggle', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $others.slideToggle(200);
+                        $first.toggleClass('open');
+                    });
+
+                } else {
+                    $others.show();
+                    $first.removeClass('has-arrow open');
+                    $first.off('click.mobileToggle');
+                }
+            }
+
+            setupThirdMenu();
+
+            $(window).on('resize', function () {
+                setupThirdMenu();
+            });
+        });
+
+    </script>
 </body>
 
 </html>

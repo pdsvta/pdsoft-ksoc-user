@@ -22,6 +22,40 @@
                         <img src="images/ptu_m1_0501/image01.png" alt="">
                         <span>(사)대한골프협회</span>
                     </h1>
+                    <div class="ply-hdr__pop">
+                        <div class="game__pop">
+                            <div class="game__tit">
+                                <span><b>대한골프협회</b> 경기인 선택</span>
+                            </div>
+                            <ul class="game__list">
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/player-icon.png" alt="">
+                                        <span>선수</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/director-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/judgment-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/manager-icon.png" alt="">
+                                        <span>선수관리<br>담당자</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="game__desc">신청 유형을 선택하세요.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="ply-hdr__rt">
                     <ul class="ply-hdr__list">
@@ -39,6 +73,14 @@
                         <a href="#"><b>430</b></a>
                         <a href="#">화면도움말</a>
                     </div>
+                    <button type="button" class="menu-btn menu-btn-ply ">
+                        <span class="blind">전체메뉴 펼치기</span>
+                        <div class="menu-btn__icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -47,16 +89,16 @@
         <nav class="ply-nav">
             <div class="inner">
                 <ul class="ply-nav__list">
-                    <li class="ply-nav__item">
+                    <li class="brdc__item">
                         <a href="#" class="brdc__home">
                             <img src="images/icons/home-icon.png" alt="">
                         </a>
                     </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">선수등록개요</a>
+                        <a href="#" class="ply-nav__link active">선수등록개요</a>
                     </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link active">신청서작성</a>
+                        <a href="#" class="ply-nav__link">신청서작성</a>
                     </li>
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">신청서출력</a>
@@ -64,9 +106,9 @@
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">소속변경신청</a>
                     </li>
-                    <li class="ply-nav__item">
+                    <!-- <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전문체육팀</a>
-                    </li>
+                    </li> -->
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전화번호안내</a>
                     </li>
@@ -400,7 +442,7 @@
                 </div>
 
                 <!-- popup -->
-                <div class="popup on">
+                <div class="popup on popup0506">
                     <section class="ply-pop">
                         <h3 class="ply-pop__tit">경기인의 교육 의무</h3>
                         <div class="ply-pop__top">대상: 경기인(회원종목단체에 등록한 선수(전문/생활), 지도자, 심판, 선수관리담당자)</div>
@@ -450,6 +492,58 @@
         </footer>
         <!-- // footer -->
     </div>
+
+
+    <script>
+        $(document).on("click", ".menu-btn-ply", function () {
+            const $btn = $(this);
+            const $header = $(".ply-hdr");
+
+            if ($header.hasClass("ply-menu-open")) {
+                $header.removeClass("ply-menu-open");
+                $btn.removeClass("is-open");
+            } else {
+                $header.addClass("ply-menu-open");
+                $btn.addClass("is-open");
+            }
+        });
+        $(document).ready(function () {
+
+            function setupThirdMenu() {
+                const isMobile = window.innerWidth < 1200;
+
+                const $list = $('.ply-nav__list');
+                const $items = $list.find('.ply-nav__item');
+                const $first = $items.first();
+                const $others = $items.not(':first');
+
+                if (isMobile) {
+                    $others.hide();
+
+                    $first.addClass('has-arrow');
+
+                    $first.off('click.mobileToggle').on('click.mobileToggle', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $others.slideToggle(200);
+                        $first.toggleClass('open');
+                    });
+
+                } else {
+                    $others.show();
+                    $first.removeClass('has-arrow open');
+                    $first.off('click.mobileToggle');
+                }
+            }
+
+            setupThirdMenu();
+
+            $(window).on('resize', function () {
+                setupThirdMenu();
+            });
+        });
+
+    </script>
 </body>
 
 </html>
