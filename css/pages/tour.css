@@ -9625,10 +9625,6 @@
     padding: 1rem 1.2rem;
 }
 
-.tour102027__item2 img {
-    transition: opacity 0.2s ease;
-}
-
 .tour204002__table tbody .tour__text--bold {
     padding: 0rem 1.5rem;
 }
@@ -9639,8 +9635,33 @@
 
 .tour401002__listChecked {
     justify-content: space-between;
+    padding: 0;
 }
 
-.tour401002__listChecked .tour__group--item .tour__group--checked span {
-    width: 8rem;
+.tour401002__listChecked .tour__group--item {
+    gap: 1.6rem;
+}
+
+.tour401002__listChecked .tour__group--item .tour__group--checked {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tour401002__listChecked .tour__group--item .tour__group--checked .ply-reg__agree {
+    padding-top: 0;
+    gap: 0.6rem;
+}
+
+.tour401002__listChecked .tour__group--item .tour__group--checked .ply-reg__agree span {
+    font-weight: 200;
+}
+
+.tour401002__listChecked .tour__group--input {
+    width: 25%;
+}
+
+.tour401002__listChecked .tour401002__group {
+    flex: 1;
+    gap: 1rem;
+    justify-content: flex-end;
 }

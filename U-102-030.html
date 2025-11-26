@@ -210,34 +210,13 @@
         $(document).ready(function () {
             const items = $('.ply__group--item2');
 
-            // Khi load trang
-            items.each(function (index) {
-                if (!$(this).hasClass('active')) {
-                    $(this).find('img').hide();  // ẩn icon của item không active
-                }
-            });
-
-            // Hover xử lý hiển thị icon
-            items.hover(
-                function () {
-                    $(this).find('img').show();       // hover → hiện icon
-                },
-                function () {
-                    if (!$(this).hasClass('active')) {
-                        $(this).find('img').hide();   // bỏ hover → ẩn icon nếu không active
-                    }
-                }
-            );
-
             // Click active item
             items.on('click', function () {
                 // Bỏ active toàn bộ
                 items.removeClass('active');
-                items.find('img').hide();
 
                 // Active item được click
                 $(this).addClass('active');
-                $(this).find('img').show();
             });
         });
     </script>
