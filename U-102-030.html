@@ -130,18 +130,18 @@
         <section class="ply pt5">
             <div class="inner">
                 <div class="ply__tit center m0">
-                    <h3>신청서 작성 결과</h3>
+                    <h3>원본 검증</h3>
                 </div>
                 <div class="ply__group--list2">
-                    <div class="ply__group--item2">
+                    <div class="ply__group--item2 tour102027__item2">
                         <img src="images/icons/document-icon.png" alt="">
                         <p>교육수료증 발급내역</p>
                     </div>
-                    <div class="ply__group--item2 active">
+                    <div class="ply__group--item2 active tour102027__item2">
                         <img src="images/icons/mouse-icon.png" alt="">
                         <p>교육수료증 신청</p>
                     </div>
-                    <div class="ply__group--item2">
+                    <div class="ply__group--item2 tour102027__item2">
                         <img src="images/icons/search-blk-icon.png" alt="">
                         <p>원본검증</p>
                     </div>
@@ -205,6 +205,21 @@
         </footer>
         <!-- // footer -->
     </div>
+
+    <script>
+        $(document).ready(function () {
+            const items = $('.ply__group--item2');
+
+            // Click active item
+            items.on('click', function () {
+                // Bỏ active toàn bộ
+                items.removeClass('active');
+
+                // Active item được click
+                $(this).addClass('active');
+            });
+        });
+    </script>
 
 </body>
 

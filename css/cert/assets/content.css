@@ -1168,6 +1168,7 @@ input[type='radio']:focus+label:before {
 
 .hpy-reg__input--h35 {
 	height: 3.5rem;
+	text-align: center;
 }
 
 .hpy-reg__input--h30 {
