@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>지도자등록 신청안내</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleCert.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui.css">
@@ -133,15 +134,15 @@
                     <h3>신청서 작성 결과</h3>
                 </div>
                 <div class="ply__group--list2">
-                    <div class="ply__group--item2">
+                    <div class="ply__group--item2 tour102027__item2">
                         <img src="images/icons/document-icon.png" alt="">
                         <p>교육수료증 발급내역</p>
                     </div>
-                    <div class="ply__group--item2 active">
+                    <div class="ply__group--item2 active tour102027__item2">
                         <img src="images/icons/mouse-icon.png" alt="">
                         <p>교육수료증 신청</p>
                     </div>
-                    <div class="ply__group--item2">
+                    <div class="ply__group--item2 tour102027__item2">
                         <img src="images/icons/search-blk-icon.png" alt="">
                         <p>원본검증</p>
                     </div>
@@ -272,6 +273,42 @@
         </footer>
         <!-- // footer -->
     </div>
+
+    <script>
+        $(document).ready(function () {
+            const items = $('.ply__group--item2');
+
+            // Khi load trang
+            items.each(function (index) {
+                if (!$(this).hasClass('active')) {
+                    $(this).find('img').hide();  // ẩn icon của item không active
+                }
+            });
+
+            // Hover xử lý hiển thị icon
+            items.hover(
+                function () {
+                    $(this).find('img').show();       // hover → hiện icon
+                },
+                function () {
+                    if (!$(this).hasClass('active')) {
+                        $(this).find('img').hide();   // bỏ hover → ẩn icon nếu không active
+                    }
+                }
+            );
+
+            // Click active item
+            items.on('click', function () {
+                // Bỏ active toàn bộ
+                items.removeClass('active');
+                items.find('img').hide();
+
+                // Active item được click
+                $(this).addClass('active');
+                $(this).find('img').show();
+            });
+        });
+    </script>
 
 </body>
 
