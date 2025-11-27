@@ -9660,8 +9660,22 @@
     width: 25%;
 }
 
+.tour401002__listChecked .tour401002__groupInput {
+    width: 30%;
+}
+
 .tour401002__listChecked .tour401002__group {
     flex: 1;
     gap: 1rem;
     justify-content: flex-end;
+}
+
+.tour101001-game-pop-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 9999;
 }

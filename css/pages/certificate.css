@@ -3087,9 +3087,9 @@ a.ui-button:active,
     background: #333;
     border-radius: 2rem;
     padding: 2.5rem 3.5rem 3.5rem;
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     z-index: 8;
 }
 
