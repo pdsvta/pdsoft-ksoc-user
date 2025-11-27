@@ -260,48 +260,113 @@ $(function() {
     });
 
     // 종목선택 팝업
+    // $('.chc__link').click(function(e) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     const offset = $(this).offset();
+    //     const top = offset.top - 50;
+    //     const left = offset.left + 90;
+    //     const right = offset.left - $('.game__pop').outerWidth() + 50;
+    //     const currentNum = $(this).parent().index() + 1;
+    //     const x = currentNum % 6;
+    //     const y = currentNum % 4;
+    //     const text = $(this).find('span').text();
+
+    //     $('.game__pop').addClass('on');
+    //     $('.game__tit span b').text(text);
+
+    //     if ($(this).parents('ul').hasClass('chc__list--img')) { // 이미지형 리스트일 경우
+    //         if (x === 1 || x === 2 || x === 3) {
+    //             $('.game__pop').css({
+    //                 top: top,
+    //                 left: left,
+    //             });
+    //         } else {
+    //             $('.game__pop').css({
+    //                 top: top,
+    //                 left: right
+    //             });
+    //         }
+    //     } else {
+    //         if (y === 1 || y === 2) {
+    //             $('.game__pop').css({
+    //                 top: top,
+    //                 left: left,
+    //             });
+    //         } else {
+    //             $('.game__pop').css({
+    //                 top: top,
+    //                 left: right,
+    //             });
+    //         }
+    //     }
+    // });
+
+    // $('#popToggleBtn').click(function(e) {
+    //     e.stopPropagation();
+    //     $(this).next().toggleClass('on');
+    // });
+
+    // $(document).click(function(e) {
+    //     if (!$(e.target).closest('.game__pop, .chc__link, #popToggleBtn').length) {
+    //         $('.game__pop').removeClass('on');
+    //     }
+    // });
+
     $('.chc__link').click(function(e) {
         e.preventDefault();
         e.stopPropagation();
-        const offset = $(this).offset();
-        const top = offset.top - 50;
-        const left = offset.left + 90;
-        const right = offset.left - $('.game__pop').outerWidth() + 50;
-        const currentNum = $(this).parent().index() + 1;
-        const x = currentNum % 6;
-        const y = currentNum % 4;
-        const text = $(this).find('span').text();
 
-        $('.game__pop').addClass('on');
-        $('.game__tit span b').text(text);
+        const text = $(this).find('span').text().trim();
 
-        if ($(this).parents('ul').hasClass('chc__list--img')) { // 이미지형 리스트일 경우
-            if (x === 1 || x === 2 || x === 3) {
-                $('.game__pop').css({
-                    top: top,
-                    left: left,
-                });
-            } else {
-                $('.game__pop').css({
-                    top: top,
-                    left: right
-                });
-            }
+        // Xóa wrapper popup cũ
+        $('.tour101001-game-pop-wrapper').remove();
+
+        // Lấy popup gốc
+        const $pop1 = $('.game__pop').first().clone();
+        $pop1.removeClass('clone');
+        $pop1.find('.game__tit span b').text(text);
+
+        // Nếu là 야구소프트볼 → tạo 2 popup
+        if (text === '야구소프트볼') {
+
+            const $popA = $('.game__pop').first().clone();
+            const $popB = $('.game__pop').first().clone();
+
+            $popA.addClass('on');
+            $popB.addClass('on clone');
+
+            $popA.find('.game__tit span b').text('야구');
+            $popB.find('.game__tit span b').text('소프트볼');
+
+            // Tạo wrapper
+            const $wrapper = $('<div class="tour101001-game-pop-wrapper"></div>');
+            $wrapper.append($popA).append($popB);
+
+            $('body').append($wrapper);
+
         } else {
-            if (y === 1 || y === 2) {
-                $('.game__pop').css({
-                    top: top,
-                    left: left,
-                });
-            } else {
-                $('.game__pop').css({
-                    top: top,
-                    left: right,
-                });
-            }
+            // Các môn khác → 1 popup
+            const $wrapper = $('<div class="tour101001-game-pop-wrapper"></div>');
+
+            const $single = $('.game__pop').first().clone();
+            $single.addClass('on');
+            $single.find('.game__tit span b').text(text);
+
+            $wrapper.append($single);
+            $('body').append($wrapper);
         }
     });
 
+    // Đóng popup khi click ngoài
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.tour101001-game-pop-wrapper, .chc__link').length) {
+            $('.tour101001-game-pop-wrapper').remove();
+        }
+    });
+
+
+    // Toggle và click outside giữ nguyên
     $('#popToggleBtn').click(function(e) {
         e.stopPropagation();
         $(this).next().toggleClass('on');
@@ -310,6 +375,7 @@ $(function() {
     $(document).click(function(e) {
         if (!$(e.target).closest('.game__pop, .chc__link, #popToggleBtn').length) {
             $('.game__pop').removeClass('on');
+            $('.game__pop.clone').remove();
         }
     });
 
