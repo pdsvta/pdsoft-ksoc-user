@@ -7089,15 +7089,19 @@ legend {
 }
 
 .ply__group--item2:nth-child(1).active img {
-	content: url("../../../images/icons/document-blue-icon.png");
+	/* content: url("../../../images/icons/document-blue-icon.png"); */
+	filter: brightness(0) saturate(100%) invert(32%) sepia(83%) saturate(1522%) hue-rotate(199deg) brightness(91%) contrast(93%);
+	
 }
 
 .ply__group--item2:nth-child(2).active img {
-	content: url("../../../images/icons/mouse-blue-icon.png");
+	/* content: url("../../../images/icons/mouse-blue-icon.png"); */
+	filter: brightness(0) saturate(100%) invert(32%) sepia(83%) saturate(1522%) hue-rotate(199deg) brightness(91%) contrast(93%);
 }
 
 .ply__group--item2:nth-child(3).active img {
-	content: url("../../../images/icons/search-blue-icon.png");
+	/* content: url("../../../images/icons/search-blue-icon.png"); */
+	filter: brightness(0) saturate(100%) invert(32%) sepia(83%) saturate(1522%) hue-rotate(199deg) brightness(91%) contrast(93%);
 }
 
 .ply__group--item2:hover {
@@ -7124,7 +7128,7 @@ legend {
 	transition: all 0.2s ease;
 }
 
-.ply__group--item2:nth-child(1):hover img {
+/* .ply__group--item2:nth-child(1):hover img {
 	content: url("../../../../images/icons/document-blue-icon.png");
 }
 
@@ -7134,8 +7138,15 @@ legend {
 
 .ply__group--item2:nth-child(3):hover img {
 	content: url("../../../images/icons/search-blue-icon.png");
+} */
+
+.ply__group--item2 img {
+    transition: filter .2s ease;
 }
 
+.ply__group--item2:hover img {
+    filter: brightness(0) saturate(100%) invert(32%) sepia(83%) saturate(1522%) hue-rotate(199deg) brightness(91%) contrast(93%);
+}
 
 .ply102028__item {
 	display: flex;
