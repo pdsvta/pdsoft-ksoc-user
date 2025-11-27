@@ -3501,6 +3501,25 @@ a.ui-button:active,
     list-style: auto;
 }
 
+.indv1010062__table {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    padding: 0 2rem;
+}
+
+.indv1010062__box {
+    display: flex;
+}
+
+.indv1010062__box:first-child {
+    width: 28rem;
+}
+
+.indv1010062__box:last-child {
+    width: 36rem;
+}
+
 .indv101002__item {
     border: 1px solid #ddd;
 }
@@ -3522,6 +3541,41 @@ a.ui-button:active,
 
 .indv101002__item.w368 {
     max-width: max-content;
+    width: 100%;
+}
+
+.indv101002__item.w140 {
+    max-width: 14rem;
+    width: 100%;
+}
+
+.indv1010062__table .indv101002__item.w140 {
+    border-right: 1px solid #ddd;
+}
+
+.indv1010062__table .indv101002__item.w220 {
+    border-right: 1px solid #ddd;
+    border-left: none;
+}
+
+.indv1010062__table .indv101002__item.w140:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.indv1010062__table .indv101002__item .indv101002__title {
+    font-size: 1.7rem;
+}
+
+.indv1010062__table .indv101002__item .indv101002__content {
+    padding: 0;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indv101002__item.w220 {
+    max-width: 100%;
     width: 100%;
 }
 

@@ -1850,6 +1850,7 @@
     .ply-reg__up figure .ply-reg__icon-bg img {
         width: auto;
         height: 1.6rem;
+        display: block;
     }
 
     .ply-reg__list {
@@ -1865,10 +1866,13 @@
 
     .ply-reg__card {
         width: 100%;
+        justify-content: end;
     }
 
     .ply-reg__label.small {
         font-size: .9rem;
+        white-space: normal;
+        letter-spacing: -1px;
     }
 
     .ply-reg__agree {
@@ -1883,6 +1887,11 @@
     .ply-reg__card .date-input.ply-reg__input--w200,
     .ply-reg__input--w200 {
         width: 100%;
+        min-width: 100%;
+    }
+
+    .ply-reg__btn--min160 {
+        min-width: 100%;
     }
 
     .ply-reg__input--max200 {
@@ -2000,6 +2009,352 @@
     .ply-pop__box span::before {
         width: 23px;
     }
+
+    .ply-bsc__box figure {
+        display: none;
+    }
+
+    .ply__btn--white.min-width-0 {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .ply-bsc__description ul {
+        padding: 1rem 0;
+    }
+
+    .ply-bsc__description li,
+    .ply-bsc__subtitle {
+        font-size: 1.3rem;
+    }
+
+    .ply-bsc__box {
+        padding: 2rem 0 0;
+    }
+
+    .ply-reg__rt {
+        font-size: 1.1rem;
+    }
+
+    .ply-reg__up figure img {
+        display: none;
+    }
+
+    .ply-reg__up figure .ply-reg__icon-img img {
+        display: block;
+        width: 4rem;
+        height: auto;
+    }
+
+    .ply-reg__input--w210 {
+        width: 100%;
+    }
+
+    .ply-reg__flex--wrap {
+        flex-wrap: wrap;
+    }
+
+    .ply-reg__flex--no-wrap {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .ply-reg__input--w215 {
+        width: 100%;
+    }
+
+    .ply-bsc__note p {
+        font-size: 1.2rem;
+    }
+
+    .ply-bsc__note {
+        padding: 2rem 0 0;
+        margin-top: 2rem;
+    }
+
+    .ply-bsc__note img {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .ply-bsc__des2 {
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .ply-bsc__des2 .ply-bsc__subtitle {
+        padding-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .ply-bsc__des2 .ply-bsc__maintitle {
+        padding: 0 0 1rem;
+    }
+
+    .ply-bsc__maintitle--p2 {
+        padding: 0 0 1rem;
+    }
+
+    .pym__dl {
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .pym__dl p:first-child {
+        font-size: 1.3rem;
+        border-top: 1px solid #ddd;
+        padding-top: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .indv1010062__table .indv101002__item {
+        border-radius: unset;
+    }
+
+    .indv1010062__table .indv101002__item .indv101002__title {
+        font-size: 1.5rem;
+        border-radius: unset;
+        white-space: nowrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .indv1010062__table .indv101002__item .indv101002__content {
+        height: 4rem;
+        border-radius: unset;
+    }
+
+    .indv1010062__box:first-child {
+        width: 100%;
+    }
+
+    .indv1010062__box:last-child {
+        width: 100%;
+    }
+
+    .indv1010062__table .indv101002__item.w220 {
+        border-left: 1px solid #ddd;
+    }
+
+    .indv1010062__box .indv101002__item:last-child {
+        border-left: none;
+    }
+
+    .indv1010062__box .indv101002__item:last-child {
+        width: 20rem;
+    }
+
+    .indv1010062__table .indv101002__item.w140 {
+        max-width: 100%;
+    }
+
+    .indv1010062__table {
+        padding: 0;
+    }
+
+    .ply-bsc__block>h3 {
+        font-size: 1.5rem;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .ply-bsc__block .ply-bsc__desc {
+        font-size: 1.3rem;
+        padding: 0 0 2rem;
+    }
+
+    .ply-bsc__card {
+        padding: 2rem;
+    }
+
+    .ply-bsc__card .edc__flex {
+        margin-bottom: 1rem;
+    }
+
+    .ply-bsc__card .edc__flex .indv__radio {
+        justify-content: flex-start;
+        line-height: 150%;
+    }
+
+    .ply-bsc__card .edc__flex dl:not(:first-child) {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .ply-bsc__card .edc__flex.gap3 {
+        margin-bottom: 0;
+    }
+
+    .ply-bsc__card .edc__flex.gap3 dl {
+        margin-bottom: 1rem;
+        gap: 0;
+    }
+
+    .ply-bsc__card .edc__flex.gap3 dl dt {
+        width: 6rem;
+    }
+
+    .ply-bsc__title>h1 {
+        font-size: 1.5rem;
+    }
+
+    .ply-bsc__title .ply-bsc__btn {
+        font-size: 1.2rem;
+        padding: 1rem 1.4rem;
+    }
+
+    .ply101019 .ply-bsc__card {
+        border-radius: 1rem;
+    }
+
+    .ply101020 .mmb__block {
+        border-top: none;
+        padding: 0 0 2rem;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 2rem;
+    }
+
+    .ply-reg__adrs {
+        font-size: 1.3rem;
+    }
+
+    .mmb__dl {
+        font-size: 1.3rem;
+    }
+
+    .mmb__dl dt {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .ply-reg__input--max100 {
+        max-width: 100%;
+    }
+
+    .ply-reg__flex--gap10 {
+        gap: 1rem;
+    }
+
+    .ply-reg__card.on {
+        max-width: 100%;
+    }
+
+    .transfer-line {
+        flex-direction: column;
+    }
+
+    .transfer-item {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .tour101020__transferLine .tour101020__inputChecked {
+        width: 100%;
+    }
+
+    .tour101020__transferLine .transfer-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tour101020__transferLine .transfer-buttons button {
+        height: 4rem;
+        padding: 0;
+        width: calc((100% - .5rem)/2);
+        justify-content: center;
+    }
+
+    .ply-reg__input--max150 {
+        max-width: 100%;
+    }
+
+    .ply101020 .mmb__block.class--address {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .ply101020 .ply__bm--end {
+        margin-top: 2rem;
+    }
+
+    .ply101020 .ply__bm--end .ply__btn {
+        min-width: 7rem;
+    }
+
+    .ply-srh__top {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .ply-srh--pd20 {
+        padding: 0;
+    }
+
+    .ply-srh__top .ply-reg__card {
+        min-width: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .ply-srh__top .ply-reg__card .selectbox {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .ply-pop__tit2 {
+        padding: 0;
+        border-bottom: none;
+        margin-bottom: 2rem;
+    }
+
+
+    .ply101020popup .list__row.list__row--head {
+        display: none;
+    }
+
+    .ply101020popup .list__row {
+        display: block;
+        margin-bottom: 1rem;
+        height: auto;
+    }
+
+    .ply101020popup .list__row .list__col {
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        border-right: 0;
+        gap: 1.5rem;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        font-size: 1.3rem;
+    }
+
+    .ply101020popup .list__row .list__col::before {
+        content: attr(data-label);
+        font-weight: 600;
+        width: 7rem;
+        flex-shrink: 0;
+        background: #F5F5F5;
+        padding: 1rem;
+        font-size: 1.3rem;
+        border-left: 1px solid #ddd;
+    }
+
+    .ply101020popup .list__row .list__col:first-child {
+        border-left: none;
+    }
+
+    .ply101020popup .list__row,
+    .ply101020popup .list__row--head {
+        border-bottom: none;
+    }
+
+    .ply-srh__btn_primiky {
+        margin-top: 2rem;
+        height: 3rem;
+        min-width: auto;
+        padding: 0 2rem;
+    }
 }
 
 @media (max-width: 390px) {
@@ -2064,5 +2419,9 @@
         align-items: flex-start;
         flex-direction: column;
         padding-bottom: 6rem;
+    }
+
+    .ply-reg__item {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

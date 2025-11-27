@@ -1642,7 +1642,7 @@
     width: 5rem;
     height: 4rem;
     font-size: 1.3rem;
-    padding: 1.2rem;
+    padding: 1.2rem 0;
     min-width: auto;
     flex-wrap: nowrap;
 }
@@ -1692,6 +1692,58 @@
 
 .ply-srh__table td.text-left {
     text-align: left;
+    padding-left: 1.5rem;
+}
+
+
+.ply101020popup.ply101020popup__list {
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.ply101020popup .list__row,
+.ply101020popup .list__row--head {
+    display: grid;
+    grid-template-columns: 40px 100px 1fr 80px 100px 100px;
+    height: 4rem;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+
+.ply101020popup .list__row.list__row--head {
+    background: #f5f5f5;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ply101020popup .list__row.list__row--head .list__col {
+    border-right: 1px solid #ddd;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.ply101020popup .list__row .list__col {
+    border-right: 1px solid #ddd;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.ply101020popup .list__row--head .list__col:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.ply101020popup .list__row .list__col:first-child {
+    border-left: 1px solid #ddd;
 }
 
 .ply-srh__table td.wd430 {
@@ -2188,6 +2240,12 @@
     border: 0;
     font-weight: 400;
     min-width: 10rem;
+}
+
+.ply__btn--white.min-width-0 {
+    min-width: auto;
+    border: 1px solid #0C54B8;
+    padding: 1.5rem 1.7rem;
 }
 
 .ply__btn--mdf {
@@ -3606,8 +3664,8 @@
 }
 
 .transfer-buttons .transfer-btn img {
-    height: 1.1rem;
-    width: 1rem;
+    height: 1.2rem;
+    width: auto;
     object-fit: contain;
 }
 
@@ -3626,6 +3684,10 @@
     font-weight: 400;
     font-size: 1.5rem;
     position: relative;
+}
+
+.edc__flex.gap3 dl {
+    gap: 3rem;
 }
 
 .edc__flex dl dt {
@@ -5581,6 +5643,14 @@
 
 .ply-reg__list {
     padding: 0 2rem;
+}
+
+.ply101020 .ply-reg__list {
+    padding: 0;
+}
+
+.ply101020 .ply-reg__item2 {
+    margin-bottom: 0;
 }
 
 .ply-reg__list--pl20 {

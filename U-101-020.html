@@ -23,7 +23,6 @@
                         <span>(사)대한골프협회</span>
                     </h1>
                     <div class="ply-hdr__pop">
-                        <button type="button" class="custom-select-trigger" id="popToggleBtn">선수 신청등록</button>
                         <div class="game__pop">
                             <div class="game__tit">
                                 <span><b>대한골프협회</b> 경기인 선택</span>
@@ -74,6 +73,14 @@
                         <a href="#"><b>430</b></a>
                         <a href="#">화면도움말</a>
                     </div>
+                    <button type="button" class="menu-btn menu-btn-ply ">
+                        <span class="blind">전체메뉴 펼치기</span>
+                        <div class="menu-btn__icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -82,8 +89,13 @@
         <nav class="ply-nav">
             <div class="inner">
                 <ul class="ply-nav__list">
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__home">
+                            <img src="images/icons/home-icon.png" alt="">
+                        </a>
+                    </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">선수등록개요</a>
+                        <a href="#" class="ply-nav__link active">선수등록개요</a>
                     </li>
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">신청서작성</a>
@@ -92,11 +104,11 @@
                         <a href="#" class="ply-nav__link">신청서출력</a>
                     </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link active">소속변경신청</a>
+                        <a href="#" class="ply-nav__link">소속변경신청</a>
                     </li>
-                    <li class="ply-nav__item">
+                    <!-- <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전문체육팀</a>
-                    </li>
+                    </li> -->
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전화번호안내</a>
                     </li>
@@ -123,7 +135,7 @@
         <!-- // gnb -->
 
         <!-- contents -->
-        <section class="ply tour101006__main">
+        <section class="ply ply101020 tour101006__main">
             <div class="inner">
                 <h3 class="ply__tit ply__tit--pd0 ply__tit--mb20 tour101006__title">소속변경신청</h3>
                 <p class="ply__desc on">소속변경(이적)신청은 최초 등록 신청 후 승인이 완료된 이후 가능하며, 이미 신청한 건이 처리중일 경우 이적신청을 할 수 없습니다.
@@ -158,19 +170,24 @@
                                                     <label for=""
                                                         class="ply-reg__label ply-reg__label--pd0 ply-reg__label--pb10"
                                                         aria-required="true">이적할 소속팀</label>
-                                                    <div class="ply-reg__flex ply-reg__flex--gap5">
-                                                        <input type="text"
-                                                            class="ply-reg__input ply-reg__input--max100">
+                                                    <div class="ply-reg__flex ply-reg__flex--gap10 ply-reg__flex--wrap">
                                                         <input type="text"
                                                             class="ply-reg__input ply-reg__input--max200">
-                                                        <button type="button" class="ply-reg__btn">소속팀
-                                                            검색</button>
+                                                        <div
+                                                            class="ply-reg__flex ply-reg__flex--gap5 ply-reg__flex--no-wrap">
+                                                            <input type="text"
+                                                                class="ply-reg__input ply-reg__input--max200">
+                                                            <button type="button" class="ply-reg__btn">소속팀
+                                                                검색</button>
+
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="ply-reg__item5">
+                                            <li class="ply-reg__item">
                                                 <div class="ply-reg__card on">
-                                                    <label for="" class="ply-reg__label" aria-required="true">팁 입단일</label>
+                                                    <label for="" class="ply-reg__label" aria-required="true">팁
+                                                        입단일</label>
                                                     <input type="date" class="ply-reg__input">
                                                 </div>
                                                 <div class="ply-reg__card">
@@ -194,7 +211,8 @@
                                             </li>
                                             <li>
                                                 <div class="ply-reg__card">
-                                                    <label for="" class="ply-reg__label" aria-required="true">이적사유</label>
+                                                    <label for="" class="ply-reg__label"
+                                                        aria-required="true">이적사유</label>
                                                     <input type="text" class="ply-reg__input ply-reg__input--max410">
                                                 </div>
                                             </li>
@@ -309,6 +327,56 @@
         </footer>
         <!-- // footer -->
     </div>
+    <script>
+        $(document).on("click", ".menu-btn-ply", function () {
+            const $btn = $(this);
+            const $header = $(".ply-hdr");
+
+            if ($header.hasClass("ply-menu-open")) {
+                $header.removeClass("ply-menu-open");
+                $btn.removeClass("is-open");
+            } else {
+                $header.addClass("ply-menu-open");
+                $btn.addClass("is-open");
+            }
+        });
+        $(document).ready(function () {
+
+            function setupThirdMenu() {
+                const isMobile = window.innerWidth < 1200;
+
+                const $list = $('.ply-nav__list');
+                const $items = $list.find('.ply-nav__item');
+                const $first = $items.first();
+                const $others = $items.not(':first');
+
+                if (isMobile) {
+                    $others.hide();
+
+                    $first.addClass('has-arrow');
+
+                    $first.off('click.mobileToggle').on('click.mobileToggle', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $others.slideToggle(200);
+                        $first.toggleClass('open');
+                    });
+
+                } else {
+                    $others.show();
+                    $first.removeClass('has-arrow open');
+                    $first.off('click.mobileToggle');
+                }
+            }
+
+            setupThirdMenu();
+
+            $(window).on('resize', function () {
+                setupThirdMenu();
+            });
+        });
+
+    </script>
 </body>
 
 </html>
