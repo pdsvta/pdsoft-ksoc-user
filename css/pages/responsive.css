@@ -51,6 +51,7 @@
     }
 
     .popup-main__cols {
+        display: flex;
         gap: 2rem;
     }
 
@@ -1883,7 +1884,7 @@
     .ply102002__box {
         flex-direction: column;
     }
-    
+
     .ply__tit.tour102002__tit {
         gap: 1rem;
     }
@@ -1913,7 +1914,7 @@
 
     .ply__wrapper.mt5.tour102002__boxMain,
     .ply__wrapper.mt2.tour102002__boxMain {
-        margin-top: 1rem;       
+        margin-top: 1rem;
     }
 
     .ply__wrapper.mt2.tour102002__boxMain {
@@ -2090,9 +2091,8 @@
     .ply-pop__box span::before {
         width: 23px;
     }
-<<<<<<< Updated upstream
 
-    .ply-bsc__box figure {
+    <<<<<<< Updated upstream .ply-bsc__box figure {
         display: none;
     }
 
@@ -2474,8 +2474,8 @@
         margin-top: 2rem;
         margin-right: 2rem;
     }
-=======
-    .ply__wrapper.mt2.tour102002__boxMain .ply102002__btns {
+
+    =======.ply__wrapper.mt2.tour102002__boxMain .ply102002__btns {
         padding: 0;
     }
 
@@ -2505,7 +2505,7 @@
         min-width: 5.9rem;
     }
 
->>>>>>> Stashed changes
+    >>>>>>>Stashed changes
 }
 
 @media (max-width: 390px) {
