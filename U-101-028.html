@@ -14,6 +14,7 @@
 
 <body>
     <div id="wrap">
+
         <!-- header -->
         <header class="ply-hdr">
             <div class="inner">
@@ -73,6 +74,14 @@
                         <a href="#"><b>430</b></a>
                         <a href="#">화면도움말</a>
                     </div>
+                    <button type="button" class="menu-btn menu-btn-ply ">
+                        <span class="blind">전체메뉴 펼치기</span>
+                        <div class="menu-btn__icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -87,7 +96,7 @@
                         </a>
                     </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">지도자등록개요</a>
+                        <a href="#" class="ply-nav__link active">선수등록개요</a>
                     </li>
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">신청서작성</a>
@@ -98,9 +107,9 @@
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">소속변경신청</a>
                     </li>
-                    <li class="ply-nav__item">
+                    <!-- <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전문체육팀</a>
-                    </li>
+                    </li> -->
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전화번호안내</a>
                     </li>
@@ -923,122 +932,56 @@
             </div>
         </div>
     </div>
+
     <script>
-        $(document).on('click', '.menu-btn', function () {
-            const $popup = $('.popup-main').parent().addClass('on');
+        $(document).on("click", ".menu-btn-ply", function () {
+            const $btn = $(this);
+            const $header = $(".ply-hdr");
 
-            const $firstMenu = $('.popup-main__menu-item')
-                .removeClass('popup-main__menu-item--active')
-                .first()
-                .addClass('popup-main__menu-item--active');
-
-            const firstTabId = $firstMenu.data('tab');
-
-            $('.popup-main__tab')
-                .stop(true, true)
-                .hide()
-                .removeClass('popup-main__tab--active')
-                .filter('#' + firstTabId)
-            [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
-                .addClass('popup-main__tab--active');
-
-            if (window.innerWidth < 1200) {
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
+            if ($header.hasClass("ply-menu-open")) {
+                $header.removeClass("ply-menu-open");
+                $btn.removeClass("is-open");
             } else {
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
+                $header.addClass("ply-menu-open");
+                $btn.addClass("is-open");
             }
         });
-        $(document).on('click', '.popup-close', function () {
-            $('.popup-main').parent().removeClass('on');
-        });
-
-
-        function activateMobileAccordion() {
-            if (window.innerWidth < 1200) {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    if ($(this).hasClass('popup-main__menu-item--active')) {
-                        $(this).removeClass('popup-main__menu-item--active');
-                        $('#' + tabId).slideUp();
-                        return;
-                    }
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').slideUp();
-                    $('#' + tabId).slideDown();
-                });
-
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-
-            } else {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
-                    $('#' + tabId).fadeIn(150).addClass('popup-main__tab--active');
-
-                    $('.popup-main__col').addClass('open');
-                    $('.popup-main__links').show();
-                });
-
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
-            }
-        }
-
-        $(document).ready(function () {
-            activateMobileAccordion();
-        });
-
-        $(window).on('resize', function () {
-            activateMobileAccordion();
-        });
-
         $(document).ready(function () {
 
-            $(document).on('click', '.popup-main__col-title', function (e) {
-                e.preventDefault();
-            });
+            function setupThirdMenu() {
+                const isMobile = window.innerWidth < 1200;
 
-            $(document).on('click', '.popup-main__col', function (e) {
+                const $list = $('.ply-nav__list');
+                const $items = $list.find('.ply-nav__item');
+                const $first = $items.first();
+                const $others = $items.not(':first');
 
-                if (window.innerWidth >= 1200) return;
-                let submenu = $(this).find('.popup-main__links');
-                if (submenu.length === 0) return;
+                if (isMobile) {
+                    $others.hide();
 
-                e.stopPropagation();
+                    $first.addClass('has-arrow');
 
-                if ($(this).hasClass('open')) {
-                    $(this).removeClass('open');
-                    submenu.slideUp(200);
-                    return;
+                    $first.off('click.mobileToggle').on('click.mobileToggle', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $others.slideToggle(200);
+                        $first.toggleClass('open');
+                    });
+
+                } else {
+                    $others.show();
+                    $first.removeClass('has-arrow open');
+                    $first.off('click.mobileToggle');
                 }
+            }
 
-                $(this)
-                    .closest('.popup-main__cols')
-                    .find('.popup-main__col.open')
-                    .removeClass('open')
-                    .find('.popup-main__links')
-                    .slideUp(200);
+            setupThirdMenu();
 
-                $(this).addClass('open');
-                submenu.slideDown(200);
+            $(window).on('resize', function () {
+                setupThirdMenu();
             });
-
-            $(document).on('click', '.popup-main__links a', function (e) {
-                e.stopPropagation();
-            });
-
         });
+
     </script>
 </body>
 

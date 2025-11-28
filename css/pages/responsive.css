@@ -2355,6 +2355,43 @@
         min-width: auto;
         padding: 0 2rem;
     }
+
+    .ply-reg__item5--columns190 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ply-bsc__block .mmb__tit--mb30 {
+        margin-bottom: 2rem;
+    }
+
+    .ply05091 .mmb__block {
+        padding: 1rem 0 4rem;
+    }
+
+    .ply05091 .ply-reg__agree-h40 {
+        padding-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .mmb__tit--pb20 {
+        padding-bottom: 2rem !important;
+    }
+
+    .ply-reg__item5 {
+        max-width: 100%;
+        column-gap: .5rem;
+        row-gap: 0;
+        margin-bottom: 0;
+    }
+
+    .ply05091 .transfer-line {
+        align-items: flex-start;
+    }
+
+    .indv__btbx--center {
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 @media (max-width: 390px) {

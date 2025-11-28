@@ -2949,8 +2949,9 @@
     height: 1.5rem;
     position: absolute;
     top: 50%;
-    left: 17rem;
+    right: 1rem;
     transform: translateY(-50%);
+    z-index: 9;
 }
 
 .ply-reg__card.max245 {
@@ -3427,9 +3428,9 @@
 }
 
 .ply-reg__card .date-input.on {
-    padding: 0;
     height: 4rem;
     max-width: 41rem;
+    position: relative;
 }
 
 .ply-reg__radio-label {
@@ -6914,4 +6915,18 @@
 
 .ply102004__top {
     padding: 0 2rem;
+}
+
+.ply0509 .edc__flex dl dt {
+    width: 8rem;
+}
+
+.ply0509 .edc__status {
+    position: unset;
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+.ply05091 .mmb__block {
+    padding: 3rem 0 6rem;
 }

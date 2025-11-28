@@ -2506,6 +2506,11 @@
     width: max-content;
 }
 
+.ply05091 .date-inputbox {
+    max-width: 20rem;
+    width: 100%;
+}
+
 .date-input {
     width: 14rem;
     height: 4rem;
