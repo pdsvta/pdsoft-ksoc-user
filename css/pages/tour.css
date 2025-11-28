@@ -6834,6 +6834,11 @@
     gap: 2.5rem;
 }
 
+.screen2__track {
+    display: flex;
+    gap: 2.5rem;
+}
+
 .screen2__item {
     width: calc((100% - 5rem)/3);
     padding: 3rem;
@@ -9599,7 +9604,7 @@
     padding: 0 0;
 }
 
-.tour102023__title {  
+.tour102023__title {
     justify-content: flex-start;
 }
 

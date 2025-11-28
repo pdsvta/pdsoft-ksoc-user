@@ -541,6 +541,7 @@
         justify-content: left;
         overflow: hidden;
         width: 100%;
+        gap: 0;
     }
 
     .screen2__item {
