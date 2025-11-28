@@ -1085,8 +1085,10 @@ legend {
     height: 5rem;
     background-color: #F8F9FA;
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     position: relative;
     z-index: 1;
+    margin-top: 3rem;
 }
 
 .brdc .inner {
@@ -1397,7 +1399,7 @@ legend {
 
 /* header-mainpc */
 .header-main {
-    height: auto;
+    height: 15rem;
     border-bottom: none;
 }
 
