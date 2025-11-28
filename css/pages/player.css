@@ -748,6 +748,10 @@
     background: #666;
 }
 
+.ply__print a.navyblue {
+    background: #0C54B8B2;
+}
+
 .ply__tell {
     height: 10rem;
     display: flex;
