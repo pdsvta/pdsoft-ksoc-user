@@ -687,9 +687,8 @@ legend {
 }
 
 .gnb__link:hover {
-    font-weight: 700;
-    color: #fff;
-    background: #007AFF;
+    font-weight: 800;
+    color: #0C54B8;
 }
 
 .gnb-pop {
