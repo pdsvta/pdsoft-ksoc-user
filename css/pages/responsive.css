@@ -2539,19 +2539,8 @@
         min-width: 5.9rem;
     }
 
-    .ply-reg__item .ply-reg__card:last-child .ply-reg__flex {
-        display: grid !important;
-        grid-template-columns: 1fr auto;
-        gap: .5rem;
-    }
 
-    .ply-reg__item .ply-reg__card:last-child .ply-reg__btn {
-        width: 100%;
-    }
 
-    .ply-reg__item .ply-reg__card:last-child {
-        grid-column: span 2;
-    }
 
 }
 
