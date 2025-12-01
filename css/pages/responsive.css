@@ -188,7 +188,7 @@
         transform: translateY(-50%);
         width: .9rem;
         height: .6rem;
-        background-image: url('/images/main-pc/image18.png');
+        background-image: url('../../images/main-pc/image18.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
