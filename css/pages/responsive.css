@@ -2393,6 +2393,40 @@
         margin-top: 2rem;
         margin-right: 2rem;
     }
+
+    .ply05091 .transfer-buttons {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .ply05091 .transfer-buttons .transfer-btn {
+        padding: 1.2rem 1rem;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .ply-bsc__text {
+        padding: 2rem 0 0;
+        font-size: 1.3rem;
+    }
+
+    .ply-reg__item--max190 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .ply05101 .mmb__block {
+        padding: 1rem 0 0;
+    }
+
+    .ply05101 .mmb__block--mt-30 {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    .ply__tit_desc {
+        font-size: 1.3rem;
+        padding: 0 2rem;
+    }
 }
 
 @media (max-width: 390px) {
@@ -2436,6 +2470,10 @@
 
     .popup-main__sidebar {
         width: 14rem;
+    }
+
+    .ply05091 .transfer-buttons .transfer-btn {
+        width: auto;
     }
 }
 

@@ -23,7 +23,6 @@
                         <span>(사)대한골프협회</span>
                     </h1>
                     <div class="ply-hdr__pop">
-                        <button type="button" class="custom-select-trigger" id="popToggleBtn">선수 신청등록</button>
                         <div class="game__pop">
                             <div class="game__tit">
                                 <span><b>대한골프협회</b> 경기인 선택</span>
@@ -74,6 +73,14 @@
                         <a href="#"><b>430</b></a>
                         <a href="#">화면도움말</a>
                     </div>
+                    <button type="button" class="menu-btn menu-btn-ply ">
+                        <span class="blind">전체메뉴 펼치기</span>
+                        <div class="menu-btn__icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -82,8 +89,13 @@
         <nav class="ply-nav">
             <div class="inner">
                 <ul class="ply-nav__list">
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__home">
+                            <img src="images/icons/home-icon.png" alt="">
+                        </a>
+                    </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">선수등록개요</a>
+                        <a href="#" class="ply-nav__link active">선수등록개요</a>
                     </li>
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">신청서작성</a>
@@ -94,9 +106,9 @@
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">소속변경신청</a>
                     </li>
-                    <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link active">전문체육팀</a>
-                    </li>
+                    <!-- <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">전문체육팀</a>
+                    </li> -->
                     <li class="ply-nav__item">
                         <a href="#" class="ply-nav__link">전화번호안내</a>
                     </li>
@@ -123,13 +135,15 @@
         <!-- // gnb -->
 
         <!-- contents -->
-        <section class="ply">
+        <section class="ply ply05101">
             <div class="inner">
                 <h3 class="ply__tit ply__tit--pd0 ply__tit--mb20">전문체육팀</h3>
                 <p class="ply__tit_desc">
                     신청하려는 소속팀이 없을 경우 각 소속팀의 대표자 또는 선수 개인(골프 종목 한정)이 신청서를 작성합니다.
                     <br>
-                    종목단체에서 팀에 대한 승인완료 이후 해당하는 소속팀으로 선수등록신청을 할 수 있습니다.
+                    종목단체에서 팀에 대한 승인완료 이후 해당하는
+
+                    선수등록신청을 할 수 있습니다.
                     <br><br>
                     소속팀 신청서 저장 후 각 시도골프협회로 1차 승인을 요청해주세요.
                 </p>
@@ -159,7 +173,7 @@
                                             </select>
                                         </div>
                                     </li>
-                                    <li class="ply-reg__item">
+                                    <li class="ply-reg__item ply-reg__items--max200">
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label ply-reg__label--required"
                                                 aria-required="true">학교 여부</label>
@@ -173,7 +187,7 @@
                                             <label for="" class="ply-reg__label ply-reg__label--required"
                                                 aria-required="true">학교코드 </label>
                                             <div class="ply-reg__flex ply-reg__flex--gap5">
-                                                <input type="text" class="ply-reg__input ply-reg__input--max145">
+                                                <input type="text" class="ply-reg__input">
                                                 <button type="button"
                                                     class="ply-reg__btn ply-reg__btn--min50 ply-reg__btn--gray">검색</button>
                                             </div>
@@ -309,8 +323,7 @@
                                             <label for="" class="ply-reg__label">대표자명</label>
                                             <input type="text" class="ply-reg__input">
                                         </div>
-                                    </li>
-                                    <li class="ply-reg__item ply-reg__item--max190">
+
                                         <div class="ply-reg__card">
                                             <label for="" class="ply-reg__label">창단일</label>
                                             <div class="date-inputbox">
@@ -394,6 +407,56 @@
         </footer>
         <!-- // footer -->
     </div>
+    <script>
+        $(document).on("click", ".menu-btn-ply", function () {
+            const $btn = $(this);
+            const $header = $(".ply-hdr");
+
+            if ($header.hasClass("ply-menu-open")) {
+                $header.removeClass("ply-menu-open");
+                $btn.removeClass("is-open");
+            } else {
+                $header.addClass("ply-menu-open");
+                $btn.addClass("is-open");
+            }
+        });
+        $(document).ready(function () {
+
+            function setupThirdMenu() {
+                const isMobile = window.innerWidth < 1200;
+
+                const $list = $('.ply-nav__list');
+                const $items = $list.find('.ply-nav__item');
+                const $first = $items.first();
+                const $others = $items.not(':first');
+
+                if (isMobile) {
+                    $others.hide();
+
+                    $first.addClass('has-arrow');
+
+                    $first.off('click.mobileToggle').on('click.mobileToggle', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $others.slideToggle(200);
+                        $first.toggleClass('open');
+                    });
+
+                } else {
+                    $others.show();
+                    $first.removeClass('has-arrow open');
+                    $first.off('click.mobileToggle');
+                }
+            }
+
+            setupThirdMenu();
+
+            $(window).on('resize', function () {
+                setupThirdMenu();
+            });
+        });
+
+    </script>
 </body>
 
 </html>

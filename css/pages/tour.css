@@ -6944,11 +6944,6 @@
     transition: all 0.3s ease;
 }
 
-.screen2__item:last-child .screen2__icon {
-    background: #000;
-    color: #fff;
-}
-
 .screen2__icon:hover {
     background: #000;
     color: #fff;

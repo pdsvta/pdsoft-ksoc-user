@@ -2515,6 +2515,10 @@
     grid-template-columns: repeat(3, 19rem) !important;
 }
 
+.ply-reg__items--max200 {
+    grid-template-columns: repeat(1, 20rem 25.5rem);
+}
+
 .ply-reg__item--colum {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -6929,4 +6933,8 @@
 
 .ply05091 .mmb__block {
     padding: 3rem 0 6rem;
+}
+
+.ply05101 .ply-reg__list {
+    padding: 0;
 }

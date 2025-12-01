@@ -5059,3 +5059,7 @@ a.ui-button:active,
     background-image: url("../../images/u-102-001/blockchain_bdg.png");
     background-size: 100%;
 }
+
+.ply05101 .date-inputbox {
+    width: auto;
+}
