@@ -506,7 +506,7 @@
     </div>
 
     <!-- popup -->
-    <div class="popup on ">
+    <div class="popup on popup0506">
         <section class="ply-pop ply-pop--max760">
             <button type="button" class="popup__close popup__close--top45">
                 <span class="blind">팝업닫기</span>
@@ -523,74 +523,92 @@
             </h3>
             <div class="ply-srh">
                 <div class="ply-srh__top ply-srh__top--gap5">
-                    <div class="ply-reg__card ply-reg__card--max220">
-                        <select name="" id="" class="selectbox">
-                            <option value="">학교구분</option>
-                            <option value="">초등</option>
-                            <option value="">중등</option>
-                            <option value="">고등</option>
-                            <option value="">대학교</option>
-                        </select>
-                    </div>
-                    <div class="ply-reg__card ply-reg__card--max200">
-                        <select name="" id="" class="selectbox">
-                            <option value="">시도</option>
-                            <option value="">서울</option>
-                            <option value="">경기</option>
-                            <option value="">인천</option>
-                        </select>
+                    <div class="ply-reg__flex ply-reg__flex--gap5">
+                        <div class="ply-reg__card ply-reg__card--max200">
+                            <select name="" id="" class="selectbox">
+                                <option value="">학교구분</option>
+                                <option value="">초등</option>
+                                <option value="">중등</option>
+                                <option value="">고등</option>
+                                <option value="">대학교</option>
+                            </select>
+                        </div>
+                        <div class="ply-reg__card ply-reg__card--max200">
+                            <select name="" id="" class="selectbox">
+                                <option value="">시도</option>
+                                <option value="">서울</option>
+                                <option value="">경기</option>
+                                <option value="">인천</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="ply-reg__flex ply-reg__flex--gap5">
                         <input type="text" class="ply-reg__input ply-reg__input--max160">
                         <button type="button" class="ply-src__btn ply-src__btn--right">검색</button>
                     </div>
                 </div>
-                <table class="ply-srh__table ply-srh__table--ellipsis">
-                    <colgroup>
-                        <col style="width: 4rem;">
-                        <col style="width: 10rem;">
-                        <col style="width: auto;">
-                        <col style="width: 6rem;">
-                        <col style="width: 8rem;">
-                        <col style="width: 16rem;">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>학교코드</th>
-                            <th>학교명</th>
-                            <th>시도</th>
-                            <th>학교구분</th>
-                            <th>주소</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>NA00108</td>
-                            <td>덜위치칼리지서울영국학교</td>
-                            <td>서울</td>
-                            <td>초등학교</td>
-                            <td>서울 서초구 반포2동 5-1</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>NA00108</td>
-                            <td>덜위치칼리지서울영국학교</td>
-                            <td>서울</td>
-                            <td>초등학교</td>
-                            <td>서울 서초구 반포2동 5-1</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>NA00108</td>
-                            <td>덜위치칼리지서울영국학교</td>
-                            <td>서울</td>
-                            <td>초등학교</td>
-                            <td>서울 서초구 반포2동 5-1</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="ply-srh__scroll max-height26">
+                    <div class="ply101020popup ply0510popup ply101020popup__list">
+                        <div class="list__row list__row--head">
+                            <div class="list__col">No</div>
+                            <div class="list__col">학교코드</div>
+                            <div class="list__col">학교명</div>
+                            <div class="list__col">시도</div>
+                            <div class="list__col">학교구분</div>
+                            <div class="list__col">주소</div>
+                        </div>
+
+                        <div class="list__row">
+                            <div class="list__col" data-label="No">1</div>
+                            <div class="list__col" data-label="학교코드">NA00108</div>
+                            <div class="list__col" data-label="학교명">덜위치칼리지서울영국학교</div>
+                            <div class="list__col" data-label="시도">서울</div>
+                            <div class="list__col" data-label="학교구분">초등학교</div>
+                            <div class="list__col" data-label="주소">서울 서초구 반포2동 5-1</div>
+                        </div>
+                        <div class="list__row">
+                            <div class="list__col" data-label="No">2</div>
+                            <div class="list__col" data-label="학교코드">NA00108</div>
+                            <div class="list__col" data-label="학교명">덜위치칼리지서울영국학교</div>
+                            <div class="list__col" data-label="시도">서울</div>
+                            <div class="list__col" data-label="학교구분">초등학교</div>
+                            <div class="list__col" data-label="주소">서울 서초구 반포2동 5-1</div>
+                        </div>
+                        <div class="list__row">
+                            <div class="list__col" data-label="No">3</div>
+                            <div class="list__col" data-label="학교코드">NA00108</div>
+                            <div class="list__col" data-label="학교명">덜위치칼리지서울영국학교</div>
+                            <div class="list__col" data-label="시도">서울</div>
+                            <div class="list__col" data-label="학교구분">초등학교</div>
+                            <div class="list__col" data-label="주소">서울 서초구 반포2동 5-1</div>
+                        </div>
+                        <div class="list__row">
+                            <div class="list__col" data-label="No">4</div>
+                            <div class="list__col" data-label="학교코드">NA00108</div>
+                            <div class="list__col" data-label="학교명">덜위치칼리지서울영국학교</div>
+                            <div class="list__col" data-label="시도">서울</div>
+                            <div class="list__col" data-label="학교구분">초등학교</div>
+                            <div class="list__col" data-label="주소">서울 서초구 반포2동 5-1</div>
+                        </div>
+                        <div class="list__row">
+                            <div class="list__col" data-label="No">5</div>
+                            <div class="list__col" data-label="학교코드">NA00108</div>
+                            <div class="list__col" data-label="학교명">덜위치칼리지서울영국학교</div>
+                            <div class="list__col" data-label="시도">서울</div>
+                            <div class="list__col" data-label="학교구분">초등학교</div>
+                            <div class="list__col" data-label="주소">서울 서초구 반포2동 5-1</div>
+                        </div>
+                        <div class="list__row">
+                            <div class="list__col" data-label="No">6</div>
+                            <div class="list__col" data-label="학교코드">NA00108</div>
+                            <div class="list__col" data-label="학교명">덜위치칼리지서울영국학교</div>
+                            <div class="list__col" data-label="시도">서울</div>
+                            <div class="list__col" data-label="학교구분">초등학교</div>
+                            <div class="list__col" data-label="주소">서울 서초구 반포2동 5-1</div>
+                        </div>
+                    </div>
+
+                </div>
                 <button type="button" class="ply-src__btn ply-srh__btn_primiky">닫기</button>
             </div>
         </section>

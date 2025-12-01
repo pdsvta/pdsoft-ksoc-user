@@ -135,9 +135,9 @@
         <!-- // gnb -->
 
         <!-- contents -->
-        <section class="ply">
+        <section class="ply ply101020 tour101006__main">
             <div class="inner">
-                <h3 class="ply__tit ply__tit--pd0 ply__tit--mb20">소속변경신청</h3>
+                <h3 class="ply__tit ply__tit--pd0 ply__tit--mb20 tour101006__title">소속변경신청</h3>
                 <p class="ply__desc on">소속변경(이적)신청은 최초 등록 신청 후 승인이 완료된 이후 가능하며, 이미 신청한 건이 처리중일 경우 이적신청을 할 수 없습니다.
                     <br>신청 후 승인은 각 회원종목 단체의 절차에 따라 진행됩니다.
                 </p>
@@ -170,20 +170,24 @@
                                                     <label for=""
                                                         class="ply-reg__label ply-reg__label--pd0 ply-reg__label--pb10"
                                                         aria-required="true">이적할 소속팀</label>
-                                                    <div class="ply-reg__flex ply-reg__flex--gap5">
-                                                        <input type="text"
-                                                            class="ply-reg__input ply-reg__input--max100">
+                                                    <div class="ply-reg__flex ply-reg__flex--gap10 ply-reg__flex--wrap">
                                                         <input type="text"
                                                             class="ply-reg__input ply-reg__input--max200">
-                                                        <button type="button" class="ply-reg__btn">소속팀
-                                                            검색</button>
+                                                        <div
+                                                            class="ply-reg__flex ply-reg__flex--gap5 ply-reg__flex--no-wrap">
+                                                            <input type="text"
+                                                                class="ply-reg__input ply-reg__input--max200">
+                                                            <button type="button" class="ply-reg__btn">소속팀
+                                                                검색</button>
+
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="ply-reg__item5">
                                                 <div class="ply-reg__card on">
-                                                    <label for="" class="ply-reg__label" aria-required="true">팀
-                                                        입단</label>
+                                                    <label for="" class="ply-reg__label" aria-required="true">팁
+                                                        입단일</label>
                                                     <input type="date" class="ply-reg__input">
                                                 </div>
                                                 <div class="ply-reg__card">
@@ -196,7 +200,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="ply-reg__card">
-                                                    <label for="" class="ply-reg__label">학년년</label>
+                                                    <label for="" class="ply-reg__label">학년</label>
                                                     <select name="" id="" class="selectbox">
                                                         <option value="">선택</option>
                                                         <option value="">1학년</option>
@@ -204,18 +208,18 @@
                                                         <option value="">3학년</option>
                                                     </select>
                                                 </div>
-                                            </li>
-                                            <li>
                                                 <div class="ply-reg__card">
-                                                    <label for="" class="ply-reg__label" aria-required="true">팀
-                                                        입단</label>
-                                                    <input type="text" class="ply-reg__input ply-reg__input--max410">
+                                                    <label for="" class="ply-reg__label"
+                                                        aria-required="true">이적사유</label>
+                                                    <input type="text" class="ply-reg__input ply-reg__input--max420">
                                                 </div>
                                             </li>
                                             <li class="ply-reg__item4 transfer-item">
-                                                <div class="transfer-line">
-                                                    <input type="checkbox" class="checkbox" checked>
-                                                    <span class="transfer-text">이적동의서 있음</span>
+                                                <div class="transfer-line tour101020__transferLine">
+                                                    <div class="tour101020__inputChecked">
+                                                        <input type="checkbox" class="checkbox" checked>
+                                                        <span class="transfer-text">이적동의서 있음</span>
+                                                    </div>
                                                     <div class="transfer-buttons">
                                                         <button type="button" class="transfer-btn">
                                                             <img src="images/ptu_m1_0507/image17.png" alt="">
@@ -332,34 +336,29 @@
                 <span>소속팀 선택</span>
             </h3>
             <div class="ply-srh ply-srh--pd20">
-                <div class="ply-srh__top ply-srh__top--gap5 ply-reg__mr3">
-                    <div class="ply-reg__card max130">
-                        <select name="" id="" class="selectbox">
-                            <option value="">전문체육</option>
-                            <option value="">전문체육</option>
-                            <option value="">전문체육</option>
-                            <option value="">전문체육</option>
-                        </select>
-                    </div>
-                    <div class="ply-reg__card max130">
-                        <select name="" id="" class="selectbox">
-                            <option value="">시도</option>
-                            <option value="">서울</option>
-                            <option value="">경기</option>
-                            <option value="">인천</option>
-                        </select>
-                    </div>
-                    <div class="ply-reg__card max130">
-                        <select name="" id="" class="selectbox">
-                            <option value="">실업(일반)</option>
-                            <option value="">실업(일반)</option>
-                            <option value="">실업(일반)</option>
-                            <option value="">실업(일반)</option>
-                        </select>
+                <div class="ply-srh__top ply-srh__top--gap5">
+                    <div class="ply-reg__flex ply-reg__flex--gap5">
+                        <div class="ply-reg__card ply-reg__card--max200">
+                            <select name="" id="" class="selectbox">
+                                <option value="">학교구분</option>
+                                <option value="">초등</option>
+                                <option value="">중등</option>
+                                <option value="">고등</option>
+                                <option value="">대학교</option>
+                            </select>
+                        </div>
+                        <div class="ply-reg__card ply-reg__card--max200">
+                            <select name="" id="" class="selectbox">
+                                <option value="">시도</option>
+                                <option value="">서울</option>
+                                <option value="">경기</option>
+                                <option value="">인천</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="ply-reg__flex ply-reg__flex--gap5">
-                        <input type="text" class="ply-reg__input">
-                        <button type="button" class="ply-src__btn btn--primary">검색</button>
+                        <input type="text" class="ply-reg__input ply-reg__input--max160">
+                        <button type="button" class="ply-src__btn ply-src__btn--right">검색</button>
                     </div>
                 </div>
                 <div class="ply-srh__scroll max-height26">
