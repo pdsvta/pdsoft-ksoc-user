@@ -5167,11 +5167,25 @@
     font-size: 1.3rem;
 }
 
+.annc__table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.annc__table tbody tr:hover td.text-left a {
+    font-weight: 600;
+    color: #0C54B8;
+}
+
 .annc__link {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 138%;
     transition: all 0.3s;
+}
+
+.annc__link br {
+    display: none;
 }
 
 .annc__file-icon {
