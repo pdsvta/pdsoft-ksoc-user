@@ -525,7 +525,7 @@
         <!-- // breadcrumbs -->
 
         <!-- contents -->
-        <section class="tour">
+        <section class="tour tour107002">
             <div class="inner">
                 <div class="title">
                     <h2>정규강습 시간표</h2>
@@ -557,34 +557,35 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td rowspan="2">어린이반<br>(7세이상)</td>
+                                    <td rowspan="2">어린이반<br> (7세이상)</td>
                                     <td>토</td>
                                     <td>8회</td>
-                                    <td>10:00-11:45 (2시간)</td>
-                                    <td>-</td>
+                                    <td class="speed">10:00-11:45 (2시간)</td>
+                                    <td class="figure">-</td>
                                     <td>54,000원</td>
                                 </tr>
                                 <tr>
+                                    <td class="mobile-title">어린이반 (7세이상)</td>
                                     <td>일</td>
                                     <td>8회</td>
-                                    <td>10:00-11:45 (2시간)</td>
-                                    <td>10:00-11:45 (2시간)</td>
+                                    <td class="speed">10:00-11:45 (2시간)</td>
+                                    <td class="figure">10:00-11:45 (2시간)</td>
                                     <td>54,000원</td>
                                 </tr>
                                 <tr>
                                     <td class="twoLine">청소년반<br>(중·고생)</td>
                                     <td>토</td>
                                     <td>8회</td>
-                                    <td>10:00-11:45 (2시간)</td>
-                                    <td>-</td>
+                                    <td class="speed">10:00-11:45 (2시간)</td>
+                                    <td class="figure">-</td>
                                     <td>54,000원</td>
                                 </tr>
                                 <tr>
                                     <td>성 인 반</td>
                                     <td>토</td>
                                     <td>8회</td>
-                                    <td>10:00-11:45 (2시간)</td>
-                                    <td>-</td>
+                                    <td class="speed">10:00-11:45 (2시간)</td>
+                                    <td class="figure">-</td>
                                     <td>52,000원</td>
                                 </tr>
                             </tbody>
@@ -1375,95 +1376,76 @@
         </div>
     </div>
     <script>
-        $(document).on('click', '.menu-btn', function () {
-            const $popup = $('.popup-main').parent().addClass('on');
+        $(document).ready(function () {
 
-            const $firstMenu = $('.popup-main__menu-item')
-                .removeClass('popup-main__menu-item--active')
-                .first()
-                .addClass('popup-main__menu-item--active');
+            $(document).on('click', '.menu-btn', function () {
+                const $popupWrapper = $('.popup-main').parent().addClass('on');
 
-            const firstTabId = $firstMenu.data('tab');
+                const $firstMenu = $('.popup-main__menu-item')
+                    .removeClass('popup-main__menu-item--active')
+                    .first()
+                    .addClass('popup-main__menu-item--active');
 
-            $('.popup-main__tab')
-                .stop(true, true)
-                .hide()
-                .removeClass('popup-main__tab--active')
-                .filter('#' + firstTabId)
-            [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
-                .addClass('popup-main__tab--active');
+                const firstTabId = $firstMenu.data('tab');
 
-            if (window.innerWidth < 1200) {
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-            } else {
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
-            }
-        });
-        $(document).on('click', '.popup-close', function () {
-            $('.popup-main').parent().removeClass('on');
-        });
+                $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
 
+                if (window.innerWidth < 1200) {
+                    $('#' + firstTabId).slideDown().addClass('popup-main__tab--active');
 
-        function activateMobileAccordion() {
-            if (window.innerWidth < 1200) {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    if ($(this).hasClass('popup-main__menu-item--active')) {
-                        $(this).removeClass('popup-main__menu-item--active');
-                        $('#' + tabId).slideUp();
-                        return;
-                    }
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').slideUp();
-                    $('#' + tabId).slideDown();
-                });
-
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-
-            } else {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
-                    $('#' + tabId).fadeIn(150).addClass('popup-main__tab--active');
+                    $('.popup-main__col').removeClass('open');
+                    $('.popup-main__links').hide();
+                } else {
+                    $('#' + firstTabId).fadeIn(150).addClass('popup-main__tab--active');
 
                     $('.popup-main__col').addClass('open');
                     $('.popup-main__links').show();
+                }
+            });
+
+            $(document).on('click', '.popup-close', function () {
+                $('.popup-main').parent().removeClass('on');
+            });
+
+            function activateMenuItems() {
+                $('.popup-main__menu-item').off('click').on('click', function () {
+                    const tabId = $(this).data('tab');
+                    const $tab = $('#' + tabId);
+
+                    if (window.innerWidth >= 1200) {
+                        $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
+                        $tab.fadeIn(150).addClass('popup-main__tab--active');
+
+                        $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                        $(this).addClass('popup-main__menu-item--active');
+
+                        $('.popup-main__col').addClass('open');
+                        $('.popup-main__links').show();
+                    } else {
+                        if (!$(this).hasClass('popup-main__menu-item--active')) {
+                            $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                            $(this).addClass('popup-main__menu-item--active');
+
+                            $('.popup-main__tab').slideUp().removeClass('popup-main__tab--active');
+                            $tab.slideDown().addClass('popup-main__tab--active');
+                        }
+
+                        $('.popup-main__col').removeClass('open');
+                        $('.popup-main__links').hide();
+                    }
                 });
-
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
             }
-        }
 
-        $(document).ready(function () {
-            activateMobileAccordion();
-        });
+            activateMenuItems();
 
-        $(window).on('resize', function () {
-            activateMobileAccordion();
-        });
-
-        $(document).ready(function () {
-
-            $(document).on('click', '.popup-main__col-title', function (e) {
-                e.preventDefault();
+            $(window).on('resize', function () {
+                activateMenuItems();
             });
 
             $(document).on('click', '.popup-main__col', function (e) {
-
                 if (window.innerWidth >= 1200) return;
-                let submenu = $(this).find('.popup-main__links');
+
+                const submenu = $(this).find('.popup-main__links');
                 if (submenu.length === 0) return;
 
                 e.stopPropagation();
@@ -1489,7 +1471,12 @@
                 e.stopPropagation();
             });
 
+            $(document).on('click', '.popup-main__col-title', function (e) {
+                e.preventDefault();
+            });
+
         });
+
     </script>
     <script>
 

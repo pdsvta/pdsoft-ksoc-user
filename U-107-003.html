@@ -525,12 +525,12 @@
         <!-- // breadcrumbs -->
 
         <!-- contents -->
-        <section class="tour">
+        <section class="tour tour107003">
             <div class="inner">
                 <div class="title">
                     <h2>방학특강 시간표</h2>
                 </div>
-                <div class="tour__wrapper">
+                <div class="tour__wrapper ">
                     <div class="nmbr__block">
                         <h4 class="nmbr__tit">강습시간표</h4>
                         <table class="nmbr__table nmbr__table2 nmbr__table--mb20">
@@ -540,7 +540,7 @@
                                 <col style="width: 23rem;">
                                 <col style="width: 23rem;">
                             </colgroup>
-                            <thead>
+                            <thead class="tour107003__box1--thead">
                                 <tr>
                                     <th>대상</th>
                                     <th>종목</th>
@@ -548,7 +548,7 @@
                                     <th>강습료</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="tour107003__box1--tbody">
                                 <tr>
                                     <td rowspan="2">6세이상 어린이</td>
                                     <td>스피드</td>
@@ -560,12 +560,12 @@
                                     <td>10:00-11:45</td>
                                 </tr>
                             </tbody>
-                            <thead>
+                            <thead class="tour107003__box2--thead">
                                 <tr>
                                     <th colspan="4">기간 및 일정</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="tour107003__box2--tbody">
                                 <tr>
                                     <td>1차특강</td>
                                     <td colspan="3">2025. 1. 6 ~ 1. 10 (10회, 1일 2회수업)<br> (1월 6, 7, 8,
@@ -582,13 +582,13 @@
                                         19, 20, 21)</td>
                                 </tr>
                             </tbody>
-                            <thead>
+                            <thead class="tour107003__box3--thead">
                                 <tr>
                                     <th colspan="2">접수일자</th>
                                     <th colspan="2">강습단계</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="tour107003__box3--tbody">
                                 <tr>
                                     <td colspan="2">1차특강: 2024. 12. 23(월) ~ 27(금)</td>
                                     <td colspan="2">기초1</td>
@@ -656,7 +656,7 @@
                                 </tr>
                                 <tr>
                                     <td>기초1</td>
-                                    <td>
+                                    <td class="border-bt">
                                         <ul>
                                             <li>옆으로 밀고 한발 뒤로 찍기 진행연습(팔동작응용)</li>
                                             <li>코너 모의동작 연습(발 넘기기)</li>
@@ -684,7 +684,7 @@
                                 </tr>
                                 <tr>
                                     <td>기초1</td>
-                                    <td>
+                                    <td class="border-bt">
                                         <ul>
                                             <li>크로스 오버 좌우</li>
                                         </ul>
@@ -1135,95 +1135,76 @@
         </div>
     </div>
     <script>
-        $(document).on('click', '.menu-btn', function () {
-            const $popup = $('.popup-main').parent().addClass('on');
+        $(document).ready(function () {
 
-            const $firstMenu = $('.popup-main__menu-item')
-                .removeClass('popup-main__menu-item--active')
-                .first()
-                .addClass('popup-main__menu-item--active');
+            $(document).on('click', '.menu-btn', function () {
+                const $popupWrapper = $('.popup-main').parent().addClass('on');
 
-            const firstTabId = $firstMenu.data('tab');
+                const $firstMenu = $('.popup-main__menu-item')
+                    .removeClass('popup-main__menu-item--active')
+                    .first()
+                    .addClass('popup-main__menu-item--active');
 
-            $('.popup-main__tab')
-                .stop(true, true)
-                .hide()
-                .removeClass('popup-main__tab--active')
-                .filter('#' + firstTabId)
-            [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
-                .addClass('popup-main__tab--active');
+                const firstTabId = $firstMenu.data('tab');
 
-            if (window.innerWidth < 1200) {
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-            } else {
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
-            }
-        });
-        $(document).on('click', '.popup-close', function () {
-            $('.popup-main').parent().removeClass('on');
-        });
+                $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
 
+                if (window.innerWidth < 1200) {
+                    $('#' + firstTabId).slideDown().addClass('popup-main__tab--active');
 
-        function activateMobileAccordion() {
-            if (window.innerWidth < 1200) {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    if ($(this).hasClass('popup-main__menu-item--active')) {
-                        $(this).removeClass('popup-main__menu-item--active');
-                        $('#' + tabId).slideUp();
-                        return;
-                    }
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').slideUp();
-                    $('#' + tabId).slideDown();
-                });
-
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-
-            } else {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
-                    $('#' + tabId).fadeIn(150).addClass('popup-main__tab--active');
+                    $('.popup-main__col').removeClass('open');
+                    $('.popup-main__links').hide();
+                } else {
+                    $('#' + firstTabId).fadeIn(150).addClass('popup-main__tab--active');
 
                     $('.popup-main__col').addClass('open');
                     $('.popup-main__links').show();
+                }
+            });
+
+            $(document).on('click', '.popup-close', function () {
+                $('.popup-main').parent().removeClass('on');
+            });
+
+            function activateMenuItems() {
+                $('.popup-main__menu-item').off('click').on('click', function () {
+                    const tabId = $(this).data('tab');
+                    const $tab = $('#' + tabId);
+
+                    if (window.innerWidth >= 1200) {
+                        $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
+                        $tab.fadeIn(150).addClass('popup-main__tab--active');
+
+                        $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                        $(this).addClass('popup-main__menu-item--active');
+
+                        $('.popup-main__col').addClass('open');
+                        $('.popup-main__links').show();
+                    } else {
+                        if (!$(this).hasClass('popup-main__menu-item--active')) {
+                            $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                            $(this).addClass('popup-main__menu-item--active');
+
+                            $('.popup-main__tab').slideUp().removeClass('popup-main__tab--active');
+                            $tab.slideDown().addClass('popup-main__tab--active');
+                        }
+
+                        $('.popup-main__col').removeClass('open');
+                        $('.popup-main__links').hide();
+                    }
                 });
-
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
             }
-        }
 
-        $(document).ready(function () {
-            activateMobileAccordion();
-        });
+            activateMenuItems();
 
-        $(window).on('resize', function () {
-            activateMobileAccordion();
-        });
-
-        $(document).ready(function () {
-
-            $(document).on('click', '.popup-main__col-title', function (e) {
-                e.preventDefault();
+            $(window).on('resize', function () {
+                activateMenuItems();
             });
 
             $(document).on('click', '.popup-main__col', function (e) {
-
                 if (window.innerWidth >= 1200) return;
-                let submenu = $(this).find('.popup-main__links');
+
+                const submenu = $(this).find('.popup-main__links');
                 if (submenu.length === 0) return;
 
                 e.stopPropagation();
@@ -1249,7 +1230,12 @@
                 e.stopPropagation();
             });
 
+            $(document).on('click', '.popup-main__col-title', function (e) {
+                e.preventDefault();
+            });
+
         });
+
     </script>
 </body>
 

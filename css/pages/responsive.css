@@ -390,7 +390,7 @@
     }
 
     .header-main .inner {
-        height: 8rem;
+        height: 6rem;
     }
 
     .header-main .menu-btn {
@@ -3602,6 +3602,1250 @@
 
     .tour__btn--blue {
         min-width: 10rem;
+    }
+
+    .tour106001 .tour__wrapper {
+        border: none;
+        padding: 0;
+    }
+
+    .tour106001 .tour__group {
+        flex-direction: column;
+        border-radius: 1rem;
+        border: 1px solid #ddd;
+        padding: 2rem;
+    }
+
+    .tour106001 .tour__group>div {
+        gap: .5rem;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .tour106001 .tour__group>div .hpy-reg__btn--min74 {
+        margin-left: 0;
+    }
+
+    .tour106001 .tour__group--input {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .tour106001 .hpy02__label {
+        font-size: 1.3rem;
+        padding-left: 1rem;
+    }
+
+    .hpy-reg__select--max120 {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        flex: 1;
+    }
+
+    .tour__group--input.row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .tour__group--input.row .hpy-reg__select {
+        flex: 1;
+        width: 100%;
+    }
+
+    .tour__group--input.row .hpy-reg__btn {
+        flex: 0 0 auto;
+    }
+
+    .hpy-reg__btn--min74 {
+        min-width: 5.5rem;
+    }
+
+    .tour106001 .tour__group--input.row {
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .ply-reg__input--max170 {
+        max-width: 100%;
+    }
+
+    .tour__group--mb30 {
+        margin-bottom: 2rem;
+    }
+
+    .tour__total {
+        padding: 0rem 2rem 2rem;
+    }
+
+    .tour106001 .hpy02__table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour106001 .hpy02__table thead,
+    .tour106001 .hpy02__table colgroup {
+        display: none;
+    }
+
+    .tour106001 .hpy02__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour106001 .hpy02__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(8) {
+        border-bottom: none;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 0 2rem;
+        margin: 0;
+        color: #000;
+        order: 1;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(3) {
+        order: 3;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(4) {
+        order: 4;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(5) {
+        order: 5;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(6) {
+        order: 6;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(7) {
+        order: 7;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(8) {
+        order: 8;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:last-child {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(1)::before {
+        content: "프로그램";
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(3)::before {
+        content: "요일";
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(4)::before {
+        content: "시간";
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(5)::before {
+        content: "개월";
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(6)::before {
+        content: "정원";
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(7)::before {
+        content: "금액";
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(8)::before {
+        content: "클럽명";
+    }
+
+    .tour106001 .hpy02__table tbody tr td:nth-child(1)::before,
+    .tour106001 .hpy02__table tbody tr td:nth-child(3)::before,
+    .tour106001 .hpy02__table tbody tr td:nth-child(4)::before,
+    .tour106001 .hpy02__table tbody tr td:nth-child(5)::before,
+    .tour106001 .hpy02__table tbody tr td:nth-child(6)::before,
+    .tour106001 .hpy02__table tbody tr td:nth-child(7)::before,
+    .tour106001 .hpy02__table tbody tr td:nth-child(8)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 5rem;
+        width: 8rem;
+    }
+
+    .nmbr__tit {
+        font-size: 1.5rem;
+    }
+
+    .nmbr__list {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .nmbr__list>li>img {
+        height: 2.5rem;
+    }
+
+    .nmbr__list>li {
+        width: calc((100% - 1rem)/2);
+        padding-top: 0;
+        height: 12rem;
+        justify-content: center;
+    }
+
+    .nmbr__block {
+        padding: 0 2rem 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .nmbr__block .nmbr__contents .nmbr__contents-item h1 {
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .nmbr__block .nmbr__contents .nmbr__contents-item p {
+        font-size: 1.2rem;
+    }
+
+    .nmbr__block+.nmbr__block {
+        padding: 0 0 2rem;
+    }
+
+    .nmbr__block+.nmbr__block+.nmbr__block {
+        padding: 0 0 2rem;
+    }
+
+    .nmbr__block+.nmbr__block+.nmbr__block+.nmbr__block {
+        padding: 0 0 1rem;
+    }
+
+    .nmbr__block .nmbr__contents .nmbr__contents-item ul li {
+        font-size: 1.2rem;
+    }
+
+    .nmbr__block2>p {
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .nmbr__block2 button {
+        min-width: 10rem;
+        height: 3.5rem;
+    }
+
+    .tour107001 .nmbr__table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour107001 .nmbr__table thead,
+    .tour107001 .nmbr__table colgroup {
+        display: none;
+    }
+
+    .tour107001 .nmbr__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour107001 .nmbr__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .tour107001 .nmbr__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+        letter-spacing: -1px;
+    }
+
+    .tour107001 .nmbr__table tbody tr td:nth-child(3) {
+        border-bottom: none;
+    }
+
+    .tour107001 .nmbr__table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 0 2rem;
+        margin: 0;
+        color: #000;
+        order: 1;
+    }
+
+
+    .tour107001 .nmbr__table tbody tr td:nth-child(1)::before {
+        content: "회원";
+    }
+
+    .tour107001 .nmbr__table tbody tr td:nth-child(3)::before {
+        content: "등록기간";
+    }
+
+    .tour107001 .nmbr__table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+    .tour107001 .nmbr__table tbody tr td:nth-child(3) {
+        order: 3;
+    }
+
+    .tour107001 .nmbr__table tbody tr td:nth-child(1)::before,
+    .tour107001 .nmbr__table tbody tr td:nth-child(3)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 1rem;
+        width: 4.5rem;
+    }
+
+
+    .tour107002 .nmbr__block {
+        padding: 0 0 2rem;
+    }
+
+    .nmbr__info li {
+        font-size: 1.2rem;
+    }
+
+    .nmbr__info--red {
+        font-weight: 400;
+    }
+
+    .nmbr__info li.nmbr__info--tit {
+        font-weight: 600;
+        padding-left: 0;
+    }
+
+    .nmbr__info {
+        margin-bottom: 1rem;
+    }
+
+    .annc__wrap {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .annc__wrap .annc {
+        width: 100%;
+        border-radius: 1rem;
+        padding: 3rem 2rem;
+    }
+
+    .tour107002 .nmbr__block+.nmbr__block {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+
+    .tour107002 .nmbr__table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour107002 .nmbr__table thead,
+    .tour107002 .nmbr__table colgroup {
+        display: none;
+    }
+
+    .tour107002 .nmbr__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour107002 .nmbr__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .tour107002 .nmbr__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+        letter-spacing: -1px;
+    }
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(6) {
+        border-bottom: none;
+    }
+
+    .tour107002 .nmbr__table tbody tr td:first-child {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 0 2rem;
+        margin: 0;
+        color: #000;
+    }
+
+    .tour107002 .nmbr__table tbody tr td:first-child br {
+        display: none;
+    }
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(2)::before {
+        content: "강습 요일";
+    }
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(3)::before {
+        content: "강습 횟수";
+    }
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(4)::before {
+        content: "강습시간";
+    }
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(5)::before {
+        content: "";
+    }
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(6)::before {
+        content: "강습료";
+    }
+
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(1)::before,
+    .tour107002 .nmbr__table tbody tr td:nth-child(2)::before,
+    .tour107002 .nmbr__table tbody tr td:nth-child(3)::before,
+    .tour107002 .nmbr__table tbody tr td:nth-child(4)::before,
+    .tour107002 .nmbr__table tbody tr td:nth-child(6)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 3rem;
+        width: 7.5rem;
+    }
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(5)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 6rem;
+        width: 7.5rem;
+    }
+
+    .tour107002 .nmbr__table tbody tr td:nth-child(4)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 7rem;
+        width: 7.5rem;
+    }
+
+    .mobile-title {
+        display: block;
+    }
+
+    .tour107002 .speed {
+        position: relative;
+        padding-left: 7.5rem;
+    }
+
+    .tour107002 .speed::after {
+        content: "스피드:";
+        position: absolute;
+        left: 11.5rem;
+        top: 1.1rem;
+        font-weight: 500;
+        color: #666;
+    }
+
+    .tour107002 .figure {
+        position: relative;
+    }
+
+    .tour107002 .figure::after {
+        content: "피겨:";
+        position: absolute;
+        left: 11.5rem;
+        top: 1.1rem;
+        font-weight: 500;
+        color: #666;
+    }
+
+    .tour107003 .nmbr__table2 {
+        border: none;
+        width: 100%;
+    }
+
+    .tour107003 .nmbr__table2 thead,
+    .tour107003 .nmbr__table2 colgroup {
+        display: none;
+    }
+
+    .tour107003 .nmbr__table2 tbody.tour107003__box1--tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour107003 .nmbr__table2 tbody.tour107003__box1--tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .tour107003 .nmbr__table2 tbody.tour107003__box1--tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        margin: 0 2rem;
+        color: #666;
+        letter-spacing: -1px;
+    }
+
+
+    .tour107003 .nmbr__table2 tbody.tour107003__box1--tbody tr td:first-child {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 0 2rem;
+        margin: 0;
+        color: #000;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(3) {
+        border-bottom: 1px solid #ddd;
+        padding: 0 1rem 1rem;
+
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:last-child {
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr:last-child {
+        display: none;
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(1)::before {
+        content: "대상:";
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(2)::before {
+        content: "종목";
+        padding-right: 2rem;
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(2)::after {
+        content: "피 겨";
+        padding-left: 5.5rem;
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(3)::before {
+        content: "강습시간";
+        padding-right: 1rem;
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(3)::after {
+        content: "10:00-11:45";
+        padding-left: 3rem;
+    }
+
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(1)::before {
+        font-weight: 500;
+        display: inline-block;
+        width: 3rem;
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(2)::before,
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(2)::after {
+        font-weight: 400;
+        display: inline-block;
+        width: 5rem;
+    }
+
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(3)::before,
+    .tour107003 .nmbr__table tbody.tour107003__box1--tbody tr td:nth-child(3)::after {
+        font-weight: 400;
+        display: inline-block;
+        width: 6rem;
+    }
+
+    .tour107003 .nmbr__table2 thead.tour107003__box2--thead,
+    .tour107003 .nmbr__table2 thead.tour107003__box3--thead {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .tour107003 .nmbr__table2 thead.tour107003__box2--thead tr,
+    .tour107003 .nmbr__table2 thead.tour107003__box3--thead tr {
+        background: #F5F5F5;
+        width: 100%;
+        display: flex;
+        border-radius: 1rem 1rem 0 0;
+
+    }
+
+    .tour107003 .nmbr__table2 thead.tour107003__box2--thead tr th {
+        width: 100%;
+        display: flex;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        border-radius: 1rem 1rem 0 0;
+        padding: 0 2rem;
+        margin: 0;
+        color: #000;
+        border-top: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+
+    }
+
+    .tour107003__box2--tbody,
+    .tour107003__box3--tbody {
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+        border: 1px solid #ddd;
+        display: inline-grid;
+    }
+
+    .tour107003__box2--thead th[rowspan] {
+        display: block;
+        background: #F5F5F5;
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+        color: #000 !important;
+        padding: 0 2rem;
+        border-radius: 1rem 1rem 0 0;
+        margin-top: 2rem;
+        border: 1px solid #ddd;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .tour107003__box2--tbody td {
+        border: none;
+        height: auto;
+    }
+
+    .tour107003__box2--tbody td {
+        display: block;
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 1.1rem 3rem .6rem;
+        color: #666;
+        border: none;
+    }
+
+
+    .tour107003__box2--tbody td[colspan] {
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        padding: 0 1rem 1rem;
+    }
+
+    .tour107003__box2--tbody tr:last-child td[colspan] {
+        border-bottom: none;
+    }
+
+    .tour107003 .nmbr__table2 thead.tour107003__box3--thead {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+
+    .tour107003 .nmbr__table2 thead.tour107003__box3--thead tr th {
+        width: 100%;
+        display: flex;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        margin: 0;
+        color: #000;
+        border-top: 1px solid #ddd;
+
+    }
+
+    .tour107003 .nmbr__table2 thead.tour107003__box3--thead tr th:first-child {
+        border-radius: 1rem 0 0 0;
+    }
+
+    .tour107003 .nmbr__table2 thead.tour107003__box3--thead tr th:last-child {
+        border-radius: 0 1rem 0 0;
+    }
+
+    .tour107003 .nmbr__table2 tbody.tour107003__box3--tbody tr {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour107002 .nmbr__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .tour107002 .nmbr__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        margin: 0 2rem;
+        color: #666;
+        letter-spacing: -1px;
+    }
+
+
+    .tour107003 .nmbr__table2 thead.tour107003__box3--thead {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+        border-radius: 1rem 1rem 0 0;
+        margin-top: .5rem;
+    }
+
+    .tour107003 .nmbr__table2 .tour107003__box3--tbody td {
+        border: none;
+        text-align: left;
+        height: auto;
+        color: #666;
+        font-weight: 400;
+        margin: 0 2rem;
+        padding: .5rem 1rem;
+    }
+
+    .tour107003 .nmbr__table2 .tour107003__box3--tbody td:first-child {
+        padding: 1.1rem 1rem .5rem;
+    }
+
+    .tour107003 .nmbr__table2 .tour107003__box3--tbody td:last-child {
+        border-bottom: 1px solid #ddd;
+        padding: .5rem 1rem 1rem;
+    }
+
+    .tour107003 .nmbr__table2 .tour107003__box3--tbody tr:last-child td:last-child {
+        border-bottom: none;
+    }
+
+    .tour107003 .nmbr__table2 tbody.tour107003__box3--tbody tr td:nth-child(1)::before {
+        content: "접수일자";
+    }
+
+    .tour107003 .nmbr__table2 tbody.tour107003__box3--tbody tr td:nth-child(2)::before {
+        content: "강습단계";
+    }
+
+
+    .tour107003 .nmbr__table2 tbody.tour107003__box3--tbody tr td:nth-child(1)::before,
+    .tour107003 .nmbr__table2 tbody.tour107003__box3--tbody tr td:nth-child(2)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 2rem;
+        width: 4.5rem;
+        color: #666;
+    }
+
+    .nmbr__table {
+        border-top: 0;
+    }
+
+    .tour107003 .nmbr__block--mb0 {
+        margin-bottom: 0;
+    }
+
+    .nmbr__block2 {
+        margin-top: 1rem;
+    }
+
+    .tour107003 .nmbr__block--mb0 .nmbr__tit {
+        margin-bottom: 1rem;
+    }
+
+    .tour107003 .nmbr__block {
+        padding: 0 0 2rem;
+    }
+
+    .tour107003__table td {
+        border: none;
+        height: auto;
+    }
+
+    .tour107003__table thead,
+    .tour107003__table colgroup {
+        display: none;
+    }
+
+    .tour107003__table tbody {
+        display: block;
+    }
+
+    .tour107003__table tbody tr {
+        display: contents;
+    }
+
+    .tour107003__table tbody td[rowspan] {
+        display: block;
+        background: #F5F5F5;
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+        color: #000 !important;
+        padding: 0 2rem;
+        border-radius: 1rem 1rem 0 0;
+        margin-top: 1rem;
+        border: 1px solid #ddd;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .tour107003__table tbody td:nth-child(2) {
+        display: block;
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 0;
+        color: #666;
+        border: none;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+
+    .tour107003__table tbody td:nth-child(3) {
+        display: block;
+        padding: 1.1rem 0 0;
+        border: none;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+
+    .tour107003__table tbody tr:nth-child(5) td:nth-child(1),
+    .tour107003__table tbody tr:nth-child(2) td:nth-child(1) {
+        padding: 1.1rem 3rem 1.1rem;
+    }
+
+    .tour107003__table tbody tr:nth-child(1) td:nth-child(2),
+    .tour107003__table tbody tr:nth-child(4) td:nth-child(2) {
+        padding: 1.1rem 3rem 0;
+    }
+
+    .tour107003__table tbody td:nth-child(1) {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        width: 100%;
+        display: flex;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .tour107003__table tbody td.border-bt {
+        border-bottom: 1px solid #ddd;
+        border-radius: 0 0 1rem 1rem;
+        padding: 1.1rem 0 1rem;
+
+    }
+
+    .nmbr__table td ul li::before {
+        background: #666;
+    }
+
+    .tour107003__table td {
+        padding: 1.1rem 3rem 0;
+    }
+
+    .tour107003__table tbody td ul {
+        padding-left: 2rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        padding-bottom: 1.1rem;
+    }
+
+    .tour107003__table tbody tr:last-child td ul,
+    .tour107003__table tbody tr:nth-child(3) td ul {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .tour107003__table tbody td ul li {
+        color: #666;
+        line-height: 150%;
+        font-size: 1.3rem;
+    }
+
+    .hpy__bg {
+        height: 10rem;
+        width: auto;
+        bottom: 1rem;
+        right: 2rem;
+    }
+
+    .hpy__intro {
+        height: auto;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .hpy__tit {
+        font-size: 1.5rem;
+        margin-top: 0;
+        padding: 0 0 1rem;
+    }
+
+    .hpy__desc {
+        font-size: 1.3rem;
+        width: 17rem;
+    }
+
+    .hpy__tit--pl10 {
+        padding: 0 0 1rem;
+    }
+
+    .hpy__box {
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .hpy__desc2 {
+        padding: 0 0 2rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hpy__desc2 li {
+        display: flex;
+    }
+
+    .hpy__desc2 li::before {
+        padding: 0 .5rem;
+    }
+
+    .hpy__desc4 {
+        font-size: 1.3rem;
+        padding: 0;
+    }
+
+    .hpy__wrapped {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hpy__card {
+        padding: 2rem;
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    .hpy__card .hpy__video {
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+
+    .hpy__list {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .hpy__link {
+        border-radius: .5rem;
+        height: auto;
+    }
+
+    .tour__info-list {
+        padding: 2rem;
+        border-radius: 2rem;
+        height: auto;
+    }
+
+    .tour__info>img {
+        display: none;
+    }
+
+    .tour__info-list dl {
+        font-size: 1.2rem;
+    }
+
+    .tour__info-list dl dt {
+        min-width: 13rem;
+        color: #666;
+    }
+
+    .tour__info-list dl dd {
+        font-weight: 400;
+        letter-spacing: -1px;
+    }
+
+    .tour__info {
+        margin-top: 1rem;
+    }
+
+    .hpy {
+        padding-bottom: 6rem;
+        padding-top: 4rem;
+    }
+
+
+    .hpy__tag {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.4rem;
+        border-radius: 1rem;
+        background: #fff;
+        border: 1px solid #ddd;
+    }
+
+    .hpy__tag--1 {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.4rem;
+        border-radius: 1rem;
+    }
+
+    .hpy__card--table {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table thead,
+    .hpy201003 .hpy__card--table .hpy__table colgroup {
+        display: none;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+        letter-spacing: -1px;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(5) {
+        border-bottom: none;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+        order: 1;
+    }
+
+    .hpy__tbl-link {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #000;
+        width: 76%;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(3) {
+        order: 3;
+        display: flex;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(5) {
+        order: 4;
+    }
+
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(4) {
+        position: absolute;
+        top: 1.5rem;
+        right: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(1)::before {
+        content: "종목";
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(3)::before {
+        content: "강습회 기간 / 신청기간";
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(5)::before {
+        content: "강습회 장소";
+    }
+
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(1)::before,
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(3)::before,
+    .hpy201003 .hpy__card--table .hpy__table tbody tr td:nth-child(5)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 1rem;
+        width: 11.5rem;
+    }
+
+    .hpy__lf {
+        display: none;
+    }
+
+    .hpy__lfMb {
+        display: block;
+        position: absolute;
+        left: 2rem;
+        padding: 0;
+    }
+
+    .hpy__filter {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 0 0 2rem;
+        align-items: end;
+        position: relative;
+    }
+
+    .hpy__filter .hpy__select.pr20 {
+        padding-right: 2rem;
+    }
+
+    .hpy__search {
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+        width: 100%;
+    }
+
+    .hpy__search>div {
+        width: 100%;
+    }
+
+    .hpy__search>div>div {
+        width: 50%;
+    }
+
+    .hpy__select--min130 {
+        min-width: auto;
+    }
+
+    .hpy__total {
+        font-size: 1.3rem;
+    }
+
+    .hpy__bm .paging-ui {
+        top: 100%;
+    }
+
+    .hpy__bm .paging-ui {
+        position: unset;
+        transform: unset;
+    }
+
+    .hpy__bm {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
