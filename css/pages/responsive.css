@@ -4847,6 +4847,387 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+
+    .dtl__wrapper {
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .dtl__tit h3 {
+        font-size: 1.5rem;
+    }
+
+    .dtl__wrapper .dtl__tit h3 {
+        padding: 0 0 1rem;
+    }
+
+    .dtl__tit ul {
+        font-size: 1rem;
+    }
+
+    .dtl__wrapper .dtl__tit {
+        padding: 0;
+    }
+
+    .dtl__box {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .dtl__box .dtl__table th {
+        width: 7rem;
+        height: 3.5rem;
+        padding: 0 0 0 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .dtl__box .dtl__table td {
+        font-size: 1.1rem;
+    }
+
+    .dtl__box .dtl__note {
+        width: auto;
+        font-size: 1.2rem;
+    }
+
+    .dtl__box .dtl__note li::before {
+        color: #666;
+    }
+
+    .dtl__box .dtl__note li {
+        color: #666;
+    }
+
+    .dtl__wrapper .dtl__work {
+        padding: 3rem 0 0;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .dtl__wrapper .dtl__work p {
+        font-size: 1.2rem;
+    }
+
+    .dtl__work img {
+        width: 7rem;
+    }
+
+    .dtl {
+        margin-bottom: 2rem;
+    }
+
+    .tour__bm--end {
+        margin-bottom: 2rem;
+    }
+
+    .tour__bm--end .tour__btn {
+        min-width: auto;
+    }
+
+    .hpy0707__wrapper {
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .hpy0707__wrapper .hpy-reg__warn {
+        font-size: 1rem;
+    }
+
+    .hpy0707__box {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .hpy0707__box.hpy0707__box--mb3 {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hpy0707__box--start {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hpy0707__item--mt1 {
+        margin-top: 0rem;
+    }
+
+    .hpy-reg__input--max320 {
+        max-width: 100%;
+    }
+
+    .hpy__select--min215 {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .hpy0707__item {
+        width: 100%;
+    }
+
+    .hpy-reg__flex {
+        gap: .5rem;
+    }
+
+    .hpy-reg__btn {
+        min-width: 10rem;
+    }
+
+    .hpy0707__input {
+        width: 100%;
+    }
+
+    .hpy0707__group {
+        gap: .5rem;
+    }
+
+    .hpy-reg__input--max215 {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .hpy0707__note {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .ply-reg__agree {
+        font-size: 1.3rem;
+        white-space: normal;
+        align-items: center;
+    }
+
+    .hpy0707__wrapper .ply-reg__agree {
+        padding: 1rem 0 2rem;
+    }
+
+    .ply-reg__agree .ply-reg__radio {
+        min-width: 2rem;
+    }
+
+    .hpy0707__button {
+        flex-direction: column;
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hpy0707__button button {
+        gap: .5rem;
+    }
+
+    .hpy0707__button .hpy-reg__btn--max270 {
+        min-width: 20rem;
+        height: 3.5rem;
+    }
+
+    .hpy-reg__input--h100 {
+        margin: 0;
+    }
+
+    .hpy0707__button.hpy0707__button--mt2 {
+        flex-direction: row;
+        gap: .5rem;
+        justify-content: center;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .hpy0707__button.hpy0707__button--mt2 button {
+        min-width: auto;
+        padding: 0 1.9rem;
+        height: 3.5rem;
+    }
+
+    .hpy0707__button img {
+        width: auto;
+        height: 1.3rem;
+    }
+
+    .hpy0707__wrapper .hpy-reg__tit--bb {
+        padding: 0;
+    }
+
+    .hpy0707__item p {
+        margin: .5rem 0 0;
+        font-size: .9rem;
+    }
+
+    .hpy0707__tag {
+        margin: 0;
+    }
+
+    .hpy0709__box {
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hpy0709__text {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 150%;
+    }
+
+    .lsn__excel {
+        flex-direction: row;
+        padding-left: 0;
+        gap: .5rem;
+    }
+
+    .lsn__excel-btn {
+        height: 3.5rem;
+        font-size: 1.3rem;
+        min-width: 17rem;
+    }
+
+    .lsn__excel-btn img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .lsn__excel-btn2 {
+        min-width: 13rem;
+        height: 3.5rem;
+        font-size: 1.3rem;
+        gap: .5rem;
+    }
+
+    .lsn__excel-btn2 img {
+        width: auto;
+        height: 1.3rem;
+    }
+
+    .hpy0709__table .lsn__table {
+        margin-bottom: 0;
+    }
+
+    .hpy0709__table {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    .hpy0709__table .lsn__table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy0709__table .lsn__table thead,
+    .hpy0709__table .lsn__table colgroup {
+        display: none;
+    }
+
+    .hpy0709__table .lsn__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy0709__table .lsn__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy0709__table .lsn__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(7) {
+        border-bottom: none;
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+    }
+
+
+    .hpy0709__table .lsn__table tbody tr td:last-child {
+        position: absolute;
+        top: .7rem;
+        right: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(2)::before {
+        content: "생년월일";
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(3)::before {
+        content: "학교구분";
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(4)::before {
+        content: "학교";
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(5)::before {
+        content: "키/몸무게/발크기";
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(6)::before {
+        content: "기타";
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(7)::before {
+        content: "상태";
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:nth-child(2)::before,
+    .hpy0709__table .lsn__table tbody tr td:nth-child(3)::before,
+    .hpy0709__table .lsn__table tbody tr td:nth-child(4)::before,
+    .hpy0709__table .lsn__table tbody tr td:nth-child(5)::before,
+    .hpy0709__table .lsn__table tbody tr td:nth-child(6)::before,
+    .hpy0709__table .lsn__table tbody tr td:nth-child(7)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 1rem;
+        width: 11.5rem;
+    }
+
+    .hpy__select--min205 {
+        min-width: auto;
+    }
+
+    .hpy0707__wrapper.hpy0710 .hpy0707__group.hpy0707__group--end .hpy-reg__input--max140 {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .hpy0707__wrapper.hpy0710 .hpy0707__box:nth-child(3) {
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .hpy0707__wrapper.hpy0710 .hpy0707__box:nth-child(3) .hpy0707__item {
+        width: calc((100% - .5rem) / 2);
+    }
+
 }
 
 @media (max-width: 390px) {
