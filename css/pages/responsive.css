@@ -4943,12 +4943,17 @@
         flex-wrap: nowrap;
         padding-bottom: 2rem;
         margin-bottom: 2rem;
+        gap: .5rem;
     }
 
     .hpy0707__box--start {
         flex-direction: column;
         gap: 1rem;
         margin-bottom: 1rem;
+    }
+
+    .hpy0707__box.gap05 {
+        gap: .5rem;
     }
 
     .hpy0707__item--mt1 {
@@ -5228,6 +5233,407 @@
         width: calc((100% - .5rem) / 2);
     }
 
+    .hpy0707__box.hpy0707__box--mb0 .hpy-reg__input--max140 {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .hpy0707__wrapper .hpy-reg__tit p br {
+        display: block;
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:last-child {
+        position: unset;
+    }
+
+    .hpy0709__table.hpy0719__table--tl {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+        margin-bottom: 2rem;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table thead,
+    .hpy0709__table.hpy0719__table--tl .lsn__table colgroup {
+        display: none;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td,
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(1) {
+        display: flex;
+        text-align: left;
+        padding: 0;
+        border: none;
+        height: auto;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #ddd;
+        align-items: center;
+        margin: 0;
+        color: #000;
+        background: transparent;
+        font-weight: 400;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(4) {
+        border-bottom: none;
+    }
+
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(1)::before {
+        content: "종목";
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(2)::before {
+        content: "검도";
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(3)::before {
+        content: "강습장소";
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(4)::before {
+        content: "테스트";
+    }
+
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(1)::before,
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(2)::before,
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(3)::before,
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(4)::before {
+        font-weight: 600;
+        display: flex;
+        padding-right: 1rem;
+        width: 7rem;
+        font-size: 1.1rem;
+        color: #000;
+        background: #F5F5F5;
+        height: 3.5rem;
+        padding-left: 1.5rem;
+        margin-right: 1.5rem;
+        align-items: center;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(4)::before {
+        height: -webkit-fill-available;
+        align-items: flex-start;
+        padding-top: 1rem;
+    }
+
+
+    .hpy0709__table.hpy0719__table--tl .hpy-reg__select--max170 {
+        max-width: 13rem;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .hpy-reg__select--max170 .selectbox {
+        height: 2.9rem;
+    }
+
+    .hpy0709__table.hpy0719__table--tl .lsn__table tbody tr td:nth-child(2) {
+        align-items: center;
+    }
+
+    .hpy0719__table--tl li {
+        font-size: 1.1rem;
+    }
+
+    .hpy0719__table--tl ul {
+        padding: .9rem 0;
+    }
+
+    .hpy0709__table .lsn__table tbody tr td:last-child {
+        position: unset;
+    }
+
+    .hpy0719__table {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    .hpy0719__table .lsn__table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy0719__table .lsn__table thead,
+    .hpy0719__table .lsn__table colgroup {
+        display: none;
+    }
+
+    .hpy0719__table .lsn__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy0719__table .lsn__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy0719__table .lsn__table tbody tr td,
+    .hpy0719__table .lsn__table tbody tr td:nth-child(1) {
+        display: flex;
+        text-align: left;
+        padding: 0;
+        border: none;
+        height: auto;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #ddd;
+        align-items: center;
+        margin: 0;
+        color: #000;
+        background: transparent;
+        font-weight: 400;
+    }
+
+    .hpy0719__table .lsn__table tbody tr td:nth-child(4) {
+        border-bottom: none;
+    }
+
+
+    .hpy0719__table .lsn__table tbody tr td:nth-child(1)::before {
+        content: "회차";
+    }
+
+    .hpy0719__table .lsn__table tbody tr td:nth-child(2)::before {
+        content: "생년월일";
+    }
+
+    .hpy0719__table .lsn__table tbody tr td:nth-child(3)::before {
+        content: "참가자";
+    }
+
+    .hpy0719__table .lsn__table tbody tr td:nth-child(4)::before {
+        content: "관리";
+    }
+
+
+    .hpy0719__table .lsn__table tbody tr td:nth-child(1)::before,
+    .hpy0719__table .lsn__table tbody tr td:nth-child(2)::before,
+    .hpy0719__table .lsn__table tbody tr td:nth-child(3)::before,
+    .hpy0719__table .lsn__table tbody tr td:nth-child(4)::before {
+        font-weight: 600;
+        display: flex;
+        padding-right: 1rem;
+        width: 7rem;
+        font-size: 1.1rem;
+        color: #000;
+        background: #F5F5F5;
+        height: 3.5rem;
+        padding-left: 1.5rem;
+        margin-right: 1.5rem;
+        align-items: center;
+    }
+
+
+    .hpy0719__table .hpy-reg__select--max170 {
+        max-width: 13rem;
+    }
+
+    .hpy0719__table .hpy-reg__select--max170 .selectbox {
+        height: 2.9rem;
+    }
+
+    .hpy0719__fl--ct {
+        justify-content: flex-start;
+    }
+
+    .hpy0707__wrapper .hpy0719__table {
+        padding: 0;
+    }
+
+    .hpy0719__topbar button {
+        min-width: auto;
+        padding: 0 1.1rem;
+        white-space: nowrap;
+    }
+
+    .hpy0719__topbar input {
+        height: 3rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .hpy0720__table {
+        border: none;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hpy0720__table tbody tr th {
+        display: none;
+        border: none;
+    }
+
+    .hpy0720__table tbody tr:first-child {
+        display: none;
+        border: none;
+    }
+
+    .hpy0720__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy0720__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy0720__table tbody tr td,
+    .hpy0720__table tbody tr td:nth-child(1) {
+        display: flex;
+        text-align: left;
+        padding: 0;
+        border: none;
+        height: auto;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #ddd;
+        align-items: center;
+        margin: 0;
+        color: #000;
+        background: transparent;
+        font-weight: 400;
+        width: 100%;
+    }
+
+    .dry__table .dry__table--fw600 {
+        font-size: 1.1rem;
+        font-weight: 400;
+
+    }
+
+    .hpy0720__table tbody tr td:nth-child(4) {
+        border-bottom: none;
+    }
+
+
+    .hpy0720__table tbody tr td:nth-child(1)::before {
+        content: "종목";
+    }
+
+    .hpy0720__table tbody tr td:nth-child(2)::before {
+        content: "검도";
+    }
+
+    .hpy0720__table tbody tr td:nth-child(3)::before {
+        content: "강습장소";
+    }
+
+    .hpy0720__table tbody tr td:nth-child(4)::before {
+        content: "테스트";
+    }
+
+
+    .hpy0720__table tbody tr td:nth-child(1)::before,
+    .hpy0720__table tbody tr td:nth-child(2)::before,
+    .hpy0720__table tbody tr td:nth-child(3)::before,
+    .hpy0720__table tbody tr td:nth-child(4)::before {
+        font-weight: 600;
+        display: flex;
+        padding-right: 1rem;
+        width: 7rem;
+        font-size: 1.1rem;
+        color: #000;
+        background: #F5F5F5;
+        height: 3.5rem;
+        padding-left: 1.5rem;
+        margin-right: 1.5rem;
+        align-items: center;
+    }
+
+    .hpy0720__table .hpy-reg__select--max170 {
+        max-width: 13rem;
+        height: 2.9rem;
+    }
+
+    .hpy0720__table .hpy-reg__select--max170 .selectbox {
+        height: 2.9rem;
+    }
+
+    .hpy0720__box {
+        padding: 0;
+    }
+
+    .hpy0720__table tbody tr td:nth-child(4) input {
+        max-width: 17rem;
+        height: 2.9rem;
+    }
+
+    .hpy0720__table2 th {
+        padding: 0;
+        width: 9.5rem;
+        padding-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #000;
+        height: 3.5rem;
+    }
+
+    .dry__table td.h50 {
+        height: auto;
+    }
+
+    .dry__table td,
+    .dry__table td.wd690 {
+        width: unset;
+        padding: 0;
+        font-size: 1.1rem;
+        padding-left: 1.5rem;
+    }
+
+    .dry__table td .hpy0707__tag {
+        margin: 2rem 0 0;
+    }
+
+    .dry__table td .hpy0707__button.hpy0707__button--mt2 {
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+
+    .dry__editor {
+        min-height: 21rem;
+    }
+
+    .dry__table .hpy0707__button.hpy0707__button--mt2 button {
+        letter-spacing: -1px;
+        padding: 0 1rem;
+    }
 }
 
 @media (max-width: 390px) {
