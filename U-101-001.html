@@ -549,6 +549,7 @@
                             <div class="chc__top">
                                 <div class="chn__bor">
                                     <div class="initial__block">
+                                        <button type="button" class="initial__btn">전체</button>
                                         <button type="button" class="initial__btn">ㄱ</button>
                                         <button type="button" class="initial__btn">ㄴ</button>
                                         <button type="button" class="initial__btn">ㄷ</button>
@@ -1056,14 +1057,14 @@
                                         <span>크라쉬</span>
                                     </a>
                                 </li>
-                                <li class="chc__item">
+                                <!-- <li class="chc__item">
                                     <a href="#" class="chc__link">
                                         <figure>
                                             <img src="images/ptu_m1_0101/image53.png" alt="">
                                         </figure>
                                         <span>킥복싱</span>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="chc__item">
                                     <a href="#" class="chc__link">
                                         <figure>
@@ -1741,7 +1742,7 @@
                 "ㅇ": ["아이스하키", "야구소프트볼", "양궁", "에어로빅힙합", "역도", "요트", "우슈", "유도", "육상"],
                 "ㅈ": ["주짓수", "족구", "줄넘기", "조정"],
                 "ㅊ": ["체조", "체스", "축구", "철인3종"],
-                "ㅋ": ["카누", "카바디", "컬링", "킥복싱"],
+                "ㅋ": ["카누", "카바디", "컬링"],
                 "ㅌ": ["탁구", "태권도", "택견", "테니스"],
                 "ㅍ": ["펜싱"],
                 "ㅎ": ["하키", "합기도", "핸드볼"]
@@ -1788,6 +1789,13 @@
                     $items.show().removeClass(function (index, className) {
                         return (className.match(/highlight-top\d+/g) || []).join(' ');
                     }).removeClass("highlight-top");
+                    return;
+                }
+
+                if (initial === "전체") {
+                    $btns.removeClass("active");
+                    $this.addClass("active");
+                    $items.show();
                     return;
                 }
 

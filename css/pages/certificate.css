@@ -5052,14 +5052,15 @@ a.ui-button:active,
     position: absolute;
     top: 0;
     right: 0;
-    border-radius: 100px;
-    box-shadow: 1px 1px 5px #cddeff;
-    width: 36px;
-    height: 36px;
-    background-image: url("../../images/u-102-001/blockchain_bdg.png");
+    /* border-radius: 100px;
+    box-shadow: 1px 1px 5px #cddeff; */
+    width: 28px;
+    height: 28px;
+    background-image: url("../../images/u-102-001/blc-icon.png");
     background-size: 100%;
 }
 
 .ply05101 .date-inputbox {
     width: auto;
+    background-repeat: no-repeat;
 }
