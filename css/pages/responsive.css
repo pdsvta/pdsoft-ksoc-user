@@ -5634,6 +5634,194 @@
         letter-spacing: -1px;
         padding: 0 1rem;
     }
+
+    .hpy02__wrapper {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    .hpy02__filter {
+        flex-direction: column;
+        padding: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        gap: 1rem;
+    }
+
+    .hpy02__input {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        justify-content: end;
+        width: 50%;
+    }
+
+    .hpy-reg__select--max223 {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hpy-reg__select--max130 {
+        width: 100%;
+    }
+
+    .hpy-reg__input--max130 {
+        max-width: 100%;
+    }
+
+    .hpy02__date {
+        width: 100%;
+    }
+
+    .hpy02__item .hpy02__input {
+        width: 100%;
+    }
+
+    .hpy02__item .hpy02__input .hpy-reg__btn--min80 {
+        width: 8rem;
+        margin: 1rem auto 0;
+    }
+
+    .hpy02__label {
+        font-size: 1.2rem;
+    }
+
+    .hpy02__total {
+        padding: 3rem 2rem 2rem;
+    }
+
+    .hpy02__box {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    .hpy02__box .tour202001__table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy02__box .tour202001__table thead,
+    .hpy02__box .tour202001__table colgroup {
+        display: none;
+    }
+
+    .hpy02__box .tour202001__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy02__box .tour202001__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(6) {
+        border-bottom: none;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(4) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+        order: 1;
+    }
+
+
+    .hpy02__box .tour202001__table tbody tr td:last-child {
+        position: absolute;
+        top: .7rem;
+        right: 0;
+        padding: 0;
+        border-bottom: none;
+        background: #fff;
+        border-radius: 1rem;
+        border: 1px solid #ddd;
+        width: 8rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(2) {
+        order: 3;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(3) {
+        order: 4;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(5) {
+        order: 5;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(6) {
+        order: 6;
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(1)::before {
+        content: "대회분류";
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(2)::before {
+        content: "시도";
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(3)::before {
+        content: "시군구";
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(5)::before {
+        content: "대회기간";
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(6)::before {
+        content: "참가신청기간";
+    }
+
+    .hpy02__box .tour202001__table tbody tr td:nth-child(1)::before,
+    .hpy02__box .tour202001__table tbody tr td:nth-child(2)::before,
+    .hpy02__box .tour202001__table tbody tr td:nth-child(3)::before,
+    .hpy02__box .tour202001__table tbody tr td:nth-child(5)::before,
+    .hpy02__box .tour202001__table tbody tr td:nth-child(6)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 1rem;
+        width: 11.5rem;
+    }
+
+    .hpy02__btn {
+        border-radius: 1rem;
+    }
 }
 
 @media (max-width: 390px) {
