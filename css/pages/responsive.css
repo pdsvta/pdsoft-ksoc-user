@@ -5822,6 +5822,108 @@
     .hpy02__btn {
         border-radius: 1rem;
     }
+
+    .hpy-reg__select--max180 {
+        min-width: 100%;
+    }
+
+
+    .hpy02__203001 .hpy0219__item {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .hpy02__203001 .hpy02__item .hpy02__input {
+        width: calc((100% - .5rem)/2)
+    }
+
+    .hpy02__203001 .hpy02__item button {
+        margin: 1.5rem auto 0;
+    }
+
+    .hpy02__203001 .hpy02__box .hpy02__table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy02__203001 .hpy02__box .hpy02__table thead,
+    .hpy02__203001 .hpy02__box .hpy02__table colgroup {
+        display: none;
+    }
+
+    .hpy02__203001 .hpy02__box .hpy02__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy02__203001 .hpy02__box .hpy02__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy02__203001 .hpy02__box .hpy02__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .hpy02__203001 .hpy02__box .hpy02__table tbody tr td:nth-child(2) {
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hpy02__203001 .hpy02__box .hpy02__table tbody tr td:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+    }
+
+    .hpy02__203001 .hpy0219__table .hpy02__btn {
+        font-weight: 400;
+        height: 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    .hpy02__203001 .hpy02__box .hpy02__table tbody tr td:nth-child(2)::before {
+        content: '클럽 정보';
+    }
+
+
+    .hpy02__203001 .hpy02__box .hpy02__table tbody tr td:last-child {
+        position: absolute;
+        top: .7rem;
+        right: 0;
+        padding: 0;
+        border-bottom: none;
+        background: #fff;
+        border-radius: 1rem;
+        border: 1px solid #ddd;
+        width: 8rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 390px) {
