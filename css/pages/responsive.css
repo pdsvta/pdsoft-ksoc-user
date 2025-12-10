@@ -1556,6 +1556,11 @@
         color: #0C54B8;
     }
 
+    .ply-nav__item:hover > .sub-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+
 
     .ply-nav__item.has-arrow>.ply-nav__link::after {
         content: '';
@@ -1878,6 +1883,10 @@
     }
 
     /* 1.2 */
+    .ply.pt5.tour102002__main {
+        padding: 0 0 6rem 0;
+    }
+
     .ply__tit,
     .ply__group,
     .ply__wrapper--flex,
@@ -1891,6 +1900,10 @@
 
     .ply__tit.tour102002__tit h3 {
         font-size: 2.1rem;
+    }
+    
+    .ply__group.tour102002__rowTop {
+        padding: 0;
     }
 
     .ply__group--item.tour102002__item {
@@ -1907,7 +1920,8 @@
         font-size: 1rem;
     }
 
-    .ply__wrapper.tour102002__boxMain {
+    .ply__wrapper.tour102002__boxMain,
+    .indv__block.bd5.tour102002__boxMain {
         border-radius: 2rem;
         padding: 2rem;
     }
@@ -1919,6 +1933,10 @@
 
     .ply__wrapper.mt2.tour102002__boxMain {
         flex: 0 0 22rem;
+    }
+
+    .ply__wrapper.mt2.w340.tour102002__repair.tour102002__boxMain {
+        flex: 0;
     }
 
     .ply__wrapper.mt5.tour102002__boxMain .ply__title {
@@ -1960,6 +1978,85 @@
     .ply__wrapper.mt2.tour102002__boxMain .ply102002__row {
         font-size: 1.3rem;
         margin-bottom: 1rem;
+    }
+
+    .ply102003__text,
+    .ply102003__info,
+    .ply102004__box,
+    .ply102004__top,
+    .ply102007__group {
+        padding: 0;
+    }
+
+    .ply102004__bottom {
+        padding: 3rem 0 0 0;
+    }
+
+    .indv__block.bd5.tour102002__boxMain .indv__block--text {
+        padding: 0 0 3rem 0;
+    }
+
+    .tour102004005__tabs ul {
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        height: fit-content;
+    }
+
+    .tour102004005__tabs ul li {
+        width: calc(50% - 0.3rem);
+        border-radius: 0.8rem;
+        padding: 1rem 0;
+    }
+
+    .tour102004005__boxStep {
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+    }
+
+    .tour102004005__boxStep .indv__flex-r .indv__flex-img {
+        justify-content: center;
+    }
+
+    .tour102004005__imgPDF {
+        width: 100%;
+    }
+
+    .tour102007__group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .indv__list--text-tit>li>h1 {
+        font-size: 1.5rem;
+    }
+    
+    .indv__list--text>li {
+        font-size: 1.2rem;
+    }
+
+    .indv__flex-imgGroup {
+        gap: 1rem;
+    }
+
+    .indv__flex-imgGroup img {
+        height: auto;
+    }
+
+    .guide__content .guide__content-extra:first-child:after {
+        font-size: 22rem;
+        bottom: -10rem;
+        right: -3.5rem;
+    }
+
+    .guide__contents .guide__content-3-1::after,
+    .guide__contents .guide__content-5-1::after {
+        font-size: 22rem;
+        bottom: -18rem;
+        right: 0rem;
+    }
+
+    .transfer-text.fs13 {
+        flex: 1;
     }
 
     .ply-reg__item2 {

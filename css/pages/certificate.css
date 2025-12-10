@@ -4833,7 +4833,6 @@ a.ui-button:active,
     display: flex;
     justify-content: end;
     gap: 5rem;
-    margin-top: -5rem;
 }
 
 .indv__flex-img>img {
