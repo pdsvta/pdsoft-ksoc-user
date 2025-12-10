@@ -5924,6 +5924,238 @@
         align-items: center;
         justify-content: center;
     }
+
+    .hpy204001__table2 {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy204001__table2 thead,
+    .hpy204001__table2 colgroup {
+        display: none;
+    }
+
+    .hpy204001__table2 tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy204001__table2 tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy204001__table2 tbody tr td {
+        display: flex;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .hpy204001__table2 tbody tr td:nth-child(3) {
+        border-bottom: none;
+    }
+
+    .hpy204001__table2 tbody tr td:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+    }
+
+
+    .hpy204001__table2 tbody tr td:nth-child(2)::before {
+        content: "대상";
+    }
+
+    .hpy204001__table2 tbody tr td:nth-child(3)::before {
+        content: "비고";
+    }
+
+    .hpy204001__table2 tbody tr td:nth-child(2)::before,
+    .hpy204001__table2 tbody tr td:nth-child(3)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+    }
+
+    .hpy02__table.hpy204001__table2 tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hpy02__table.hpy204001__table2 tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .hpy204001__wrapper {
+        padding: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+    }
+
+    .hpy0220__box {
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hpy02__title--pd20 h3 {
+        padding: 0 0 1rem;
+    }
+
+    .hpy02__title h3 {
+        font-size: 1.5rem;
+        padding: 0 0 1rem;
+    }
+
+    .hpy0220__box li,
+    .hpy0220__description {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    .hpy0220__name,
+    .hpy0220__phone {
+        font-size: 1.5rem;
+    }
+
+    .hpy0220__icon--phone {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .hpy0220__icon--phone img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .hpy0220__contact {
+        width: 100%;
+        height: 8.9rem;
+        padding: 2.4rem 2.8rem;
+    }
+
+    .hpy0220__note--contact {
+        margin: 1rem 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    .hpy0220__btnwrap .hpy-reg__btn {
+        height: 3.5rem;
+    }
+
+    .hpy0220__item {
+        background: #fff;
+    }
+
+    .hpy0220__num {
+        bottom: -5.2rem;
+        font-size: 9rem;
+        right: 0;
+    }
+
+    .hpy0220__note {
+        font-size: 1.2rem;
+    }
+
+    .hpy0220__item {
+        overflow: hidden;
+        width: 12.4rem;
+        height: 12.4rem;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hpy204001__table1 {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy204001__table1 thead,
+    .hpy204001__table1 colgroup {
+        display: none;
+    }
+
+    .hpy204001__table1 tbody tr {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        position: relative;
+    }
+
+
+    .hpy204001__table1 tbody tr td {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        color: #666;
+        height: 3.5rem;
+        vertical-align: middle;
+    }
+
+    .hpy204001__table1 tbody tr td:nth-child(6) {
+        border-bottom: none;
+    }
+
+    .hpy02__table.hpy204001__table1 tbody tr:last-child td {
+        border: 1px solid #ddd;
+    }
+
+
+    .hpy204001__table1 tbody tr td:nth-child(1)::before {
+        content: "시간대";
+    }
+
+    .hpy204001__table1 tbody tr td:nth-child(2)::before {
+        content: "훈련대관";
+    }
+
+    .hpy204001__table1 tbody tr td:nth-child(3)::before {
+        content: "대회";
+    }
+
+    .hpy204001__table1 tbody tr td:nth-child(4)::before {
+        content: "대회";
+    }
+
+    .hpy204001__table1 tbody tr td:nth-child(5)::before {
+        content: "비고";
+    }
+
+    .hpy204001__table1 tbody tr td:nth-child(1)::before,
+    .hpy204001__table1 tbody tr td:nth-child(2)::before,
+    .hpy204001__table1 tbody tr td:nth-child(3)::before,
+    .hpy204001__table1 tbody tr td:nth-child(4)::before,
+    .hpy204001__table1 tbody tr td:nth-child(5)::before {
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        padding-right: 1rem;
+        width: 11.5rem;
+        background: #f5f5f5;
+        height: 3.5rem;
+        padding-left: 1.5rem;
+    }
 }
 
 @media (max-width: 390px) {
