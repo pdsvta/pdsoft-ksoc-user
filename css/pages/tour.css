@@ -9652,12 +9652,26 @@
     padding: 0 0;
 }
 
+.tour102002__repair {
+    height: fit-content;
+}
+
 .tour102023__title {
     justify-content: flex-start;
 }
 
 .tour102023__title h3 {
     padding-left: 5rem;
+}
+
+.tour102004005__imgPDF {
+    width: 45rem;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.tour102007__regCard {
+    width: 32%;
 }
 
 .tour003002__list li {

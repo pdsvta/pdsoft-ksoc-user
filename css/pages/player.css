@@ -199,6 +199,51 @@
     white-space: nowrap;
 }
 
+.ply-nav__item .sub-menu {
+    position: fixed;
+    top: 116px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    width: 100vw;
+    background: #F5F5F5;
+    border-top: 1px solid #ddd;
+    padding: 0px 20px;
+    margin: 0;
+    list-style: none;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, transform .3s ease, visibility .3s ease;
+}
+
+.ply-nav__item .sub-menu .inner {
+	display: block;
+}
+
+.ply-nav__item:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.ply-nav__item .sub-menu li {
+    float: left;
+    margin-right: 20px;
+}
+
+.ply-nav__item .sub-menu li a {
+    display: block;
+    padding: 8px 12px;
+    white-space: nowrap;
+    color: #333;
+    transition: background .2s ease;
+    font-size: 1.5rem;
+}
+
+.ply-nav__item .sub-menu li a:hover {
+    border-bottom: 3px solid #929292;
+}
+
 .ply-nav--blue .ply-nav__link {
     color: #fff;
 }
