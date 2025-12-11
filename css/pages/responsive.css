@@ -153,6 +153,38 @@
     .popup-main__col-title br {
         display: none;
     }
+
+    .ply__tit.p2 {
+        padding: 0;
+    }
+
+    .ply102009__phone.tour102009__phone {
+        position: fixed;
+        right: 1.2rem;
+        bottom: 6rem;
+        z-index: 9999;
+        flex-direction: column;
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #555;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        animation: floatUp 0.3s ease;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .ply102009__phone.tour102009__phone img {
+        width: 2.4rem;
+        height: auto;
+    }
+
+    .ply102009__table {
+        padding: 0;
+    }
 }
 
 @media (max-width: 819px) {
@@ -2023,7 +2055,12 @@
 
     .tour102007__group {
         flex-direction: column;
+        align-items: flex-start;
         gap: 0.5rem;
+    }
+
+    .ply__wrapper.mt5.tour102002__boxMain .ply102002__selectbox.tour102008__select {
+        margin-bottom: 0;
     }
 
     .indv__list--text-tit>li>h1 {
@@ -6253,6 +6290,146 @@
         height: 3.5rem;
         padding-left: 1.5rem;
     }
+
+    .ply102009__table .hpy02__table.hpy02__box {
+        border-bottom: 0;
+    } 
+
+    .hpy02__table.hpy02__box tbody td {
+        border-left: 0;
+        border-right: 0;
+        text-align: left;
+        height: unset;
+    }
+    
+    .hpy02__table.hpy02__box tbody tr:last-child td {
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .hpy02__table.hpy02__box tbody tr:last-child td:last-child {
+        border-bottom: 0;
+    }
+
+    .tour102009__filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour102009__filter .tour__group--input {
+        width: 100%;
+    }
+
+    .tour102009__filter .hpy-reg__input--date {
+        max-width: unset;
+        min-width: unset;
+        width: calc(33% - 0.3rem);
+    }
+
+    .tour102009__box.tour102002__boxMain {
+        border: 0;
+        padding: 0;
+    }
+    
+    .tour102002__boxMain .tour102009__filter {
+        border: 1px solid #ddd;
+        padding: 2rem;
+        border-radius: 2rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .ply102009__text {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Ẩn thead */
+    .ply102009__table thead {
+        display: none;
+    }
+
+    /* Biến table thành dạng block */
+    .ply102009__table table,
+    .ply102009__table tbody,
+    .ply102009__table tr,
+    .ply102009__table td {
+        display: block;
+        width: 100%;
+    }
+
+    /* CARD */
+    .ply102009__table tr {
+        background: #fff;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        border: 1px solid #DDDDDD;
+    }
+
+    /* ====== DÒNG 1: CHỨNG CHỈ + TAG ====== */
+    .ply102009__table td:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #111111;
+        border-bottom: 1px solid #DDDDDD;
+        border-radius: 1rem 1rem 0 0;
+        background-color: #F5F5F5;
+    }
+
+    /* Tag 블록체인 */
+    .ply102009__tag {
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    /* ====== CÁC TD TỪ 2 → 6 ====== */
+    .ply102009__table td:nth-child(n+2) {
+        padding: 1rem 1rem;
+        width: calc(100% - 4rem);
+        margin: 0 2rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #666666;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    /* bỏ border bottom của dòng cuối cùng */
+    .ply102009__table td:last-child {
+        border-bottom: none;
+    }
+
+    /* LABEL (bên trái) */
+    .ply102009__table td:nth-child(2)::before {
+        content: "신청일";
+    }
+    .ply102009__table td:nth-child(3)::before {
+        content: "발급일";
+    }
+    .ply102009__table td:nth-child(4)::before {
+        content: "결제금액";
+    }
+    .ply102009__table td:nth-child(5)::before {
+        content: "결제종류";
+    }
+    .ply102009__table td:nth-child(6)::before {
+        content: "처리상태";
+    }
+
+    .ply102009__table td:nth-child(n+2)::before {
+        color: #666666;
+        font-size: 1.3rem;
+        font-weight: 500;
+        width: 10rem;
+    }
 }
 
 @media (max-width: 390px) {
@@ -6276,6 +6453,10 @@
     .chc__btn {
         height: 1.5rem;
         width: 1.5rem;
+    }
+
+    .tour102009__filter .hpy-reg__input--date {
+        width: calc(32% - 0.3rem);
     }
 
 }
@@ -6309,6 +6490,10 @@
     .hpy-reg__input--max120 {
         max-width: 12.3rem;
     }
+
+    .tour102009__filter .hpy-reg__input--date {
+        width: calc(31% - 0.3rem);
+    }
 }
 
 @media (max-width: 360px) {
@@ -6321,6 +6506,10 @@
     .screen2__pic img {
         width: 14rem;
         height: 14.2rem;
+    }
+
+    .tour102009__filter .hpy-reg__input--date {
+        width: calc(29% - 0.3rem);
     }
 }
 
