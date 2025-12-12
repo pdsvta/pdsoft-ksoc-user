@@ -10027,6 +10027,12 @@
     color: #111;
 }
 
+.hpy004004__title.bd-bt {
+    padding: 0 2rem 3rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 3rem;
+}
+
 .hpy004004__tabs {
     display: flex;
     font-size: 1.7rem;
@@ -10403,10 +10409,34 @@
     padding: 0 2rem;
 }
 
-.hpy004004__img img {
+.hpy004016__img {
+    padding: 0 2rem 3rem;
+    position: relative;
+}
+
+.hpy004016__img img {
     width: 92rem;
     height: auto;
+    position: relative;
 }
+
+.hpy004016__title {
+    position: absolute;
+    top: 5.5rem;
+    left: 10rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.hpy004016__title p {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.hpy004016__title span {
+    font-size: 1.5rem;
+}
+
 
 .hpy004004__img2 img {
     width: 70rem;
@@ -10493,6 +10523,10 @@
 .hpy004016__links .link {
     font-weight: 600;
     color: #0C54B8;
+}
+
+.hpy004016__table {
+    padding: 0 2rem;
 }
 
 .hpy004016__table .hpy02__table {
@@ -10704,6 +10738,11 @@
     padding: 2rem;
 }
 
+
+.hpy004017__table2 table tr td.table-textarea .hpy0707__tag {
+    margin: 0;
+}
+
 .hpy004017__table2 table tr td.table-textarea textarea {
     height: 10rem;
 }
@@ -10722,4 +10761,22 @@
 .table-btns button {
     display: flex;
     gap: 1rem;
+}
+
+.hpy004017__table .hpy02__table tr.active td {
+    color: #0C54B8;
+}
+
+.hpy004017__table .hpy02__table tr.active td button {
+    background: #0C54B8;
+    color: #fff;
+}
+
+.hpy004017__table .hpy02__table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.hpy004017__table .hpy02__table tbody tr:hover td:nth-child(2) {
+    color: #0C54B8;
 }
