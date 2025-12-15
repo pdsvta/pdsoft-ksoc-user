@@ -4876,6 +4876,23 @@
     font-weight: 600;
 }
 
+.tour402002__groupFilter {
+    gap: 0.5rem;
+}
+
+.tour402002__filterLeft {
+    width: 70%;
+    justify-content: space-between;
+}
+
+.tour402002__filterRight {
+    flex: 1;
+}
+
+.tour402002__pagi {
+    margin-top: 3rem;
+}
+
 .tour402003__wrapper .tour402001__table .day-row td.day span {
     font-weight: 400;
     font-size: 1.1rem;
@@ -7698,6 +7715,61 @@
     font-weight: 400;
     color: #666666;
     line-height: 2.5rem;
+}
+
+.tour101006__itemStep.ply-bsc__item {
+    margin-top: 0;
+}
+
+.tour101006-1__itemCardChild {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tour101006-1__boxTitleChild {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tour101006-1__checkbox {
+    display: flex;
+}
+
+.tour101006-1__checkbox .ply-reg__label {
+    padding: 0 0 0 0.3rem;
+}
+
+.tour101006-1__allBtn {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.tour101006-1__allBtn .ply-reg__btn {
+    width: fit-content;
+    min-width: unset;
+}
+
+.tour101006-1__allRadio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tour101006-1__itemRadio {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    width: 15%;
+}
+
+.tour101006-1__itemRadio .ply-reg__label {
+    padding: 0;
 }
 
 .tour001002__allBtn {

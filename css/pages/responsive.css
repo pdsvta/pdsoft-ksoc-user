@@ -185,6 +185,22 @@
     .ply102009__table {
         padding: 0;
     }
+
+    .tour402001__boxMain {
+        padding: 4rem;
+    }
+
+    .tour402001__boxMain .tour402001__table {
+        padding: 0;
+    }
+
+    .tour402002__box {
+        flex-direction: column;
+    }
+
+    .tour402002__box .tour402002__calendar {
+        width: 100%;
+    }
 }
 
 @media (max-width: 819px) {
@@ -6478,6 +6494,49 @@
         font-size: 1.3rem;
         font-weight: 500;
         width: 10rem;
+    }
+
+    .tour402001__box {
+        height: 6rem;
+    }
+
+    .tour402001__item {
+        width: 4rem;
+    }
+
+    .tour402001__item p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .tour402001__item span {
+        font-size: 0.8rem;
+    }
+
+    .tour402001__table table {
+        border: 0;
+    }
+    
+    .tour__group.p05.tour402002__groupFilter {
+        flex-direction: column;
+        border: 1px solid #e5e5e5;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .tour402002__filterLeft,
+    .tour402002__filterRight {
+        width: 100%;
+    }
+
+    .tour402002__filterLeft .selectbox.min100 {
+        width: 100%;
+    }
+
+    .tour402002__calendar .calendar-box,
+    .tour402002__box .list-box {
+        border-radius: 2rem;
+        padding: 2rem;
     }
 }
 
