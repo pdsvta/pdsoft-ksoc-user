@@ -4610,20 +4610,31 @@ legend {
 }
 
 /* //certificate */
+.tour101001-game-pop-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 9999;
+}
+
 .game__pop {
-	display: none;
-	width: 50rem;
-	background: #333;
-	border-radius: 2rem;
-	padding: 2.5rem 3.5rem 3.5rem;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 8;
+    display: none;
+    width: 50rem;
+    background: #333;
+    border-radius: 2rem;
+    padding: 2.5rem 3.5rem 3.5rem;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    z-index: 8;
+    position: relative;
 }
 
 .game__pop.on {
-	display: block;
+    display: block;
 }
 
 .game__tit {
@@ -5309,6 +5320,7 @@ legend {
 	display: flex;
 	gap: 2rem;
 	align-items: center;
+	justify-content: center;
 }
 
 .ply__tit.center {
@@ -8233,11 +8245,11 @@ legend {
 	position: absolute;
 	top: 0;
 	right: 0;
-	border-radius: 100px;
-	box-shadow: 1px 1px 5px #cddeff;
-	width: 36px;
-	height: 36px;
-	background-image: url("../../../images/u-102-001/blockchain_bdg.png");
+	/* border-radius: 100px;
+	box-shadow: 1px 1px 5px #cddeff; */
+	width: 28px;
+	height: 28px;
+	background-image: url("../../../images/u-102-001/blc-icon.png");
 	background-size: 100%;
 }
 

@@ -4176,6 +4176,13 @@
     background: #fff;
 }
 
+.tour401007__popup-btns .hpy-reg__btn {
+    border: 0;
+    color: #666;
+    background: #fff;
+    min-width: 3rem;
+}
+
 .tour401007__popup-more {
     padding-left: 4rem;
 }
@@ -9724,12 +9731,19 @@
     padding: 1.2rem 1rem;
 }
 
+.tour102001__link {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #fff;
+}
+
 .tour102002__rowTop {
     padding: 0 0;
 }
 
 .tour102002__repair {
-    height: fit-content;
+    height: auto;
 }
 
 .tour102002__boxLeft {
@@ -9746,10 +9760,6 @@
 
 .tour102023__title {
     justify-content: flex-start;
-}
-
-.tour102023__title h3 {
-    padding-left: 5rem;
 }
 
 .tour102026__card {
@@ -9793,6 +9803,11 @@
     background: #959595 url(../../images/u-102-026/bg_check.svg) center center no-repeat;
     border-radius: 50%;
     border-color: #959595;
+}
+
+.tour102026__btnVoice {
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 .tour102004005__imgPDF {
