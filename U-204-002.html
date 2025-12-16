@@ -531,7 +531,17 @@
                     <h2>빙상장 대관신청 내역</h2>
                 </div>
 
-                <div class="hpy02__wrapper">
+                <div class="tour001001__tabs">
+                    <div class="tour001001__itemTab active">
+                        빙상장
+                    </div>
+                    <div class="tour001001__itemTab">
+                        컬링장
+                    </div>
+                </div>
+
+                <!-- U-204-002 -->
+                <div class="hpy02__wrapper tour001001__mainBox">
 
                     <div class="hpy02__box">
                         <table class="hpy02__table tour204002__table">
@@ -646,6 +656,131 @@
                                     <td>4시간</td>
                                     <td>10명</td>
                                     <td>280,000원</td>
+                                    <td>2025-07-31</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- U-204-004 -->
+                 <div class="hpy02__wrapper tour001001__mainBox">
+
+                    <div class="hpy02__box">
+                        <table class="hpy02__table tour204002__table">
+                            <colgroup>
+                                <col style="width: 6rem;">
+                                <col style="width: 16rem;">
+                                <col style="width: 10rem;">
+                                <col style="width: 10rem;">
+                                <col style="width: 10rem;">
+                                <col style="width: 15rem;">
+                                <col style="width: 10rem;">
+                                <col style="width: 10rem;">
+                                <col style="width: 9rem;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>대표자 성명 <br>(단체명)</th>
+                                    <th><span class="tour204002__link">대관일자 <img src="images/u-204-002/image01.png"
+                                                alt=""></span>
+                                    </th>
+                                    <th>대관시간</th>
+                                    <th>대관인원</th>
+                                    <th>대관금액</th>
+                                    <th><span class="tour204002__link">결제일자 <img src="images/u-204-002/image01.png"
+                                                alt=""></span>
+                                    </th>
+                                    <th><span class="tour204002__link">취소일자 <img src="images/u-204-002/image01.png"
+                                                alt=""></span>
+                                    </th>
+                                    <th>결제취소</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        최진혁 <br>
+                                        (동양스포츠클럽)
+                                    </td>
+                                    <td>2025-07-14</td>
+                                    <td>2시간</td>
+                                    <td>5명</td>
+                                    <td>50,000원</td>
+                                    <td>2025-07-10</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        최진혁 <br>
+                                        (동양스포츠클럽)
+                                    </td>
+                                    <td>2025-07-16</td>
+                                    <td>2시간</td>
+                                    <td>5명</td>
+                                    <td>50,000원</td>
+                                    <td>2025-07-11</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        최진혁 <br>
+                                        (동양스포츠클럽)
+                                    </td>
+                                    <td>2025-07-18</td>
+                                    <td>2시간</td>
+                                    <td>5명</td>
+                                    <td>50,000원</td>
+                                    <td>2025-07-14</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        최진혁 <br>
+                                        (동양스포츠클럽)
+                                    </td>
+                                    <td>2025-07-21</td>
+                                    <td>2시간</td>
+                                    <td>10명</td>
+                                    <td>100,000원</td>
+                                    <td>2025-07-17</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        최진혁 <br>
+                                        (동양스포츠클럽)
+                                    </td>
+                                    <td>2025-07-28</td>
+                                    <td>2시간</td>
+                                    <td>5명</td>
+                                    <td>50,000원</td>
+                                    <td>2025-07-19</td>
+                                    <td>2025-07-24</td>
+                                    <td>취소</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        최진혁 <br>
+                                        (동양스포츠클럽)
+                                    </td>
+                                    <td>2025-08-14</td>
+                                    <td>2시간</td>
+                                    <td>10명</td>
+                                    <td>100,000원</td>
                                     <td>2025-07-31</td>
                                     <td>-</td>
                                     <td>-</td>
@@ -1203,6 +1338,25 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabs = document.querySelectorAll(".tour001001__itemTab");
+            const contents = document.querySelectorAll(".tour001001__mainBox");
+
+            tabs.forEach((tab, i) => {
+                tab.addEventListener("click", () => {
+                    tabs.forEach(t => t.classList.remove("active"));
+                    contents.forEach(c => c.style.display = "none");
+
+                    tab.classList.add("active");
+                    contents[i].style.display = "block";
+                });
+            });
+
+            contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
         });
     </script>
 </body>

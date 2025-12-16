@@ -185,6 +185,22 @@
     .ply102009__table {
         padding: 0;
     }
+
+    .tour402001__boxMain {
+        padding: 4rem;
+    }
+
+    .tour402001__boxMain .tour402001__table {
+        padding: 0;
+    }
+
+    .tour402002__box {
+        flex-direction: column;
+    }
+
+    .tour402002__box .tour402002__calendar {
+        width: 100%;
+    }
 }
 
 @media (max-width: 819px) {
@@ -2012,6 +2028,14 @@
         margin-bottom: 1rem;
     }
 
+    .tour102002__boxLeft {
+        width: 100%;
+    }
+
+    .tour102002__btnPlus {
+        margin-left: 0;
+    }
+
     .ply102003__text,
     .ply102003__info,
     .ply102004__box,
@@ -2057,6 +2081,47 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+    }
+
+    .tour102009__note {
+        margin-top: 4rem;
+        padding: 2rem;
+    }
+
+    .tour102009__note p {
+        font-size: 1.4rem;
+    }
+
+    .tour102026__title {
+        margin: 3rem 0;
+    }
+
+    .tour102026__boxGroup {
+        padding: 0;
+    }
+    
+    .tour102026__card,
+    .ply102026__group.tour102026__group {
+        flex-direction: column;
+    }
+
+    .tour102026__card label {
+        margin-bottom: 0.4rem;
+    }
+
+    .tour102026__card input, 
+    .tour102026__card textarea, 
+    .ply102026__group.tour102026__group {
+        flex: none;
+    }
+
+    .tour102026__card label,
+    .tour102026__card .selectbox {
+        width: 100%;
+    }
+
+    .tour__bm--end.tour102026__bm--end .tour__btn {
+        min-width: 9rem;
     }
 
     .ply__wrapper.mt5.tour102002__boxMain .ply102002__selectbox.tour102008__select {
@@ -6429,6 +6494,49 @@
         font-size: 1.3rem;
         font-weight: 500;
         width: 10rem;
+    }
+
+    .tour402001__box {
+        height: 6rem;
+    }
+
+    .tour402001__item {
+        width: 4rem;
+    }
+
+    .tour402001__item p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .tour402001__item span {
+        font-size: 0.8rem;
+    }
+
+    .tour402001__table table {
+        border: 0;
+    }
+    
+    .tour__group.p05.tour402002__groupFilter {
+        flex-direction: column;
+        border: 1px solid #e5e5e5;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .tour402002__filterLeft,
+    .tour402002__filterRight {
+        width: 100%;
+    }
+
+    .tour402002__filterLeft .selectbox.min100 {
+        width: 100%;
+    }
+
+    .tour402002__calendar .calendar-box,
+    .tour402002__box .list-box {
+        border-radius: 2rem;
+        padding: 2rem;
     }
 }
 

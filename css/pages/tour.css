@@ -4880,6 +4880,23 @@
     font-weight: 600;
 }
 
+.tour402002__groupFilter {
+    gap: 0.5rem;
+}
+
+.tour402002__filterLeft {
+    width: 70%;
+    justify-content: space-between;
+}
+
+.tour402002__filterRight {
+    flex: 1;
+}
+
+.tour402002__pagi {
+    margin-top: 3rem;
+}
+
 .tour402003__wrapper .tour402001__table .day-row td.day span {
     font-weight: 400;
     font-size: 1.1rem;
@@ -7704,6 +7721,61 @@
     line-height: 2.5rem;
 }
 
+.tour101006__itemStep.ply-bsc__item {
+    margin-top: 0;
+}
+
+.tour101006-1__itemCardChild {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tour101006-1__boxTitleChild {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tour101006-1__checkbox {
+    display: flex;
+}
+
+.tour101006-1__checkbox .ply-reg__label {
+    padding: 0 0 0 0.3rem;
+}
+
+.tour101006-1__allBtn {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.tour101006-1__allBtn .ply-reg__btn {
+    width: fit-content;
+    min-width: unset;
+}
+
+.tour101006-1__allRadio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tour101006-1__itemRadio {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    width: 15%;
+}
+
+.tour101006-1__itemRadio .ply-reg__label {
+    padding: 0;
+}
+
 .tour001002__allBtn {
     display: flex;
     align-items: center;
@@ -9660,12 +9732,67 @@
     height: fit-content;
 }
 
+.tour102002__boxLeft {
+    width: 66%;
+}
+
+.tour102002__btnPlus {
+    margin-left: 2rem;
+}
+
+.tour102002__note {
+    padding-top: 1rem;
+}
+
 .tour102023__title {
     justify-content: flex-start;
 }
 
 .tour102023__title h3 {
     padding-left: 5rem;
+}
+
+.tour102026__card {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.tour102026__card .selectbox {
+    width: 33%;
+}
+
+.tour102026__card label {
+    width: 10%;
+    padding-top: 1rem;
+}
+
+.tour102026__card input,
+.tour102026__card textarea,
+.ply102026__group.tour102026__group {
+    flex: 1;
+}
+
+.tour102026__card .sms__note {
+    font-size: 1.3rem;
+}
+
+.tour102026__card .sms__note {
+    position: relative;
+    padding-left: 2.5rem;
+    padding-top: 0;
+}
+
+.tour102026__card .sms__note::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #959595 url(../../images/u-102-026/bg_check.svg) center center no-repeat;
+    border-radius: 50%;
+    border-color: #959595;
 }
 
 .tour102004005__imgPDF {
@@ -9676,6 +9803,18 @@
 
 .tour102007__regCard {
     width: 32%;
+}
+
+.tour102009__note {
+    border-radius: 10px;
+    border: solid 1px #c4c4c4;
+    background-color: #f7f7f7;
+    margin-top: 5rem;
+    padding: 2rem 2rem 2rem 3.2rem;
+}
+
+.tour102009__note p {
+    font-size: 1.6rem;
 }
 
 .tour003002__list li {
