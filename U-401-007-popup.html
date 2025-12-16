@@ -1159,6 +1159,25 @@
 
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const card = document.querySelector('.tour401007__card');
+            const popup = document.querySelector('.tour401007__popup-container');
+            const closeBtn = document.querySelector('.tour401007__popup-close');
+
+            // Mở popup
+            card.addEventListener('click', function () {
+                popup.classList.add('is-active');
+            });
+
+            // Đóng popup
+            closeBtn.addEventListener('click', function (e) {
+                e.stopPropagation(); // tránh trigger card click
+                popup.classList.remove('is-active');
+            });
+        });
+    </script>
 </body>
 
 </html>
