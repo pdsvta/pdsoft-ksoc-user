@@ -11059,4 +11059,30 @@
 
 .hpy004039__item {
     width: 15.2rem;
+    cursor: pointer;
+}
+
+.hpy004039__item {
+    position: relative;
+    overflow: hidden;
+}
+
+.hpy004039__item img {
+    display: block;
+    width: 100%;
+}
+
+.hpy004039__item .img-hover {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.hpy004039__item:hover .img-hover {
+    opacity: 1;
+}
+
+.hpy004039__item:hover .img-default {
+    opacity: 0;
 }
