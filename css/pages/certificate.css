@@ -474,9 +474,9 @@
     border-top: 1px solid #ddd;
 }
 
-.chc__item:nth-child(n + 7) {
+/* .chc__item:nth-child(n + 7) {
     border-top: none;
-}
+} */
 
 
 .chc__item.highlight-top {

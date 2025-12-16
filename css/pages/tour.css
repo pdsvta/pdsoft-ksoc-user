@@ -4003,6 +4003,7 @@
 .tour401007__card {
     overflow: hidden;
     margin-bottom: 4.4rem;
+    cursor: pointer;
 }
 
 .tour401007__card img {
@@ -4113,6 +4114,11 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     z-index: 1;
+    display: none;
+}
+
+.tour401007__popup-container.is-active {
+    display: block;
 }
 
 .tour401007__popup-header {
@@ -4177,10 +4183,11 @@
 }
 
 .tour401007__popup-btns .hpy-reg__btn {
-    border: 0;
-    color: #666;
-    background: #fff;
-    min-width: 3rem;
+    cursor: unset;
+}
+
+.tour401007__popup-btns .hpy-reg__btn:hover {
+    opacity: 1;
 }
 
 .tour401007__popup-more {

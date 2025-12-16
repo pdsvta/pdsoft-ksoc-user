@@ -569,6 +569,41 @@
                         <!-- Cột phải -->
                         <div class="tour401007__map">
                             <img src="images/u-401-007/image02.png" alt="map">
+                            <div class="tour401007__popup-container">
+                                <div class="tour401007__popup-header">
+                                    <h4>신길중학교</h4>
+                                    <div class="tour401007__popup-close">
+                                        x
+                                    </div>
+                                </div>
+
+                                <div class="tour401007__popup-body">
+                                    <div class="tour401007__popup-row">
+                                        <img src="images/u-401-007/image04.png" alt="">
+                                        <p>서울 영등포구 신길로28길 43 (신길동, 신길중학교),<br>신길중학교</p>
+                                    </div>
+
+                                    <div class="tour401007__popup-row">
+                                        <img src="images/u-401-007/image03.png" alt="">
+                                        <p>02-6265-7330</p>
+                                    </div>
+                                    <div class="tour401007__popup-row">
+                                        <img src="images/u-401-007/image05.png" alt="">
+                                        <div class="tour401007__popup-btns">
+                                            <div
+                                                class="hpy-reg__btn hpy-reg__btn--min60 hpy-reg__btn--h25">농구</div>
+                                            <div
+                                                class="hpy-reg__btn hpy-reg__btn--min60 hpy-reg__btn--h25">풋살</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="tour401007__popup-more">
+                                        <button type="button"
+                                            class="hpy-reg__btn hpy-reg__btn--min125 hpy-reg__btn--h25">상세보기</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1122,6 +1157,25 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const card = document.querySelector('.tour401007__card');
+            const popup = document.querySelector('.tour401007__popup-container');
+            const closeBtn = document.querySelector('.tour401007__popup-close');
+
+            // Mở popup
+            card.addEventListener('click', function () {
+                popup.classList.add('is-active');
+            });
+
+            // Đóng popup
+            closeBtn.addEventListener('click', function (e) {
+                e.stopPropagation(); // tránh trigger card click
+                popup.classList.remove('is-active');
+            });
         });
     </script>
 </body>
