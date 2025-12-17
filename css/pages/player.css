@@ -217,10 +217,10 @@
 }
 
 .ply-nav__item .sub-menu .inner {
-	display: block;
+    display: block;
 }
 
-.ply-nav__item:hover > .sub-menu {
+.ply-nav__item:hover>.sub-menu {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
@@ -3504,6 +3504,11 @@
 
 .ply101020 .ply-reg__item5 .ply-reg__card .ply-reg__input--max420 {
     max-width: 42rem;
+}
+
+.ply-reg__input--min420 {
+    max-width: 42rem;
+    min-width: 42rem;
 }
 
 .ply-reg__card .date-input {

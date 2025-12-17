@@ -11201,3 +11201,76 @@
     text-align: left;
     padding-left: 1.5rem;
 }
+
+.tour101012__box {
+    margin: 0 2rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 1px solid #ddd;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tour101012__item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111;
+}
+
+.tour101012__item .bold {
+    font-weight: 600;
+}
+
+.tour101012__line {
+    width: 1px;
+    height: 8px;
+    background: #ccc;
+}
+
+.tour101012__btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    margin-top: 1.5rem;
+}
+
+.tour101012__btn {
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.tour101012__btn:last-child {
+    border: none;
+    background: #666;
+}
+
+.tour101012__btn1 {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.tour101012__btn2 {
+    width: 2rem;
+    height: 2rem;
+}
+
+.tour101012__btn3 {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.ply-reg__list.p0 {
+    padding: 0;
+}
