@@ -171,7 +171,7 @@
         font-size: 1.1rem;
         font-weight: 500;
         color: #555;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         animation: floatUp 0.3s ease;
         width: 8rem;
         height: 8rem;
@@ -1604,7 +1604,7 @@
         color: #0C54B8;
     }
 
-    .ply-nav__item:hover > .sub-menu {
+    .ply-nav__item:hover>.sub-menu {
         opacity: 0;
         visibility: hidden;
     }
@@ -1949,7 +1949,7 @@
     .ply__tit.tour102002__tit h3 {
         font-size: 2.1rem;
     }
-    
+
     .ply__group.tour102002__rowTop {
         padding: 0;
     }
@@ -2099,7 +2099,7 @@
     .tour102026__boxGroup {
         padding: 0;
     }
-    
+
     .tour102026__card,
     .ply102026__group.tour102026__group {
         flex-direction: column;
@@ -2109,8 +2109,8 @@
         margin-bottom: 0.4rem;
     }
 
-    .tour102026__card input, 
-    .tour102026__card textarea, 
+    .tour102026__card input,
+    .tour102026__card textarea,
     .ply102026__group.tour102026__group {
         flex: none;
     }
@@ -2131,7 +2131,7 @@
     .indv__list--text-tit>li>h1 {
         font-size: 1.5rem;
     }
-    
+
     .indv__list--text>li {
         font-size: 1.2rem;
     }
@@ -6358,7 +6358,7 @@
 
     .ply102009__table .hpy02__table.hpy02__box {
         border-bottom: 0;
-    } 
+    }
 
     .hpy02__table.hpy02__box tbody td {
         border-left: 0;
@@ -6366,7 +6366,7 @@
         text-align: left;
         height: unset;
     }
-    
+
     .hpy02__table.hpy02__box tbody tr:last-child td {
         border-bottom: 1px solid #DDDDDD;
     }
@@ -6394,7 +6394,7 @@
         border: 0;
         padding: 0;
     }
-    
+
     .tour102002__boxMain .tour102009__filter {
         border: 1px solid #ddd;
         padding: 2rem;
@@ -6402,7 +6402,7 @@
         flex-wrap: wrap;
         width: 100%;
     }
-    
+
     .ply102009__text {
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -6476,15 +6476,19 @@
     .ply102009__table td:nth-child(2)::before {
         content: "신청일";
     }
+
     .ply102009__table td:nth-child(3)::before {
         content: "발급일";
     }
+
     .ply102009__table td:nth-child(4)::before {
         content: "결제금액";
     }
+
     .ply102009__table td:nth-child(5)::before {
         content: "결제종류";
     }
+
     .ply102009__table td:nth-child(6)::before {
         content: "처리상태";
     }
@@ -6516,7 +6520,7 @@
     .tour402001__table table {
         border: 0;
     }
-    
+
     .tour__group.p05.tour402002__groupFilter {
         flex-direction: column;
         border: 1px solid #e5e5e5;
@@ -6537,6 +6541,10 @@
     .tour402002__box .list-box {
         border-radius: 2rem;
         padding: 2rem;
+    }
+
+    .hpy-reg__btn--min60 {
+        min-width: 100%;
     }
 }
 
