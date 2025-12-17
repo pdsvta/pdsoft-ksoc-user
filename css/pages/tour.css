@@ -9879,15 +9879,6 @@
     padding-top: 0;
 }
 
-.tour201003__boxPagi {
-    display: flex;
-    align-items: center;
-}
-
-.tour201003__boxPagi .hpy__select {
-    padding-left: 5rem;
-} 
-
 .tour202001__table tbody td {
     padding: 1rem 1.2rem;
 }
