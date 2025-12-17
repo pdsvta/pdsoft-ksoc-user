@@ -3087,6 +3087,14 @@
     margin-right: 1.5rem;
 }
 
+.tour103001__total {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tour103001__total b {
+    color: #0C54B8;
+}
 
 .hpy02__btn {
     background-color: #666;
@@ -4058,7 +4066,8 @@
 .tour401007__pagination {
     display: flex;
     justify-content: center;
-    gap: 4px;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .tour401007__pagination button {
@@ -4553,8 +4562,6 @@
     gap: 2rem;
     padding: 0 2rem;
 }
-
-
 
 .tour401008__item:hover {
     background-color: #f9fbff;
@@ -7795,6 +7802,10 @@
     width: 15%;
 }
 
+.tour101006-1__itemRadio input {
+    margin: 0 0.3rem 0 0;
+}
+
 .tour101006-1__itemRadio .ply-reg__label {
     padding: 0;
 }
@@ -9862,6 +9873,21 @@
     justify-content: flex-start;
 }
 
+.tour201003__total {
+    font-size: 1.5rem;
+    margin: 0;
+    padding-top: 0;
+}
+
+.tour201003__boxPagi {
+    display: flex;
+    align-items: center;
+}
+
+.tour201003__boxPagi .hpy__select {
+    padding-left: 5rem;
+} 
+
 .tour202001__table tbody td {
     padding: 1rem 1.2rem;
 }
@@ -9872,6 +9898,32 @@
 
 .tour204002__table tbody .tour__text--left {
     padding: 1rem 1.5rem;
+}
+
+.tour302001__textDesc {
+    text-align: justify;
+}
+
+.tour302001__textDesc .notice-text {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.tour302001__textDesc .notice-mark {
+    flex: 0 0 1.6rem;
+    color: red;
+    font-weight: 600;
+}
+
+.indv__block h4.gray.tour302001__textDesc .notice-content {
+    flex: 1;
+}
+
+.indv__block h4.gray.tour302001__textDesc .notice-text span {
+    color: #666;
 }
 
 .tour401002__listChecked {

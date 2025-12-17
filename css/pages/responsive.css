@@ -6404,7 +6404,6 @@
     }
     
     .ply102009__text {
-        flex-direction: row-reverse;
         justify-content: space-between;
         padding: 0;
         width: 100%;
