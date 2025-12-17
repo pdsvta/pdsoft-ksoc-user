@@ -529,14 +529,22 @@
                 <div class="title">
                     <h2>메디컬센터 진료기록</h2>
                 </div>
-                <div class="tour__wrapper tour__wrapper--mb2 hpy0707__wrapper">
+                <div class="tour001001__tabs">
+                    <div class="tour001001__itemTab active">
+                        발급 안내
+                    </div>
+                    <div class="tour001001__itemTab">
+                        발급 신청
+                    </div>
+                </div>
+                <div class="tour__wrapper tour__wrapper--mb2 hpy0707__wrapper tour001001__mainBox">
                     <h3 class="hpy-reg__tit hpy-reg__tit--mb3">
                         <p>발급 안내</p>
                     </h3>
                     <div class="tour__text105">
-                        <p>신청인 정보를 입력하시고 발급을 받으시려는 메디컬 센터 진료기록을 선택 하여 증명서 발급을 받으실 수 있습니다.</p>
+                        <p>신청인 정보를 입력하시고 발급을 받으시려는 메디컬센터 진료기록을 선택하여 증명서 발급을 받으실 수 있습니다.</p>
                         <br>
-                        <p>※ 메디컬 센터 진료기록 종류</p>
+                        <p>※ 메디컬센터 진료기록 종류</p>
                         <ul>
                             <li>소견서</li>
                             <li>진료의뢰서</li>
@@ -546,7 +554,7 @@
                     <div class="tour__picture105">
                     </div>
                 </div>
-                <div class="tour__wrapper hpy0707__wrapper">
+                <div class="tour__wrapper hpy0707__wrapper tour001001__mainBox">
                     <h3 class="hpy-reg__tit hpy-reg__tit--mb3">
                         <p>발급 신청</p>
                     </h3>
@@ -1220,6 +1228,25 @@
 
         });
 
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabs = document.querySelectorAll(".tour001001__itemTab");
+            const contents = document.querySelectorAll(".tour001001__mainBox");
+
+            tabs.forEach((tab, i) => {
+                tab.addEventListener("click", () => {
+                    tabs.forEach(t => t.classList.remove("active"));
+                    contents.forEach(c => c.style.display = "none");
+
+                    tab.classList.add("active");
+                    contents[i].style.display = "block";
+                });
+            });
+
+            contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+        });
     </script>
 </body>
 
