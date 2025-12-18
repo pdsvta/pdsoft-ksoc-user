@@ -4007,6 +4007,26 @@
     margin-bottom: 1rem;
 }
 
+.tour401007__popup-header.tour401007__headerSearchMap {
+    background: #fff;
+    justify-content: flex-end;
+}
+
+.tour401007__popup-close.tour401007__closeSearchMap {
+    color: #000;
+        border: 2px solid #000;
+}
+
+.tour401007__searchbox.tour401007__inputSearch {
+    margin-bottom: 0;
+}
+
+.tour401007__searchbox.tour401007__inputSearch input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
 .tour401007__searchbox {
     position: relative;
     margin-bottom: 3rem;
@@ -4115,7 +4135,7 @@
     position: relative;
 }
 
-.tour401007__map img {
+.tour401007__map .imgMap {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -4161,6 +4181,10 @@
     display: block;
 }
 
+.tour401007__popupSearchMap {
+    bottom: 10rem;
+}
+
 .tour401007__popup-header {
     background: #0C54B8;
     color: #fff;
@@ -4194,6 +4218,24 @@
 
 .tour401007__popup-body {
     padding: 1.2rem 4rem 1.8rem;
+}
+
+.tour401007__popup-bodySearchMap {
+    padding: 1.2rem 2rem 1.8rem;
+}
+
+.tour401007__popup-body .tit_tip {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tour401007__popup-body .desc_tip,
+.tour401007__popup-body .desc_tip2 {
+    margin-top: 1rem;
+}
+
+.tour401007__popup-body .txt_example {
+    color: #008bd3;
 }
 
 .tour401007__popup-row {
@@ -4938,7 +4980,7 @@
 
 .tour402002__filterLeft {
     width: 70%;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .tour402002__filterRight {
@@ -6038,7 +6080,7 @@
 .tour405006__boxInput input {
     border: 1px solid #DDDDDD;
     border-radius: 5px;
-    color: #CCCCCC;
+    color: #000;
     padding: 0.8rem;
 }
 
@@ -8811,6 +8853,10 @@
     width: 14.5rem;
 }
 
+.tour004035__filterChild {
+    padding: 0;
+}
+
 .tour004035__inputDate {
     width: 30rem;
 }
@@ -8831,6 +8877,8 @@
 
 .tour004040__titleChild {
     margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .tour004040__allBtn {
@@ -8843,14 +8891,15 @@
 
 .tour004040__allBtn button {
     background: #666666;
-    width: 21rem;
+    width: 22rem;
     height: 4rem;
     border: 0;
     border-radius: 0.5rem;
     color: #fff;
     font-size: 1.3rem;
     font-weight: 400;
-    padding: 1.2rem 0;
+    text-align: center;
+    /* padding: 1.2rem 0; */
 }
 
 .tour004040__allBtn button:hover {
@@ -8866,6 +8915,15 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: #666666;
+}
+
+.tour004041__list p strong {
+    font-weight: 600;
+}
+
+.tour004041__list .number {
+    width: 1.2rem;
+    display: inline-block;
 }
 
 .tour503002__box {
@@ -9264,7 +9322,7 @@
 .tour004042__filter {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .tour004042__boxTitle h3 {
@@ -9567,7 +9625,7 @@
 
 .tour004049__itemAddInfo input {
     height: 4rem;
-    color: #CCCCCC;
+    color: #000;
     border: 1px solid #DDDDDD;
     border-radius: 0.5rem;
     padding: 1.2rem 1.7rem;
@@ -9668,7 +9726,7 @@
 }
 
 .tour004049__popupFilter input {
-    color: #CCCCCC;
+    color: #000;
     width: 19.4rem;
     height: 4rem;
     border: 1px solid #DDDDDD;
@@ -9746,6 +9804,14 @@
 
 .tour004053__inputNote {
     width: 23rem;
+}
+
+.tour004058-2__textSelect {
+    text-align: right;
+}
+
+.tour004049__itemAddInfo p.tour004060__textLabel {
+    width: 13rem;
 }
 
 .tour101006__main {

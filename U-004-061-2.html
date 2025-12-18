@@ -585,7 +585,7 @@
                                     <div class="tour004050__rowInfoRight">
                                         <div class="tour004049__itemAddInfo">
                                             <p>수여일</p>
-                                            <input type="text" placeholder="예) 20210101">
+                                            <input type="text" placeholder="예) 20210101" class="tour004049__timeDay">
                                         </div>
                                         <div class="tour004049__itemAddInfo">
                                             <p>비고</p>
@@ -1175,6 +1175,16 @@
             boxAddMore.style.display = "none";
             popup.style.display = "none";
             overlay.style.display = "none";
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.tour004049__timeDay').forEach(input => {
+            input.addEventListener('input', function () {
+                if (this.value.length > 8) {
+                    this.value = this.value.slice(0, 8);
+                }
+            });
         });
     </script>
 </body>

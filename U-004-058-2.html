@@ -655,7 +655,7 @@
                             <div class="tour004049__addInfoRight">
                                 <div class="tour004049__itemAddInfo">
                                     <p>학교명</p>
-                                    <input type="text" placeholder="검색버튼를 클릭하여 학교를 검색하세요"
+                                    <input type="text" placeholder="검색버튼을 클릭하여 학교를 검색하세요"
                                         class="tour004049__nameSchool">
                                     <button class="tour004049__itemAddInfoBtn">검색</button>
                                 </div>
@@ -681,7 +681,7 @@
                                         </div>
                                     </div>
                                     <div class="tour004049__itemAddInfo">
-                                        <p>최종학력여부</p>
+                                        <p class="tour004058-2__textSelect">최종학력여부</p>
                                         <select class="selectbox">
                                             <option value="선택">선택</option>
                                             <option value="예">예</option>
@@ -1309,6 +1309,7 @@
             const searchBtn = document.querySelector(".tour004049__itemAddInfoBtn");
             const popup = document.querySelector(".tour004049__popup");
             const overlay = document.querySelector(".tour004047__overlay");
+            const btnClose = document.querySelector(".tour004049__btnPopup");
 
             /* 1. Click nút + → hiện boxAddMore */
             addMoreBtn.addEventListener("click", () => {
@@ -1326,15 +1327,26 @@
             });
 
             /* 3. Click overlay → tắt popup */
-            overlay.addEventListener("click", () => {
-                popup.style.display = "none";
-                overlay.style.display = "none";
-            });
+            [overlay, btnClose].forEach(el =>
+                el.addEventListener("click", () => {
+                    popup.style.display = overlay.style.display = "none";
+                })
+            );
 
             /* Ẩn mặc định */
             boxAddMore.style.display = "none";
             popup.style.display = "none";
             overlay.style.display = "none";
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.tour004049__time').forEach(input => {
+            input.addEventListener('input', function () {
+                if (this.value.length > 8) {
+                    this.value = this.value.slice(0, 8);
+                }
+            });
         });
     </script>
 </body>

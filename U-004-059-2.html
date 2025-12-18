@@ -1339,6 +1339,16 @@
             overlay.style.display = "none";
         });
     </script>
+
+    <script>
+        document.querySelectorAll('.tour004049__time').forEach(input => {
+            input.addEventListener('input', function () {
+                if (this.value.length > 8) {
+                    this.value = this.value.slice(0, 8);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
