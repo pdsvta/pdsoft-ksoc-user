@@ -565,13 +565,13 @@
                             </div>
                             <div class="tour004049__addInfoRight">
                                 <div class="tour004049__itemAddInfo">
-                                    <p>연수/교육명</p>
+                                    <p class="tour004060__textLabel">연수/교육명</p>
                                     <input type="text" placeholder="" class="tour004049__inputAddress">
                                 </div>
                                 <div class="tour004050__rowAddInfo">
                                     <div class="tour004050__rowInfoLeft">
                                         <div class="tour004049__itemAddInfo">
-                                            <p>연수/교육 기간</p>
+                                            <p class="tour004060__textLabel">연수/교육 기간</p>
                                             <div class="tour004049__addInfoFilter">
                                                 <input type="text" placeholder="예) 20210101" class="tour004049__time">
                                                 <span>~</span>
@@ -579,7 +579,7 @@
                                             </div>
                                         </div>
                                         <div class="tour004049__itemAddInfo tour004050__inputInfo">
-                                            <p>연수/교육기관 구분</p>
+                                            <p class="tour004060__textLabel">연수/교육기관 구분</p>
                                             <select name="" id="" class="selectbox tour004051__selectAddInfo">
                                                 <option value="선택">선택</option>
                                                 <option value="대한체육회">대한체육회</option>
@@ -588,7 +588,7 @@
                                             </select>
                                         </div>
                                         <div class="tour004049__itemAddInfo tour004050__inputInfo">
-                                            <p>연수/교육기관 이름</p>
+                                            <p class="tour004060__textLabel">연수/교육기관 이름</p>
                                             <input type="text" placeholder="">
                                         </div>
                                     </div>
@@ -1193,6 +1193,16 @@
             boxAddMore.style.display = "none";
             popup.style.display = "none";
             overlay.style.display = "none";
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.tour004049__time').forEach(input => {
+            input.addEventListener('input', function () {
+                if (this.value.length > 8) {
+                    this.value = this.value.slice(0, 8);
+                }
+            });
         });
     </script>
 </body>
