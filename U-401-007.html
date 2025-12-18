@@ -526,9 +526,9 @@
         <!-- contents -->
         <section class="hpy">
             <div class="inner">
-                <!-- <div class="title">
-                    <h2>내 주변 체육시설</h2>
-                </div> -->
+                <div class="title">
+                    <h2>지도로 찾기</h2>
+                </div>
                 <div class="tour401007__wrapper">
                     <div class="tour401007__container">
                         <!-- Cột trái -->
@@ -569,7 +569,7 @@
 
                         <!-- Cột phải -->
                         <div class="tour401007__map">
-                            <img src="images/u-401-007/image02.png" alt="map">
+                            <img src="images/u-401-007/image02.png" alt="map" class="imgMap">
                             <div class="tour401007__popup-container">
                                 <div class="tour401007__popup-header">
                                     <h4>신길중학교</h4>
@@ -603,6 +603,33 @@
                                         <button type="button"
                                             class="hpy-reg__btn hpy-reg__btn--min125 hpy-reg__btn--h25">상세보기</button>
                                     </div>
+                                </div>
+                            </div>
+
+                            <!-- Search map -->
+                            <div class="tour401007__popup-container tour401007__popupSearchMap">
+                                <div class="tour401007__popup-header tour401007__headerSearchMap">
+                                    <div class="tour401007__popup-close tour401007__closeSearchMap">
+                                        x
+                                    </div>
+                                </div>
+                                <div class="tour401007__searchbox tour401007__inputSearch">
+                                    <input type="text" placeholder="예) 판교역로 166, 분당 주공, 백현동 532" class="hpy__input">
+                                    <button class="tour401007__searchbtn">
+                                        <img src="images/icons/search-blk-icon.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="tour401007__popup-body tour401007__popup-bodySearchMap">
+                                    <h2 class="tit_tip">tip</h2>
+                                    <p class="desc_tip">아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.</p>
+                                    <p class="desc_tip">도로명 + 건물번호</p>
+                                    <span class="txt_example">예) 판교역로 166,&nbsp;&nbsp;제주 첨단로 242</span>
+                                    <p class="desc_tip2">지역명(동/리) + 번지</p>
+                                    <span class="txt_example">예) 백현동 532,&nbsp;&nbsp;제주 영평동 2181</span>
+                                    <p class="desc_tip2">지역명(동/리) + 건물명(아파트명)</p>
+                                    <span class="txt_example">예) 분당 주공,&nbsp;&nbsp;연수동 주공3차</span>
+                                    <p class="desc_tip2">사서함명 + 번호</p>
+                                    <span class="txt_example">예) 분당우체국사서함 1~100</span>
                                 </div>
                             </div>
                         </div>
@@ -1166,6 +1193,25 @@
             const card = document.querySelector('.tour401007__card');
             const popup = document.querySelector('.tour401007__popup-container');
             const closeBtn = document.querySelector('.tour401007__popup-close');
+
+            // Mở popup
+            card.addEventListener('click', function () {
+                popup.classList.add('is-active');
+            });
+
+            // Đóng popup
+            closeBtn.addEventListener('click', function (e) {
+                e.stopPropagation(); // tránh trigger card click
+                popup.classList.remove('is-active');
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const card = document.querySelector('.tour401007__searchbox');
+            const popup = document.querySelector('.tour401007__popupSearchMap');
+            const closeBtn = document.querySelector('.tour401007__closeSearchMap');
 
             // Mở popup
             card.addEventListener('click', function () {
