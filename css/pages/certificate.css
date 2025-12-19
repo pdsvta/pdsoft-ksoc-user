@@ -3491,6 +3491,10 @@ a.ui-button:active,
     height: 100%;
 }
 
+.indv101028__table .indv101002__content.tour101028__contentTable {
+    height: unset;
+}
+
 .indv101028__table .indv101002__content a {
     font-size: 1.3rem;
 }

@@ -417,7 +417,7 @@
 
 @media (max-width: 767px) {
     .inner {
-        padding: 0 1.6rem;
+        padding: 0 2rem;
     }
 
     .header-main .header-main__center,
@@ -791,7 +791,7 @@
     }
 
     .footer-main__menu-item a {
-        padding-right: 2rem;
+        padding-right: 1..ply-nav2rem;
     }
 
     .footer-main__sponsor-logos {
@@ -847,7 +847,7 @@
     }
 
     .brdc {
-        height: 3rem;
+        height: 5rem;
         margin-top: 1rem;
     }
 
@@ -860,7 +860,7 @@
         font-size: 1.4rem;
         color: #171719;
         padding: 0 1.3rem;
-        width: 11rem;
+        width: 12rem;
     }
 
     .chc__tit h3 {
@@ -1011,12 +1011,12 @@
     }
 
     .chc__list.chc__list--img {
-        column-gap: 1.7rem;
+        column-gap: 1rem;
         row-gap: 1.7rem;
         overflow-y: scroll;
         grid-template-columns: repeat(4, 1fr);
         padding-bottom: 3rem;
-        margin: 0 0 0 2rem;
+        margin: 0;
     }
 
     .chc__list.chc__list--img .chc__item {
@@ -1821,6 +1821,24 @@
         padding-top: 2rem;
     }
 
+    .tour101006-1__itemCardChild {
+        flex-direction: column;
+        align-items: unset;
+        gap: 0.5rem;
+    }
+
+    .tour101006-1__allBtn {
+        gap: 0.5rem;
+    }
+
+    .tour101006-1__allBtn .ply-reg__btn {
+        width: 100%;
+    }
+
+    .tour101006-1__itemRadio {
+        width: fit-content;
+    }
+
     .ply-bsc__item {
         margin-top: 0;
     }
@@ -2184,6 +2202,44 @@
         flex-wrap: wrap;
     }
 
+    .tour101003__boxNoteRadio {
+        margin: 0;
+    }
+
+    .tour101003__noteRadio {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }
+
+    .tour101003__noteCheckbox label {
+        width: 100%;
+    }
+
+    .tour101003__indvLink {
+        padding: 0 1rem;
+    }
+
+    .tour101003__indvType {
+        padding: 3rem 1rem 0;
+    }
+
+    .tour101003__plist {
+        grid-template-columns: none;
+    }
+
+    .tour101003-1__iconMB {
+        position: fixed;
+        bottom: 15rem;
+        right: 1.6rem;
+        z-index: 9;
+    }
+
+    .tour101003-1__hotline {
+        border: 1px solid #ddd;
+    }
+
     .tour101006__main .ply-reg__input-group {
         flex-wrap: nowrap;
     }
@@ -2202,7 +2258,7 @@
 
     .edc__btn {
         position: unset;
-        justify-content: end;
+        justify-content: center;
         padding-top: 2.5rem;
         padding-bottom: 2rem;
     }
