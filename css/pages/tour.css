@@ -12570,3 +12570,16 @@
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+.hpy406002__box {
+    padding: 0 2rem;
+}
+
+.hpy406002__box .hpy406002__table {
+    border-bottom: 1px solid #ddd;
+}
+
+.hpy406002__box .hpy406002__table td {
+    height: 10rem;
+    color: #666;
+}
