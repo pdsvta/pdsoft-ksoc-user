@@ -1180,18 +1180,15 @@
 
     <script>
         $(document).ready(function () {
-            // Ẩn tất cả wrapper, chỉ show cái đầu
             $('.hpy02__wrapper').hide().eq(0).show();
 
             $('.tour004033__tabs .tour001001__itemTab').on('click', function () {
                 const index = $(this).index();
 
-                // active tab
                 $('.tour004033__tabs .tour001001__itemTab')
                     .removeClass('active');
                 $(this).addClass('active');
 
-                // show đúng nội dung
                 $('.hpy02__wrapper')
                     .hide()
                     .eq(index)
