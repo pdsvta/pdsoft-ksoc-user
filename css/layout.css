@@ -1301,8 +1301,9 @@ legend {
 
 .footer-main__menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 4rem;
+    gap: 0rem;
     padding: 0;
     list-style: none;
     margin-bottom: 3rem;
@@ -1315,18 +1316,22 @@ legend {
 
 .footer-main__menu-item {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .footer-main__menu-item+.footer-main__menu-item::before {
-    content: '';
-    display: block;
+    content: '|';
+    margin: 0 1rem;
+    color: #37383C9C;
+    /* display: block;
     width: 1px;
     height: 10px;
     background: #999;
     position: absolute;
     top: 50%;
     left: -2rem;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 

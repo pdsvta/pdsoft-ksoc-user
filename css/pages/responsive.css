@@ -783,11 +783,11 @@
     }
 
     .footer-main__menu {
-        gap: 1rem;
+        gap: 0.6rem 0;
     }
 
-    .footer-main__menu-item+.footer-main__menu-item::before {
-        left: -1rem;
+    .footer-main__menu-item + .footer-main__menu-item::before {
+        margin: 0 0.6rem;
     }
 
     .footer-main__menu-item a {
@@ -6859,6 +6859,92 @@
 
     .tour401008__btn button {
         height: 3rem;
+    }
+
+    .tour401013__groupInput {
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid #DDDDDD;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .tour401013__groupInput .hpy__select--min150 {
+        width: 48%;
+        min-width: unset;
+    }
+
+    .tour401013__inputChild {
+        width: 67%;
+    }
+
+    .tour401013__boxTable {
+        border: 1px solid #DDDDDD;
+        border-radius: 2rem;
+        padding: 2rem;
+        margin-top: 1rem;
+    }
+
+    .tour401013__pagiFilter {
+        padding: 3rem 0 2rem;
+    }
+
+    .tour401013__table {
+        display: block;
+        border: none;
+    }
+
+    .tour401013__table thead {
+        display: none;
+    }
+
+    .tour401013__table tbody {
+        display: block;
+    }
+
+    .tour401013__table tr {
+        display: block;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        border: 1px solid #e5e5e5;
+        overflow: hidden;
+    }
+
+    .tour401013__table tr td {
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 0;
+        margin: 0 3rem;
+        border-bottom: 1px solid #eaeaea;
+        border-left: 0;
+        border-right: 0;
+        font-size: 1.3rem;
+        font-weight: 500;
+        background-color: #fff;
+        color: #666666;
+    }
+
+    .tour401013__table tr td:last-child {
+        border-bottom: none;
+    }
+
+    .tour401013__table tr td::before {
+        content: attr(data-label);
+        font-weight: 500;
+        font-size: 1.3rem;
+        color: #666666;
+        white-space: nowrap;
+        width: 40%;
+        text-align: left;
+    }
+
+    .mobile-card-title {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        background: #F5F5F5;
+        text-align: left;
+        border-radius: 1rem 1rem 0 0;
     }
 }
 
