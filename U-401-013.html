@@ -1274,39 +1274,61 @@
     </script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            if (window.innerWidth > 768) return;
-
+        function applyMobileTable() {
             const table = document.querySelector('.tour401013__table');
             if (!table) return;
+
+            // tránh chạy lại nhiều lần
+            if (table.classList.contains('is-mobile')) return;
+            table.classList.add('is-mobile');
 
             const headers = [...table.querySelectorAll('thead th')]
                 .map(th => th.textContent.trim());
 
-            const rows = table.querySelectorAll('tbody tr');
+            const numberIndex = headers.indexOf('번호');
+            const schoolIndex = headers.indexOf('학교명');
 
-            rows.forEach(row => {
-                const cells = row.querySelectorAll('td');
+            table.querySelectorAll('tbody tr').forEach(row => {
+                const tds = [...row.querySelectorAll('td')];
 
-                const schoolName = cells[5].textContent; // 학교명
-                const numberCell = cells[0]; // 번호
+                // title (학교명)
+                if (tds[schoolIndex]) {
+                    const title = document.createElement('div');
+                    title.className = 'mobile-card-title';
+                    title.textContent = tds[schoolIndex].textContent.trim();
+                    row.prepend(title);
+                }
 
-                // remove 번호
-                numberCell.remove();
+                // remove 번호 + 학교명 (từ cuối)
+                [numberIndex, schoolIndex]
+                    .sort((a, b) => b - a)
+                    .forEach(i => tds[i] && tds[i].remove());
 
-                // create card title
-                const title = document.createElement('div');
-                title.className = 'mobile-card-title';
-                title.textContent = schoolName;
+                const labels = headers.filter(
+                    (_, i) => i !== numberIndex && i !== schoolIndex
+                );
 
-                row.prepend(title);
-
-                // add labels
                 [...row.querySelectorAll('td')].forEach((td, i) => {
-                    td.setAttribute('data-label', headers[i + 1]); // skip 번호
+                    td.setAttribute('data-label', labels[i]);
                 });
             });
+
+            // force repaint
+            table.offsetHeight;
+        }
+
+        // chạy khi DOM sẵn sàng
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                applyMobileTable();
+            }
+        });
+
+        // chạy khi resize / xoay màn hình
+        window.addEventListener('resize', () => {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                applyMobileTable();
+            }
         });
     </script>
 </body>

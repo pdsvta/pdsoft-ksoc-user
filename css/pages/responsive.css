@@ -856,7 +856,8 @@
         align-items: center;
     }
 
-    .brdc__link {
+    .brdc__link,
+    .tour402001__selectMenu {
         font-size: 1.4rem;
         color: #171719;
         padding: 0 1.3rem;
@@ -1615,7 +1616,7 @@
         display: block;
         width: 1.1rem;
         height: 1.1rem;
-        background: url(/images/icons/select-icon.png) no-repeat center / contain;
+        background: url(https://pdsvta.github.io/pdsoft-ksoc-user/images/icons/select-icon.png) no-repeat center / contain;
         position: absolute;
         top: 50%;
         right: 0;
@@ -6930,12 +6931,14 @@
 
     .tour401013__table tr td::before {
         content: attr(data-label);
+        display: inline-block;
         font-weight: 500;
         font-size: 1.3rem;
         color: #666666;
         white-space: nowrap;
         width: 40%;
         text-align: left;
+        flex-shrink: 0;
     }
 
     .mobile-card-title {

@@ -4715,6 +4715,16 @@
     color: #000;
 }
 
+.tour402001__selectMenu {
+    border: 0;
+    border-left: 1px solid #ddd;
+    background-color: #F8F9FA;
+    width: 19rem;
+    padding: 1.4rem 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 .tour402001__icon.pl20 {
     padding-left: 2rem;
 }
@@ -5013,7 +5023,7 @@
 
 .tour402002__filterLeft {
     width: 70%;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .tour402002__filterRight {
@@ -8662,6 +8672,7 @@
     padding: 1.2rem 1.7rem;
     font-size: 1.3rem;
     font-weight: 400;
+    color: #000;
 }
 
 .tour003006__itemForm .tour003006__inputGrey,
