@@ -3445,6 +3445,7 @@
     .tour__btn {
         height: 3.5rem;
         font-size: 1.2rem;
+        min-width: max-content;
     }
 
     .tour__bm--end-p4 {
@@ -6721,13 +6722,13 @@
     .tour401002__filterCheckbox {
         border-radius: 2rem;
     }
-    
+
     .tour401002__listChecked.tour__group,
     .tour401005__listChecked.tour__group {
         padding: 2rem;
         gap: 2rem;
     }
-    
+
     .tour401002__listChecked .tour401002__groupInput {
         width: 100%;
     }
@@ -6744,12 +6745,12 @@
         flex: 1;
         max-width: unset;
     }
-    
+
     .tour401002__listChecked,
     .tour401002__listChecked .tour401002__group {
         flex-direction: column;
     }
-    
+
     .tour401002__listChecked .tour__group--item .tour__group--checked,
     .tour401002__listChecked .tour__group--item {
         flex-wrap: wrap;
@@ -6860,6 +6861,85 @@
     .tour401008__btn button {
         height: 3rem;
     }
+
+    .tour0703__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tour0703__item:nth-child(3) {
+        order: 4;
+    }
+
+    .tour0703__item:nth-child(4) {
+        order: 3;
+    }
+
+    .tour0703__item:nth-child(2)::after {
+        top: 110%;
+        left: calc(50% + -12px);
+        transform: rotate(90deg);
+    }
+
+    .tour0703__item:nth-child(3)::after {
+        display: none;
+    }
+
+    .tour0703__item:last-child::after {
+        display: block;
+        transform: rotate(180deg);
+    }
+
+    .tour0703__item span {
+        padding: 1rem 0;
+    }
+
+    .tour0703__item {
+        padding: 1.4rem 2rem;
+    }
+
+    .tour0703 .tour__info-list {
+        padding: 2rem;
+        border-radius: 2rem;
+        height: auto;
+    }
+
+    .tour0703 .tour__info {
+        margin-top: 3rem;
+    }
+
+    .tour__step2 li::after {
+        width: 1rem;
+        height: 1rem;
+        left: calc(100% + 1rem);
+    }
+
+    .tour__step2 {
+        gap: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tour__step2 li em {
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+        font-size: 1.3rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .tour__step2 li span {
+        min-width: 9rem;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+    }
+
+    .tour__step2 li {
+        display: block;
+    }
 }
 
 @media (max-width: 390px) {
@@ -6888,6 +6968,7 @@
     .tour102009__filter .hpy-reg__input--date {
         width: calc(32% - 0.3rem);
     }
+
 
 }
 
