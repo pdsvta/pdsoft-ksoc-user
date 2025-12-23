@@ -530,13 +530,13 @@
                     <h2>근거리 스포츠클럽 검색</h2>
                 </div>
 
-                <div class="hpy02__wrapper">
+                <div class="hpy02__wrapper tour401001__wrapper">
                     <div class="tour__group">
-                        <div class="tour204002__map">
+                        <div class="tour204002__map tour401001__map">
                             <img src="images/u-401-001/image01.png" alt="">
                             거리 선택
                         </div>
-                        <div class="tour__group--input gap10">
+                        <div class="tour__group--input gap10 tour401001__tabs">
                             <button type="button" class="hpy-reg__btn white hpy-reg__btn--min80">5km</button>
                             <button type="button" class="hpy-reg__btn blue hpy-reg__btn--min80">10km</button>
                             <button type="button" class="hpy-reg__btn white hpy-reg__btn--min80">15km</button>
@@ -544,14 +544,14 @@
                             <button type="button" class="hpy-reg__btn white hpy-reg__btn--min80">30km</button>
                         </div>
                     </div>
-                    <div class="tour204002__line">
+                    <div class="tour204002__line tour401001__line">
                         에서 <b>10</b>Km 이내에 개 스포츠클럽이 있습니다.
                     </div>
                     <div class="hpy02__total hpy02__total--p30">
                         총 <span>52</span> 건
                     </div>
                     <div class="hpy02__box">
-                        <table class="hpy02__table tour204002__table">
+                        <table class="hpy02__table tour204002__table tour401001__table">
                             <colgroup>
                                 <col style="width: 21rem;">
                                 <col style="width: 45rem;">
@@ -1250,6 +1250,47 @@
             });
 
         });
+    </script>
+
+    <script>
+        function createDistanceSelect() {
+            if (window.innerWidth > 768) return;
+
+            const btnGroup = document.querySelector('.tour401001__tabs');
+            if (!btnGroup || document.querySelector('.tour401001__group--select')) return;
+
+            const buttons = btnGroup.querySelectorAll('button');
+            const selectWrap = document.createElement('div');
+            const select = document.createElement('select');
+
+            selectWrap.className = 'tour401001__group--select';
+
+            buttons.forEach(btn => {
+                const option = document.createElement('option');
+                option.value = btn.textContent.trim();
+                option.textContent = btn.textContent.trim();
+
+                if (btn.classList.contains('blue')) {
+                    option.selected = true;
+                }
+
+                select.appendChild(option);
+            });
+
+            selectWrap.appendChild(select);
+            btnGroup.after(selectWrap);
+
+            // Sync select -> button (nếu cần submit)
+            select.addEventListener('change', e => {
+                buttons.forEach(btn => {
+                    btn.classList.toggle('blue', btn.textContent.trim() === e.target.value);
+                    btn.classList.toggle('white', btn.textContent.trim() !== e.target.value);
+                });
+            });
+        }
+
+        window.addEventListener('load', createDistanceSelect);
+        window.addEventListener('resize', createDistanceSelect);
     </script>
 </body>
 

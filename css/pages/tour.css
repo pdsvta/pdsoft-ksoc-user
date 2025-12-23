@@ -3963,6 +3963,7 @@
 .tour__group--checked {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .hpy02__wrapper--401005 .tour204002__title {
@@ -3977,6 +3978,11 @@
 .hpy02__wrapper--401005 .tour204002__line {
     margin: 3rem 2rem 0;
     padding: 3rem 0;
+}
+
+.tour401001__group--select,
+.tour401002__select {
+    display: none;
 }
 
 .tour401005-3__box {
@@ -10091,6 +10097,10 @@
     font-weight: 200;
 }
 
+.tour401002__listChecked .tour__group--item .tour__group--checked .ply-reg__agree .hpy02__label--600 {
+    font-weight: 600;
+}
+
 .tour401002__listChecked .tour__group--input {
     width: 25%;
 }
@@ -10213,6 +10223,172 @@
 .tour303001__textBold {
     font-weight: 700;
     color: #000;
+}
+
+.tour304001__popup-overlay,
+.tour304001__popup-overlay2 {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 999;
+}
+
+.tour304001__setupWallet,
+.tour304001__regisCerti {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 54%;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.tour304001__setupWallet .guide__container {
+    overflow: hidden;
+}
+
+.tour304001__setupWallet .popupWallet-close,
+.tour304001__regisCerti .popupCerti-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    line-height: 1;
+}
+
+.tour304001__boxInputCerti {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tour304001__itemInputCerti {
+    width: 33%;
+    margin-bottom: 2rem;
+}
+
+.tour304001__itemInputCerti.inputChild {
+    width: 50%;
+}
+
+.tour304001__itemInputCerti input {
+    width: 100%;
+    height: 4rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5rem;
+}
+
+.tour304001__boxRadioCerti,
+.tour304001__itemRadioCerti,
+.tour304001__checkboxCerti {
+    display: flex;
+    align-items: center;
+}
+
+.tour304001__boxRadioCerti {
+    gap: 3rem;
+}
+
+.tour304001__boxRadioCerti label {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+.tour304001__itemRadioCerti input {
+    margin: 0 1rem 0 0;
+}
+
+.tour304001__noteCerti {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666666;
+    margin: 3rem 0;
+}
+
+.tour304001__tableCerti {
+    display: flex;
+}
+
+.tour304001__itemTableCerti {
+    width: 33%;
+}
+
+.tour304001__thTableCerti {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 1.5rem 0;
+    border: 1px solid #DDDDDD;
+    border-bottom: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.tour304001__trTableCerti {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    border: 1px solid #DDDDDD;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tour304001__trTableCerti.trChild {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tour304001__checkboxCerti {
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.tour304001__checkboxCerti label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111111;
+}
+
+.tour304001__noteCerti.noteChild {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.tour304001__noteCerti.noteBottom,
+.tour304001__noteCerti.noteBottomChild {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.tour304001__allBtnCerti {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tour304001__btnPopupCerti {
+    border-radius: 3.5rem;
+    padding: 1.5rem 4rem;
+}
+
+.tour304001__btnPopupCerti.btnBlue {
+    background-color: #0C54B8;
 }
 
 .tour106001 .tour__group>div {
