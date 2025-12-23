@@ -4717,6 +4717,16 @@
     color: #000;
 }
 
+.tour402001__selectMenu {
+    border: 0;
+    border-left: 1px solid #ddd;
+    background-color: #F8F9FA;
+    width: 19rem;
+    padding: 1.4rem 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 .tour402001__icon.pl20 {
     padding-left: 2rem;
 }
@@ -5015,7 +5025,7 @@
 
 .tour402002__filterLeft {
     width: 70%;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .tour402002__filterRight {
@@ -5664,6 +5674,15 @@
     color: #000;
     font-size: 1.3rem;
     padding: 10px 12px;
+}
+
+.tour404003__boxInput input[type="text"]:focus {
+    color: #000;
+}
+
+.tour404003__boxInput input[type="text"]::placeholder {
+    color: #ddd;
+    opacity: 1;
 }
 
 .tour404003__boxInput input[type="text"]:nth-child(1) {
@@ -8277,6 +8296,58 @@
     margin-top: 1rem;
 }
 
+.tour502001__btnTab {
+    width: 20%;
+    min-width: unset;
+}
+
+.tour502001__tabs {
+    padding: 0;
+}
+
+.tour502001__filter {
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.tour502001__filterChild {
+    align-items: flex-end;
+    gap: 1rem;
+    width: 100%;
+}
+
+.tour502001__itemFilterChild {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 33%;
+}
+
+.tour502001__itemFilter {
+    width: 100%;
+}
+
+.tour502001__itemFilter label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tour502001__itemFilter select {
+    width: 100%;
+}
+
+.tour502001__fiterDate {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tour502001__inputChild {
+    width: 100%;
+}
+
 .tour502002__box {
     display: flex;
     gap: 5rem;
@@ -8603,6 +8674,7 @@
     padding: 1.2rem 1.7rem;
     font-size: 1.3rem;
     font-weight: 400;
+    color: #000;
 }
 
 .tour003006__itemForm .tour003006__inputGrey,
@@ -10187,6 +10259,13 @@
 .tour101003-1__hotline.hotline2 {
     margin-top: 0;
     border-top: 1px solid #DCE1EB;
+}
+
+.tour101004__status ul li {
+    list-style: disc;
+    font-size: 1.5rem;
+    margin-left: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .tour101004__desc {
@@ -12053,6 +12132,7 @@
     font-weight: 400;
     font-size: 1.5rem;
     color: #111;
+    padding: 0 2rem;
 }
 
 .hpy003006__box {

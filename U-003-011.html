@@ -542,26 +542,26 @@
                     <div class="tour003006__form">
                         <div class="tour003006__itemForm">
                             <label for="">아이디</label>
-                            <input type="text" value="" placeholder="g9test001" class="tour003006__inputGrey">
+                            <input type="text" value="g9test001" placeholder="" class="tour003006__inputGrey">
                         </div>
                         <div class="tour003006__itemForm">
                             <label for="">이름</label>
-                            <input type="text" value="" placeholder="김정구" class="tour003006__inputGrey">
+                            <input type="text" value="김정구" placeholder="" class="tour003006__inputGrey">
                         </div>
                         <div class="tour003006__itemForm">
                             <label for="">생년월일</label>
-                            <input type="text" value="" placeholder="1995/05/29" class="tour003006__inputGrey">
+                            <input type="text" value="1995/05/29" placeholder="" class="tour003006__inputGrey">
                         </div>
                     </div>
                     <div class="tour003006__form">
                         <div class="tour003006__formChild">
                             <div class="tour003006__itemFormChild">
                                 <label for="">내/외국인</label>
-                                <input type="text" value="" placeholder="내국인" class="tour003006__inputGrey">
+                                <input type="text" value="내국인" placeholder="" class="tour003006__inputGrey">
                             </div>
                             <div class="tour003006__itemFormChild">
                                 <label for="">성별</label>
-                                <input type="text" value="" placeholder="남자" class="tour003006__inputGrey">
+                                <input type="text" value="남자" placeholder="" class="tour003006__inputGrey">
                             </div>
                         </div>
                         <div class="tour003006__itemForm">
@@ -1164,6 +1164,12 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.tour003006__inputGrey').forEach(input => {
+            input.readOnly = true;
         });
     </script>
 </body>
