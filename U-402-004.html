@@ -529,25 +529,27 @@
                 <div class="title">
                     <h2>국내대회</h2>
                 </div>
-                <div class="tour__group jc-sb p05">
+                <div class="tour__group p05 tour402004__filterCheckbox">
                     <div class="tour__group--input gap5">
-                        <select name="" id="" class="selectbox min130">
-                            <option value="">10개씩 보기</option>
-                        </select>
-                    </div>
-                    <div class="tour__group--input gap5">
-                        <select name="" id="" class="selectbox min130">
-                            <option value="">전체</option>
-                        </select>
-                        <input type="text" class="hpy__input hpy-reg__input--max315" placeholder="키워드(대회명)">
-                        <div class="tour__group--checkbox">
-                            <input type="checkbox" class="checkbox w20">
-                            <span class="transfer-text fs13">개최예정 포함</span>
+                        <div class="tour402004__groupSelect">
+                            <select name="" id="" class="selectbox">
+                                <option value="">10개씩 보기</option>
+                            </select>
+                            <select name="" id="" class="selectbox">
+                                <option value="">전체</option>
+                            </select>
+                        </div>
+                        <div class="tour402004__groupInput">
+                            <input type="text" class="hpy__input" placeholder="키워드(대회명)">
+                            <div class="tour__group--checkbox">
+                                <input type="checkbox" class="checkbox w20">
+                                <span class="transfer-text fs13">개최예정 포함</span>
+                            </div>
                         </div>
                         <button type="button" class="hpy-reg__btn hpy-reg__btn--min70 ply-reg__btn--gray">검색</button>
                     </div>
                 </div>
-                <div class="hpy02__wrapper tour402004__wrapper mt20">
+                <div class="hpy02__wrapper tour402004__wrapper mt20 tour401013__boxTable">
                     <div class="tour402004__filter">
                         <p class="hpy__total">
                             총 <span>260</span> 건, 페이지 1/26
@@ -576,7 +578,7 @@
                         </div>
                     </div>
                     <div class="hpy02__box">
-                        <table class="hpy02__table tour402004__table">
+                        <table class="hpy02__table tour402004__table tour401013__table">
                             <colgroup>
                                 <col style="width: 20rem;">
                                 <col style="width: 8rem;">
@@ -1268,6 +1270,64 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        function applyMobileTable() {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            // tránh chạy lại nhiều lần
+            if (table.classList.contains('is-mobile')) return;
+            table.classList.add('is-mobile');
+
+            const headers = [...table.querySelectorAll('thead th')]
+                .map(th => th.textContent.trim());
+
+            const schoolIndex = headers.indexOf('대회명');
+
+            table.querySelectorAll('tbody tr').forEach(row => {
+                const tds = [...row.querySelectorAll('td')];
+
+                // title (학교명)
+                if (tds[schoolIndex]) {
+                    const title = document.createElement('div');
+                    title.className = 'mobile-card-title';
+                    title.textContent = tds[schoolIndex].textContent.trim();
+                    row.prepend(title);
+                }
+
+                // remove 번호 + 학교명 (từ cuối)
+                [schoolIndex]
+                    .sort((a, b) => b - a)
+                    .forEach(i => tds[i] && tds[i].remove());
+
+                const labels = headers.filter(
+                    (_, i) => i !== schoolIndex
+                );
+
+                [...row.querySelectorAll('td')].forEach((td, i) => {
+                    td.setAttribute('data-label', labels[i]);
+                });
+            });
+
+            // force repaint
+            table.offsetHeight;
+        }
+
+        // chạy khi DOM sẵn sàng
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                applyMobileTable();
+            }
+        });
+
+        // chạy khi resize / xoay màn hình
+        window.addEventListener('resize', () => {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                applyMobileTable();
+            }
         });
     </script>
 </body>
