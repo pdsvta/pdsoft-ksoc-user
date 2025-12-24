@@ -8364,7 +8364,7 @@
     gap: 0.5rem;
 }
 
-.tour502001__fiterDate input::placeholder {
+.tour502001__fiterDate input {
     color: #111;
 }
 
