@@ -554,6 +554,8 @@
     background: url(../../images/icons/arrow-icon.png) no-repeat center / contain;
     background-color: transparent;
     text-indent: -9999999px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .tbl-cal_top button.prev {

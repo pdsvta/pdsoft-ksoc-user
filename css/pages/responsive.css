@@ -6909,21 +6909,26 @@
     }
 
     .tour__step2 li::after {
-        width: 1rem;
-        height: 1rem;
-        left: calc(100% + 1rem);
+        width: 1.3rem;
+        height: 1.3rem;
+        left: calc(100% + .8rem);
     }
 
     .tour__step2 {
         gap: 3rem;
+        margin-bottom: 3rem;
         display: flex;
         justify-content: center;
     }
 
     .tour__step2 li em {
         position: absolute;
-        top: -15px;
+        top: -16px;
         left: 50%;
+
+
+
+
         transform: translateX(-50%);
         margin-left: 0;
         font-size: 1.3rem;
@@ -6936,6 +6941,7 @@
         min-width: 9rem;
         font-size: 1.2rem;
         padding: 1rem 0;
+        min-height: 6rem;
     }
 
     .tour__step2 li {
@@ -7028,6 +7034,420 @@
         background: #F5F5F5;
         text-align: left;
         border-radius: 1rem 1rem 0 0;
+    }
+
+    .tour__grid {
+        gap: 1.5rem;
+    }
+
+    .tour__type-btn {
+        font-size: 1.2rem;
+        height: 3rem;
+        min-width: 9rem;
+        padding: 0;
+    }
+
+    .tour__type {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .tour__type figure div img {
+        width: 6.5rem;
+    }
+
+    .tour__type figure div {
+        width: 10.5rem;
+        height: 10.5rem;
+    }
+
+    .tour__type-bm {
+        flex-direction: column;
+    }
+
+    .tour__type figure figcaption {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .tour__day {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    .tour__lf {
+        padding: 2rem;
+    }
+
+    .tour__rt {
+        padding: 1rem 2rem 5rem;
+        border-left: none;
+    }
+
+    .tour__red {
+        font-size: 1.2rem;
+    }
+
+    .tbl-cal_top .date {
+        font-size: 2rem;
+    }
+
+    .tour0703 .tour__btn {
+        min-width: 9rem;
+    }
+
+    .tbl-cal td {
+        height: auto;
+    }
+
+
+    .tour-reg {
+        overflow-x: hidden;
+    }
+
+    .tour-reg__table,
+    .tour-reg__table tbody,
+    .tour-reg__table tr,
+    .tour-reg__table th,
+    .tour-reg__table td {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .tour-reg__table tr {
+        padding: 1.2rem 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .tour-reg__table th {
+        padding: 0 0 0.6rem;
+        background: none;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+
+    .tour-reg__table th i {
+        margin-right: 0.2rem;
+    }
+
+    .tour-reg__table td {
+        padding: 0;
+    }
+
+    .tour-reg__box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tour-reg__input {
+        width: 100%;
+        max-width: none;
+        height: 3.5rem;
+        font-size: 1.4rem;
+    }
+
+    .tour-reg__flex {
+        display: grid;
+        grid-template-columns: 1fr 10rem;
+        gap: 0.5rem;
+    }
+
+    .tour07313 .tour-reg__tell {
+        display: flex;
+        gap: 0.6rem;
+    }
+
+    .tour-reg__tell .tour-reg__box {
+        flex: 1;
+    }
+
+    .tour07313 .tour-reg__btn {
+        width: 100%;
+        height: 3.5rem;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        padding: 0.6rem 0rem;
+    }
+
+    .tour-reg__tit {
+        margin: 2rem 0 0.8rem;
+        font-size: 1.5rem;
+    }
+
+    .tour-reg__block {
+        padding: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .tour-reg__block ul {
+        padding-left: 1.4rem;
+        padding: 0.5rem;
+    }
+
+    .tour-reg__check input {
+        margin-top: 0.2rem;
+    }
+
+    .hpy-reg__input--max300 {
+        min-width: auto;
+    }
+
+    .tour__bm--mt50 {
+        margin-top: 2rem;
+    }
+
+    .tour-reg__table {
+        margin-bottom: 3rem;
+    }
+
+    .tour-reg__block p {
+        padding: 0.5rem;
+    }
+
+    .rvw__search {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "s1 s1 s2 s2"
+            "input input input btn";
+        gap: 0.8rem;
+    }
+
+    .rvw__search select:nth-of-type(1) {
+        grid-area: s1;
+    }
+
+    .rvw__search select:nth-of-type(2) {
+        grid-area: s2;
+    }
+
+    .rvw__input {
+        grid-area: input;
+        height: 4rem;
+    }
+
+    .rvw__search-btn {
+        grid-area: btn;
+        width: 100%;
+        height: 4rem;
+    }
+
+
+    .tour0733 .selectbox {
+        min-width: auto;
+        height: 4rem;
+    }
+
+    .rvw__table {
+        width: 100%;
+        border: none;
+    }
+
+    .rvw__table thead,
+    .rvw__table colgroup {
+        display: none;
+    }
+
+    .rvw__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.2rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .rvw__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .rvw__table tbody tr td {
+        display: block;
+        padding: 1rem 0;
+        margin: 0 1.5rem;
+        font-size: 1.3rem;
+        color: #666;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .rvw__table tbody tr td:last-child {
+        border-bottom: none;
+        order: 7;
+    }
+
+    .rvw__table tbody tr td:nth-child(5) {
+        order: 1;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #000;
+        background: #f5f5f5;
+        padding: 1rem 1.5rem;
+        margin: 0;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .rvw__link {
+        color: #000;
+        font-weight: 600;
+        display: block;
+        text-align: left;
+    }
+
+    .rvw__table tbody tr td:nth-child(2) {
+        position: absolute;
+        top: .9rem;
+        right: 1.5rem;
+        padding: .2rem 1rem;
+        margin: 0;
+        font-size: 1.2rem;
+        color: #666;
+        border-bottom: none;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: .5rem;
+    }
+
+
+    .rvw__table tbody tr td:nth-child(3) {
+        order: 2;
+    }
+
+    .rvw__table tbody tr td:nth-child(4) {
+        order: 3;
+    }
+
+    .rvw__table tbody tr td:nth-child(6) {
+        order: 4;
+    }
+
+    .rvw__table tbody tr td:nth-child(7) {
+        order: 5;
+    }
+
+    .rvw__table tbody tr td:nth-child(8) {
+        order: 6;
+    }
+
+
+    .rvw__table tbody tr td:nth-child(3)::before {
+        content: "시군구";
+    }
+
+    .rvw__table tbody tr td:nth-child(4)::before {
+        content: "행사단체(학교)명";
+    }
+
+    .rvw__table tbody tr td:nth-child(6)::before {
+        content: "행사일";
+    }
+
+    .rvw__table tbody tr td:nth-child(7)::before {
+        content: "작성자";
+    }
+
+    .rvw__table tbody tr td:nth-child(8)::before {
+        content: "조회수";
+    }
+
+    .rvw__table tbody tr td:nth-child(3)::before,
+    .rvw__table tbody tr td:nth-child(4)::before,
+    .rvw__table tbody tr td:nth-child(6)::before,
+    .rvw__table tbody tr td:nth-child(7)::before,
+    .rvw__table tbody tr td:nth-child(8)::before {
+        display: inline-block;
+        width: 11.5rem;
+        margin-right: 0.6rem;
+        font-weight: 500;
+        color: #000;
+    }
+
+    /* ===== HIDE 번호 ===== */
+    .rvw__table tbody tr td:nth-child(1) {
+        display: none;
+    }
+
+    .rvw__bm .paging-ui {
+        position: unset;
+        transform: none;
+    }
+
+    .rvw__change .rvw__search-btn {
+        width: auto;
+    }
+
+    .rvw__bm {
+        margin-top: 2rem;
+    }
+
+    .rvw__change {
+        margin-bottom: 2rem;
+    }
+
+    .dtl__table td,
+    .dtl__table th {
+        padding: 1rem 2rem;
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+
+    .dtl__table th {
+        width: 10rem;
+        font-size: 1.5rem;
+    }
+
+    .dtl__tit {
+        padding: 1rem 0 2rem;
+    }
+
+    .dtl__work {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .dtl__work p {
+        padding: 0;
+        font-size: 1.3rem;
+    }
+
+    .dtl__img {
+        margin-bottom: 3rem;
+    }
+
+    .rvw__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 2rem 0;
+    }
+
+    .rvw__sbj {
+        margin: 1rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    .rvw__view {
+        padding: 0 1rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .title.text-left {
+        margin-bottom: 2rem;
+    }
+
+    .dtl__slide-list {
+        max-height: 24rem;
+    }
+
+    .dtl__slide {
+        padding: 0 0 3rem;
+    }
+
+    .dtl__head {
+        margin-top: 2rem;
     }
 }
 
