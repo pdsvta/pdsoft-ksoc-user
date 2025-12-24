@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
@@ -550,9 +552,9 @@
                                 <div class="tour502001__itemFilter">
                                     <label for="">기간선택</label>
                                     <div class="tour502001__fiterDate">
-                                        <input type="date" class="hpy__input hpy-reg__input--date">
+                                        <input type="text" id="date" placeholder="yyyy/mm/dd" class="hpy__input hpy-reg__input--date">
                                         <span class="hpy02__dash">~</span>
-                                        <input type="date" class="hpy__input hpy-reg__input--date">
+                                        <input type="text" id="date" placeholder="yyyy/mm/dd" class="hpy__input hpy-reg__input--date">
                                     </div>
                                 </div>
                             </div>
@@ -1376,6 +1378,13 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        flatpickr("#date", {
+            dateFormat: "Y/m/d",   // yyyy/mm/dd
+            allowInput: true
         });
     </script>
 </body>

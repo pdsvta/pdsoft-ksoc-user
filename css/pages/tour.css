@@ -5100,6 +5100,26 @@
     transform-origin: 25% 25%;
 }
 
+.tour402004__filterCheckbox .tour__group--input {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tour402004__groupSelect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 60%;
+}
+
+.tour402004__groupInput {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
 .tour402004__filter {
     display: flex;
     justify-content: space-between;
@@ -8344,6 +8364,14 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.tour502001__fiterDate input {
+    color: #111;
+}
+
+.tour502001__fiterDate input::placeholder {
+    color: #ddd;
 }
 
 .tour502001__inputChild {

@@ -518,6 +518,9 @@
                     <li class="brdc__item">
                         <a href="#" class="brdc__link">증명서 발급</a>
                     </li>
+                    <select name="" id="" class="tour402001__selectMenu">
+                        <option value="월간">월간</option>
+                    </select>
                 </ul>
             </div>
         </div>
@@ -541,9 +544,6 @@
                                     <img src="images/u-402-001/image01.png" alt="">
                                 </button>
                             </div>
-                            <select name="" id="" class="selectbox min100">
-                                <option value="월간">월간</option>
-                            </select>
                         </div>
                         <select name="" id="" class="selectbox min100">
                             <option value="">전체</option>
@@ -676,7 +676,7 @@
                                 </tr>
 
                                 <tr class="day-row">
-                                    <td class="day" rowspan="5">27<br><span>일</span></td>
+                                    <td class="day" rowspan="5">27<br><span>월</span></td>
                                     <td class="tour402001__center">국내대회</td>
                                     <td>2025 H1 핸드볼 디비전리그</td>
                                     <td>2025/07/01 ~ 2025/10/31</td>
@@ -1478,6 +1478,89 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const MOBILE_WIDTH = 767;
+            const wrapper = document.querySelector('.tour402001__table');
+            if (!wrapper) return;
+
+            let isMobileRendered = false;
+
+            const renderMobile = () => {
+                if (isMobileRendered) return;
+
+                const table = wrapper.querySelector('table');
+                if (!table) return;
+
+                const cardWrap = document.createElement('div');
+                cardWrap.className = 'mobile-cards';
+
+                table.querySelectorAll('tbody tr').forEach(tr => {
+
+                    // ===== 날짜 (rowspan) =====
+                    const dayTd = tr.querySelector('td.day');
+                    if (dayTd) {
+                        const dayEl = document.createElement('div');
+                        dayEl.className = 'mobile-day';
+                        dayEl.innerHTML = dayTd.innerHTML;
+                        cardWrap.appendChild(dayEl);
+                    }
+
+                    // ===== 데이터 =====
+                    const tds = [...tr.querySelectorAll('td')]
+                        .filter(td => !td.classList.contains('day'));
+
+                    if (tds.length < 4) return;
+
+                    const type = tds[0].innerHTML.trim();
+                    const title = tds[1].innerHTML.trim();
+                    const period = tds[2].innerHTML.trim();
+                    const place = tds[3].innerHTML.trim();
+
+                    const card = document.createElement('div');
+                    card.className = 'mobile-card';
+
+                    card.innerHTML = `
+                        <div class="mobile-card__title">${title}</div>
+                        <div class="mobile-card__body">
+                            <div class="mobile-card__row">
+                                <span>구분</span>
+                                <strong>${type}</strong>
+                            </div>
+                            <div class="mobile-card__row">
+                                <span>기간</span>
+                                <strong>${period}</strong>
+                            </div>
+                            <div class="mobile-card__row">
+                                <span>장소</span>
+                                <strong>${place}</strong>
+                            </div>
+                        </div>
+                    `;
+
+                    cardWrap.appendChild(card);
+                });
+
+                wrapper.innerHTML = '';
+                wrapper.appendChild(cardWrap);
+
+                isMobileRendered = true;
+            };
+
+            const checkScreen = () => {
+                if (window.innerWidth <= MOBILE_WIDTH) {
+                    renderMobile();
+                }
+            };
+
+            // 최초 진입
+            checkScreen();
+
+            // resize / rotate / devtool toggle
+            window.addEventListener('resize', checkScreen);
         });
     </script>
 </body>
