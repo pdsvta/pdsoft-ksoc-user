@@ -8368,6 +8368,10 @@
     color: #111;
 }
 
+.tour502001__fiterDate input::placeholder {
+    color: #ddd;
+}
+
 .tour502001__inputChild {
     width: 100%;
 }
