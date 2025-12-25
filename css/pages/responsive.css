@@ -5314,6 +5314,7 @@
 
     .hpy-reg__input--max320 {
         max-width: 100%;
+        min-width: auto;
     }
 
     .hpy__select--min215 {
@@ -6437,6 +6438,7 @@
     .hpy204001__table1 {
         border: none;
         width: 100%;
+        border-bottom: 1px solid #ddd;
     }
 
     .hpy204001__table1 thead,
@@ -6471,27 +6473,35 @@
 
     .hpy02__table.hpy204001__table1 tbody tr:last-child td {
         border: 1px solid #ddd;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
     }
 
 
     .hpy204001__table1 tbody tr td:nth-child(1)::before {
         content: "시간대";
+        border-top: 1px solid #ddd;
     }
 
     .hpy204001__table1 tbody tr td:nth-child(2)::before {
         content: "훈련대관";
+        border-top: 1px solid #ddd;
     }
 
     .hpy204001__table1 tbody tr td:nth-child(3)::before {
         content: "대회";
+        border-top: 1px solid #ddd;
     }
 
     .hpy204001__table1 tbody tr td:nth-child(4)::before {
-        content: "대회";
+        content: "";
     }
 
     .hpy204001__table1 tbody tr td:nth-child(5)::before {
         content: "비고";
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
     }
 
     .hpy204001__table1 tbody tr td:nth-child(1)::before,
@@ -6499,14 +6509,21 @@
     .hpy204001__table1 tbody tr td:nth-child(3)::before,
     .hpy204001__table1 tbody tr td:nth-child(4)::before,
     .hpy204001__table1 tbody tr td:nth-child(5)::before {
-        font-weight: 500;
+        font-weight: 600;
+        color: #111;
         display: inline-flex;
         align-items: center;
         padding-right: 1rem;
-        width: 11.5rem;
+        width: 7rem;
         background: #f5f5f5;
         height: 3.5rem;
         padding-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .hpy204001__table1 tbody tr td:nth-child(3)::before {
+        align-items: end;
+        display: flex;
     }
 
     .ply102009__table .hpy02__table.hpy02__box {
@@ -7579,6 +7596,349 @@
         height: unset;
         padding: 0.5rem;
         font-size: 1.1rem;
+    }
+
+    .hpy-reg__input--max920 {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .hpy0709__table.hpy0719__table--tl.hpy201016__table .lsn__table tbody tr td:nth-child(4)::before {
+        height: 3.5rem;
+        padding-top: 0;
+        align-items: center;
+    }
+
+    .dry__editor.h300 {
+        min-height: 21rem;
+    }
+
+    .hpy201016__table .dry__table.hpy0720__table2 th {
+        font-size: 1.1rem;
+    }
+
+    .tour001001__itemTab {
+        height: 4rem;
+    }
+
+    .tour204002__table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour204002__table thead,
+    .tour204002__table colgroup {
+        display: none;
+    }
+
+    .tour204002__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour204002__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .tour204002__table tbody tr td {
+        display: flex;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .tour204002__table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+        order: 1;
+    }
+
+    .tour204002__table tbody tr td:nth-child(2) br {
+        display: none;
+    }
+
+    .tour204002__table tbody tr td:first-child {
+        display: none;
+    }
+
+    .tour204002__table tbody tr td:nth-child(3) {
+        order: 2;
+    }
+
+    .tour204002__table tbody tr td:nth-child(4) {
+        order: 3;
+    }
+
+    .tour204002__table tbody tr td:nth-child(5) {
+        order: 4;
+    }
+
+    .tour204002__table tbody tr td:nth-child(6) {
+        order: 5;
+    }
+
+    .tour204002__table tbody tr td:nth-child(7) {
+        order: 6;
+    }
+
+    .tour204002__table tbody tr td:nth-child(8) {
+        order: 7;
+    }
+
+    .tour204002__table tbody tr td:nth-child(9) {
+        order: 8;
+    }
+
+    .tour204002__table tbody tr td:nth-child(3)::before {
+        content: "대관일자";
+    }
+
+    .tour204002__table tbody tr td:nth-child(4)::before {
+        content: "대관시간";
+    }
+
+    .tour204002__table tbody tr td:nth-child(5)::before {
+        content: "대관인원";
+    }
+
+    .tour204002__table tbody tr td:nth-child(6)::before {
+        content: "대관금액";
+    }
+
+    .tour204002__table tbody tr td:nth-child(7)::before {
+        content: "결제일자";
+    }
+
+    .tour204002__table tbody tr td:nth-child(8)::before {
+        content: "취소일자";
+    }
+
+    .tour204002__table tbody tr td:nth-child(9)::before {
+        content: "결제취소";
+    }
+
+    .tour204002__table tbody tr td:nth-child(4)::before,
+    .tour204002__table tbody tr td:nth-child(3)::before,
+    .tour204002__table tbody tr td:nth-child(5)::before,
+    .tour204002__table tbody tr td:nth-child(6)::before,
+    .tour204002__table tbody tr td:nth-child(7)::before,
+    .tour204002__table tbody tr td:nth-child(8)::before,
+    .tour204002__table tbody tr td:nth-child(9)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+    }
+
+    .tour204002__table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tour204002__table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .hpy204003__table2 {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy204003__table2 thead,
+    .hpy204003__table2 colgroup {
+        display: none;
+    }
+
+    .hpy204003__table2 tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy204003__table2 tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy204003__table2 tbody tr td {
+        display: flex;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .hpy204003__table2 tbody tr td:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+    }
+
+    .hpy204003__table2 tbody tr td:nth-child(2)::before {
+        content: "대상";
+    }
+
+    .hpy204003__table2 tbody tr td:nth-child(3)::before {
+        content: "비고";
+    }
+
+
+    .hpy204003__table2 tbody tr td:nth-child(2)::before,
+    .hpy204003__table2 tbody tr td:nth-child(3)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+    }
+
+    .hpy204003__table2 tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hpy204003__table2 tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .hpy204003__table1 {
+        border: 0;
+    }
+
+    .hpy204003__table1 colgroup,
+    .hpy204003__table1 thead {
+        display: none;
+    }
+
+    .hpy204003__table1 tbody {
+        display: block;
+    }
+
+    .hpy204003__table1 tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .hpy204003__table1 tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy204003__table1 tbody tr::before {
+        content: "대관료";
+        display: block;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+        color: #111;
+        font-weight: 600;
+        font-size: 1.5rem;
+        background: #F5F5F5;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hpy204003__table1 tbody td {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: 0;
+        border-bottom: 1px solid #eee;
+        font-size: 1.3rem;
+        text-align: left;
+        color: #666;
+    }
+
+    .hpy204003__table1 tbody td:last-child {
+        border-bottom: 0;
+    }
+
+    .hpy204003__table1 tbody td::before {
+        flex-shrink: 0;
+        width: 6rem;
+        padding: 1.2rem 0;
+        padding-left: 1rem;
+        margin-right: 5rem;
+        font-weight: 400;
+        color: #666;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* value */
+    .hpy204003__table1 tbody td {
+        margin: 0 2rem;
+    }
+
+    .hpy204003__table1 tbody td:nth-child(1)::before {
+        content: "시간대";
+    }
+
+    .hpy204003__table1 tbody td:nth-child(2)::before {
+        content: "사용요금";
+    }
+
+    .hpy204003__table1 tbody td:nth-child(3)::before {
+        content: "비고";
+        align-items: flex-start;
+    }
+
+    .hpy02__table.hpy204003__table1 tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .hpy02__table.hpy204003__table1 tbody tr:last-child td:last-child {
+        border-bottom: none;
+    }
+
+    .hpy204003__card {
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .hpy204003__wrapper .hpy0220__box.bd0 {
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .hpy204003__wrapper .hpy02__title:first-child {
+        display: none;
     }
 }
 

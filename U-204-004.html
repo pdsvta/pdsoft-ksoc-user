@@ -531,140 +531,6 @@
                     <h2>컬링장 대관신청 내역</h2>
                 </div>
 
-                <div class="tour001001__tabs">
-                    <div class="tour001001__itemTab">
-                        빙상장
-                    </div>
-                    <div class="tour001001__itemTab active">
-                        컬링장
-                    </div>
-                </div>
-
-                <!-- U-204-002 -->
-                <div class="hpy02__wrapper tour001001__mainBox">
-
-                    <div class="hpy02__box">
-                        <table class="hpy02__table tour204002__table">
-                            <colgroup>
-                                <col style="width: 6rem;">
-                                <col style="width: 16rem;">
-                                <col style="width: 10rem;">
-                                <col style="width: 10rem;">
-                                <col style="width: 10rem;">
-                                <col style="width: 15rem;">
-                                <col style="width: 10rem;">
-                                <col style="width: 10rem;">
-                                <col style="width: 9rem;">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>번호</th>
-                                    <th>대표자 성명 <br>(단체명)</th>
-                                    <th><span class="tour204002__link">대관일자 <img src="images/u-204-002/image01.png"
-                                                alt=""></span>
-                                    </th>
-                                    <th>대관시간</th>
-                                    <th>대관인원</th>
-                                    <th>대관금액</th>
-                                    <th><span class="tour204002__link">결제일자 <img src="images/u-204-002/image01.png"
-                                                alt=""></span>
-                                    </th>
-                                    <th><span class="tour204002__link">취소일자 <img src="images/u-204-002/image01.png"
-                                                alt=""></span>
-                                    </th>
-                                    <th>결제취소</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        최진혁 <br>
-                                        (동양스포츠클럽)
-                                    </td>
-                                    <td>2025-07-14</td>
-                                    <td>4시간</td>
-                                    <td>5명</td>
-                                    <td>280,000원</td>
-                                    <td>2025-07-10</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        최진혁 <br>
-                                        (동양스포츠클럽)
-                                    </td>
-                                    <td>2025-07-16</td>
-                                    <td>4시간</td>
-                                    <td>5명</td>
-                                    <td>280,000원</td>
-                                    <td>2025-07-11</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>
-                                        최진혁 <br>
-                                        (동양스포츠클럽)
-                                    </td>
-                                    <td>2025-07-18</td>
-                                    <td>4시간</td>
-                                    <td>5명</td>
-                                    <td>280,000원</td>
-                                    <td>2025-07-14</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>
-                                        최진혁 <br>
-                                        (동양스포츠클럽)
-                                    </td>
-                                    <td>2025-07-21</td>
-                                    <td>4시간</td>
-                                    <td>10명</td>
-                                    <td>280,000원</td>
-                                    <td>2025-07-17</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>
-                                        최진혁 <br>
-                                        (동양스포츠클럽)
-                                    </td>
-                                    <td>2025-07-28</td>
-                                    <td>4시간</td>
-                                    <td>5명</td>
-                                    <td>280,000원</td>
-                                    <td>2025-07-19</td>
-                                    <td>2025-07-24</td>
-                                    <td>취소</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>
-                                        최진혁 <br>
-                                        (동양스포츠클럽)
-                                    </td>
-                                    <td>2025-08-14</td>
-                                    <td>4시간</td>
-                                    <td>10명</td>
-                                    <td>280,000원</td>
-                                    <td>2025-07-31</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
                 <!-- U-204-004 -->
                 <div class="hpy02__wrapper tour001001__mainBox">
 
@@ -1224,95 +1090,76 @@
         </div>
     </div>
     <script>
-        $(document).on('click', '.menu-btn', function () {
-            const $popup = $('.popup-main').parent().addClass('on');
+        $(document).ready(function () {
 
-            const $firstMenu = $('.popup-main__menu-item')
-                .removeClass('popup-main__menu-item--active')
-                .first()
-                .addClass('popup-main__menu-item--active');
+            $(document).on('click', '.menu-btn', function () {
+                const $popupWrapper = $('.popup-main').parent().addClass('on');
 
-            const firstTabId = $firstMenu.data('tab');
+                const $firstMenu = $('.popup-main__menu-item')
+                    .removeClass('popup-main__menu-item--active')
+                    .first()
+                    .addClass('popup-main__menu-item--active');
 
-            $('.popup-main__tab')
-                .stop(true, true)
-                .hide()
-                .removeClass('popup-main__tab--active')
-                .filter('#' + firstTabId)
-            [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
-                .addClass('popup-main__tab--active');
+                const firstTabId = $firstMenu.data('tab');
 
-            if (window.innerWidth < 1200) {
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-            } else {
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
-            }
-        });
-        $(document).on('click', '.popup-close', function () {
-            $('.popup-main').parent().removeClass('on');
-        });
+                $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
 
+                if (window.innerWidth < 1200) {
+                    $('#' + firstTabId).slideDown().addClass('popup-main__tab--active');
 
-        function activateMobileAccordion() {
-            if (window.innerWidth < 1200) {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    if ($(this).hasClass('popup-main__menu-item--active')) {
-                        $(this).removeClass('popup-main__menu-item--active');
-                        $('#' + tabId).slideUp();
-                        return;
-                    }
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').slideUp();
-                    $('#' + tabId).slideDown();
-                });
-
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-
-            } else {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
-                    $('#' + tabId).fadeIn(150).addClass('popup-main__tab--active');
+                    $('.popup-main__col').removeClass('open');
+                    $('.popup-main__links').hide();
+                } else {
+                    $('#' + firstTabId).fadeIn(150).addClass('popup-main__tab--active');
 
                     $('.popup-main__col').addClass('open');
                     $('.popup-main__links').show();
+                }
+            });
+
+            $(document).on('click', '.popup-close', function () {
+                $('.popup-main').parent().removeClass('on');
+            });
+
+            function activateMenuItems() {
+                $('.popup-main__menu-item').off('click').on('click', function () {
+                    const tabId = $(this).data('tab');
+                    const $tab = $('#' + tabId);
+
+                    if (window.innerWidth >= 1200) {
+                        $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
+                        $tab.fadeIn(150).addClass('popup-main__tab--active');
+
+                        $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                        $(this).addClass('popup-main__menu-item--active');
+
+                        $('.popup-main__col').addClass('open');
+                        $('.popup-main__links').show();
+                    } else {
+                        if (!$(this).hasClass('popup-main__menu-item--active')) {
+                            $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                            $(this).addClass('popup-main__menu-item--active');
+
+                            $('.popup-main__tab').slideUp().removeClass('popup-main__tab--active');
+                            $tab.slideDown().addClass('popup-main__tab--active');
+                        }
+
+                        $('.popup-main__col').removeClass('open');
+                        $('.popup-main__links').hide();
+                    }
                 });
-
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
             }
-        }
 
-        $(document).ready(function () {
-            activateMobileAccordion();
-        });
+            activateMenuItems();
 
-        $(window).on('resize', function () {
-            activateMobileAccordion();
-        });
-
-        $(document).ready(function () {
-
-            $(document).on('click', '.popup-main__col-title', function (e) {
-                e.preventDefault();
+            $(window).on('resize', function () {
+                activateMenuItems();
             });
 
             $(document).on('click', '.popup-main__col', function (e) {
-
                 if (window.innerWidth >= 1200) return;
-                let submenu = $(this).find('.popup-main__links');
+
+                const submenu = $(this).find('.popup-main__links');
                 if (submenu.length === 0) return;
 
                 e.stopPropagation();
@@ -1338,27 +1185,14 @@
                 e.stopPropagation();
             });
 
-        });
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const tabs = document.querySelectorAll(".tour001001__itemTab");
-            const contents = document.querySelectorAll(".tour001001__mainBox");
-
-            tabs.forEach((tab, i) => {
-                tab.addEventListener("click", () => {
-                    tabs.forEach(t => t.classList.remove("active"));
-                    contents.forEach(c => c.style.display = "none");
-
-                    tab.classList.add("active");
-                    contents[i].style.display = "block";
-                });
+            $(document).on('click', '.popup-main__col-title', function (e) {
+                e.preventDefault();
             });
 
-            contents.forEach((c, i) => (c.style.display = i === 1 ? "block" : "none"));
         });
+
     </script>
+
 </body>
 
 </html>
