@@ -13594,3 +13594,11 @@
 .tour004062__box .tour004062__table {
     border-bottom: 1px solid #ddd;
 }
+
+.modal-wrap {
+    display: none;
+}
+
+.modal-wrap.is-open {
+    display: block;
+}
