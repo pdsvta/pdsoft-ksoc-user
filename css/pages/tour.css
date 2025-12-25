@@ -5585,6 +5585,10 @@
     margin-top: 2rem;
 }
 
+.tour403006__list.mt5 {
+    margin-top: 5rem;
+}
+
 .tour403006__item {
     border-bottom: 1px solid #DDDDDD;
     padding: 0 2rem;
@@ -13580,4 +13584,13 @@
     height: 4.5rem;
     min-width: 14.5rem;
     font-size: 1.5rem;
+}
+
+.tour004062__box {
+    padding: 0 2rem;
+    border-bottom: none
+}
+
+.tour004062__box .tour004062__table {
+    border-bottom: 1px solid #ddd;
 }
