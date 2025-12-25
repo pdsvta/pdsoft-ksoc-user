@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>지도자등록 신청안내</title>
-    <link rel="stylesheet" href="css/styleCert.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui.css">
     <script src="js/jquery-ui.min.js"></script>
@@ -20,7 +20,7 @@
                 <div class="ply-hdr__lf">
                     <h1 class="ply-hdr__logo">
                         <img src="images/ptu_m1_0501/image01.png" alt="">
-                        <span>(사)대한골프협회</span>
+                        <span>(사)대한골프협회 인터넷 증명서발급</span>
                     </h1>
                     <div class="ply-hdr__pop">
                         <div class="game__pop">
@@ -65,14 +65,22 @@
                         <li>
                             <a href="#">스포츠지원포털</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">화면번호</a>
-                        </li>
+                        </li> -->
                     </ul>
-                    <div class="ply-hdr__help">
+                    <!-- <div class="ply-hdr__help">
                         <a href="#"><b>430</b></a>
                         <a href="#">화면도움말</a>
-                    </div>
+                    </div> -->
+                    <button type="button" class="menu-btn menu-btn-ply ">
+                        <span class="blind">전체메뉴 펼치기</span>
+                        <div class="menu-btn__icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -87,22 +95,29 @@
                         </a>
                     </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">지도자등록개요</a>
+                        <a href="#" class="ply-nav__link">증명서 발급</a>
+                        <ul class="sub-menu">
+                            <div class="inner">
+                                <li><a href="#"><span>증명서발급 안내</span></a></li>
+                                <li><a href="#"><span>증명서발급 신청</span></a></li>
+                                <li><a href="#"><span>증명서발급 내역</span></a></li>
+                            </div>
+						</ul>
                     </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">신청서작성</a>
+                        <a href="#" class="ply-nav__link">정정요청</a>
+                        <ul class="sub-menu">
+                            <div class="inner">
+                                <li><a href="#"><span>정정요청</span></a></li>
+                                <li><a href="#"><span>정정요청 내역</span></a></li>
+                            </div>									
+						</ul>
                     </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">신청서출력</a>
+                        <a href="#" class="ply-nav__link">원본 검증조회</a>
                     </li>
                     <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">소속변경신청</a>
-                    </li>
-                    <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">전문체육팀</a>
-                    </li>
-                    <li class="ply-nav__item">
-                        <a href="#" class="ply-nav__link">전화번호안내</a>
+                        <a href="#" class="ply-nav__link">등록이력 조회</a>
                     </li>
                 </ul>
                 <div class="ply-nav__rt">
@@ -127,32 +142,32 @@
         <!-- // gnb -->
 
         <!-- contents -->
-        <section class="ply pt5">
+        <section class="ply pt5 tour102002__main">
             <div class="inner">
-                <div class="ply__group">
-                    <div class="ply__tit">
+                <div class="ply__group tour102002__rowTop">
+                    <div class="ply__tit tour102002__tit">
                         <h3>인터넷 원본 검증조회</h3>
                     </div>
-                    <div class="ply__group--list">
-                        <div class="ply__group--item">
+                    <div class="ply__group--list tour102002__list">
+                        <div class="ply__group--item tour102002__item">
                             <img src="images/u-102-002/image01.png" alt="">
                             <p>증명서 발급</p>
                         </div>
-                        <div class="ply__group--item">
+                        <div class="ply__group--item tour102002__item">
                             <img src="images/u-102-002/image02.png" alt="">
                             <p>정정요청</p>
                         </div>
-                        <div class="ply__group--item">
+                        <div class="ply__group--item tour102002__item">
                             <img src="images/u-102-002/image03.png" alt="">
                             <p>원본검증</p>
                         </div>
-                        <div class="ply__group--item">
+                        <div class="ply__group--item tour102002__item">
                             <img src="images/u-102-002/image04.png" alt="">
                             <p>등록이력</p>
                         </div>
                     </div>
                 </div>
-                <div class="ply__wrapper mt5">
+                <div class="ply__wrapper mt5 tour102002__boxMain">
                     <div class="ply__title bd0 mb0 p022">
                         <h4>인터넷 증명서발급을 통해 발급된 증명서의 위/변조 여부를 확인해보세요!</h4>
                     </div>
@@ -162,23 +177,23 @@
                         </ul>
                     </div>
                     <div class="ply102019__box">
-                        <div class="tour__group gap30 tour__group--p0 jc-ct">
+                        <div class="tour__group gap30 tour__group--p0 jc-ct tour102019__group">
                             <label for="" class="hpy02__label hpy02__label--600">원본 검증</label>
                             <div class="tour__group--input gap10">
-                                <input type="text" class="hpy-reg__input hpy-reg__input--max100 hpy-reg__input--h35 tour102019__itemInput"
+                                <input type="text" class="hpy-reg__input hpy-reg__input--h35 tour102019__itemInput"
                                     value="B819">
                                 <span class="hpy02__dash">-</span>
-                                <input type="text" class="hpy-reg__input hpy-reg__input--max100 hpy-reg__input--h35 tour102019__itemInput"
+                                <input type="text" class="hpy-reg__input hpy-reg__input--h35 tour102019__itemInput"
                                     value="B819">
                                 <span class="hpy02__dash">-</span>
-                                <input type="text" class="hpy-reg__input hpy-reg__input--max100 hpy-reg__input--h35 tour102019__itemInput"
+                                <input type="text" class="hpy-reg__input hpy-reg__input--h35 tour102019__itemInput"
                                     value="B819">
                                 <span class="hpy02__dash">-</span>
-                                <input type="text" class="hpy-reg__input hpy-reg__input--max100 hpy-reg__input--h35 tour102019__itemInput"
+                                <input type="text" class="hpy-reg__input hpy-reg__input--h35 tour102019__itemInput"
                                     value="B819">
-                                <button type="button"
-                                    class="hpy-reg__btn hpy-reg__btn--min70 hpy-reg__btn--h35 ply-reg__btn--gray">조회</button>
                             </div>
+                            <button type="button"
+                                    class="hpy-reg__btn hpy-reg__btn--h35 ply-reg__btn--gray">조회</button>
                         </div>
                     </div>
                 </div>
@@ -215,6 +230,57 @@
         </footer>
         <!-- // footer -->
     </div>
+
+    <script>
+        $(document).on("click", ".menu-btn-ply", function () {
+            const $btn = $(this);
+            const $header = $(".ply-hdr");
+
+            if ($header.hasClass("ply-menu-open")) {
+                $header.removeClass("ply-menu-open");
+                $btn.removeClass("is-open");
+            } else {
+                $header.addClass("ply-menu-open");
+                $btn.addClass("is-open");
+            }
+        });
+        $(document).ready(function () {
+
+            function setupThirdMenu() {
+                const isMobile = window.innerWidth < 1200;
+
+                const $list = $('.ply-nav__list');
+                const $items = $list.find('.ply-nav__item');
+                const $first = $items.first();
+                const $others = $items.not(':first');
+
+                if (isMobile) {
+                    $others.hide();
+
+                    $first.addClass('has-arrow');
+
+                    $first.off('click.mobileToggle').on('click.mobileToggle', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $others.slideToggle(200);
+                        $first.toggleClass('open');
+                    });
+
+                } else {
+                    $others.show();
+                    $first.removeClass('has-arrow open');
+                    $first.off('click.mobileToggle');
+                }
+            }
+
+            setupThirdMenu();
+
+            $(window).on('resize', function () {
+                setupThirdMenu();
+            });
+        });
+
+    </script>
 </body>
 
 </html>
