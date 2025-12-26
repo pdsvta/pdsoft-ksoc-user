@@ -524,7 +524,7 @@
         <!-- // breadcrumbs -->
 
         <!-- contents -->
-        <section class="indv">
+        <section class="indv mbp0">
             <div class="inner">
                 <div class="title indv__title">
                     <h2>증명서발급 안내</h2>
@@ -533,7 +533,8 @@
                     <div class="indv__block">
                         <div class="indv__block--text indv__block--noBorder">
                             <h3 class="indv__tit">증명서발급 안내</h3>
-                            <h4 class="mb20 gray tour302001__textDesc">온라인으로 경기인 등록확인서, 경기실적증명서, 단체종목 개인기록증명서, 대회참가확인서, 경력증명서, 대표선수확인서 등 주요
+                            <h4 class="mb20 gray tour302001__textDesc">온라인으로 경기인 등록확인서, 경기실적증명서, 단체종목 개인기록증명서, 대회참가확인서,
+                                경력증명서, 대표선수확인서 등 주요
                                 제증명서를
                                 신청하고 출력할 수 있습니다. 자세한 사항은 「온라인 증명서 발급」을 클릭 하시어 안내 받으시길 바랍니다.<br>
                                 <p class="notice-text">
@@ -989,95 +990,76 @@
         </div>
     </div>
     <script>
-        $(document).on('click', '.menu-btn', function () {
-            const $popup = $('.popup-main').parent().addClass('on');
+        $(document).ready(function () {
 
-            const $firstMenu = $('.popup-main__menu-item')
-                .removeClass('popup-main__menu-item--active')
-                .first()
-                .addClass('popup-main__menu-item--active');
+            $(document).on('click', '.menu-btn', function () {
+                const $popupWrapper = $('.popup-main').parent().addClass('on');
 
-            const firstTabId = $firstMenu.data('tab');
+                const $firstMenu = $('.popup-main__menu-item')
+                    .removeClass('popup-main__menu-item--active')
+                    .first()
+                    .addClass('popup-main__menu-item--active');
 
-            $('.popup-main__tab')
-                .stop(true, true)
-                .hide()
-                .removeClass('popup-main__tab--active')
-                .filter('#' + firstTabId)
-            [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
-                .addClass('popup-main__tab--active');
+                const firstTabId = $firstMenu.data('tab');
 
-            if (window.innerWidth < 1200) {
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-            } else {
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
-            }
-        });
-        $(document).on('click', '.popup-close', function () {
-            $('.popup-main').parent().removeClass('on');
-        });
+                $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
 
+                if (window.innerWidth < 1200) {
+                    $('#' + firstTabId).slideDown().addClass('popup-main__tab--active');
 
-        function activateMobileAccordion() {
-            if (window.innerWidth < 1200) {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    if ($(this).hasClass('popup-main__menu-item--active')) {
-                        $(this).removeClass('popup-main__menu-item--active');
-                        $('#' + tabId).slideUp();
-                        return;
-                    }
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').slideUp();
-                    $('#' + tabId).slideDown();
-                });
-
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-
-            } else {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
-                    $('#' + tabId).fadeIn(150).addClass('popup-main__tab--active');
+                    $('.popup-main__col').removeClass('open');
+                    $('.popup-main__links').hide();
+                } else {
+                    $('#' + firstTabId).fadeIn(150).addClass('popup-main__tab--active');
 
                     $('.popup-main__col').addClass('open');
                     $('.popup-main__links').show();
+                }
+            });
+
+            $(document).on('click', '.popup-close', function () {
+                $('.popup-main').parent().removeClass('on');
+            });
+
+            function activateMenuItems() {
+                $('.popup-main__menu-item').off('click').on('click', function () {
+                    const tabId = $(this).data('tab');
+                    const $tab = $('#' + tabId);
+
+                    if (window.innerWidth >= 1200) {
+                        $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
+                        $tab.fadeIn(150).addClass('popup-main__tab--active');
+
+                        $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                        $(this).addClass('popup-main__menu-item--active');
+
+                        $('.popup-main__col').addClass('open');
+                        $('.popup-main__links').show();
+                    } else {
+                        if (!$(this).hasClass('popup-main__menu-item--active')) {
+                            $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                            $(this).addClass('popup-main__menu-item--active');
+
+                            $('.popup-main__tab').slideUp().removeClass('popup-main__tab--active');
+                            $tab.slideDown().addClass('popup-main__tab--active');
+                        }
+
+                        $('.popup-main__col').removeClass('open');
+                        $('.popup-main__links').hide();
+                    }
                 });
-
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
             }
-        }
 
-        $(document).ready(function () {
-            activateMobileAccordion();
-        });
+            activateMenuItems();
 
-        $(window).on('resize', function () {
-            activateMobileAccordion();
-        });
-
-        $(document).ready(function () {
-
-            $(document).on('click', '.popup-main__col-title', function (e) {
-                e.preventDefault();
+            $(window).on('resize', function () {
+                activateMenuItems();
             });
 
             $(document).on('click', '.popup-main__col', function (e) {
-
                 if (window.innerWidth >= 1200) return;
-                let submenu = $(this).find('.popup-main__links');
+
+                const submenu = $(this).find('.popup-main__links');
                 if (submenu.length === 0) return;
 
                 e.stopPropagation();
@@ -1103,7 +1085,12 @@
                 e.stopPropagation();
             });
 
+            $(document).on('click', '.popup-main__col-title', function (e) {
+                e.preventDefault();
+            });
+
         });
+
     </script>
 </body>
 

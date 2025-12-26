@@ -1201,6 +1201,10 @@
         padding-bottom: 6rem;
     }
 
+    .indv.mbp0 {
+        padding-top: 0;
+    }
+
     .indv::before {
         width: 53.2rem;
         height: 53.2rem;
@@ -1227,6 +1231,7 @@
 
     .indv__tit {
         font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .indv__tit.fs16 {
@@ -7943,6 +7948,80 @@
 
     .tour__103001 .annc__total {
         position: unset;
+    }
+
+    .indv__block--noBorder {
+        padding: 0;
+    }
+
+    .indv__note-img {
+        max-width: 100%;
+        margin: 3rem 0 2rem;
+    }
+
+    .indv__para--h1 {
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .indv__btbx {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .indv__btn2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .indv__block .tour302001__textDesc {
+        font-weight: 400;
+    }
+
+    .indv__block h4.gray.tour302001__textDesc .notice-text span {
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .tour302001__textDesc .notice-text {
+        display: block;
+        line-height: 1.2;
+    }
+
+    .indv306001__card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .indv306001__item {
+        padding: 1rem 2rem;
+    }
+
+    .indv306001__title {
+        font-size: 1.5rem;
+    }
+
+    .indv306001__row {
+        gap: 0;
+    }
+
+    .indv306001__group span {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .indv306001__value span {
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+    }
+
+    .indv306001__group {
+        gap: 0;
+    }
+
+    .indv306001__value {
+        width: 100%;
+        gap: 0;
     }
 }
 
