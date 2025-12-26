@@ -318,6 +318,10 @@
     .tour102031__text .tour102031__btn {
         margin-left: unset;
     }
+
+    .tour104001__groupFilter {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 819px) {
@@ -8304,6 +8308,21 @@
 
     .tour102029__groupFilterDate .hpy-reg__input {
         width: 28%;
+    }
+    
+    .tour__box104001 {
+        border: 1px solid #DDDDDD;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .tour__box104001 .hpy02__table tbody tr td.hpy02__end {
+        position: relative;
+        top: unset;
+        right: unset;
+        padding: 1.1rem 1rem;
+        display: flex;
+        align-items: center;
     }
 
     .tour__108005 .edc__flex {
