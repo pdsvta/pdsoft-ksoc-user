@@ -10124,6 +10124,22 @@
     font-size: 1.6rem;
 }
 
+.tour102010__groupCard .ply-reg__card {
+    width: 32%;
+}
+
+.tour102010__groupCard .ply-reg__card.tour102010__itemCard {
+    width: 100%;
+}
+
+.tour102010__itemInput {
+    width: 100%;
+}
+
+.tour102019__group {
+    padding: 0 7rem;
+}
+
 .tour003002__list li {
     word-break: keep-all;
     padding-left: 1.6rem;

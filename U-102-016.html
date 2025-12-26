@@ -142,32 +142,32 @@
         <!-- // gnb -->
 
         <!-- contents -->
-        <section class="ply pt5">
+        <section class="ply pt5 tour102002__main">
             <div class="inner">
-                <div class="ply__group">
-                    <div class="ply__tit">
+                <div class="ply__group tour102002__rowTop">
+                    <div class="ply__tit tour102002__tit">
                         <h3>인터넷 증명서 정정요청</h3>
                     </div>
-                    <div class="ply__group--list">
-                        <div class="ply__group--item">
+                    <div class="ply__group--list tour102002__list">
+                        <div class="ply__group--item tour102002__item">
                             <img src="images/u-102-002/image01.png" alt="">
                             <p>증명서 발급</p>
                         </div>
-                        <div class="ply__group--item">
+                        <div class="ply__group--item tour102002__item">
                             <img src="images/u-102-002/image02.png" alt="">
                             <p>정정요청</p>
                         </div>
-                        <div class="ply__group--item">
+                        <div class="ply__group--item tour102002__item">
                             <img src="images/u-102-002/image03.png" alt="">
                             <p>원본검증</p>
                         </div>
-                        <div class="ply__group--item">
+                        <div class="ply__group--item tour102002__item">
                             <img src="images/u-102-002/image04.png" alt="">
                             <p>등록이력</p>
                         </div>
                     </div>
                 </div>
-                <div class="ply__wrapper mt5">
+                <div class="ply__wrapper mt5 tour102002__boxMain">
                     <div class="ply__title">
                         <h4>경기인 정보</h4>
                     </div>
@@ -196,9 +196,9 @@
                         • 개인번호가 존재하지 않으면 과거 등록이력을 찾으세요.
                     </p>
                 </div>
-                <div class="ply__wrapper mt2">
-                    <div class="ply102009__table">
-                        <table class="hpy02__table">
+                <div class="ply__wrapper mt2 tour102002__boxMain">
+                    <div class="ply102009__table tour102016__boxTable">
+                        <table class="hpy02__table hpy02__box tour401013__table">
                             <colgroup>
                                 <col style="width: 23rem;">
                                 <col style="width: 23rem;">
@@ -316,6 +316,64 @@
             });
         });
 
+    </script>
+
+    <script>
+        function applyMobileTable() {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            // tránh chạy lại nhiều lần
+            if (table.classList.contains('is-mobile')) return;
+            table.classList.add('is-mobile');
+
+            const headers = [...table.querySelectorAll('thead th')]
+                .map(th => th.textContent.trim());
+
+            const schoolIndex = headers.indexOf('학교명');
+
+            table.querySelectorAll('tbody tr').forEach(row => {
+                const tds = [...row.querySelectorAll('td')];
+
+                // title (학교명)
+                if (tds[schoolIndex]) {
+                    const title = document.createElement('div');
+                    title.className = 'mobile-card-title';
+                    title.textContent = tds[schoolIndex].textContent.trim();
+                    row.prepend(title);
+                }
+
+                // remove 번호 + 학교명 (từ cuối)
+                [schoolIndex]
+                    .sort((a, b) => b - a)
+                    .forEach(i => tds[i] && tds[i].remove());
+
+                const labels = headers.filter(
+                    (_, i) => i !== schoolIndex
+                );
+
+                [...row.querySelectorAll('td')].forEach((td, i) => {
+                    td.setAttribute('data-label', labels[i]);
+                });
+            });
+
+            // force repaint
+            table.offsetHeight;
+        }
+
+        // chạy khi DOM sẵn sàng
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                applyMobileTable();
+            }
+        });
+
+        // chạy khi resize / xoay màn hình
+        window.addEventListener('resize', () => {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                applyMobileTable();
+            }
+        });
     </script>
 </body>
 
