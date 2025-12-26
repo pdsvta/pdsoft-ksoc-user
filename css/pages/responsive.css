@@ -284,6 +284,11 @@
         width: 46%;
     }
 
+    .tour102025__groupFilter {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
     .tour102027__ply__group--list2 {
         justify-content: center;
     }
@@ -295,6 +300,23 @@
 
     .tour102027__group .tour__group--input {
         flex: 1;
+    }
+
+    .tour102028__item {
+        align-items: flex-start;
+    }
+
+    .tour102028__row {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    .tour102028__row .ply102011__group {
+        width: 46%;
+    }
+
+    .tour102031__text .tour102031__btn {
+        margin-left: unset;
     }
 }
 
@@ -8181,6 +8203,19 @@
         margin-top: 1rem;
     }
 
+    .tour102025__groupInput {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tour102025__groupInput .selectbox{
+        width: 46%;
+    }
+
+    .tour102025__groupInput .hpy-reg__input{
+        width: 67%;
+    }
+
     .tour102027__ply__group--list2 {
         padding: 4rem 0rem 1rem;
     }
@@ -8213,6 +8248,119 @@
 
     .tour102027__group .tour__group--input input {
         width: 33%;
+    }
+
+    .tour102028__groupCard {
+        gap: 0.5rem;
+    }
+
+    .tour102028__row .ply102011__group {
+        width: 100%;
+    }
+
+    .tour102028__boxMainCheck.ply__wrapper.tour102002__boxMain {
+        position: relative;
+        padding: 0;
+    }
+
+    .tour102028__boxMainCheck.ply__wrapper.mt2.tour102002__boxMain .ply__title {
+        padding: 0;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+    .tour102028__boxMainCheck h4 {
+        padding: 1rem 2rem;
+    }
+
+    .tour102028__item .ply102011__check {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+    
+    .tour102029__item {
+        border: 1px solid #DDDDDD;
+        border-radius: 2rem;
+        padding: 2rem;
+        margin: 2rem;
+    }
+
+    .tour102029__item .ply102011__check {
+        display: none;
+    }
+
+    .tour102029__item .ply102011__content {
+        gap: 0;
+    }
+
+    .tour102029__row {
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .tour102029__groupFilterDate {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tour102029__groupFilterDate .hpy-reg__input {
+        width: 28%;
+    }
+
+    .tour__108005 .edc__flex {
+        gap: 1rem;
+        border-top: 0;
+        border-bottom: 0;
+        margin-bottom: 2rem;
+    }
+
+    .tour__108005 .edc__flex:nth-child(2) {
+        margin-bottom: 0;
+    }
+    
+    .tour108005__bold {
+        background: unset;
+        width: fit-content;
+        height: unset;
+    }
+
+    .tour108005__value {
+        padding-left: 0;
+    }
+
+    .tour108005__value .hpy-reg__flex .hpy-reg__input {
+        width: 100%;
+    }
+
+    .tour__108005 .indv__btbx.pt40 {
+        padding-top: 2rem;
+    }
+
+    .tour__108005 .indv__btbx button {
+        width: 10rem;
+    }
+
+    .tour108006-2__titleChild.hpy004004__title {
+        padding: 0;
+    }
+
+    .tour108006-2__table {
+        padding: 3rem 0rem;
+    }
+
+    .tour108006-2__table .hpy02__table {
+        border-bottom: 0;
+    }
+
+    .tour108007__table  {
+        padding: 3rem 0;
+    }
+
+    .tour108007__boxChild.hpy004001__section {
+        padding: 2rem 0 0;
+    }
+
+    .tour108007__allbtn button {
+        width: 30%;
     }
 }
 
