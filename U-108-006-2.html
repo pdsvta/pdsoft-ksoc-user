@@ -530,13 +530,13 @@
                 <div class="title">
                     <h2>선수춘 견학신청</h2>
                 </div>
-                <div class="hpy02__wrapper hpy1080062__wrapper">
-                    <div class="hpy004004__title p020">
+                <div class="hpy1080062__wrapper ply__wrapper mt2 tour102002__boxMain">
+                    <div class="hpy004004__title p020 tour108006-2__titleChild">
                         <h3>견학신청정보 </h3>
                     </div>
 
-                    <div class="hpy004017__table">
-                        <table class="hpy02__table">
+                    <div class="hpy004017__table tour108006-2__table ply102023__table tour102023__table">
+                        <table class="hpy02__table tour401013__table">
                             <colgroup>
                                 <col style="width: 17rem;">
                                 <col style="width: 21rem;">
@@ -1128,6 +1128,64 @@
 
         });
 
+    </script>
+
+    <script>
+        function applyMobileTable() {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            // tránh chạy lại nhiều lần
+            if (table.classList.contains('is-mobile')) return;
+            table.classList.add('is-mobile');
+
+            const headers = [...table.querySelectorAll('thead th')]
+                .map(th => th.textContent.trim());
+
+            const schoolIndex = headers.indexOf('유형');
+
+            table.querySelectorAll('tbody tr').forEach(row => {
+                const tds = [...row.querySelectorAll('td')];
+
+                // title (학교명)
+                if (tds[schoolIndex]) {
+                    const title = document.createElement('div');
+                    title.className = 'mobile-card-title';
+                    title.textContent = tds[schoolIndex].textContent.trim();
+                    row.prepend(title);
+                }
+
+                // remove 번호 + 학교명 (từ cuối)
+                [schoolIndex]
+                    .sort((a, b) => b - a)
+                    .forEach(i => tds[i] && tds[i].remove());
+
+                const labels = headers.filter(
+                    (_, i) => i !== schoolIndex
+                );
+
+                [...row.querySelectorAll('td')].forEach((td, i) => {
+                    td.setAttribute('data-label', labels[i]);
+                });
+            });
+
+            // force repaint
+            table.offsetHeight;
+        }
+
+        // chạy khi DOM sẵn sàng
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.matchMedia('(max-width: 767px)').matches) {
+                applyMobileTable();
+            }
+        });
+
+        // chạy khi resize / xoay màn hình
+        window.addEventListener('resize', () => {
+            if (window.matchMedia('(max-width: 767px)').matches) {
+                applyMobileTable();
+            }
+        });
     </script>
 
 </body>
