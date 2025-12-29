@@ -5038,6 +5038,11 @@
     margin-top: 3rem;
 }
 
+.tour402002-2__filterLeft {
+    width: 50%;
+    justify-content: flex-start;
+}
+
 .tour402003__wrapper .tour402001__table .day-row td.day span {
     font-weight: 400;
     font-size: 1.1rem;
@@ -10362,6 +10367,11 @@
 .tour303001__textBold {
     font-weight: 700;
     color: #000;
+}
+
+.tour303001__imgOfTab4 {
+    width: 45rem;
+    margin: 0 auto 2rem;
 }
 
 .tour304001__popup-overlay,

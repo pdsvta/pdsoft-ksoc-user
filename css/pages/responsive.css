@@ -267,6 +267,14 @@
         height: 4rem;
     }
 
+    .tour402004__table.hpy02__table tbody tr:last-child td {
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .tour402004__table.hpy02__table tbody tr:last-child td:last-child {
+        border-bottom: none;
+    }
+
     .tour102002__groupFilterDate {
         flex-direction: column;
     }
@@ -321,6 +329,21 @@
 
     .tour104001__groupFilter {
         flex-direction: column;
+    }
+
+    .tour303001__tabs ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+        height: unset;
+    }
+
+    .tour303001__tabs ul li {
+        width: calc(33% - 0.5rem);
+        padding: 1rem;
+    }
+
+    .tour303001__qrCode {
+        gap: 0.5rem;
     }
 }
 
@@ -3782,7 +3805,8 @@
     .tour__infoTable td {
         height: 3.5rem;
         font-size: 1.1rem;
-        white-space: nowrap;
+        padding: 1rem 2rem;
+        /* white-space: nowrap; */
     }
 
     .info__hint {
@@ -6782,6 +6806,11 @@
         padding: 2rem;
     }
 
+    .tour402002-2__filterLeft .hpy-reg__btn {
+        min-width: unset;
+        width: 50%;
+    }
+
     .hpy-reg__btn--min60 {
         min-width: 100%;
     }
@@ -7668,6 +7697,10 @@
         font-size: 1.1rem;
     }
 
+    .tour402010__item {
+        width: 50%;
+    }
+
     .hpy-reg__input--max920 {
         min-width: 100%;
         max-width: 100%;
@@ -8547,6 +8580,52 @@
     .tour108007__allbtn button {
         width: 30%;
     }
+
+    .tour301001__mainBox {
+        padding: 0 0 3rem;
+    }
+
+    .tour301001__titleChild {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .tour301001__allBtn {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tour303001__title.title {
+        margin-top: 0;
+    }
+
+    .tour303001__tabs ul li {
+        width: calc(50% - 0.5rem);
+        font-size: 1rem;
+    }
+
+    .tour303001__listSettings {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .tour303001__qrCode {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .tour303001__imgOfTab4 {
+        width: 100%;
+    }  
+
+    .tour402004__note {
+        font-size: 1.2rem;
+    }
+
+    .tour402010__allBtn.tour__bm--end .tour__btn {
+        min-width: unset;
+        width: 32%;
+    } 
 }
 
 @media (max-width: 414px) {
