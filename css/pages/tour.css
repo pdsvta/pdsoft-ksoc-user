@@ -13618,3 +13618,7 @@
 .modal-wrap.is-open {
     display: block;
 }
+
+.indv306001__title br {
+    display: none;
+}
