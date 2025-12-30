@@ -62,6 +62,22 @@
     .popup-main__links li a {
         font-size: 1.3rem;
     }
+
+    .tour304001__setupWallet,
+    .tour304001__regisCerti {
+        width: 90%;
+    }
+
+    .guide__tab ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+        gap: .5rem;
+    }
+
+    .guide__tab ul li {
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 912px) {
@@ -990,7 +1006,7 @@
     }
 
     .footer-main__menu-item a {
-        padding-right: 1..ply-nav2rem;
+        /* padding-right: 1..ply-nav2rem; */
     }
 
     .footer-main__sponsor-logos {
@@ -8546,6 +8562,256 @@
 
     .tour108007__allbtn button {
         width: 30%;
+    }
+
+    .hpy-reg__input--date {
+        padding: 1rem .7rem;
+    }
+
+    .indv__block--text {
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .videoMoviePreview {
+        width: 100%;
+        margin: 2rem 0 0;
+    }
+
+    .tour304001__table.tour__infoTable td {
+        white-space: unset;
+        padding: 0 1.5rem;
+    }
+
+    .tour304001__table.tour__infoTable th {
+        width: 8.5rem;
+        padding: 1rem 1.1rem;
+    }
+
+    .tour304001__table colgroup {
+        display: none;
+    }
+
+    .indv__btn2.ml30 {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .videoMoviePreview.mb30 {
+        border-radius: 1rem;
+        margin: 2rem auto;
+        margin-bottom: 2rem !important;
+    }
+
+    .indv__para--p {
+        margin-bottom: 2rem;
+    }
+
+    .indv__para--p.fw600 {
+        font-size: 1.3rem;
+    }
+
+    .indv__para--p {
+        font-size: 1.2rem;
+    }
+
+    .guide__tab ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        gap: .5rem;
+    }
+
+    .guide__tab ul li {
+        font-size: 1rem;
+        line-height: 100%;
+        height: 5rem;
+        border-radius: 1rem;
+    }
+
+    .tour304001__setupWallet,
+    .tour304001__regisCerti {
+        width: 90%;
+    }
+
+
+    .tour304001__close {
+        padding-bottom: 2rem;
+    }
+
+    .tour304001__close h3 {
+        font-size: 1.5rem;
+    }
+
+    .guide__container .indv__flex {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .indv__flex-img {
+        justify-content: flex-start;
+    }
+
+    .guide__container {
+        padding: 0;
+    }
+
+    .indv__list--text-tit>li>ul {
+        margin-top: .5rem;
+    }
+
+    .indv__list--text-tit>li::before {
+        top: 0;
+    }
+
+    .indv__list--text-tit>li>h1 {
+        font-size: 1.3rem;
+    }
+
+    .popupWallet-close img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .tour304001__boxInputCerti {
+        gap: .5rem;
+    }
+
+    .tour304001__itemInputCerti {
+        width: calc((100% - .5rem)/2);
+        margin-bottom: .5rem;
+    }
+
+    .tour304001__itemInputCerti.inputChild {
+        width: 100%;
+    }
+
+    .tour304001__boxInputCerti2 {
+        margin-top: .5rem;
+    }
+
+    .tour304001__boxRadioCertiGroup {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .tour304001__boxRadioCerti {
+        align-items: flex-start;
+        margin-top: 2rem;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .tour304001__noteCerti {
+        font-size: 1.1rem;
+        margin: 2rem 0;
+    }
+
+    .tour304001__noteCerti.noteChild {
+        font-size: 1rem;
+    }
+
+    .tour304001__noteCerti.noteBottom {
+        font-size: 1.2rem;
+    }
+
+    .tour304001__noteCerti.noteBottomChild {
+        font-size: 1rem;
+    }
+
+    .tour304001__checkboxCerti label {
+        font-size: 1.2rem;
+    }
+
+    .tour304001__itemTableCerti {
+        width: 100%;
+        display: flex;
+        border-top: 1px solid #ddd;
+    }
+
+    .tour304001__itemTableCerti:last-child {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tour304001__tableCerti {
+        flex-direction: column;
+    }
+
+    .tour304001__thTableCerti {
+        height: 3.5rem;
+        padding: 0;
+        padding-left: 1.2rem;
+        width: 8.5rem;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        border: none;
+    }
+
+    .tour304001__trTableCerti {
+        flex: 1;
+        font-size: 1rem;
+        height: 3.5rem;
+        padding: 0;
+        padding-left: 1.2rem;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: flex-start;
+        border: none;
+    }
+
+    .tour304001__trTableCerti.trChild {
+        font-size: 1.1rem;
+    }
+
+
+    .indv__popup304-1 {
+        background-color: var(--color-popup-bg) !important;
+        padding: 20px !important;
+    }
+
+    .guide__wrapper {
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+
+    .indv__popup304 .guide__container {
+        border-radius: 2rem;
+        padding: 6rem 0 2rem;
+    }
+
+    .indv__popup304__tit {
+        top: 3rem;
+        padding: 0 2rem;
+    }
+
+    .guide__contents .guide__content {
+        overflow: hidden;
+    }
+
+    .hpy02__wrapper.mbbd {
+        border: 1px solid #ddd;
+    }
+
+    .hpy02__wrapper--401005 {
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 2rem 0;
+    }
+
+    .hpy02__wrapper--401005 .tour204002__line {
+        margin: 2rem 2rem 0;
+        padding: 2rem 0;
+        font-size: 1.2rem;
+    }
+
+    .hpy02__wrapper--401005 .tour204002__title {
+        font-size: 1.5rem;
+    }
+
+    .hpy02__wrapper--401005.hpy02__wrapper.mt20 {
+        margin-top: 1rem;
     }
 }
 

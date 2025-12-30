@@ -10410,15 +10410,16 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .tour304001__itemInputCerti {
-    width: 33%;
+    width: calc((100% - 4rem)/3);
     margin-bottom: 2rem;
 }
 
 .tour304001__itemInputCerti.inputChild {
-    width: 50%;
+    width: calc((100% - 2rem)/2);
 }
 
 .tour304001__itemInputCerti input {
@@ -10437,6 +10438,11 @@
 
 .tour304001__boxRadioCerti {
     gap: 3rem;
+}
+
+.tour304001__boxRadioCertiGroup {
+    display: flex;
+    gap: 2rem;
 }
 
 .tour304001__boxRadioCerti label {
@@ -13638,4 +13644,26 @@
 
 .indv306001__title br {
     display: none;
+}
+
+.tour304001 .tour304001__setupWallet,
+.tour304001__regisCerti {
+    width: 106rem;
+}
+
+.tour304001__close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.tour304001__close h3 {
+    color: #111;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.tour304001__setupWallet .tour304001__close button {
+    position: unset;
 }
