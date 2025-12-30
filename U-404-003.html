@@ -530,7 +530,7 @@
                     <h2>대회일정 및 결과</h2>
                 </div>
                 <div class="hpy02__wrapper">
-                    <div class="tour404003__filter">
+                    <div class="tour404003__filter tour403001__groupFilter tour__group--input">
                         <h3 class="tour404003__titleFilter">대회연도</h3>
                         <div class="tour404003__boxInput">
                             <select name="" id="" class="selectbox">
@@ -541,8 +541,8 @@
                             <button type="button" class="tour404003__btnFilter">검색</button>
                         </div>
                     </div>
-                    <div class="hpy02__box">
-                        <table class="hpy02__table tour404003__table">
+                    <div class="hpy02__box tour403001__boxMain">
+                        <table class="hpy02__table tour404003__table tour402004__table tour401013__table">
                             <colgroup>
                                 <col style="width: 7rem;">
                                 <col style="width: 19rem;">
@@ -1195,6 +1195,75 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+            // lưu HTML gốc để restore
+            const originalHTML = table.innerHTML;
+
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
+
+                table.classList.add('is-mobile');
+
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
+
+                const schoolIndex = headers.indexOf('대회명');
+
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
+
+                    // title
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    // remove 번호 + 제목
+                    [schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
+                });
+            }
+
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
+            }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            // chạy lần đầu
+            handleResponsive(mediaQuery);
+
+            // lắng nghe thay đổi viewport
+            mediaQuery.addEventListener('change', handleResponsive);
         });
     </script>
 </body>
