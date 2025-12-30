@@ -347,7 +347,8 @@
         flex-direction: column;
     }
 
-    .tour303001__tabs ul {
+    .tour303001__tabs.guide__tab ul {
+        display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         height: unset;
@@ -8699,6 +8700,7 @@
     .tour303001__tabs ul li {
         width: calc(50% - 0.5rem);
         font-size: 1rem;
+        line-height: 1.6rem;
     }
 
     .tour303001__listSettings {
