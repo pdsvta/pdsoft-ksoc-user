@@ -10421,11 +10421,16 @@
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
+    margin: 2rem 0;
 }
 
 .tour304001__itemInputCerti {
     width: calc((100% - 4rem)/3);
+}
+
+.tour304001__itemInputCerti.mb20 {
     margin-bottom: 2rem;
+
 }
 
 .tour304001__itemInputCerti.inputChild {
