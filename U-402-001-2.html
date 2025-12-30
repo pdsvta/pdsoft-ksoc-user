@@ -529,25 +529,27 @@
                 <div class="title">
                     <h2>주간일정</h2>
                 </div>
-                <div class="tour__group jc-sb p05">
-                    <div class="tour__group--input gap5">
-                        <div class="date-selector">
-                            <button class="arrow-btn prev">
-                                <img src="images/u-402-001/image02.png" alt="">
-                            </button>
-                            <span class="date-text">2025년 10월 </span>
-                            <button class="arrow-btn next">
-                                <img src="images/u-402-001/image01.png" alt="">
-                            </button>
+                <div class="tour__group p05 tour402002__groupFilter">
+                    <div class="tour__group--input gap5 tour402002__filterLeft">
+                        <div class="tour__group--input">
+                            <div class="date-selector">
+                                <button class="arrow-btn prev">
+                                    <img src="images/u-402-001/image02.png" alt="">
+                                </button>
+                                <span class="date-text">2025년 10월 </span>
+                                <button class="arrow-btn next">
+                                    <img src="images/u-402-001/image01.png" alt="">
+                                </button>
+                            </div>
                         </div>
-                        <button type="button" class="hpy-reg__btn hpy-reg__btn--min70 hpy-reg__btn--white">월간</button>
-                        <button type="button" class="hpy-reg__btn hpy-reg__btn--min70 hpy-reg__btn--white">연간</button>
-                    </div>
-                    <div class="tour__group--input gap5">
                         <select name="" id="" class="selectbox min100">
                             <option value="">전체</option>
                         </select>
-                        <input type="text" class="hpy__input hpy-reg__input--max180" placeholder="검색어를 입력하세요">
+                        <!-- <button type="button" class="hpy-reg__btn hpy-reg__btn--min70 hpy-reg__btn--white">월간</button>
+                        <button type="button" class="hpy-reg__btn hpy-reg__btn--min70 hpy-reg__btn--white">연간</button> -->
+                    </div>
+                    <div class="tour__group--input gap5 tour402002__filterRight">                       
+                        <input type="text" class="hpy__input" placeholder="검색어를 입력하세요">
                         <button type="button" class="hpy-reg__btn hpy-reg__btn--min70 ply-reg__btn--gray">검색</button>
                     </div>
                 </div>
@@ -587,7 +589,7 @@
                         <img src="images/u-402-001/image01.png" alt="">
                     </div>
                 </div>
-                <div class="hpy02__wrapper">
+                <div class="hpy02__wrapper tour402001__boxMain">
                     <div class="tour402001__table">
                         <table>
                             <colgroup>
@@ -1193,6 +1195,89 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const MOBILE_WIDTH = 767;
+            const wrapper = document.querySelector('.tour402001__table');
+            if (!wrapper) return;
+
+            let isMobileRendered = false;
+
+            const renderMobile = () => {
+                if (isMobileRendered) return;
+
+                const table = wrapper.querySelector('table');
+                if (!table) return;
+
+                const cardWrap = document.createElement('div');
+                cardWrap.className = 'mobile-cards';
+
+                table.querySelectorAll('tbody tr').forEach(tr => {
+
+                    // ===== 날짜 (rowspan) =====
+                    const dayTd = tr.querySelector('td.day');
+                    if (dayTd) {
+                        const dayEl = document.createElement('div');
+                        dayEl.className = 'mobile-day';
+                        dayEl.innerHTML = dayTd.innerHTML;
+                        cardWrap.appendChild(dayEl);
+                    }
+
+                    // ===== 데이터 =====
+                    const tds = [...tr.querySelectorAll('td')]
+                        .filter(td => !td.classList.contains('day'));
+
+                    if (tds.length < 4) return;
+
+                    const type = tds[0].innerHTML.trim();
+                    const title = tds[1].innerHTML.trim();
+                    const period = tds[2].innerHTML.trim();
+                    const place = tds[3].innerHTML.trim();
+
+                    const card = document.createElement('div');
+                    card.className = 'mobile-card';
+
+                    card.innerHTML = `
+                        <div class="mobile-card__title">${title}</div>
+                        <div class="mobile-card__body">
+                            <div class="mobile-card__row">
+                                <span>구분</span>
+                                <strong>${type}</strong>
+                            </div>
+                            <div class="mobile-card__row">
+                                <span>기간</span>
+                                <strong>${period}</strong>
+                            </div>
+                            <div class="mobile-card__row">
+                                <span>장소</span>
+                                <strong>${place}</strong>
+                            </div>
+                        </div>
+                    `;
+
+                    cardWrap.appendChild(card);
+                });
+
+                wrapper.innerHTML = '';
+                wrapper.appendChild(cardWrap);
+
+                isMobileRendered = true;
+            };
+
+            const checkScreen = () => {
+                if (window.innerWidth <= MOBILE_WIDTH) {
+                    renderMobile();
+                }
+            };
+
+            // 최초 진입
+            checkScreen();
+
+            // resize / rotate / devtool toggle
+            window.addEventListener('resize', checkScreen);
         });
     </script>
 </body>
