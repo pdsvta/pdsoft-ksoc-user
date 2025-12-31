@@ -526,24 +526,24 @@
         <!-- contents -->
         <section class="indv">
             <div class="inner">
-                <div class="title indv__title">
+                <div class="title indv__title tour305001__title">
                     <h2>전화번호 안내</h2>
                 </div>
-                <div class="indv__filter">
-                    <select name="" id="" class="selectbox min160">
+                <div class="indv__filter tour305001__groupFilter">
+                    <select name="" id="" class="selectbox">
                         <option value="">선택</option>
                     </select>
-                    <button type="button" class="hpy-reg__btn hpy-reg__btn--min50">조회</button>
-                    <button type="button" class="hpy-reg__btn hpy-reg__btn--min180">회원종목단체 연락처 다운로드</button>
+                    <button type="button" class="hpy-reg__btn tour305001__btn1">조회</button>
+                    <button type="button" class="hpy-reg__btn tour305001__btn2">회원종목단체 연락처 다운로드</button>
                 </div>
                 <article class="indv__article">
                     <div class="indv__block">
-                        <div class="indv__grouptit">
+                        <div class="indv__grouptit tour305001__grouptit">
                             <h3 class="indv__tit">시스템 장애처리</h3>
                             <p>연락처 2건</p>
                         </div>
-                        <div class="hpy02__box p2">
-                            <table class="hpy02__table tour204002__table bd height-auto">
+                        <div class="hpy02__box p2 tour305001__boxChild">
+                            <table class="hpy02__table tour204002__table tour305001__table bd height-auto">
                                 <colgroup>
                                     <col style="width: 46rem;">
                                     <col style="width: 46rem;">
@@ -579,31 +579,31 @@
                     </div>
 
                     <div class="indv__block indv__block--mt20">
-                        <div class="indv__grouptit">
+                        <div class="indv__grouptit tour305001__grouptit">
                             <h3 class="indv__tit">회원종목단체</h3>
                             <p>연락처</p>
                         </div>
-                        <div class="indv__305--line">
+                        <div class="indv__305--line tour305001__boxLine">
                             종목을 선택하면 회원종목단체 연락처를 조회할 수 있습니다.
                         </div>
                     </div>
                     <div class="indv__block indv__block--mt20">
-                        <div class="indv__grouptit">
+                        <div class="indv__grouptit tour305001__grouptit">
                             <h3 class="indv__tit">시도종목단체</h3>
                             <p>연락처</p>
                         </div>
-                        <div class="indv__305--line p27">
+                        <div class="indv__305--line p27 tour305001__boxLine">
                             종목을 선택하면 시도종목단체 연락처를 조회할 수 있습니다. <br>
                             시도종목단체 연락처에 대한 궁금한 사항은 회원종목단체에 문의해 주시기 바랍니다.
                         </div>
                     </div>
                     <div class="indv__block indv__block--mt20">
-                        <div class="indv__grouptit">
+                        <div class="indv__grouptit tour305001__grouptit">
                             <h3 class="indv__tit">시도체육회</h3>
                             <p>연락처 17건</p>
                         </div>
-                        <div class="hpy02__box p2">
-                            <table class="hpy02__table tour305001__table bd">
+                        <div class="hpy02__box tour403005__box p2">
+                            <table class="hpy02__table tour305001__table bd tour402004__table tour401013__table">
                                 <colgroup>
                                     <col style="width: 8rem;">
                                     <col style="width: 26rem;">
@@ -1263,6 +1263,76 @@
 
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+            // lưu HTML gốc để restore
+            const originalHTML = table.innerHTML;
+
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
+
+                table.classList.add('is-mobile');
+
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
+
+                const numberIndex = headers.indexOf('번호');
+                const schoolIndex = headers.indexOf('시도체육회명');
+
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
+
+                    // title
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    // remove 번호 + 제목
+                    [numberIndex, schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== numberIndex && i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
+                });
+            }
+
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
+            }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            // chạy lần đầu
+            handleResponsive(mediaQuery);
+
+            // lắng nghe thay đổi viewport
+            mediaQuery.addEventListener('change', handleResponsive);
+        });
     </script>
 </body>
 
