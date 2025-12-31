@@ -13690,3 +13690,11 @@
 .tour304001__setupWallet .tour304001__close button {
     position: unset;
 }
+
+.tour401013__boxTable {
+    padding: 0 2rem;
+}
+
+.tour401013__groupInput.p02 {
+    padding: 0 2rem;
+}

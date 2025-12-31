@@ -6822,6 +6822,7 @@
 
     .tour402001__box {
         height: 6rem;
+        padding: 0;
     }
 
     .tour402001__item {
@@ -7225,12 +7226,19 @@
     }
 
     .tour401013__groupInput .hpy__select--min150 {
-        width: 48%;
+        width: 49%;
         min-width: unset;
     }
 
-    .tour401013__inputChild {
-        width: 67%;
+    .tour401013__groupInput.bd0 {
+        border: none;
+        padding: 0;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .tour401013__groupInput.p02 {
+        padding: 2rem;
     }
 
     .tour401013__boxTable {
@@ -8906,6 +8914,7 @@
 
     .hpy02__wrapper.mbbd {
         border: 1px solid #ddd;
+        border-radius: 2rem;
     }
 
     .hpy02__wrapper--401005 {
