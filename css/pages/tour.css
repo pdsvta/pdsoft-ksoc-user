@@ -13698,3 +13698,7 @@
 .tour401013__groupInput.p02 {
     padding: 0 2rem;
 }
+
+.tour402002__box .section:last-child {
+    border-top: none;
+}
