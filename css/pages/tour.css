@@ -4321,6 +4321,14 @@
     margin-bottom: 5rem;
 }
 
+.tour401008__boxfilter {
+    width: 100%;
+}
+
+.tour401008__boxfilter .tour__group--input {
+    gap: 3rem;
+}
+
 .tour401008__text {
     text-align: center;
     font-size: 2.1rem;
@@ -9268,6 +9276,10 @@
     cursor: pointer;
 }
 
+.tour505001__total-mb {
+    display: none;
+}
+
 .tour506001__item {
     width: calc((100% - 5rem)/3);
     display: flex;
@@ -9320,6 +9332,9 @@
 
 .tour509001__btns button {
     font-weight: 600;
+    width: 50%;
+    min-width: unset;
+    padding: 0 0.5rem;
 }
 
 .tour509001__item p {
