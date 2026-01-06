@@ -530,7 +530,7 @@
                     <h2>홍보영상</h2>
                 </div>
                 <div class="tour402004__filter p05 mb20">
-                    <select name="" id="" class="selectbox min130">
+                    <select name="" id="" class="selectbox min130 tour501001__select">
                         <option value="">9개씩 보기</option>
                     </select>
                     <div class="tour__group--input gap5">
@@ -1136,95 +1136,76 @@
         </div>
     </div>
     <script>
-        $(document).on('click', '.menu-btn', function () {
-            const $popup = $('.popup-main').parent().addClass('on');
+        $(document).ready(function () {
 
-            const $firstMenu = $('.popup-main__menu-item')
-                .removeClass('popup-main__menu-item--active')
-                .first()
-                .addClass('popup-main__menu-item--active');
+            $(document).on('click', '.menu-btn', function () {
+                const $popupWrapper = $('.popup-main').parent().addClass('on');
 
-            const firstTabId = $firstMenu.data('tab');
+                const $firstMenu = $('.popup-main__menu-item')
+                    .removeClass('popup-main__menu-item--active')
+                    .first()
+                    .addClass('popup-main__menu-item--active');
 
-            $('.popup-main__tab')
-                .stop(true, true)
-                .hide()
-                .removeClass('popup-main__tab--active')
-                .filter('#' + firstTabId)
-            [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
-                .addClass('popup-main__tab--active');
+                const firstTabId = $firstMenu.data('tab');
 
-            if (window.innerWidth < 1200) {
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-            } else {
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
-            }
-        });
-        $(document).on('click', '.popup-close', function () {
-            $('.popup-main').parent().removeClass('on');
-        });
+                $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
 
+                if (window.innerWidth < 1200) {
+                    $('#' + firstTabId).slideDown().addClass('popup-main__tab--active');
 
-        function activateMobileAccordion() {
-            if (window.innerWidth < 1200) {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    if ($(this).hasClass('popup-main__menu-item--active')) {
-                        $(this).removeClass('popup-main__menu-item--active');
-                        $('#' + tabId).slideUp();
-                        return;
-                    }
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').slideUp();
-                    $('#' + tabId).slideDown();
-                });
-
-                $('.popup-main__col').removeClass('open');
-                $('.popup-main__links').hide();
-
-            } else {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    let tabId = $(this).data('tab');
-
-                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                    $(this).addClass('popup-main__menu-item--active');
-
-                    $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
-                    $('#' + tabId).fadeIn(150).addClass('popup-main__tab--active');
+                    $('.popup-main__col').removeClass('open');
+                    $('.popup-main__links').hide();
+                } else {
+                    $('#' + firstTabId).fadeIn(150).addClass('popup-main__tab--active');
 
                     $('.popup-main__col').addClass('open');
                     $('.popup-main__links').show();
+                }
+            });
+
+            $(document).on('click', '.popup-close', function () {
+                $('.popup-main').parent().removeClass('on');
+            });
+
+            function activateMenuItems() {
+                $('.popup-main__menu-item').off('click').on('click', function () {
+                    const tabId = $(this).data('tab');
+                    const $tab = $('#' + tabId);
+
+                    if (window.innerWidth >= 1200) {
+                        $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
+                        $tab.fadeIn(150).addClass('popup-main__tab--active');
+
+                        $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                        $(this).addClass('popup-main__menu-item--active');
+
+                        $('.popup-main__col').addClass('open');
+                        $('.popup-main__links').show();
+                    } else {
+                        if (!$(this).hasClass('popup-main__menu-item--active')) {
+                            $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                            $(this).addClass('popup-main__menu-item--active');
+
+                            $('.popup-main__tab').slideUp().removeClass('popup-main__tab--active');
+                            $tab.slideDown().addClass('popup-main__tab--active');
+                        }
+
+                        $('.popup-main__col').removeClass('open');
+                        $('.popup-main__links').hide();
+                    }
                 });
-
-                $('.popup-main__col').addClass('open');
-                $('.popup-main__links').show();
             }
-        }
 
-        $(document).ready(function () {
-            activateMobileAccordion();
-        });
+            activateMenuItems();
 
-        $(window).on('resize', function () {
-            activateMobileAccordion();
-        });
-
-        $(document).ready(function () {
-
-            $(document).on('click', '.popup-main__col-title', function (e) {
-                e.preventDefault();
+            $(window).on('resize', function () {
+                activateMenuItems();
             });
 
             $(document).on('click', '.popup-main__col', function (e) {
-
                 if (window.innerWidth >= 1200) return;
-                let submenu = $(this).find('.popup-main__links');
+
+                const submenu = $(this).find('.popup-main__links');
                 if (submenu.length === 0) return;
 
                 e.stopPropagation();
@@ -1250,7 +1231,12 @@
                 e.stopPropagation();
             });
 
+            $(document).on('click', '.popup-main__col-title', function (e) {
+                e.preventDefault();
+            });
+
         });
+
     </script>
 </body>
 

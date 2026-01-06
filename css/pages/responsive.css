@@ -10689,6 +10689,563 @@
     .tour003012__itemInput {
         width: 48%;
     }
+
+    .tour405007__table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour405007__table thead,
+    .tour405007__table colgroup {
+        display: none;
+    }
+
+    .tour405007__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour405007__table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+    }
+
+    .tour405007__table tbody tr td:first-child {
+        display: none;
+    }
+
+    .tour405007__table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .tour405007__table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+    }
+
+
+    .tour405007__table tbody tr td:nth-child(3)::before {
+        content: "작성자";
+    }
+
+    .tour405007__table tbody tr td:nth-child(4)::before {
+        content: "작성일";
+    }
+
+    .tour405007__table tbody tr td:nth-child(5)::before {
+        content: "조회수";
+    }
+
+    .tour405007__table tbody tr td:nth-child(4)::before,
+    .tour405007__table tbody tr td:nth-child(3)::before,
+    .tour405007__table tbody tr td:nth-child(5)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .tour405007__wrapper {
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 3rem 2rem 2rem;
+    }
+
+    .tour404007__table {
+        margin-top: 3rem;
+    }
+
+    .tour405007__select1 {
+        position: absolute;
+        top: 15rem;
+        right: 4rem;
+        font-size: 1.3rem;
+    }
+
+    .tour405006__filter {
+        margin: 0 2rem 2rem;
+    }
+
+    .tour405006__btnFilter {
+        min-width: 5rem;
+        font-size: 1.3rem;
+    }
+
+    .tour405006__select2 {
+        font-size: 1.3rem;
+    }
+
+    .hpy406001__base {
+        width: calc(100% - 7rem);
+        font-size: 1.2rem;
+        height: 4rem;
+        margin: 0 0 2rem;
+        margin-left: auto;
+    }
+
+    .hpy406001__box {
+        padding: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+    }
+
+    .hpy406001__label {
+        height: 4rem;
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+
+    .hpy406001__row {
+        gap: 1rem;
+    }
+
+    .hpy406001__content {
+        font-size: 1.2rem;
+        height: 4rem;
+        padding: 0 2rem;
+        line-height: 100%;
+    }
+
+    .hpy406001__content--blue {
+        border-radius: 2rem;
+    }
+
+    .hpy406001__arrow1 img,
+    .hpy406001__arrow img {
+        height: 1rem;
+        width: auto;
+    }
+
+    .hpy406001__arrow1,
+    .hpy406001__arrow {
+        margin: .5rem 0 .5rem 7rem;
+    }
+
+    .hpy406001__strategy-title {
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+
+    .hpy406001__strategy-list li {
+        font-size: 1rem;
+        padding: 0 1rem;
+        gap: .5rem;
+        height: 3rem;
+    }
+
+    .hpy406001__num {
+        font-size: 1rem;
+        width: 14px;
+        height: 14px;
+    }
+
+    .hpy406001__strategy-list {
+        padding: 1rem;
+        gap: .5rem;
+    }
+
+    .hpy406001__strategy {
+        gap: 1rem;
+    }
+
+    .hpy406001__icon-item img {
+        height: 2rem;
+        width: auto;
+    }
+
+    .hpy406001__icon-list {
+        gap: .5rem;
+        width: calc(100% - 7rem);
+        margin: 0 0 2rem;
+        margin-left: auto;
+    }
+
+    .hpy406001__icon-item {
+        font-size: .9rem;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .hpy406001__system-head {
+        font-size: 1.2rem;
+        gap: 1rem;
+        height: 3.5rem;
+        padding-left: 2rem;
+        border-radius: .8rem .8rem 0 0;
+    }
+
+    .hpy406001__system-head img {
+        height: 1.5rem;
+    }
+
+    .hpy406001__system-text {
+        padding: 2rem;
+        gap: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .hpy406002__table colgroup,
+    .hpy406002__table thead {
+        display: none;
+    }
+
+    .hpy406002__table tbody td {
+        padding: 2rem;
+        border-radius: 2rem;
+        border: none;
+        font-size: 1.2rem;
+        line-height: 138%;
+    }
+
+    .hpy406002__box .hpy406002__table td {
+        height: auto;
+    }
+
+    .hpy406002__box {
+        padding: 0;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+    }
+
+    .hpy406002__box .hpy406002__table {
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .tour4070011__table table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour4070011__table table thead,
+    .tour4070011__table table colgroup {
+        display: none;
+    }
+
+    .tour4070011__table table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour4070011__table table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.3rem;
+    }
+
+    .tour4070011__table table tbody tr td:first-child {
+        display: none;
+    }
+
+    .tour4070011__table table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(3) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(2) {
+        order: 2;
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(4) {
+        order: 3;
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(5) {
+        order: 4;
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(6) {
+        order: 5;
+    }
+
+
+    .tour4070011__table table tbody tr td:nth-child(2)::before {
+        content: "구분";
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(4)::before {
+        content: "단체명";
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(5)::before {
+        content: "작성일";
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(6)::before {
+        content: "조회수";
+    }
+
+    .tour4070011__table table tbody tr td:nth-child(4)::before,
+    .tour4070011__table table tbody tr td:nth-child(2)::before,
+    .tour4070011__table table tbody tr td:nth-child(5)::before,
+    .tour4070011__table table tbody tr td:nth-child(6)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .tour4070011__box {
+        padding: 4rem 2rem 2rem;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+    }
+
+    .tour4070011__box .tour402004__filter.mb20 {
+        margin-bottom: 2.5rem;
+    }
+
+    .tour4070011__select {
+        position: absolute;
+        top: 24rem;
+        right: 4rem;
+
+    }
+
+    .tour4070011__filter {
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+    }
+
+    .tour4070011__filter.tour402004__filter.p05 {
+        padding: 2rem;
+    }
+
+    .tour4070011__filter .tour__group--input {
+        flex-wrap: wrap;
+    }
+
+    .tour4070011__filter .tour__group--input .tour__group--input.nowrap {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .tour4070011__filter .tour__group--input .tour__group--input.nowrap input {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .tour4070011__filter .tour__group--input .selectbox {
+        width: calc((100% - .5rem)/2);
+    }
+
+    .tour407002__table table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour407002__table table thead,
+    .tour407002__table table colgroup {
+        display: none;
+    }
+
+    .tour407002__table table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour407002__table table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.3rem;
+    }
+
+    .tour407002__table table tbody tr td:first-child {
+        display: none;
+    }
+
+    .tour407002__table table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .tour407002__table table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+    }
+
+
+
+    .tour407002__table table tbody tr td:nth-child(3)::before {
+        content: "단체명";
+    }
+
+    .tour407002__table table tbody tr td:nth-child(4)::before {
+        content: "작성일";
+    }
+
+    .tour407002__table table tbody tr td:nth-child(5)::before {
+        content: "조회수";
+    }
+
+    .tour407002__table table tbody tr td:nth-child(4)::before,
+    .tour407002__table table tbody tr td:nth-child(2)::before,
+    .tour407002__table table tbody tr td:nth-child(5)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .tour407002__wrapper {
+        padding: 3rem 2rem 2rem;
+
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+    }
+
+    .tour407002__filter .hpy-reg__btn.hpy-reg__btn--min70 {
+        min-width: 5rem;
+    }
+
+    .tour407002__filter.p05 {
+        padding: 0 2rem;
+    }
+
+    .tour407002__select {
+        position: absolute;
+        top: 24rem;
+        right: 4rem;
+    }
+
+    .tour407002__wrapper .tour402004__filter.mb20 {
+        margin-bottom: 3rem;
+    }
+
+    .tour501001__box {
+        padding: 8rem 2rem 2rem;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+        gap: 3rem;
+    }
+
+    .tour501001__item {
+        width: 100%;
+    }
+
+    .tour501001__icon {
+        margin-bottom: 0;
+    }
+
+    .tour501001__item p {
+        padding: 2rem 0 1rem;
+    }
+
+    .tour501001__number {
+        padding: 0;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .tour402004__filter.p05 {
+        padding: 0 2rem;
+    }
+
+    .tour501001__select {
+        position: absolute;
+        top: 15rem;
+        right: 4rem;
+    }
+
+    .tour502001__tabs {
+        display: flex;
+    }
+
+    .tour502001__btnTab {
+        width: calc((100% - 2rem) / 3);
+    }
+
+    .tour502001__filterChild {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour502001__itemFilterChild {
+        width: 100%;
+    }
+
+    .tour502001__wrapper {
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .tour502001__filter.tour402004__filter {
+        margin-bottom: 0;
+    }
+
+    .tour501001__box.p120 {
+        padding: 2rem;
+    }
+
+    .tour502001__itemFilter label {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 414px) {

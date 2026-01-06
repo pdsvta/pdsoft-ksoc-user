@@ -8352,12 +8352,13 @@
 }
 
 .tour502001__btnTab {
-    width: 20%;
+    width: calc((100% - 4rem)/5);
     min-width: unset;
 }
 
 .tour502001__tabs {
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .tour502001__filter {
