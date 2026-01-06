@@ -118,6 +118,15 @@
     .tour405004__itemHandbook img {
         width: 100%;
     }
+
+    .tour003012__boxRadio {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .tour003012__itemRadio {
+        width: calc(33% - 1.4rem);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -638,6 +647,66 @@
 
     .tour509001__item {
         width: calc((100% - 4rem) / 3);
+    }
+
+    .tour003005__filter.fl-row .hpy004003__btn {
+        width: 28%;
+    }
+
+    .tour003005__box .ply-pop__scroll {
+        width: 100%;
+    }
+
+    .tour003005__checked {
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 3rem 0 5rem 2rem;
+        flex-direction: column;
+    }
+
+    .tour003006__card {
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    .tour003008__title {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .tour003009__title.hpy004004__title {
+        padding: 0 0 3rem;
+    }
+
+    .tour003009__row {
+        padding: 0 0 2rem;
+    }
+
+    .tour003009__groupInput,
+    .tour003009__inputTel {
+        padding: 0;
+    }
+
+    .tour003009__inputTel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour003009__groupBottom .ply-reg__agree.pl30 {
+        padding-left: 0;
+    }
+
+    .tour003010__wrapper {
+        min-height: unset;
+    }
+
+    .tour003012__itemInput {
+        width: 40%;
+    }
+
+    .tour003012__itemInput input {
+        width: 100%;
     }
 }
 
@@ -10401,6 +10470,225 @@
     .tour405003__service img {
         width: 100%;
     }
+
+    .tour003002__box {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .tour003003__form {
+        padding: 3rem;
+    }
+
+    .tour003004__box {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .tour003004__item {
+        width: 100%;
+    }
+
+    .tour003005__title,
+    .tour003005__text {
+        padding: 0;
+    }
+
+    .tour003005__title.bd-bt {
+        padding: 0 0 2rem;
+    }
+
+    .tour003005__filter.fl-row .hpy004003__btn {
+        width: 46%;
+    }
+
+    .tour003005__box .ply-pop__scroll_inner {
+        padding: 0 2rem;
+    }
+
+    .tour003005__checked {
+        padding: 3rem 0 5rem 0rem;
+    }
+
+    .tour003005__boxTable {
+        padding: 0;
+    }
+
+    .tour003005__table {
+        width: 100%;
+        border-collapse: collapse;
+        border-top: 1px solid #ddd;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .tour003005__table thead {
+        display: none;
+    }
+
+    .tour003005__table,
+    .tour003005__table tbody,
+    .tour003005__table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .tour003005__boxTable .tour003005__table td {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        height: 10rem;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .tour003005__table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tour003005__table tbody tr:last-child td:last-child {
+        border-bottom: 0;
+    }
+
+    .tour003005__table td::before {
+        content: attr(data-label);
+        flex: 0 0 110px;
+        font-weight: 600;
+        color: #111111;
+        white-space: nowrap;
+        background-color: #F5F5F5;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tour003005__table td.bold {
+        font-weight: 600;
+    }
+
+    .tour003006__checked {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 3rem 2rem 0;
+    }
+
+    .tour003005__mainBox {
+        width: 100%;
+    }
+
+    .tour003008__box.mt30,
+    .tour003008__box.mt10 {
+        margin: 2rem 0 0;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .tour003008__row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .tour003008__row .hpy003008__group {
+        width: 100%;
+    }
+
+    .tour003008__row .hpy003008__group .bold {
+        width: 10rem;
+    }
+
+    .tour003008__row .hpy003008__group .desc {
+        flex: 1;
+    }
+
+    .tour003008__title {
+        padding: 0 0 2rem;
+    }
+
+    .tour003008__text {
+        padding: 0;
+    }
+
+    .tour003009__title p {
+        font-size: 1.1rem;
+    }
+
+    .tour003009__row {
+        flex-direction: column;
+    }
+
+    .tour003009__row .hpy003009__row1,
+    .tour003009__row .hpy003009__row2 {
+        width: 100%;
+    }
+
+    .tour003009__groupBottom {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .tour003009__groupCard {
+        gap: 0.5rem;
+    }
+
+    .tour003010__form input {
+        width: 100%;
+    }
+
+    .tour003011__boxTitle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour003011__titleForm.indv__tit {
+        margin-bottom: 0;
+    }
+
+    .tour003011__form {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .tour003011__form .tour003006__itemForm,
+    .tour003011__form .tour003006__formChild {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .tour003012__content .tour003007__steps {
+        margin: 1.5rem 0rem 2.2rem 0rem;
+    }
+
+    .tour003012__noteCheck {
+        margin-left: 0;
+    }
+
+    .tour003012__titleNote {
+        font-size: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .tour003012__itemRadio {
+        width: 100%;
+    }
+
+    .tour003012__form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tour003012__itemInput {
+        width: 48%;
+    }
 }
 
 @media (max-width: 414px) {
@@ -10622,6 +10910,19 @@
 
     .tour509001__btns button {
         font-size: 1rem;
+    }
+
+    .tour003008__row .hpy003008__group .bold {
+        font-size: 1.3rem;
+    }
+
+    .tour003008__row .hpy003008__group .desc {
+        font-size: 1.3rem;
+    }
+
+    .tour003009__title.hpy004004__title {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 

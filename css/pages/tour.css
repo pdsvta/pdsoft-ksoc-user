@@ -8689,7 +8689,6 @@
 
 .tour003006__form {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     gap: 2.8rem;
 }
@@ -8702,7 +8701,7 @@
 
 .tour003006__itemForm,
 .tour003006__formChild {
-    width: 30rem;
+    width: calc(33% - 1.6rem);
     margin-bottom: 2rem;
 }
 
@@ -8717,7 +8716,7 @@
 }
 
 .tour003006__itemForm input[type="text"] {
-    width: 30rem;
+    width: 100%;
     height: 4rem;
     margin: 1rem 0 0 0;
     border: 1px solid #DDDDDD;
@@ -8729,7 +8728,7 @@
 }
 
 .tour003006__itemFormChild input[type="text"] {
-    width: 14rem;
+    width: 100%;
     height: 4rem;
     margin: 1rem 0;
     border: 1px solid #DDDDDD;
@@ -12434,6 +12433,12 @@
     display: flex;
     gap: 2rem;
     padding: 0 2rem 2rem;
+    width: 100%;
+}
+
+.hpy003009__row1,
+.hpy003009__row2 {
+    width: 50%;
 }
 
 .hpy003009__row1 p {
@@ -12460,12 +12465,21 @@
     padding-right: .5rem;
 }
 
+.ply102007__group .ply-reg__card,
+.ply102007__group .ply-reg__card {
+    width: 100%;
+}
+
 .hpy004001__wrapper .hpy004004__title p {
     display: flex;
     gap: .5rem;
     font-size: 1.5rem;
     font-weight: 600;
     color: #111;
+}
+
+.tour003009__inputTel {
+    align-items: flex-end;
 }
 
 .hpy004001__wrapper .hpy004004__title p img {
