@@ -7959,6 +7959,10 @@
     line-height: 2.5rem;
 }
 
+.tour004006__table .hpy02__table tbody td.text-mb {
+    display: none;
+}
+
 .tour101006__itemStep.ply-bsc__item {
     margin-top: 0;
 }
@@ -13479,6 +13483,10 @@
 
 .history-con>ul .history-con__left .item-list {
     padding-right: 1rem;
+}
+
+.history-con>ul .history-con__right .item-list {
+    padding-left: 2rem;
 }
 
 .history-con>ul .history-con__right {

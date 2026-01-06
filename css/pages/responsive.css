@@ -217,6 +217,10 @@
         left: 350px;
         height: 76px;
     }
+
+    .tour004006__filter .hpy004003__btn {
+        width: calc(15rem - 0.5rem);
+    }
 }
 
 @media (max-width: 912px) {
@@ -707,6 +711,18 @@
 
     .tour003012__itemInput input {
         width: 100%;
+    }
+
+    .hpy004001__wrapper.hpy02__wrapper {
+        padding: 5rem 2rem;
+    }
+
+    .hpy004001__box {
+        gap: 2rem;
+    }
+
+    .hpy004001__info>div {
+        gap: 4rem;
     }
 }
 
@@ -7686,6 +7702,7 @@
         font-weight: 500;
         background-color: #fff;
         color: #666666;
+        text-align: left;
     }
 
     .tour401013__table tr td:last-child {
@@ -11246,6 +11263,211 @@
     .tour502001__itemFilter label {
         font-size: 1.3rem;
     }
+
+    .hpy004001__wrapper.hpy02__wrapper {
+        padding: 2rem;
+    }
+
+    .hpy004004__title {
+        padding: 0 0 2rem;
+    }
+
+    .hpy004001__box {
+        padding: 0;
+    }
+
+    .hpy004001__info>div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hpy004001__avatar {
+        width: 10rem;
+        height: 12rem;
+    }
+
+    .hpy004001__section.gap55 {
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: max-content 1fr;
+    }
+
+    .hpy004001__time {
+        padding: 8rem 0;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .hpy004001__time img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .hpy004001__text p {
+        font-size: 1.7rem;
+    }
+
+    .hpy004001__year {
+        padding: 4rem 0;
+    }
+
+    .history-con>ul>li {
+        width: 100%;
+    }
+
+    /* .history-con>ul>li .item.mb12,
+    .history-con>ul>li .item.mb15 {
+        margin-bottom: unset;
+    } */
+
+    .history-con>ul>li .item-list__ch h5 {
+        font-size: 1.3rem;
+    }
+
+    .history-con>ul>li .item-list__ch .line {
+        font-size: 1.2rem;
+    }
+
+    .history-con>ul .history-con__left {
+        text-align: left;
+        padding-left: 140px;
+        padding-right: 0;
+    }
+
+    .history-con>ul .history-con__left .item {
+        top: 3rem;
+    }
+
+    .history-con>ul .history-con__left .item.mb12 {
+        top: 0rem;
+    }
+
+    .history-con>ul .history-con__left .item.mb15 {
+        top: 1rem;
+    }
+
+    .history-con>ul .history-con__left .item-bar {
+        left: 16%;
+    }
+
+    .history-con>ul .history-con__left .item-tit::before {
+        left: -22px;
+    }
+
+    .history-con>ul .history-con__left .item-tit::after {
+        left: -72px;
+    }
+
+    .history-con>ul .history-con__left .item-tit .blue {
+        background: url(../../images/u-004-001/back1-mb.png);
+    }
+
+    .history-con>ul .history-con__left .item-tit .red {
+        background: url(../../images/u-004-001/back2-mb.png);
+    }
+
+    .history-con>ul .history-con__left .item-tit .yellow {
+        background: url(../../images/u-004-001/back3-mb.png);
+    }
+
+    .history-con>ul .history-con__right {
+        position: absolute;
+        padding-left: 104px;
+    }
+
+    .history-con>ul .history-con__right .item {
+        top: 5rem;
+    }
+
+    .history-con>ul .history-con__right .item.mb12 {
+        top: 2rem;
+    }
+
+    .history-con>ul .history-con__right .item-list {
+        padding-left: 3.2rem;
+    }
+
+    .popup004002-pop {
+        padding: 2rem;
+    }
+
+    .popup004002__content {
+        margin-top: 3rem;
+    }
+
+    .popup004002__group-title h4 {
+        font-size: 1.3rem;
+        width: fit-content;
+    }
+
+    .popup004002__group-desc {
+        font-size: 1rem;
+        flex: 1;
+    }
+
+    .tour004006__filter {
+        padding: 0 0 2rem;
+    }
+
+    .tour004006__box {
+        flex-direction: column;
+    }
+
+    .tour004006__icon img {
+        transform: rotate(90deg);
+    }
+
+    .tour004006__text.hpy004004__text {
+        padding: 0;
+    }
+
+    .tour004006__text.hpy004004__text h4 {
+        font-size: 1.5rem;
+    }
+
+    .tour004006__table {
+        padding: 0 0 3rem;
+    }
+
+    .tour004006__note {
+        padding: 0;
+        overflow-wrap: break-word;
+    }
+
+    .tour004006__table .hpy02__table tbody tr:last-child td:last-child {
+        border-bottom: 0;
+    }
+
+    .tour004006__table .hpy02__table tbody td.text-mb {
+        display: flex;
+    }
+
+    .tour004007__title h3 {
+        font-size: 1.6rem;
+    }
+
+    .tour004007__list {
+        padding: 0;
+    }
+
+    .tour004007__list .hpy004004__item {
+        width: calc((100% - 2rem) / 2);
+    }
+
+    .tour004007__list .hpy004004__item p {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .tour004014__text {
+        padding: 0;
+    }
+
+    .tour004014__btn button {
+        min-width: unset;
+        width: fit-content;
+        padding: 0 1rem;
+    }
 }
 
 @media (max-width: 414px) {
@@ -11343,6 +11565,19 @@
         bottom: 330px;
         left: 25px;
         height: 68px;
+    }
+
+    .hpy004001__box {
+        flex-direction: column;
+    }
+
+    .hpy004001__avatar {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .history-con>ul .history-con__left {
+        padding-left: 134px;
     }
 }
 
@@ -11481,6 +11716,18 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .history-con>ul .history-con__left {
+        padding-left: 130px;
+    }
+
+    .history-con>ul .history-con__right {
+        padding-left: 98px;
+    }
+
+    .tour004014__filter .hpy004003__btn {
+        width: 15rem;
+    }
 }
 
 @media (max-width: 375px) {
@@ -11608,6 +11855,18 @@
         left: 22px;
         height: 62px;
     }
+
+    .history-con>ul .history-con__right .item.mb12 {
+        top: 0rem;
+    }
+
+    .popup004002 {
+        overflow-y: scroll;
+    }
+
+    .popup004002-pop {
+        top: 55%;
+    }
 }
 
 @media (max-width: 360px) {
@@ -11720,6 +11979,22 @@
     .indv__guide .linkBtn_07_4 {
         right: 17px;
         top: 385px;
+    }
+
+    .history-con>ul .history-con__left {
+        padding-left: 125px;
+    }
+
+    .history-con>ul .history-con__right {
+        padding-left: 94px;
+    }
+
+    .history-con>ul .history-con__right .item.mb12 {
+        top: 1.5rem;
+    }
+
+    .history-con>ul .history-con__right .item {
+        top: 4rem;
     }
 }
 
