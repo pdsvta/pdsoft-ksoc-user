@@ -530,7 +530,7 @@
                 <div class="title">
                     <h2>맞춤정보</h2>
                 </div>
-                <div class="hpy004003__filter">
+                <div class="hpy004003__filter tour004006__filter">
                     <div class="hpy004003__btn">
                         국민체력 100
                     </div>
@@ -553,11 +553,11 @@
                         카드뉴스
                     </div>
                 </div>
-                <div class="hpy02__wrapper hpy004005__wrapper">
+                <div class="hpy02__wrapper hpy004005__wrapper tour403001__boxMain">
                     <div class="hpy02__title hpy02__title--pd20">
                         <h3>스포츠 강좌이용권</h3>
                     </div>
-                    <div class="hpy004004__text bd-bt">
+                    <div class="hpy004004__text bd-bt tour004006__text">
                         <h4>스포츠강좌이용권이란?</h4>
                         <p>취약계층 유∙청소년의 건전한 여가활동을 통한 삶의 질 향상과 건강증진을 위하여 국민체육진흥 공단에서 지원하는 강좌이용권입니다.</p>
                         <h4>지원대상</h4>
@@ -583,7 +583,7 @@
                     <div class="hpy02__title">
                         <h3>신청/선정절차 </h3>
                     </div>
-                    <div class="hpy004005__box">
+                    <div class="hpy004005__box tour004006__box">
                         <div class="hpy004005__item">
                             <p>개인이용권 <span>신청</span></p>
                             <div class="hpy004005__content">
@@ -592,7 +592,7 @@
                                 시ㆍ군ㆍ구청 방문 접수
                             </div>
                         </div>
-                        <div class="hpy004005__icon">
+                        <div class="hpy004005__icon tour004006__icon">
                             <img src="images/u-004-003/icon.png" alt="">
                         </div>
                         <div class="hpy004005__item">
@@ -604,7 +604,7 @@
                                 문자메시지(알림톡))
                             </div>
                         </div>
-                        <div class="hpy004005__icon">
+                        <div class="hpy004005__icon tour004006__icon">
                             <img src="images/u-004-003/icon.png" alt="">
                         </div>
                         <div class="hpy004005__item">
@@ -622,14 +622,14 @@
                     <div class="hpy02__title hpy02__title--pd20">
                         <h3>선정기준 </h3>
                     </div>
-                    <div class="hpy004004__text">
+                    <div class="hpy004004__text tour004006__text">
                         <ul class="p002">
                             <li>스포츠강좌이용권 누적 지원기간, 소득, 범죄피해 여부를 확인하여 선정</li>
                             <li>선정순위</li>
                         </ul>
                     </div>
-                    <div class="hpy004005__table">
-                        <table class="hpy02__table">
+                    <div class="hpy004005__table tour004006__table">
+                        <table class="hpy02__table tour401013__table">
                             <colgroup>
                                 <col style="width: 18rem;">
                                 <col style="width: 32rem;">
@@ -663,6 +663,7 @@
 
                                 <tr>
                                     <td>2순위</td>
+                                    <td class="text-mb">신규 및 30개월 미만</td>
                                     <td>차상위계층 및 법정한부모 지원가구</td>
                                 </tr>
 
@@ -675,6 +676,7 @@
 
                                 <tr>
                                     <td>4순위</td>
+                                    <td class="text-mb">30개월 이상</td>
                                     <td>차상위계층 및 법정한부모 지원가구</td>
                                 </tr>
                             </tbody>
@@ -684,7 +686,7 @@
                     <div class="hpy02__title hpy02__title--pd20">
                         <h3>카드발급 </h3>
                     </div>
-                    <div class="hpy004005__note">
+                    <div class="hpy004005__note tour004006__note">
                         (온라인) 이용권 선정 후 아래 URL을 통해 직접 신청가능 <br>
                         - https://www.shinhancard.com/pconts/html/card/apply/check/1196087_2206.html <br>
                         * 이용권 신청시 카드발급자 정보와 동일하게 신청필요 <br>
@@ -1230,6 +1232,75 @@
 
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+            // lưu HTML gốc để restore
+            const originalHTML = table.innerHTML;
+
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
+
+                table.classList.add('is-mobile');
+
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
+
+                const schoolIndex = headers.indexOf('선정순위');
+
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
+
+                    // title
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    // remove 번호 + 제목
+                    [schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
+                });
+            }
+
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
+            }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            // chạy lần đầu
+            handleResponsive(mediaQuery);
+
+            // lắng nghe thay đổi viewport
+            mediaQuery.addEventListener('change', handleResponsive);
+        });
     </script>
 </body>
 
