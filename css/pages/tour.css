@@ -5654,7 +5654,7 @@
 }
 
 .tour404001__line {
-    border: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
     margin: 3rem 0;
 }
 
@@ -5857,8 +5857,16 @@
 }
 
 .tour405001__line {
-    border: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
     margin: 3rem 0;
+}
+
+.tour405001__box1:first-child .tour405001__textLeft {
+    border-bottom: none;
+}
+
+.tour405001__box1:first-child .tour405001__textRight {
+    border-bottom: none;
 }
 
 .tour405001__banner img {
