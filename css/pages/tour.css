@@ -1,3 +1,18 @@
+legend,caption { 
+overflow: hidden;
+position: absolute;
+width: 1px;
+height: 1px;
+border: none;
+clip: rect(1px 1px 1px 1px);
+clip: rect(1px, 1px, 1px, 1px);
+}
+
+caption { 
+position: static;
+color: transparent;
+}
+
 .tour {
     font-size: 15px;
     line-height: 1.38;
@@ -3054,11 +3069,11 @@
 }
 
 .hpy02__total--p30 {
-    padding: 3rem 2rem 3rem;
+    padding: 3rem 0rem 3rem;
 }
 
 .hpy02__total--p023 {
-    padding: 0 2rem 3rem;
+    padding: 0 0rem 3rem;
 
 }
 
@@ -3896,6 +3911,7 @@
 
 .hpy02__table tbody .tour__text--bold {
     font-weight: 600;
+    padding: 0.5rem;
 }
 
 .hpy02__table.height-auto tbody td {
@@ -3905,7 +3921,7 @@
 
 .hpy02__table tbody .tour__text--left {
     text-align: left;
-    padding-left: 1.5rem;
+    padding: 1.5rem;
     letter-spacing: -1px;
 }
 
@@ -3987,6 +4003,16 @@
 .tour401001__group--select,
 .tour401002__select {
     display: none;
+}
+
+.tour401001__table .tour__group {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tour401002__tabs .hpy-reg__btn {
+    min-width: unset;
+    width: 20%;
 }
 
 .tour401005-3__box {
