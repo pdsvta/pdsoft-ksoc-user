@@ -10246,13 +10246,20 @@
     }
 
     .tour509001__filter .selectbox {
-        width: 34%;
+        width: 100%;
         min-width: unset;
     }
 
     .tour503001__box {
         gap: 1rem;
         padding: 0;
+    }
+
+    .tour503001__box.gap5 {
+        gap: .5rem;
+        padding: 8rem 2rem 2rem;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
     }
 
     .tour509001__item {
@@ -11262,6 +11269,7 @@
 
     .tour502001__itemFilter label {
         font-size: 1.3rem;
+
     }
 
     .hpy004001__wrapper.hpy02__wrapper {
@@ -11467,6 +11475,117 @@
         min-width: unset;
         width: fit-content;
         padding: 0 1rem;
+    }
+
+    .tour503001__item {
+        width: calc((100% - .5rem) / 2);
+        margin-bottom: .5rem;
+    }
+
+    .tour503001__text {
+        padding: 1rem 2rem 1rem;
+    }
+
+    .tour503001__select {
+        position: absolute;
+        right: 4rem;
+        top: 15rem;
+    }
+
+    .tour__group--input {
+        width: 100%;
+    }
+
+    .tour503001__note {
+        flex-direction: column;
+        padding-top: 3rem;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .tour504001__box {
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 5.5rem 2rem 2rem;
+    }
+
+    .tour504001__item {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        padding: 0 0rem 2rem;
+        gap: 1rem;
+    }
+
+    .tour504001__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hpy__total.absolute {
+        position: absolute;
+        top: 15rem;
+    }
+
+    .tour504001__text p {
+        font-size: 1.2rem;
+    }
+
+    .tour504001__text h5 {
+        font-size: 1.5rem;
+    }
+
+    .tour504001__text span {
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+
+    .tour504001__item:nth-child(10) {
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .tour509001__btns {
+        margin: 0 1rem;
+        padding: 1rem 0 1rem;
+    }
+
+    .tour509001__item p {
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .tour509001__box {
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 8rem 2rem 2rem;
+    }
+
+    .tour509001__select {
+        position: absolute;
+        right: 4rem;
+        top: 15rem;
+        width: 12rem;
+    }
+
+    .tour510001__total {
+        position: absolute;
+        top: 15rem;
+    }
+
+    .tour509001__filter .selectbox.tour509001__select {
+        width: 12rem;
+    }
+
+    .tour510001__box {
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 5.5rem 2rem 2rem;
+
+    }
+
+    .tour510001__text {
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
     }
 }
 

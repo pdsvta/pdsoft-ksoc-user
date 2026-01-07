@@ -8579,6 +8579,10 @@
     width: calc((100% - 6rem)/4);
 }
 
+.tour503001__item img {
+    border-radius: 2rem 2rem 0 0;
+}
+
 .tour503001__text {
     padding: 1rem 2rem 2rem;
 }
@@ -8603,6 +8607,11 @@
     align-items: center;
     padding-top: 5rem;
     justify-content: center;
+}
+
+.tour503001__note>div {
+    display: flex;
+    align-items: center;
 }
 
 .tour503001__note img {
