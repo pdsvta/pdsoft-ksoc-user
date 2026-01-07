@@ -221,6 +221,10 @@
     .tour004006__filter .hpy004003__btn {
         width: calc(15rem - 0.5rem);
     }
+
+    .tour201010__info-list {
+        padding: 4rem 0 0 34rem;
+    }
 }
 
 @media (max-width: 912px) {
@@ -723,6 +727,150 @@
 
     .hpy004001__info>div {
         gap: 4rem;
+    }
+
+    .hpy004015__box2 {
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .hpy004015__content {
+        padding: 3.5rem 0 2rem 0;
+    }
+
+    .hpy004015__box {
+        flex-wrap: wrap;
+    }
+
+    .hpy004015__item {
+        width: calc(50% - 1rem);
+    }
+
+    .tour401002__wrapper.hpy02__wrapper,
+    .tour401002__filterCheckbox {
+        padding: 4rem 2rem;
+    } 
+
+    .tour401002__tabsBottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .tour401002__tabsBottom .hpy-reg__btn {
+        width: 18%;
+    }
+
+    .tour401002__listChecked,
+    .tour401002__listChecked .tour401002__group {
+        flex-direction: column;
+    }
+
+    .tour401002__listChecked.tour__group,
+    .tour401005__listChecked.tour__group {
+        gap: 2rem;
+    }
+
+    .tour401002__listChecked .tour401002__groupInput {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table thead,
+    .tour201011__table.hpy0709__table .lsn__table colgroup {
+        display: none;
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td {
+        display: block;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(7) {
+        border-bottom: none;
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+    }
+
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:last-child {
+        position: absolute;
+        top: .7rem;
+        right: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(2)::before {
+        content: "생년월일";
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(3)::before {
+        content: "학교구분";
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(4)::before {
+        content: "학교";
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(5)::before {
+        content: "키/몸무게/발크기";
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(6)::before {
+        content: "기타";
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(7)::before {
+        content: "상태";
+    }
+
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(2)::before,
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(3)::before,
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(4)::before,
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(5)::before,
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(6)::before,
+    .tour201011__table.hpy0709__table .lsn__table tbody tr td:nth-child(7)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 1rem;
+        width: 11.5rem;
+    }
+
+    .tour201010__info-list {
+        padding: 4rem 0 0 28rem;
     }
 }
 
@@ -6039,99 +6187,6 @@
         width: 100%;
     }
 
-    .hpy0709__table .lsn__table thead,
-    .hpy0709__table .lsn__table colgroup {
-        display: none;
-    }
-
-    .hpy0709__table .lsn__table tbody tr {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 1rem;
-        background: #fff;
-        position: relative;
-    }
-
-    .hpy0709__table .lsn__table tbody tr:last-child {
-        margin-bottom: 0;
-    }
-
-    .hpy0709__table .lsn__table tbody tr td {
-        display: block;
-        text-align: left;
-        padding: 1.1rem 1rem;
-        border: none;
-        height: auto;
-        font-size: 1.3rem;
-        border-bottom: 1px solid #ddd;
-        margin: 0 2rem;
-        color: #666;
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(7) {
-        border-bottom: none;
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(1) {
-        font-size: 1.5rem;
-        font-weight: 600;
-        height: auto;
-        display: flex;
-        align-items: center;
-        background: #F5F5F5;
-        border-radius: 1rem 1rem 0 0;
-        padding: 1rem 2rem;
-        margin: 0;
-        color: #000;
-    }
-
-
-    .hpy0709__table .lsn__table tbody tr td:last-child {
-        position: absolute;
-        top: .7rem;
-        right: 0;
-        padding: 0;
-        border-bottom: none;
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(2)::before {
-        content: "생년월일";
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(3)::before {
-        content: "학교구분";
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(4)::before {
-        content: "학교";
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(5)::before {
-        content: "키/몸무게/발크기";
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(6)::before {
-        content: "기타";
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(7)::before {
-        content: "상태";
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:nth-child(2)::before,
-    .hpy0709__table .lsn__table tbody tr td:nth-child(3)::before,
-    .hpy0709__table .lsn__table tbody tr td:nth-child(4)::before,
-    .hpy0709__table .lsn__table tbody tr td:nth-child(5)::before,
-    .hpy0709__table .lsn__table tbody tr td:nth-child(6)::before,
-    .hpy0709__table .lsn__table tbody tr td:nth-child(7)::before {
-        font-weight: 500;
-        display: inline-block;
-        padding-right: 1rem;
-        width: 11.5rem;
-    }
-
     .hpy__select--min205 {
         min-width: auto;
     }
@@ -6159,9 +6214,9 @@
         display: block;
     }
 
-    .hpy0709__table .lsn__table tbody tr td:last-child {
+    /* .hpy0709__table .lsn__table tbody tr td:last-child {
         position: unset;
-    }
+    } */
 
     .hpy0709__table.hpy0719__table--tl {
         padding: 0;
@@ -6276,10 +6331,6 @@
 
     .hpy0719__table--tl ul {
         padding: .9rem 0;
-    }
-
-    .hpy0709__table .lsn__table tbody tr td:last-child {
-        position: unset;
     }
 
     .hpy0719__table {
@@ -6605,7 +6656,7 @@
     }
 
     .hpy02__total {
-        padding: 3rem 2rem 2rem;
+        padding: 3rem 0rem 2rem;
     }
 
     .hpy02__box {
@@ -7296,12 +7347,18 @@
         margin-top: 2rem;
     }
 
-    .tour401001__tabs {
-        display: none;
+    .tour401001__tabs .hpy-reg__btn {
+        min-width: unset;
+        width: 5rem;
+    }
+
+    .tour401001__tabs .hpy-reg__btn.white,
+    .tour401001__tabs .hpy-reg__btn.blue {
+        border-radius: 1rem;
     }
 
     .tour401001__map {
-        width: 60%;
+        display: none;
     }
 
     .tour401001__group--select {
@@ -7378,6 +7435,7 @@
 
     .tour401001__table td:last-child .tour__group {
         display: flex;
+        flex-direction: row;
         gap: 8px;
         padding: 0 3rem;
     }
@@ -7409,7 +7467,6 @@
     .tour401002__listChecked.tour__group,
     .tour401005__listChecked.tour__group {
         padding: 2rem;
-        gap: 2rem;
     }
 
     .tour401002__listChecked .tour401002__groupInput {
@@ -7427,11 +7484,6 @@
     .tour401002__listChecked .tour401002__groupInput input {
         flex: 1;
         max-width: unset;
-    }
-
-    .tour401002__listChecked,
-    .tour401002__listChecked .tour401002__group {
-        flex-direction: column;
     }
 
     .tour401002__listChecked .tour__group--item .tour__group--checked,
@@ -8930,7 +8982,8 @@
     }
 
     .selectbox.min160 {
-        min-width: auto;
+        min-width: unset;
+        width: 100%;
     }
 
     .indv__filter .hpy-reg__btn {
@@ -11467,6 +11520,11 @@
         min-width: unset;
         width: fit-content;
         padding: 0 1rem;
+    }
+
+    .tour401002__wrapper.hpy02__wrapper,
+    .tour401002__filterCheckbox {
+        padding: 0;
     }
 }
 
