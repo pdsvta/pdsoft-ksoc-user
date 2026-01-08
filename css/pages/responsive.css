@@ -11425,15 +11425,11 @@
         width: 100%;
     }
 
-<<<<<<< Updated upstream
-
     /* .history-con>ul>li .item.mb12,
     .history-con>ul>li .item.mb15 {
         margin-bottom: unset;
     } */
 
-=======
->>>>>>> Stashed changes
     .history-con>ul>li .item-list__ch h5 {
         font-size: 1.3rem;
     }
