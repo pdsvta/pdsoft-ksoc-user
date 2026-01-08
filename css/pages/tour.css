@@ -13933,3 +13933,9 @@ caption {
     background: #fff;
     border: 1px solid #ddd;
 }
+
+.hpy511001__group,
+.hpy001000__group {
+    display: flex;
+    gap: .5rem;
+}

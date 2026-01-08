@@ -10034,19 +10034,30 @@
     }
 
     .tour405004__itemHandbook {
-        width: calc(50% - 1rem);
+        width: calc(50% - .5rem);
+        margin-bottom: 1.5rem;
     }
 
     .tour405004__itemHandbook p {
         font-size: 1.2rem;
+        padding: 1rem;
+        letter-spacing: -1px;
+    }
+
+    .tour405004__handbook {
+        gap: .5rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
     }
 
     .tour405001__box2 {
         gap: 2rem;
+        align-items: flex-start;
     }
 
     .tour405001__logo img {
-        width: 10.8rem;
+        width: 6.8rem;
     }
 
     .tour405001__subText p {
@@ -11694,6 +11705,252 @@
         font-size: 1.1rem;
     }
 
+    .hpy004003__filter {
+        gap: .5rem;
+        margin-top: 3rem;
+    }
+
+    .hpy004003__filter.p002 {
+        padding: 0 2rem;
+
+    }
+
+    .hpy004003__btn {
+        font-size: 1.1rem;
+        height: 3.5rem;
+        width: calc((100% - .5rem)/2);
+    }
+
+    .hpy004032__wrapper {
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    .hpy004016__img img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    .hpy004016__title p {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    .hpy004016__title span {
+        font-size: .9rem;
+        line-height: 100%;
+    }
+
+    .hpy004016__title {
+        top: 2rem;
+        left: 5rem;
+        right: 5rem;
+        line-height: 100%;
+    }
+
+    .hpy511001__list {
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .hpy511001__item {
+        width: calc((100% - .5rem) / 2);
+        margin-bottom: .5rem;
+    }
+
+    .hpy004009__box {
+        padding: 2rem 0;
+        border-radius: 2rem;
+    }
+
+    .hpy004009__group.p023 {
+        padding: 0 2rem 2rem;
+    }
+
+    .hpy004009__group {
+        gap: 4rem;
+    }
+
+    .ply__total {
+        font-size: 1.3rem;
+    }
+
+    .hpy511001__item p,
+    .tour701001__name {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .hpy511001__number {
+        padding: 0 1rem 1rem;
+    }
+
+    .hpy511001__number p {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .hpy004007__filter.bd50 {
+        border-radius: 2rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .hpy004007__filter.bd50 .hpy-reg__select--max150 {
+        width: calc((100% - .5rem)/2);
+        max-width: 100%;
+    }
+
+    .hpy511001__group {
+        width: 100%;
+    }
+
+    .tour701001__box {
+        padding: 8rem 2rem 2rem;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+        gap: .5rem;
+    }
+
+    .tour701001__item {
+        width: calc((100% - .5rem)/2);
+        margin-bottom: 1.5rem;
+        height: auto;
+    }
+
+    .tour701001__imgAvatar {
+        border-radius: 2rem 2rem 0 0;
+        width: 100%;
+    }
+
+    .tour701001__time,
+    .tour701001__views p {
+        font-size: 1rem;
+    }
+
+    .tour701001__info {
+        padding: 0 1rem 1rem;
+    }
+
+    .tour701001__select {
+        position: absolute;
+        right: 4rem;
+        top: 11rem;
+    }
+
+    .tour405006__wrap-pagination {
+        margin-top: 2rem;
+    }
+
+    .tour701001-1__item1 img,
+    .tour701001-1__item1 {
+        width: 100%;
+    }
+
+    .tour701001-1__titlePost {
+        padding: 1rem 0 1rem;
+    }
+
+    .tour701001-1__main {
+        padding: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+
+    }
+
+    .tour701001-1__box {
+        gap: 3rem;
+    }
+
+    .hpy001000__table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy001000__table thead,
+    .hpy001000__table colgroup {
+        display: none;
+    }
+
+    .hpy001000__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy001000__table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+    }
+
+    .hpy001000__table tbody tr td:first-child {
+        display: none;
+    }
+
+    .hpy001000__table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .hpy001000__table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+    }
+
+
+    .hpy001000__table tbody tr td:nth-child(3)::before {
+        content: "작성자";
+    }
+
+    .hpy001000__table tbody tr td:nth-child(4)::before {
+        content: "작성일";
+    }
+
+    .hpy001000__table tbody tr td:nth-child(5)::before {
+        content: "조회수";
+    }
+
+    .hpy001000__table tbody tr td:nth-child(4)::before,
+    .hpy001000__table tbody tr td:nth-child(3)::before,
+    .hpy001000__table tbody tr td:nth-child(5)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .hpy004017__table {
+        padding: 2rem 2rem 0;
+    }
+
+    .hpy001000__filter.hpy004007__filter.bd50 .hpy-reg__select--max150 {
+        width: 100%;
+    }
+
+    .hpy001000__group {
+        width: 100%;
+    }
 }
 
 @media (max-width: 414px) {
