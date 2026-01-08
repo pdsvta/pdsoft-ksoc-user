@@ -4011,9 +4011,28 @@ caption {
     gap: 1rem;
 }
 
-.tour401002__tabs .hpy-reg__btn {
+.tour401002__tabs.tour401002__tabsTop,
+.tour401002__tabs.tour401002__tabsBottom {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tour401002__tabs.tour401002__tabsTop .hpy-reg__btn {
     min-width: unset;
-    width: 20%;
+    flex: 1 1 15%;
+}
+
+.tour401002__tabs.tour401002__tabsBottom .hpy-reg__btn {
+    min-width: unset;
+    flex: 0 0 calc(10% - (9 * 1rem / 10));
+}
+
+.tour401004__topTabs.tour__group {
+    width: 100%;
+}
+
+.tour401004__topTabs .hpy-reg__btn {
+    flex: 1 1 33%;
 }
 
 .tour401005-3__box {
@@ -12811,7 +12830,7 @@ caption {
     color: #666;
     font-size: 1.7rem;
     font-weight: 400;
-    padding: 0 2rem;
+    width: 15rem;
 }
 
 .hpy004015__title.fw600 {
@@ -12947,11 +12966,8 @@ caption {
     padding: 0 0 5rem;
 }
 
-.hpy004015__des {
+.hpy004015__itemContent {
     display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    padding-top: 4.5rem;
 }
 
 .hpy004015__content {
@@ -12964,6 +12980,8 @@ caption {
 
 .hpy004015__row {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1;
     gap: 3rem;
 }
 
