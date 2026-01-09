@@ -740,6 +740,7 @@
 
     .hpy004015__box {
         flex-wrap: wrap;
+        gap: 1rem;
     }
 
     .hpy004015__item {
@@ -12146,10 +12147,6 @@
     .hpy004015__note li {
         font-size: 1.2rem;
     }
-    
-    .hpy004015__box1 {
-        padding: 2rem 0 6rem;
-    }
 
     .hpy004015__itemContent {
         flex-direction: column;
@@ -12176,6 +12173,7 @@
 
     .hpy004015__item {
         width: 100%;
+        margin: 0 4rem;
     }
 
     .hpy004019__tabs h4 {
@@ -12232,6 +12230,10 @@
 
     .hpy004021__groupSelect .hpy__input {
         width: 272px;
+    }
+
+    .hpy004015__btns {
+        padding-top: 2rem;
     }
 }
 
