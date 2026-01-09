@@ -13970,3 +13970,18 @@ caption {
     display: flex;
     gap: 1rem;
 }
+.tour001003__textYearGroup {
+    display: flex;
+    gap: 4rem;
+}
+
+.tour001003__textYearGroup p {
+    gap: 2rem;
+    display: flex;
+    color: #666;
+    gap: 1rem;
+}
+
+.tour001003__textYearGroup p span {
+    font-weight: 600;
+}

@@ -12029,7 +12029,8 @@
     .hpy004015__wrapper,
     .hpy004012__wrapper,
     .hpy004011__wrapper,
-    .hpy004003__wrapper {
+    .hpy004003__wrapper,
+    .tour001001__mainBox {
         padding: 2rem;
         border: 1px solid #ddd;
         border-radius: 2rem;
@@ -12353,6 +12354,168 @@
 
     .hpy004003__wrapper .hpy004003__text ul {
         padding: .5rem 0 1rem;
+    }
+
+    .tour001001__tabs {
+        padding: 0 2rem;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .tour001001__subTitle {
+        font-size: 1.2rem;
+    }
+
+    .tour001001__titleChild {
+        font-size: 1.3rem;
+        margin: 1rem 0 .5rem;
+    }
+
+    .tour001001__boxList ul li {
+        font-size: 1.2rem;
+    }
+    .tour001002__btn{
+        font-size: 1.2rem;
+        height: 3.5rem;
+        padding: 1rem;
+        width: auto;
+    }
+
+    .tour001002__allBtn {
+        gap: .5rem;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+    }
+    .tour001002__text,
+    .tour001003__text {
+        font-size: 1.2rem;
+        line-height: 150%;
+    }
+    .tour001002__text.textBottom {
+        padding-top: 1rem;
+    }
+    .tour404002__line {
+        margin: 2rem 0;
+    }
+    .tour001003__allBtn {
+        gap: .5rem;
+    }
+    .tour001003__allBtn:nth-child(1) {
+        margin-bottom: .5rem;
+    }
+    .tour001002__btn.tour001003__btn {
+        width: 12rem;
+    }
+
+    .tour001003__boxBottomTabs {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    .tour001003__tabRight {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .tour001003__titleTab {
+        width: 14rem;
+        font-size: 1rem;
+        font-weight: 600;
+        height: 3rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tour001003__itemTabBtn.item1,
+    .tour001003__itemTabBtn.item2,
+    .tour001003__itemTabBtn.item3 {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        font-size: .9rem;
+        font-weight: 400;
+        padding: 0 1rem;
+    }
+    .tour001003__textYearGroup {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .tour001003__textYearGroup p {
+        font-size: 1.2rem;
+    }
+
+    .tour001003__textYearGroup p span {
+        font-size: 1.5rem;
+    }
+
+    .tour001004__boxApp {
+        flex-direction: column;
+    }
+
+    .tour001004__qrApp {
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .tour001004__qrApp img {
+        width: 12rem;
+    }
+
+    .tour001004__step p{
+        font-size: 1.2rem;
+    }
+    .tour001004__note {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .tour001004__step span {
+        color: #FF0000;
+        border: 2px solid #FF0000;
+        border-radius: 50%;
+        width: 1.4rem;
+        height: 1.4rem;
+        line-height: 1rem;
+    }
+    .tour001002__itemContent .tour001002__btn.tour001004__btn {
+        width: 7rem;
+    }
+    .tour001005__box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .tour001005__item {
+        width: 23rem;
+        height: 20rem;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tour001005__item .icon1 {
+        width: 5rem;
+        height: auto;
+    }
+    .tour001005__desc {
+        font-size: 1rem;
+    }
+    .tour001005__item img {
+        margin: 2rem auto;
+    }
+    .tour001005__itemTitle {
+        font-size: 1.5rem;
+    }
+    .tour001005__item .icon2,
+    .tour001005__item .icon3 {
+        width: auto;
+        height: 5rem;
     }
 }
 
