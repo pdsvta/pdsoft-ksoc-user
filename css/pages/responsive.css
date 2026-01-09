@@ -12235,6 +12235,27 @@
     .hpy004015__btns {
         padding-top: 2rem;
     }
+
+    .hpy004014__img p {
+        font-size: 1.5rem;
+        margin: .5rem 0 2rem;
+    }
+
+    .hpy004014__img img {
+        height: 3.1rem;
+    }
+
+    .tour004014__text.hpy004003__text p {
+        color: #666;
+    }
+
+    .hpy004003__text .small p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .hpy004003__text .small {
+        padding: 1rem 0 .5rem;
+    }
 }
 
 @media (max-width: 414px) {
