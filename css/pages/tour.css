@@ -10442,6 +10442,18 @@ caption {
     gap: 0.5rem;
 }
 
+.tour101027__boxFilter {
+    gap: 2rem;
+}
+
+.tour101027__select {
+    width: 20%;
+}
+
+.tour101027__input {
+    flex: 1;
+}
+
 .tour303001__number {
     color: #FF0000;
     border: 2px solid #FF0000;
@@ -11701,6 +11713,12 @@ caption {
 
 .dry__editor.h300 {
     min-height: 30rem;
+}
+
+.hpy004021__groupInput {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
 }
 
 .hpy004028__wrapper .hpy004016__title span {

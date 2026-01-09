@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>지도자등록 신청안내</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/styleCert.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui.css">
     <script src="js/jquery-ui.min.js"></script>
@@ -447,6 +448,75 @@
             if (window.matchMedia('(max-width: 768px)').matches) {
                 applyMobileTable();
             }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+            // lưu HTML gốc để restore
+            const originalHTML = table.innerHTML;
+
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
+
+                table.classList.add('is-mobile');
+
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
+
+                const schoolIndex = headers.indexOf('증명서 종류');
+
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
+
+                    // title
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    // remove 번호 + 제목
+                    [schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
+                });
+            }
+
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
+            }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            // chạy lần đầu
+            handleResponsive(mediaQuery);
+
+            // lắng nghe thay đổi viewport
+            mediaQuery.addEventListener('change', handleResponsive);
         });
     </script>
 
