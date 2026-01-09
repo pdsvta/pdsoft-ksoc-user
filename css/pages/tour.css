@@ -12829,6 +12829,10 @@ caption {
     padding-top: 4rem;
 }
 
+.hpy004015__titleMain {
+    padding: 0 0 2rem;
+}
+
 .hpy004015__title {
     color: #666;
     font-size: 1.7rem;
@@ -12995,6 +12999,7 @@ caption {
     background: #fff;
     padding: 1.1rem 0;
     height: auto;
+    width: 16rem;
 }
 
 .hpy004015__card {
