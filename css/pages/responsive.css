@@ -12028,7 +12028,8 @@
     .hpy004028__wrapper,
     .hpy004015__wrapper,
     .hpy004012__wrapper,
-    .hpy004011__wrapper {
+    .hpy004011__wrapper,
+    .hpy004003__wrapper {
         padding: 2rem;
         border: 1px solid #ddd;
         border-radius: 2rem;
@@ -12293,6 +12294,65 @@
     }
     .hpy004003__text .text p {
         font-size: 1.2rem;
+    }
+
+    .hpy004004__tabs h4 {
+        width: 50%;
+        height: 4rem;
+        font-size: 1.5rem;
+        border-radius: 2rem 2rem 0 0;
+    }
+    .hpy004004__box, .hpy004004__box2 {
+        border-radius: 0 0 2rem 2rem;
+        padding: 2rem;
+    }
+    .hpy004004__text {
+        padding: 0;
+    }
+    .hpy004004__img img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 2rem;
+    }
+    .hpy004004__text h4 {
+        font-size: 1.3rem;
+    }
+    .hpy004004__text p {
+        font-size: 1.2rem;
+        margin: .5rem 0 1rem;
+    }
+
+    .hpy004004__item p {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .hpy004003__box {
+        padding: 2rem;
+        gap: 1rem;
+        position: relative;
+    }
+    .hpy004003__top {
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+    }
+    .hpy004003__box img {
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 2rem;
+    }
+    .hpy004003__des h4 {
+        font-size: 1.3rem;
+        width: calc(100% - 9rem);
+        margin-left: auto;
+    margin-bottom: 2rem;
+    }
+    .hpy004003__des p {
+        font-size: 1.2rem;
+    }
+
+    .hpy004003__wrapper .hpy004003__text ul {
+        padding: .5rem 0 1rem;
     }
 }
 
