@@ -12278,16 +12278,12 @@
 
     .hpy004021__groupSelect {
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .hpy004021__groupSelect .selectbox {
         min-width: unset;
         flex: 0 0 49%;
-    }
-<<<<<<< Updated upstream
-
-    .hpy004021__groupSelect .hpy__input {
-        width: 272px;
     }
 
     .hpy004015__btns {
@@ -12583,8 +12579,6 @@
         padding: 2rem;
         border-radius: 0 0 2rem 2rem;
     }
-=======
->>>>>>> Stashed changes
 }
 
 @media (max-width: 414px) {
