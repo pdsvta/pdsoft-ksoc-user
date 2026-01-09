@@ -12027,7 +12027,8 @@
     .hpy00431__wrapper,
     .hpy004028__wrapper,
     .hpy004015__wrapper,
-    .hpy004012__wrapper {
+    .hpy004012__wrapper,
+    .hpy004011__wrapper {
         padding: 2rem;
         border: 1px solid #ddd;
         border-radius: 2rem;
@@ -12259,7 +12260,7 @@
     }
 
     
-    .hpy004012__wrapper .hpy004003__text {
+     .hpy004003__text {
         padding: 0;
         font-size: 1.2rem;
         color: #666;
@@ -12268,16 +12269,29 @@
     .hpy004003__text .small.p002 {
         padding: 0 0 1rem;
     }
-    .hpy004012__wrapper .hpy004003__text p {
+     .hpy004003__text p {
         font-size: 1.3rem;
     }
-    .hpy004012__wrapper .hpy004003__text .text {
+     .hpy004003__text .text {
         padding: 1rem 0;
     }
 
     .hpy004012__btn button {
         min-width: 14rem;
         font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .hpy004003__text li {
+        font-size: 1.2rem;
+    }
+
+    .hpy004011__wrapper .hpy004003__text .small {
+        padding:.5rem 0 1rem;
+    }
+    .hpy004003__text ul {
+        padding: 1rem 0 0rem;
+    }
+    .hpy004003__text .text p {
         font-size: 1.2rem;
     }
 }
