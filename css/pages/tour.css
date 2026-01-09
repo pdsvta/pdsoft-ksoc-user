@@ -11008,6 +11008,9 @@ caption {
     border: 1px solid #d9d9d9;
 }
 
+.hpy004004__item img {
+    border-radius: 2rem 2rem 0 0;}
+
 .hpy004004__item p {
     font-size: 1.5rem;
     font-weight: 600;
@@ -13956,4 +13959,9 @@ caption {
 .hpy001000__group {
     display: flex;
     gap: .5rem;
+}
+
+.hpy004009__row {
+    display: flex;
+    gap: 1rem;
 }

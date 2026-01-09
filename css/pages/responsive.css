@@ -11730,6 +11730,8 @@
     .hpy004003__filter {
         gap: .5rem;
         margin-top: 3rem;
+        padding: 0 2rem;
+        margin-bottom: 1rem;
     }
 
     .hpy004003__filter.p002 {
@@ -11989,6 +11991,143 @@
     }
 
     .hpy004001__text {
+        font-size: 1.2rem;
+    }
+
+    .hpy004004__list,
+    .hpy004008__list {
+        gap: .5rem;
+        padding: 0;
+    }
+
+    .hpy004004__item {
+        width: calc((100% - .5rem) / 2);
+        margin-bottom: .5rem;
+    }
+
+    .hpy004007__wrapper,
+    .hpy004008__wrapper,
+    .hpy00431__wrapper,
+    .hpy004028__wrapper,
+    .hpy004015__wrapper {
+        padding: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+    }
+
+    .hpy004007__text p {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .hpy004007__text h4 {
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
+
+    .hpy004007__text {
+        padding: 1rem;
+    }
+
+    .hpy004007__title {
+        font-size: 1.2rem;
+        padding: 0 0 2rem;
+    }
+
+    .hpy004007__filter {
+        padding: 2rem;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin: 0 0 2rem;
+    }
+
+    .hpy004007__filter .hpy-reg__select {
+        width: calc((100% - .5rem)/2);
+    }
+
+    .hpy004008__item {
+        width: 100%;
+    }
+
+    .hpy004009__row {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .hpy004007__filter .hpy004009__row .hpy-reg__select {
+        width: 100%;
+    }
+
+    .hpy004007__filter .hpy004009__row .hpy-reg__btn {
+        min-width: 6.3rem;
+    }
+
+    .hpy-reg__select--max185 {
+        max-width: 100%;
+    }
+
+    .hpy004004__title.p023 {
+        padding: 0 0 2rem;
+    }
+
+    .hpy004004__title h3 {
+        font-size: 1.5rem;
+    }
+
+    .hpy004016__img,
+    .hpy004003__text.p023 {
+        padding: 0 0 2rem;
+    }
+    .hpy004028__table {
+        padding: 0;
+    }
+
+    .hpy004028__group .bold {
+        font-size: 1.1rem;
+        width: 6rem;
+        height: 3.5rem;
+    }
+
+    .hpy004028__group span:last-child {
+        height: 3.5rem;
+        font-size: 1.1rem;
+        padding-left: .8rem;
+        flex: 1;
+        line-height: 100%;
+    }
+
+    .hpy004028__groups {
+        flex-direction: column;
+    }
+    .hpy004003__text p {
+        font-size: 1.5rem;
+    }
+
+    .hpy004003__text.p322,
+    .hpy004004__title.p322 {
+        padding: 2rem 0;
+    }
+    .hpy004003__text {
+        color: #111;
+    }
+
+    .hpy004004__title.fs17 h3 {
+        font-size: 1.5rem;
+    }
+
+    .hpy004015__title.fw600 {
+        margin-top: -1rem;
+        font-size: 1.3rem;
+    }
+    .hpy004015__box1 {
+        padding: 2rem 0;
+    }
+
+    .hpy004015__note p {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    .hpy004015__note li {
         font-size: 1.2rem;
     }
 }
