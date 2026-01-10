@@ -12517,6 +12517,18 @@
         width: auto;
         height: 5rem;
     }
+
+    .hpy004016__tabs h4 {
+        height: 4rem;
+        font-size: 1.1rem;
+        padding: 0;
+        width: calc(100% /3);
+        border-radius: 2rem 2rem 0 0;
+    }
+    .hpy004016__box, .hpy004016__box2, .hpy004016__box3 {
+        padding: 2rem;
+        border-radius: 0 0 2rem 2rem;
+    }
 }
 
 @media (max-width: 414px) {
