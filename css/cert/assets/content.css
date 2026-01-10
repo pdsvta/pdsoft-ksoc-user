@@ -1105,7 +1105,7 @@ input[type='radio']+label:before {
 	display: inline-block;
 	content: '';
 	position: absolute;
-	top: 4px;
+	top: 2px;
 	left: 0;
 	width: 18px;
 	height: 18px;
@@ -5106,7 +5106,7 @@ legend {
 }
 
 .ply {
-	padding-top: 9rem;
+	/* padding-top: 9rem; */
 	padding-bottom: 10rem;
 }
 
@@ -6219,7 +6219,7 @@ legend {
 .ply102007__group {
 	display: flex;
 	align-items: center;
-	gap: 2rem;
+	gap: 1rem;
 	padding: 0 2rem;
 }
 
@@ -6427,6 +6427,7 @@ legend {
 	text-align: center;
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
+	table-layout: auto;
 }
 
 .hpy02__table thead th {
@@ -6781,6 +6782,7 @@ legend {
 	height: 9.5rem;
 	border: 1px solid #ddd;
 	border-radius: 2rem;
+	padding: 0 4rem;
 }
 
 .ply102019__text {
@@ -8253,7 +8255,17 @@ legend {
 	background-size: 100%;
 }
 
+@media (max-width: 912px) {
+	.chc__list--img {
+        column-gap: 1rem;
+    }
+}
+
 @media (max-width: 767px) {
+	
+	#wrap {
+		padding-top: 9rem;
+	}
 
 	.ply-nav,
 	.menu-btn-ply {
@@ -8279,6 +8291,10 @@ legend {
 	.ply-nav {
 		height: 3.5rem;
 		top: 6rem;
+	}
+
+	.ply-nav__item .sub-menu {
+		display: none;
 	}
 
 	.ply-nav__item:nth-child(2) {
@@ -8437,5 +8453,15 @@ legend {
 		height: 2px;
 		background: var(--color-text);
 		border-radius: 1rem;
+	}
+
+	.ply-ftr__adr {
+		align-items: flex-start;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.qz__toggle {
+		padding: 0 2rem;
 	}
 }
