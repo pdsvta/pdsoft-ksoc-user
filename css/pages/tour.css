@@ -13985,3 +13985,20 @@ caption {
 .tour001003__textYearGroup p span {
     font-weight: 600;
 }
+
+.tour407003__group .bold {
+    font-weight: 600;
+}
+.tour407003__group {
+    color: #666;
+}
+
+.tour503002__note >div {
+    display: flex;
+    align-items: center;
+}
+
+.hpy5110012__row {
+    display: flex;
+    gap: .5rem;
+}
