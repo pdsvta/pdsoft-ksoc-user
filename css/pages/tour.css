@@ -14020,3 +14020,63 @@ caption {
     display: flex;
     gap: .5rem;
 }
+
+.hpy0010002__row>div {
+    display: flex;
+}
+
+.ply101021__wrapper {
+    padding: 5rem;
+    border-radius: 5rem;
+    border: 1px solid #ddd;
+}
+.ply101021__box {
+    padding: 0 5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10rem;
+    margin-top: 5rem;
+}
+
+.ply101021__pic img {
+    width: 31rem;
+    height: 28rem;
+}
+
+.ply101021__title {
+    padding: 0 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 2rem;
+}
+.ply101021__title img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.ply101021__item {
+    height: 11rem;
+    border-radius: 3rem;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.ply101021__item:last-child {
+    margin-bottom: 0;
+}
+
+.ply101021__item img {
+    width: 2.5rem;
+    height: auto;
+}
