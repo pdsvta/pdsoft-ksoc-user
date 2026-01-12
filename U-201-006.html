@@ -541,7 +541,7 @@
                         <div class="hpy0707__item">
                             <label for="" class="ply-reg__label ply-reg__label--pb0" aria-required="true">신청자</label>
                             <div class="hpy-reg__flex hpy-reg__flex--1">
-                                <input type="text" class="hpy-reg__input hpy-reg__input--max320" value="홍길동" readonly>
+                                <input type="text" class="hpy-reg__input" value="홍길동" readonly>
                                 <button type="button" class="hpy-reg__btn">회원정보 수정</button>
                             </div>
                             <p>※신청자명, 연락처는 필수 입력사항으로 정보가 없을 경우 회원정보 수정 후 신청하세요.</p>
@@ -551,13 +551,13 @@
                                 <div class="hpy0707__input">
                                     <label for="" class="ply-reg__label ply-reg__label--pb0"
                                         aria-required="true">연락처</label>
-                                    <input type="text" class="hpy-reg__input hpy-reg__input--mt1 hpy-reg__input--max215"
+                                    <input type="text" class="hpy-reg__input hpy-reg__input--mt1"
                                         value="010-1234-4568" readonly>
                                 </div>
                                 <div class="hpy0707__input">
                                     <label for="" class="ply-reg__label ply-reg__label--pb0" aria-required="true">신청단체
                                         구분</label>
-                                    <div class="hpy__select hpy__select--min215 hpy-reg__input--mt1">
+                                    <div class="hpy__select hpy-reg__input--mt1">
                                         <select name="" id="" class="selectbox">
                                             <option value="">선택</option>
                                         </select>
@@ -570,45 +570,45 @@
                         <div class="hpy0707__item">
                             <label for="" class="ply-reg__label ply-reg__label--pb0" aria-required="true">시설주소</label>
                             <div class="hpy-reg__flex hpy-reg__flex--1">
-                                <input type="text" class="hpy-reg__input hpy-reg__input--max320" value="12345" readonly>
+                                <input type="text" class="hpy-reg__input" value="12345" readonly>
                                 <button type="button" class="hpy-reg__btn">우편번호 검색</button>
                             </div>
                         </div>
                         <div class="hpy0707__item">
-                            <input type="text" class="hpy-reg__input hpy-reg__input--max450" value="기본주소">
+                            <input type="text" class="hpy-reg__input" value="기본주소">
                         </div>
                     </div>
                     <div class="hpy0707__box">
                         <div class="hpy0707__item">
-                            <input type="text" class="hpy-reg__input hpy-reg__input--max450" value="상세주소">
+                            <input type="text" class="hpy-reg__input" value="상세주소">
                         </div>
                         <div class="hpy0707__item">
-                            <input type="text" class="hpy-reg__input hpy-reg__input--max450" value="우편동명/건물명">
+                            <input type="text" class="hpy-reg__input" value="우편동명/건물명">
                         </div>
                     </div>
                     <div class="hpy0707__box">
                         <div class="hpy0707__item hpy0707__item--w100 hpy0707__item--mt1">
                             <label for="" class="ply-reg__label ply-reg__label--pb0" aria-required="true">강습가능장소</label>
-                            <input type="text" class="hpy-reg__input hpy-reg__input--max920  hpy-reg__input--mt1"
+                            <input type="text" class="hpy-reg__input hpy-reg__input--mt1"
                                 value="강습가능장소">
                         </div>
                     </div>
                     <div class="hpy0707__box">
                         <div class="hpy0707__item hpy0707__item--mt1">
                             <label for="" class="ply-reg__label ply-reg__label--pb0">신청단체명</label>
-                            <input type="text" class="hpy-reg__input hpy-reg__input--max450 hpy-reg__input--mt1">
+                            <input type="text" class="hpy-reg__input hpy-reg__input--mt1">
                         </div>
                         <div class="hpy0707__item hpy0707__item--mt1">
                             <div class="hpy0707__group">
                                 <div class="hpy0707__input">
                                     <label for="" class="ply-reg__label ply-reg__label--pb0">차량현황</label>
                                     <input type="text"
-                                        class="hpy-reg__input hpy-reg__input--max215 hpy-reg__input--mt1">
+                                        class="hpy-reg__input hpy-reg__input--mt1">
                                 </div>
                                 <div class="hpy0707__input">
                                     <label for="" class="ply-reg__label ply-reg__label--pb0">시설현황</label>
                                     <input type="text"
-                                        class="hpy-reg__input hpy-reg__input--max215 hpy-reg__input--mt1">
+                                        class="hpy-reg__input hpy-reg__input--mt1">
                                 </div>
                             </div>
                         </div>
@@ -616,11 +616,11 @@
                     <div class="hpy0707__box hpy0707__box--mb3">
                         <div class="hpy0707__item hpy0707__item--mt1">
                             <label for="" class="ply-reg__label ply-reg__label--pb0">희망일정</label>
-                            <input type="text" class="hpy-reg__input hpy-reg__input--max450 hpy-reg__input--mt1">
+                            <input type="text" class="hpy-reg__input hpy-reg__input--mt1">
                         </div>
                         <div class="hpy0707__item hpy0707__item--mt1">
                             <label for="" class="ply-reg__label ply-reg__label--pb0">기타</label>
-                            <input type="text" class="hpy-reg__input hpy-reg__input--max450 hpy-reg__input--mt1">
+                            <input type="text" class="hpy-reg__input hpy-reg__input--mt1">
                         </div>
                     </div>
                     <h3 class="hpy-reg__tit hpy-reg__tit--bb">
@@ -642,6 +642,103 @@
                     </div>
                 </div>
 
+                <div class="hpy0707__wrapper mt20">
+                    <h3 class="hpy-reg__tit hpy-reg__tit--mb3">
+                        <p>대량등록</p>
+                    </h3>
+                    <div class="hpy0709__box">
+                        <div class="hpy0709__text">
+                            파일 다운로드 후 <span>반드시 샘플 형식</span>에 맞게 작성하셔야 합니다. <br>
+                            다운로드 받으신 엑셀파일내의 샘플 형식을 반드시 지켜주세요. <br>
+                            작성하신 엑셀파일을 “엑셀파일 업로드” 버튼을 클릭하여 업로드해주세요.
+                        </div>
+                        <div class="lsn__excel">
+                            <button type="button" class="lsn__excel-btn">
+                                <img src="images/ptu_m1_0704/image03.png" alt="">
+                                샘플 엑셀파일 다운로드
+                            </button>
+                            <button type="button" class="hpy-reg__btn lsn__excel-btn2"><img
+                                    src="images/ptu_m1_0707/image02.png" alt="">
+                                엑셀 파일 업로드</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hpy0707__wrapper mt20">
+                    <h3 class="hpy-reg__tit ">
+                        <p>참가자 명단작성 <br> (명단 추가)</p>
+                        <span class="hpy-reg__warn">
+                            <i>*</i>이 표기관 항목은 필수 입력항목입니다.
+                        </span>
+                    </h3>
+                    <div class="hpy0707__box">
+                        <div class="hpy0707__item hpy0707__item--mt1">
+                            <label for="" class="ply-reg__label ply-reg__label--pb0" aria-required="true">이름</label>
+                            <input type="text" class="hpy-reg__input hpy-reg__input--mt1">
+                        </div>
+                        <div class="hpy0707__item hpy0707__item--mt1">
+                            <div class="hpy0707__group">
+                                <div class="hpy0707__input">
+                                    <label for="" class="ply-reg__label ply-reg__label--pb0"
+                                        aria-required="true">생년월일</label>
+                                    <input type="date"
+                                        class="hpy-reg__input hpy-reg__input--mt1">
+                                </div>
+                                <div class="hpy0707__input">
+                                    <label for="" class="ply-reg__label ply-reg__label--pb0" aria-required="true">신청단체
+                                        구분</label>
+                                    <div class="hpy__select hpy-reg__input--mt1">
+                                        <select name="" id="" class="selectbox">
+                                            <option value="">남</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hpy0707__box hpy0707__box--mb3">
+                        <div class="hpy0707__item hpy0707__item--mt1">
+                            <label for="" class="ply-reg__label ply-reg__label--pb0" aria-required="true">학교명</label>
+                            <input type="text" class="hpy-reg__input hpy-reg__input--mt1">
+                        </div>
+                        <div class="hpy0707__item hpy0707__item--mt1">
+                            <div class="hpy0707__input">
+                                <label for="" class="ply-reg__label ply-reg__label--pb0"
+                                    aria-required="true">학교구분</label>
+                                <div class="hpy__select hpy-reg__input--mt1">
+                                    <select name="" id="" class="selectbox">
+                                        <option value="">선택</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hpy0707__box hpy0707__box--mb0">
+                        <div class="hpy0707__item hpy0707__item--mt1">
+                            <div class="hpy0707__group hpy0707__group--end">
+                                <div class="hpy0707__input">
+                                    <label for="" class="ply-reg__label ply-reg__label--pb0">키/몸무게/발크기</label>
+                                    <input type="text" class="hpy-reg__input hpy-reg__input--mt1"
+                                        placeholder="키">
+                                </div>
+                                <div class="hpy0707__input">
+                                    <input type="text" class="hpy-reg__input hpy-reg__input--mt1"
+                                        placeholder="몸무게">
+                                </div>
+                                <div class="hpy0707__input">
+                                    <input type="text" class="hpy-reg__input hpy-reg__input--mt1"
+                                        placeholder="발크기">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hpy0707__item hpy0707__item--mt1">
+                            <label for="" class="ply-reg__label ply-reg__label--pb0" aria-required="true">기타</label>
+                            <input type="text" class="hpy-reg__input hpy-reg__input--max460 hpy-reg__input--mt1">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="tour__bm tour__bm--end tour__bm--end-p4">
                     <button type="button" class="tour__btn tour__btn--gray">목록으로</button>
                     <button type="button" class="tour__btn tour__btn--blue">강습회 신청</button>
@@ -649,7 +746,7 @@
 
                 <div class="tour__info">
                     <img src="images/ptu_m1_0730/image02.png" alt="">
-                    <div class="tour__info-list">
+                    <div class="tour__info-list tour201010__info-list">
                         <dl>
                             <dt>자료책임자 : </dt>
                             <dd>청소년체육부장</dd>

@@ -2699,6 +2699,14 @@ caption {
     align-items: flex-end;
 }
 
+.hpy0707__input {
+    width: 50%;
+}
+
+.hpy0707__input .hpy__select .selectbox {
+    width: 100%;
+}
+
 .hpy0707__wrapper .hpy-reg__tit--bb {
     border-bottom: none;
     padding: 3rem 2rem 0;
@@ -2827,7 +2835,7 @@ caption {
 }
 
 .hpy0709__box {
-    padding: 0 2rem 5rem;
+    padding: 0 2rem 0;
     display: flex;
     justify-content: space-between;
 }
