@@ -13139,6 +13139,164 @@
     .ply101021__pic {
         width: 100%;
     }
+    .hpy004003__filter.p002 {
+        padding: 0 2rem;
+    }
+    .hpy004016__filter.p223 {
+        padding: 2rem 0;
+    }
+    .hpy004016__filter p {
+        font-size: 1.3rem;
+    }
+    .hpy004016__filter {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        width: 100%;
+    }
+    .hpy004016__table {
+        padding: 0;
+    }
+    .hpy004016__group {
+        width: 100%;
+    }
+    .selectbox.min120 {
+        width: 100%;
+        min-width: max-content;
+    }
+    .hpy004017__select {
+        position: absolute;
+        right: 2rem;
+        top: 15.8rem;
+    }
+    .hpy004016__wrapper {
+        position: relative;
+    }
+    .selectbox.min130 {
+        min-width: 11rem;
+    }
+    .hpy004016__links {
+        gap: 2rem;
+    }
+    .hpy004016__links .link::after {
+        right: -1rem;
+    }
+    .hpy004016__table table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy004016__table table thead,
+    .hpy004016__table table colgroup {
+        display: none;
+    }
+
+    .hpy004016__table table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy004016__table table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.2rem;
+    }
+
+    .hpy004016__table table tbody tr td:first-child {
+        display: none;
+    }
+
+    .hpy004016__table table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .hpy004016__table table tbody tr td:nth-child(5) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .hpy004016__table table tbody tr td:nth-child(2) {
+        order: 2;
+    }
+
+
+    .hpy004016__table table tbody tr td:nth-child(3) {
+        order: 3;
+    }
+
+    .hpy004016__table table tbody tr td:nth-child(4) {
+        order: 4;
+    }
+
+    .hpy004016__table table tbody tr td:nth-child(6) {
+        order: 5;
+    }
+    .hpy004016__table table tbody tr td:nth-child(7) {
+        order: 6;
+    }
+    .hpy004016__table table tbody tr td:nth-child(8) {
+        order: 7;
+    }
+
+    .hpy004016__table table tbody tr td:nth-child(2)::before {
+        content: "시도";
+    }
+
+
+    .hpy004016__table table tbody tr td:nth-child(3)::before {
+        content: "시군구";
+    }
+
+    .hpy004016__table table tbody tr td:nth-child(4)::before {
+        content: "행사단체(학교)명";
+    }
+
+    .hpy004016__table table tbody tr td:nth-child(6)::before {
+        content: "행사일";
+    }
+    .hpy004016__table table tbody tr td:nth-child(7)::before {
+        content: "작성자";
+    }
+    .hpy004016__table table tbody tr td:nth-child(8)::before {
+        content: "조회수";
+    }
+
+    .hpy004016__table table tbody tr td:nth-child(4)::before,
+    .hpy004016__table table tbody tr td:nth-child(3)::before,
+    .hpy004016__table table tbody tr td:nth-child(2)::before,
+    .hpy004016__table table tbody tr td:nth-child(6)::before,
+    .hpy004016__table table tbody tr td:nth-child(7)::before,
+    .hpy004016__table table tbody tr td:nth-child(8)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 10rem;
+        font-size: 1.2rem;
+        color: #666;
+    }
+    .hpy004016__table .hpy02__table {
+        border-bottom: none;
+    }
 }
 
 @media (max-width: 414px) {
