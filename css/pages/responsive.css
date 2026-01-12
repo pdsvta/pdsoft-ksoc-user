@@ -6192,14 +6192,17 @@
 
     .lsn__excel {
         flex-direction: row;
+        flex-wrap: wrap;
+
         padding-left: 0;
         gap: .5rem;
     }
 
     .lsn__excel-btn {
         height: 3.5rem;
-        font-size: 1.3rem;
-        min-width: 17rem;
+        font-size: 1.2rem;
+        min-width: max-content;
+        padding: 0 1rem;
     }
 
     .lsn__excel-btn img {
@@ -6208,10 +6211,11 @@
     }
 
     .lsn__excel-btn2 {
-        min-width: 13rem;
+        min-width: max-content;
         height: 3.5rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         gap: .5rem;
+        padding: 0 1rem;
     }
 
     .lsn__excel-btn2 img {
@@ -7809,7 +7813,7 @@
         border-bottom: 1px solid #eaeaea;
         border-left: 0;
         border-right: 0;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 500;
         background-color: #fff;
         color: #666666;
@@ -7824,7 +7828,7 @@
         content: attr(data-label);
         display: inline-block;
         font-weight: 500;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: #666666;
         white-space: nowrap;
         width: 40%;
@@ -7834,7 +7838,7 @@
 
     .mobile-card-title {
         padding: 1rem 2rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 600;
         background: #F5F5F5;
         text-align: left;
@@ -12266,7 +12270,9 @@
 
     .hpy004019__videos {
         flex-direction: column;
-        padding: 0rem 2rem 2rem;
+        padding: 0rem 0 2rem;
+        margin-top: 1rem;
+        gap: 1rem;
     }
 
     .hpy004019__videos .hpy004017__img {
@@ -13315,6 +13321,308 @@
 
     .hpy004022__group .itemSelect {
         width: 100%;
+    }
+
+    .hpy004016__group.sp-bw {
+        padding: 0 0 2rem;
+        font-size: 1rem;
+    }
+    .hpy004017__table2 {
+        padding: 0;
+    }
+    .hpy004017__table2 table th {
+        font-size: 1.1rem;
+        width: 8rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    .hpy004017__table2 table tr td {
+        flex: 1;
+        padding: .5rem;
+    }
+    .hpy004017__table2 table tr:first-child td {
+        padding: .5rem;
+    }
+    .hpy-reg__input--max350 {
+        max-width: 100%;
+    }
+    .selectbox.min350 {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .hpy004017__table2 .hpy__input,
+    .hpy004017__table2 .hpy-reg__btn {
+        height: 3rem;
+        font-size: 1rem;
+        min-width: 8rem;
+    }
+    .hpy004017__table2 table tr:first-child td p {
+        font-size: 1.1rem;
+        margin-top: 0;
+    }
+    .hpy004017__table2 table tr td.table-checkbox {
+        padding: 2rem .5rem;
+        font-size: 1rem;
+    }
+    .hpy004017__table2 table tr td.table-checkbox>div {
+        padding: .5rem 0;
+    }
+    .hpy004017__table2 .ply-reg__agree .ply-reg__radio {
+        min-width: auto;
+    }
+    .hpy004017__table2 table tr td.table-textarea {
+        padding: 2rem .5rem;
+    }
+    .table-btns {
+        margin-top: .5rem;
+        gap: .5rem;
+    }
+    .hpy004017__table2 .hpy__input, .hpy004017__table2 .hpy-reg__btn {
+        padding: 0 1rem;
+    }
+
+    .hpy004004__title.bd-bt {
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hpy004124__table table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy004124__table table thead,
+    .hpy004124__table table colgroup {
+        display: none;
+    }
+
+    .hpy004124__table table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy004124__table table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.2rem;
+    }
+
+    .hpy004124__table table tbody tr td:nth-child(7) {
+        border-bottom: none;
+    }
+
+    .hpy004124__table table tbody tr td:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+    }
+    .hpy004124__table table tbody tr td:last-child {
+        position: absolute;
+        right: 0;
+        top: .8rem;
+        padding: 0;
+    }
+
+    .hpy004124__table table tbody tr td:nth-child(2)::before {
+        content: "생년월일";
+    }
+
+
+    .hpy004124__table table tbody tr td:nth-child(3)::before {
+        content: "학교구분";
+    }
+
+    .hpy004124__table table tbody tr td:nth-child(4)::before {
+        content: "학교";
+    }
+
+    .hpy004124__table table tbody tr td:nth-child(5)::before {
+        content: "키/몸무게/발크기";
+    }
+    .hpy004124__table table tbody tr td:nth-child(6)::before {
+        content: "기타";
+    }
+    .hpy004124__table table tbody tr td:nth-child(7)::before {
+        content: "상태";
+    }
+
+    .hpy004124__table table tbody tr td:nth-child(4)::before,
+    .hpy004124__table table tbody tr td:nth-child(3)::before,
+    .hpy004124__table table tbody tr td:nth-child(2)::before,
+    .hpy004124__table table tbody tr td:nth-child(6)::before,
+    .hpy004124__table table tbody tr td:nth-child(7)::before,
+    .hpy004124__table table tbody tr td:nth-child(5)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 10rem;
+        font-size: 1.2rem;
+        color: #666;
+    }
+    .hpy004124__table table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy004025__table table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy004025__table table thead,
+    .hpy004025__table table colgroup {
+        display: none;
+    }
+
+    .hpy004025__table table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy004025__table table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.2rem;
+        display: flex;
+    }
+
+    .hpy004025__table table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .hpy004025__table table tbody tr td:nth-child(2) {
+        font-size: 1.3rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 10rem 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .hpy004025__table table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+    .hpy004025__table table tbody tr td:nth-child(3) {
+        order: 3;
+    }
+    .hpy004025__table table tbody tr td:nth-child(5) {
+        order: 4;
+    }
+
+    .hpy004025__table table tbody tr td:nth-child(5) br {
+        display: none;
+    }
+    
+    .hpy004025__table table tbody tr td:nth-child(4) {
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        padding: 0;
+        border-bottom: none;
+    }
+    .hpy004025__table table tbody tr td:nth-child(1)::before {
+        content: "종목";
+    }
+
+
+    .hpy004025__table table tbody tr td:nth-child(3)::before {
+        content: "강습회 기간  / 신청기간";
+    }
+
+    .hpy004025__table table tbody tr td:nth-child(5)::before {
+        content: "강습회 장소";
+    }
+
+
+    .hpy004025__table table tbody tr td:nth-child(5)::before,
+    .hpy004025__table table tbody tr td:nth-child(3)::before,
+    .hpy004025__table table tbody tr td:nth-child(1)::before{
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+        max-width: 6rem;
+        font-size: 1.2rem;
+        color: #666;
+        padding-right: 3rem;
+    }
+
+    .hpy004017__table {
+        padding: 2rem 0;
+    }
+
+    .hpy004025__table button {
+        min-width: 6rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+    }
+
+    .hpy004025__group {
+        flex-wrap: wrap;
+    }
+
+    .hpy004025__group .selectbox.min120 {
+        width: calc((100% - .5rem)/2);
+    }
+    .hpy-reg__input--max170 {
+        max-width: 100%;
+    }
+    .hpy004025__filter {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .hpy004025__filter .hpy004016__group.gap20 {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .hpy004017__table .hpy02__table {
+        border-bottom: none;
+    }
+
+    .hpy004017__box4 .hpy-reg__tit--mb3 {
+        font-size: 1.3rem;
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+    }
+    .hpy004017__box4 .dry__editor {
+        min-height: 21rem;
+    }
+    .hpy004017__box4 .hpy-reg__btn {
+        font-size: 1.2rem;
+        padding: 0 .5rem;
+        letter-spacing: 0;
     }
 }
 
