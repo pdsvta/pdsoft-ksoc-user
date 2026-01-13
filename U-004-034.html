@@ -530,7 +530,7 @@
                 <div class="title tour003005__title">
                     <h2>맞춤정보</h2>
                 </div>
-                <div class="tour004033__tabs">
+                <div class="tour004033__tabs tour004034__tabs">
                     <div class="tour001001__itemTab tour004034__itemTab active">
                         국제스포츠센터 <br> 채용정보
                     </div>
@@ -551,12 +551,12 @@
                     </div>
                 </div>
                 <div class="tour405006__filter tour004034__filter">
-                    <select class="tour405006__select1 tour405007__select">
+                    <select class="tour405006__select1 tour405007__select tour004034__select--pc selectbox">
                         <option value="10개씩 보기">10개씩 보기</option>
                         <option value="10개씩 보기">10개씩 보기</option>
                     </select>
                     <div class="tour405006__boxInput">
-                        <select class="tour405006__select2">
+                        <select class="tour405006__select2 selectbox">
                             <option value="제목">제목</option>
                             <option value="내용">내용</option>
                         </select>
@@ -564,12 +564,18 @@
                         <button type="button" class="tour405006__btnFilter">검색</button>
                     </div>
                 </div>
-                <div class="hpy02__wrapper">
-                    <div class="tour405006__text">
-                        총 <span>304</span> 건, 페이지 1/14
+                <div class="hpy02__wrapper tour403001__boxMain">
+                    <div class="tour004034__filterPagi">
+                        <div class="tour405006__text">
+                            총 <span>304</span> 건, 페이지 1/14
+                        </div>
+                        <select class="tour405006__select1 tour405007__select tour004034__select--mb selectbox">
+                            <option value="10개씩 보기">10개씩 보기</option>
+                            <option value="10개씩 보기">10개씩 보기</option>
+                        </select>
                     </div>
                     <div class="hpy02__box">
-                        <table class="hpy02__table tour404003__table tour404007__table">
+                        <table class="hpy02__table tour404003__table tour404007__table tour401013__table">
                             <colgroup>
                                 <col style="width: 6rem;">
                                 <col style="width: 28rem;">
@@ -1211,6 +1217,71 @@
                 e.stopPropagation();
             });
 
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+            const originalHTML = table.innerHTML;
+
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
+
+                table.classList.add('is-mobile');
+
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
+
+                const numberIndex = headers.indexOf('번호');
+                const schoolIndex = headers.indexOf('제목');
+
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
+
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    [numberIndex, schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== numberIndex && i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
+                });
+            }
+
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
+            }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            handleResponsive(mediaQuery);
+
+            mediaQuery.addEventListener('change', handleResponsive);
         });
     </script>
 </body>
