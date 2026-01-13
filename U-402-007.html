@@ -1175,61 +1175,67 @@
     </script>
 
     <script>
-        function applyMobileTable() {
+        document.addEventListener('DOMContentLoaded', () => {
             const table = document.querySelector('.tour401013__table');
             if (!table) return;
 
-            // tránh chạy lại nhiều lần
-            if (table.classList.contains('is-mobile')) return;
-            table.classList.add('is-mobile');
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
 
-            const headers = [...table.querySelectorAll('thead th')]
-                .map(th => th.textContent.trim());
+            const originalHTML = table.innerHTML;
 
-            const numberIndex = headers.indexOf('번호');
-            const schoolIndex = headers.indexOf('제목');
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
 
-            table.querySelectorAll('tbody tr').forEach(row => {
-                const tds = [...row.querySelectorAll('td')];
+                table.classList.add('is-mobile');
 
-                // title (학교명)
-                if (tds[schoolIndex]) {
-                    const title = document.createElement('div');
-                    title.className = 'mobile-card-title';
-                    title.textContent = tds[schoolIndex].textContent.trim();
-                    row.prepend(title);
-                }
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
 
-                // remove 번호 + 학교명 (từ cuối)
-                [numberIndex, schoolIndex]
-                    .sort((a, b) => b - a)
-                    .forEach(i => tds[i] && tds[i].remove());
+                const numberIndex = headers.indexOf('번호');
+                const schoolIndex = headers.indexOf('제목');
 
-                const labels = headers.filter(
-                    (_, i) => i !== numberIndex && i !== schoolIndex
-                );
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
 
-                [...row.querySelectorAll('td')].forEach((td, i) => {
-                    td.setAttribute('data-label', labels[i]);
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    [numberIndex, schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== numberIndex && i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
                 });
-            });
-
-            // force repaint
-            table.offsetHeight;
-        }
-
-        // chạy khi DOM sẵn sàng
-        document.addEventListener('DOMContentLoaded', () => {
-            if (window.matchMedia('(max-width: 768px)').matches) {
-                applyMobileTable();
             }
-        });
 
-        // chạy khi resize / xoay màn hình
-        window.addEventListener('resize', () => {
-            if (window.matchMedia('(max-width: 768px)').matches) {
-                applyMobileTable();
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
             }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            handleResponsive(mediaQuery);
+
+            mediaQuery.addEventListener('change', handleResponsive);
         });
     </script>
 </body>

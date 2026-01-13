@@ -454,7 +454,6 @@
 
             const mediaQuery = window.matchMedia('(max-width: 767px)');
 
-            // lưu HTML gốc để restore
             const originalHTML = table.innerHTML;
 
             function applyMobileTable() {
@@ -471,7 +470,6 @@
                 table.querySelectorAll('tbody tr').forEach(row => {
                     const tds = [...row.querySelectorAll('td')];
 
-                    // title
                     if (tds[schoolIndex]) {
                         const title = document.createElement('div');
                         title.className = 'mobile-card-title';
@@ -479,7 +477,6 @@
                         row.prepend(title);
                     }
 
-                    // remove 번호 + 제목
                     [numberIndex, schoolIndex]
                         .sort((a, b) => b - a)
                         .forEach(i => tds[i] && tds[i].remove());
@@ -509,10 +506,8 @@
                 }
             }
 
-            // chạy lần đầu
             handleResponsive(mediaQuery);
 
-            // lắng nghe thay đổi viewport
             mediaQuery.addEventListener('change', handleResponsive);
         });
     </script>
