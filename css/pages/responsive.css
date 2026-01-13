@@ -12102,6 +12102,8 @@
     .tour004042__wrapper,
     .hpy004047-2__wrapper,
     .tour004054__wrapper,
+    .tour004056__wrapper,
+    .tour404057__wrapper,
     .tour001001__mainBox {
         padding: 2rem;
         border: 1px solid #ddd;
@@ -13645,7 +13647,8 @@
     .hpy004047__table table,
     .hpy004049__table table,
     .hpy004050__table table,
-    .hpy004051__table table {
+    .hpy004051__table table,
+    .tour404057__wrapper table {
         border: none;
         width: 100%;
     }
@@ -13661,7 +13664,9 @@
     .hpy004050__table table thead,
     .hpy004050__table table colgroup ,
     .hpy004051__table table thead,
-    .hpy004051__table table colgroup {
+    .hpy004051__table table colgroup,
+    .tour404057__wrapper table thead,
+    .tour404057__wrapper table colgroup {
         display: none;
     }
 
@@ -13670,7 +13675,8 @@
     .hpy004047__table table tbody tr,
     .hpy004049__table table tbody tr,
     .hpy004050__table table tbody tr,
-    .hpy004051__table table tbody tr {
+    .hpy004051__table table tbody tr ,
+    .tour404057__wrapper table tbody tr {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
@@ -13685,7 +13691,8 @@
     .hpy004047__table table tbody td,
     .hpy004049__table table tbody td ,
     .hpy004050__table table tbody td,
-    .hpy004051__table table tbody td {
+    .hpy004051__table table tbody td,
+    .tour404057__wrapper table tbody td {
         border-left: none;
         border-right: none;
         padding: 1.2rem 1rem;
@@ -13702,7 +13709,8 @@
     .hpy004047__table table tbody tr td:last-child,
     .hpy004049__table table tbody tr td:last-child,
     .hpy004050__table table tbody tr td:last-child,
-    .hpy004051__table table tbody tr td:last-child {
+    .hpy004051__table table tbody tr td:last-child,
+    .tour404057__wrapper table tbody tr td:last-child {
         border-bottom: none;
     }
 
@@ -14382,6 +14390,126 @@
     .tour004045__boxFilter,
     .tour004046__boxFilter {
         margin: 5rem 0 1rem 0;
+    }
+    .tour004047__boxChild {
+        width: 20rem;
+        height: 12rem;
+    }
+    .tour004047__titleChild {
+        font-size: 1.7rem;
+    }
+    .tour004047__desc {
+        font-size: 1rem;
+    }
+    .tour004047__subTitle {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .tour404057__wrapper table tbody tr td:nth-child(5) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .tour404057__wrapper table tbody tr td:nth-child(1) {
+        display: none;
+    }
+
+
+    .tour404057__wrapper table tbody tr td:nth-child(2) {
+        order: 2;
+    }
+
+    .tour404057__wrapper table tbody tr td:nth-child(3) {
+        order: 3;
+    }
+    .tour404057__wrapper table tbody tr td:nth-child(4) {
+        order: 4;
+    }
+    .tour404057__wrapper table tbody tr td:nth-child(6) {
+        order: 5;
+    }
+    .tour404057__wrapper table tbody tr td:nth-child(7) {
+        order: 6;
+    }
+
+    .tour404057__wrapper table tbody tr td:nth-child(2)::before {
+        content: "년도";
+    }
+
+
+    .tour404057__wrapper table tbody tr td:nth-child(3)::before {
+        content: "수로일";
+    }
+
+    .tour404057__wrapper table tbody tr td:nth-child(4)::before {
+        content: "시간";
+    }
+
+    .tour404057__wrapper table tbody tr td:nth-child(6)::before {
+        content: "수료증 발급";
+    }
+    .tour404057__wrapper table tbody tr td:nth-child(7)::before {
+        content: "구분";
+    }
+
+    .tour404057__wrapper table tbody tr td:nth-child(3)::before,
+    .tour404057__wrapper table tbody tr td:nth-child(2)::before,
+    .tour404057__wrapper table tbody tr td:nth-child(4)::before,
+    .tour404057__wrapper table tbody tr td:nth-child(6)::before,
+    .tour404057__wrapper table tbody tr td:nth-child(7)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 9rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .tour404057__wrapper .hpy02__table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tour404057__wrapper .hpy02__table tbody tr td:last-child {
+        border-bottom: none;
+    }
+    .hpy02__wrapper.tour004047__popup {
+        padding: 2rem;
+        width: 90%;
+        border-radius: 2rem;
+        height: auto;
+    }
+
+    .hpy02__wrapper.tour004047__popup .indv__tit{
+        margin-bottom: 0;
+    }
+    .tour004047__closePopup {
+        font-size: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .tour004047__itemLeft {
+        width: 8rem;
+        font-size: 1.1rem;
+    }
+    .tour004047__itemRight {
+        font-size: 1.1rem;
+    }
+    .tour004047__boxMain {
+        margin-bottom: 1rem;
+    }
+
+    .tour404057__wrapper table tr:last-child {
+        margin-bottom: 0;
     }
 }
 
