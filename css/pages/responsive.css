@@ -13866,6 +13866,21 @@
     .tour004043__text {
         font-size: 1.2rem;
     }
+    .hpy004046-2__title,
+    .hpy004046-2__text {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .hpy004029__btn.pt40 {
+        padding-top: 2rem;
+    }
+    .hpy004029__btn.text-right {
+        text-align: center;
+        padding: 2rem 2rem 0;
+    }
+    .hpy004029__btn.text-right button {
+        min-width: 14rem;
+    }
 }
 
 @media (max-width: 414px) {
