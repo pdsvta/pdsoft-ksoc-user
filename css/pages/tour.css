@@ -14022,3 +14022,7 @@ caption {
     width: 2.5rem;
     height: auto;
 }
+
+.hpy004051__table span {
+    display: none;
+}

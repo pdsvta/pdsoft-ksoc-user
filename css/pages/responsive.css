@@ -13641,7 +13641,10 @@
 
     .hpy004038__table table,
     .tour004042__table table,
-    .hpy004047__table table {
+    .hpy004047__table table,
+    .hpy004049__table table,
+    .hpy004050__table table,
+    .hpy004051__table table {
         border: none;
         width: 100%;
     }
@@ -13651,13 +13654,22 @@
     .tour004042__table table thead,
     .tour004042__table table colgroup,
     .hpy004047__table table thead,
-    .hpy004047__table table colgroup {
+    .hpy004047__table table colgroup,
+    .hpy004049__table table thead,
+    .hpy004049__table table colgroup,
+    .hpy004050__table table thead,
+    .hpy004050__table table colgroup ,
+    .hpy004051__table table thead,
+    .hpy004051__table table colgroup {
         display: none;
     }
 
     .hpy004038__table table tbody tr,
     .tour004042__table table tbody tr ,
-    .hpy004047__table table tbody tr {
+    .hpy004047__table table tbody tr,
+    .hpy004049__table table tbody tr,
+    .hpy004050__table table tbody tr,
+    .hpy004051__table table tbody tr {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
@@ -13669,7 +13681,10 @@
 
     .hpy004038__table table tbody td,
     .tour004042__table table tbody td,
-    .hpy004047__table table tbody td {
+    .hpy004047__table table tbody td,
+    .hpy004049__table table tbody td ,
+    .hpy004050__table table tbody td,
+    .hpy004051__table table tbody td {
         border-left: none;
         border-right: none;
         padding: 1.2rem 1rem;
@@ -13683,7 +13698,10 @@
 
     .hpy004038__table table tbody tr td:last-child,
     .tour004042__table table tbody tr td:last-child,
-    .hpy004047__table table tbody tr td:last-child {
+    .hpy004047__table table tbody tr td:last-child,
+    .hpy004049__table table tbody tr td:last-child,
+    .hpy004050__table table tbody tr td:last-child,
+    .hpy004051__table table tbody tr td:last-child {
         border-bottom: none;
     }
 
@@ -13893,6 +13911,7 @@
         padding: 2rem;
         border-radius: 2rem;
         gap: 1rem;
+        margin-bottom: 1rem;
     }
     .hpy02__label.fs17 {
         font-size: 1.3rem;
@@ -13900,6 +13919,7 @@
     }
 
     .hpy004047-2__filter .hpy004016__group .selectbox,
+    .hpy004047-2__filter .hpy004016__group .hpy__input,
     .hpy004047-2__filter .hpy004016__group .hpy-reg__input--date,
     .hpy004047-2__filter .hpy004016__group .hpy-reg__btn{
         height: 3.5rem;
@@ -14085,6 +14105,250 @@
     }
     .hpy004047__table table tbody tr:last-child {
         margin-bottom: 0;
+    }
+
+    .hpy004049__table table tbody tr td:nth-child(5) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .hpy004049__table table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+
+    .hpy004049__table table tbody tr td:nth-child(2) {
+        order: 3;
+    }
+
+    .hpy004049__table table tbody tr td:nth-child(3) {
+        order: 4;
+    }
+    .hpy004049__table table tbody tr td:nth-child(4) {
+        order: 5;
+    }
+    .hpy004049__table table tbody tr td:nth-child(6) {
+        order: 6;
+    }
+    .hpy004049__table table tbody tr td:nth-child(7) {
+        order: 7;
+    }
+
+    .hpy004049__table table tbody tr td:nth-child(1)::before {
+        content: "등록년도";
+    }
+
+
+    .hpy004049__table table tbody tr td:nth-child(2)::before {
+        content: "종목";
+    }
+
+    .hpy004049__table table tbody tr td:nth-child(3)::before {
+        content: "종별";
+    }
+
+    .hpy004049__table table tbody tr td:nth-child(4)::before {
+        content: "시도";
+    }
+    .hpy004049__table table tbody tr td:nth-child(6)::before {
+        content: "개인번호 (선수번호)";
+    }
+    .hpy004049__table table tbody tr td:nth-child(7)::before {
+        content: "등록일";
+    }
+
+    .hpy004049__table table tbody tr td:nth-child(1)::before,
+    .hpy004049__table table tbody tr td:nth-child(3)::before,
+    .hpy004049__table table tbody tr td:nth-child(2)::before,
+    .hpy004049__table table tbody tr td:nth-child(4)::before,
+    .hpy004049__table table tbody tr td:nth-child(6)::before ,
+    .hpy004049__table table tbody tr td:nth-child(7)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 12.5rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+    .hpy004049__table .hpy02__table tbody tr:last-child td,
+    .hpy004050__table .hpy02__table tbody tr:last-child td,
+    .hpy004051__table .hpy02__table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+    .hpy004049__table .hpy02__table tbody tr td:last-child,
+    .hpy004050__table .hpy02__table tbody tr td:last-child,
+    .hpy004051__table .hpy02__table tbody tr td:last-child {
+        border-bottom: none;
+    }
+    .hpy004049__table .hpy02__table tbody tr:last-child,
+    .hpy004050__table .hpy02__table tbody tr:last-child ,
+    .hpy004051__table .hpy02__table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .hpy004050__table table tbody tr td:nth-child(5) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .hpy004050__table table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+
+    .hpy004050__table table tbody tr td:nth-child(2) {
+        order: 3;
+    }
+
+    .hpy004050__table table tbody tr td:nth-child(3) {
+        order: 4;
+    }
+    .hpy004050__table table tbody tr td:nth-child(4) {
+        order: 5;
+    }
+    .hpy004050__table table tbody tr td:nth-child(6) {
+        order: 6;
+    }
+    .hpy004050__table table tbody tr td:nth-child(7) {
+        order: 7;
+    }
+    .hpy004050__table table tbody tr td:nth-child(8) {
+        order: 8;
+    }
+
+    .hpy004050__table table tbody tr td:nth-child(1)::before {
+        content: "등록년도";
+    }
+
+
+    .hpy004050__table table tbody tr td:nth-child(2)::before {
+        content: "종목";
+    }
+
+    .hpy004050__table table tbody tr td:nth-child(3)::before {
+        content: "종별";
+    }
+
+    .hpy004050__table table tbody tr td:nth-child(4)::before {
+        content: "시도";
+    }
+    .hpy004050__table table tbody tr td:nth-child(6)::before {
+        content: "구분";
+    }
+    .hpy004050__table table tbody tr td:nth-child(7)::before {
+        content: "기간";
+    }
+    .hpy004050__table table tbody tr td:nth-child(8)::before {
+        content: "등록일";
+    }
+
+    .hpy004050__table table tbody tr td:nth-child(1)::before,
+    .hpy004050__table table tbody tr td:nth-child(3)::before,
+    .hpy004050__table table tbody tr td:nth-child(2)::before,
+    .hpy004050__table table tbody tr td:nth-child(4)::before,
+    .hpy004050__table table tbody tr td:nth-child(6)::before ,
+    .hpy004050__table table tbody tr td:nth-child(7)::before ,
+    .hpy004050__table table tbody tr td:nth-child(8)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 7.5rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .hpy004051__table table tbody tr td:nth-child(4) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .hpy004051__table table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+
+    .hpy004051__table table tbody tr td:nth-child(2) {
+        order: 3;
+    }
+
+    .hpy004051__table table tbody tr td:nth-child(3) {
+        order: 4;
+    }
+    .hpy004051__table table tbody tr td:nth-child(5) {
+        order: 5;
+    }
+    .hpy004051__table table tbody tr td:nth-child(6) {
+        order: 6;
+    }
+    .hpy004051__table table tbody tr td:nth-child(7) {
+        order: 7;
+    }
+
+    .hpy004051__table table tbody tr td:nth-child(1)::before {
+        content: "등록년도";
+    }
+
+
+    .hpy004051__table table tbody tr td:nth-child(2)::before {
+        content: "종목";
+    }
+
+    .hpy004051__table table tbody tr td:nth-child(3)::before {
+        content: "종별";
+    }
+
+    .hpy004051__table table tbody tr td:nth-child(5)::before {
+        content: "구분";
+    }
+    .hpy004051__table table tbody tr td:nth-child(6)::before {
+        content: "자격명";
+    }
+    .hpy004051__table table tbody tr td:nth-child(7)::before {
+        content: "등록일";
+    }
+    .hpy004051__table table tbody tr td:nth-child(1)::before,
+    .hpy004051__table table tbody tr td:nth-child(3)::before,
+    .hpy004051__table table tbody tr td:nth-child(2)::before,
+    .hpy004051__table table tbody tr td:nth-child(5)::before,
+    .hpy004051__table table tbody tr td:nth-child(6)::before ,
+    .hpy004051__table table tbody tr td:nth-child(7)::before{
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 7.5rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+    
+    .hpy004051__table span {
+        display: block;
     }
 }
 
