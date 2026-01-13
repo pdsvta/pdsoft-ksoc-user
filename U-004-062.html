@@ -530,9 +530,9 @@
                 <div class="title tour003005__title">
                     <h2>로그인 이력</h2>
                 </div>
-                <div class="hpy02__wrapper">
+                <div class="hpy02__wrapper tour403001__boxMain">
                     <div class="hpy02__box tour004062__box">
-                        <table class="hpy02__table tour004062__table">
+                        <table class="hpy02__table tour404003__table tour004062__table tour401013__table">
                             <colgroup>
                                 <col style="width: 14rem;">
                                 <col style="width: 22rem;">
@@ -1150,6 +1150,71 @@
 
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+            const originalHTML = table.innerHTML;
+
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
+
+                table.classList.add('is-mobile');
+
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
+
+                const numberIndex = headers.indexOf('No');
+                const schoolIndex = headers.indexOf('접속 지역');
+
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
+
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    [numberIndex, schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== numberIndex && i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
+                });
+            }
+
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
+            }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            handleResponsive(mediaQuery);
+
+            mediaQuery.addEventListener('change', handleResponsive);
+        });
     </script>
 </body>
 

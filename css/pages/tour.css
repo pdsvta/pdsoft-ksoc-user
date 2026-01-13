@@ -4075,6 +4075,18 @@ caption {
     color: #000;
 }
 
+.tour401005-2__groupSelect {
+    width: 100%;
+}
+
+.tour401005-2__itemSelect {
+    flex: 1 1 25%;
+}
+
+.tour401005-2__itemSelect .selectbox {
+    width: 100%;
+}
+
 .tour401007__wrapper {
     display: flex;
     justify-content: center;
@@ -6262,6 +6274,7 @@ caption {
     border-radius: 5px;
     color: #000;
     padding: 0.8rem;
+    font-size: 1.3rem;
 }
 
 .tour405006__btnFilter {
@@ -9098,6 +9111,10 @@ caption {
 
 .tour004034__filter {
     padding: 0 2rem;
+}
+
+.tour004034__select--mb {
+    display: none;
 }
 
 .tour004035__boxFilter {
