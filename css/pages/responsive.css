@@ -14376,8 +14376,12 @@
         flex-wrap: wrap;
     }
 
-    .tour__group--input.p02 {
+    .tour004054__boxFilter.tour__group--input.p02 {
         padding: 0;
+    }
+    .tour004045__boxFilter,
+    .tour004046__boxFilter {
+        margin: 5rem 0 1rem 0;
     }
 }
 
