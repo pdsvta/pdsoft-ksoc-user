@@ -12101,6 +12101,7 @@
     .hpy004038__wrapper,
     .tour004042__wrapper,
     .hpy004047-2__wrapper,
+    .tour004054__wrapper,
     .tour001001__mainBox {
         padding: 2rem;
         border: 1px solid #ddd;
@@ -14349,6 +14350,34 @@
     
     .hpy004051__table span {
         display: block;
+    }
+
+    .tour004054__boxFilter .selectbox {
+        width: calc((100% - .5rem)/2);
+        height: 3.5rem;
+    }
+
+
+    .tour004054__boxFilter .hpy__input {
+        width: calc((100% - .5rem)/2);
+        height: 3.5rem;
+    }
+
+    .tour004054__boxFilter .hpy__input:nth-child(5) {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tour004054__boxFilter .hpy-reg__btn {
+        height: 3.5rem;
+    }
+
+    .tour004054__boxFilter {
+        flex-wrap: wrap;
+    }
+
+    .tour__group--input.p02 {
+        padding: 0;
     }
 }
 
