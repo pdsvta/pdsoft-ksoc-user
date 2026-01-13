@@ -2699,6 +2699,14 @@ caption {
     align-items: flex-end;
 }
 
+.hpy0707__input {
+    width: 50%;
+}
+
+.hpy0707__input .hpy__select .selectbox {
+    width: 100%;
+}
+
 .hpy0707__wrapper .hpy-reg__tit--bb {
     border-bottom: none;
     padding: 3rem 2rem 0;
@@ -2827,7 +2835,7 @@ caption {
 }
 
 .hpy0709__box {
-    padding: 0 2rem 5rem;
+    padding: 0 2rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -10129,72 +10137,8 @@ caption {
     padding: 0 0;
 }
 
-.tour102002__repair {
-    height: auto;
-}
-
-.tour102002__boxLeft {
-    width: 66%;
-}
-
-.tour102002__btnPlus {
-    margin-left: 2rem;
-}
-
-.tour102002__note {
-    padding-top: 1rem;
-}
-
 .tour102023__title {
     justify-content: flex-start;
-}
-
-.tour102026__card {
-    display: flex;
-    margin-bottom: 1.5rem;
-}
-
-.tour102026__card .selectbox {
-    width: 33%;
-}
-
-.tour102026__card label {
-    width: 10%;
-    padding-top: 1rem;
-}
-
-.tour102026__card input,
-.tour102026__card textarea,
-.ply102026__group.tour102026__group {
-    flex: 1;
-}
-
-.tour102026__card .sms__note {
-    font-size: 1.3rem;
-}
-
-.tour102026__card .sms__note {
-    position: relative;
-    padding-left: 2.5rem;
-    padding-top: 0;
-}
-
-.tour102026__card .sms__note::before {
-    display: inline-block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1.6rem;
-    height: 1.6rem;
-    background: #959595 url(../../images/u-102-026/bg_check.svg) center center no-repeat;
-    border-radius: 50%;
-    border-color: #959595;
-}
-
-.tour102026__btnVoice {
-    background-color: #fff;
-    border: 1px solid #ccc;
 }
 
 .tour102028__groupCard .ply-reg__card {
@@ -10213,18 +10157,6 @@ caption {
 
 .tour102007__regCard {
     width: 32%;
-}
-
-.tour102009__note {
-    border-radius: 10px;
-    border: solid 1px #c4c4c4;
-    background-color: #f7f7f7;
-    margin-top: 5rem;
-    padding: 2rem 2rem 2rem 3.2rem;
-}
-
-.tour102009__note p {
-    font-size: 1.6rem;
 }
 
 .tour102010__groupCard .ply-reg__card {
@@ -11719,6 +11651,16 @@ caption {
     display: flex;
     gap: 0.5rem;
     width: 100%;
+}
+
+.hpy004022__group .itemSelect {
+    width: 42rem;
+}
+
+.hpy004022__group,
+.hpy004022__group .itemInput {
+    width: 100%;
+    max-width: unset;
 }
 
 .hpy004028__wrapper .hpy004016__title span {
