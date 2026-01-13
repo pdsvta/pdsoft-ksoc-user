@@ -12100,6 +12100,7 @@
     .tour510002__wrapper,
     .hpy004038__wrapper,
     .tour004042__wrapper,
+    .hpy004047-2__wrapper,
     .tour001001__mainBox {
         padding: 2rem;
         border: 1px solid #ddd;
@@ -13639,7 +13640,8 @@
     }
 
     .hpy004038__table table,
-    .tour004042__table table {
+    .tour004042__table table,
+    .hpy004047__table table {
         border: none;
         width: 100%;
     }
@@ -13647,12 +13649,15 @@
     .hpy004038__table table thead,
     .hpy004038__table table colgroup,
     .tour004042__table table thead,
-    .tour004042__table table colgroup {
+    .tour004042__table table colgroup,
+    .hpy004047__table table thead,
+    .hpy004047__table table colgroup {
         display: none;
     }
 
     .hpy004038__table table tbody tr,
-    .tour004042__table table tbody tr {
+    .tour004042__table table tbody tr ,
+    .hpy004047__table table tbody tr {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
@@ -13663,7 +13668,8 @@
     }
 
     .hpy004038__table table tbody td,
-    .tour004042__table table tbody td {
+    .tour004042__table table tbody td,
+    .hpy004047__table table tbody td {
         border-left: none;
         border-right: none;
         padding: 1.2rem 1rem;
@@ -13676,7 +13682,8 @@
     }
 
     .hpy004038__table table tbody tr td:last-child,
-    .tour004042__table table tbody tr td:last-child {
+    .tour004042__table table tbody tr td:last-child,
+    .hpy004047__table table tbody tr td:last-child {
         border-bottom: none;
     }
 
@@ -13880,6 +13887,204 @@
     }
     .hpy004029__btn.text-right button {
         min-width: 14rem;
+    }
+    .hpy004047-2__filter {
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 2rem;
+        gap: 1rem;
+    }
+    .hpy02__label.fs17 {
+        font-size: 1.3rem;
+        padding: 0 1rem;
+    }
+
+    .hpy004047-2__filter .hpy004016__group .selectbox,
+    .hpy004047-2__filter .hpy004016__group .hpy-reg__input--date,
+    .hpy004047-2__filter .hpy004016__group .hpy-reg__btn{
+        height: 3.5rem;
+    }
+    .hpy004016__group.gap20 {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .selectbox.min200 {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .hpy004016__group.gap05 .hpy-reg__input--max140 {
+        max-width: 100%;
+        min-width: auto;
+    }
+    .hpy004016__group.gap10 {
+        gap: .5rem;
+    }
+    .hpy004047-2__table {
+        padding: 0;
+    }
+
+    .hpy004038__table table tbody tr td:nth-child(4) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .hpy004038__table table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+
+    .hpy004038__table table tbody tr td:nth-child(2) {
+        order: 3;
+    }
+
+    .hpy004038__table table tbody tr td:nth-child(3) {
+        order: 4;
+    }
+    .hpy004038__table table tbody tr td:nth-child(5) {
+        order: 5;
+    }
+    .hpy004038__table table tbody tr td:nth-child(6) {
+        order: 6;
+    }
+
+    .hpy004038__table table tbody tr td:nth-child(1)::before {
+        content: "대회년도";
+    }
+
+
+    .hpy004038__table table tbody tr td:nth-child(2)::before {
+        content: "주최기관";
+    }
+
+    .hpy004038__table table tbody tr td:nth-child(3)::before {
+        content: "종목";
+    }
+
+    .hpy004038__table table tbody tr td:nth-child(5)::before {
+        content: "대회기간";
+    }
+    .hpy004038__table table tbody tr td:nth-child(6)::before {
+        content: "개최지";
+    }
+
+    .hpy004038__table table tbody tr td:nth-child(1)::before,
+    .hpy004038__table table tbody tr td:nth-child(3)::before,
+    .hpy004038__table table tbody tr td:nth-child(2)::before,
+    .hpy004038__table table tbody tr td:nth-child(5)::before,
+    .hpy004038__table table tbody tr td:nth-child(6)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 8rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+    .hpy004038__wrapper .hpy02__table tbody td {
+        height: auto;
+    }
+
+    .hpy004047__table table tbody tr td:nth-child(3) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .hpy004047__table table tbody tr td:nth-child(1) {
+        display: none;
+    }
+
+
+    .hpy004047__table table tbody tr td:nth-child(2) {
+        order: 2;
+    }
+
+    .hpy004047__table table tbody tr td:nth-child(4) {
+        order: 3;
+    }
+    .hpy004047__table table tbody tr td:nth-child(5) {
+        order: 4;
+    }
+    .hpy004047__table table tbody tr td:nth-child(6) {
+        order: 5;
+    }
+    .hpy004047__table table tbody tr td:nth-child(7) {
+        order: 6;
+    }
+    .hpy004047__table table tbody tr td:nth-child(8) {
+        order: 7;
+    }
+
+    .hpy004047__table table tbody tr td:nth-child(2)::before {
+        content: "신청년도";
+    }
+
+    .hpy004047__table table tbody tr td:nth-child(4)::before {
+        content: "신청일";
+    }
+
+    .hpy004047__table table tbody tr td:nth-child(5)::before {
+        content: "발급일";
+    }
+    .hpy004047__table table tbody tr td:nth-child(6)::before {
+        content: "결제금액";
+    }
+    .hpy004047__table table tbody tr td:nth-child(7)::before {
+        content: "결제종류";
+    }
+    .hpy004047__table table tbody tr td:nth-child(8)::before {
+        content: "처리상태";
+    }
+
+    .hpy004047__table table tbody tr td:nth-child(2)::before,
+    .hpy004047__table table tbody tr td:nth-child(4)::before,
+    .hpy004047__table table tbody tr td:nth-child(5)::before,
+    .hpy004047__table table tbody tr td:nth-child(6)::before,
+    .hpy004047__table table tbody tr td:nth-child(7)::before,
+    .hpy004047__table table tbody tr td:nth-child(8)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 8rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .hpy004047__table .hpy004047-2__text .hpy00447-2__btn {
+        width: 6rem;
+        height: 2rem;
+        font-size: 1rem;
+        border-radius: .5rem;
+        border: 1px solid #0C54B8;
+        color: #0C54B8;
+    }
+
+    .hpy004047__table .hpy004047-2__text {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .hpy004047-2__table .hpy02__table {
+        border-bottom: none;
+    }
+    .hpy004047__table table tbody tr:last-child {
+        margin-bottom: 0;
     }
 }
 
