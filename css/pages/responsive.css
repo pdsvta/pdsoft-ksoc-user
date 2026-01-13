@@ -13863,6 +13863,9 @@
     .tour004042__table table tbody tr:last-child {
         margin-bottom: 0;
     }
+    .tour004043__text {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 414px) {
