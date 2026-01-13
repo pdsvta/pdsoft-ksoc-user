@@ -12099,6 +12099,7 @@
     .tour503002__wrapper,
     .tour510002__wrapper,
     .hpy004038__wrapper,
+    .tour004042__wrapper,
     .tour001001__mainBox {
         padding: 2rem;
         border: 1px solid #ddd;
@@ -13637,17 +13638,21 @@
         padding: 2rem 0 0;
     }
 
-    .hpy004038__table table {
+    .hpy004038__table table,
+    .tour004042__table table {
         border: none;
         width: 100%;
     }
 
     .hpy004038__table table thead,
-    .hpy004038__table table colgroup {
+    .hpy004038__table table colgroup,
+    .tour004042__table table thead,
+    .tour004042__table table colgroup {
         display: none;
     }
 
-    .hpy004038__table table tbody tr {
+    .hpy004038__table table tbody tr,
+    .tour004042__table table tbody tr {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
@@ -13657,7 +13662,8 @@
         position: relative;
     }
 
-    .hpy004038__table table tbody td {
+    .hpy004038__table table tbody td,
+    .tour004042__table table tbody td {
         border-left: none;
         border-right: none;
         padding: 1.2rem 1rem;
@@ -13669,7 +13675,8 @@
         display: flex;
     }
 
-    .hpy004038__table table tbody tr td:last-child {
+    .hpy004038__table table tbody tr td:last-child,
+    .tour004042__table table tbody tr td:last-child {
         border-bottom: none;
     }
 
@@ -13740,6 +13747,121 @@
     }
     .hpy004038__wrapper .hpy02__table tbody td {
         height: auto;
+    }
+
+    .tour004042__table table tbody tr td:nth-child(5) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .tour004042__table table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+
+    .tour004042__table table tbody tr td:nth-child(2) {
+        order: 3;
+    }
+
+    .tour004042__table table tbody tr td:nth-child(3) {
+        order: 4;
+    }
+    .tour004042__table table tbody tr td:nth-child(4) {
+        order: 5;
+    }
+    .tour004042__table table tbody tr td:nth-child(6) {
+        order: 6;
+    }
+    .tour004042__table table tbody tr td:nth-child(7) {
+        order: 7;
+    }
+    .tour004042__table table tbody tr td:nth-child(8) {
+        order: 8;
+    }
+
+    .tour004042__table table tbody tr td:nth-child(1)::before {
+        content: "신청년도";
+    }
+
+
+    .tour004042__table table tbody tr td:nth-child(2)::before {
+        content: "종목";
+    }
+
+    .tour004042__table table tbody tr td:nth-child(3)::before {
+        content: "종별";
+    }
+
+    .tour004042__table table tbody tr td:nth-child(4)::before {
+        content: "시도";
+    }
+    .tour004042__table table tbody tr td:nth-child(6)::before {
+        content: "개인번호";
+    }
+    .tour004042__table table tbody tr td:nth-child(7)::before {
+        content: "신청일";
+    }
+    .tour004042__table table tbody tr td:nth-child(8)::before {
+        content: "진행상태";
+    }
+
+    .tour004042__table table tbody tr td:nth-child(1)::before,
+    .tour004042__table table tbody tr td:nth-child(3)::before,
+    .tour004042__table table tbody tr td:nth-child(2)::before,
+    .tour004042__table table tbody tr td:nth-child(4)::before,
+    .tour004042__table table tbody tr td:nth-child(6)::before,
+    .tour004042__table table tbody tr td:nth-child(7)::before,
+    .tour004042__table table tbody tr td:nth-child(8)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 8rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+    .hpy004038__wrapper .hpy02__table tbody td {
+        height: auto;
+    }
+
+    .tour004042__boxFilter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tour004042__filter {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: .5rem;
+    }
+    .tour004042__filter .selectbox {
+        width: 100%;
+    }
+    .tour004042__boxTitle p,
+    .tour004042__filter p {
+        font-size: 1.2rem;
+        white-space: nowrap;
+
+    }
+    .tour004042__filter .tour004042__filter {
+        flex-direction: row;
+        gap: .5rem;
+        margin-top: 0;
+    }
+    .tour004035__table {
+        margin-top: 2rem;
+    }
+    .hpy004038__table table tbody tr:last-child, 
+    .tour004042__table table tbody tr:last-child {
+        margin-bottom: 0;
     }
 }
 
