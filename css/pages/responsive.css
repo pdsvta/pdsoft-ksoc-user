@@ -11755,6 +11755,7 @@
         gap: .5rem;
         padding: 0 2rem;
         margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
     .tour001001__itemTab {
@@ -12126,6 +12127,10 @@
     .tour004054__wrapper,
     .tour004056__wrapper,
     .tour404057__wrapper,
+    .tour004058__wrapper,
+    .tour0040582__wrapper,
+    .tour0040612__wrapper,
+    .tour0040602__wrapper,
     .tour001001__mainBox {
         padding: 2rem;
         border: 1px solid #ddd;
@@ -14620,6 +14625,188 @@
     .tour401005-2__groupSelect {
         flex-wrap: wrap;
         padding: 2rem;
+    }
+    .tour004049__boxContent.tour004049__boxRowContent {
+        width: 100%;
+        gap: 1rem;
+    }
+    .tour004049__contentLeft,
+    .tour004049__contentMid.tour004049__contentTime {
+        width: 100%;
+    }
+    .tour004049__itemInfo {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .tour004049__rowTop {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .tour004049__text {
+        font-size: 1.2rem;
+    }
+    .tour004049__titleChild {
+        font-size: 1.2rem;
+        width: 9rem;
+    }
+    .tour004049__itemChild {
+        margin-bottom: 1rem;
+    }
+    .tour004049__action  {
+        width: 100%;
+    }
+
+    .tour004049__addMore img {
+        width: 3rem;
+        margin: 2rem auto;
+    }
+
+    .tour004049__boxAddInfo {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .tour004049__addInfoLeft {
+        width: 100%;
+        border-right: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .tour004049__addInfoLeft p {
+        font-size: 1.5rem;
+    }
+
+    .tour004049__addInfoLeft p br {
+        display: none;
+    }
+    .tour004049__addInfoLeft img {
+        width: 3.3rem;
+        height: auto;
+        margin: 0;
+    }
+
+    .tour004049__addInfoBottom {
+        flex-direction: column;
+        gap: 0;
+    }
+    .tour004049__itemAddInfo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour004049__itemAddInfo .tour004049__itemAddInfo {
+        flex-direction: row;
+        width: 100%;
+        gap: .5rem;
+    }
+    .tour004049__nameSchool {
+        width: 100%;
+    }
+    .tour004049__addInfoRight {
+        padding-left: 0;
+        flex: unset;
+    }
+    .tour004049__itemAddInfo input {
+        width: 100%;
+    }
+    .tour004049__itemAddInfo .selectbox {
+        width: 100%;
+    }
+    .tour004049__itemAddInfo p {
+        width: auto;
+        padding: 0 1rem;
+    }
+    .tour004049__addInfoFilter {
+        gap: .5rem;
+    }
+    .tour004049__itemAddInfo .tour004049__itemAddInfo {
+        margin-bottom: 0;
+    }
+
+    .tour004049__itemAddInfo:last-child {
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .tour004049__popup  {
+        width: 30.3rem;
+        border-radius: 2rem;
+        padding: 3rem 3rem 1rem;
+    }
+    .tour004049__popupHeaderRight {
+        font-size: 1rem;
+    }
+
+    .tour004049__popupScreenHelp {
+        font-size: 1rem;
+        width: 10rem;
+    }
+    .tour004047__popupHeader .indv__tit {
+        margin-bottom: 0;
+    }
+    .tour004049__popupFilter input {
+        width: 100%;
+    }
+    .tour0040582__popup .tour404003__table thead th,
+    .tour0040582__popup .tour404003__table colgroup{
+        display: none;
+    }
+    .tour004049__force-overflow {
+        min-height: 27rem;
+    }
+    .tour404003__table tbody td {
+        border: 1px solid #ddd;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .tour004049__scrollbar {
+        border-radius: 1rem;
+        margin-top: 2rem;
+
+    }
+    .tour004049__btnPopup button {
+        width: 8rem;
+        height: 4rem;
+    }
+    .tour004049__popupFilter button,
+    .tour004049__popupFilter input {
+        height: 3.5rem;
+    }
+    .tour004049__boxContent {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    .tour004049__contentMid, .tour004049__contentRight {
+        width: 100%;
+    }
+
+    .tour004050__rowAddInfo {
+        flex-direction: column;
+    }
+    .tour004049__itemAddInfo input {
+        padding: 1.2rem 1.2rem;
+    }
+
+    .tour0040612__wrapper .tour004049__addInfoRight {
+        width: 100%;
+    }
+    .tour0040612__wrapper .tour004049__itemAddInfo .selectbox,
+    .tour0040602__wrapper .tour004049__itemAddInfo .selectbox {
+        padding: 1.2rem;
+    }
+    .tour003005__subTitle {
+        font-size: 1.3rem;
+        margin-bottom: 4rem;
+    }
+
+    .title.mbmb10 {
+        margin-bottom: 1rem;
+    }
+    .tour004049__itemAddInfo p.tour004060__textLabel {
+        width: 100%;
     }
 }
 
