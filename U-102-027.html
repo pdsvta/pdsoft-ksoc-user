@@ -393,71 +393,12 @@
     </script>
 
     <script>
-        function applyMobileTable() {
-            const table = document.querySelector('.tour401013__table');
-            if (!table) return;
-
-            // tránh chạy lại nhiều lần
-            if (table.classList.contains('is-mobile')) return;
-            table.classList.add('is-mobile');
-
-            const headers = [...table.querySelectorAll('thead th')]
-                .map(th => th.textContent.trim());
-
-            const schoolIndex = headers.indexOf('증명서 종류');
-
-            table.querySelectorAll('tbody tr').forEach(row => {
-                const tds = [...row.querySelectorAll('td')];
-
-                // title (학교명)
-                if (tds[schoolIndex]) {
-                    const title = document.createElement('div');
-                    title.className = 'mobile-card-title';
-                    title.textContent = tds[schoolIndex].textContent.trim();
-                    row.prepend(title);
-                }
-
-                // remove 번호 + 학교명 (từ cuối)
-                [schoolIndex]
-                    .sort((a, b) => b - a)
-                    .forEach(i => tds[i] && tds[i].remove());
-
-                const labels = headers.filter(
-                    (_, i) => i !== schoolIndex
-                );
-
-                [...row.querySelectorAll('td')].forEach((td, i) => {
-                    td.setAttribute('data-label', labels[i]);
-                });
-            });
-
-            // force repaint
-            table.offsetHeight;
-        }
-
-        // chạy khi DOM sẵn sàng
-        document.addEventListener('DOMContentLoaded', () => {
-            if (window.matchMedia('(max-width: 768px)').matches) {
-                applyMobileTable();
-            }
-        });
-
-        // chạy khi resize / xoay màn hình
-        window.addEventListener('resize', () => {
-            if (window.matchMedia('(max-width: 768px)').matches) {
-                applyMobileTable();
-            }
-        });
-    </script>
-
-    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const table = document.querySelector('.tour401013__table');
             if (!table) return;
 
             const mediaQuery = window.matchMedia('(max-width: 767px)');
 
-            // lưu HTML gốc để restore
             const originalHTML = table.innerHTML;
 
             function applyMobileTable() {
@@ -473,7 +414,6 @@
                 table.querySelectorAll('tbody tr').forEach(row => {
                     const tds = [...row.querySelectorAll('td')];
 
-                    // title
                     if (tds[schoolIndex]) {
                         const title = document.createElement('div');
                         title.className = 'mobile-card-title';
@@ -481,7 +421,6 @@
                         row.prepend(title);
                     }
 
-                    // remove 번호 + 제목
                     [schoolIndex]
                         .sort((a, b) => b - a)
                         .forEach(i => tds[i] && tds[i].remove());
@@ -511,10 +450,8 @@
                 }
             }
 
-            // chạy lần đầu
             handleResponsive(mediaQuery);
 
-            // lắng nghe thay đổi viewport
             mediaQuery.addEventListener('change', handleResponsive);
         });
     </script>

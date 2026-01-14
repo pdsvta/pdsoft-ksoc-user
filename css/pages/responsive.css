@@ -14411,7 +14411,7 @@
     .tour004054__boxFilter.tour__group--input.p02 {
         padding: 0;
     }
-    
+
     .tour004045__boxFilter,
     .tour004046__boxFilter {
         margin: 5rem 0 1rem 0;
@@ -14807,6 +14807,9 @@
     }
     .tour004049__itemAddInfo p.tour004060__textLabel {
         width: 100%;
+    }
+    .tour108007__table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
     }
 }
 
