@@ -1086,7 +1086,8 @@ legend {
     background-color: #F8F9FA;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 1;
     margin-top: 3rem;
 }
