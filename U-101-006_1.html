@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
@@ -144,7 +146,7 @@
         <!-- contents -->
         <section class="ply tour101006__main">
             <div class="inner">
-                <h3 class="ply__tit tour101006__title">신청서작성</h3>
+                <h3 class="ply__tit tour101006__title">신청서 작성</h3>
                 <div class="tour001001__tabs">
                     <div class="tour001001__itemTab active">
                         기본정보 확인
@@ -366,7 +368,7 @@
                                         <li class="ply-reg__item ply-reg__item-mb0">
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label" aria-required="true">팀 입단일</label>
-                                                <input type="date" class="ply-reg__input ply-reg__input--w200">
+                                                <input type="date" id="date" placeholder="yyyy/mm/dd" class="ply-reg__input ply-reg__input--w200">
                                             </div>
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">세부종목</label>
@@ -612,6 +614,13 @@
             });
         });
 
+    </script>
+
+    <script>
+        flatpickr("#date", {
+            dateFormat: "Y/m/d",   // yyyy/mm/dd
+            allowInput: true
+        });
     </script>
 </body>
 

@@ -532,8 +532,9 @@
         flex: 1;
     }
 
-    .tour102031__text .tour102031__btn {
+    .tour102031__text .tour102031__btn.ply-reg__btn {
         margin-left: unset;
+        width: 15rem;
     }
 
     .tour104001__groupFilter {
@@ -1169,6 +1170,10 @@
 
     .tour004034__filter {
         padding: 0;
+    }
+
+    .tour101005__imgPerson {
+        display: none;
     }
 }
 

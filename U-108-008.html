@@ -528,7 +528,7 @@
         <section class="hpy">
             <div class="inner">
                 <div class="title">
-                    <h2>선수춘 견학신청</h2>
+                    <h2>선수촌 견학신청</h2>
                 </div>
                 <div class="hpy1080062__wrapper ply__wrapper mt2 tour102002__boxMain">
                     <div class="hpy004004__title tour108006-2__titleChild">
@@ -537,8 +537,8 @@
                     <div class="hpy004001__section hpy108008__section tour108007__boxChild">
                         <span class="bold">신청자 휴대폰</span>
                         <span>
-                            <input type="text" class="ply-reg__input hpy-reg__input--max300"
-                                placeholder="010-9411-5504">
+                            <input type="text" class="ply-reg__input hpy-reg__input--max300 tour108008__inputOnly"
+                                placeholder="" value="010-9411-5504">
                         </span>
                         <span class="bold">신청 인원</span>
                         <span>
@@ -1100,6 +1100,12 @@
 
         });
 
+    </script>
+
+    <script>
+        document.querySelectorAll('.tour108008__inputOnly').forEach(input => {
+            input.readOnly = true;
+        });
     </script>
 
 </body>

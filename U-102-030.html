@@ -278,12 +278,20 @@
 
             // Click active item
             items.on('click', function () {
-                // Bỏ active toàn bộ
+                
                 items.removeClass('active');
 
-                // Active item được click
+                
                 $(this).addClass('active');
             });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('input', e => {
+            if (e.target.classList.contains('tour102019__itemInput')) {
+                e.target.value = e.target.value.slice(0, 4);
+            }
         });
     </script>
 

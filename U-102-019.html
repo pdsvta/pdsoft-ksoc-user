@@ -181,16 +181,16 @@
                             <label for="" class="hpy02__label hpy02__label--600">원본 검증</label>
                             <div class="tour__group--input gap10">
                                 <input type="text" class="hpy-reg__input hpy-reg__input--h35 tour102019__itemInput"
-                                    value="B819">
+                                    value="" placeholder="B819">
                                 <span class="hpy02__dash">-</span>
                                 <input type="text" class="hpy-reg__input hpy-reg__input--h35 tour102019__itemInput"
-                                    value="B819">
+                                    value="" placeholder="B819">
                                 <span class="hpy02__dash">-</span>
                                 <input type="text" class="hpy-reg__input hpy-reg__input--h35 tour102019__itemInput"
-                                    value="B819">
+                                    value="" placeholder="B819">
                                 <span class="hpy02__dash">-</span>
                                 <input type="text" class="hpy-reg__input hpy-reg__input--h35 tour102019__itemInput"
-                                    value="B819">
+                                    value="" placeholder="B819">
                             </div>
                             <button type="button"
                                     class="hpy-reg__btn hpy-reg__btn--h35 ply-reg__btn--gray">조회</button>
@@ -280,6 +280,14 @@
             });
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('input', e => {
+            if (e.target.classList.contains('tour102019__itemInput')) {
+                e.target.value = e.target.value.slice(0, 4);
+            }
+        });
     </script>
 </body>
 
