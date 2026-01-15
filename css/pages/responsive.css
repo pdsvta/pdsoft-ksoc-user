@@ -473,6 +473,22 @@
         padding: 0;
     }
 
+    .tour402007__select--pc {
+        display: none;
+    }
+    
+    .tour402007__select--mb {
+        display: block;
+    }
+
+    .tour402007__filter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .tour403001__boxMain {
         padding: 4rem 2rem;
     }
@@ -483,6 +499,10 @@
 
     .tour403002__list {
         flex-wrap: wrap;
+    }
+
+    .tour403003__box {
+        margin-bottom: 0;
     }
 
     .tour403004__table th {
@@ -539,6 +559,10 @@
 
     .tour104001__groupFilter {
         flex-direction: column;
+    }
+
+    .tour__box104001 .hpy02__table {
+        border-bottom: 0;
     }
 
     .tour303001__tabs.guide__tab ul {
@@ -10013,6 +10037,10 @@
         padding: 0.5rem;
     }
 
+    .tour403003__box {
+        margin-bottom: 2rem;
+    }
+
     .tour402004__table.hpy02__table tbody td,
     .tour401013__table.hpy02__table tbody td {
         padding: 0;
@@ -10760,14 +10788,22 @@
         font-weight: 600;
     }
 
+    .tour003005__mainBox {
+        width: 100%;
+    }
+
     .tour003006__checked {
         flex-direction: column;
         gap: 1rem;
         padding: 3rem 2rem 0;
     }
 
-    .tour003005__mainBox {
-        width: 100%;
+    .tour003006__formCode input[type="text"] {
+        width: 70%;
+    }
+
+    .tour003006__formCode button {
+        flex: 1;
     }
 
     .tour003008__box.mt30,
@@ -11438,9 +11474,9 @@
         padding: 2rem;
     }
 
-    .hpy004004__title {
+    /* .hpy004004__title {
         padding: 0 0 2rem;
-    }
+    } */
 
     .hpy004001__box {
         padding: 0;
