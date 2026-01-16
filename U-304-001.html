@@ -845,7 +845,7 @@
                                     <input type="text">
                                 </div>
                                 <div class="tour304001__itemInputCerti ply-reg__card">
-                                    <label for="" class="ply-reg__label ply-reg__label--pb10">이름</label>
+                                    <label for="" class="ply-reg__label ply-reg__label--pb10" aria-required="true">이름</label>
                                     <input type="text">
                                 </div>
                                 <div class="tour304001__itemInputCerti ply-reg__card">
@@ -900,7 +900,7 @@
                                 </div>
                                 <div class="tour304001__itemTableCerti">
                                     <div class="tour304001__thTableCerti">
-                                        수집‧이용 항목
+                                        수집‧이용 목적
                                     </div>
                                     <div class="tour304001__trTableCerti">
                                         신청한 수신처 식별 및 서비스 운용 건의사항 수집에 <br> 이용, 수신처 등록 안내 서비스 제공
@@ -908,7 +908,7 @@
                                 </div>
                                 <div class="tour304001__itemTableCerti">
                                     <div class="tour304001__thTableCerti">
-                                        수집‧이용 항목
+                                        보유기간
                                     </div>
                                     <div class="tour304001__trTableCerti trChild">
                                         2년
@@ -923,7 +923,7 @@
                                 ※ 위의 개인정보 수집‧이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 전자증명서 온라인 접수기관 신청에 제한을 받을 수 없습니다.
                             </div>
                             <div class="tour304001__noteCerti noteBottom">
-                                2025년 10월 22일
+                                2026년 01월 15일
                             </div>
                             <div class="tour304001__noteCerti noteBottomChild">
                                 *신청하시면 개별 연락을 통해 절차에 대해 상세 내용 안내드리겠습니다.
@@ -1568,6 +1568,34 @@
             document.querySelector('.tour304001__popup-overlay2'),
             document.querySelector('.popupCerti-close')
         );
+    </script>
+
+    <script>
+        (function () {
+            const target = document.querySelector('.tour304001__noteCerti.noteBottom');
+            if (!target) return;
+
+            function formatKoreanDate(date) {
+                const y = date.getFullYear();
+                const m = String(date.getMonth() + 1).padStart(2, '0');
+                const d = String(date.getDate()).padStart(2, '0');
+                return `${y}년 ${m}월 ${d}일`;
+            }
+
+            function updateDate() {
+                target.textContent = formatKoreanDate(new Date());
+            }
+
+            updateDate();
+
+            const now = new Date();
+            const delay = (60 - now.getSeconds()) * 1000;
+
+            setTimeout(() => {
+                updateDate();
+                setInterval(updateDate, 60000);
+            }, delay);
+        })();
     </script>
 </body>
 

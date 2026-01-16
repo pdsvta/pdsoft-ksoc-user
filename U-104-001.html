@@ -530,34 +530,34 @@
                 <div class="title">
                     <h2>참가이력 조회</h2>
                 </div>
-                <div class="tour__wrapper tour__103001">
+                <div class="tour__wrapper">
                     <div class="tour__group tour__group--mb30 jc-sb tour104001__groupFilter">
                         <div class="tour__group--input  ply-reg__flex--wrap">
                             <div class="tour__group--input w100">
                                 <label for="" class="hpy02__label">기간</label>
                                 <input type="date"
-                                    class="hpy-reg__input hpy-reg__input--date hpy-reg__input--max120 hpy-reg__input--h35">
+                                    class="hpy-reg__input hpy-reg__input--date hpy-reg__input--h35">
                                 <span class="hpy02__dash">-</span>
                                 <input type="date"
-                                    class="hpy-reg__input hpy-reg__input--date hpy-reg__input--max120 hpy-reg__input--h35">
+                                    class="hpy-reg__input hpy-reg__input--date hpy-reg__input--h35">
                             </div>
                             <div class="tour__group--input gapMb10">
                                 <button type="button"
-                                    class="hpy-reg__btn hpy-reg__btn--min60 hpy-reg__btn--h35 hpy-reg__btn--white">1개월</button>
+                                    class="hpy-reg__btn hpy-reg__btn--h35 hpy-reg__btn--white tour104001__itemBtnFilter">1개월</button>
                                 <button type="button"
-                                    class="hpy-reg__btn hpy-reg__btn--min60 hpy-reg__btn--h35 hpy-reg__btn--white">6개월</button>
+                                    class="hpy-reg__btn hpy-reg__btn--h35 hpy-reg__btn--white tour104001__itemBtnFilter">6개월</button>
                                 <button type="button"
-                                    class="hpy-reg__btn hpy-reg__btn--min60 hpy-reg__btn--h35 hpy-reg__btn--white">12개월</button>
+                                    class="hpy-reg__btn hpy-reg__btn--h35 hpy-reg__btn--white tour104001__itemBtnFilter">12개월</button>
                                 <button type="button"
-                                    class="hpy-reg__btn hpy-reg__btn--min80 hpy-reg__btn--h35 ply-reg__btn--gray">검색</button>
+                                    class="hpy-reg__btn hpy-reg__btn--min80 hpy-reg__btn--h35 ply-reg__btn--gray tour104001__btnFilter">검색</button>
                             </div>
                         </div>
+                    </div>
+                    <div class="tour__box104001">
                         <p class="ply__total">
                             총 <span>8</span> 건, 페이지 1 / 1
                         </p>
-                    </div>
-                    <div class="tour__box104001">
-                        <table class="hpy02__table tour__table">
+                        <table class="hpy02__table tour__table tour402004__table tour401013__table">
                             <colgroup>
                                 <col style="width: 15rem;">
                                 <col style="width: 11rem;">
@@ -1224,6 +1224,70 @@
 
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+            const originalHTML = table.innerHTML;
+
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
+
+                table.classList.add('is-mobile');
+
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
+
+                const schoolIndex = headers.indexOf('대회명');
+
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
+
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    [schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
+                });
+            }
+
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
+            }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            handleResponsive(mediaQuery);
+
+            mediaQuery.addEventListener('change', handleResponsive);
+        });
     </script>
 </body>
 

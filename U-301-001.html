@@ -550,7 +550,7 @@
                                 사유로 본인확인이 불가한 경우.</p>
                             <div class="indv__btbx indv__btbx--gap10 indv__btbx--start tour301001__allBtn">
                                 <button class="indv__btn2">신청서 다운로드</button>
-                                <button class="indv__btn2">수기등록여부 조회</button>
+                                <button class="indv__btn2 tour301001__btnPopup">수기등록여부 조회</button>
                                 <button class="indv__btn2">수기등록신청 매뉴얼</button>
                             </div>
                         </div>
@@ -587,14 +587,14 @@
                             <ul class="formInput mt-20">
                                 <li class="searchBox-item" style="display:inline-block;">
                                     <span class="searchTitle">이름</span>
-                                    <div class="wd-250 mt-05">
+                                    <div class="wd-250 mt-05 tour301001__itemInput">
                                         <input type="text" id="txtKorNm" maxlength="50" placeholder="이름을 입력하세요"
                                             title="이름" />
                                     </div>
                                 </li>
                                 <li class="searchBox-item" style="display:inline-block;">
                                     <span class="searchTitle">생년월일</span>
-                                    <div class="wd-250 mt-05">
+                                    <div class="wd-250 mt-05 tour301001__itemInput">
                                         <input type="text" id="txtBirthDt" maxlength="8" placeholder="생년월일을 8자리로 입력하세요"
                                             title="생년월일" />
                                     </div>
@@ -614,7 +614,7 @@
                                 </li>
                                 <li class="searchBox-item" style="display:inline-block;">
                                     <span class="searchTitle">휴대폰번호</span>
-                                    <div class="wd-250 mt-05">
+                                    <div class="wd-250 mt-05 tour301001__itemInput">
                                         <input type="text" id="txtMobileNo" maxlength="15"
                                             placeholder="신청서에 기재한 휴대폰 번호를 입력하세요" title="휴대폰번호" />
                                     </div>
@@ -1197,15 +1197,13 @@
 
     </script>
     <script>
-        $(document).on('click', '.indv__btbx .indv__btn2:nth-child(2)', function () {
+        $(document).on('click', '.indv__btbx .tour301001__btnPopup', function () {
             $('.modal-wrap').css('display', 'block');
         });
         $(document).on('click', '.btn.btn_close_popup.btn-close', function () {
             $('.modal-wrap').css('display', 'none');
         });
     </script>
-
-
 
 </body>
 

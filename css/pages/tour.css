@@ -4764,6 +4764,10 @@ caption {
     color: #0C54B8;
 }
 
+.tour305001__btn2 {
+    padding: 0 1rem;
+}
+
 .date-selector {
     display: inline-flex;
     align-items: center;
@@ -5337,6 +5341,10 @@ caption {
     color: #0C54B8;
 }
 
+.tour402007__select--mb {
+    display: none;
+}
+
 .tour403001__table {
     padding: 0 2rem;
 }
@@ -5499,6 +5507,14 @@ caption {
 
 .tour403002__card span {
     font-weight: 600;
+}
+
+.tour403003__filter.tour402004__filter {
+    justify-content: flex-end;
+}
+
+.tour403003__table .hpy__total {
+    margin-bottom: 1rem;
 }
 
 .tour403003__box {
@@ -5952,7 +5968,7 @@ caption {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 6rem;
 }
 
 .tour405001__logo img {
@@ -8724,7 +8740,7 @@ caption {
     height: 5rem;
     border: 1px solid #DDDDDD;
     border-radius: 3.5rem;
-    color: #666666;
+    color: #000000;
     font-size: 1.3rem;
     font-weight: 500;
     padding: 1.8rem 3rem;
@@ -8900,7 +8916,6 @@ caption {
     color: #fff;
     font-size: 1.3rem;
     font-weight: 400;
-    padding: 1.2rem 0;
 }
 
 .tour003006__btnMain button {
@@ -10229,6 +10244,10 @@ caption {
     padding: 1rem 1.5rem;
 }
 
+.tour301001__itemInput input {
+    color: #000;
+}
+
 .tour302001__textDesc {
     text-align: justify;
 }
@@ -10498,6 +10517,7 @@ caption {
     height: 4rem;
     border: 1px solid #DDDDDD;
     border-radius: 0.5rem;
+    padding: 1rem;
 }
 
 .tour304001__boxRadioCerti,
@@ -10848,8 +10868,8 @@ caption {
 .hpy004004__title h3 b {
     color: #C70000;
     font-weight: 400;
-    font-size: 1.7rem;
-    padding-left: 1rem;
+    /* font-size: 1.7rem;
+    padding-left: 1rem; */
 }
 
 .hpy004004__title.bd-bt {
@@ -11966,6 +11986,28 @@ caption {
     color: #fff;
 }
 
+.tour__box104001 .ply__total {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.tour104001__groupFilter .tour__group--input {
+    width: 100%;
+}
+
+.tour104001__groupFilter .hpy02__label {
+    margin-right: 1rem;
+}
+
+.tour104001__itemBtnFilter.hpy-reg__btn {
+    width: 30%;
+    min-width: unset;
+}
+
+.tour104001__btnFilter {
+    margin-left: 2rem;
+}
+
 .tour108005__bold {
     width: 18%;
     background: #f5f5f5;
@@ -12349,7 +12391,6 @@ caption {
 }
 
 .hpy003006__checked .tour101020__inputChecked {
-    align-items: center;
     display: flex;
     gap: 1rem;
 }
