@@ -10792,7 +10792,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid #ddd;
     }
 
     .tour003005__table td.bold {
@@ -14900,6 +14899,43 @@
     }
 
     .hpy003005__text strong {
+        font-size: 1.3rem;
+    }
+
+    .hpy003006__item  {
+        width: 100%;
+        padding:0 3rem;
+    }
+
+    .hpy003006__card {
+        height: auto;
+        padding: 3rem 0;
+        gap: 1rem;
+    }
+    .hpy003006__card img {
+        height: 5rem;
+    }
+    .hpy003006__card h3 {
+        font-size: 1.7rem;
+    }
+
+    .hpy003006__item p {
+        font-size: 1.1rem;
+        padding-top: .5rem;
+    }
+    .hpy003006__box {
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+    .hpy003006__text {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .hpy0030062__title {
+        padding: 0 0 2rem;
+    }
+
+    .hpy003006__checked .tour101020__inputChecked .transfer-text {
         font-size: 1.3rem;
     }
 }
