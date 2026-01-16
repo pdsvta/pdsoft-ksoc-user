@@ -1306,7 +1306,9 @@ caption {
     line-height: 1.38;
     color: #333;
 }
-
+.hpy .title {
+    padding-top: 0;
+}
 .hpy__intro {
     background: #0C54B81A;
     border-radius: 5rem;
@@ -13575,6 +13577,7 @@ caption {
     line-height: 1.38;
     margin-bottom: 4rem;
     color: #333;
+    padding-top: 8rem;
 }
 
 .tour0703__subtitle {

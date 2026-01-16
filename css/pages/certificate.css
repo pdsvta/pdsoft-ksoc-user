@@ -195,6 +195,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    padding-top: 8rem;
 }
 
 .chc__tit.mb50 {

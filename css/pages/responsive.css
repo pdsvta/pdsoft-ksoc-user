@@ -2941,6 +2941,7 @@
 
     .ply-pop__scroll_num {
         margin-bottom: 2rem;
+        font-size: 1.1rem;
     }
 
     .ply-pop__desc {
@@ -10672,7 +10673,17 @@
     }
 
     .tour003004__item {
-        width: 100%;
+        width: 25rem;
+        padding: 4rem;
+        height: auto;
+        border-radius: 2rem;
+    }
+    .hpy003004__item img {
+        height: 5.5rem;
+        width: auto;
+    }
+    .hpy003004__item p {
+        font-size: 1.5rem;
     }
 
     .tour003005__title,
@@ -10693,7 +10704,7 @@
     }
 
     .tour003005__checked {
-        padding: 3rem 0 5rem 0rem;
+        padding: 2rem 0;
     }
 
     .tour003005__boxTable {
@@ -10727,9 +10738,9 @@
         gap: 1rem;
         padding: 0;
         box-sizing: border-box;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         line-height: 1.5;
-        height: 10rem;
+        height: 7rem;
         border-left: 0;
         border-right: 0;
     }
@@ -12136,6 +12147,7 @@
     .tour0040582__wrapper,
     .tour0040612__wrapper,
     .tour0040602__wrapper,
+    .hpy003005__wrapper ,
     .tour001001__mainBox {
         padding: 2rem;
         border: 1px solid #ddd;
@@ -14615,12 +14627,21 @@
 
     .hpy003001__box {
         width: 100%;
-        padding: 4rem 2rem;
+        padding: 2rem;
         border-radius: 2rem;
     }
 
     .hpy003001__note {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin: 2rem 0 3rem;
+    }
+
+    .hpy003001__item {
+        width: 4rem;
+        height: 4rem;
+    }
+    .hpy003001__item img {
+        height: 1.429rem;
     }
 
     .tour401005-2__wrapper {
@@ -14815,6 +14836,35 @@
     }
     .tour108007__table tbody tr:last-child td {
         border-bottom: 1px solid #ddd;
+    }
+
+    .hpy003001__title {
+        font-size: 1.5rem;
+    }
+
+    .hpy003001__subtitle {
+        font-size: 1rem;
+        padding: 1rem 0 2rem;
+    }
+
+    .hpy003001__input .hpy__input ,
+    .hpy003001__group .hpy-reg__btn{
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+
+    .hpy003005__title {
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
+    }
+
+    .hpy003005__text p,
+    .hpy003005__checked label {
+        font-size: 1.2rem;
+    }
+
+    .hpy003005__text strong {
+        font-size: 1.3rem;
     }
 }
 
