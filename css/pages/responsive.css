@@ -237,6 +237,18 @@
     .tour004035__inputNote {
         width: 100%;
     }
+
+    .hpy004016__img img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    
+    .hpy004004__img2 img {
+        width: 100%;
+        margin: 2rem auto 1rem;
+    }
 }
 
 @media (max-width: 912px) {
@@ -9164,13 +9176,18 @@
         padding: 2rem;
     }
 
-    .tour__box104001 .hpy02__table tbody tr td.hpy02__end {
+    .tour__box104001 .hpy02__table tbody tr {
         position: relative;
-        top: unset;
-        right: unset;
-        padding: 1.1rem 1rem;
+    }
+
+    .tour__box104001 .hpy02__table tbody tr td.hpy02__end {
+        position: absolute;
+        top: 0;
+        right: 0;
         display: flex;
         align-items: center;
+        background: unset;
+        width: 40%;
     }
 
     .tour__108005 .edc__flex {
@@ -10146,6 +10163,7 @@
 
     .tour404003__boxInput {
         width: 100%;
+        justify-content: center;
     }
 
     .tour404003__boxInput input[type="text"]:nth-child(2) {
@@ -10630,7 +10648,7 @@
     .tour405002__allBtn button {
         font-size: 1.2rem;
         font-weight: 400;
-        width: 100%;
+        flex: 1 1 49%;
         line-height: 100%;
         height: 4rem;
         display: flex;
@@ -10920,6 +10938,10 @@
 
     .tour003012__itemInput {
         width: 48%;
+    }
+    
+    .tour405007__select {
+        width: 11rem;
     }
 
     .tour405007__table {
@@ -11508,6 +11530,10 @@
         grid-template-columns: max-content 1fr;
     }
 
+    .hpy004001__section {
+        align-items: center;
+    }
+
     .hpy004001__time {
         padding: 5rem 0 7rem;
         gap: 1rem;
@@ -11875,13 +11901,6 @@
         padding: 2rem;
     }
 
-    .hpy004016__img img {
-        width: 100%;
-        height: 10rem;
-        object-fit: cover;
-        border-radius: 1rem;
-    }
-
     .hpy004016__title p {
         font-size: 1.5rem;
         margin-bottom: .5rem;
@@ -11910,7 +11929,7 @@
     }
 
     .hpy004009__box {
-        padding: 2rem 0;
+        padding: 2rem;
         border-radius: 2rem;
     }
 
@@ -11922,8 +11941,18 @@
         gap: 4rem;
     }
 
-    .hpy004021__groupPagi {
+    .hpy004021__title {
+        padding: 0 0 2rem;
+    }
+
+    .hpy004021__filter.hpy004016__filter {
+        flex-direction: column-reverse;
+    }
+
+    .hpy004021__groupPagi.hpy004016__group.gap20 {
         width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -12529,6 +12558,10 @@
 
     .hpy004003__wrapper .hpy004003__text ul {
         padding: .5rem 0 1rem;
+    }
+
+    .hpy004016__text ul {
+        padding: 1rem 0;
     }
 
     .tour001001__tabs {
@@ -13169,10 +13202,6 @@
     }
     .hpy0010002__row.flex {
         display: flex;
-    }
-    .hpy004004__img2 img {
-        width: 100%;
-        margin: 2rem auto 1rem;
     }
     .hpy004004__img2 p {
         font-size: 1.3rem;
@@ -14596,6 +14625,10 @@
         padding: 3rem 0rem 2rem;
     }
 
+    .hpy004010__select {
+        flex-direction: row-reverse;
+    }
+
     .hpy004010__select p {
         font-size: 1.5rem;
     }
@@ -14817,11 +14850,11 @@
     .tour004049__force-overflow {
         min-height: 27rem;
     }
-    .tour404003__table tbody td {
+    /* .tour404003__table tbody td {
         border: 1px solid #ddd;
         padding: 2rem;
         border-radius: 1rem;
-    }
+    } */
     .tour004049__scrollbar {
         border-radius: 1rem;
         margin-top: 2rem;
@@ -15347,6 +15380,13 @@
         flex: 0 0 49%;
     }
 
+    .mobile-card-title {
+        font-size: 1.1rem;
+    }
+
+    .tour__box104001 .tour__btn {
+        height: 2.2rem;
+    }
 }
 
 @media (max-width: 360px) {
