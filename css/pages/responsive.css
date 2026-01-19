@@ -2175,8 +2175,8 @@
     }
 
     .initial__btn {
-        width: 2.2rem;
-        height: 2.2rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     .chc__btn {
@@ -15091,11 +15091,6 @@
 
     .chn__bor {
         gap: 4rem;
-    }
-
-    .initial__btn {
-        width: 2rem;
-        height: 2rem;
     }
 
     .chc__btn {

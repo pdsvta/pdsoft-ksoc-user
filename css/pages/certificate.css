@@ -353,6 +353,10 @@
     font-size: 1.3rem
 }
 
+.initial__input::placeholder {
+    color: #c9c9c9;
+}
+
 .initial__search {
     height: 4rem;
     display: inline-flex;
