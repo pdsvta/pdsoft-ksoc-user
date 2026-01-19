@@ -13736,11 +13736,11 @@ caption {
 .tour0703 .tour__info>img {
     top: auto;
 }
-
+/* 
 .title.text-left {
     text-align: left;
     justify-content: flex-start;
-}
+} */
 
 .tour07313 .tour-reg__input {
     border-radius: 0.5rem;
