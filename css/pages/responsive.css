@@ -249,6 +249,15 @@
         width: 100%;
         margin: 2rem auto 1rem;
     }
+
+    .hpy004003__text img.hpy004029__maps {
+        width: 100%;
+    }
+    
+    .hpy004029__video img {
+        width: 100%;
+        margin: 1rem auto 3rem;
+    }
 }
 
 @media (max-width: 912px) {
@@ -12289,15 +12298,15 @@
     .hpy004028__group .bold {
         font-size: 1.1rem;
         width: 6rem;
-        height: 3.5rem;
+        /* height: 3.5rem; */
     }
 
     .hpy004028__group span:last-child {
-        height: 3.5rem;
+        /* height: 3.5rem; */
         font-size: 1.1rem;
         padding-left: .8rem;
         flex: 1;
-        line-height: 100%;
+        line-height: 1.5rem;
     }
 
     .hpy004028__groups {
@@ -12884,7 +12893,7 @@
 
     .tour407003__btns {
         position: absolute;
-        left: 7rem;
+        left: 4rem;
     }
 
     .tour407003__wrapper {
@@ -13627,6 +13636,10 @@
         border-bottom: none;
     }
 
+    .hpy004025__table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
     .hpy004025__table table tbody tr td:nth-child(2) {
         font-size: 1.3rem;
         font-weight: 600;
@@ -14038,11 +14051,11 @@
     .hpy004047-2__filter .hpy004016__group .hpy-reg__btn{
         height: 3.5rem;
     }
-    .hpy004016__group.gap20 {
+    /* .hpy004016__group.gap20 {
         gap: 1rem;
         flex-direction: column;
         align-items: flex-start;
-    }
+    } */
     .selectbox.min200 {
         min-width: 100%;
         max-width: 100%;
@@ -14326,7 +14339,6 @@
     .hpy004050__table table tbody tr td:nth-child(1) {
         order: 2;
     }
-
 
     .hpy004050__table table tbody tr td:nth-child(2) {
         order: 3;
@@ -14971,6 +14983,16 @@
     .hpy003006__checked .tour101020__inputChecked .transfer-text {
         font-size: 1.3rem;
     }
+
+    .hpy004029__btn button {
+        min-width: unset;
+        width: fit-content;
+        padding: 0 1rem;
+    }
+
+    .tour004040__allBtn {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 414px) {
@@ -15381,6 +15403,10 @@
 
     .tour__box104001 .tour__btn {
         height: 2.2rem;
+    }
+
+    .hpy004028__group span:last-child {
+        font-size: 1rem;
     }
 }
 
