@@ -10753,7 +10753,7 @@ caption {
 }
 
 .hpy004003__text .small {
-    padding: 1rem 0 2rem;
+    padding: 1rem 0 0;
     font-weight: 400;
 }
 
@@ -11546,7 +11546,7 @@ caption {
 .hpy004017__videos {
     display: flex;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 0rem;
 }
 
 .hpy004017__table {
@@ -11683,6 +11683,10 @@ caption {
 
 .hpy004017__box4 .dry__editor {
     min-height: 30rem;
+}
+
+.hpy004019__textBottom {
+    margin-top: 2rem;
 }
 
 .dry__editor.h300 {
@@ -12551,6 +12555,10 @@ caption {
     padding-right: .5rem;
 }
 
+.tour003009__inputTel {
+    align-items: flex-end;
+}
+
 .ply102007__group .ply-reg__card,
 .ply102007__group .ply-reg__card {
     width: 100%;
@@ -12562,10 +12570,6 @@ caption {
     font-size: 1.5rem;
     font-weight: 600;
     color: #111;
-}
-
-.tour003009__inputTel {
-    align-items: flex-end;
 }
 
 .hpy004001__wrapper .hpy004004__title p img {
@@ -12656,6 +12660,10 @@ caption {
 
 .hpy004001__img {
     padding: 0 2rem;
+}
+
+.hpy004001__idSport {
+    height: 3rem;
 }
 
 .popup004002-pop {

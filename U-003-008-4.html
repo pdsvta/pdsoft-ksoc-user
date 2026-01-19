@@ -559,58 +559,60 @@
                         <p><img src="images/u-003-006/icon.png" alt=""> 대한체육회의 타 서비스에 회원으로 가입한 이력입니다.</p>
                     </div>
                     <div class="hpy003008__text tour003008__text">
-                        0개의 서비스에 회원가입한 이력이 있습니다. 선택을 클릭하면 선택한 계정 정보로 가입을 계속합니다. <br>
+                        <span class="tour003008__count">0개의</span> 서비스에 회원가입한 이력이 있습니다. 선택을 클릭하면 선택한 계정 정보로 가입을 계속합니다. <br>
                         타 서비스에 가입된 아이디를 사용하지 않고 신규 아이디로 가입을 원하는 경우 새로운 아이디로 가입을 클릭하세요
                     </div>
-                    <div class="hpy003008__box mt30 tour003008__box">
-                        <div class="hpy003008__item">
-                            <div class="hpy003008__row tour003008__row">
-                                <div class="hpy003008__group w12">
-                                    <span class="bold">서비스</span>
-                                    <span class="desc">체육포털</span>
+                    <div class="tour003008__boxCount">
+                        <div class="hpy003008__box mt30 tour003008__box">
+                            <div class="hpy003008__item">
+                                <div class="hpy003008__row tour003008__row">
+                                    <div class="hpy003008__group w12">
+                                        <span class="bold">서비스</span>
+                                        <span class="desc">체육포털</span>
+                                    </div>
+                                    <div class="hpy003008__group">
+                                        <span class="bold">회원가이입</span>
+                                        <span class="desc">2019/07/02 16:20:34</span>
+                                    </div>
                                 </div>
-                                <div class="hpy003008__group">
-                                    <span class="bold">회원가이입</span>
-                                    <span class="desc">2019/07/02 16:20:34</span>
+                                <div class="hpy003008__row tour003008__row">
+                                    <div class="hpy003008__group w12">
+                                        <span class="bold">아이디</span>
+                                        <span class="desc">pascal</span>
+                                    </div>
+                                    <div class="hpy003008__group">
+                                        <span class="bold">최종로그인</span>
+                                        <span class="desc">2021/12/13 18:33:51</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="hpy003008__row tour003008__row">
-                                <div class="hpy003008__group w12">
-                                    <span class="bold">아이디</span>
-                                    <span class="desc">pascal</span>
-                                </div>
-                                <div class="hpy003008__group">
-                                    <span class="bold">최종로그인</span>
-                                    <span class="desc">2021/12/13 18:33:51</span>
-                                </div>
-                            </div>
+                            <button type="button" class="ply-reg__btn">선택</button>
                         </div>
-                        <button type="button" class="ply-reg__btn">선택</button>
-                    </div>
-                    <div class="hpy003008__box mt10 tour003008__box">
-                        <div class="hpy003008__item">
-                            <div class="hpy003008__row tour003008__row">
-                                <div class="hpy003008__group w15">
-                                    <span class="bold">서비스</span>
-                                    <span class="desc">공공스포츠클럽</span>
+                        <div class="hpy003008__box mt10 tour003008__box">
+                            <div class="hpy003008__item">
+                                <div class="hpy003008__row tour003008__row">
+                                    <div class="hpy003008__group w15">
+                                        <span class="bold">서비스</span>
+                                        <span class="desc">공공스포츠클럽</span>
+                                    </div>
+                                    <div class="hpy003008__group">
+                                        <span class="bold">회원가이입</span>
+                                        <span class="desc">2021/08/31 14:03:40</span>
+                                    </div>
                                 </div>
-                                <div class="hpy003008__group">
-                                    <span class="bold">회원가이입</span>
-                                    <span class="desc">2021/08/31 14:03:40</span>
+                                <div class="hpy003008__row tour003008__row">
+                                    <div class="hpy003008__group w15">
+                                        <span class="bold">아이디</span>
+                                        <span class="desc">pascal44</span>
+                                    </div>
+                                    <div class="hpy003008__group">
+                                        <span class="bold">최종로그인</span>
+                                        <span class="desc">-</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="hpy003008__row tour003008__row">
-                                <div class="hpy003008__group w15">
-                                    <span class="bold">아이디</span>
-                                    <span class="desc">pascal44</span>
-                                </div>
-                                <div class="hpy003008__group">
-                                    <span class="bold">최종로그인</span>
-                                    <span class="desc">-</span>
-                                </div>
-                            </div>
+                            <button type="button" class="ply-reg__btn">선택</button>
                         </div>
-                        <button type="button" class="ply-reg__btn">선택</button>
                     </div>
                 </div>
                 <div class="tour__bm tour__bm--end tour__bm--end-p4">
@@ -1155,6 +1157,18 @@
 
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const boxWrap = document.querySelector('.tour003008__boxCount');
+            const countEl = document.querySelector('.tour003008__count');
+
+            if (!boxWrap || !countEl) return;
+
+            const count = boxWrap.querySelectorAll('.tour003008__box').length;
+            countEl.textContent = `${count}개의`;
+        });
     </script>
 </body>
 
