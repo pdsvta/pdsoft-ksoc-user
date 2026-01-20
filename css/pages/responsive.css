@@ -3310,12 +3310,12 @@
     }
 
     .tour102009__note {
-        margin-top: 4rem;
+        margin-top: 0;
         padding: 2rem;
     }
 
     .tour102009__note p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .tour102026__title {
@@ -7677,6 +7677,41 @@
 
     .tour401007__container {
         flex-direction: column;
+        gap: 1rem;
+    }
+    .tour401007__card img {
+        width: 16rem;
+        height: 9.5rem;
+        border-radius: 1rem;
+    }
+
+    .tour401007__card {
+        display: flex;
+        gap: 1rem;
+        padding: .5rem 2rem;
+        background: #F5F5F5;
+        margin-bottom: 1.5rem;
+    }
+    .tour401007__cardinfo p,
+    .tour401007__cardinfo b {
+        font-size: 1rem;
+    }
+    .tour401007__cardinfo h4 {
+        font-size: 1.3rem;
+        margin: 0 0 .5rem;
+    }
+
+    .tour401007__title {
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
+    .tour401007__btns .hpy-reg__btn {
+        height: 2rem;
+        font-size: 1rem;
+        width: 4rem;
+    }
+    .tour401007__btns {
+        margin-top: .5rem;
     }
 
     .tour401007__popup-btns {
@@ -7699,14 +7734,48 @@
         top: 0%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 40rem;
-        height: 50vh;
+        width: 30.2rem;
+        height: max-content;
+        border-radius: 2rem;
+    }
+
+    .tour401007__popup-body {
+        padding: 1rem 3rem 1.3rem;
+    }
+
+    .tour401007__popup-row p {
+        font-size: 1.1rem;
+    }
+
+    .tour401007__popup-row p br {
+        display: none;
+    }
+
+    .tour401007__popup-row {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .tour401007__popup-header h4 {
+        font-size: 1.5rem;
+    }
+
+    .tour401007__popup-header {
+        padding: 0 1.7rem 0rem 3rem;
+        height: 4rem;
+    }
+
+    .tour401007__popup-close {
+        width: 2rem;
+        height: 2rem;
+        line-height: 100%;
     }
 
     .tour401005__listChecked.tour__group.tour401008__boxfilter {
-        flex-direction: column;
         align-items: unset;
         gap: 1rem;
+        flex-wrap: wrap;
     }
 
     .tour401008__boxfilter {
@@ -7724,6 +7793,8 @@
 
     .tour401008__box {
         gap: 1rem;
+        padding: 0;
+        margin-top: 2rem;
     }
 
     .tour401008__item {
@@ -9277,6 +9348,23 @@
     }
 
     .tour108007__boxChild.hpy004001__section {
+        padding: 0;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    
+
+    .tour108007__table .hpy02__table thead th,
+    .tour108007__table .hpy02__table tbody td {
+        font-size: 1.2rem;
+        height: 4rem;
+        padding: 1rem 0;
+    }
+
+    .hpy004001__section.tour108007__boxChild .bold {
+        width: 12rem;
+    }
+    .hpy004017__table.tour108007__table {
         padding: 2rem 0 0;
     }
 
@@ -12248,7 +12336,12 @@
     .tour0040582__wrapper,
     .tour0040612__wrapper,
     .tour0040602__wrapper,
-    .hpy003005__wrapper ,
+    .hpy003005__wrapper,
+    .tour102031__wrapper,
+    .ply__wrapper.mt2.tour102002__boxMain.hpy108006__wrapper,
+    .ply__wrapper.mt2.tour102002__boxMain.hpy108007__wrapper,
+    .ply__wrapper.mt2.tour102002__boxMain.hpy108008__wrapper,
+    .tour401008__wrapper,
     .tour001001__mainBox {
         padding: 2rem;
         border: 1px solid #ddd;
@@ -15012,7 +15105,9 @@
         font-size: 1.3rem;
     }
 
-    .tour101006__itemStep .ply-bsc__block {
+    .tour101006__itemStep .ply-bsc__block,
+    .tour204002__main,
+    .hpy204003__wrapper  {
         padding: 0;
         border-radius: 0;
         border: none;
@@ -15106,6 +15201,89 @@
 
     .tour004040__allBtn {
         flex-direction: column;
+    }
+
+    .hpy102031__text ul {
+        font-size: 1.2rem;
+    }
+
+    .hpy102031__text {
+        padding: 0 0 2rem 1rem;
+        margin-top: -1rem;
+    }
+    .hpy102031__text:last-child {
+        padding: 0 0 0 1rem;
+    }
+
+    .tour102031__wrapper .hpy004004__title {
+        padding: 0 0 2rem;
+    }
+
+    .tour102031__text .tour102031__btn.ply-reg__btn {
+        margin: 0 auto;
+        height: 3.5rem;
+    }
+
+    .ply__wrapper.mt2.tour102002__boxMain.tour102031__wrapper,
+    .tour104001__wrapper .tour104001__groupFilter {
+        padding: 2rem;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+    }
+
+    .tour104001__wrapper {
+        border: none;
+        padding: 0;
+    }
+    .tour104001__btnFilter {
+        margin-left: 0;
+    }
+
+    .tour104001__wrapper .tour104001__groupFilter.tour__group--mb30 {
+        margin-bottom: 1rem;
+    }
+    .tour104001__wrapper .tour__box104001 .tour401013__table.hpy02__table tbody td:nth-child(5) {
+        border-bottom: none;
+    }
+    .tour__box104001 .hpy02__table tbody tr:last-child{
+        margin-bottom: 0;
+    }
+
+    .hpy004001__section.hpy108008__section .ply-reg__input {
+        height: 3rem;
+    }
+
+    .hpy108008__wrapper .tour108006-2__titleChild.hpy004004__title {
+        padding-bottom: 1.5rem;
+    }
+
+    .tour401007__map {
+        flex: 1;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    .tour401007__sidebar{
+        flex: 1;
+        padding: 2rem 0;
+        border-radius: 2rem;
+    }
+    .tour401007__searchbox {
+        margin: 0 2rem 2rem;
+    }
+    .tour401007__result {
+        font-size: 1.3rem;
+        margin: 0 2rem .5rem;
+        color: #000;
+    }
+
+    .tour401007-popup__wrapper .tour401007__sidebar {
+        padding: 2rem 0;
+    }
+
+    .tour401008__boxfilter .tour__group--input {
+        flex-direction: column;
+        width: calc((100% - .5rem) /2);
+        gap: .5rem;
     }
 }
 
