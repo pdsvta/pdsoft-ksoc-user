@@ -3763,6 +3763,12 @@ caption {
     right: 0;
 }
 
+.indv__flex .indv__flex-r {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .tour__text0102 {
     letter-spacing: -1px;
     font-size: 1.3rem;
@@ -10192,6 +10198,38 @@ caption {
     margin: 0 auto 2rem;
 }
 
+.tour1002004005__setting1 {
+	margin-bottom: 2rem;
+}
+
+.tour102004005__titleSetting {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.tour102004005__titleSetting .logo_android {
+	width: 30%;
+	height: auto;
+}
+
+.tour102004005__titleSetting .logo_ios {
+	width: 12%;
+	height: auto;
+}
+
+.tour102004005__titleSetting h3 {
+	flex: 1;
+	margin-bottom: 0;
+}
+
+.tour102004005__noteQR {
+	width: 80%;
+	text-align: center;
+	float: right;
+}
+
 .tour102007__regCard {
     width: 32%;
 }
@@ -10425,6 +10463,10 @@ caption {
 
 .tour101027__input {
     flex: 1;
+}
+
+.tour303001__listSettings {
+    margin-top: 3rem;
 }
 
 .tour303001__number {

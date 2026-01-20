@@ -1228,6 +1228,10 @@
     .tour101005__imgPerson {
         display: none;
     }
+
+    .tour102007__regCard.ply-reg__card {
+        width: 80%;
+    }
 }
 
 @media (max-width: 819px) {
@@ -2758,14 +2762,18 @@
         top: 6rem;
     }
 
+    .ply-nav .inner {
+        padding: 0 1rem 0 0;
+    }
+
     .ply-nav__item:nth-child(2) {
         margin-left: 0;
     }
 
     .ply-nav__item {
         background: #fff;
-        padding: 0 1.5rem;
-        width: 10.5rem;
+        padding: 0 1.2rem;
+        width: 9.5rem;
         border-left: 1px solid #ddd;
         border-right: 1px solid #ddd;
     }
@@ -2776,7 +2784,7 @@
     }
 
     .ply-nav__item.has-arrow {
-        width: 10.5rem;
+        width: 9.5rem;
         padding: 0 1rem;
         border-left: 1px solid #ddd;
         border-right: 1px solid #ddd;
@@ -3270,6 +3278,11 @@
         white-space: unset;
     }
 
+    .ply102007__groupChild .ply-reg__card,
+    .tour102007__regCard.ply-reg__card {
+        width: 100%;
+    }
+
     .ply102004__bottom {
         padding: 3rem 0 0 0;
     }
@@ -3285,7 +3298,7 @@
     }
 
     .tour102004005__tabs ul li {
-        width: calc(50% - 0.3rem);
+        width: calc(100% - 0.3rem);
         border-radius: 0.8rem;
         padding: 1rem 0;
     }
@@ -8838,6 +8851,7 @@
 
     .tour102010__groupCard {
         gap: 0.5rem;
+        flex-direction: column;
     }
 
     .tour102016__boxTable .hpy02__table.hpy02__box tbody td {
@@ -15400,6 +15414,10 @@
 }
 
 @media (max-width: 390px) {
+    .ply-nav__quik li a {
+        font-size: 0.9rem;
+    }
+
     .screen2__slide-item {
         min-width: 11.7rem;
     }

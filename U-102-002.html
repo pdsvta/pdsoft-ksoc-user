@@ -123,6 +123,9 @@
                 <div class="ply-nav__rt">
                     <ul class="ply-nav__quik">
                         <li>
+                            <a href="#">다운로드센터</a>
+                        </li>
+                        <li>
                             <a href="#">사용자메뉴얼</a>
                         </li>
                         <li>
@@ -203,17 +206,20 @@
                         <h4>블록체인 증명서발급 신청 (선수)</h4> <span>?</span>
                     </div>
                     <div class="ply102002__box">
-                        <div class="ply102002__row blue mb2">
-                            <span>개인번호/실적건수</span>
-                            <p>20182002838/0</p>
+                        <div class="ply102002__row mb2">
+                            <span>개인번호 / 실적건수</span>
+                            <p>20182002838 / 0</p>
                         </div>
                     </div>
-                    <div class="ply102002__btns">
+                    <div class="ply102002__btns mb2">
                         <button type="button"
-                            class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--blue ply-reg__btn--fw600">선수실적증명서</button>
+                            class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--white">선수실적증명서</button>
                         <button type="button"
-                            class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--blue ply-reg__btn--fw600">선수등록확인서</button>
+                            class="ply-reg__btn ply-reg__btn--min130 ply-reg__btn--white">선수등록확인서</button>
                     </div>
+                    <p class="ply102002__note">
+                        블록체인 증명서발급 신청 시 PDF 다운로드 및 수신처에 증명서 제출을 할 수 있습니다.
+                    </p>
                 </div>
                 <div class="ply__wrapper mt2 tour102002__boxMain">
                     <div class="ply__title">
@@ -221,8 +227,8 @@
                     </div>
                     <div class="ply102002__box">
                         <div class="ply102002__row mb2">
-                            <span>개인번호/실적건수</span>
-                            <p>20182002838/0</p>
+                            <span>개인번호 / 실적건수</span>
+                            <p>20182002838 / 0</p>
                         </div>
                     </div>
                     <div class="ply102002__btns">
@@ -316,7 +322,7 @@
                             </div>
                             <div class="ply102002__btns mb2">
                                 <button type="button"
-                                    class="ply-reg__btn ply-reg__btn--gray tour102002__itemBtn2">팀등록 확인서</button>
+                                    class="ply-reg__btn ply-reg__btn--white tour102002__itemBtn2">팀등록 확인서</button>
                             </div>
                             <p class="ply102002__note">
                                 • 팀 관련 신청서는 위 신청서 버튼을 클릭하시면 바로 작성이 가능합니다.
@@ -417,11 +423,19 @@
     </script>
 
     <script>
-        document.querySelectorAll('.tour102002__itemInput').forEach(input => {
-            input.addEventListener('input', function () {
-                if (this.value.length > 4) {
-                    this.value = this.value.slice(0, 4);
-                }
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputs = [...document.querySelectorAll('.tour102002__itemInput')];
+
+            inputs.forEach((input, index) => {
+                input.addEventListener('input', () => {
+                    if (input.value.length > 4) {
+                        input.value = input.value.slice(0, 4);
+                    }
+
+                    if (input.value.length === 4 && inputs[index + 1]) {
+                        inputs[index + 1].focus();
+                    }
+                });
             });
         });
     </script>

@@ -5641,7 +5641,7 @@ legend {
 
 .hpy-reg__input--date {
 	font-size: 1.2rem;
-	color: #666;
+	color: #111;
 	font-weight: 400;
 	letter-spacing: -1px;
 	padding: 1rem 1.3rem;
@@ -6150,7 +6150,7 @@ legend {
 	padding: 0 2rem;
 	font-weight: 400;
 	line-height: 150%;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .ply102003__text.fs13 {
@@ -6194,7 +6194,7 @@ legend {
 	display: grid;
 	grid-template-columns: 5.2rem 1fr;
 	column-gap: 5rem;
-	row-gap: 3rem;
+	row-gap: 1rem;
 }
 
 .ply102003__info dt {
@@ -6208,7 +6208,7 @@ legend {
 .ply102003__info dd .note {
 	display: flex;
 	align-items: center;
-	margin-top: 3rem;
+	margin-top: 1.5rem;
 	gap: .4rem;
 }
 
@@ -6222,6 +6222,10 @@ legend {
 	align-items: center;
 	gap: 1rem;
 	padding: 0 2rem;
+}
+
+.ply102007__groupChild .ply-reg__card {
+	width: 22%;
 }
 
 .ply102007__group.flex-start {
@@ -6244,6 +6248,7 @@ legend {
 	font-weight: 400;
 	font-size: 1.3rem;
 	color: #0C54B8;
+	flex: 1;
 }
 
 .ply102007__note {
@@ -6254,6 +6259,9 @@ legend {
 	text-align: right;
 }
 
+.tour102007__regCard.ply-reg__card {
+    width: 86%;
+}
 
 .ply102009__phone {
 	display: flex;
@@ -7655,6 +7663,12 @@ legend {
 	width: 100%;
 }
 
+.indv__flex .indv__flex-r {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .indv__list--text li {
 	position: relative;
 }
@@ -7696,6 +7710,30 @@ legend {
 
 .indv__list--text-tit>li {
 	margin-bottom: 2rem;
+}
+
+.indv__list--text-tit>li b {
+	font-weight: 600;
+	color: #000;
+	position: relative;
+    padding-left: 1.8rem;
+}
+
+.indv__list--text-tit>li b::after {
+	content: '2';
+    border: 2px solid #FF0000;
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FF0000;
+    width: 1.3rem;
+    height: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .indv__list--text-tit>li:last-child {
@@ -7743,7 +7781,7 @@ legend {
 	display: flex;
 	justify-content: end;
 	gap: 5rem;
-	margin-top: -5rem;
+	margin-top: 2rem;
 }
 
 .indv__flex-img>img {
@@ -8269,6 +8307,40 @@ legend {
     font-size: 1.6rem;
 }
 
+.tour001001__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+	margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.tour001001__itemTab {
+    background: #fff;
+    border: 1px solid #DDDDDD;
+    border-radius: 1rem;
+    width: 17.6rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111111;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tour001001__itemTab:hover {
+    opacity: 0.7;
+}
+
+.tour001001__itemTab.active {
+    border: 1px solid #0C54B8;
+    color: #0C54B8;
+}
+
 .tour102002__boxLeft {
     width: 66%;
 }
@@ -8283,6 +8355,42 @@ legend {
 
 .tour102002__note {
     padding-top: 1rem;
+}
+
+.tour102002__itemInput {
+	text-align: center;
+}
+
+.tour1002004005__setting1 {
+	margin-bottom: 2rem;
+}
+
+.tour102004005__titleSetting {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.tour102004005__titleSetting .logo_android {
+	width: 30%;
+	height: auto;
+}
+
+.tour102004005__titleSetting .logo_ios {
+	width: 12%;
+	height: auto;
+}
+
+.tour102004005__titleSetting h3 {
+	flex: 1;
+	margin-bottom: 0;
+}
+
+.tour102004005__noteQR {
+	width: 80%;
+	text-align: center;
+	float: right;
 }
 
 .tour102026__card {
@@ -8391,6 +8499,10 @@ legend {
 	.ply102011__value {
 		flex: 1;
 		display: block;
+	}
+
+	.tour102004005__titleSetting {
+		align-items: center;
 	}
 }
 
