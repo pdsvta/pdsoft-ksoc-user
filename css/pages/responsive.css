@@ -7774,7 +7774,7 @@
 
     .tour401005__listChecked.tour__group.tour401008__boxfilter {
         align-items: unset;
-        gap: 1rem;
+        gap: .5rem;
         flex-wrap: wrap;
     }
 
@@ -7789,6 +7789,10 @@
 
     .tour401008__boxfilter .hpy__select {
         flex: 1;
+        width: 100%;
+    }
+    .tour401008__boxfilter .hpy-reg__btn.hpy-reg__btn--min70 {
+        margin-top: .5rem;
     }
 
     .tour401008__box {
@@ -15284,6 +15288,7 @@
         flex-direction: column;
         width: calc((100% - .5rem) /2);
         gap: .5rem;
+        align-items: flex-start;
     }
 }
 
