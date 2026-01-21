@@ -159,7 +159,7 @@
                         <div class="ply102026__text">
                             <p>작성 시 유의사항</p>
                             주민등록번호, 아이디, 비밀번호, 이메일, 연락처, 주소 등의 개인정보가 포함된 글을 올리실 경우에는 타인에게 해당 정보가 노출될 수 있으니
-                            작성에 유의 하시기 바랍니다. (정보통신망법 제28조)
+                            작성에 유의하시기 바랍니다. (정보통신망법 제28조)
                         </div>
                     </div>
                     <div class="ply102026__box tour102026__boxGroup">
@@ -182,28 +182,40 @@
                             <div>
                                 <input type="text" class="ply-reg__input"
                                 placeholder="연락처">
-                                <label for="" class="sms__note">체크 하시면 답변 등록시 문자메세지로 알려 드립니다.</label>
+                                <div class="tour102026__checkRadio">
+                                    <input type="radio">
+                                    <label for="" class="sms__note">체크 하시면 답변 등록 시 문자메세지로 알려 드립니다.</label>
+                                </div>
                             </div>
                         </div>
                         <div class="ply-reg__card--mt10 tour102026__card">
                             <label for="">작성내용</label>
                             <textarea
                                 class="ply-reg__input ply-reg__input--placeholder ply-reg__input--h250"
-                                placeholder="내용을 작성하세요."></textarea>
+                                placeholder="내용을 작성해주세요."></textarea>
+                        </div>
+                        <div class="tour102026__card">
+                            <label for="">파일첨부</label>
+                            <div class="ply102026__group tour102026__group">
+                                <input type="text" class="ply-reg__input ply-reg__input--max400" placeholder="">
+                                <button type="button"
+                                    class="hpy-reg__btn hpy-reg__btn--min100 ply-reg__btn--gray">파일찾기</button>
+                            </div>
                         </div>
                         <div class="ply-reg__card--mt10 tour102026__card">
                             <label for="">자동등록 <br> 방지문자</label>
-                            <div class="ply102026__group tour102026__group">
-                                <input type="text" class="ply-reg__input ply-reg__input--max400" placeholder="파일첨부">
-                                <button type="button"
-                                    class="hpy-reg__btn hpy-reg__btn--min100 ply-reg__btn--gray">파일찾기</button>
-                                <img src="images/u-102-026/image02.png" alt="" class="ply102026__img">
+                            <div class="ply102026__group tour102026__group tour102026__groupBottom">                                
+                                <div class="tour102026__checkNumber">
+                                    <img src="images/u-102-026/image02.png" alt="" class="ply102026__img">
+                                    <div class="tour102026__btnRefresh">
+                                        <button type="button" class="hpy-reg__btn hpy-reg__btn--min40 ply-reg__btn--gray tour102026__btnVoice"><img
+                                            src="images/u-102-026/img_listen.svg" alt="" class="ply102026__btn"></button>
+                                        <button type="button" class="hpy-reg__btn hpy-reg__btn--min40 ply-reg__btn--gray tour102026__btnVoice"><img
+                                                src="images/u-102-026/img_refresh.svg" alt="" class="ply102026__btn"></button>
+                                    </div>
+                                </div>
                                 <input type="text" class="ply-reg__input"
                                     placeholder="방지문자를 작성해주세요.">
-                                <button type="button" class="hpy-reg__btn hpy-reg__btn--min40 ply-reg__btn--gray tour102026__btnVoice"><img
-                                        src="images/u-102-026/img_listen.svg" alt="" class="ply102026__btn"></button>
-                                <button type="button" class="hpy-reg__btn hpy-reg__btn--min40 ply-reg__btn--gray"><img
-                                        src="images/u-102-026/image03.png" alt="" class="ply102026__btn"></button>
                             </div>                           
                         </div>
                     </div>

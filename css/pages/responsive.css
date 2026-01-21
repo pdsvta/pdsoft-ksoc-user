@@ -542,6 +542,20 @@
         flex-direction: column;
     }
 
+    .tour102013__groupFilter {
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .tour102013__selectFilter {
+        flex: 1;
+    }
+
+    .tour102013__groupFilter button {
+        width: 22%;
+        min-width: unset;
+    }
+
     .tour102019__group {
         padding: 0 2rem;
     }
@@ -2947,7 +2961,7 @@
     }
 
     .ply-pop {
-        max-width: 32rem;
+        max-width: 40rem;
         padding: 3rem;
         border-radius: 2rem;
         width: 100%;
@@ -2994,8 +3008,8 @@
     }
 
     .ply-pop__btn {
-        font-size: 1.2rem;
-        padding: .9rem 1.8rem .7rem;
+        font-size: 1.5rem;
+        padding: .9rem 2.8rem .7rem;
         height: 3rem;
         min-width: auto;
     }
@@ -3202,6 +3216,11 @@
     .indv__block.bd5.tour102002__boxMain {
         border-radius: 2rem;
         padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .ply__wrapper.tour102002__boxMain .ply__title {
+        padding: 0 0 2rem;
     }
 
     .ply__wrapper.mt5.tour102002__boxMain,
@@ -3339,13 +3358,43 @@
         padding: 0;
     }
 
-    .tour102026__card,
-    .ply102026__group.tour102026__group {
+    .tour102026__card {
         flex-direction: column;
     }
 
     .tour102026__card label {
         margin-bottom: 0.4rem;
+    }
+
+    .tour102026__groupBottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour102026__group .ply-reg__input {
+        width: 70%;
+    }
+
+    .tour102026__group .hpy-reg__btn {
+        flex: 1;
+    }
+
+    .tour102026__btnRefresh {
+        flex-direction: row;
+    }
+
+    .tour102026__btnRefresh button {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .tour102026__btnRefresh button img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .tour102026__groupBottom .ply-reg__input {
+        width: 100%;
     }
 
     .tour102026__card input,
@@ -8863,9 +8912,9 @@
         padding: 3rem 0;
     }
 
-    .tour102018__box .ply102018__row span.tour102018__textLeft {
+    /* .tour102018__box .ply102018__row span.tour102018__textLeft {
         width: 17%;
-    }
+    } */
 
     .tour102018__box .ply102018__section {
         flex: 1;
@@ -9253,7 +9302,7 @@
 
     .tour102028__boxMainCheck.ply__wrapper.tour102002__boxMain {
         position: relative;
-        padding: 0;
+        /* padding: 0; */
     }
 
     .tour102028__boxMainCheck.ply__wrapper.mt2.tour102002__boxMain .ply__title {
@@ -9275,7 +9324,7 @@
         border: 1px solid #DDDDDD;
         border-radius: 2rem;
         padding: 2rem;
-        margin: 2rem;
+        /* margin: 2rem; */
     }
 
     .tour102029__item .ply102011__check {
@@ -9294,6 +9343,11 @@
 
     .tour102029__groupFilterDate .hpy-reg__input {
         width: 28%;
+    }
+
+    .tour102029__groupInputLabel .ply102007__label {
+        flex: 1 1 30%;
+        font-size: 1.1rem;
     }
 
     .tour__box104001 {

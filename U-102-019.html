@@ -286,10 +286,20 @@
     </script>
 
     <script>
-        document.addEventListener('input', e => {
-            if (e.target.classList.contains('tour102019__itemInput')) {
-                e.target.value = e.target.value.slice(0, 4);
-            }
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputs = [...document.querySelectorAll('.tour102019__itemInput')];
+
+            inputs.forEach((input, index) => {
+                input.addEventListener('input', () => {
+                    if (input.value.length > 4) {
+                        input.value = input.value.slice(0, 4);
+                    }
+
+                    if (input.value.length === 4 && inputs[index + 1]) {
+                        inputs[index + 1].focus();
+                    }
+                });
+            });
         });
     </script>
 </body>
