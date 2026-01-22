@@ -6560,6 +6560,14 @@ legend {
 	margin-top: 5rem;
 }
 
+.tour102011__groupFilter {
+    display: flex;
+    align-items: center;
+	flex-wrap: wrap;
+    justify-content: center;
+	gap: 0.5rem;
+}
+
 .ply102011__box {
 	width: 100%;
 	font-size: 1.3rem;
@@ -7181,7 +7189,6 @@ legend {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-	margin-top: 1rem;
 }
 
 .ply102026__img {
@@ -8463,7 +8470,6 @@ legend {
 
 .tour102026__card label {
     width: 10%;
-    padding-top: 1rem;
 }
 
 .tour102026__card input,
