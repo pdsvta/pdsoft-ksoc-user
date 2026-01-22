@@ -171,6 +171,9 @@
                     </div>
                 </div>
                 <div class="ply__wrapper mt5 tour102002__boxMain">
+                    <div class="ply__title tour102011__titleChild">
+                        <h4>신청자 정보</h4>
+                    </div>
                     <div class="ply__tit ply__tit--mb30 mt0 p2">
                         <div class="tour__group tour__group--p0">
                             <div class="ply-reg__agree p0 mr14">
@@ -199,7 +202,7 @@
                     <div class="ply102011__box">
                         <div class="ply102011__item">
                             <label class="ply102011__check">
-                                <input type="checkbox" class="ply102011__checkbox checkbox w20" checked>
+                                <input type="checkbox" class="ply102011__checkbox checkbox w20">
                             </label>
                             <div class="ply102011__content">
                                 <div class="ply102011__row">
@@ -634,6 +637,30 @@
             });
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkAll = document.querySelector('.ply-reg__agree input[type="checkbox"]');
+
+            const itemCheckboxes = document.querySelectorAll('.ply102011__check input[type="checkbox"]');
+
+            if (!checkAll || itemCheckboxes.length === 0) return;
+
+            checkAll.addEventListener('change', () => {
+                itemCheckboxes.forEach(cb => {
+                    cb.checked = checkAll.checked;
+                });
+            });
+
+            itemCheckboxes.forEach(cb => {
+                cb.addEventListener('change', () => {
+                    const checkedCount = [...itemCheckboxes].filter(i => i.checked).length;
+
+                    checkAll.checked = checkedCount === itemCheckboxes.length;
+                });
+            });
+        });
     </script>
 </body>
 

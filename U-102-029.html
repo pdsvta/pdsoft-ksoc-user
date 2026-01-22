@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/styleCert.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
@@ -156,11 +158,11 @@
                         <img src="images/icons/document-icon.png" alt="">
                         <p>교육수료증 발급내역</p>
                     </div>
-                    <div class="ply__group--item2 tour102027__item2">
+                    <div class="ply__group--item2 active tour102027__item2">
                         <img src="images/icons/mouse-icon.png" alt="">
                         <p>교육수료증 신청</p>
                     </div>
-                    <div class="ply__group--item2 active tour102027__item2">
+                    <div class="ply__group--item2 tour102027__item2">
                         <img src="images/icons/search-blk-icon.png" alt="">
                         <p>원본검증</p>
                     </div>
@@ -176,7 +178,12 @@
                         </div>
                         <div class="ply-reg__card">
                             <label for="" class="ply-reg__label" aria-required="true">연락처</label>
-                            <input type="text" class="ply-reg__input tour102010__itemInput">
+                            <div class="tour102029__groupInputLabel">
+                                <input type="text" class="ply-reg__input tour102010__itemInput">
+                                <div class="ply102007__label">
+                                    숫자만 입력합니다.
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="ply102007__group mt1 tour102028__groupCard">
@@ -213,15 +220,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="ply__wrapper mt2 tour102002__boxMain tour102028__boxMainCheck">
+                <div class="ply__wrapper tour102002__boxMain tour102028__boxMainCheck">
                     <div class="ply__tit jc-sb ply__tit--mb30 mt0 p2">
-                        <h4>신청교육이력</h4>
+                        <h4>교육이력 선택</h4>
                         <div class="tour__group--input tour102029__groupFilterDate">
-                            <input type="date"
-                                class="hpy-reg__input hpy-reg__input--date hpy-reg__input--h35">
+                            <input type="date" id="yearFrom"
+                                class="hpy-reg__input hpy-reg__input--date hpy-reg__input--h35"
+                                placeholder="yyyy">
                             <span class="hpy02__dash">-</span>
-                            <input type="date"
-                                class="hpy-reg__input hpy-reg__input--date hpy-reg__input--h35">
+                            <input type="date" id="yearTo"
+                                class="hpy-reg__input hpy-reg__input--date hpy-reg__input--h35"
+                                placeholder="yyyy">
                             <button type="button"
                                 class="hpy-reg__btn hpy-reg__btn--min120 hpy-reg__btn--h35 ply-reg__btn--gray">등록년도로
                                 조회</button>
@@ -250,7 +259,7 @@
                                     <span class="ply102011__value">진로지원센터</span>
                                 </div>
                                 <div class="ply102011__group">
-                                    <span class="ply102011__label">교육시간</span>
+                                    <span class="ply102011__label">교육시간수</span>
                                     <span class="ply102011__value">2</span>
                                 </div>
                             </div>
@@ -293,7 +302,7 @@
                                     <span class="ply102011__value">진로지원센터</span>
                                 </div>
                                 <div class="ply102011__group">
-                                    <span class="ply102011__label">교육시간</span>
+                                    <span class="ply102011__label">교육시간수</span>
                                     <span class="ply102011__value">2</span>
                                 </div>
                             </div>
@@ -411,6 +420,13 @@
                 // Active item được click
                 $(this).addClass('active');
             });
+        });
+    </script>
+
+    <script>
+        flatpickr("#yearFrom, #yearTo", {
+            dateFormat: "Y",
+            allowInput: true
         });
     </script>
 
