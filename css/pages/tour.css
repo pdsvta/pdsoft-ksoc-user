@@ -2673,8 +2673,20 @@ caption {
     margin-bottom: 2rem;
 }
 
-.hpy0707__item {
+.hpy0707__item,
+.hpy0707__item.flex .hpy0707__group {
     width: calc((100% - 2rem) /2)
+}
+
+.hpy0707__item.flex {
+    display: flex;
+    align-items: end;
+    gap: 2rem;
+    width: 100%;
+}
+
+.hpy0707__item.flex .hpy0707__input {
+    width: calc((100% - 4rem) /3)
 }
 
 .hpy0707__item--w100 {

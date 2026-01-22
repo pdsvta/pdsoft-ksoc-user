@@ -1254,6 +1254,10 @@
         padding: 0 !important;
     } */
 
+    .popup.on {
+        padding: 0;
+    }
+
     .popup-main {
         width: 100%;
         padding: 0;
@@ -2968,7 +2972,7 @@
         max-width: 40rem;
         padding: 3rem;
         border-radius: 2rem;
-        width: 100%;
+        width: 90%;
     }
 
     .ply-pop__scroll_inner {
@@ -3012,9 +3016,9 @@
     }
 
     .ply-pop__btn {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: .9rem 2.8rem .7rem;
-        height: 3rem;
+        height: 3.5rem;
         min-width: auto;
     }
 
@@ -11079,6 +11083,7 @@
     .tour003008__row {
         flex-direction: column;
         gap: 1rem;
+        font-size: 1.2rem;
     }
 
     .tour003008__row .hpy003008__group {
@@ -11086,7 +11091,7 @@
     }
 
     .tour003008__row .hpy003008__group .bold {
-        width: 10rem;
+        width: 7rem;
     }
 
     .tour003008__row .hpy003008__group .desc {
@@ -11099,6 +11104,7 @@
 
     .tour003008__text {
         padding: 0;
+        font-size: 1.3rem;
     }
 
     .tour003009__title p {
@@ -15444,6 +15450,308 @@
         border: none;
         padding: 0;
     }
+
+    .certificate .title {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .title__link {
+        min-width: auto;
+        font-size: 1.3rem;
+        height: 3.5rem;
+    }
+
+    .certificate__list {
+        position: unset;
+        gap: 1rem;
+    }
+
+    .certificate__list li a {
+        font-size: 1.2rem;
+    }
+    .certificate__list li a img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .certificate__head h3 {
+        font-size: 1.5rem;
+    }
+
+    .ply-bsc__block .tour__group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .ply-bsc__block .tour__group .tour__group--input .hpy-reg__btn {
+        min-width: max-content;
+        padding: 0 1rem;
+    }
+
+    .tour__table0102,
+    .tour__table0102--2,
+    .hpy0709__table table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour__table0102 thead,
+    .tour__table0102 colgroup,
+    .tour__table0102--2 thead,
+    .tour__table0102--2 colgroup,
+    .hpy0709__table table thead,
+    .hpy0709__table table colgroup {
+        display: none;
+    }
+
+    .tour__table0102 tbody tr,
+    .tour__table0102--2 tbody tr,
+    .hpy0709__table table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour__table0102 tbody td,
+    .tour__table0102--2 tbody td,
+    .hpy0709__table table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.3rem;
+        display: flex;
+    }
+
+    .tour__table0102 tbody tr td:last-child,
+    .tour__table0102--2 tbody tr td:last-child,
+    .hpy0709__table table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .tour__table0102 tbody tr td:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+    }
+
+
+
+    .tour__table0102 tbody tr td:nth-child(2)::before {
+        content: "신청일";
+    }
+    .tour__table0102 tbody tr td:nth-child(3)::before {
+        content: "발급일";
+    }
+
+    .tour__table0102 tbody tr td:nth-child(4)::before {
+        content: "결제금액 (원)";
+    }
+
+    .tour__table0102 tbody tr td:nth-child(5)::before {
+        content: "결제종류";
+    }
+    .tour__table0102 tbody tr td:nth-child(6)::before {
+        content: "처리상태";
+    }
+
+    .tour__table0102 tbody tr td:nth-child(2)::before,
+    .tour__table0102 tbody tr td:nth-child(3)::before,
+    .tour__table0102 tbody tr td:nth-child(4)::before,
+    .tour__table0102 tbody tr td:nth-child(5)::before,
+    .tour__table0102 tbody tr td:nth-child(6)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 10rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+    .tour__box .tour0102__link {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .tour__table0102.hpy02__table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tour__table0102.hpy02__table tbody tr:last-child td:last-child,
+    .hpy0709__table table tbody tr td:nth-child(7) {
+        border-bottom: none;
+    }
+
+    .tour__table0102.hpy02__table tbody tr:last-child,
+    .tour__table0102--2 tbody tr:last-child,
+    .hpy0709__table table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .pstn__block .pstn__tell.pstn__tell2 {
+        display: none;
+    }
+
+    .ply-reg__input--max310 {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .tour__box0102 {
+        padding: 2rem 0 0;
+    }
+
+    .tour__table0102--2 tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .tour__table0102--2 tbody tr td:nth-child(1) {
+        order: 2;
+    }
+    .tour__table0102--2 tbody tr td:nth-child(3) {
+        order: 3;
+    }
+
+    .tour__table0102--2 tbody tr td:nth-child(4) {
+        order: 4;
+    }
+
+    .tour__table0102--2 tbody tr td:nth-child(1)::before {
+        content: "등록년도";
+    }
+    .tour__table0102--2 tbody tr td:nth-child(3)::before {
+        content: "소속시도";
+    }
+
+    .tour__table0102--2 tbody tr td:nth-child(4)::before {
+        content: "소속팀";
+    }
+
+    .tour__table0102--2 tbody tr td:nth-child(1)::before,
+    .tour__table0102--2 tbody tr td:nth-child(3)::before,
+    .tour__table0102--2 tbody tr td:nth-child(4)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 10rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .ply-bsc__rt.unset {
+        position: unset;
+    }
+
+    .ply-bsc__rt.unset .pstn__tell.pstn__tell1,
+    .ply-bsc__rt.unset .pstn__tell.pstn__tell2 {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        display: block;
+    }
+
+    .ply-bsc__rt.unset .pstn__tell.pstn__tell1 .pstn__input {
+        width: 100%;
+    }
+
+    .hpy0709__table table tbody tr {
+        position: relative;
+    }
+    .hpy0709__table table tbody tr td:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+    }
+
+    .hpy0709__table table tbody tr td:nth-child(8) {
+        position: absolute;
+        right: 0rem;
+        top: .8rem;
+        padding: 0;
+    }
+
+    .hpy0709__table table tbody tr td:nth-child(2)::before {
+        content: "생년월일";
+    }
+    .hpy0709__table table tbody tr td:nth-child(3)::before {
+        content: "학교구분";
+    }
+
+    .hpy0709__table table tbody tr td:nth-child(4)::before {
+        content: "학교";
+    }
+
+    .hpy0709__table table tbody tr td:nth-child(5)::before {
+        content: "키/몸무게/발크기";
+    }
+    .hpy0709__table table tbody tr td:nth-child(6)::before {
+        content: "기타";
+    }
+    .hpy0709__table table tbody tr td:nth-child(7)::before {
+        content: "상태";
+    }
+
+    .hpy0709__table table tbody tr td:nth-child(2)::before,
+    .hpy0709__table table tbody tr td:nth-child(3)::before,
+    .hpy0709__table table tbody tr td:nth-child(4)::before,
+    .hpy0709__table table tbody tr td:nth-child(5)::before,
+    .hpy0709__table table tbody tr td:nth-child(6)::before,
+    .hpy0709__table table tbody tr td:nth-child(7)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 10rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .hpy0707__item.flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hpy0707__item, .hpy0707__item.flex .hpy0707__group {
+        width: 100%;
+    }
+    .hpy0707__item.flex .hpy0707__input {
+        width: calc((100% - 1rem) / 3);
+    }
+
+    .transfer-text {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 414px) {
@@ -15733,7 +16041,7 @@
     }
 
     .hpy-reg__input--max120 {
-        max-width: 12.3rem;
+        max-width: 10rem;
     }
 
     .tour102009__filter .hpy-reg__input--date {
