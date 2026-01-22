@@ -2363,6 +2363,18 @@ caption {
     color: #666;
 }
 
+.ply__note {
+    border-radius: 10px;
+    border: solid 1px #c4c4c4;
+    background-color: #f7f7f7;
+    margin-top: 5rem;
+    padding: 2rem 2rem 2rem 3.2rem;
+}
+
+.ply__note p {
+    font-size: 1.6rem;
+}
+
 .lsn__excel-btn {
     min-width: 21.4rem;
     height: 4rem;
@@ -10192,8 +10204,16 @@ caption {
     padding: 0 0;
 }
 
+.tour102002__tit {
+    margin-top: 7rem;
+}
+
 .tour102023__title {
     justify-content: flex-start;
+}
+
+.tour102027__ply__group--list2 {
+    padding: 2rem 7rem 3rem;
 }
 
 .tour102028__groupCard .ply-reg__card {
@@ -10204,13 +10224,31 @@ caption {
     width: 100%;
 }
 
+.ply102028__item {
+    border-bottom: 0;
+}
+
+.tour102029__groupInputLabel {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.tour102029__groupInputLabel .tour102010__itemInput {
+	width: 70%;
+}
+
+.tour102029__groupInputLabel .ply102007__label {
+	flex: 1 1 50%;
+}
+
 .tour102004005__imgPDF {
     width: 45rem;
     display: block;
     margin: 0 auto 2rem;
 }
 
-.tour1002004005__setting1 {
+.tour102004005__setting1 {
 	margin-bottom: 2rem;
 }
 
