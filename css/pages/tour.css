@@ -10242,6 +10242,11 @@ caption {
 	flex: 1 1 50%;
 }
 
+.tour102029__groupFilterDate .hpy-reg__input {
+    color: #111;
+    text-align: center;
+}
+
 .tour102004005__imgPDF {
     width: 45rem;
     display: block;

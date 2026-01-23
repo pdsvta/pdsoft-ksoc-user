@@ -3243,15 +3243,21 @@
         font-size: 1rem;
     }
 
-    .ply__wrapper.tour102002__boxMain,
+    .tour102002__boxMain,
     .indv__block.bd5.tour102002__boxMain {
+        border: 1px solid #DDDDDD;
         border-radius: 2rem;
         padding: 2rem;
-        margin-bottom: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .tour102002__boxMain .ply__tit,
+    .tour102002__boxMain .tour102027__group {
+        margin-bottom: 0;
     }
 
     .ply__wrapper.tour102002__boxMain .ply__title {
-        padding: 0 0 2rem;
+        padding: 0 0 1rem;
     }
 
     .ply__wrapper.mt5.tour102002__boxMain,
@@ -8951,7 +8957,6 @@
 		padding: 0;
 		border: 1px solid #ddd;
 		border-radius: 1rem;
-		margin-bottom: 1rem;
 	}
 
 	.ply102011__check {
@@ -8984,11 +8989,15 @@
 	.ply102011__label {
 		flex: 1;
 		display: block;
+        font-weight: 400;
+        font-size: 1.5rem;
 	}
 
 	.ply102011__value {
 		flex: 1 1 30%;
 		display: block;
+        font-weight: 400;
+        font-size: 1.5rem;
 	}
 
     .tour102016__boxTable .hpy02__table.hpy02__box tbody td {
@@ -9082,7 +9091,6 @@
         gap: 0;
     }
 
-
     .tour102020__row .ply102011__group {
         width: 100%;
         padding: 0;
@@ -9107,6 +9115,10 @@
     .tour102021__box {
         margin: 0;
         padding: 2rem;
+    }
+
+    .ply102022__text {
+        padding: 0;
     }
 
     .ply102022__text li {
@@ -9205,6 +9217,11 @@
         width: 100%;
     }
 
+    .tou102027__btnFilter {
+        min-width: unset;
+        width: 30%;
+    }
+
     .tour102025__groupInput {
         flex-wrap: wrap;
         justify-content: center;
@@ -9248,6 +9265,9 @@
         width: 33%;
     }
 
+    .ply102028__item {
+        margin-top: 1rem;
+    }
 
     .indv__block--noBorder {
         padding: 0;
@@ -9384,9 +9404,9 @@
         gap: 0.5rem;
     }
 
-    .tour102028__row .ply102011__group {
+    /* .tour102028__row .ply102011__group {
         width: 100%;
-    }
+    } */
 
     .tour102028__boxMainCheck.ply__wrapper.tour102002__boxMain {
         position: relative;
@@ -9411,8 +9431,7 @@
     .tour102029__item {
         border: 1px solid #DDDDDD;
         border-radius: 2rem;
-        padding: 2rem;
-        /* margin: 2rem; */
+        margin-bottom: 1rem;
     }
 
     .tour102029__item .ply102011__check {
@@ -9427,6 +9446,7 @@
     .tour102029__groupFilterDate {
         justify-content: center;
         width: 100%;
+        margin-bottom: 2rem;
     }
 
     .tour102029__groupFilterDate .hpy-reg__input {
@@ -9441,6 +9461,27 @@
     .tour102029__row,
     .tour102028__row {
         flex-wrap: nowrap;
+    }
+
+    .tour102028__row .ply102011__group,
+    .tour102029__row .ply102011__group {
+      order: 10;
+      margin: 0 2rem;
+    }
+
+    .tour102029__row .ply102011__group.is-title {
+        order: 1;
+        background: #F5F5F5;
+        border-radius: 2rem 2rem 0 0;
+        margin: 0;
+    }
+
+    .tour102029__row .ply102011__group.is-title .ply102011__label {
+        display: none;
+    }
+
+    .tour102029__row .ply102011__group.is-title .ply102011__value {
+        font-weight: 600;
     }
 
     .tour__box104001 {

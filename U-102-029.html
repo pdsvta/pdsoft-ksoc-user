@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="js/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
 </head>
@@ -606,11 +604,11 @@
                     <div class="ply__tit jc-sb ply__tit--mb30 mt0 p2">
                         <h4>교육이력 선택</h4>
                         <div class="tour__group--input tour102029__groupFilterDate">
-                            <input type="date" id="yearFrom"
+                            <input type="text"
                                 class="hpy-reg__input hpy-reg__input--date hpy-reg__input--h35"
                                 placeholder="yyyy">
                             <span class="hpy02__dash">-</span>
-                            <input type="date" id="yearTo"
+                            <input type="text"
                                 class="hpy-reg__input hpy-reg__input--date hpy-reg__input--h35"
                                 placeholder="yyyy">
                             <button type="button"
@@ -632,7 +630,7 @@
                                     <span class="ply102011__label">종목</span>
                                     <span class="ply102011__value">골프</span>
                                 </div>
-                                <div class="ply102011__group">
+                                <div class="ply102011__group is-title">
                                     <span class="ply102011__label">사업명</span>
                                     <span class="ply102011__value">선수진로(은퇴선수)지원</span>
                                 </div>
@@ -675,7 +673,7 @@
                                     <span class="ply102011__label">종목</span>
                                     <span class="ply102011__value">골프</span>
                                 </div>
-                                <div class="ply102011__group">
+                                <div class="ply102011__group is-title">
                                     <span class="ply102011__label">사업명</span>
                                     <span class="ply102011__value">선수진로(은퇴선수)지원</span>
                                 </div>
@@ -1239,9 +1237,14 @@
     </script>
 
     <script>
-        flatpickr("#yearFrom, #yearTo", {
-            dateFormat: "Y",
-            allowInput: true
+        document.querySelectorAll('.tour102029__groupFilterDate input[type="text"]').forEach(input => {
+
+            input.addEventListener('input', function () {
+                this.value = this.value
+                    .replace(/\D/g, '')
+                    .slice(0, 4);
+            });
+
         });
     </script>
 
