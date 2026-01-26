@@ -1336,7 +1336,7 @@
     background-color: #fff;
     position: relative;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #333333;
     cursor: pointer;
 }
@@ -3495,7 +3495,7 @@ a.ui-button:active,
 
 .indv101028__table .indv101002__content {
     padding: 1.7rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4275,6 +4275,7 @@ a.ui-button:active,
     max-width: 95rem;
     text-align: left;
     overflow-wrap: break-word;
+    text-align: justify;
 }
 
 .indv__prv__info p::marker,

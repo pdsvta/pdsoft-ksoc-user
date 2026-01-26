@@ -5138,7 +5138,7 @@
 
 .annc__total {
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #111;
 }
 
@@ -5231,7 +5231,7 @@
 .annc__table th {
     height: 5rem;
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     vertical-align: middle;
     background: #F5F5F5;
@@ -5255,7 +5255,7 @@
 
 .annc__table td b {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .annc__table tbody tr:hover {
@@ -5424,7 +5424,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     font-weight: 400;
     color: #333;
     padding: 0 7rem;
@@ -5460,6 +5460,13 @@
 
 .qz__tit {
     flex: 1;
+    font-size: 1.5rem;
+}
+
+.qz__number {
+    width: 4rem;
+    border-right: 1px solid #DDDDDD;
+    font-size: 1.5rem;
 }
 
 .qz__item img {
@@ -5523,6 +5530,11 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: #111111;
+    cursor: pointer;
+}
+
+.qz__file:hover {
+    color: #025ac6;
 }
 
 .qz__file img {
@@ -5897,7 +5909,7 @@
 .ply-bsc__filter p {
     font-size: 1.8rem;
     color: #111;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .ply-bsc__group {
