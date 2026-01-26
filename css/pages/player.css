@@ -1745,6 +1745,13 @@
     padding-left: 1.5rem;
 }
 
+.itemBtnTable {
+    background: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+}
 
 .ply101020popup.ply101020popup__list {
     width: 100%;
@@ -1754,7 +1761,7 @@
 .ply101020popup .list__row,
 .ply101020popup .list__row--head {
     display: grid;
-    grid-template-columns: 40px 100px 1fr 80px 100px 100px;
+    grid-template-columns: 40px 100px 1fr 80px 100px 100px 80px;
     height: 4rem;
     border-bottom: 1px solid #ddd;
     align-items: center;
@@ -2889,7 +2896,7 @@
 }
 
 .text--zipcode {
-    color: #CCCCCC;
+    color: #111;
     font-weight: 400;
     font-size: 1.3rem;
 }
@@ -2964,8 +2971,8 @@
 }
 
 .ply-reg__agree .ply-reg__radio {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     accent-color: #0C54B8;
     cursor: pointer;
 }
@@ -3610,6 +3617,34 @@
 
 .ply-reg__check-block .checkbox:disabled+label {
     color: #999;
+}
+
+.ply-reg__display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ply-reg__agree label {
+    font-size: 1.3rem;
+}
+
+.ply-reg__display .ply-reg__agree {
+    padding-bottom: 1rem;
+}
+
+.ply__btnChild button {
+    background: #F5F5F5;
+    color: #000;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 2rem auto 0;
+    font-size: 1.3rem;
+    height: 4rem;
+}
+
+.ply-reg__display .ply-reg__agree {
+    gap: 0.3rem;
 }
 
 .ply__bm--end {
@@ -4648,6 +4683,7 @@
     color: #000;
     font-weight: 600;
     padding: 1rem;
+    font-size: 1.3rem;
 }
 
 .mmb__dl dd {
@@ -4655,6 +4691,7 @@
     padding-left: 1rem;
     gap: 0.5rem;
     line-height: 200%;
+    font-size: 1.3rem;
 }
 
 .mmb__dl dd::before {
@@ -5780,7 +5817,7 @@
 .ply-bsc__des2 .ply-bsc__subtitle {
     padding-top: 0;
     padding-left: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 .ply-bsc__des2 .ply-bsc__subtitle b {

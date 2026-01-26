@@ -8137,6 +8137,11 @@ caption {
     padding: 0;
 }
 
+.tour101006-2__titleTable p {
+    font-weight: 600;
+    padding: 0 2rem 1rem;
+}
+
 .tour001002__allBtn {
     display: flex;
     align-items: center;
@@ -11722,7 +11727,8 @@ caption {
 .hpy004017__table2 table tr td.table-checkbox>div .ply-reg__agree {
     padding-top: 0;
     gap: .5rem;
-    align-items: baseline;
+    /* align-items: baseline; */
+    font-size: unset;
 }
 
 .hpy004017__table2 table tr td.table-textarea {

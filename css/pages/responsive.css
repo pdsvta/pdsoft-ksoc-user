@@ -2403,8 +2403,13 @@
     }
 
     .indv101002__table {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .indv101002__table.tableChild {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .indv101002__item {
@@ -2413,6 +2418,10 @@
 
     .indv101002__title {
         border-radius: 1rem 1rem 0 0;
+    }
+
+    .indv101002__title.titleDisplay {
+        display: flex;
     }
 
     .indv101002__item:last-child {
@@ -2442,6 +2451,10 @@
     .indv101002__text p {
         font-size: 1.2rem;
         line-height: 170%;
+    }
+
+    .indv101002__choose {
+        flex-direction: column;
     }
 
     .indv__tit--mt10 {
@@ -11010,6 +11023,7 @@
         height: 4rem;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .tour405003__titleSub {
@@ -15436,6 +15450,11 @@
 
     .tour004040__allBtn {
         flex-direction: column;
+    }
+    
+    .tour004041__list p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
     }
 
     .hpy102031__text ul {

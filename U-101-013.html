@@ -144,7 +144,7 @@
         <!-- contents -->
         <section class="ply tour101013__main">
             <div class="inner">
-                <h3 class="ply__tit tour101006__title">소속변경신청</h3>
+                <h3 class="ply__tit tour101006__title">활동재개 신청</h3>
                 <div class="ply-bsc">
                     <!-- main content -->
                     <div class="ply-bsc__lf">
@@ -191,33 +191,41 @@
                                             <input type="text" class="ply-reg__input">
                                         </div>
                                         <div class="ply-reg__card">
-                                            <div class="ply-reg__btwn">
-                                                <label for="" class="ply-reg__label ply-reg__label--required "
-                                                    aria-required="true">휴대폰</label>
+                                            <div class="ply-reg__display">
+                                                <label for="" class="ply-reg__label" aria-required="true">휴대폰</label>
+                                                <div class="ply-reg__agree">
+                                                    <input type="checkbox" class="ply-reg__radio" name="agreeYn"
+                                                        id="agreeYn">
+                                                    <label for="agreeYn">승인진행안내 수신 동의</label>
+                                                </div>
                                             </div>
                                             <input type="text" class="ply-reg__input">
+                                            <!-- <div class="ply-reg__btwn">
+                                                <label for="" class="ply-reg__label ply-reg__label--required "
+                                                    aria-required="true">휴대폰</label>
+                                            </div> -->
                                         </div>
-                                        <div class="ply-reg__card ply-reg__card--end">
+                                        <!-- <div class="ply-reg__card ply-reg__card--end">
                                             <div class="ply-reg__agree ply-reg__checkbox ply-reg__agree-h40">
                                                 <input type="checkbox" class="transfer-checkbox checkbox"
                                                     class="ply-reg__radio" name="agreeYn" title="동의" checked>
                                                 <span>승인진행안내 수신 동의</span>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </li>
 
                                     <li class="ply-reg__item2 ply-reg__item2_mr0">
                                         <div class="ply-reg__adr class--address2">
-                                            <label class="ply-reg__label on" aria-required="true">작성자 자택주소</label>
+                                            <label class="ply-reg__label" aria-required="true">작성자 자택주소</label>
                                             <div class="ply-reg__flex ply-reg__flex--gap5">
                                                 <input type="text"
                                                     class="ply-reg__input ply-reg__input--max200"
-                                                    placeholder="우편번호">
+                                                    placeholder="우편번호" readonly>
                                                 <button type="button" class="ply-reg__btn">우편번호 검색</button>
                                             </div>
                                             <input type="text"
                                                 class="ply-reg__input ply-reg__input--max660"
-                                                placeholder="상세주소 1">
+                                                placeholder="상세주소 1" readonly>
                                             <input type="text"
                                                 class="ply-reg__input ply-reg__input--max660"
                                                 placeholder="상세주소 2">
@@ -235,9 +243,9 @@
                                                 class="ply-reg__label ply-reg__label--pd0 ply-reg__label--pb10"
                                                 aria-required="true">이적할 소속팀</label>
                                             <div class="ply-reg__flex ply-reg__flex--gap5 ply-reg__flex--wrap">
-                                                <input type="text" class="ply-reg__input ply-reg__input--max200">
+                                                <input type="text" class="ply-reg__input ply-reg__input--max200" readonly>
                                                 <div class="ply-reg__flex ply-reg__flex--gap3 ply-reg__flex--no-wrap">
-                                                    <input type="text" class="ply-reg__input ply-reg__input--max200">
+                                                    <input type="text" class="ply-reg__input ply-reg__input--max200" readonly>
                                                     <button type="button" class="ply-reg__btn ply-reg__btn--small">소속팀
                                                         검색</button>
                                                 </div>
@@ -262,7 +270,7 @@
                                             </select>
                                         </div>
                                         <div class="ply-reg__card">
-                                            <label for="" class="ply-reg__label">학년년</label>
+                                            <label for="" class="ply-reg__label">학년</label>
                                             <select name="" id="" class="selectbox">
                                                 <option value="">선택</option>
                                                 <option value="">1학년</option>
@@ -297,7 +305,7 @@
                                     <li
                                         class="ply-reg__item4 ply-reg__item4--pd20 ply-reg__item4--pd20 ply-reg__item4--mrb20">
                                         <div class="ply-reg__card">
-                                            <label for="" class="ply-reg__label">학제에 따른 활동사유*</label>
+                                            <label for="" class="ply-reg__label" aria-required="true">학제에 따른 활동사유</label>
                                             <input type="text" class="ply-reg__input max-w200">
                                         </div>
                                     </li>
