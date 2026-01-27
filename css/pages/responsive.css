@@ -2403,8 +2403,13 @@
     }
 
     .indv101002__table {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .indv101002__table.tableChild {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .indv101002__item {
@@ -2415,12 +2420,20 @@
         border-radius: 1rem 1rem 0 0;
     }
 
+    .indv101002__title.titleDisplay {
+        display: flex;
+    }
+
     .indv101002__item:last-child {
         border-left: 1px solid #ddd;
     }
 
     .indv101002__item:first-child {
         border-right: 1px solid #ddd;
+    }
+
+    .indv101002__content.contentLastChild {
+        text-align: left;
     }
 
     .indv101002__item.w240 {
@@ -2442,6 +2455,10 @@
     .indv101002__text p {
         font-size: 1.2rem;
         line-height: 170%;
+    }
+
+    .indv101002__choose {
+        flex-direction: column;
     }
 
     .indv__tit--mt10 {
@@ -3256,8 +3273,12 @@
         margin-bottom: 0;
     }
 
+    .tour102002__boxMain .ply__tit {
+        align-items: flex-start;
+    }
+
     .ply__wrapper.tour102002__boxMain .ply__title {
-        padding: 0 0 1rem;
+        padding: 0 1rem 0 1rem;
     }
 
     .ply__wrapper.mt5.tour102002__boxMain,
@@ -3497,11 +3518,12 @@
     .ply-reg__card .date-input.ply-reg__input--w200,
     .ply-reg__input--w200 {
         width: 100%;
-        min-width: 100%;
+        min-width: auto;
     }
 
     .ply-reg__btn--min160 {
-        min-width: 100%;
+        min-width: auto;
+        padding: 0 0.8rem;
     }
 
     .ply-reg__input--max200 {
@@ -3755,6 +3777,7 @@
 
     .indv1010062__table {
         padding: 0;
+        flex-wrap: wrap;
     }
 
     .ply-bsc__block>h3 {
@@ -4026,6 +4049,16 @@
         width: 50%;
         justify-content: center;
     }
+    
+    .transfer-buttons .transfer-btn {
+        flex: 1 1 50%;
+        padding: 0.5rem;
+    }
+
+    .transfer-line {
+        margin-top: 1rem;
+        align-items: flex-start;
+    }
 
     .ply-bsc__text {
         padding: 2rem 0 0;
@@ -4069,7 +4102,7 @@
     }
 
     .ply__wrapper.mt2.tour102002__boxMain .ply-reg__input.tour102002__itemInput {
-        width: 6.8rem;
+        width: 20%;
     }
 
     .ply__wrapper.mt2.tour102002__boxMain .ply-reg__btn.tour102002__itemBtn2 {
@@ -8941,8 +8974,16 @@
         min-width: unset;
     }
 
+    .tour101013__groupInputChild .date-inputbox {
+        width: 100%;
+    }
+
     .tour101013__groupInputTop {
         padding: 2rem 0;
+    }
+
+    .tour101013__groupInputTop .ply-reg__item {
+        grid-template-columns: 1fr;
     }
 
     .tour102010__groupCard {
@@ -9185,6 +9226,14 @@
 
     .tour102024__question {
         margin-top: 1rem;
+    }
+
+    .tour102027-desktopFilter {
+        display: none;
+    }
+
+    .tour102027-mobileFilter {
+        display: block;
     }
 
     .tour102027__ply__group--list2 {
@@ -11010,6 +11059,7 @@
         height: 4rem;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .tour405003__titleSub {
@@ -15340,6 +15390,14 @@
         font-size: 1.3rem;
     }
 
+    .tour101006__itemStep .ply-reg__item {
+        grid-template-columns: 1fr;
+    }
+
+    .tour101006__itemStep .ply-reg__item .ply-reg__card .ply-reg__wrapper-label {
+        justify-content: flex-start;
+    }
+
     .tour101006__itemStep .ply-bsc__block,
     .tour204002__main,
     .hpy204003__wrapper  {
@@ -15382,6 +15440,10 @@
 
     .ply102019__text {
         padding: 0 0 2rem;
+    }
+    
+    .ply102011__box {
+        margin-top: 1rem;
     }
 
     .ply102011__row.p2 {
@@ -15436,6 +15498,11 @@
 
     .tour004040__allBtn {
         flex-direction: column;
+    }
+    
+    .tour004041__list p {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
     }
 
     .hpy102031__text ul {

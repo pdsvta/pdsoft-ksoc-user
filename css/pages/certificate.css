@@ -1336,7 +1336,7 @@
     background-color: #fff;
     position: relative;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #333333;
     cursor: pointer;
 }
@@ -2523,8 +2523,8 @@
     border-radius: 3rem;
     font-weight: 400;
     font-size: 1.3rem;
-    padding: 1.1rem 1.8rem;
-    padding-right: 4rem;
+    padding: 1.1rem 1.1rem;
+    /* padding-right: 4rem; */
 }
 
 .date-input:focus {
@@ -3468,8 +3468,17 @@ a.ui-button:active,
 }
 
 .indv101002__table {
-    display: flex;
+    display: grid;
     margin-top: 3rem;
+    grid-template-columns: 2fr 5fr 2fr 2fr;
+}
+
+.indv101002__table.tableChild {
+    margin-top: 0;
+}
+
+.indv101002__table.tableChild .indv101002__item {
+    border-top: 0;
 }
 
 .indv101028__table {
@@ -3486,7 +3495,7 @@ a.ui-button:active,
 
 .indv101028__table .indv101002__content {
     padding: 1.7rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3620,6 +3629,12 @@ a.ui-button:active,
     font-weight: 600;
     background: #f5f5f5;
     border-bottom: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.indv101002__title.titleDisplay {
+    display: none;
 }
 
 .indv101028__table .indv101002__title {
@@ -3631,10 +3646,16 @@ a.ui-button:active,
 }
 
 .indv101002__content {
-    padding: 3.5rem 3rem;
+    padding: 2rem;
     font-weight: 400;
     font-size: 1.5rem;
     color: #666;
+}
+
+.indv101002__content.contentLastChild {
+    text-align: center;
+    font-weight: 600;
+    color: #111;
 }
 
 .indv101002__content span,
@@ -3647,6 +3668,38 @@ a.ui-button:active,
     display: flex;
     gap: 1.4rem;
     line-height: 170%;
+}
+
+.indv__scroll p.indv__desc {
+    color: #111;
+}
+
+.indv101002__choose {
+    margin-top: 3rem;
+}
+
+.indv101002__choose p {
+    color: #111;
+}
+
+.indv101002__choose,
+.indv101002__allBtnChoose {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.indv101002__itemChoose {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #ddd;
+    padding: 0.6rem 3rem;
+}
+
+.indv101002__itemChoose input {
+    margin: 0;
 }
 
 .indv__table {
@@ -3846,6 +3899,7 @@ a.ui-button:active,
     align-items: center;
     justify-content: center;
     gap: 5px;
+    margin-top: 2rem;
 }
 
 .indv__btbx-gap10 {
@@ -4229,6 +4283,7 @@ a.ui-button:active,
     max-width: 95rem;
     text-align: left;
     overflow-wrap: break-word;
+    text-align: justify;
 }
 
 .indv__prv__info p::marker,

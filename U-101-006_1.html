@@ -210,6 +210,7 @@
                                                     찾으시길 바랍니다.
                                                     <div class="ply-bsc__btbx mt7">
                                                         <button type="button" class="ply-bsc__ttn">본인이력찾기</button>
+                                                        <button type="button" class="ply-bsc__ttn">화면 새로고침</button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -278,8 +279,7 @@
                                             </div>
 
                                             <div class="ply-reg__card">
-                                                <label for="" class="ply-reg__label small">학년(초,중,고 상관없이 현재 학년을
-                                                    선택)</label>
+                                                <label for="" class="ply-reg__label">학년 (초,중,고 상관없이 현재 학년을 선택)</label>
                                                 <select name="" id="" class="selectbox">
                                                     <option value="">선택</option>
                                                     <option value="">1학년</option>
@@ -305,7 +305,14 @@
                                                     placeholder="sample@email.com">
                                             </div>
                                             <div class="ply-reg__card">
-                                                <label for="" class="ply-reg__label" aria-required="true">휴대폰</label>
+                                                <div class="ply-reg__display">
+                                                    <label for="" class="ply-reg__label" aria-required="true">휴대폰</label>
+                                                    <div class="ply-reg__agree">
+                                                        <input type="checkbox" class="ply-reg__radio" name="agreeYn"
+                                                            id="agreeYn">
+                                                        <label for="agreeYn">승인진행안내 수신 동의</label>
+                                                    </div>
+                                                </div>
                                                 <input type="text" class="ply-reg__input" placeholder="">
                                             </div>
                                             <div class="ply-reg__card">
@@ -313,23 +320,23 @@
                                                 <input type="text" class="ply-reg__input" placeholder="">
                                             </div>
                                         </li>
-                                        <li class="ply-reg__item">
+                                        <!-- <li class="ply-reg__item">
                                             <div class="ply-reg__agree">
                                                 <input type="checkbox" class="ply-reg__radio" name="agreeYn"
                                                     id="agreeYn">
                                                 <label for="agreeYn">승인진행안내 수신 동의</label>
                                             </div>
-                                        </li>
+                                        </li> -->
                                         <li class="ply-reg__item2">
                                             <div class="ply-reg__adr">
                                                 <label class="ply-reg__label" aria-required="true">작성자
                                                     자택주소</label>
                                                 <div class="ply-reg__flex ply-reg__flex--gap10">
                                                     <input type="text" class="ply-reg__input ply-reg__input--max200"
-                                                        placeholder="우편번호">
+                                                        placeholder="우편번호" readonly>
                                                     <button type="button" class="ply-reg__btn">우편번호 검색</button>
                                                 </div>
-                                                <input type="text" class="ply-reg__input" placeholder="상세주소 1">
+                                                <input type="text" class="ply-reg__input" placeholder="상세주소 1" readonly>
                                                 <input type="text" class="ply-reg__input" placeholder="상세주소 2">
                                             </div>
                                         </li>
@@ -356,10 +363,10 @@
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label" aria-required="true">소속팀</label>
                                                 <div class="ply-reg__input-group ply-reg__flex--wrap">
-                                                    <input type="text" class="ply-reg__input ply-reg__input--max200">
+                                                    <input type="text" class="ply-reg__input ply-reg__input--max200" readonly>
                                                     <div
                                                         class="ply-reg__flex ply-reg__flex--gap3 ply-reg__flex--no-wrap">
-                                                        <input type="text" class="ply-reg__input ply-reg__input--w215">
+                                                        <input type="text" class="ply-reg__input ply-reg__input--w215" readonly>
                                                         <button type="button" class="ply-reg__btn">소속팀 검색</button>
                                                     </div>
                                                 </div>
@@ -388,7 +395,7 @@
                                                 <div class="tour101006-1__itemCardChild">
                                                     <div>
                                                         <div class="tour101006-1__boxTitleChild">
-                                                            <label for="" class="ply-reg__label">이적사유</label>
+                                                            <label for="" class="ply-reg__label" aria-required="true">이적사유</label>
                                                             <div class="tour101006-1__checkbox">
                                                                 <input type="checkbox">
                                                                 <label for="" class="ply-reg__label">이적동의서 있음</label>
@@ -409,19 +416,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="ply-reg__card">
-                                                    <label for="" class="ply-reg__label" aria-required="true">학재에 따른 활동사유</label>
+                                                    <label for="" class="ply-reg__label" aria-required="true">학제에 따른 활동사유</label>
                                                     <input type="text" class="ply-reg__input ply-reg__input--w200">
                                                 </div>
                                                 <div class="ply-reg__card">
-                                                    <label for="" class="ply-reg__label">소속팀과 금전계약(근로/연봉계약 등) 체결 여부</label>
+                                                    <label for="" class="ply-reg__label" aria-required="true">소속팀과 금전계약(근로/연봉계약 등) 체결 여부</label>
                                                     <div class="tour101006-1__allRadio">
                                                         <div class="tour101006-1__itemRadio">
-                                                            <input type="radio">
-                                                            <label for="" class="ply-reg__label">체결</label>
+                                                            <input type="radio" name="agree" id="agree_yes">
+                                                            <label for="agree_yes" class="ply-reg__label">체결</label>
                                                         </div>
                                                         <div class="tour101006-1__itemRadio">
-                                                            <input type="radio">
-                                                            <label for="" class="ply-reg__label">미체결</label>
+                                                            <input type="radio" name="agree" id="agree_no">
+                                                            <label for="agree_no" class="ply-reg__label">미체결</label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -462,14 +469,17 @@
                                                 <dd>(791170) 경북 포항시 북구 용흥동산 125-3</dd>
                                             </dl>
                                         </div>
-                                        <div class="edc__btn">
+                                        <!-- <div class="edc__btn">
                                             <button type="button" class="edc__btn-delete"><img
                                                     src="./images/icons/delete.png" alt=""></button>
                                             <button type="button" class="edc__btn-edit"><img
                                                     src="./images/icons/edit.png" alt=""></button>
-                                        </div>
+                                        </div> -->
                                     </div>
-                                    <button class="edc__btn-plus"></button>
+                                    <div class="ply__btnChild">
+                                        <button type="button" class="ply__btn ply__btn--sbmt">학력정보 수정</button>
+                                    </div>
+                                    <!-- <button class="edc__btn-plus"></button> -->
                                 </div>
                             </div>
                             <!-- // step 04 -->

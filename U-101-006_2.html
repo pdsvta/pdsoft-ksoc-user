@@ -233,8 +233,8 @@
                                                     readonly>
                                             </div>
                                             <div class="ply-reg__card">
-                                                <label for="" class="ply-reg__label">개인번호</label>
-                                                <input type="text" class="ply-reg__input" value="202510004130" readonly>
+                                                <label for="" class="ply-reg__label">출생지</label>
+                                                <input type="text" class="ply-reg__input" value="" placeholder="202510004130">
                                             </div>
                                             <div class="ply-reg__card">
                                                 <label for="" class="ply-reg__label">이름 (한문)</label>
@@ -264,8 +264,7 @@
                                                 </div>
                                             </div>
                                             <div class="ply-reg__card">
-                                                <label for="" class="ply-reg__label">학년(초,중,고 상관없이
-                                                    현재 학년을 선택)</label>
+                                                <label for="" class="ply-reg__label">학년</label>
                                                 <select name="" id="" class="selectbox">
                                                     <option value="">선택</option>
                                                     <option value="">1학년</option>
@@ -289,7 +288,14 @@
                                                     placeholder="sample@email.com">
                                             </div>
                                             <div class="ply-reg__card">
+                                                <div class="ply-reg__display">
                                                 <label for="" class="ply-reg__label" aria-required="true">휴대폰</label>
+                                                    <div class="ply-reg__agree">
+                                                        <input type="checkbox" class="ply-reg__radio" name="agreeYn"
+                                                            id="agreeYn">
+                                                        <label for="agreeYn">승인진행안내 수신 동의</label>
+                                                    </div>
+                                                </div>
                                                 <input type="text" class="ply-reg__input ply-reg__input446"
                                                     placeholder="">
                                             </div>
@@ -297,7 +303,7 @@
                                                 <label for="" class="ply-reg__label">연락 가능한 일반전화</label>
                                                 <input type="text" class="ply-reg__input" placeholder="">
                                             </div>
-                                            <div class="ply-reg__card">
+                                            <!-- <div class="ply-reg__card">
                                                 <div class="ply-reg__btwn">
                                                     <div class="ply-reg__agree">
                                                         <input type="checkbox" class="ply-reg__radio" name="agreeYn"
@@ -305,7 +311,7 @@
                                                         <span>승인진행안내 수신 동의</span>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </li>
                                         <li class="ply-reg__item2">
                                             <div class="ply-reg__adr">
@@ -315,13 +321,13 @@
                                                 <div class="ply-reg__flex ply-reg__flex--gap3">
                                                     <input type="text"
                                                         class="ply-reg__input ply-reg__input--w210 ply-reg__input446"
-                                                        placeholder="">
-                                                    <button type="button" class="ply-reg__btn" disabled>우편번호
+                                                        placeholder="" readonly>
+                                                    <button type="button" class="ply-reg__btn">우편번호
                                                         검색</button>
                                                 </div>
                                                 <input type="text"
                                                     class="ply-reg__input ply-reg__input--max660 ply-reg__input446"
-                                                    placeholder="서울특별시 금천구 가산디지털1로 189">
+                                                    placeholder="서울특별시 금천구 가산디지털1로 189" readonly>
                                                 <input type="text"
                                                     class="ply-reg__input ply-reg__input--max660 ply-reg__input446"
                                                     placeholder="(가산동) 123">
@@ -358,15 +364,13 @@
                                                 <div class="ply-reg__flex ply-reg__flex--gap3 ply-reg__flex--wrap">
                                                     <input type="text"
                                                         class="ply-reg__input ply-reg__input--max200 ply-reg__input446"
-                                                        placeholder="">
+                                                        placeholder="" readonly>
                                                     <div
                                                         class="ply-reg__flex ply-reg__flex--gap3 ply-reg__flex--no-wrap">
                                                         <input type="text"
                                                             class="ply-reg__input ply-reg__input--w215 ply-reg__input446"
-                                                            placeholder="검무관 상무도장">
-                                                        <button type="button" class="ply-reg__btn ply-reg__btn--min10"
-                                                            disabled>소속팀
-                                                            검색</button>
+                                                            placeholder="검무관 상무도장" readonly>
+                                                        <button type="button" class="ply-reg__btn ply-reg__btn--min10">소속팀 수정</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -440,14 +444,17 @@
                                                 <dd>(791170) 경북 포항시 북구 용흥동산 125-3</dd>
                                             </dl>
                                         </div>
-                                        <div class="edc__btn">
+                                        <!-- <div class="edc__btn">
                                             <button type="button" class="edc__btn-delete"><img
                                                     src="./images/icons/delete.png" alt=""></button>
                                             <button type="button" class="edc__btn-edit"><img
                                                     src="./images/icons/edit.png" alt=""></button>
-                                        </div>
+                                        </div> -->
                                     </div>
-                                    <button class="edc__btn-plus"></button>
+                                    <div class="ply__btnChild">
+                                        <button type="button" class="ply__btn ply__btn--sbmt">학력정보 수정</button>
+                                    </div>
+                                    <!-- <button class="edc__btn-plus"></button> -->
                                 </div>
                             </div>
                             <!-- // step 04 -->
@@ -457,8 +464,10 @@
                                     <div class="ply-bsc__maintitle">
                                         결제안내
                                     </div>
-                                    <div class="pym__dl">
+                                    <div class="tour101006-2__titleTable">
                                         <p>선수등록비 금액안내 (단위: 원)</p>
+                                    </div>
+                                    <div class="pym__dl">
                                         <!-- 농구 -->
                                         <div class="indv101002__table indv1010062__table">
                                             <div class="indv1010062__box">
