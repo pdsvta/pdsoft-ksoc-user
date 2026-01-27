@@ -15872,6 +15872,83 @@
     .transfer-text {
         font-size: 1.3rem;
     }
+
+    .nmbr__table645-3 {
+        border: none;
+        width: 100%;
+    }
+
+    .nmbr__table645-3 thead,
+    .nmbr__table645-3 colgroup {
+        display: none;
+    }
+
+    .nmbr__table645-3 tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .nmbr__table645-3 tbody td{
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.3rem;
+        display: flex;
+    }
+
+    .nmbr__table645-3 tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .nmbr__table645-3 tbody tr td:nth-child(1) {
+        display: none;
+    }
+
+    .nmbr__table645-3 tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+    }
+
+    .nmbr__table645-3 tbody tr td:nth-child(3)::before {
+        content: "연락처";
+    }
+
+    .nmbr__table645-3 tbody tr td:nth-child(4)::before {
+        content: "e-mail";
+    }
+
+    .nmbr__table645-3 tbody tr td:nth-child(3)::before,
+    .nmbr__table645-3 tbody tr td:nth-child(4)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 10rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    
+    .nmbr__table645-3 tbody tr td a {
+        font-size: 1.3rem;
+        color: #666;
+    }
 }
 
 @media (max-width: 414px) {
