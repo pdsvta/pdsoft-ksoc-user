@@ -1905,6 +1905,7 @@ caption {
     font-size: 1.3rem;
     font-weight: 600;
     color: #111111;
+    text-align: center;
 }
 
 .hpy-reg__input::placeholder {
@@ -10172,6 +10173,10 @@ caption {
     flex: 1;
 }
 
+.tour101013__groupInputChild .date-inputbox {
+    width: 100%;
+}
+
 .tour101006__btnReload {
     justify-content: flex-end;
     padding: 4rem 0 0;
@@ -10205,6 +10210,10 @@ caption {
     background: #fff;
 }
 
+.tour102002__boxMain {
+    margin-bottom: 2rem;
+}
+
 .tour102002__rowTop {
     padding: 0 0;
 }
@@ -10219,6 +10228,10 @@ caption {
 
 .tour102027__ply__group--list2 {
     padding: 2rem 7rem 3rem;
+}
+
+.tour102027-mobileFilter {
+    display: none;
 }
 
 .tour102028__groupCard .ply-reg__card {

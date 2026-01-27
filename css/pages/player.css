@@ -3773,8 +3773,9 @@
 .transfer-buttons {
     display: flex;
     gap: 0.5rem;
-    margin-left: auto;
+    /* margin-left: auto; */
     height: 4rem;
+    width: 100%;
 }
 
 .transfer-btn {
@@ -3794,8 +3795,8 @@
     border-radius: .5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4px;
-    padding: 1.2rem 2rem;
 }
 
 .transfer-buttons .transfer-btn img {

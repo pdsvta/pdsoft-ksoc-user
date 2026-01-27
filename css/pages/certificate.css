@@ -2523,8 +2523,8 @@
     border-radius: 3rem;
     font-weight: 400;
     font-size: 1.3rem;
-    padding: 1.1rem 1.8rem;
-    padding-right: 4rem;
+    padding: 1.1rem 1.1rem;
+    /* padding-right: 4rem; */
 }
 
 .date-input:focus {
@@ -3670,8 +3670,16 @@ a.ui-button:active,
     line-height: 170%;
 }
 
+.indv__scroll p.indv__desc {
+    color: #111;
+}
+
 .indv101002__choose {
     margin-top: 3rem;
+}
+
+.indv101002__choose p {
+    color: #111;
 }
 
 .indv101002__choose,
