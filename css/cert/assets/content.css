@@ -8461,7 +8461,17 @@ legend {
 
 .tour102026__card {
     display: flex;
+	align-items: center;
     margin-bottom: 1.5rem;
+}
+
+.tour102026__card.itemCard,
+.tour102026__card.itemCardText {
+	align-items: flex-start;
+}
+
+.tour102026__card.itemCard label {
+	padding-top: 1rem;
 }
 
 .tour102026__card .selectbox {

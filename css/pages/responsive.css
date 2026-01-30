@@ -3157,7 +3157,7 @@
 
     .ply__btn {
         font-size: 1.2rem;
-        padding: 1.1rem 1.2rem;
+        padding: 1.1rem 3rem;
         min-width: auto;
         height: 3.5rem;
     }
@@ -3170,6 +3170,7 @@
     .tour101006__allBtn {
         padding: 2rem 2rem 0;
         gap: 1rem;
+        flex-direction: column;
     }
 
     .ply-reg__up {
@@ -3278,7 +3279,7 @@
     }
 
     .ply__wrapper.tour102002__boxMain .ply__title {
-        padding: 0 1rem 0 1rem;
+        padding: 0;
     }
 
     .ply__wrapper.mt5.tour102002__boxMain,
@@ -3426,6 +3427,14 @@
 
     .tour102026__card label br {
         display: none;
+    }
+    
+    .tour102026__card.itemCard label {
+        padding-top: 0;
+    }
+
+    .tour102026__card>div {
+        width: 100%;
     }
 
     .tour102026__groupBottom {
@@ -9468,7 +9477,7 @@
     }
 
     .tour102028__boxMainCheck h4 {
-        padding: 1rem 2rem;
+        padding: 1rem 0;
     }
 
     .tour102028__item .ply102011__check {
