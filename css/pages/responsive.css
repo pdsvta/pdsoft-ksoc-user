@@ -12303,7 +12303,7 @@
     }
 
     .hpy004003__filter.p002 {
-        padding: 0 0 2rem;
+        padding: 0 2rem 2rem;
 
     }
 
@@ -12632,6 +12632,7 @@
     .tour0040602__wrapper,
     .hpy003005__wrapper,
     .tour102031__wrapper,
+    .hpy004039__wrapper,
     .ply__wrapper.mt2.tour102002__boxMain.hpy108006__wrapper,
     .ply__wrapper.mt2.tour102002__boxMain.hpy108007__wrapper,
     .ply__wrapper.mt2.tour102002__boxMain.hpy108008__wrapper,
@@ -12735,6 +12736,10 @@
     .hpy004003__text.p322,
     .hpy004004__title.p322 {
         padding: 2rem 0;
+    }
+
+    .hpy004004__title.p023.p000 {
+        padding: 0 0 1rem;
     }
 
     .hpy004003__text {
@@ -12880,12 +12885,17 @@
         margin-top: 1rem;
     }
 
+    .hpy004003__text.mt0 {
+        margin-top: 0;
+    }
+
     .hpy004003__text .small.p002 {
         padding: 0 0 1rem;
     }
 
     .hpy004003__text p {
         font-size: 1.3rem;
+        margin-top: 1rem;
     }
 
     .hpy004003__text .text {
@@ -13094,7 +13104,7 @@
     }
 
     .tour001003__textYearGroup p span {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .tour001004__boxApp {
@@ -13136,12 +13146,12 @@
 
     .tour001005__box {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
-    .tour001005__item {
+    .tour001005__items {
         width: 23rem;
-        height: 20rem;
+        height: auto;
         padding: 0;
         display: flex;
         align-items: center;
@@ -13170,6 +13180,15 @@
     .tour001005__item .icon3 {
         width: auto;
         height: 5rem;
+    }
+
+    .tour001005__item {
+        height: auto;
+    }
+
+    .tour001005__note {
+        margin-top: 1rem;
+        font-size: 1.3rem;
     }
 
     .hpy004016__tabs h4 {
@@ -13308,7 +13327,8 @@
 
     .tour407003__btns {
         position: absolute;
-        left: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .tour407003__wrapper {
@@ -14422,6 +14442,7 @@
         flex-direction: row;
         gap: .5rem;
         margin-top: 0;
+        margin-bottom: 1rem;
     }
     .tour004035__table {
         margin-top: 2rem;
@@ -15072,10 +15093,6 @@
         display: block;
     }
 
-    .tour004034__tabs {
-        padding: 0;
-    }
-
     .tour004034__filter {
         margin: 0 0 2rem;
     }
@@ -15088,6 +15105,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .tour004034__filterPagi.unset .tour405006__text {
+        position: unset;
     }
 
     .tour004035__boxFilter {
@@ -16025,6 +16046,147 @@
         font-size: 1.3rem;
         color: #666;
     }
+
+    .hpy__total.tour501001__total-pc {
+        position: absolute;
+        top: 3rem;
+    }
+
+    .tour__btn.tour__btn--gray.tour__btn--max110 {
+        min-width: 7rem;
+    }
+
+    
+    .tour001002__itemContent .indv__tit span {
+        font-size: 1.3rem;
+    }
+
+    
+    .hpy004048-2__flex.row {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .hpy004048-2__flex.row .hpy004016__group.gap10 {
+        padding: 2rem ;
+        border-radius: 2rem;
+        border: 1px solid #ddd;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .hpy004048-2__flex.row .hpy004046-2__title{
+        padding: 0 2rem;
+    }
+
+    .hpy004048-2__table table {
+        border: none;
+        width: 100%;
+    }
+
+    .hpy004048-2__table table thead,
+    .hpy004048-2__table table colgroup {
+        display: none;
+    }
+
+    .hpy004048-2__table table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .hpy004048-2__table table tbody td{
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.3rem;
+        display: flex;
+    }
+
+    .hpy004048-2__table .hpy02__table tbody tr td:nth-child(3) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+    .hpy004048-2__table .hpy02__table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hpy004048-2__table .hpy02__table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .hpy004048-2__table table tbody tr td:nth-child(1)::before {
+        content: "신청년도";
+    }
+
+    .hpy004048-2__table table tbody tr td:nth-child(2)::before {
+        content: "종목";
+    }
+
+    .hpy004048-2__table table tbody tr td:nth-child(4)::before {
+        content: "진행상태";
+    }
+
+    .hpy004048-2__table table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+    .hpy004048-2__table table tbody tr td:nth-child(2) {
+        order: 3;
+    }
+
+    .hpy004048-2__table table tbody tr td:nth-child(4) {
+        order: 4;
+    }
+
+    .hpy004048-2__table table tbody tr td:nth-child(1)::before,
+    .hpy004048-2__table table tbody tr td:nth-child(2)::before,
+    .hpy004048-2__table table tbody tr td:nth-child(4)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 8rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+    .tour405006__select2.minwidth09 {
+        min-width: 9rem;
+    }
+
+    .tour405006__boxInput {
+        width: 100%;
+    }
+
+    .hpy004039__img img {
+        width: 100%;
+    }
+
+    .hpy004039__box {
+        padding: 2rem 0 0;
+    }
+
+    .hpy004039__item {
+        width: calc((100% - .5rem) /2);
+    }
+
 }
 
 @media (max-width: 414px) {

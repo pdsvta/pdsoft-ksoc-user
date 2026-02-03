@@ -1306,9 +1306,11 @@ caption {
     line-height: 1.38;
     color: #333;
 }
+
 .hpy .title {
     padding-top: 0;
 }
+
 .hpy__intro {
     background: #0C54B81A;
     border-radius: 5rem;
@@ -2992,6 +2994,7 @@ caption {
 
 .hpy02__wrapper.mt20 {
     margin-top: 2rem;
+    position: relative;
 }
 
 .hpy02__wrapper.back-f5 {
@@ -3789,9 +3792,9 @@ caption {
 }
 
 .indv__flex .indv__flex-r {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tour__text0102 {
@@ -6294,7 +6297,7 @@ caption {
     width: 19rem;
     height: 4rem;
     color: #333333;
-    padding: 0.8rem;
+    padding: 0.8rem 1rem;
     border: 1px solid #DDDDDD;
     border-radius: 5px;
 }
@@ -6308,7 +6311,7 @@ caption {
     width: 9rem;
     height: 4rem;
     color: #333333;
-    padding: 0.8rem;
+    padding: 0.8rem 1rem;
     border: 1px solid #DDDDDD;
     border-radius: 5px;
 }
@@ -6321,9 +6324,13 @@ caption {
 .tour405006__boxInput input {
     border: 1px solid #DDDDDD;
     border-radius: 5px;
-    color: #000;
+    color: #111;
     padding: 0.8rem;
     font-size: 1.3rem;
+}
+
+.tour405006__boxInput input:focus {
+    color: #666;
 }
 
 .tour405006__btnFilter {
@@ -8726,7 +8733,7 @@ caption {
     font-weight: 400;
     display: flex;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
     justify-content: center;
 }
 
@@ -10247,17 +10254,17 @@ caption {
 }
 
 .tour102029__groupInputLabel {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .tour102029__groupInputLabel .tour102010__itemInput {
-	width: 70%;
+    width: 70%;
 }
 
 .tour102029__groupInputLabel .ply102007__label {
-	flex: 1 1 50%;
+    flex: 1 1 50%;
 }
 
 .tour102029__groupFilterDate .hpy-reg__input {
@@ -10272,35 +10279,35 @@ caption {
 }
 
 .tour102004005__setting1 {
-	margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .tour102004005__titleSetting {
-	display: flex;
-	align-items: flex-start;
-	gap: 0.5rem;
-	margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .tour102004005__titleSetting .logo_android {
-	width: 30%;
-	height: auto;
+    width: 30%;
+    height: auto;
 }
 
 .tour102004005__titleSetting .logo_ios {
-	width: 12%;
-	height: auto;
+    width: 12%;
+    height: auto;
 }
 
 .tour102004005__titleSetting h3 {
-	flex: 1;
-	margin-bottom: 0;
+    flex: 1;
+    margin-bottom: 0;
 }
 
 .tour102004005__noteQR {
-	width: 80%;
-	text-align: center;
-	float: right;
+    width: 80%;
+    text-align: center;
+    float: right;
 }
 
 .tour102007__regCard {
@@ -11110,7 +11117,8 @@ caption {
 }
 
 .hpy004004__item img {
-    border-radius: 2rem 2rem 0 0;}
+    border-radius: 2rem 2rem 0 0;
+}
 
 .hpy004004__item p {
     font-size: 1.5rem;
@@ -13860,6 +13868,7 @@ caption {
 .tour0703 .tour__info>img {
     top: auto;
 }
+
 /* 
 .title.text-left {
     text-align: left;
@@ -14043,7 +14052,7 @@ caption {
     color: #666;
     font-weight: 500;
     margin: 4rem 0 5rem;
-    gap: 0;
+    gap: 1rem;
 }
 
 .hpy003001__note p {
@@ -14119,16 +14128,16 @@ caption {
     display: flex;
     gap: 1rem;
 }
+
 .tour001003__textYearGroup {
     display: flex;
-    gap: 4rem;
+    gap: 1rem;
 }
 
 .tour001003__textYearGroup p {
-    gap: 2rem;
     display: flex;
     color: #666;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .tour001003__textYearGroup p span {
@@ -14138,11 +14147,12 @@ caption {
 .tour407003__group .bold {
     font-weight: 600;
 }
+
 .tour407003__group {
     color: #666;
 }
 
-.tour503002__note >div {
+.tour503002__note>div {
     display: flex;
     align-items: center;
 }
@@ -14161,6 +14171,7 @@ caption {
     border-radius: 5rem;
     border: 1px solid #ddd;
 }
+
 .ply101021__box {
     padding: 0 5rem;
     display: flex;
@@ -14184,6 +14195,7 @@ caption {
     color: #111;
     margin-bottom: 2rem;
 }
+
 .ply101021__title img {
     width: 4rem;
     height: 4rem;
@@ -14218,4 +14230,31 @@ caption {
 
 .tour102009__note {
     margin-top: 4rem;
+}
+
+.hpy__total.tour501001__total-pc {
+    margin: 0;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.tour001002__itemContent .indv__tit span {
+    font-size: 1.5rem;
+}
+
+.tour001005__note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #3D3D3D;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.tour001005__note img {
+    margin-left: .5rem;
+    width: 2.2rem;
+    height: auto;
 }
