@@ -6825,8 +6825,10 @@
         height: 2.9rem;
     }
 
-    .hpy0720__table .hpy-reg__select--max170 .selectbox {
+    .hpy0720__table .hpy-reg__select--max170 .selectbox,
+    .hpy0720__table .hpy-reg__select--max200 .selectbox {
         height: 2.9rem;
+        font-size: 1.2rem;
     }
 
     .hpy0720__box {
@@ -10344,6 +10346,7 @@
 
     .hpy-reg__btn.hpy-reg__btn--min70 {
         min-width: 7rem;
+        width: 100%;
     }
 
     .hpy-reg__input--max180 {
@@ -10594,6 +10597,10 @@
         font-size: 1.5rem;
         position: absolute;
         top: 22.5rem;
+    }
+
+    .tour405006__text.unset {
+        position: unset;
     }
 
     .tour405004__itemHandbook {
@@ -12248,7 +12255,7 @@
 
     .tour004033__tabs {
         gap: .5rem;
-        padding: 0 2rem;
+        padding: 0 2rem 2rem;
         margin-top: 3rem;
         margin-bottom: 1rem;
     }
@@ -12633,6 +12640,7 @@
     .hpy003005__wrapper,
     .tour102031__wrapper,
     .hpy004039__wrapper,
+    .hpy004048-2__wrapper,
     .ply__wrapper.mt2.tour102002__boxMain.hpy108006__wrapper,
     .ply__wrapper.mt2.tour102002__boxMain.hpy108007__wrapper,
     .ply__wrapper.mt2.tour102002__boxMain.hpy108008__wrapper,
@@ -13053,7 +13061,7 @@
     }
 
     .tour001002__btn.tour001003__btn {
-        width: 12rem;
+        width: 14rem;
     }
 
     .tour001003__boxBottomTabs {
@@ -13095,13 +13103,13 @@
     }
 
     .tour001003__textYearGroup {
-        flex-direction: column;
         gap: .5rem;
     }
 
     .tour001003__textYearGroup p {
         font-size: 1.2rem;
     }
+
 
     .tour001003__textYearGroup p span {
         font-size: 1.2rem;
@@ -14497,8 +14505,12 @@
         max-width: 100%;
     }
     .hpy004016__group.gap05 .hpy-reg__input--max140 {
-        max-width: 100%;
+        max-width: 12rem;
         min-width: auto;
+    }
+
+    .hpy004016__group.gap05 {
+        width: auto;
     }
     .hpy004016__group.gap10 {
         gap: .5rem;
@@ -15071,10 +15083,15 @@
         flex-direction: column-reverse;
         gap: 2rem;
         padding: 3rem 0rem 2rem;
+        position: relative;
     }
 
     .hpy004010__select {
         flex-direction: row-reverse;
+        position: absolute;
+        bottom: -6rem;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .hpy004010__select p {
@@ -15082,7 +15099,7 @@
     }
 
     .hpy004010__box {
-        padding: 2rem;
+        padding: 8rem 2rem 2rem;
     }
 
     .tour004034__select--pc {
@@ -16065,14 +16082,30 @@
     .hpy004048-2__flex.row {
         flex-direction: column-reverse;
         align-items: flex-start;
+        padding-right: 0;
+        margin-bottom: 2rem;
     }
 
     .hpy004048-2__flex.row .hpy004016__group.gap10 {
         padding: 2rem ;
         border-radius: 2rem;
         border: 1px solid #ddd;
-        margin-left: 2rem;
+        margin-left: 0;
         margin-bottom: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: -12rem;
+        left: 0;
+    }
+
+    .hpy004048__wrapper {
+        
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+        padding: 2rem;
+        margin-top: 15rem;
+        position: relative;
     }
 
     .hpy004048-2__flex.row .hpy004046-2__title{
@@ -16092,7 +16125,6 @@
     .hpy004048-2__table table tbody tr {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
         border: 1px solid #ddd;
         border-radius: 1rem;
         background: #fff;
@@ -16187,6 +16219,28 @@
         width: calc((100% - .5rem) /2);
     }
 
+    .hpy004016__group.gap20 {
+        gap: .5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tour004034__itemTab  br {
+        display: none;
+    }
+
+    .hpy004009__input {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .hpy004009__input .hpy-reg__btn.hpy-reg__btn--min70 {
+        max-width: 7rem;
+    }
+
+    .hpy004009__input .hpy-reg__input--max200 {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 414px) {
@@ -16447,6 +16501,9 @@
         margin-top: 3rem;
     }
 
+    .hpy004016__group.gap05 .hpy-reg__input--max140 {
+        max-width: 11rem;
+    }
 }
 
 @media (max-width: 375px) {
@@ -16606,6 +16663,10 @@
     .hpy004028__group span:last-child {
         font-size: 1rem;
     }
+    
+    .hpy004016__group.gap05 .hpy-reg__input--max140 {
+        max-width: 10rem;
+    }
 }
 
 @media (max-width: 360px) {
@@ -16738,6 +16799,11 @@
 
     .hpy003001__note {
         font-size: 1.1rem;
+    }
+
+    
+    .hpy004016__group.gap05 .hpy-reg__input--max140 {
+        max-width: 9.5rem;
     }
 }
 

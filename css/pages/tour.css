@@ -1907,7 +1907,6 @@ caption {
     font-size: 1.3rem;
     font-weight: 600;
     color: #111111;
-    text-align: center;
 }
 
 .hpy-reg__input::placeholder {
@@ -6300,6 +6299,7 @@ caption {
     padding: 0.8rem 1rem;
     border: 1px solid #DDDDDD;
     border-radius: 5px;
+    padding-left: 1.7rem;
 }
 
 .tour405006__select1 option {
@@ -6314,6 +6314,7 @@ caption {
     padding: 0.8rem 1rem;
     border: 1px solid #DDDDDD;
     border-radius: 5px;
+    padding-left: 1.7rem;
 }
 
 .tour405006__select2 option {
@@ -6324,13 +6325,17 @@ caption {
 .tour405006__boxInput input {
     border: 1px solid #DDDDDD;
     border-radius: 5px;
-    color: #111;
-    padding: 0.8rem;
+    color: #000;
+    padding: 0.8rem 1.6rem;
     font-size: 1.3rem;
 }
 
 .tour405006__boxInput input:focus {
-    color: #666;
+    color: #000;
+}
+
+.tour405006__boxInput input::placeholder {
+    color: #333333;
 }
 
 .tour405006__btnFilter {
@@ -9171,6 +9176,13 @@ caption {
 
 .tour004034__filter {
     padding: 0 2rem;
+    justify-content: flex-end;
+}
+
+.tour004034__filterPagi  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .tour004034__select--mb {
@@ -14023,16 +14035,13 @@ caption {
     position: relative;
 }
 
-.hpy003001__input:nth-child(2)::after {
-    content: '';
+.hpy003001__input img {
     position: absolute;
     top: 50%;
-    right: 3rem;
+    right: 2rem;
     transform: translateY(-50%);
     width: 2.16rem;
     height: 1.2rem;
-    background: url('/images/u-003-001/image03.png') no-repeat center / contain;
-    cursor: pointer;
 }
 
 
@@ -14135,7 +14144,7 @@ caption {
 }
 
 .tour001003__textYearGroup p {
-    display: flex;
+    display: block;
     color: #666;
     gap: .5rem;
 }
@@ -14257,4 +14266,10 @@ caption {
     margin-left: .5rem;
     width: 2.2rem;
     height: auto;
+}
+
+.tour004034__boxInput {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
 }
