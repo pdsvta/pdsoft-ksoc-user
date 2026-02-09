@@ -12950,6 +12950,11 @@ caption {
 
 .hpy102031__text {
     padding: 0 2rem 3rem;
+    display: flex;
+}
+
+.hpy102031__text button {
+    font-size: 1.5rem;
 }
 
 .hpy102031__text:last-child {
