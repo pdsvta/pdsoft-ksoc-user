@@ -2098,6 +2098,10 @@
         top: 2rem;
     }
 
+    .brdc__home {
+        width: 5.5rem;
+    }
+
     .brdc {
         height: 5rem;
         margin-top: 1rem;
@@ -2113,12 +2117,13 @@
     .tour402001__selectMenu {
         font-size: 1.1rem;
         color: #171719;
-        padding: 0 1.3rem;
-        width: 11rem;
+        padding: 0 1rem;
+        width: auto;
+        padding-right: 3rem;
     }
 
     .brdc__link.selectbox{    
-        background: url('../images/icons/select-icon.png') no-repeat calc(100% - 10px) 50% / 12px auto;
+        background: url('../../images/icons/select-icon.png') no-repeat calc(100% - 10px) 50% / 12px auto;
     }
 
     .chc__tit h3 {
