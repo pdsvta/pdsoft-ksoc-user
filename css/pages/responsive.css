@@ -2109,11 +2109,16 @@
     }
 
     .brdc__link,
+    .brdc__link.selectbox,
     .tour402001__selectMenu {
         font-size: 1.1rem;
         color: #171719;
         padding: 0 1.3rem;
         width: 11rem;
+    }
+
+    .brdc__link.selectbox{    
+        background: url(../../images/icons/select-icon.png) no-repeat calc(100% - 10px) 50% / 12px auto;
     }
 
     .chc__tit h3 {
