@@ -2119,7 +2119,13 @@
         color: #171719;
         padding: 0 1rem;
         width: auto;
-        padding-right: 3rem;
+        padding-right: 3.5rem;
+    }
+
+    .brdc__options li a {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+        color: #171719;
     }
 
     .brdc__link.selectbox{    
@@ -16363,6 +16369,22 @@
 }
 
 @media (max-width: 390px) {
+    .brdc__link, .brdc__link.selectbox, .tour402001__selectMenu {
+        padding-right: 2.5rem;
+    }
+    
+    .brdc__link::after {
+        content: '';
+        display: block;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url('../../images/icons/select-icon.png') no-repeat center / contain;
+        position: absolute;
+        top: 50%;
+        right: .8rem;
+        transform: translateY(-50%);
+    }
+
     .ply-nav__quik li a {
         font-size: 0.9rem;
     }
@@ -16519,6 +16541,7 @@
 }
 
 @media (max-width: 375px) {
+
 
     .screen5-main .screen4__link a {
         font-size: 1rem;
@@ -16682,6 +16705,11 @@
 }
 
 @media (max-width: 360px) {
+
+    
+    .brdc__link, .brdc__link.selectbox, .tour402001__selectMenu {
+        padding-right: 2.3rem;
+    }
 
     .screen2__pic {
         width: 14rem;

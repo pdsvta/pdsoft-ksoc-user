@@ -513,19 +513,25 @@
                         </a>
                     </li>
                     <li class="brdc__item">
-                        <select name="" id="" class="brdc__link selectbox">
-                            <option value="스포츠원클릭">스포츠원클릭</option>
-                        </select>
+                        <a href="#" class="brdc__link">스포츠원클릭</a>
+                            <ul class="brdc__options">
+                                <li><a href="#">스포츠원클릭</a></li>
+                                <li><a href="#">스포츠원클릭</a></li>
+                                <li><a href="#">스포츠원클릭</a></li>
+                            </ul>
                     </li>
                     <li class="brdc__item">
-                        <select name="" id="" class="brdc__link selectbox">
-                            <option value="증명서 발급">증명서 발급</option>
-                        </select>
+                        <a href="#" class="brdc__link">증명서 발급</a>
+                            <ul class="brdc__options">
+                                <li><a href="#">증명서 발급</a></li>
+                                <li><a href="#">증명서 발급</a></li>
+                            </ul>
                     </li>
                     <li class="brdc__item">
-                        <select name="" id="" class="brdc__link selectbox">
-                            <option value="증명서 발급">증명서 발급</option>
-                        </select>
+                        <a href="#" class="brdc__link">증명서 발급</a>
+                            <ul class="brdc__options">
+                                <li><a href="#">증명서 발급</a></li>
+                            </ul>
                     </li>
                 </ul>
             </div>
@@ -1256,6 +1262,29 @@
 
             contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
         });
+    </script>
+
+    <script>
+        document.querySelectorAll('.brdc__link').forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.stopPropagation();
+
+                document.querySelectorAll('.brdc__item').forEach(item => {
+                if (item !== this.parentElement) {
+                    item.classList.remove('active');
+                }
+                });
+
+                this.parentElement.classList.toggle('active');
+            });
+            });
+
+            document.addEventListener('click', function () {
+            document.querySelectorAll('.brdc__item').forEach(item => {
+                item.classList.remove('active');
+            });
+        });
+
     </script>
 </body>
 

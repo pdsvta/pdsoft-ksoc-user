@@ -1103,7 +1103,6 @@ legend {
 
 .brdc__item {
     height: 100%;
-    border-left: 1px solid #ddd;
     position: relative;
 }
 
@@ -1165,10 +1164,45 @@ legend {
     width: 19rem;
     display: flex;
     align-items: center;
-    padding: 1.4rem 1.8rem;
+    padding: 0 1.8rem;
     position: relative;
     font-size: 1.6rem;
     font-weight: 600;
+    height: 100%;
+    border-left: 1px solid #ddd;
+}
+
+.brdc__item:first-child .brdc__home{
+    border-right: 0;
+}
+.brdc__options {
+    position: absolute;
+    top: 102%;
+    left: 0;
+    width: 100.5%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+    background-color: #F8F9FA;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.brdc__item.active .brdc__options {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.brdc__options li a {
+    display: flex;
+    align-items: center;
+    height: 5rem;          
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.6rem;
 }
 
 .brdc__link.selectbox {
