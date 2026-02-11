@@ -2118,7 +2118,7 @@
     }
 
     .brdc__link.selectbox{    
-        background: url('../../images/icons/select-icon.png') no-repeat calc(100% - 10px) 50% / 12px auto;
+        background: url('../images/icons/select-icon.png') no-repeat calc(100% - 10px) 50% / 12px auto;
     }
 
     .chc__tit h3 {
