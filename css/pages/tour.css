@@ -14292,62 +14292,67 @@ caption {
     display: flex;
     align-items: center;
     gap: 4rem;
-    height: 5rem;
+    height: 6rem;
+}
+
+.screen1-home__menu.left{
+    background: #3169b3;
 }
 
 .screen1-home__menu.left ul{
-    background: #3169b3;
-    justify-content: flex-end;
-    padding-right: 15rem;
+    max-width: 68rem;
+    justify-content: space-between;
+    padding-right: 12rem;
+    margin-left: auto;
+}
+
+.screen1-home__menu.right{
+    background: #2e6955;
 }
 
 .screen1-home__menu.right ul{
-    background: #2e6955;
-    justify-content: flex-start;
-    padding-left: 5rem;
+    padding-left: 8rem;
+    justify-content: space-between;
+    max-width: 68rem;
 }
 
 .screen1-home__menu li a {
     color: #fff;
     font-weight: 500;
-    font-size: 1.5rem;
-}
-
-.screen1-home {
-    padding-top: 3rem;
+    font-size: 2rem;
 }
 
 .home-back {
     background: url('../../images/home-main/back1.jpg') center 0 no-repeat;
     background-size: cover;
-    padding: 5rem 0;
+    padding: 6rem 0 9rem;
 }
 
 .home-back .inner {
     display: flex;
-    max-width: 120rem;
+    max-width: 140rem;
 }
 
 .screen1-home__left {
     width: calc(100% / 2);
-    padding-right: 4rem;
+    padding-right: 6rem;
 }
 
 .screen1-home__right {
     width: calc(100% / 2);
-    padding-left: 4rem;
+    padding-left: 6rem;
 }
 
 .screen1-home__title {
     font-weight: bold;
     color: #fff;
-    font-size: 2.6rem;
+    font-size: 3.2rem;
     margin-bottom: .5rem;
 }
 
 .screen1-home__subtitle {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #fff;
 }
 
@@ -14361,7 +14366,7 @@ caption {
     width: calc((100% - 4.5rem)/4);
     border: 1px solid #fff;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2.8rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14377,7 +14382,7 @@ caption {
 .screen1-home__item p {
     color: #000;
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 130%;
     text-align: center;
@@ -14391,21 +14396,29 @@ caption {
 
 .screen1-home__select.w100 {
     width: 100%;
+    gap: 1rem;
 }
 
 .screen1-home__select button {
     border-radius: .5rem;
-    min-width: 5rem;
+    min-width: 6rem;
     background: #0C54B8;
     padding: 0;
-    height: 4rem;
+    height: 5rem;
     color: #fff;
     border: none;
+    border-radius: 1rem;
 }
 
 .screen1-home__select .selectbox {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    background: url('../../images/icons/select-icon.png') no-repeat calc(100% - 10px) 50% / 19px auto;
+    background-color: #fff;
+    min-width: auto;
 }
 
 .screen1-home__groups {
@@ -14415,17 +14428,21 @@ caption {
 
 .screen1-home__line {
     border-top: 1px solid #ddd;
-    margin: 3.5rem 0;
+    margin: 7rem 0;
 }
 
 .screen1-home__line.m20 {
-    margin: 2.4rem 0;
+    margin: 3rem 0;
 }
 
 .screen1-home__title2 {
     font-weight: 600;
     color: #000;
-    font-size: 1.8rem;
+    font-size: 2rem;
+}
+
+.screen1-home__title2.mb20 {
+    margin-bottom: 2rem;
 }
 
 .screen1-home__list.gap01 {
@@ -14444,6 +14461,7 @@ caption {
     color: #000;
     border: 1px solid transparent;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .screen1-home__card img {
@@ -14452,16 +14470,16 @@ caption {
 }
 
 .screen1-home__card p {
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     margin-top: 1rem;
     transition: all 0.3s ease;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: -.5px;
 }
 
 .screen1-home__card:hover {
-    background: #ffffff82;
+    background: #fff;
     border: 1px solid #7c9abe;
     color: #3169b3;
 }
@@ -14475,57 +14493,127 @@ caption {
 
 .screen1-home__note {
     margin-top: 1rem;
-    padding: 2rem;
-    background: #ffffff82;
-    border-radius: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
 }
 
-.screen1-home__note li {
+.screen1-home__noteText {
     font-weight: 600;
-    font-size: 1.3rem;
-    color: #000000;
-    position: relative;
-    margin-left: 1.5rem;
-
+    color: #000;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    white-space: nowrap;
 }
 
-.screen1-home__note li::before {
-    content: '•';
-    color: #3169b3;
-    position: absolute;
-    left: -1.5rem;
-    right: 0;
+.screen1-home__noteText img {
+    width: 2rem;
+    height: auto;
+}
+
+.screen1-home__note .screen1-home__select button {
+    min-width: 13rem;
+}
+
+.screen1-home__title4 {
+    background: #fff;
+    border-radius: 1rem 1rem 0 0;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+    margin-top: 2.5rem;
 }
 
 .screen1-home__box {
-    padding: 3rem;
-    border-radius: 1rem;
+    padding: 4rem;
+    border-radius: 0 0 1rem 1rem;
     background: #2e6955a1;
-    margin: 2.5rem 0 1rem;
+    margin: 0 0 1.5rem;
+    position: relative;
+}
+
+.screen1-home__click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    gap: 1.2rem;
+}
+
+.screen1-home__click button {
+    background: none;
+    border: none;
+}
+
+.screen1-home__ic1,
+.screen1-home__ic2 {
+    width: 1.4rem;
+    height: .8rem;
+}
+
+.screen1-home__ic3 {
+    width: .8rem;
+    height: 1.1rem;
 }
 
 .screen1-home__row {
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
-.screen1-home__row p:first-child {
+.screen1-home__row button {
+    color: #2e6955;
+    background: #fff;
+    border-radius: 5rem;
+    border: none;
+    padding: .3rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.screen1-home__row div {
+    display: flex;
+    align-items: center;
+}
+
+.screen1-home__row .line {
+    height: 1.5rem;
+    width: 1px;
+    background: #ddd;
+    margin: 0 2rem;
+}
+
+.screen1-home__row div:first-child {
     color: #0dead0;
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-.screen1-home__row p b {
+.screen1-home__row div b {
     font-weight: 500;
-    font-size: 1.3rem;
-}
-
-.screen1-home__row p span {
-    font-weight: bold;
     font-size: 1.5rem;
+    color: #ddd;
 }
 
-.screen1-home__row p {
+.screen1-home__row div span {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 100%;
+    margin: 0 .2rem;
+}
+
+.screen1-home__row div {
     font-weight: 400;
     color: #fff;
     font-size: 1.3rem;
@@ -14533,20 +14621,39 @@ caption {
 
 .screen1-home__section {
     display: flex;
-    justify-content: space-between;
+    gap: 5rem;
+    justify-content: center;
 }
 
 .screen1-home__value {
     font-weight: 400;
-    color: #fff;
-    font-size: 1.2rem;
+    color: #ddd;
+    font-size: 1.3rem;
     text-align: center;
+    position: relative;
+}
+
+.screen1-home__value::after {
+    content: '';
+    width: 1px;
+    height: 3.5rem;
+    background: #F5F5F5;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    transform: translateX(-50%);
+    right: -3rem;
+}
+
+.screen1-home__value:last-child::after {
+    display: none;
 }
 
 .screen1-home__value p{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
+    color: #fff;
 }
 
 .screen1-home__rows {
@@ -14575,8 +14682,8 @@ caption {
     display: flex;
     background: #fff;
     border-radius: 1rem;
-    margin: 1rem 0;
-    padding: 3rem;
+    margin: 1.5rem 0;
+    padding: 4rem 3.8rem;
     gap: 1rem;
     align-items: center;
     position: relative;
@@ -14588,18 +14695,18 @@ caption {
 }
 
 .screen1-home__info h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .screen1-home__info p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #2e6955;
 }
 
 .screen1-home__info h5 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -14616,13 +14723,13 @@ caption {
 .screen1-home__more {
     font-size: 1.2rem;
     color: #000;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .screen1-home__more.abs {
     position: absolute;
-    right:2rem;
-    top: 2rem;
+    right:4rem;
+    top: 3rem;
 }
 
 .screen1-home__more.abs.top0 {
@@ -14632,56 +14739,58 @@ caption {
 .screen1-home__title3 {
     background: #2e6955;
     border-radius: 1rem 1rem 0 0;
-    height: 5rem;
+    height: 6rem;
     display: flex;
     align-items: center;
     padding: 0 2rem;
     gap: .5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
 }
 
 .screen1-home__title3 span {
     color: #80c269;
+    font-size: 1.7rem;
 }
 
 .screen1-home__flex {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
     justify-content: space-between;
     background: #fff;
     border-radius: 0 0 1rem 1rem;
-    padding: 3rem;
+    padding: 4rem 3.8rem;
 }
 
 .screen1-home__flex img {
-    height: 10rem;
+    height: 12rem;
     width: auto;
 }
 
 .screen1-home__text h5 {
     font-weight: bold;
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .screen1-home__text p {
-    margin: .5rem 0;
-    font-size: 1rem;
+    margin: .5rem 0 1rem;
+    font-size: 1.2rem;
     line-height: 138%;
+    font-weight: 400;
 }
 
 .screen-home__title {
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: bold;
     text-align: center;
     color: #000;
 }
 
 .screen-home__subtitle {
-    font-size: 1.7rem;
+    font-size: 2.1rem;
     font-weight: 400;
     text-align: center;
     color: #000;

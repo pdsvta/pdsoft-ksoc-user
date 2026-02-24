@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div id="wrap">
+    <div id="wrap" class="wrap pt0">
         <!-- header -->
-        <header id="header" class="header header-main">
+        <!-- <header id="header" class="header header-main">
             <div class="inner">
                 <h1 class="logo">
                     <a href="#">
@@ -490,17 +490,52 @@
                         </div>
                     </li>
                     <li>
-                        <!-- <button type="button" class="menu-btn">
-                            <span class="blind">전체메뉴 펼치기</span>
-                            <div class="menu-btn__icon">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </div>
-                        </button> -->
                     </li>
                 </ul>
             </nav>
+        </header> -->
+        <header id="header" class="header-homeMain">
+            <div class="headerMain-top">
+                <div class="inner">
+                    <div class="headerMain-text">
+                        <button type="button">주요일정 </button>
+                        <p>
+                            <span>[OG] 제25회 밀라노-코르티나 동계올림픽대회 </span>
+                            2026.02.06 ~ 2026.02.22 / 이탈리아 밀라노, 코르티나담페초
+                        </p>
+                    </div>
+                    <img src="images/home-main/close.png" alt="">
+                </div>
+            </div>
+            <div class="headerMain-bottom">
+                <div class="inner">
+                    <img src="images/home-main/logo1.png" alt="" class="headerMain-logo">
+                    <div>
+                        <ul class="headerMain-list">
+                            <li class="headerMain-search">
+                                <div class="headerMain-searchbox">
+                                    <input type="text">
+                                    <button class="headerMain-searchbtn">
+                                        <img src="images/icons/search-blue-icon.png" alt="">
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">로그인</a>
+                            </li>
+                            <li><a href="#">이용안내</a></li>
+                            <li class="headerMain-btns">
+                                <button class="headerMainmenu-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <a href="#"> 전체메뉴</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- // header -->
 
@@ -519,7 +554,7 @@
                         <li><a href="#">체육종합정보</a></li>
                         <li><a href="#">스포츠미디어</a></li>
                         <li><a href="#">아카이브</a></li>
-                        <li><a href="#">이벤트&캠페인</a></li>
+                        <li><a href="#">7330 & 스포츠안전</a></li>
                     </ul>
                 </div>
             </div>
@@ -595,27 +630,38 @@
                             </div>
                         </div>
                         <div class="screen1-home__line"></div>
-                        <div class="screen1-home__title2">
-                            증명서 안내
-                        </div>
-                        <div class="screen1-home__subtitle2">
-                            종목별 증명서 종류 및 발급 방법을 확인하실 수 있습니다.
-                        </div>
-                        <div class="screen1-home__select w100">
-                            <select name="" id="" class="selectbox">
-                                <option value="종목 선택">종목 선택</option>
-                            </select>
-                            <select name="" id="" class="selectbox">
-                                <option value="증명서 선택">증명서 선택</option>
-                            </select>
-                            <button type="submit" class="">안내</button>
+                        <div class="screen1-home__title2 mb20">
+                            원클릭 민원서비스
                         </div>
                         <div class="screen1-home__note">
-                            <ul>
-                                <li>발급비용 : 1,000원</li>
-                                <li>발급방법 : 협회승인 후 발급</li>
-                                <li>결재방법 : 신용카드/핸드폰결재/실시간계좌이체/무통장입금(가상계좌)</li>
-                            </ul>
+                            <div class="screen1-home__noteText">
+                                <img src="images/home-main/user.png" alt="">
+                                경기인 등록
+                            </div>
+                            <div class="screen1-home__select w100">
+                                <select name="" id="" class="selectbox">
+                                    <option value="종목 선택">종목 선택</option>
+                                </select>
+                                <select name="" id="" class="selectbox">
+                                    <option value="경기인 유형 선택">경기인 유형 선택</option>
+                                </select>
+                                <button type="submit" class="">경기인 등록 신청</button>
+                            </div>
+                        </div>
+                        <div class="screen1-home__note">
+                            <div class="screen1-home__noteText">
+                                <img src="images/home-main/file.png" alt="">
+                                증명서 발급
+                            </div>
+                            <div class="screen1-home__select w100">
+                                <select name="" id="" class="selectbox">
+                                    <option value="종목 선택">종목 선택</option>
+                                </select>
+                                <select name="" id="" class="selectbox">
+                                    <option value="증명서 선택">증명서 선택</option>
+                                </select>
+                                <button type="submit" class="">증명서 발급 신청</button>
+                            </div>
                         </div>
                     </div>
                     <div class="screen1-home__right">
@@ -625,10 +671,18 @@
                         <div class="screen1-home__subtitle">
                             입체적이고 전문적인 체육정보를 다양한 콘텐츠로 제공합니다.
                         </div>
+                        <div class="screen1-home__title4">
+                            2026년  경기인등록현황  
+                        </div>
                         <div class="screen1-home__box">
+                            <div class="screen1-home__click">
+                                <button><img src="images/home-main/ic11.png" alt="" class="screen1-home__ic1"></button>
+                                <button><img src="images/home-main/ic13.png" alt="" class="screen1-home__ic3"></button>
+                                <button><img src="images/home-main/ic12.png" alt="" class="screen1-home__ic2"></button>
+                            </div>
                             <div class="screen1-home__row">
-                                <p>26년 경기인등록현황 </p>
-                                <p><b>남자</b> <span>53,846</span>명 / 여자 <span>6,478</span>명 / 총계 <span>60,324</span>명</p>
+                                <button>선수</button>
+                                <div><b>남자</b> <span> 53,846 </span><b>명</b> <div class="line"></div> <b>여자</b> <span>6,478</span><b>명</b> <div class="line"></div> <b>총계</b> <span>60,324</span><b>명</b></div>
                             </div>
                             <div class="screen1-home__line m20"></div>
                             <div class="screen1-home__section">
@@ -647,17 +701,6 @@
                                 <div class="screen1-home__value">
                                     누적 회원수
                                     <p>118,806</p>
-                                </div>
-                            </div>
-                            <div class="screen1-home__line m20"></div>
-                            <div class="screen1-home__rows">
-                                <div class="screen1-home__row">
-                                    <p>기록물 등록현황 </p>
-                                    <p class="fs15">2,930,356 <del>건</del> </p>
-                                </div>
-                                <div class="screen1-home__label">
-                                    <p>전자기록물 : <b>2,904,249건</b></p>
-                                    <p>비 전자기록물 : <b>26,107건</b></p>
                                 </div>
                             </div>
                         </div>
@@ -707,19 +750,135 @@
                 </div>
                 <div class="screen2-home__box">
                     <div class="screen2-home__card">
-                        <img src="images/home-main/ic14.png" alt="">
+                        <div class="screen2-home__title">
+
+                        </div>
+                        <div class="screen2-home__list">
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="screen2-home__card">
-                        <img src="images/home-main/ic15.png" alt="">
+                        <div class="screen2-home__title">
+
+                        </div>
+                        <div class="screen2-home__list">
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="screen2-home__card">
-                        <img src="images/home-main/ic16.png" alt="">
+                        <div class="screen2-home__title">
+
+                        </div>
+                        <div class="screen2-home__list">
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="screen2-home__card">
-                        <img src="images/home-main/ic17.png" alt="">
+                        <div class="screen2-home__title">
+
+                        </div>
+                        <div class="screen2-home__list">
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="screen2-home__card">
-                        <img src="images/home-main/ic18.png" alt="">
+                        <div class="screen2-home__title">
+
+                        </div>
+                        <div class="screen2-home__list">
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                            <div class="screen2-home__item">
+                                <p></p>
+                                <span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

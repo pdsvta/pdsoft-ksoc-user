@@ -63,9 +63,13 @@ legend {
     padding-top: 12rem;
 }
 
+#wrap.wrap.pt0 {
+    padding-top: 0;
+}
+
 .inner {
     width: 100%;
-    max-width: 110rem;
+    max-width: 140rem;
     padding: 0 2rem;
     margin: 0 auto;
     position: relative;
@@ -1553,4 +1557,139 @@ legend {
 
 .header-main .gnb {
     top: 15rem;
+}
+
+.headerMain-top {
+    background: #F5F5F5;
+    padding: 1.1rem 0;
+}
+
+.headerMain-top .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerMain-top img {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.headerMain-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerMain-text button {
+    font-size: 1.6rem;
+    padding: .8rem 2rem;
+    border: none;
+    border-radius: 5rem;
+    background: #3169b3;
+    color: #fff;
+    font-weight: 600;
+}
+
+.headerMain-text p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #111;
+
+}
+
+.headerMain-text p span {
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+.headerMain-bottom {
+    background: #fff;
+    height: 11rem;
+    display: flex;
+    align-items: center;
+}
+
+.headerMain-bottom .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerMain-logo {
+    width: auto;
+    height: 6.3rem;
+}
+
+.headerMain-searchbox {
+    position: relative;
+}
+
+.headerMain-searchbox input {
+    width: 30rem;
+    height: 4.6rem;
+    border-radius: 5rem;
+    border: none;
+    background: #f5f5f5;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.headerMain-searchbtn {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.headerMain-searchbtn img {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.headerMain-list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.headerMain-list a {
+    color: #666;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.headerMain-btns {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.headerMain-btns a {
+    color: #111;
+}
+
+.headerMainmenu-btn {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: transparent;
+}
+
+.headerMainmenu-btn span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #111;
+}
+.headerMainmenu-btn span:nth-child(2) {
+  width: 10px;
 }
