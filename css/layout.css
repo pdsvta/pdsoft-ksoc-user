@@ -1690,6 +1690,104 @@ legend {
   height: 2px;
   background: #111;
 }
+
 .headerMainmenu-btn span:nth-child(2) {
   width: 10px;
+}
+
+.footer-homeMain .footer-homeMain-logo{
+    height: 3.5rem;
+    width: auto;
+    margin-bottom: 1.5rem;
+}
+
+.footer-homeMain .footer-main__menu-item a {
+    font-size: 1.5rem;
+    color: #717171;
+}
+
+.footer-homeMain .footer-main__menu{
+    margin-bottom: 2rem;
+}
+
+.footer-homeMain .footer-main__address,
+.footer-homeMain .footer-main__sponsor-text{
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    color: #717171;
+}
+.footer-homeMain .footer-main__copyright{
+    font-size: 1.7rem;
+    margin-bottom: 0;
+    color: #717171;
+}
+
+.footer-homeMain .footer-main__logo1 {
+    height: 2.6rem;
+    width: auto;
+}
+
+.footer-homeMain .footer-main__logo2 {
+    width: auto;
+    height: 2.3rem;
+}
+
+.footer-homeMain .footer-main__logo3 {
+    width: auto;
+    height: 2.1rem;
+}
+
+.footer-homeMain .footer-main__sponsor-logos {
+    gap: 2rem;
+}
+
+.footer-homeMain .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-homeMain .footer-cal {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    gap: 1rem;
+    background: #F5F5F5;
+}
+
+.footer-homeMain .footer-cal img {
+    width: 4rem ;
+    height: 4rem;
+}
+
+.footer-homeMain .footer-cal div {
+    line-height: 138%;
+}
+
+.footer-homeMain .footer-cal p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.footer-homeMain .footer-cal span {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.footer-homeMain .footer-ic {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-homeMain .footer-ic img {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.footer-homeMain .footer-main__sponsors {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 }
