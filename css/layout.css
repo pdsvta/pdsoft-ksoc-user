@@ -1573,6 +1573,37 @@ legend {
 .headerMain-top img {
     width: 1.7rem;
     height: 1.7rem;
+    cursor: pointer;
+}
+
+.headerMain-list {
+    overflow: hidden;
+}
+
+.headerMain-slider {
+    position: relative;
+    height: 40px; 
+}
+
+.headerMain-text {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+}
+
+.headerMain-text.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+}
+
+.headerMain-text.prev {
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
 .headerMain-text {
@@ -1790,4 +1821,182 @@ legend {
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+
+
+.screen1-home__menu li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #007AFF;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.screen1-home__menu li:hover::after {
+    width: 100%;
+}
+
+.screen1-home__menu li .screen1-home__menu-submenu li::after {
+    display: none;
+}
+
+.screen1-home__menu-submenu {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    height: 45rem !important;
+    gap: 1rem !important;
+}
+
+.screen1-home__menu li:last-child .screen1-home__menu-submenu {
+    border-right: none;
+}
+
+.screen1-home__menu li .screen1-home__menu-submenu li {
+    height: auto;
+}
+
+.screen1-home__menu li .screen1-home__menu-submenu a {
+    color: #666;
+    font-size: 1.5rem !important;
+    word-break: normal;
+    font-weight: 500;
+}
+
+.home-back-menu:hover .screen1-home__menu ul li .screen1-home__menu-submenu li a:hover {
+    color: #0C54B8;
+    font-weight: 600;
+}
+
+.screen1-home__menu li {
+    position: relative;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen1-home__menu-submenu {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.home-back-menu:hover .screen1-home__menu-submenu {
+    opacity: 1;
+    visibility: visible;
+    padding-top: 1.5rem;
+}
+
+.home-back-menu {
+    position: relative;
+    z-index: 10;
+}
+
+.home-back-menu::before {
+    content: "";
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    height: 0;
+
+    background: #fff;
+
+    transition: height 0.4s ease;
+    z-index: -1; 
+}
+
+.home-back-menu:hover::before {
+    height: 45rem; 
+}
+
+.screen1-home__menu ul li {
+    margin-right: 0;
+}
+
+.screen1-home__menu ul li:nth-child(-n+3) {
+    margin-right: 12rem;
+}
+
+.screen1-home__menu ul li:nth-child(3) {
+    margin-right: 10rem;
+}
+
+.screen1-home__menu ul li:nth-child(n+4) {
+    margin-right: 2rem;
+}
+
+.screen1-home__menu ul li:last-child {
+    margin-right: 0;
+}
+
+
+.screen1-home__menu ul li:nth-child(-n+3) .screen1-home__menu-submenu li {
+    margin-right: 0;
+    width: 100%;
+}
+
+.screen1-home__menu ul li:nth-child(3) .screen1-home__menu-submenu li{
+    margin-right: 0;
+    width: 100%;
+}
+
+.screen1-home__menu ul li:nth-child(n+4) .screen1-home__menu-submenu li{
+    margin-right: 0;
+    width: 100%;
+}
+
+.home-back-menu:hover {
+    background: #fff;
+}
+
+.home-back-menu:hover .screen1-home__menu {
+    border-bottom: 1px solid #ddd;
+
+}
+
+.home-back-menu:hover .screen1-home__menu ul {
+    justify-content: flex-start;
+    gap: 0;
+}
+
+.home-back-menu:hover .screen1-home__menu ul li a {
+    text-align: center;
+    color: #111;
+    font-weight: 600;
+}
+
+.home-back-menu:hover .screen1-home__menu ul li .screen1-home__menu-submenu li a {
+    color: #666;
+    font-weight: 500;
+}
+
+.home-back-menu:hover .screen1-home__menu ul li:nth-child(-n+3) {
+    margin-right: 0;
+}
+.home-back-menu:hover .screen1-home__menu ul li:nth-child(3) {
+    margin-right: 0;
+}
+.home-back-menu:hover .screen1-home__menu ul li:nth-child(n+4) {
+    margin-right: 0;
+}
+
+.home-back-menu:hover .screen1-home__menu ul li {
+    width: calc(100% / 7);
 }
