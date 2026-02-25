@@ -7772,6 +7772,11 @@ caption {
     font-size: 1.3rem;
     font-weight: 400;
     border: none;
+    transition: all -.3s ease;
+}
+
+.screen4__btn button:hover {
+    opacity: .7;
 }
 
 .screen4__dots {
@@ -14379,6 +14384,13 @@ caption {
     justify-content: center;
     flex-direction: column;
     background: #ffffff82;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.screen1-home__item:hover {
+    transform: translateY(-3px);
+    background: #ffffffc7;
 }
 
 .screen1-home__item img {
@@ -14409,12 +14421,16 @@ caption {
 .screen1-home__select button {
     border-radius: .5rem;
     min-width: 6rem;
-    background: #0C54B8;
+    background: #3169b3;
     padding: 0;
     height: 5rem;
     color: #fff;
     border: none;
     border-radius: 1rem;
+}
+
+.screen1-home__select button:hover {
+    background: #3772bf;
 }
 
 .screen1-home__select .selectbox {
@@ -14728,6 +14744,12 @@ caption {
 .screen1-home__info h3 {
     font-size: 1.8rem;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.screen1-home__info h3:hover {
+    color: #666;
 }
 
 .screen1-home__info p {
@@ -14755,6 +14777,11 @@ caption {
     font-size: 1.7rem;
     color: #918a8a;
     font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.screen1-home__more:hover {
+    color: #111;
 }
 
 .screen1-home__more.abs {
@@ -14804,6 +14831,12 @@ caption {
     font-weight: bold;
     color: #000;
     font-size: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.screen1-home__text h5:hover {
+    color: #666;
 }
 
 .screen1-home__text p {
@@ -14872,6 +14905,13 @@ caption {
     color: #000;
     font-size: 1.7rem;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.screen2-home__item p:hover {
+    color: #666;
+    font-weight: bold;
 }
 
 .screen2-home__item span {
@@ -14898,6 +14938,11 @@ caption {
     background: #fff;
     z-index: 1;
     position: relative;
+    transition: all 0.3 s ease;
+}
+
+.screen2-home__title:hover {
+    color: #666;
 }
 
 .screen2-home__note {
@@ -15042,6 +15087,13 @@ caption {
     background: none;
     margin: 0;
     line-height: 138%;
+    transition: all 0.3s ease;
+}
+
+.screen5-home .tab:hover {
+    background: #c8e9fb59;
+    color: #73a0dd;
+
 }
 
 .screen5-home .tab .date {
@@ -15100,6 +15152,12 @@ caption {
 
 .screen5-home-schedule-table .row div:nth-child(2) {
     letter-spacing: -1px;
+    transition: all 0.3s ease;
+}
+
+.screen5-home-schedule-table .row div:nth-child(2):hover {
+    color: #0C54B8;
+    font-weight: 600;
 }
 
 .screen5-home__right {
@@ -15296,4 +15354,9 @@ caption {
 
 .screen8-home__item {
     width: calc((100% - 6rem)/4);
+    transition: all 0.3s ease;
+}
+
+.screen8-home__item:hover {
+    transform: translateY(-5px);
 }
