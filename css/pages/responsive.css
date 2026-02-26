@@ -1,3 +1,12 @@
+@media (max-width:1400px) {
+    .inner,
+    .ply-hdr .inner,
+    .ply-nav .inner,
+    .ply .inner,
+    .ply-ftr .inner {
+        max-width: 110rem;
+    }
+}
 @media (max-width: 1200px) {
     .screen1-main .inner {
         padding: 0 2rem;

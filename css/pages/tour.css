@@ -14931,7 +14931,7 @@ caption {
 
 .screen2-home__title {
     font-size: 2rem;
-    color: #000;
+    color: #fff;
     font-weight: 600;
     border-radius: 5rem;
     border: 1px solid #ddd;
@@ -14939,12 +14939,29 @@ caption {
     background: #fff;
     z-index: 1;
     position: relative;
-    transition: all 0.3 s ease;
+    transition: all 0.3s ease;
 }
 
-.screen2-home__title:hover {
-    color: #666;
+.screen2-home__card:nth-child(1) .screen2-home__title {
+    background: #3169b4;
 }
+
+.screen2-home__card:nth-child(2) .screen2-home__title {
+    background: #f5990a;
+}
+
+.screen2-home__card:nth-child(3) .screen2-home__title {
+    background: #009a44;
+}
+
+.screen2-home__card:nth-child(4) .screen2-home__title {
+    background: #611989;
+}
+
+.screen2-home__card:nth-child(5) .screen2-home__title {
+    background: #a40102;
+}
+
 
 .screen2-home__note {
     padding: 2rem;
