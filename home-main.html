@@ -79,11 +79,7 @@
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- // header -->
-
-        <!-- contents -->
-        <section class="screen1-home">
+            
             <div class="home-back-menu">
                 <div class="screen1-home__menu">
                     <ul>
@@ -170,6 +166,11 @@
                     </ul>
                 </div>
             </div>
+        </header>
+        <!-- // header -->
+
+        <!-- contents -->
+        <section class="screen1-home">
             <div class="home-back">
                 <div class="inner">
                     <div class="screen1-home__left">
@@ -1662,9 +1663,11 @@
 
         const btnClose = document.querySelector('.headerMain-close');
         const headerTop = document.querySelector('.headerMain-top');
+        const screen1 = document.querySelector('.screen1-home');
 
         btnClose.addEventListener('click', () => {
             headerTop.style.display = 'none';
+            screen1.classList.add('header-closed');
         });
     </script>
 

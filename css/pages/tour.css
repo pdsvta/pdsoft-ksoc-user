@@ -14291,6 +14291,14 @@ caption {
     background: linear-gradient(to right, #3169b3 50%, #2e6955 50%);
 }
 
+.screen1-home {
+    padding-top: 23rem;
+}
+
+.screen1-home.header-closed {
+    padding-top: 17rem;
+}
+
 .screen1-home__menu {
     width: 100%;
 }

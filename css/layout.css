@@ -1559,6 +1559,13 @@ legend {
     top: 15rem;
 }
 
+.header-homeMain {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
 .headerMain-top {
     background: #F5F5F5;
     padding: 1.1rem 0;
