@@ -14749,7 +14749,7 @@ caption {
 }
 
 .screen1-home__info h3:hover {
-    color: #666;
+    color: #0C54B8 ;
 }
 
 .screen1-home__info p {
@@ -14774,9 +14774,10 @@ caption {
 }
 
 .screen1-home__more {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #918a8a;
     font-weight: 400;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -14836,7 +14837,7 @@ caption {
 }
 
 .screen1-home__text h5:hover {
-    color: #666;
+    color: #0C54B8;
 }
 
 .screen1-home__text p {
@@ -14910,7 +14911,7 @@ caption {
 }
 
 .screen2-home__item p:hover {
-    color: #666;
+    color: #0C54B8;
     font-weight: bold;
 }
 
@@ -15153,6 +15154,7 @@ caption {
 .screen5-home-schedule-table .row div:nth-child(2) {
     letter-spacing: -1px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .screen5-home-schedule-table .row div:nth-child(2):hover {
@@ -15197,7 +15199,7 @@ caption {
 }
 
 .screen5-home__text h5:hover {
-    color: #666;
+    color: #0C54B8;
 }
 
 .screen5-home__text p {
@@ -15232,6 +15234,11 @@ caption {
     font-size: 1.3rem;
     border: none;
     min-width: 7rem;
+    transition: all 0.3s ease;
+}
+
+.screen5-home__cta button:hover {
+    opacity: .7;
 }
 
 .screen6-home {
@@ -15270,7 +15277,7 @@ caption {
 }
 
 .screen6-home__text p:hover {
-    color: #666;
+    color: #0C54B8;
 }
 
 .screen6-home__text span {
@@ -15332,7 +15339,7 @@ caption {
 }
 
 .screen7-home__text p:hover {
-    color: #666;
+    color: #0C54B8;
 }
 
 .screen7-home__text span {

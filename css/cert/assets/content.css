@@ -296,7 +296,7 @@ video {
 /* inner */
 .inner {
 	position: relative;
-	width: 1200px;
+	width: 1400px;
 	margin: 0 auto;
 }
 
@@ -4586,7 +4586,7 @@ legend {
 
 .inner {
 	width: 100%;
-	max-width: 110rem;
+	max-width: 140rem;
 	padding: 0 2rem;
 	margin: 0 auto;
 	position: relative;
