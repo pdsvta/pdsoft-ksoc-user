@@ -15400,3 +15400,8 @@ caption {
 .screen8-home__item:hover {
     transform: translateY(-5px);
 }
+
+.screen1-home__select .selectbox:focus {
+    border-color: #0C54B8;
+    outline: none;
+}
