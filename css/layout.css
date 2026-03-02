@@ -1886,6 +1886,7 @@ legend {
     word-break: normal;
     font-weight: 500;
     height: auto;
+    white-space: nowrap;
 }
 
 .home-back-menu:hover .screen1-home__menu ul li .screen1-home__menu-submenu li a:hover {
