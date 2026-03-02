@@ -1882,7 +1882,7 @@ legend {
 
 .screen1-home__menu li .screen1-home__menu-submenu a {
     color: #666;
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
     word-break: normal;
     font-weight: 500;
     height: auto;
@@ -1991,6 +1991,46 @@ legend {
     align-items: flex-start;
     gap: 0 !important;
 }
+
+.home-back-menu:hover .screen1-home__menu ul li:last-child .screen1-home__menu-submenu {
+    justify-content: flex-end;
+}
+
+.home-back-menu:hover .screen1-home__menu ul li:nth-child(6) .screen1-home__menu-submenu {
+    justify-content: flex-end;
+}
+
+.screen1-home__menu li:nth-child(6):hover .screen1-home__menu-submenu {
+    justify-content: flex-end;
+}
+
+.screen1-home__menu li:nth-child(2) {
+    position: relative;
+}
+
+.screen1-home__menu li:nth-child(2):hover .screen1-home__menu-submenu {
+    justify-content: flex-start;
+}
+
+.screen1-home__menu li .screen1-home__menu-submenu li a{
+    width: auto !important;
+}
+
+.screen1-home__menu li:nth-child(6) .screen1-home__menu-submenu li,
+.screen1-home__menu li:nth-child(3) .screen1-home__menu-submenu li,
+.screen1-home__menu li:nth-child(2) .screen1-home__menu-submenu li {
+    width: auto !important;
+    padding: 0 2.5rem;
+}
+
+.screen1-home__menu li:nth-child(6) .screen1-home__menu-submenu {
+    padding-right: 1.5rem !important;
+}
+
+.screen1-home__menu li:nth-child(6) .screen1-home__menu-submenu li .screen1-home__menu-submenu-child li{
+    padding: 0;
+}
+
 
 .home-back-menu:hover .screen1-home__menu ul li a {
     text-align: center;
