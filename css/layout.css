@@ -1831,7 +1831,7 @@ legend {
 }
 
 
-.screen1-home__menu li::after {
+.screen1-home__menu li a::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1843,11 +1843,11 @@ legend {
     transition: width 0.3s ease;
 }
 
-.screen1-home__menu li:hover::after {
+.screen1-home__menu li a:hover::after {
     width: 100%;
 }
 
-.screen1-home__menu li .screen1-home__menu-submenu li::after {
+.screen1-home__menu li .screen1-home__menu-submenu li a::after {
     display: none;
 }
 
@@ -1861,21 +1861,24 @@ legend {
     transform: translateY(10px);
     transition: 0.3s;
     display: flex;
-    flex-direction: column;
-    border-right: 1px solid #ddd;
     width: 100%;
     padding-right: 0 !important;
     padding-left: 0 !important;
-    height: 45rem !important;
+    height: auto;
     gap: 1rem !important;
+        position: absolute;
+    left: 0;
+    right: 0;
 }
 
-.screen1-home__menu li:last-child .screen1-home__menu-submenu {
-    border-right: none;
-}
 
 .screen1-home__menu li .screen1-home__menu-submenu li {
-    height: auto;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    padding: 0 1rem ;
+}
+.screen1-home__menu li .screen1-home__menu-submenu li:last-child {
+    border-right: none;
 }
 
 .screen1-home__menu li .screen1-home__menu-submenu a {
@@ -1883,6 +1886,7 @@ legend {
     font-size: 1.5rem !important;
     word-break: normal;
     font-weight: 500;
+    height: auto;
 }
 
 .home-back-menu:hover .screen1-home__menu ul li .screen1-home__menu-submenu li a:hover {
@@ -1891,20 +1895,13 @@ legend {
 }
 
 .screen1-home__menu li {
-    position: relative;
     height: 6rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.screen1-home__menu-submenu {
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-}
-
-.home-back-menu:hover .screen1-home__menu-submenu {
+.screen1-home__menu li:hover .screen1-home__menu-submenu {
     opacity: 1;
     visibility: visible;
     padding-top: 1.5rem;
@@ -1922,16 +1919,23 @@ legend {
     left: 0;
     width: 100%;
     height: 0;
-
     background: #fff;
-
     transition: height 0.4s ease;
-    z-index: -1; 
+    z-index: 1;
 }
 
-.home-back-menu:hover::before {
-    height: 45rem; 
+.home-back-menu.active::before {
+    height: calc(var(--submenu-height) + 6rem);
 }
+
+.screen1-home__menu-submenu {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
 
 .screen1-home__menu ul li {
     margin-right: 0;
@@ -1979,19 +1983,23 @@ legend {
 }
 
 .home-back-menu:hover .screen1-home__menu ul {
-    justify-content: flex-start;
+    justify-content: center;
     gap: 0;
+    width: calc(100vw - 4rem);    
+    align-items: flex-start;
+    gap: 0 !important;
 }
 
 .home-back-menu:hover .screen1-home__menu ul li a {
     text-align: center;
     color: #111;
     font-weight: 600;
+    position: relative;
 }
 
 .home-back-menu:hover .screen1-home__menu ul li .screen1-home__menu-submenu li a {
-    color: #666;
-    font-weight: 500;
+    color: #111;
+    font-weight: 600;
 }
 
 .home-back-menu:hover .screen1-home__menu ul li:nth-child(-n+3) {
@@ -2006,4 +2014,51 @@ legend {
 
 .home-back-menu:hover .screen1-home__menu ul li {
     width: calc(100% / 7);
+    /* border-right: 1px solid #ddd; */
+}
+
+.screen1-home__menu-submenu li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.screen1-home__menu li .screen1-home__menu-submenu .screen1-home__menu-submenu-child {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 !important;
+    gap: 1rem !important;
+    padding: 0;
+    height: auto;
+}
+
+.screen1-home__menu li .screen1-home__menu-submenu .screen1-home__menu-submenu-child li a {
+    font-weight: 400 !important;
+    font-size: 1.5rem !important;
+    color: #666;
+    height: auto;
+}
+.screen1-home__menu li .screen1-home__menu-submenu .screen1-home__menu-submenu-child li {
+    border-right: none;
+    width: 100% !important;
+}
+
+.screen1-home__menu li .screen1-home__menu-submenu li {
+        width: calc(100% / 7) !important; 
+}
+.screen1-home__menu ul li:nth-child(5) .screen1-home__menu-submenu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.screen1-home__menu ul li:nth-child(5) .screen1-home__menu-submenu li {
+    width: calc(100% / 6) !important;
+}
+.screen1-home__menu ul li:nth-child(5) .screen1-home__menu-submenu li:nth-child(6) {
+    border-right: none;
+}
+
+.screen1-home__menu ul li:nth-child(5) .screen1-home__menu-submenu li:nth-child(n+7) {
+    margin-top: 2rem;
 }

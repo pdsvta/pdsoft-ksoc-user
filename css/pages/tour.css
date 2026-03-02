@@ -14301,13 +14301,13 @@ caption {
 
 .screen1-home__menu {
     width: 100%;
+    z-index: 1;
 }
 
 .screen1-home__menu ul {
     display: flex;
     align-items: center;
-    gap: 4rem;
-    height: 6rem;
+    gap: 0;
     max-width: 140rem;
     margin: 0 auto;
     justify-content: space-between;
@@ -14340,6 +14340,12 @@ caption {
     font-weight: 500;
     font-size: 2rem;
     position: relative;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 .home-back {
