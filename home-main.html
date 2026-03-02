@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="home-back-menu">
                 <div class="screen1-home__menu">
                     <ul>
@@ -216,7 +216,8 @@
                                         <li><a href="#">스포츠안전 연구</a></li>
                                         <li><a href="#">스포츠안전 공제</a></li>
                                         <li><a href="#">스포츠안전 매뉴얼</a></li>
-                                        <li><a href="#">스포츠안전 교육영상 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                        <li><a href="#">스포츠안전 교육영상 <img src="images/icons/icon-menu.png" alt=""></a>
+                                        </li>
                                         <li><a href="#">스포츠안전 뉴스레터</a></li>
                                     </ul>
                                 </li>
@@ -516,7 +517,8 @@
                     <div class="screen2-home__card">
                         <div class="screen2-home__title">
                             <img src="images/home-main/ic26.png" alt="">
-                            공통 </div>
+                            공통
+                        </div>
                         <div class="screen2-home__list">
                             <div class="screen2-home__item">
                                 <p>국민체력100 </p>
@@ -1873,6 +1875,29 @@
     </script>
 
     <script>
+        function equalSubmenuHeight() {
+            const submenus = document.querySelectorAll('.screen1-home__menu-submenu');
+
+            submenus.forEach(submenu => {
+                const items = submenu.querySelectorAll(':scope > li');
+
+                let maxHeight = 0;
+                items.forEach(item => {
+                    item.style.height = 'auto';
+                });
+
+                items.forEach(item => {
+                    if (item.offsetHeight > maxHeight) {
+                        maxHeight = item.offsetHeight;
+                    }
+                });
+
+                items.forEach(item => {
+                    item.style.height = maxHeight + 'px';
+                });
+            });
+        }
+
         const menu = document.querySelector('.home-back-menu');
         const itemsMenu = document.querySelectorAll('.screen1-home__menu > ul > li');
 
@@ -1888,6 +1913,7 @@
 
                 menu.style.setProperty('--submenu-height', h + 'px');
                 menu.classList.add('active');
+                setTimeout(equalSubmenuHeight, 50);
             });
         });
 
