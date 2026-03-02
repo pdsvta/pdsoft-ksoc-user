@@ -1858,7 +1858,6 @@ legend {
     padding: 10px 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
     transition: 0.3s;
     display: flex;
     width: 100%;
@@ -1925,7 +1924,7 @@ legend {
 }
 
 .home-back-menu.active::before {
-    height: calc(var(--submenu-height) + 6rem);
+    height: calc(var(--submenu-height) + 2rem);
 }
 
 .screen1-home__menu-submenu {
@@ -1934,6 +1933,7 @@ legend {
     left: 0;
     width: 100%;
     z-index: 2;
+    padding-top: 2rem !important;
 }
 
 
@@ -2038,6 +2038,7 @@ legend {
     font-size: 1.5rem !important;
     color: #666;
     height: auto;
+    white-space: nowrap;
 }
 .screen1-home__menu li .screen1-home__menu-submenu .screen1-home__menu-submenu-child li {
     border-right: none;
@@ -2061,4 +2062,10 @@ legend {
 
 .screen1-home__menu ul li:nth-child(5) .screen1-home__menu-submenu li:nth-child(n+7) {
     margin-top: 2rem;
+}
+
+.screen1-home__menu-submenu-child img {
+    width: 13px;
+    height: auto;
+    margin-left: 3px;
 }
