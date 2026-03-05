@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div class="leftArea">
+                <h1 class="logo">
+                    <a href="">체육정보시스템</a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hideEl">주메뉴</h2>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li date-menu="menu01" class="gnb-extend">
+                            <a>감사관리</a>
+                            <div id="menu01" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메인</a>
+                                    </li>
+                                    <li>
+                                        <a>감사관리</a>
+                                    </li>
+                                    <li>
+                                        <a>시스템관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu02" class="gnb-extend">
+                            <a>포털 관리</a>
+                            <div id="menu02" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시물 관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너 관리</a>
+                                    </li>
+                                    <li>
+                                        <a>접속현황</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu03" class="gnb-extend">
+                            <a>아카이브</a>
+                            <div id="menu03" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시물관리</a>
+                                    </li>
+                                    <li>
+                                        <a>콘텐츠관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu04" class="gnb-extend">
+                            <a>시스템 관리</a>
+                            <div id="menu04" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>사용자계정관리</a>
+                                    </li>
+                                    <li>
+                                        <a>체육정보시스템관리자</a>
+                                    </li>
+                                    <li>
+                                        <a>팝업관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="privacy">
+                    <a href="https://www.sports.or.kr/home/010902/0000/main.do" title="새창으로열기" target="_blank">
+                        <u><b>개인정보처리방침</b></u>
+                    </a>
+                </p>
+                <div class="sportsLogo">
+                    <a href="https://www.sports.or.kr/" title="새창으로열기" target="_blank"><img src="./img/intrologo.png"
+                            alt="대한체육회" /></a>
+                </div>
+            </div>
+            <!-- e : leftArea -->
+
+            <div class="content">
+                <h3>게시판 등록</h3>
+                <div class="form-table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tr>
+                            <th><label for="" aria-required="true">게시물 제목</label></th>
+                            <td colspan="3"><input type="text" value="2025년 서울특별시체육회 내부 정기 감사">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="" aria-required="true">게시판 형식</label></th>
+                            <td colspan="3">
+                                <select id="" name="">
+                                    <option value="LIST">리스트</option>
+                                    <option value="THUMB">썸네일</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="" aria-required="true">접속 권한</label></th>
+                            <td colspan="3">
+                                <select id="" name="">
+                                    <option value="ADMIN">관리자</option>
+                                    <option value="USER">사용자</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="" aria-required="true">글쓰기 권한</label></th>
+                            <td>
+                                <select id="" name="">
+                                    <option value="ADMIN">관리자</option>
+                                    <option value="USER">사용자</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="" aria-required="true">사용 여부</label></th>
+                            <td colspan="3">
+                                <input type="radio" name="searchUseYn" id="searchUseYnALL" value="" checked>
+                                <label for="searchUseYnALL">전체</label>
+                                <input type="radio" name="searchUseYn" id="searchUseYnY" value="">
+                                <label for="searchUseYnY">전체</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btnCenter">
+                    <button type="button" class="button-type02">취소</button>
+                    <button type="button" class="button-type01">등록</button>
+                </div>
+            </div>
+            <!-- e : contents -->
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        function addFile() {
+            var $td = $(event.target).closest('td');
+            var $fileInput = $td.find('input[type="file"]');
+            var $textInput = $td.find('input[type="text"][readonly]');
+            $fileInput.click();
+
+            $fileInput.off('change').on('change', function () {
+                var fileName = this.files.length > 0 ? this.files[0].name : '';
+                $textInput.val(fileName);
+            });
+        }
+    </script>
+</body>
+
+</html>

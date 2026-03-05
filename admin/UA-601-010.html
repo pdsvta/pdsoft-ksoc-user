@@ -1,0 +1,424 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link rel="stylesheet" href="./styles/flatpickr.min.css" />
+    <script src="./js/flatpickr.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div class="leftArea">
+                <h1 class="logo">
+                    <a href="">체육정보시스템</a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hideEl">주메뉴</h2>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li date-menu="menu01" class="gnb-extend">
+                            <a>감사관리</a>
+                            <div id="menu01" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메인</a>
+                                    </li>
+                                    <li>
+                                        <a>감사관리</a>
+                                    </li>
+                                    <li>
+                                        <a>시스템관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu02" class="gnb-extend">
+                            <a>포털 관리</a>
+                            <div id="menu02" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시물 관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너 관리</a>
+                                    </li>
+                                    <li>
+                                        <a>접속현황</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu03" class="gnb-extend">
+                            <a>아카이브</a>
+                            <div id="menu03" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시물관리</a>
+                                    </li>
+                                    <li>
+                                        <a>콘텐츠관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu04" class="gnb-extend">
+                            <a>시스템 관리</a>
+                            <div id="menu04" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>사용자계정관리</a>
+                                    </li>
+                                    <li>
+                                        <a>체육정보시스템관리자</a>
+                                    </li>
+                                    <li>
+                                        <a>팝업관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="privacy">
+                    <a href="https://www.sports.or.kr/home/010902/0000/main.do" title="새창으로열기" target="_blank">
+                        <u><b>개인정보처리방침</b></u>
+                    </a>
+                </p>
+                <div class="sportsLogo">
+                    <a href="https://www.sports.or.kr/" title="새창으로열기" target="_blank"><img src="./img/intrologo.png"
+                            alt="대한체육회" /></a>
+                </div>
+            </div>
+            <!-- e : leftArea -->
+
+            <div class="content">
+                <h3>감사관리현황</h3>
+                <div class="account-management-form">
+                    <div class="account-management-formTop">
+                        <div class="account-management-formLeft">
+                            <dl>
+                                <dt>감사구분</dt>
+                                <dd class="account-management-flex">
+                                    <select name="" id="">
+                                        <option value="전체">전체</option>
+                                        <option value="전체">전체</option>
+                                        <option value="전체">전체</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>감사유형</dt>
+                                <dd class="account-management-flex">
+                                    <select name="" id="">
+                                        <option value="전체">전체</option>
+                                        <option value="전체">전체</option>
+                                        <option value="전체">전체</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>진행상태</dt>
+                                <dd class="account-management-flex">
+                                    <select name="" id="">
+                                        <option value="전체">전체</option>
+                                        <option value="전체">전체</option>
+                                        <option value="전체">전체</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="account-management-formRight">
+                            <dl>
+                                <dt>감사대상</dt>
+                                <dd class="account-management-flex">
+                                    <select name="" id="">
+                                        <option value="전체">전체</option>
+                                        <option value="전체">전체</option>
+                                        <option value="전체">전체</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="account-management-formMid">
+                        <dl class="input1">
+                            <dt>감사명</dt>
+                            <dd class="account-management-flex">
+                                <input type="text" placeholder="감사명을 입력해 주세요.">
+                            </dd>
+                        </dl>
+                        <dl class="input2">
+                            <dt>감사담당자</dt>
+                            <dd class="account-management-flex">
+                                <input type="text" placeholder="감사담당자명을 입력해 주세요">
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="account-management-formBottom">
+                        <dl>
+                            <dt>조회 기간</dt>
+                            <dd class="account-management-flex">
+                                <div class="allInput">
+                                    <div class="inputDate">
+                                        <input type="date">
+                                        ~
+                                        <input type="date">
+                                    </div>
+                                    <div class="inputChild">
+                                        <div class="input3">오늘</div>
+                                        <div class="input3">1주일</div>
+                                        <div class="input3">1개월</div>
+                                        <div class="input3">3개월</div>
+                                        <div class="input3">6개월</div>
+                                    </div>
+                                </div>
+                                <button type="button" class="button-type02">검색</button>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="boardTop mt30">
+                    <p>총 9 건</p>
+                    <button type="button" class="button-type01" onclick="openModal()">일정 등록</button>
+                </div>
+
+                <div class="boardTableCol">
+                    <table>
+                        <caption>사용자 계정관리 조회목록</caption>
+                        <colgroup>
+                            <col style="width:60px">
+                            <col style="width:125px">
+                            <col style="width:100px">
+                            <col style="width:160px">
+                            <col style="width:auto">
+                            <col style="width:220px">
+                            <col style="width:110px">
+                            <col style="width:160px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">감사구분/감사유형</th>
+                                <th scope="col">진행상태</th>
+                                <th scope="col">감사대상</th>
+                                <th scope="col">감사명</th>
+                                <th scope="col">감사기간</th>
+                                <th scope="col">감사담당자</th>
+                                <th scope="col">등록일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 데이터 반복구간 -->
+                            <tr style="cursor:pointer;">
+                                <td>1</td>
+                                <td class="text-left">외부/정기</td>
+                                <td class="text-left">예정</td>
+                                <td class="text-left">전라남도체육회</td>
+                                <td class="text-center">2025년 전라남도체육회 정기감사</td>
+                                <td>
+                                    2025.10.01~2025.10.15
+                                </td>
+                                <td>
+                                    민정호
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>2</td>
+                                <td class="text-left">외부/특정</td>
+                                <td class="text-left">예정</td>
+                                <td class="text-left">충청남도체육회</td>
+                                <td class="text-center">2025년 충청남도체육회 특정감사</td>
+                                <td>
+                                    2025.09.11~2025.09.20
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>3</td>
+                                <td class="text-left">내부/정기</td>
+                                <td class="text-left">예정</td>
+                                <td class="text-left">제주특별자치도체육회</td>
+                                <td class="text-center">2025년 제주특별자치도체육회 정기감사</td>
+                                <td>
+                                    2025.07.21~2025.07.31
+                                </td>
+                                <td>
+                                    민정호
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>4</td>
+                                <td class="text-left">내부/특정</td>
+                                <td class="text-left">감사중</td>
+                                <td class="text-left">경기도체육회</td>
+                                <td class="text-center">2025년 경기도체육회 특정감사</td>
+                                <td>
+                                    2025.06.11~2025.06.20
+                                </td>
+                                <td>
+                                    민정호
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>5</td>
+                                <td class="text-left">외부/특정</td>
+                                <td class="text-left">조치요청</td>
+                                <td class="text-left">서울특별시체육회</td>
+                                <td class="text-center">2025년 서울특별시체육회 특정감사</td>
+                                <td>
+                                    2025.06.01~2025.06.10
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>6</td>
+                                <td class="text-left">내부/정기</td>
+                                <td class="text-left">조치요청</td>
+                                <td class="text-left">부산광역시체육회</td>
+                                <td class="text-center">2025년 부산광역시체육회 정기감사</td>
+                                <td>
+                                    2025.06.01~2025.06.10
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>7</td>
+                                <td class="text-left">내부/정기</td>
+                                <td class="text-left">조치요청</td>
+                                <td class="text-left">부산광역시체육회</td>
+                                <td class="text-center">2025년 부산광역시체육회 정기감사</td>
+                                <td>
+                                    2025.06.01~2025.06.10
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>8</td>
+                                <td class="text-left">내부/정기</td>
+                                <td class="text-left">조치요청</td>
+                                <td class="text-left">부산광역시체육회</td>
+                                <td class="text-center">2025년 부산광역시체육회 정기감사</td>
+                                <td>
+                                    2025.06.01~2025.06.10
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>9</td>
+                                <td class="text-left">내부/정기</td>
+                                <td class="text-left">조치요청</td>
+                                <td class="text-left">부산광역시체육회</td>
+                                <td class="text-center">2025년 부산광역시체육회 정기감사</td>
+                                <td>
+                                    2025.06.01~2025.06.10
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>
+                                    2023.06.01
+                                </td>
+                            </tr>
+
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="controller-wrap">
+                    <div class="wrap-pagination">
+                        <div class="pagination-arrow icon icon-start disable"></div>
+                        <div class="pagination-arrow icon icon-prev disable"></div>
+                        <ul class="pagination-number">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                        <div class="pagination-arrow icon icon-next"></div>
+                        <div class="pagination-arrow icon icon-end"></div>
+                    </div>
+
+                    <div class="options-container">
+                        <label for="size">10개씩 보기</label>
+                        <select id="size" name="size" aria-placeholder="">
+                            <option value="10">10개씩 보기</option>
+                            <option value="20">20개씩 보기</option>
+                            <option value="30">30개씩 보기</option>
+                            <option value="40">40개씩 보기</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+    <script>
+        flatpickr("#datepicker", {
+            locale: "ko",
+        });
+    </script>
+</body>
+
+</html>

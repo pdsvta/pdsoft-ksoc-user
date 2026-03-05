@@ -1,0 +1,513 @@
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/component.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/chartjs-plugin-datalabels.js"></script>
+    <script src="./js/common_util.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <script src="./js/datepicker.en.js"></script>
+
+    <title>출전비지급 총괄현황</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container gamer clb">
+            <div class="content header">
+                <div class="header-nav">
+                    <h1>
+                        <a href="https://pis.sports.or.kr/spl/main.do">
+                            <img src="./img/logo-gamer.svg" alt="선수지도자심판관리시스템" width="235" height="40">
+                        </a>
+                    </h1>
+                    <div class="gnb">
+                        <ul class="clb">
+
+
+
+                            <li class=""><a id="ALL" role="button"
+                                    onclick="javascript:changeMenu('ALL');showLoadingLayer();">Home</a></li>
+
+                            <li class="is_active"><a id="SYS" role="button"
+                                    onclick="javascript:changeMenu('SYS');showLoadingLayer();">시스템관리</a></li>
+
+                            <li class=""><a id="APP" role="button"
+                                    onclick="javascript:changeMenu('APP');showLoadingLayer();">신청관리</a></li>
+
+                            <li class=""><a id="SPL" role="button"
+                                    onclick="javascript:changeMenu('SPL');showLoadingLayer();">등록관리</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="subnav">
+                        <ul class="clb">
+                            <!-- [D] new마크 newMark 클래스 추가 -->
+
+                            <li class="newMark"><a href="javascript:openOnlineManual('SYS_201');">화면 도움말</a>
+                            </li>
+                            <li>화면ID : <span class="font-roboto">SYS_201</span></li>
+                            <li><a href="javascript:movePis()">체육정보시스템</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-login clb">
+                    <div class="user clb">
+                        <p class="user-name">
+                            <span>조현종</span>
+
+                        </p>
+                        <p class="user-department">
+                            <span>대한체육회</span>
+
+                        </p>
+                        <div class="login-btn">
+                            <a href="javascript:confirmLogout()">로그아웃</a>
+                        </div>
+                    </div>
+                    <div class="login clb">
+                        <div class="login-timer clb">
+                            <span class="font-roboto font-b" id="remainTimeText" style="">28:40</span>
+                        </div>
+                        <div class="login-btn">
+                            <a href="javascript:renewTimeout();">로그인 연장</a>
+                        </div>
+                    </div>
+                    <div class="callnum">
+                        <i class="icon icon-call"></i>
+                        <span class="font-roboto font-b">02-2144-8141</span>
+                    </div>
+                </div>
+            </div><!-- content header -->
+
+            <form name="MoveForm" method="post" action="https://pis.sports.or.kr/spl/main.do">
+                <input type="hidden" name="menuGb" value="SYS" autocomplete="off">
+            </form>
+
+            <div class="content clb">
+                <div class="sidenav managenav">
+                    <div class="openbtn">
+                        <button type="button">시스템관리 열기</button>
+                    </div>
+                    <p class="title">
+                        <i class="icon icon-monitor"></i>
+                        시스템관리
+                    </p>
+                    <ul class="managemenu">
+
+                        <li>
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0005"><i
+                                    class="icon icon-manage--gamer"></i>코드관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0006" "=""><a href=" https://pis.sports.or.kr/spl/code/list.do"
+                                    onclick="javascript:showLoadingLayer();">공통코드관리</a></li>
+                                <li id="0025" "=""><a href=" https://pis.sports.or.kr/spl/code/teamCodeList.do"
+                                    onclick="javascript:showLoadingLayer();">학교팀코드관리</a></li>
+                                <li id="0076" "=""><a href=" https://pis.sports.or.kr/spl/code/eduTeamCodeList.do"
+                                    onclick="javascript:showLoadingLayer();">교육부학교코드관리</a></li>
+                                <li id="0077" "=""><a href=" https://pis.sports.or.kr/spl/code/linkSchoolList.do"
+                                    onclick="javascript:showLoadingLayer();">학교팀코드연계</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="">
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0008"><i
+                                    class="icon icon-manage--gamer"></i>프로그램관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0009" class="is_active" "=""><a href="
+                                    https://pis.sports.or.kr/spl/program/list.do"
+                                    onclick="javascript:showLoadingLayer();">프로그램관리</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0010"><i
+                                    class="icon icon-manage--gamer"></i>사용자관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0011" "=""><a href=" https://pis.sports.or.kr/spl/user/list.do"
+                                    onclick="javascript:showLoadingLayer();">사용자관리</a></li>
+                                <li id="0012" "=""><a href=" https://pis.sports.or.kr/spl/user/histList.do"
+                                    onclick="javascript:showLoadingLayer();">사용자이력조회</a></li>
+                                <li id="0080" "=""><a href=" https://pis.sports.or.kr/spl/user/userLoglist.do"
+                                    onclick="javascript:showLoadingLayer();">개인정보 조회기록</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="conarea openleft" style="padding-left: 320px;">
+                    <h3>출전비지급 현황</h3>
+                    <div class="account-management-form tour301001__boxFilter">
+                        <div class="account-management-formTop">
+                            <div class="account-management-formLeft tour301001__filter">
+                                <dl>
+                                    <dt>대회명</dt>
+                                    <dd class="tour301001__selectBox">
+                                        <select name="" id="">
+                                            <option value="전체">전체</option>
+                                        </select>
+                                    </dd>
+                                    <dt>시도체육회</dt>
+                                    <dd class="tour301001__selectBox">
+                                        <select name="" id="">
+                                            <option value="전체">전체</option>
+                                        </select>
+                                    </dd>
+                                    <button type="button" class="button-type02 tour301001__btnFilter">검색</button>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boardTop mt30 tour301002__titleNumberPagi">
+                        <p>총 <span>17</span> 건</p>
+                        <div>
+                            <button type="button" class="button-type01" onclick="openModal()">출전비  등록</button>
+                        </div>
+                    </div>
+
+                    <div class="boardTableCol">
+                        <table class="tour301001__table">
+                            <colgroup>
+                                <col style="width:120px">
+                                <col style="width:50px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                                <col style="width:100px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">대회명</th>
+                                    <th scope="col" rowspan="2">구분</th>
+                                    <th scope="col" colspan="3">출전비 지원 인원(명)</th>
+                                    <th scope="col" colspan="3">출전비 지원액(단위: 원)</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">임원</th>
+                                    <th scope="col">선수</th>
+                                    <th scope="col">계</th>
+                                    <th scope="col">임원</th>
+                                    <th scope="col">선수</th>
+                                    <th scope="col">교부액</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 데이터 반복구간 -->
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">서울</td>
+                                    <td class="text-right">203</td>
+                                    <td class="text-right">856 </td>
+                                    <td class="text-right">1,059 </td>
+                                    <td class="text-right">49,760,000</td>
+                                    <td class="text-right">
+                                        225,610,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        275,370,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">부산</td>
+                                    <td class="text-right">191</td>
+                                    <td class="text-right">782</td>
+                                    <td class="text-right">973 </td>
+                                    <td class="text-right">46,460,000</td>
+                                    <td class="text-right">
+                                        206,134,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        252,594,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">대구</td>
+                                    <td class="text-right">206</td>
+                                    <td class="text-right">793</td>
+                                    <td class="text-right">999 </td>
+                                    <td class="text-right">50,120,000</td>
+                                    <td class="text-right">
+                                        211,432,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        261,552,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">인천</td>
+                                    <td class="text-right">196</td>
+                                    <td class="text-right">768</td>
+                                    <td class="text-right">964 </td>
+                                    <td class="text-right">48,340,000</td>
+                                    <td class="text-right">
+                                        205,236,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        253,576,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">광주</td>
+                                    <td class="text-right">185</td>
+                                    <td class="text-right">632</td>
+                                    <td class="text-right">817 </td>
+                                    <td class="text-right">45,320,000</td>
+                                    <td class="text-right">
+                                        165,920,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        211,240,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">대전</td>
+                                    <td class="text-right">204</td>
+                                    <td class="text-right">775</td>
+                                    <td class="text-right">979 </td>
+                                    <td class="text-right">50,160,000</td>
+                                    <td class="text-right">
+                                        209,374,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        259,534,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">울산</td>
+                                    <td class="text-right">180</td>
+                                    <td class="text-right">576</td>
+                                    <td class="text-right">756 </td>
+                                    <td class="text-right">42,000,000</td>
+                                    <td class="text-right">
+                                        147,882,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        189,882,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">세종</td>
+                                    <td class="text-right">93</td>
+                                    <td class="text-right">315</td>
+                                    <td class="text-right">408 </td>
+                                    <td class="text-right">21,780,000</td>
+                                    <td class="text-right">
+                                        81,678,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        103,458,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">경기</td>
+                                    <td class="text-right">234</td>
+                                    <td class="text-right">871</td>
+                                    <td class="text-right">1,105 </td>
+                                    <td class="text-right">55,500,000</td>
+                                    <td class="text-right">
+                                        228,534,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        284,034,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">강원</td>
+                                    <td class="text-right">182</td>
+                                    <td class="text-right">738</td>
+                                    <td class="text-right">920 </td>
+                                    <td class="text-right">43,760,000</td>
+                                    <td class="text-right">
+                                        193,126,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        236,886,000 
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">충북</td>
+                                    <td class="text-right">205</td>
+                                    <td class="text-right">796</td>
+                                    <td class="text-right">1,001 </td>
+                                    <td class="text-right">49,660,000</td>
+                                    <td class="text-right">
+                                        210,752,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        260,412,000 
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">충남</td>
+                                    <td class="text-right">206</td>
+                                    <td class="text-right">801</td>
+                                    <td class="text-right">1,007 </td>
+                                    <td class="text-right">49,220,000</td>
+                                    <td class="text-right">
+                                        211,954,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        261,174,000 
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">전북</td>
+                                    <td class="text-right">179</td>
+                                    <td class="text-right">772</td>
+                                    <td class="text-right">951 </td>
+                                    <td class="text-right">43,700,000</td>
+                                    <td class="text-right">
+                                        204,908,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        248,608,000 
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">전남</td>
+                                    <td class="text-right">206</td>
+                                    <td class="text-right">747</td>
+                                    <td class="text-right">953 </td>
+                                    <td class="text-right">49,460,000</td>
+                                    <td class="text-right">
+                                        199,890,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        249,350,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">경북</td>
+                                    <td class="text-right">203</td>
+                                    <td class="text-right">812</td>
+                                    <td class="text-right">1,015 </td>
+                                    <td class="text-right">50,000,000</td>
+                                    <td class="text-right">
+                                        214,400,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        264,400,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">경남</td>
+                                    <td class="text-right">204</td>
+                                    <td class="text-right">820</td>
+                                    <td class="text-right">1,024 </td>
+                                    <td class="text-right">49,200,000</td>
+                                    <td class="text-right">
+                                        217,402,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        266,602,000
+                                    </td>
+                                </tr>                           
+                                <tr style="cursor:pointer;">
+                                    <td>제54회 전국소년체전</td>
+                                    <td class="text-bold">제주</td>
+                                    <td class="text-right">112</td>
+                                    <td class="text-right">485</td>
+                                    <td class="text-right">597 </td>
+                                    <td class="text-right">46,320,000</td>
+                                    <td class="text-right">
+                                        204,204,000
+                                    </td>
+                                    <td class="text-bold text-right">
+                                        250,524,000
+                                    </td>
+                                </tr>                          
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="controller-wrap">
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-start disable"></div>
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                            <div class="pagination-arrow icon icon-end"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidenav shortnav rightfold">
+                    <div class="openbtn">
+                        <button type="button">바로가기 열기</button>
+                    </div>
+                    <p class="title">
+                        <i class="icon icon-monitor"></i>
+                        바로가기
+                    </p>
+                    <ul>
+                        <li><a href="javascript:goSite('ITR')">체육단체인트라넷</a></li>
+                        <li><a href="https://pis.sports.or.kr/spl/docs/man_03.pdf" target="balnk">시스템메뉴얼</a></li>
+                        <li><a href="javascript:moveChatbot()">챗봇</a></li>
+                        <li><a href="https://113366.com/jinjin" target="blank">PC 원격제어</a></li>
+                    </ul>
+                    <img src="./img/logo_v.svg" alt="대한체육회" width="60" height="73">
+                </div>
+            </div>
+
+            <!-- 플로팅 버튼 -->
+            <div class="floating">
+
+                <a href="javascript:moveChatbot();" title="새창으로 열기">알리</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/gamer.js"></script>
+</body>
+
+</html>

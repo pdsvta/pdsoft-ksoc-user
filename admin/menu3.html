@@ -1,0 +1,400 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        :root {
+            --muted: #f6f7f7;
+            --border: #dedede;
+            --btn-bg: #4a4a4a;
+            --btn-txt: #fff;
+            --danger: #e74c3c;
+            --link: #3498db;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial;
+            margin: 20px;
+            background: #fff;
+        }
+
+        h1 {
+            margin: 0 0 12px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .controls {
+            margin-bottom: 12px;
+        }
+
+        button.control {
+            margin-right: 8px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .table-wrap {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        thead th {
+            background: var(--muted);
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #fbfbfb;
+        }
+
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #f0f0f0;
+            vertical-align: middle;
+            font-size: 16px;
+            color: #333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .tree-cell {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .level-2 .tree-cell {
+            margin-left: 10px;
+        }
+
+        .toggle-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            border: 0;
+            background: var(--btn-bg);
+            color: var(--btn-txt);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 22px;
+        }
+
+        .level-1 .toggle-btn {
+            background-color: #4a4a4a;
+        }
+
+        .toggle-btn.empty {
+            background: transparent;
+            color: #bbb;
+            cursor: default;
+        }
+
+        .menu-title {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .level-1 .menu-title {
+            padding-left: 8px;
+        }
+
+        .level-2 .menu-title {
+            padding-left: 28px;
+        }
+
+        .level-3 .menu-title {
+            padding-left: 48px;
+        }
+
+        .level-4 .menu-title {
+            padding-left: 68px;
+        }
+
+        .actions a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: var(--link);
+            font-size: 16px;
+        }
+
+        .actions a.delete {
+            color: var(--danger);
+        }
+
+        tr.hidden {
+            display: none;
+        }
+
+        tbody tr:hover {
+            background: #f3f9f9;
+        }
+
+        .add-sub {
+            background: #444;
+            color: #fff;
+            padding: 6px 8px;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+            margin-left: 8px;
+        }
+
+        .add-sub:hover {
+            background: #444;
+            color: #fff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div class="leftArea">
+                <h1 class="logo">
+                    <a href="">체육정보시스템</a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hideEl">주메뉴</h2>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="javascript:goSite('ITR');">체크박스</a></li>
+                        <li date-menu="menu02"><a href="javascript:void(0);">체육인 이력관리</a></li>
+                        <li date-menu="menu03"><a href="javascript:void(0);">증명서발급관리</a></li>
+                        <li date-menu="menu04"><a href="javascript:void(0);">대회관리</a></li>
+                        <li date-menu="menu05"><a href="javascript:void(0);">시스템관리</a></li>
+                    </ul>
+                </nav>
+                <div class="gnb-depth"></div>
+                <p class="privacy">
+                    <a href="https://www.sports.or.kr/home/010902/0000/main.do" title="새창으로열기" target="_blank">
+                        <u><b>개인정보처리방침</b></u>
+                    </a>
+                </p>
+                <div class="sportsLogo">
+                    <a href="https://www.sports.or.kr/" title="새창으로열기" target="_blank"><img src="./img/intrologo.png"
+                            alt="대한체육회" /></a>
+                </div>
+            </div>
+            <!-- e : leftArea -->
+
+            <div class="content">
+                <h3>메뉴 관리</h3>
+
+                <div class="boardTop mt30">
+                    <p>전체 23개</p>
+                    <button type="button" class="button-type01">대메뉴 추가</button>
+                </div>
+
+                <div class="controls">
+                    <button class="control" id="expandAll">모두 펼치기</button>
+                    <button class="control" id="collapseAll">모두 접기</button>
+
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:40%;">메뉴명</th>
+                                <th style="width:6%;">순서</th>
+                                <th style="width:18%;">링크 주소</th>
+                                <th style="width:10%;">접속 권한</th>
+                                <th style="width:12%;">관리</th>
+                            </tr>
+                        </thead>
+                        <tbody id="menuBody">
+
+                            <!-- DATA GIỮ NGUYÊN GIỐNG BẢN TRƯỚC -->
+
+                            <tr data-id="1" data-parent="0" data-level="1" class="level-1">
+                                <td>
+                                    <div class="tree-cell">
+                                        <button class="toggle-btn" data-id="1" aria-expanded="true">▾</button>
+                                        <div class="menu-title">개인 원클릭</div>
+                                        <a class="add-sub" href="/menu/add?parent=1">하위메뉴 추가</a>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>#</td>
+                                <td>USER</td>
+                                <td class="actions"><a href="#">수정</a> <a href="#" class="delete">삭제</a></td>
+                            </tr>
+
+                            <tr data-id="2" data-parent="1" data-level="2" class="level-2">
+                                <td>
+                                    <div class="tree-cell">
+                                        <button class="toggle-btn" data-id="2" aria-expanded="true">▾</button>
+                                        <div class="menu-title">└ 경기인 등록</div>
+                                        <a class="add-sub" href="/menu/add?parent=2">하위메뉴 추가</a>
+                                    </div>
+                                </td>
+                                <td>2</td>
+                                <td>#</td>
+                                <td>USER</td>
+                                <td class="actions"><a href="#">수정</a> <a href="#" class="delete">삭제</a></td>
+                            </tr>
+
+                            <tr data-id="4" data-parent="2" data-level="3" class="level-3">
+                                <td>
+                                    <div class="tree-cell">
+                                        <button class="toggle-btn empty" aria-expanded="false">—</button>
+                                        <div class="menu-title">└ 경기인 등록 (detail)</div>
+                                    </div>
+                                </td>
+                                <td>4</td>
+                                <td>#</td>
+                                <td>USER</td>
+                                <td class="actions"><a href="#">수정</a> <a href="#" class="delete">삭제</a></td>
+                            </tr>
+
+                            <tr data-id="3" data-parent="1" data-level="2" class="level-2">
+                                <td>
+                                    <div class="tree-cell">
+                                        <button class="toggle-btn" data-id="3" aria-expanded="true">▾</button>
+                                        <div class="menu-title">└ 제증명서 발급</div>
+                                        <a class="add-sub" href="/menu/add?parent=3">하위메뉴 추가</a>
+                                    </div>
+                                </td>
+                                <td>3</td>
+                                <td>#</td>
+                                <td>USER</td>
+                                <td class="actions"><a href="#">수정</a> <a href="#" class="delete">삭제</a></td>
+                            </tr>
+
+                            <tr data-id="7" data-parent="3" data-level="3" class="level-3">
+                                <td>
+                                    <div class="tree-cell">
+                                        <button class="toggle-btn empty" aria-expanded="false">—</button>
+                                        <div class="menu-title">└ 증명서 발급</div>
+                                    </div>
+                                </td>
+                                <td>7</td>
+                                <td>#</td>
+                                <td>USER</td>
+                                <td class="actions"><a href="#">수정</a> <a href="#" class="delete">삭제</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <!-- e : content -->
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        (function () {
+            const tbody = document.getElementById("menuBody");
+
+            // Build parent → children index
+            function buildIndex() {
+                const rows = [...tbody.querySelectorAll("tr")];
+                const idx = {};
+                rows.forEach(r => {
+                    const id = r.dataset.id;
+                    const parent = r.dataset.parent || "0";
+                    if (!idx[parent]) idx[parent] = [];
+                    idx[parent].push(id);
+                });
+                return idx;
+            }
+
+            function rowById(id) {
+                return tbody.querySelector(`tr[data-id="${id}"]`);
+            }
+
+            function setChildrenVisibility(id, show) {
+                const idx = buildIndex();
+                const children = idx[id] || [];
+                children.forEach(childId => {
+                    const row = rowById(childId);
+                    if (!row) return;
+                    if (show) { row.classList.remove("hidden"); }
+                    else { row.classList.add("hidden"); }
+                    if (!show) {
+                        // collapse descendants too
+                        const btn = row.querySelector(`.toggle-btn[data-id="${childId}"]`);
+                        if (btn) { btn.setAttribute("aria-expanded", "false"); btn.textContent = "▸"; }
+                        setChildrenVisibility(childId, false);
+                    }
+                });
+            }
+
+            // Toggle single row
+            tbody.addEventListener("click", e => {
+                const btn = e.target.closest(".toggle-btn");
+                if (!btn || btn.classList.contains("empty")) return;
+
+                const id = btn.dataset.id;
+                const expanded = btn.getAttribute("aria-expanded") === "true";
+
+                if (expanded) {
+                    btn.setAttribute("aria-expanded", "false");
+                    btn.textContent = "▸";
+                    setChildrenVisibility(id, false);
+                } else {
+                    btn.setAttribute("aria-expanded", "true");
+                    btn.textContent = "▾";
+                    const idx = buildIndex();
+                    (idx[id] || []).forEach(cid => {
+                        rowById(cid).classList.remove("hidden");
+                    });
+                }
+            });
+
+            // Expand all
+            document.getElementById("expandAll").addEventListener("click", () => {
+                const rows = [...tbody.querySelectorAll("tr")];
+                rows.forEach(r => {
+                    r.classList.remove("hidden");
+                    const id = r.dataset.id;
+                    const btn = r.querySelector(`.toggle-btn[data-id="${id}"]`);
+                    if (btn && !btn.classList.contains("empty")) {
+                        btn.setAttribute("aria-expanded", "true");
+                        btn.textContent = "▾";
+                    }
+                });
+            });
+
+            // Collapse all
+            document.getElementById("collapseAll").addEventListener("click", () => {
+                const rows = [...tbody.querySelectorAll("tr")];
+                rows.forEach(r => {
+                    if (r.dataset.parent !== "0") r.classList.add("hidden");
+                    const id = r.dataset.id;
+                    const btn = r.querySelector(`.toggle-btn[data-id="${id}"]`);
+                    if (btn && !btn.classList.contains("empty")) {
+                        btn.setAttribute("aria-expanded", "false");
+                        btn.textContent = "▸";
+                    }
+                });
+            });
+
+        })();
+    </script>
+</body>
+
+</html>

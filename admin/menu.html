@@ -1,0 +1,366 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div class="leftArea">
+                <h1 class="logo">
+                    <a href="">체육정보시스템</a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hideEl">주메뉴</h2>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="javascript:goSite('ITR');">체크박스</a></li>
+                        <li date-menu="menu02"><a href="javascript:void(0);">체육인 이력관리</a></li>
+                        <li date-menu="menu03"><a href="javascript:void(0);">증명서발급관리</a></li>
+                        <li date-menu="menu04"><a href="javascript:void(0);">대회관리</a></li>
+                        <li date-menu="menu05"><a href="javascript:void(0);">시스템관리</a></li>
+                    </ul>
+                </nav>
+                <div class="gnb-depth"></div>
+                <p class="privacy">
+                    <a href="https://www.sports.or.kr/home/010902/0000/main.do" title="새창으로열기" target="_blank">
+                        <u><b>개인정보처리방침</b></u>
+                    </a>
+                </p>
+                <div class="sportsLogo">
+                    <a href="https://www.sports.or.kr/" title="새창으로열기" target="_blank"><img src="./img/intrologo.png"
+                            alt="대한체육회" /></a>
+                </div>
+            </div>
+            <!-- e : leftArea -->
+
+            <div class="content">
+                <h3>메뉴 관리</h3>
+                <div class="boardTop mt30">
+                    <p>전체 23개</p>
+                    <button type="button" class="button-type01">대메뉴 추가</button>
+                </div>
+                <div class="boardTableCol">
+                    <table>
+                        <caption>사용자 계정관리 조회목록</caption>
+                        <colgroup>
+                            <col style="width:auto">
+                            <col style="width:100px">
+                            <col style="width:auto">
+                            <col style="width:200px">
+                            <col style="width:200px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">메뉴명</th>
+                                <th scope="col">순서</th>
+                                <th scope="col">링크 주소</th>
+                                <th scope="col">접속 권한</th>
+                                <th scope="col">관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-1 menuBold">스포츠</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>ADMIN</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">축구를 하다</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>12</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">스포츠허브8</span>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">스포츠허브88</span>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">농구</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>16</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-1 menuBold">parent</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-1 menuBold">스포츠 허브3</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>12</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>ADMIN</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">스포츠 허브</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>ADMIN</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">스포츠 허브100</span>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">스포츠 허브33</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-1 menuBold">스포츠 허브2</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>14</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-1 menuBold">스포츠 허브5</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>15</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>ADMIN</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">스포츠 허브6</span>
+                                    <button class="button-type02">하위메뉴 추가</button>
+                                </td>
+                                <td>
+                                    <p>12</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>USER</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="cursor:pointer;">
+                                <td class="menu-name">
+                                    <span class="menu-2">스포츠 허브06</span>
+                                </td>
+                                <td>
+                                    <p>10</p>
+                                </td>
+                                <td>
+                                    <p>https://portal.sports.or.kr/library/dataList.do</p>
+                                </td>
+                                <td>
+                                    <p>ADMIN</p>
+                                </td>
+                                <td>
+                                    <div class="button-row">
+                                        <button class="button-type01">수정</button>
+                                        <button class="button-type02 button-type02-red">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- e : content -->
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

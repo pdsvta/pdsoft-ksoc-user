@@ -1,0 +1,540 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/notify.css" />
+    <link rel="stylesheet" href="./styles/sweetalert2.min.css" />
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div class="leftArea">
+                <h1 class="logo">
+                    <a href="">체육정보시스템</a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hideEl">주메뉴</h2>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li date-menu="menu01" class="gnb-extend">
+                            <a>시설이용〮예약관리</a>
+                            <div id="menu01" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>태릉국제스케이트장 예약현황</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu02" class="gnb-extend">
+                            <a>출결현황〮참여관리</a>
+                            <div id="menu02" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>행복나눔교실 강습신청 현황</a>
+                                    </li>
+                                    <li>
+                                        <a>태릉국제스케이트장 강습신청 현황</a>
+                                    </li>
+                                    <li>
+                                        <a>선수촌 견학신청 현황</a>
+                                    </li>
+                                    <li>
+                                        <a>교육 참석〮이수 현황</a>
+                                    </li>
+                                    <li>
+                                        <a>회의〮행사 참석 현황</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu03" class="gnb-extend">
+                            <a>시도체육회 조직인력관리</a>
+                            <div id="menu03" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>시도체육회 조직인력 등록</a>
+                                    </li>
+                                    <li>
+                                        <a>시도체육회 조직인력 현황조회</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu04" class="gnb-extend">
+                            <a>시스템 관리</a>
+                            <div id="menu04" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>코드관리</a>
+                                    </li>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시판관리</a>
+                                    </li>
+                                    <li>
+                                        <a>콘텐츠관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너관리</a>
+                                    </li>
+                                    <li>
+                                        <a>팝업관리</a>
+                                    </li>
+                                    <li>
+                                        <a>접속현황</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="privacy">
+                    <a href="https://www.sports.or.kr/home/010902/0000/main.do" title="새창으로열기" target="_blank">
+                        <u><b>개인정보처리방침</b></u>
+                    </a>
+                </p>
+                <div class="sportsLogo">
+                    <a href="https://www.sports.or.kr/" title="새창으로열기" target="_blank"><img src="./img/intrologo.png"
+                            alt="대한체육회" /></a>
+                </div>
+            </div>
+            <!-- e : leftArea -->
+
+            <div class="content">
+                <h3>사용자 계정관리</h3>
+                <div class="account-management">
+                    <dl>
+                        <dt>사용자 정보</dt>
+                        <dd>
+                            <label for="searchUserId">사용자 ID</label>
+                            <input type="text" id="searchUserId" name="searchUserId" value="">
+                            <label for="searchUserNm" class="ml50">이름(한글)</label>
+                            <input type="text" id="searchUserNm" name="searchUserNm" value="">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>소속 정보</dt>
+                        <dd>
+                            <label for="searchUserGb">소속 구분</label>
+                            <select id="searchUserGb" name="searchUserGb">
+                                <option value="2">회원종목단체</option>
+                                <option value="3" selected="selected">시도체육회</option>
+                                <option value="4">시도종목단체</option>
+                                <option value="5">시군구체육회</option>
+                            </select>
+
+                            <label for="searchOrgCd" class="ml50">소속 단체</label>
+                            <select id="searchOrgCd" name="searchOrgCd">
+                                <option value="" selected="selected">선택</option>
+                                <option value="2063">한국e스포츠협회</option>
+                                <option value="2052">대한가라테연맹</option>
+                                <option value="2024">대한검도회(사)</option>
+                                <option value="2067">대한게이트볼협회</option>
+                                <option value="2036">(사)대한골프협회</option>
+                                <option value="2070">대한국학기공협회</option>
+                                <option value="2025">대한궁도협회</option>
+                                <option value="2071">대한그라운드골프협회</option>
+                                <option value="2037">대한근대5종연맹(사)</option>
+                                <option value="2013">대한민국농구협회</option>
+                                <option value="2050">대한당구연맹</option>
+                                <option value="2082">대한요가회</option>
+                                <option value="2053">대한민국댄스스포츠연맹</option>
+                                <option value="2059">대한라켓볼협회</option>
+                                <option value="2016">대한럭비협회(사)</option>
+                                <option value="2017">대한레슬링협회</option>
+                                <option value="2031">(사)대한롤러스포츠연맹</option>
+                                <option value="2056">대한루지경기연맹</option>
+                                <option value="2091">대한모터사이클연맹</option>
+                                <option value="2093">대한무에타이협회</option>
+                                <option value="2055">대한바둑협회</option>
+                                <option value="2048">대한바이애슬론연맹(사)</option>
+                                <option value="2014">대한배구협회</option>
+                                <option value="2029">대한배드민턴협회(사)</option>
+                                <option value="2040">(사)대한보디빌딩협회</option>
+                                <option value="2008">대한복싱협회</option>
+                                <option value="2033">대한볼링협회(사)</option>
+                                <option value="2045">대한봅슬레이스켈레톤경기연맹</option>
+                                <option value="2092">한국브리지협회</option>
+                                <option value="2009">대한빙상경기연맹</option>
+                                <option value="2026">대한사격연맹(사)</option>
+                                <option value="2012">대한사이클연맹</option>
+                                <option value="2039">(사)대한산악연맹 </option>
+                                <option value="2094">대한삼보연맹</option>
+                                <option value="2080">대한서핑협회</option>
+                                <option value="2041">대한세팍타크로협회</option>
+                                <option value="2004">대한소프트테니스협회</option>
+                                <option value="2038">대한수상스키·웨이크스포츠협회(사)</option>
+                                <option value="2018">대한수영연맹(사)</option>
+                                <option value="2042">대한수중ㆍ핀수영협회(사)</option>
+                                <option value="2049">대한스쿼시연맹</option>
+                                <option value="2020">대한스키협회(사)</option>
+                                <option value="2021">대한승마협회(사)</option>
+                                <option value="2015">대한씨름협회</option>
+                                <option value="2022">대한아이스하키협회(사)</option>
+                                <option value="2019">대한야구소프트볼협회(야구)(야구)</option>
+                                <option value="2044">대한야구소프트볼협회(소프트볼)(소프트볼)</option>
+                                <option value="2034">대한양궁협회</option>
+                                <option value="2062">대한에어로빅힙합협회(사)</option>
+                                <option value="2007">대한역도연맹(사)</option>
+                                <option value="2054">대한오리엔티어링연맹</option>
+                                <option value="2032">대한요트협회</option>
+                                <option value="2043">대한우슈협회(사)</option>
+                                <option value="2010">대한유도회(사)</option>
+                                <option value="2001">대한육상연맹</option>
+                                <option value="2030">대한조정협회(사)</option>
+                                <option value="2068">대한민국족구협회</option>
+                                <option value="2077">대한주짓수회</option>
+                                <option value="2073">대한민국줄넘기협회</option>
+                                <option value="2081">(사)대한민국줄다리기협회</option>
+                                <option value="2047">대한철인3종협회</option>
+                                <option value="2064">대한체스연맹</option>
+                                <option value="2011">대한체조협회(사)</option>
+                                <option value="2002">대한축구협회</option>
+                                <option value="2098">대한치어리딩협회</option>
+                                <option value="2035">대한카누연맹(사)</option>
+                                <option value="2057">대한카바디협회</option>
+                                <option value="2046">대한컬링연맹</option>
+                                <option value="2079">대한크라쉬연맹</option>
+                                <option value="2061">대한크리켓협회(준)</option>
+                                <option value="2060">대한킥복싱협회</option>
+                                <option value="2005">대한탁구협회</option>
+                                <option value="2028">대한태권도협회(사)</option>
+                                <option value="2051">대한택견회</option>
+                                <option value="2003">대한테니스협회</option>
+                                <option value="2095">대한특공무술중앙회</option>
+                                <option value="2076">대한파워보트연맹</option>
+                                <option value="2072">대한파크골프협회</option>
+                                <option value="2069">대한패러글라이딩협회</option>
+                                <option value="2027">대한펜싱협회(사)</option>
+                                <option value="2074">대한민국플라잉디스크연맹</option>
+                                <option value="2066">대한플로어볼협회</option>
+                                <option value="2075">대한피구연맹</option>
+                                <option value="2023">대한하키협회</option>
+                                <option value="2099">대한한궁협회</option>
+                                <option value="2078">대한민국합기도총협회</option>
+                                <option value="2058">대한항공협회</option>
+                                <option value="2006">대한핸드볼협회</option>
+                            </select>
+
+                            <label for="searchSidoCd" class="ml50">소속 시도</label>
+                            <select id="searchSidoCd" name="searchSidoCd">
+                                <option value="" selected="selected">선택</option>
+                                <option value="01">서울</option>
+                                <option value="02">부산</option>
+                                <option value="03">대구</option>
+                                <option value="04">인천</option>
+                                <option value="05">광주</option>
+                                <option value="06">대전</option>
+                                <option value="07">울산</option>
+                                <option value="50">세종</option>
+                                <option value="08">경기</option>
+                                <option value="09">강원</option>
+                                <option value="10">충북</option>
+                                <option value="11">충남</option>
+                                <option value="12">전북</option>
+                                <option value="13">전남</option>
+                                <option value="14">경북</option>
+                                <option value="15">경남</option>
+                                <option value="16">제주</option>
+                                <option value="18">시도없음</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <dl class="business-status">
+                        <dt>업무상태</dt>
+                        <dd>
+                            <ul class="rdoList">
+                                <li>
+                                    <span>휴면계정 여부</span>
+                                    <input type="radio" name="searchSleepYn" id="searchSleepYnALL" value="" checked="">
+                                    <label for="searchSleepYnALL">전체</label>
+                                    <input type="radio" name="searchSleepYn" id="searchSleepYn1" value="Y">
+                                    <label for="searchSleepYn1">예</label>
+                                    <input type="radio" name="searchSleepYn" id="searchSleepYn2" value="N">
+                                    <label for="searchSleepYn2">아니오</label>
+                                    <input type="radio" name="searchSleepYn" id="searchSleepYn3" value="A">
+                                    <label for="searchSleepYn3">활성화 승인대기</label>
+                                </li>
+                                <li>
+                                    <span>사용 여부</span>
+                                    <input type="radio" name="searchUseYn" id="searchUseYnALL" value="" checked="">
+                                    <label for="searchUseYnALL">전체</label>
+                                    <input type="radio" name="searchUseYn" id="searchUseYn1" value="Y">
+                                    <label for="searchUseYn1">사용</label>
+                                    <input type="radio" name="searchUseYn" id="searchUseYn2" value="N">
+                                    <label for="searchUseYn2">미사용</label>
+                                </li>
+                                <li>
+                                    <span>웹신청 여부</span>
+                                    <input type="radio" name="searchAppYn" id="searchAppYnALL" value="" checked="">
+                                    <label for="searchAppYnALL">전체</label>
+                                    <input type="radio" name="searchAppYn" id="searchAppYn1" value="Y">
+                                    <label for="searchAppYn1">예</label>
+                                    <input type="radio" name="searchAppYn" id="searchAppYn2" value="N">
+                                    <label for="searchAppYn2">아니오</label>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="ba-infor">
+                        <dt>차단 정보</dt>
+                        <dd>
+                            <span>차단 여부</span>
+                            <input type="radio" name="searchBlockYn" id="searchBlockYnALL" value="" checked="">
+                            <label for="searchBlockYnALL">전체</label>
+                            <input type="radio" name="searchBlockYn" id="searchBlockYn2" value="N">
+                            <label for="searchBlockYn2">정상</label>
+                            <input type="radio" name="searchBlockYn" id="searchBlockYn1" value="Y">
+                            <label for="searchBlockYn1">차단</label>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="btnRight">
+                    <button type="button" class="button-type01" id="btn">검색</button>
+                </div>
+
+                <div class="boardTop mt30">
+                    <p>사용자 계정관리 조회목록 494건</p>
+                    <button type="button" class="button-type01" id="btn2">게시판 등록</button>
+                </div>
+
+                <div class="boardTableCol">
+                    <table>
+                        <caption>사용자 계정관리 조회목록</caption>
+                        <colgroup>
+                            <col style="width:60px">
+                            <col style="width:125px">
+                            <col style="width:95px">
+                            <col style="width:auto">
+                            <col style="width:70px">
+                            <col style="width:103px">
+                            <col style="width:108px">
+                            <col style="width:110px">
+                            <col style="width:109px">
+                            <col style="width:147px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">아이디</th>
+                                <th scope="col">이름</th>
+                                <th scope="col">소속단체</th>
+                                <th scope="col">시도</th>
+                                <th scope="col">사용여부</th>
+                                <th scope="col">차단여부</th>
+                                <th scope="col">웹신청여부</th>
+                                <th scope="col">휴면여부</th>
+                                <th scope="col">신청일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 데이터 반복구간 -->
+                            <tr style="cursor:pointer;">
+                                <td>1</td>
+                                <td class="text-left">kihking1</td>
+                                <td class="text-left">감인호</td>
+                                <td class="text-left"></td>
+                                <td class="text-center">경남</td>
+                                <td>
+                                    <span style="color:#0000ff">사용</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">정상</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">예</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">아니오</span>
+                                </td>
+                                <td>2023.03.17</td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>2</td>
+                                <td class="text-left">ksupply</td>
+                                <td class="text-left">강문석</td>
+                                <td class="text-left"></td>
+                                <td class="text-center">경북</td>
+                                <td>
+                                    <span style="color:#0000ff">사용</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">정상</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">예</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">아니오</span>
+                                </td>
+                                <td>2023.07.19</td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>3</td>
+                                <td class="text-left">yjk3880</td>
+                                <td class="text-left">강윤정</td>
+                                <td class="text-left"></td>
+                                <td class="text-center">서울</td>
+                                <td>
+                                    <span style="color:#ff0000">미사용</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">정상</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">예</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">아니오</span>
+                                </td>
+                                <td>2023.02.28</td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>4</td>
+                                <td class="text-left">ruble78</td>
+                                <td class="text-left">강은미</td>
+                                <td class="text-left"></td>
+                                <td class="text-center">대구</td>
+                                <td>
+                                    <span style="color:#0000ff">사용</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">정상</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">예</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">아니오</span>
+                                </td>
+                                <td>2024.02.20</td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>5</td>
+                                <td class="text-left">insunssc</td>
+                                <td class="text-left">강인선</td>
+                                <td class="text-left"></td>
+                                <td class="text-center">서울</td>
+                                <td>
+                                    <span style="color:#0000ff">사용</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">정상</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">예</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">아니오</span>
+                                </td>
+                                <td>2023.06.19</td>
+                            </tr>
+
+                            <tr style="cursor:pointer;">
+                                <td>6</td>
+                                <td class="text-left">jwkang</td>
+                                <td class="text-left">강장원</td>
+                                <td class="text-left"></td>
+                                <td class="text-center">광주</td>
+                                <td>
+                                    <span style="color:#0000ff">사용</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">정상</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">예</span>
+                                </td>
+                                <td>
+                                    <span style="color:#0000ff">아니오</span>
+                                </td>
+                                <td>2021.07.22</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="controller-wrap">
+                    <div class="wrap-pagination">
+                        <div class="pagination-arrow icon icon-start disable"></div>
+                        <div class="pagination-arrow icon icon-prev disable"></div>
+                        <ul class="pagination-number">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                        <div class="pagination-arrow icon icon-next"></div>
+                        <div class="pagination-arrow icon icon-end"></div>
+                    </div>
+
+                    <div class="options-container">
+                        <label for="size">10개씩 보기</label>
+                        <select id="size" name="size" aria-placeholder="">
+                            <option value="10">10개씩 보기</option>
+                            <option value="20">20개씩 보기</option>
+                            <option value="30">30개씩 보기</option>
+                            <option value="40">40개씩 보기</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- e : contents -->
+        </div>
+    </div>
+    <div class="modal-wrap">
+        <div class="modal modal-alert">
+            <div class="modal-header">
+                <p>팝업명</p>
+                <button type="button" class="button-close" aria-label="닫기" onclick="closeModal()"></button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-text">정말로 삭제하시겠습니까?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button-small button-type02 btn-cancel" onclick="closeModal()">취소</button>
+                <button type="button" class="button-small button-type01 btn-confirm">확인</button>
+            </div>
+        </div>
+    </div>
+    <div class="noti">
+        <button type="button" class="button-close" aria-label="닫기" onclick="closeNoti()"></button>
+        <p class="noti-text">텍스트를 입력해 주세요.</p>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/notify.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script>
+        const btn = document.querySelector('#btn')
+        const btn2 = document.querySelector('#btn2')
+
+        btn.addEventListener('click', () => {
+            notify('성공', '정상적으로 등록되었습니다.', 'info')
+        })
+
+        btn2.addEventListener('click', () => {
+            Swal.fire({
+                title: "삭제하시겠습니까?",
+                showCancelButton: true,
+                confirmButtonText: "삭제",
+                cancelButtonText: `취소`
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire("Saved!", "");
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
