@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://pis.sports.or.kr/spl/program/list.do -->
+<html lang="ko"><!-- 기본 경로 -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/component.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/chartjs-plugin-datalabels.js"></script>
+    <script src="./js/common_util.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <script src="./js/datepicker.en.js"></script>
+
+    <title>선수지도자심판관리시스템</title>
+</head>
+<!-- 메인경로 -->
+
+<body>
+    <div class="wrap">
+        <div class="container gamer clb">
+
+
+            <div class="content header">
+                <div class="header-nav">
+                    <!-- <h1>
+                        <a href="https://pis.sports.or.kr/spl/main.do">
+                            <img src="./img/logo-gamer.svg" alt="선수지도자심판관리시스템" width="235" height="40">
+                        </a>
+                    </h1> -->
+                    <div class="ua506001__title">
+                        <h2>조직인력관리</h2>
+                    </div>
+                    <div class="gnb">
+                        <ul class="clb">
+
+                            <li class=""><a id="ALL" role="button"
+                                    onclick="javascript:changeMenu('ALL');showLoadingLayer();">Home</a></li>
+
+                            <li class="is_active"><a id="SYS" role="button"
+                                    onclick="javascript:changeMenu('SYS');showLoadingLayer();">시도체육회 조직·인력현황</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="subnav">
+                        <ul class="clb">
+                            <!-- [D] new마크 newMark 클래스 추가 -->
+
+                            <li class="newMark"><a href="javascript:openOnlineManual('SYS_201');">화면 도움말</a>
+                            </li>
+                            <li>화면ID : <span class="font-roboto">SYS_201</span></li>
+                            <li><a href="javascript:movePis()">체육정보시스템</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-login clb">
+                    <div class="user clb">
+                        <p class="user-name">
+                            <span>조현종</span>
+
+                        </p>
+                        <p class="user-department">
+                            <span>대한체육회</span>
+
+                        </p>
+                        <div class="login-btn">
+                            <a href="javascript:confirmLogout()">로그아웃</a>
+                        </div>
+                    </div>
+                    <div class="login clb">
+                        <div class="login-timer clb">
+                            <span class="font-roboto font-b" id="remainTimeText" style="">28:40</span>
+                        </div>
+                        <div class="login-btn">
+                            <a href="javascript:renewTimeout();">로그인 연장</a>
+                        </div>
+                    </div>
+                    <div class="callnum">
+                        <i class="icon icon-call"></i>
+                        <span class="font-roboto font-b">02-2144-8141</span>
+                    </div>
+                </div>
+            </div><!-- content header -->
+
+
+
+            <form name="MoveForm" method="post" action="https://pis.sports.or.kr/spl/main.do">
+                <input type="hidden" name="menuGb" value="SYS" autocomplete="off">
+            </form>
+
+            <div class="content clb">
+
+
+
+                <div class="sidenav managenav">
+                    <div class="openbtn">
+                        <button type="button">시스템관리 열기</button>
+                    </div>
+                    <p class="title">
+                        <i class="icon icon-monitor"></i>
+                        HOME
+                    </p>
+                    <ul class="managemenu">
+
+                        <li>
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0005"><i
+                                    class="icon icon-manage--gamer"></i>공지사항관리</a>
+                        </li>
+
+                        <!-- <li class="">
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0008"><i
+                                    class="icon icon-manage--gamer"></i>프로그램관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0009" class="is_active" "=""><a href="
+                                    https://pis.sports.or.kr/spl/program/list.do"
+                                    onclick="javascript:showLoadingLayer();">프로그램관리</a></li>
+                            </ul>
+                        </li> -->
+
+                    </ul>
+                </div>
+
+
+                <!-- header end -->
+                <!-- "gamer.application.singe.css" -->
+                <div class="conarea openleft" style="padding-left: 320px;">
+                    <div class="pagewrap clb">
+                        <h2>시도체육회 조직인력 현황</h2>
+                        <ul class="pagenav clb">
+                            <li><a href="https://pis.sports.or.kr/spl/program/list.do#">Home</a></li>
+                            <li><a href="https://pis.sports.or.kr/spl/program/list.do#">시스템관리</a></li>
+                            <li><a href="https://pis.sports.or.kr/spl/program/list.do#">프로그램관리</a></li>
+                            <li><a href="https://pis.sports.or.kr/spl/program/list.do#">프로그램관리</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-ua-506-002">
+                        <div class="ua506002">
+                            <div class="ua506002__groups">
+                                <div class="ua506002__filter">
+                                    <label for="">시도 체육회</label>
+                                    <select id="" name="">
+                                        <option value="">전체</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                    <button type="button">조회</button>
+                                </div>
+                                <div class="ua506002__btns">
+                                    <button type="button">엑셀양식 다운로드</button>
+                                    <button type="button" id="ua506002-btn-export">목록 다운로드</button>
+                                </div>
+                            </div>
+                            <div class="ua506002__total">
+                                <p>조회결과 : 324 명</p>
+
+                                <div class="ua506002__total-container">
+                                    <select id="size" name="size" aria-placeholder="">
+                                        <option value="15">목록 수 : 15</option>
+                                        <option value="30">목록 수 : 30</option>
+                                        <option value="50">목록 수 : 50</option>
+                                        <option value="100">목록 수 : 100</option>
+                                    </select>   
+                                </div>
+                            </div>
+                            <div class="ua601002__table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>번호</th>
+                                            <th>이름 </th>
+                                            <th>시도</th>
+                                            <th>연락처</th>
+                                            <th>이메일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>진명기</td>
+                                            <td>서울</td>
+                                            <td>0228995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>진달래</td>
+                                            <td>서울</td>
+                                            <td>0278948104</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>진지홍</td>
+                                            <td>서울</td>
+                                            <td>0328995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>진희원</td>
+                                            <td>경기</td>
+                                            <td>0328995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>차영일</td>
+                                            <td>경기</td>
+                                            <td>0312995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>차재원</td>
+                                            <td>경기</td>
+                                            <td>0317898104</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>차현지</td>
+                                            <td>경기</td>
+                                            <td>0318995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>차은지</td>
+                                            <td>인천</td>
+                                            <td>0328995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>차명식</td>
+                                            <td>인천</td>
+                                            <td>0228995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>차명선</td>
+                                            <td>대구</td>
+                                            <td>05178948104</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>최대현</td>
+                                            <td>경기</td>
+                                            <td>0328995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>최규호</td>
+                                            <td>울산</td>
+                                            <td>0328995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>최병기</td>
+                                            <td>강원</td>
+                                            <td>0328995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>최상욱</td>
+                                            <td>대구</td>
+                                            <td>0328995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>최수민</td>
+                                            <td>대전</td>
+                                            <td>0328995609</td>
+                                            <td><a href="#">abc@hanmail.net</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="wrap-pagination">
+                                <div class="pagination-arrow icon icon-start disable"></div>
+                                <div class="pagination-arrow icon icon-prev disable"></div>
+                                <ul class="pagination-number">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                                <div class="pagination-arrow icon icon-next"></div>
+                                <div class="pagination-arrow icon icon-end"></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="sidenav shortnav rightfold">
+                    <div class="openbtn">
+                        <button type="button">바로가기 열기</button>
+                    </div>
+                    <p class="title">
+                        <i class="icon icon-monitor"></i>
+                        바로가기
+                    </p>
+                    <ul>
+                        <li><a href="javascript:goSite('ITR')">체육단체인트라넷</a></li>
+                        <li><a href="https://pis.sports.or.kr/spl/docs/man_03.pdf" target="balnk">시스템메뉴얼</a></li>
+                        <li><a href="javascript:moveChatbot()">챗봇</a></li>
+                        <li><a href="https://113366.com/jinjin" target="blank">PC 원격제어</a></li>
+                    </ul>
+                    <img src="./img/logo_v.svg" alt="대한체육회" width="60" height="73">
+                </div>
+
+            </div>
+            <!-- 플로팅 버튼 -->
+            <div class="floating">
+
+                <a href="javascript:moveChatbot();" title="새창으로 열기">알리</a>
+            </div>
+
+        </div>
+        <div class="ua506002-popup" id="ua506002-popup">
+        <div class="ua506002-popup-overlay"></div>
+        <div class="ua506002-popup-content">
+            <button class="ua506002-popup-close" id="ua506002-btn-close">✕</button>
+            <h3>시도체육회 조직도 목록 엑셀 업로드</h3>
+            <div class="ua506002-upload-box">
+            <label>엑셀 업로드</label>
+            <div class="ua506002-upload-input">
+                <input type="text" id="ua506002-file-name"/>
+                <label class="ua506002-file-btn">
+                파일찾기
+                <input type="file" id="ua506002-file-input" hidden />
+                </label>
+            </div>
+            </div>
+            <button class="ua506002-btn-save">저장하기</button>
+        </div>
+        </div>
+    </div>
+    <script src="./js/common.js"></script>
+    <script src="./js/gamer.js"></script>
+
+    <script>
+        const ua506002BtnExport = document.getElementById("ua506002-btn-export");
+        const ua506002Popup = document.getElementById("ua506002-popup");
+        const ua506002BtnClose = document.getElementById("ua506002-btn-close");
+        const ua506002Overlay = document.querySelector(".ua506002-popup-overlay");
+
+        ua506002BtnExport.addEventListener("click", () => {
+        ua506002Popup.classList.add("ua506002-active");
+        });
+
+        ua506002BtnClose.addEventListener("click", () => {
+        ua506002Popup.classList.remove("ua506002-active");
+        });
+
+        ua506002Overlay.addEventListener("click", () => {
+        ua506002Popup.classList.remove("ua506002-active");
+        });
+    </script>
+
+</body>
+
+</html>

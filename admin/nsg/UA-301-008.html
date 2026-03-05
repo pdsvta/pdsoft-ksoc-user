@@ -1,0 +1,1172 @@
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/component.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/chartjs-plugin-datalabels.js"></script>
+    <script src="./js/common_util.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <script src="./js/datepicker.en.js"></script>
+
+    <title>출전비지급 총괄현황</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container gamer clb">
+            <div class="content header">
+                <div class="header-nav">
+                    <h1>
+                        <a href="https://pis.sports.or.kr/spl/main.do">
+                            <img src="./img/logo-gamer.svg" alt="선수지도자심판관리시스템" width="235" height="40">
+                        </a>
+                    </h1>
+                    <div class="gnb">
+                        <ul class="clb">
+
+
+
+                            <li class=""><a id="ALL" role="button"
+                                    onclick="javascript:changeMenu('ALL');showLoadingLayer();">Home</a></li>
+
+                            <li class="is_active"><a id="SYS" role="button"
+                                    onclick="javascript:changeMenu('SYS');showLoadingLayer();">시스템관리</a></li>
+
+                            <li class=""><a id="APP" role="button"
+                                    onclick="javascript:changeMenu('APP');showLoadingLayer();">신청관리</a></li>
+
+                            <li class=""><a id="SPL" role="button"
+                                    onclick="javascript:changeMenu('SPL');showLoadingLayer();">등록관리</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="subnav">
+                        <ul class="clb">
+                            <!-- [D] new마크 newMark 클래스 추가 -->
+
+                            <li class="newMark"><a href="javascript:openOnlineManual('SYS_201');">화면 도움말</a>
+                            </li>
+                            <li>화면ID : <span class="font-roboto">SYS_201</span></li>
+                            <li><a href="javascript:movePis()">체육정보시스템</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-login clb">
+                    <div class="user clb">
+                        <p class="user-name">
+                            <span>조현종</span>
+
+                        </p>
+                        <p class="user-department">
+                            <span>대한체육회</span>
+
+                        </p>
+                        <div class="login-btn">
+                            <a href="javascript:confirmLogout()">로그아웃</a>
+                        </div>
+                    </div>
+                    <div class="login clb">
+                        <div class="login-timer clb">
+                            <span class="font-roboto font-b" id="remainTimeText" style="">28:40</span>
+                        </div>
+                        <div class="login-btn">
+                            <a href="javascript:renewTimeout();">로그인 연장</a>
+                        </div>
+                    </div>
+                    <div class="callnum">
+                        <i class="icon icon-call"></i>
+                        <span class="font-roboto font-b">02-2144-8141</span>
+                    </div>
+                </div>
+            </div><!-- content header -->
+
+            <form name="MoveForm" method="post" action="https://pis.sports.or.kr/spl/main.do">
+                <input type="hidden" name="menuGb" value="SYS" autocomplete="off">
+            </form>
+
+            <div class="content clb">
+                <div class="sidenav managenav">
+                    <div class="openbtn">
+                        <button type="button">시스템관리 열기</button>
+                    </div>
+                    <p class="title">
+                        <i class="icon icon-monitor"></i>
+                        시스템관리
+                    </p>
+                    <ul class="managemenu">
+
+                        <li>
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0005"><i
+                                    class="icon icon-manage--gamer"></i>코드관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0006" "=""><a href=" https://pis.sports.or.kr/spl/code/list.do"
+                                    onclick="javascript:showLoadingLayer();">공통코드관리</a></li>
+                                <li id="0025" "=""><a href=" https://pis.sports.or.kr/spl/code/teamCodeList.do"
+                                    onclick="javascript:showLoadingLayer();">학교팀코드관리</a></li>
+                                <li id="0076" "=""><a href=" https://pis.sports.or.kr/spl/code/eduTeamCodeList.do"
+                                    onclick="javascript:showLoadingLayer();">교육부학교코드관리</a></li>
+                                <li id="0077" "=""><a href=" https://pis.sports.or.kr/spl/code/linkSchoolList.do"
+                                    onclick="javascript:showLoadingLayer();">학교팀코드연계</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="">
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0008"><i
+                                    class="icon icon-manage--gamer"></i>프로그램관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0009" class="is_active" "=""><a href="
+                                    https://pis.sports.or.kr/spl/program/list.do"
+                                    onclick="javascript:showLoadingLayer();">프로그램관리</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0010"><i
+                                    class="icon icon-manage--gamer"></i>사용자관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0011" "=""><a href=" https://pis.sports.or.kr/spl/user/list.do"
+                                    onclick="javascript:showLoadingLayer();">사용자관리</a></li>
+                                <li id="0012" "=""><a href=" https://pis.sports.or.kr/spl/user/histList.do"
+                                    onclick="javascript:showLoadingLayer();">사용자이력조회</a></li>
+                                <li id="0080" "=""><a href=" https://pis.sports.or.kr/spl/user/userLoglist.do"
+                                    onclick="javascript:showLoadingLayer();">개인정보 조회기록</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="conarea openleft" style="padding-left: 320px;">
+                    <h3>대회명 임원 출전비 등록 (시도체육회명)</h3>
+
+                    <div class="boardTableCol">
+                        <table class="tour301001__table">
+                            <colgroup>
+                                <col style="width:60px">
+                                <col style="width:60px">
+                                <col style="width:40px">
+                                <col style="width:40px">
+                                <col style="width:40px">
+                                <col style="width:40px">
+                                <col style="width:40px">
+                                <col style="width:40px">
+                                <col style="width:40px">
+                                <col style="width:80px">
+                                <col style="width:40px">
+                                <col style="width:50px">
+                                <col style="width:50px">
+                                <col style="width:50px">
+                                <col style="width:60px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">종   목</th>
+                                    <th rowspan="3">부  별</th>
+                                    <th rowspan="3">박수</th>
+                                    <th rowspan="3">일수</th>
+
+                                    <th colspan="3">임 원</th>
+
+                                    <th rowspan="3">소계</th>
+                                    <th rowspan="3">이중<br>중복자</th>
+                                    <th rowspan="3">이중<br>중복내용</th>
+                                    <th rowspan="3">최종<br>임원수</th>
+
+                                    <th rowspan="2">숙박비</th>
+                                    <th rowspan="2">식비</th>
+                                    <th rowspan="2">교통비</th>
+
+                                    <th rowspan="3">출전비<br>합계</th>
+                                </tr>
+
+                                <tr>
+                                    <th rowspan="2">각부 <br> 임원</th>
+                                    <th colspan="2">경기임원</th>
+                                </tr>
+
+                                <tr>
+                                    <th>초등</th>
+                                    <th>중등</th>
+
+                                    <th rowspan="1">40,000</th>
+                                    <th rowspan="1">20,000</th>
+                                    <th rowspan="1">20,000</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 데이터 반복구간 -->
+                                <tr>
+                                    <td>육상</td>
+                                    <td>전종별</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>2</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>2</td>
+                                    <td class="text-right">160,000</td>
+                                    <td class="text-right">120,000</td>
+                                    <td class="text-right">40,000</td>
+                                    <td class="text-right">320,000</td>
+                                </tr>                         
+                                <tr>
+                                    <td rowspan="2">수영</td>
+                                    <td>경영</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td class="text-right">160,000</td>
+                                    <td class="text-right">1,000,000</td>
+                                    <td class="text-right">200,000</td>
+                                    <td class="text-right">2,800,000</td>
+                                </tr>
+                                <tr>
+                                    <td>다이빙</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr> 
+                                <tr>
+                                    <td>축구</td>
+                                    <td>전종별</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="6" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>12</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>12</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>야구</td>
+                                    <td>남12세/남15세</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="6" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>소프트볼</td>
+                                    <td>여15세</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>1</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>테니스</td>
+                                    <td>전종별</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>12</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>12</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>소프트테니스</td>
+                                    <td>전종별</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>농구</td>
+                                    <td>전종별</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>12</td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="정현욱" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>11</td>
+                                    <td class="text-right">2,200,000</td>
+                                    <td class="text-right">1,320,000</td>
+                                    <td class="text-right">220,000</td>
+                                    <td class="text-right">3,740,000</td>
+                                </tr>
+                                <tr>
+                                    <td>배구</td>
+                                    <td>전종별</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>9</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>9</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>탁구</td>
+                                    <td>전종별</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>핸드볼</td>
+                                    <td>전종별</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="6" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>14</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>14</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>럭비</td>
+                                    <td>15세이하</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>
+                                        <input type="text" placeholder="5" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>7</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>7</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>사이클</td>
+                                    <td>15세이하</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>7</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>7</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>복싱</td>
+                                    <td>15세이하</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>레슬링</td>
+                                    <td>15세이하</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>
+                                        <input type="text" placeholder="6" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>10</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>역도</td>
+                                    <td>15세이하</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>5</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>5</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">씨름</td>
+                                    <td rowspan="2">전종별</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="11" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>13</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>13</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>1</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>
+                                <tr>
+                                    <td>배드민턴</td>
+                                    <td>전종별</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>9</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>9</td>
+                                    <td class="text-right">1,440,000</td>
+                                    <td class="text-right">900,000</td>
+                                    <td class="text-right">180,000</td>
+                                    <td class="text-right">2,520,000</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>태권도</td>
+                                    <td>전종별</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>
+                                        <input type="text" placeholder="5" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>11</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>11</td>
+                                    <td class="text-right">1,320,000</td>
+                                    <td class="text-right">880,000</td>
+                                    <td class="text-right">220,000</td>
+                                    <td class="text-right">2,420,000</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>근대3종</td>
+                                    <td>15세이하</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="7" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>11</td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="김종주, 유창용" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>9</td>
+                                    <td class="text-right">720,000</td>
+                                    <td class="text-right">540,000</td>
+                                    <td class="text-right">180,000</td>
+                                    <td class="text-right">1,440,000</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>롤러</td>
+                                    <td>전종별</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>카누</td>
+                                    <td>15세이하</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>3</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>조정</td>
+                                    <td>15세이하</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>0</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>볼링</td>
+                                    <td>15세이하</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>요트</td>
+                                    <td>15세이하</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>4</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>4</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>철인3종</td>
+                                    <td>15세이하</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="박대영" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>5</td>
+                                    <td class="text-right">400,000</td>
+                                    <td class="text-right">300,000</td>
+                                    <td class="text-right">100,000</td>
+                                    <td class="text-right">800,000</td>
+                                </tr>                                               
+                                <tr>
+                                    <td>골프</td>
+                                    <td>전종별</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>8</td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="황형준" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>7</td>
+                                    <td class="text-right">560,000</td>
+                                    <td class="text-right">420,000</td>
+                                    <td class="text-right">140,000</td>
+                                    <td class="text-right">1,120,000</td>
+                                </tr> 
+                                <tr>
+                                    <td>바둑</td>
+                                    <td>전종별</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="2" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>8</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>8</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                              
+                                <tr>
+                                    <td>승마</td>
+                                    <td>15세이하</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="3" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="0" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>3</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                              
+                                <tr>
+                                    <td>에어로빅</td>
+                                    <td>전종별</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>
+                                        <input type="text" placeholder="4" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="1" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="" class="tour301008__itemTableInput">
+                                    </td>
+                                    <td>6</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                    <td class="text-right">0</td>
+                                </tr>                                              
+                                <tr>
+                                    <th colspan="2">합계</th>
+                                    <th>136</th>
+                                    <th>181</th>
+                                    <th>167</th>
+                                    <th>64</th>
+                                    <th>110</th>
+                                    <th>341</th>
+                                    <th>5</th>
+                                    <th></th>
+                                    <th>336</th>
+                                    <th class="text-right">6,800,000</th>
+                                    <th class="text-right">5,480,000</th>
+                                    <th class="text-right">1,280,000</th>
+                                    <th class="text-right">15,160,000</th>
+                                </tr>                                               
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="boardTop mt30">
+                        <p></p>
+                        <div>
+                            <button type="button" class="button-type01 tour301004__btn2" onclick="openModal()">취소</button>
+                            <button type="button" class="button-type01 tour301004__btn1" onclick="openModal()">등록</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidenav shortnav rightfold">
+                    <div class="openbtn">
+                        <button type="button">바로가기 열기</button>
+                    </div>
+                    <p class="title">
+                        <i class="icon icon-monitor"></i>
+                        바로가기
+                    </p>
+                    <ul>
+                        <li><a href="javascript:goSite('ITR')">체육단체인트라넷</a></li>
+                        <li><a href="https://pis.sports.or.kr/spl/docs/man_03.pdf" target="balnk">시스템메뉴얼</a></li>
+                        <li><a href="javascript:moveChatbot()">챗봇</a></li>
+                        <li><a href="https://113366.com/jinjin" target="blank">PC 원격제어</a></li>
+                    </ul>
+                    <img src="./img/logo_v.svg" alt="대한체육회" width="60" height="73">
+                </div>
+            </div>
+
+            <!-- 플로팅 버튼 -->
+            <div class="floating">
+
+                <a href="javascript:moveChatbot();" title="새창으로 열기">알리</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/gamer.js"></script>
+    <script>
+        // jQuery: thêm vào sau khi DOM sẵn sàng
+        $(function () {
+        const $rows = $('.boardTableCol tbody tr');
+
+        // mouseenter / mouseleave cho mỗi row
+        $rows.on('mouseenter', function () {
+            const $thisRow = $(this);
+            const rowIndex = $rows.index($thisRow); // 0-based index within tbody
+
+            // highlight chính hàng đang hover
+            $thisRow.addClass('hover-row');
+
+            // tìm tất cả td có rowspan trong cùng tbody
+            $('.boardTableCol tbody td[rowspan]').each(function () {
+            const $td = $(this);
+            const $ownerRow = $td.closest('tr');
+            const ownerIndex = $rows.index($ownerRow);
+            const span = parseInt($td.attr('rowspan'), 10) || 1;
+
+            // nếu hàng hiện tại nằm trong khoảng ownerIndex .. ownerIndex + span - 1
+            if (rowIndex >= ownerIndex && rowIndex <= ownerIndex + span - 1) {
+                // đánh dấu td này để hiện như hover
+                $td.addClass('hover-join');
+            }
+            });
+        });
+
+        $rows.on('mouseleave', function () {
+            // remove all hover classes
+            $rows.removeClass('hover-row');
+            $('.boardTableCol tbody td.hover-join').removeClass('hover-join');
+        });
+        });
+    </script>
+</body>
+
+</html>

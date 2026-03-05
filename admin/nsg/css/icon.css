@@ -1,0 +1,222 @@
+i.icon {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+i.icon-triangle--blue, i.icon-triangle--line, i.icon-star--line, i.icon-star--blue, i.icon-ccircle, i.icon-circle--line, i.icon-circle--blue, i.icon-diamond, i.icon-triangle, i.icon-close--red, i.icon-circle, i.icon-x, i.icon-download_white, i.icon-point, i.icon-upload, i.icon-file, i.icon-manage--judgment, i.icon-manage--leader, i.icon-manage--team, i.icon-manage--gameradd, i.icon-manage--gamer, i.icon-send, i.icon-notice, i.icon-document, i.icon-application, i.icon-monitor, i.icon-call, i.icon-setting, i.icon-closebtn, i.icon-arrow--s {
+  width: 27px;
+  height: 27px;
+}
+i.icon-plus, i.icon-download, i.icon-video, i.icon-player, i.icon-gamer, i.icon-crape, i.icon-complain, i.icon-chat, i.icon-certification, i.icon-carth, i.icon-helpdesk, i.icon-menuClose, i.icon-menuAll, i.icon-clipbtn {
+  width: 43px;
+  height: 43px;
+}
+i.icon-cirarrow--w, i.icon-cirarrow {
+  width: 100%;
+  height: 100%;
+}
+
+i.icon {
+  display: inline-block;
+  font-size: 0;
+}
+i.icon-s {
+  width: 27px;
+  height: 27px;
+}
+i.icon-m {
+  width: 43px;
+  height: 43px;
+}
+i.icon-full {
+  width: 100%;
+  height: 100%;
+}
+i.icon-arrow {
+  width: 10px;
+  height: 8px;
+  align-items: center;
+  background-image: url("../img/common/arrow-s.svg");
+}
+i.icon-arrow--s.is_active {
+  background-image: url("../img/common/arrow-s-active.svg");
+}
+i.icon-arrow-com {
+  width: 16px;
+  height: 100%;
+  background-image: url("../img/common/arrow-com-b.svg");
+}
+i.icon-arrow-com.is_hover, i.icon-arrow-com.is_active {
+  background-image: url("../img/common/arrow-com-w.svg");
+}
+i.icon-arrow-com.error {
+  background-image: url("../img/common/arrow-com-o.svg");
+}
+i.icon-arrow-round {
+  width: 11px;
+  height: 7px;
+  background-image: url("../img/common/arrow-round.svg");
+}
+i.icon-arrow-double {
+  width: 10px;
+  height: 10px;
+  align-items: center;
+  background-image: url("../img/common/arrow-double.svg");
+}
+i.icon-closebtn {
+  background-image: url("../img/common/closebtn.svg");
+}
+i.icon-clipbtn {
+  background-image: url("../img/common/clipbtn.svg");
+}
+i.icon-cirarrow {
+  min-width: 24px;
+  min-height: 24px;
+  background-image: url("../img/common/arrow-circle-b.svg");
+  transform: translateY(1px);
+}
+i.icon-cirarrow--right {
+  transform: translateY(1px) rotate(180deg);
+}
+i.icon-cirarrow--w {
+  background-image: url("../img/common/arrow-circle-w.svg");
+}
+i.icon-setting {
+  background-image: url("../img/common/setting.svg");
+}
+i.icon-delete--circle {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/common/delete-circle.svg");
+}
+i.icon-clock {
+  width: 22px;
+  height: 22px;
+  background: url("../img/dashboard/icon_clock.svg");
+}
+i.icon-menuAll {
+  background-image: url("../img/dashboard/menu.svg");
+}
+i.icon-menuClose {
+  background-image: url("../img/dashboard/menu_close.svg");
+}
+i.icon-call {
+  background-image: url("../img/gamer/icon-call.svg");
+}
+i.icon-monitor {
+  background-image: url("../img/gamer/icon-monitor.svg");
+}
+i.icon-noticebig {
+  width: 40px;
+  height: 44px;
+  background-image: url("../img/dashboard/icon_notice.svg");
+}
+i.icon-application {
+  background-image: url("../img/dashboard/icon_my_application.svg");
+}
+i.icon-document {
+  background-image: url("../img/dashboard/icon_my_document.svg");
+}
+i.icon-notice {
+  background-image: url("../img/dashboard/icon_my_notice.svg");
+}
+i.icon-send {
+  background-image: url("../img/dashboard/icon_my_send.svg");
+}
+i.icon-helpdesk {
+  background-image: url("../img/dashboard/icon_helpdesk.svg");
+}
+i.icon-carth {
+  background-image: url("../img/dashboard/icon_carth.svg");
+}
+i.icon-certification {
+  background-image: url("../img/dashboard/icon_certification.svg");
+}
+i.icon-chat {
+  background-image: url("../img/dashboard/icon_chat.svg");
+}
+i.icon-complain {
+  background-image: url("../img/dashboard/icon_complain.svg");
+}
+i.icon-crape {
+  background-image: url("../img/dashboard/icon_crape.svg");
+}
+i.icon-gamer {
+  background-image: url("../img/dashboard/icon_gamer.svg");
+}
+i.icon-player {
+  background-image: url("../img/dashboard/icon_player.svg");
+}
+i.icon-video {
+  background-image: url("../img/dashboard/icon_video.svg");
+}
+i.icon-manage--gamer {
+  background-image: url("../img/gamer/icon-manage-gamer.svg");
+}
+i.icon-manage--gameradd {
+  background-image: url("../img/gamer/icon-manage-gameradd.svg");
+}
+i.icon-manage--team {
+  background-image: url("../img/gamer/icon-manage-team.svg");
+}
+i.icon-manage--leader {
+  background-image: url("../img/gamer/icon-manage-leader.svg");
+}
+i.icon-manage--judgment {
+  background-image: url("../img/gamer/icon-manage-judgment.svg");
+}
+i.icon-download {
+  background-image: url("../img/gamer/icon-donwload.svg");
+}
+i.icon-plus {
+  background-image: url("../img/gamer/icon-plus.svg");
+}
+i.icon-file {
+  background-image: url("../img/gamer/icon-file.svg");
+}
+i.icon-upload {
+  background-image: url("../img/gamer/icon-upload.svg");
+}
+i.icon-point {
+  background-image: url("../img/gamer/icon-point.svg");
+}
+i.icon-download_white {
+  background-image: url("../img/gamer/icon-download_white.svg");
+}
+i.icon-x {
+  background-image: url("../img/gamer/icon-x.svg");
+}
+i.icon-circle {
+  background-image: url("../img/gamer/icon-circle.svg");
+}
+i.icon-close--red {
+  background-image: url("../img/gamer/icon-close-red.svg");
+}
+i.icon-triangle {
+  background-image: url("../img/gamer/icon-triangle.svg");
+}
+i.icon-diamond {
+  background-image: url("../img/gamer/icon-diamond.svg");
+}
+i.icon-circle--blue {
+  background-image: url("../img/gamer/icon-blue-circle.svg");
+}
+i.icon-circle--line {
+  background-image: url("../img/gamer/icon-circle-line.svg");
+}
+i.icon-ccircle {
+  background-image: url("../img/gamer/icon-ccircle.svg");
+}
+i.icon-star--blue {
+  background-image: url("../img/gamer/icon-star-blue.svg");
+}
+i.icon-star--line {
+  background-image: url("../img/gamer/icon-star-line.svg");
+}
+i.icon-triangle--line {
+  background-image: url("../img/gamer/icon-triangle-line.svg");
+}
+i.icon-triangle--blue {
+  background-image: url("../img/gamer/icon-triangle-blue.svg");
+}

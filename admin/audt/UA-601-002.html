@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://pis.sports.or.kr/spl/program/list.do -->
+<html lang="ko"><!-- 기본 경로 -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/component.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/chartjs-plugin-datalabels.js"></script>
+    <script src="./js/common_util.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <script src="./js/datepicker.en.js"></script>
+
+    <title>선수지도자심판관리시스템</title>
+</head>
+<!-- 메인경로 -->
+
+<body>
+    <div class="wrap">
+        <div class="container gamer clb">
+
+
+            <div class="content header">
+                <div class="header-nav">
+                    <h1>
+                        <a href="https://pis.sports.or.kr/spl/main.do">
+                            <img src="./img/logo-gamer.svg" alt="선수지도자심판관리시스템" width="235" height="40">
+                        </a>
+                    </h1>
+                    <div class="gnb">
+                        <ul class="clb">
+
+
+
+                            <li class=""><a id="ALL" role="button"
+                                    onclick="javascript:changeMenu('ALL');showLoadingLayer();">Home</a></li>
+
+                            <li class="is_active"><a id="SYS" role="button"
+                                    onclick="javascript:changeMenu('SYS');showLoadingLayer();">시스템관리</a></li>
+
+                            <li class=""><a id="APP" role="button"
+                                    onclick="javascript:changeMenu('APP');showLoadingLayer();">신청관리</a></li>
+
+                            <li class=""><a id="SPL" role="button"
+                                    onclick="javascript:changeMenu('SPL');showLoadingLayer();">등록관리</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="subnav">
+                        <ul class="clb">
+                            <!-- [D] new마크 newMark 클래스 추가 -->
+
+                            <li class="newMark"><a href="javascript:openOnlineManual('SYS_201');">화면 도움말</a>
+                            </li>
+                            <li>화면ID : <span class="font-roboto">SYS_201</span></li>
+                            <li><a href="javascript:movePis()">체육정보시스템</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-login clb">
+                    <div class="user clb">
+                        <p class="user-name">
+                            <span>조현종</span>
+
+                        </p>
+                        <p class="user-department">
+                            <span>대한체육회</span>
+
+                        </p>
+                        <div class="login-btn">
+                            <a href="javascript:confirmLogout()">로그아웃</a>
+                        </div>
+                    </div>
+                    <div class="login clb">
+                        <div class="login-timer clb">
+                            <span class="font-roboto font-b" id="remainTimeText" style="">28:40</span>
+                        </div>
+                        <div class="login-btn">
+                            <a href="javascript:renewTimeout();">로그인 연장</a>
+                        </div>
+                    </div>
+                    <div class="callnum">
+                        <i class="icon icon-call"></i>
+                        <span class="font-roboto font-b">02-2144-8141</span>
+                    </div>
+                </div>
+            </div><!-- content header -->
+
+
+
+            <form name="MoveForm" method="post" action="https://pis.sports.or.kr/spl/main.do">
+                <input type="hidden" name="menuGb" value="SYS" autocomplete="off">
+            </form>
+
+            <div class="content clb">
+
+
+
+                <div class="sidenav managenav">
+                    <div class="openbtn">
+                        <button type="button">시스템관리 열기</button>
+                    </div>
+                    <p class="title">
+                        <i class="icon icon-monitor"></i>
+                        시스템관리
+                    </p>
+                    <ul class="managemenu">
+
+                        <li>
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0005"><i
+                                    class="icon icon-manage--gamer"></i>코드관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0006" "=""><a href=" https://pis.sports.or.kr/spl/code/list.do"
+                                    onclick="javascript:showLoadingLayer();">공통코드관리</a></li>
+                                <li id="0025" "=""><a href=" https://pis.sports.or.kr/spl/code/teamCodeList.do"
+                                    onclick="javascript:showLoadingLayer();">학교팀코드관리</a></li>
+                                <li id="0076" "=""><a href=" https://pis.sports.or.kr/spl/code/eduTeamCodeList.do"
+                                    onclick="javascript:showLoadingLayer();">교육부학교코드관리</a></li>
+                                <li id="0077" "=""><a href=" https://pis.sports.or.kr/spl/code/linkSchoolList.do"
+                                    onclick="javascript:showLoadingLayer();">학교팀코드연계</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="">
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0008"><i
+                                    class="icon icon-manage--gamer"></i>프로그램관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0009" class="is_active" "=""><a href="
+                                    https://pis.sports.or.kr/spl/program/list.do"
+                                    onclick="javascript:showLoadingLayer();">프로그램관리</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="https://pis.sports.or.kr/spl/program/list.do#" id="0010"><i
+                                    class="icon icon-manage--gamer"></i>사용자관리</a>
+                            <ul class="managemenu-sub">
+                                <li id="0011" "=""><a href=" https://pis.sports.or.kr/spl/user/list.do"
+                                    onclick="javascript:showLoadingLayer();">사용자관리</a></li>
+                                <li id="0012" "=""><a href=" https://pis.sports.or.kr/spl/user/histList.do"
+                                    onclick="javascript:showLoadingLayer();">사용자이력조회</a></li>
+                                <li id="0080" "=""><a href=" https://pis.sports.or.kr/spl/user/userLoglist.do"
+                                    onclick="javascript:showLoadingLayer();">개인정보 조회기록</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- header end -->
+                <!-- "gamer.application.singe.css" -->
+                <div class="conarea openleft" style="padding-left: 320px;">
+                    <div class="pagewrap clb">
+                        <h2>사용자관리</h2>
+                        <ul class="pagenav clb">
+                            <li><a href="https://pis.sports.or.kr/spl/program/list.do#">Home</a></li>
+                            <li><a href="https://pis.sports.or.kr/spl/program/list.do#">시스템관리</a></li>
+                            <li><a href="https://pis.sports.or.kr/spl/program/list.do#">프로그램관리</a></li>
+                            <li><a href="https://pis.sports.or.kr/spl/program/list.do#">프로그램관리</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-ua-601-010">
+                        <div class="ua601002">
+                            <div class="ua601002__box">
+                                <div class="ua601002__group">
+                                    <div class="ua601002__input">
+                                        <label for="">사용자ID</label>
+                                        <input type="text" placeholder="사용자ID를 입력하세요">
+                                    </div>
+                                    <div class="ua601002__input">
+                                        <label for="">사용자명</label>
+                                        <input type="text" placeholder="사용자명을 입력하세요">
+                                    </div>
+                                    <div class="ua601002__input">
+                                        <label for="">사용자그룹</label>
+                                        <select id="" name="">
+                                            <option value="">전체</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="ua601002__input">
+                                        <label for="">소속구분</label>
+                                        <select id="" name="">
+                                            <option value="">전체</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="ua601002__group">
+                                    <div class="ua601002__input">
+                                        <label for="">소속단체(종목)</label>
+                                        <select id="" name="">
+                                            <option value="">전체</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="ua601002__input">
+                                        <label for="">소속시도</label>
+                                        <select id="" name="">
+                                            <option value="">선택</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="ua601002__input">
+                                        <label for="">사용여부</label>
+                                        <select id="" name="">
+                                            <option value="">선택</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                    <div class="ua601002__input">
+                                        <label for="">차단여부</label>
+                                        <select id="" name="">
+                                            <option value="">선택</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-box">
+                                <div class="search-box__inner">
+                                </div>
+                                <button type="button" class="btn-search">검색</button>
+                            </div>
+                            <div class="toggle-text"><span>조회조건 접기</span></div>
+                        </div>
+                        <div class="ua601002__total">
+                            사용자 목록 4,167건
+                        </div>
+                        <div class="ua601002__table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>사용자ID</th>
+                                        <th>사용자명</th>
+                                        <th>사용자그룹 </th>
+                                        <th>소속구분</th>
+                                        <th>소속단체</th>
+                                        <th>사용유무</th>
+                                        <th>차단유무</th>
+                                        <th>권한</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="text-left disabled">1202ling</td>
+                                        <td class="text-left">CHENG CHUN</td>
+                                        <td class="text-left disabled">일반사용자</td>
+                                        <td class="text-left">시군구체육회</td>
+                                        <td class="disabled"></td>
+                                        <td class="text-red">미사용</td>
+                                        <td class="text-blue disabled">정상</td>
+                                        <td> <button type="button" class="btn-gray">권한</button> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="text-left disabled">dhan1117</td>
+                                        <td class="text-left">HAN DAVID IN KOOK</td>
+                                        <td class="text-left disabled">일반사용자</td>
+                                        <td class="text-left">개별업무담당자 </td>
+                                        <td class="disabled"></td>
+                                        <td class="text-red">미사용</td>
+                                        <td class="text-blue disabled">정상</td>
+                                        <td> <button type="button" class="btn-gray">권한</button> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="text-left disabled">lu8961</td>
+                                        <td class="text-left">LU CONGHUI</td>
+                                        <td class="text-left disabled">일반사용자</td>
+                                        <td class="text-left">회원종목단체 </td>
+                                        <td class="text-left disabled">대한소프트테니스협회(사) </td>
+                                        <td class="text-blue">사용</td>
+                                        <td class="text-blue disabled">정상</td>
+                                        <td> <button type="button" class="btn-gray">권한</button> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="sidenav shortnav rightfold">
+                    <div class="openbtn">
+                        <button type="button">바로가기 열기</button>
+                    </div>
+                    <p class="title">
+                        <i class="icon icon-monitor"></i>
+                        바로가기
+                    </p>
+                    <ul>
+                        <li><a href="javascript:goSite('ITR')">체육단체인트라넷</a></li>
+                        <li><a href="https://pis.sports.or.kr/spl/docs/man_03.pdf" target="balnk">시스템메뉴얼</a></li>
+                        <li><a href="javascript:moveChatbot()">챗봇</a></li>
+                        <li><a href="https://113366.com/jinjin" target="blank">PC 원격제어</a></li>
+                    </ul>
+                    <img src="./img/logo_v.svg" alt="대한체육회" width="60" height="73">
+                </div>
+
+            </div>
+            <!-- 플로팅 버튼 -->
+            <div class="floating">
+
+                <a href="javascript:moveChatbot();" title="새창으로 열기">알리</a>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/common.js"></script>
+    <script src="./js/gamer.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div class="leftArea">
+                <h1 class="logo">
+                    <a href="">체육정보시스템</a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hideEl">주메뉴</h2>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li date-menu="menu01" class="gnb-extend">
+                            <a>감사관리</a>
+                            <div id="menu01" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메인</a>
+                                    </li>
+                                    <li>
+                                        <a>감사관리</a>
+                                    </li>
+                                    <li>
+                                        <a>시스템관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu02" class="gnb-extend">
+                            <a>포털 관리</a>
+                            <div id="menu02" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시물 관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너 관리</a>
+                                    </li>
+                                    <li>
+                                        <a>접속현황</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu03" class="gnb-extend">
+                            <a>아카이브</a>
+                            <div id="menu03" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시물관리</a>
+                                    </li>
+                                    <li>
+                                        <a>콘텐츠관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu04" class="gnb-extend">
+                            <a>시스템 관리</a>
+                            <div id="menu04" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>사용자계정관리</a>
+                                    </li>
+                                    <li>
+                                        <a>체육정보시스템관리자</a>
+                                    </li>
+                                    <li>
+                                        <a>팝업관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="privacy">
+                    <a href="https://www.sports.or.kr/home/010902/0000/main.do" title="새창으로열기" target="_blank">
+                        <u><b>개인정보처리방침</b></u>
+                    </a>
+                </p>
+                <div class="sportsLogo">
+                    <a href="https://www.sports.or.kr/" title="새창으로열기" target="_blank"><img src="./img/intrologo.png"
+                            alt="대한체육회"></a>
+                </div>
+            </div>
+            <!-- e : leftArea -->
+
+            <div class="content">
+                <h3>대회명 임원 출전비 수정 (시도체육회명)</h3>
+                <div class="form-table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tr>
+                            <th><label for="">종목</label></th>
+                            <td><span>농구</span></td>
+                            <th><label for="">부별</label></th>
+                            <td><span>전종별</span></td>
+                        </tr>
+                        <tr>
+                            <th><label for="" aria-required="true">일수</label></th>
+                            <td><input type="text" value="6" class="short"></td>
+                            <th><label for="" aria-required="true">각부임원수</label></th>
+                            <td><input type="text" value="1" class="short"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="" aria-required="true">경기임원수(초등)</label></th>
+                            <td><input type="text" value="4" class="short"></td>
+                            <th><label for="" aria-required="true">경기임원수(중등)</label></th>
+                            <td><input type="text" value="4" class="short"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="">이중 중복자수</label></th>
+                            <td colspan="3"><input type="text" value="1" class="short"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="">이중 중복내용</label></th>
+                            <td colspan="3"><input type="text" value="정현욱"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btnCenter">
+                    <button type="button" class="button-type02">취소</button>
+                    <button type="button" class="button-type01">수정</button>
+                </div>
+            </div>
+            <!-- e : contents -->
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

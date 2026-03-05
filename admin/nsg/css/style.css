@@ -1,0 +1,819 @@
+.content h3 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.account-management {
+    border-top: 1px solid #888d94;
+    border-bottom: 1px solid #888d94;
+}
+
+.account-management dl {
+    display: flex;
+    align-items: center;
+}
+
+.account-management dl dt {
+    width: 120px;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.account-management dl dd {
+    padding: 20px 0;
+}
+
+.account-management dl dd .button-type02 {
+    height: 40px;
+    line-height: 0;
+}
+
+.account-management dl dd.account-management-flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.account-management dl dd.account-management-flex input[type=date]+input[type=text] {
+    width: 100%;
+}
+
+.account-management dl dd label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.account-management dl dd label+input[type=text],
+.account-management dl dd label+select {
+    margin-left: 5px;
+}
+
+.account-management dl dd input[type=text],
+.account-management dl dd select {
+    width: 200px;
+}
+
+/*.account-management dl+dl {*/
+/*    border-top: 1px solid #d4d9e1;*/
+/*}*/
+
+.account-management dl.business-status {
+    align-items: baseline;
+}
+
+.account-management dl.business-status dd,
+.account-management dl.ba-infor dd {
+    padding: 25px 0;
+}
+
+.account-management dl dd .rdoList li,
+.account-management dl.ba-infor dd {
+    display: flex;
+    align-items: center;
+}
+
+.account-management dl dd .rdoList li span,
+.account-management dl.ba-infor dd span {
+    width: 100px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-table td input[type='radio']+label,
+.account-management dl dd .rdoList li label,
+.account-management dl.ba-infor dd label {
+    min-width: 50px;
+    margin-right: 22px;
+}
+
+.account-management dl dd .rdoList li+li {
+    margin-top: 25px;
+}
+
+.btnRight {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btnCenter {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btnLeft {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.boardTop {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boardTop p {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.options-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.options-container select {
+    width: 200px;
+}
+
+.options-container label+select {
+    margin-left: 5px;
+}
+
+/* table */
+[class*=boardTable] {
+    width: 100%;
+}
+
+[class*=boardTable] table {
+    border-top: 2px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+/* th */
+
+[class*=boardTable] table th {
+    height: 50px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3d3d3d;
+    vertical-align: middle;
+    position: relative;
+}
+
+[class*=boardTable] table th:last-child,
+[class*=boardTable] table td:last-child {
+    border-right: 0;
+}
+
+/* td */
+[class*=boardTable] table td {
+    border: 1px solid #bfbfbf;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3d3d3d;
+    vertical-align: middle;
+    position: relative;
+}
+
+.boardTableCol table tr td {
+    padding: 8px;
+    text-align: center;
+}
+
+[class*=boardTable] table th:last-child,
+[class*=boardTable] table td:last-child {
+    border-right: 0;
+}
+
+.boardTableCol tbody tr:hover td {
+    background-color: #eff6f6;
+    transition: 0.5s;
+}
+
+.boardTableCol tbody tr.hover-row td,
+.boardTableCol tbody tr td.hover-join {
+  background-color: #eff6f6;
+  transition: background-color 0.25s;
+}
+
+/* controller */
+.controller-wrap {
+    position: relative;
+}
+
+/* Pagination number*/
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.icon::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.pagination-arrow.disable {
+    cursor: no-drop !important;
+    background-color: #eee !important;
+}
+
+.pagination-arrow.icon-next:after {
+    transform: translateX(1px);
+}
+
+.wrap-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.pagination-number {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination-number li.more {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.pagination-number li a {
+    width: max-content;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 300;
+    color: #999;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.pagination-number li.active a {
+    cursor: pointer;
+}
+
+.pagination-number li.active a,
+.pagination-number li:hover a {
+    font-weight: 700;
+    color: #2e39a2;
+}
+
+.pagination-arrow.icon {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #ddd;
+
+}
+
+.pagination-arrow.icon:hover {
+    background-color: #eee;
+}
+
+.icon-start::after {
+    background-image: url('../img/chevrons-left.svg');
+    height: 15px;
+}
+
+.icon-next::after {
+    background-image: url('../img/chevron-right.svg');
+    height: 15px;
+}
+
+.icon-prev::after {
+    background-image: url('../img/chevron-left.svg');
+    height: 15px;
+}
+
+.icon-end::after {
+    background-image: url('../img/chevrons-right.svg');
+    height: 15px;
+}
+
+/* End Pagination number*/
+
+.form-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.form-actions button {
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form-actions button:hover {
+    background-color: #444;
+}
+
+/* form table */
+.form-table {
+    width: 100%;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.form-table th {
+    background-color: #f2f2f2;
+}
+
+.form-table th,
+.form-table td {
+    height: 60px;
+    vertical-align: middle;
+    padding: 10px;
+    text-align: start;
+    border: 1px solid #bfbfbf;
+}
+
+.form-table tr:first-child th,
+.form-table tr:first-child td {
+    border-top: 0;
+}
+
+.form-table tr:first-child th:first-child {
+    border-top-left-radius: 4px;
+}
+
+.form-table tr:last-child th:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.form-table tr:last-child th,
+.form-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.form-table th:first-child,
+.form-table td:first-child {
+    border-left: 0;
+}
+
+.form-table th:last-child,
+.form-table td:last-child {
+    border-right: 0;
+}
+
+.form-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.form-table input[type='text'].short {
+    width: 100px;
+}
+
+.form-table input[type='text'] {
+    width: 100%;
+}
+
+.form-table select {
+    width: 40%;
+}
+
+.form-table tr {
+    border-bottom: 0;
+}
+
+.form-table .file {
+    display: none;
+}
+
+.form-table .file+input[type='text'] {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: max-content;
+}
+
+.form-table .button-file {
+    height: 40px;
+    line-height: 0;
+}
+
+.files-control {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.files-control .file-element {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 5px 10px;
+    gap: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    position: relative;
+}
+
+.boardTableCol .menu-name span {
+    max-width: 350px;
+    width: 100%;
+    display: inline-block;
+    text-align: start;
+    position: relative;
+}
+
+.boardTableCol .menu-name span.menu-2 {
+    padding-left: 25px;
+}
+
+.boardTableCol .menu-name span.menuBold {
+    font-weight: 600;
+}
+
+.boardTableCol .menu-name span.menu-2::before {
+    content: '';
+    display: block;
+    background: url("../img/icon-arrowRight.png") no-repeat;
+    width: 1rem;
+    height: 2rem;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.boardTableCol .button-row {
+    display: flex;
+}
+
+.button-type02.button-type02-red {
+    background: #c00000;
+}
+
+/* UA-601-010 */
+.account-management-form {
+    border: 1px solid #888d94;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.account-management-formTop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.account-management-form dl {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.account-management-formTop dl dt {
+    width: 25%;
+}
+
+.account-management-formTop select {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.account-management-flex {
+    flex: 1;
+}
+
+.account-management-formLeft {
+    display: flex;
+    width: 60%;
+    gap: 15px;
+}
+
+.account-management-formRight {
+    flex: 1;
+}
+
+.account-management-formMid {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 8px 0;
+}
+
+.account-management-formMid .input1 {
+    width: 60%;
+}
+
+.account-management-formMid .input1 dt {
+    width: 8%;
+}
+
+.account-management-formMid .input2 {
+    flex: 1;
+}
+
+.account-management-formMid dl dt {
+    width: 20%;
+}
+
+.account-management-flex input {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.account-management-formBottom dl dd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-management-formBottom dl dt {
+    width: 5%;
+}
+
+.account-management-formBottom .inputDate {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.account-management-formBottom .inputChild {
+    flex: 1;
+    display: flex;
+    gap: 5px;
+}
+
+.account-management-formBottom .allInput {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.account-management-formBottom .input3 {
+    width: 12%;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+} 
+
+.account-management-formBottom .button-type02 {
+    border-radius: 8px;
+}
+
+/* UA-601-014 */
+.form-table input {
+    border: none;
+}
+
+.form-table .file+input[type='text'] {
+    width: 100%;
+}
+
+.form-table textarea {
+    border: none;
+}
+
+/* UA-301-001 */
+.tour301001__boxFilter {
+    padding: 1.2rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.tour301001__filter.account-management-formLeft {
+    width: 100%;
+}
+
+.tour301001__filter dl dt{
+    width: fit-content;
+}
+
+.tour301001__selectBox select {
+    display: block;
+    width: 100%;
+    min-width: fit-content; 
+    padding: 0.5rem 7rem 0.5rem 1rem; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tour301001__btnFilter {
+    border-radius: 0.5rem;
+}
+
+.tour301001__btn1 {
+    background-color: #4d4d4d;
+}
+
+.tour301001__btn2 {
+    background-color: #16a540;
+}
+
+.boardTableCol .tour301001__table th {
+    font-size: 13px;
+    padding: 0;
+}
+
+.boardTableCol .tour301001__table td input,
+.boardTableCol .tour301001__table td select,
+.boardTableCol .tour301001__table td {
+    font-size: 12px;
+}
+
+.tour301001__table th.text-right,
+.tour301001__table .text-right {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.tour301001__table .text-left {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.tour301001__table .text-bold {
+    font-weight: 600;
+}
+
+/* UA-301-002 */
+.tour301002__titleNumberPagi span {
+    color: #006faf;
+}
+
+/* UA-301-003 */
+.tour301003__btn-edit {
+    background-color: #006faf;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    width: 3rem;
+}
+
+.tour301003__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 998;
+}
+
+.tour301003__popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 55%;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.tour301003__popup h3 {
+    margin-bottom: 1.2rem;
+}
+
+/* UA-301-004 */
+.form-table input.tour301004__input {
+    border: 1px solid #bfbfbf;
+    border-radius: 0.5rem;
+    width: 5rem;
+}
+
+.form-table input.tour301004__inputText {
+    border: 1px solid #bfbfbf;
+    border-radius: 0.5rem;
+}
+
+.tour301004__allBtn {
+    justify-content: center;
+}
+
+.tour301004__btn1 {
+    background-color: #006faf;
+}
+
+.tour301004__btn2 {
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    color: #707070;
+}
+
+/* UA-301-007 */
+.form-table select {
+    border: 1px solid #bfbfbf;
+    border-radius: 0.5rem;
+}
+
+.form-table select.tour301007__selectbox {
+    width: 30%;
+}
+
+.tour301007__allBtn {
+    justify-content: flex-end;
+}
+
+/* UA-301-008 */
+.tour301001__table select.tour301014__selectbox,
+.tour301001__table input.tour301008__itemTableInput {
+    border: 1px solid #bfbfbf;
+    border-radius: 0.3rem;
+    display: block;
+    width: 100%;
+    height: 1.6rem;
+    text-align: center;
+    padding: 0;
+    text-indent: 0;
+}
+
+/* UA-301-010 */
+.tour301010__btn {
+    width: 4.5rem;
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.tour301010__btn:hover {
+    opacity: 0.7;
+}
+
+.tour301010__btn.btn1 {
+    background-color: #006faf;
+}
+
+.tour301010__btn.btn2 {
+    background-color: #4d4d4d;
+}
+
+/* UA-301-011 */
+.form-table select.tour301011__selectbox {
+    width: 20%;
+}
+
+.form-table input.tour301011__inputText {
+    border: 1px solid #bfbfbf;
+    border-radius: 0.5rem;
+    width: 40%;
+}
+
+.form-table input.tour301011__inputText.input2 {
+    width: 20%;
+}
+
+.form-table input.tour301011__inputText.input3 {
+    width: 8%;
+}
+
+.tour301011__radioBox {
+    display: flex;
+    gap: 3rem;
+}
+
+.tour301011__itemRadio {
+    margin-bottom: 0.5rem;
+}
+
+/* UA-301-014 */
+.tour301001__table select.tour301014__selectbox {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.tour301014__btn {
+    background-color: #707070;
+    color: #fff;
+}
+
+.tour301001__table input.tour301008__itemTableInput.tour301014__itemInput::placeholder {
+    opacity: 0.6;
+}

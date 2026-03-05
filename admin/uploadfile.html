@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- CSS -->
+    <link href="https://unpkg.com/filepond/dist/filepond.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"
+        rel="stylesheet">
+
+    <!-- JS -->
+    <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+    <script
+        src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
+    <script
+        src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div class="leftArea">
+                <h1 class="logo">
+                    <a href="">체육정보시스템</a>
+                </h1>
+                <nav class="gnb">
+                    <h2 class="hideEl">주메뉴</h2>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li date-menu="menu01" class="gnb-extend">
+                            <a>감사관리</a>
+                            <div id="menu01" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메인</a>
+                                    </li>
+                                    <li>
+                                        <a>감사관리</a>
+                                    </li>
+                                    <li>
+                                        <a>시스템관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu02" class="gnb-extend">
+                            <a>포털 관리</a>
+                            <div id="menu02" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시물 관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너 관리</a>
+                                    </li>
+                                    <li>
+                                        <a>접속현황</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu03" class="gnb-extend">
+                            <a>아카이브</a>
+                            <div id="menu03" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>메뉴관리</a>
+                                    </li>
+                                    <li>
+                                        <a>게시물관리</a>
+                                    </li>
+                                    <li>
+                                        <a>콘텐츠관리</a>
+                                    </li>
+                                    <li>
+                                        <a>배너 관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li date-menu="menu04" class="gnb-extend">
+                            <a>시스템 관리</a>
+                            <div id="menu04" class="depth">
+                                <ul>
+                                    <li>
+                                        <a>사용자계정관리</a>
+                                    </li>
+                                    <li>
+                                        <a>체육정보시스템관리자</a>
+                                    </li>
+                                    <li>
+                                        <a>팝업관리</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="privacy">
+                    <a href="https://www.sports.or.kr/home/010902/0000/main.do" title="새창으로열기" target="_blank">
+                        <u><b>개인정보처리방침</b></u>
+                    </a>
+                </p>
+                <div class="sportsLogo">
+                    <a href="https://www.sports.or.kr/" title="새창으로열기" target="_blank"><img src="./img/intrologo.png"
+                            alt="대한체육회" /></a>
+                </div>
+            </div>
+            <!-- e : leftArea -->
+
+            <div class="content">
+                <h3>감사 일정 수정</h3>
+                <div class="form-table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tr>
+                            <th><label for="">진행상태</label></th>
+                            <td><span class="text-blue">예정</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <h4 class="text-blue">감사 정보</h4>
+                <div class="form-table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tr>
+                            <th><label for="">첨부파일</label></th>
+                            <td colspan="3">
+                                <input type="file" class="filepond" name="filepond" multiple />
+                                <!-- <input type="text" value="감사전달내용.png" readonly>
+                                <button type="button" class="button-type02 button-file" onclick="addFile()">파일
+                                    첨부</button>
+                                <div class="files-control">
+                                </div> -->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- e : contents -->
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        // Khởi tạo FilePond trên input có class .filepond
+        FilePond.registerPlugin(
+            FilePondPluginImagePreview,
+            FilePondPluginFileValidateSize,
+            FilePondPluginFileValidateType
+        );
+        FilePond.create(document.querySelector('.filepond'), {
+            allowMultiple: true,
+            maxFiles: 5,
+            instantUpload: false,
+            storeAsFile: true,
+            maxFileSize: '10MB',
+            maxTotalFileSize: '200MB',
+            acceptedFileTypes: ['image/png', 'image/jpeg', 'application/pdf'],
+            fileValidateTypeLabelExpectedTypes: 'Chỉ cho phép PNG, JPG, hoặc PDF'
+        });
+    </script>
+
+</body>
+
+</html>
