@@ -10126,11 +10126,16 @@ table.ua601009__table th {
 }
 
 .ua506002__btns button {
-  border-radius: 100px;
-  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: none;
   padding: 8px 30px 10px;
   font-size: 17px;
-  color: #3d3d3d;
+  color: #fff;
+  background: #0e4194;
+}
+
+.ua506002__btns button:last-child {
+  background: #2ca0af;
 }
 
 .ua506002__filter {
