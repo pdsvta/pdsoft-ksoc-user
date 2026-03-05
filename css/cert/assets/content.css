@@ -7499,11 +7499,11 @@ legend {
 	position: absolute;
 	display: inline-block;
 	border: 2px solid #0C54B8;
-	border-radius: 23px;
+	border-radius: 28px;
 	opacity: 0;
 	transition: 0.3s;
-	width: 15rem;
-	height: 15rem;
+	width: 20rem;
+	height: 20rem;
 }
 
 .indv__guide a.linkBtn_multi {
@@ -7514,10 +7514,10 @@ legend {
 	position: absolute;
 	display: inline-block;
 	border: 2px solid #0C54B8;
-	border-radius: 23px;
+	border-radius: 28px;
 	transition: 0.3s;
-	width: 15rem;
-	height: 15rem;
+	width: 20rem;
+	height: 20rem;
 }
 
 .indv__guide a:hover {
@@ -7525,19 +7525,19 @@ legend {
 }
 
 .indv__guide a.linkBtn_01 {
-	left: 214px;
-	top: 134px;
+    left: 284px;
+    top: 178px;
 }
 
 .indv__guide a.linkBtn_02 {
-	left: 384px;
-	top: 50px;
+    left: 509px;
+    top: 66px;
 }
 
 .indv__guide a.linkBtn_03 {
-	left: 385px;
-	top: 217px;
-	width: 315px;
+    left: 511px;
+    top: 289px;
+    width: 424px;
 }
 
 .indv__guide .linkBtn_03_1 {
@@ -7547,56 +7547,56 @@ legend {
 
 .indv__guide .linkBtn_03_2 {
 	top: 0;
-	left: 166px;
+	left: 221px;
 }
 
 .indv__guide a.linkBtn_04 {
-	left: 723px;
-	top: 135px;
+    left: 959px;
+    top: 178px;
 }
 
 .indv__guide a.linkBtn_05 {
-	left: 723px;
-	top: 304px;
+    left: 959px;
+    top: 404px;
 }
 
 .indv__guide a.linkBtn_06 {
-	left: 388px;
-	top: 48px;
-	width: 315px;
+    left: 513px;
+    top: 64px;
+    width: 422px;
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_06_1 {
 	top: 0;
 	left: -.6rem;
-	width: 15rem;
+	width: 20rem;
 }
 
 .indv__guide .linkBtn_06_2 {
-	left: 163px;
+	left:219px;
 }
 
 .indv__guide a.linkBtn_07 {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 50%, 0 50%);
-	width: 494px;
-	top: 218px;
-	left: 382px;
-	height: 324px;
+	width: 653px;
+    top: 289px;
+    left: 508px;
+    height: 427px;
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_07_1 {
 	left: 0;
 	top: 0;
-	width: 15rem;
+	width: 20rem;
 }
 
 .indv__guide .linkBtn_07_2 {
-	left: 170px;
+	left: 224px;
 	top: 0;
 }
 
 .indv__guide .linkBtn_07_3 {
-	left: 340px;
+	left: 450px;
 	top: 0;
 }
 
@@ -7606,9 +7606,9 @@ legend {
 }
 
 .indv__guide .linkBtn_08 {
-	bottom: 49px;
-	left: 384px;
-	height: 80px;
+    bottom: 65px;
+    left: 509px;
+    height: 107px;
 }
 
 .indv__guide.mb3 {
@@ -7633,6 +7633,7 @@ legend {
 	align-items: center;
 	justify-content: space-between;
 	height: 6rem;
+	gap: .5rem;
 }
 
 .guide__tab ul li {
@@ -7649,6 +7650,7 @@ legend {
 	height: 100%;
 	cursor: pointer;
 	transition: all 0.3s;
+	width: 100%;
 }
 
 .guide__tab ul li:hover,

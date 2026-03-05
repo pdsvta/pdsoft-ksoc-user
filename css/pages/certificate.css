@@ -3198,7 +3198,9 @@ a.ui-button:active,
 .indv__title {
     margin-bottom: 2rem;
 }
-
+.indv__title.mb50 {
+    margin-bottom: 5rem;
+}
 .indv__tit {
     font-size: 2.1rem;
     margin-bottom: 2rem;
@@ -3345,117 +3347,120 @@ a.ui-button:active,
 }
 
 .indv__guide a {
-    position: absolute;
-    display: inline-block;
-    border: 2px solid #0C54B8;
-    border-radius: 23px;
-    opacity: 0;
-    transition: 0.3s;
-    width: 15rem;
-    height: 15rem;
+	position: absolute;
+	display: inline-block;
+	border: 2px solid #0C54B8;
+	border-radius: 28px;
+	opacity: 0;
+	transition: 0.3s;
+	width: 20rem;
+	height: 20rem;
 }
 
 .indv__guide a.linkBtn_multi {
-    border: 2px solid transparent;
+	border: 2px solid transparent;
 }
 
+
 .indv__guide a.linkBtn_multi>div {
-    position: absolute;
-    display: inline-block;
-    border: 2px solid #0C54B8;
-    border-radius: 23px;
-    transition: 0.3s;
-    width: 15rem;
-    height: 15rem;
+	position: absolute;
+	display: inline-block;
+	border: 2px solid #0C54B8;
+	border-radius: 28px;
+	transition: 0.3s;
+	width: 20rem;
+	height: 20rem;
 }
 
 .indv__guide a:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .indv__guide a.linkBtn_01 {
-    left: 214px;
-    top: 134px;
+    left: 284px;
+    top: 178px;
 }
 
 .indv__guide a.linkBtn_02 {
-    left: 384px;
-    top: 50px;
+    left: 509px;
+    top: 66px;
 }
 
 .indv__guide a.linkBtn_03 {
-    left: 385px;
-    top: 217px;
+    left: 511px;
+    top: 289px;
+    width: 424px;
 }
 
 .indv__guide .linkBtn_03_1 {
-    left: -.3rem;
-    top: 0;
+	left: -.3rem;
+	top: 0;
 }
 
 .indv__guide .linkBtn_03_2 {
-    top: 0;
-    left: 166px;
+	top: 0;
+	left: 221px;
 }
 
 .indv__guide a.linkBtn_04 {
-    left: 723px;
-    top: 135px;
+    left: 959px;
+    top: 178px;
 }
 
 .indv__guide a.linkBtn_05 {
-    left: 723px;
-    top: 304px;
+    left: 959px;
+    top: 404px;
 }
 
 .indv__guide a.linkBtn_06 {
-    left: 388px;
-    top: 48px;
+    left: 513px;
+    top: 64px;
+    width: 422px;
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_06_1 {
-    top: 0;
-    left: -.6rem;
-    width: 15rem;
+	top: 0;
+	left: -.6rem;
+	width: 20rem;
 }
 
 .indv__guide .linkBtn_06_2 {
-    left: 163px;
+	left:219px;
 }
 
 .indv__guide a.linkBtn_07 {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 50%, 0 50%);
-    width: 494px;
-    top: 218px;
-    left: 382px;
-    height: 324px;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 50%, 0 50%);
+	width: 653px;
+    top: 289px;
+    left: 508px;
+    height: 427px;
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_07_1 {
-    left: 0;
-    top: 0;
-    width: 15rem;
+	left: 0;
+	top: 0;
+	width: 20rem;
 }
 
 .indv__guide .linkBtn_07_2 {
-    left: 170px;
-    top: 0;
+	left: 224px;
+	top: 0;
 }
 
 .indv__guide .linkBtn_07_3 {
-    left: 340px;
-    top: 0;
+	left: 450px;
+	top: 0;
 }
 
 .indv__guide .linkBtn_07_4 {
-    right: 0;
-    bottom: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .indv__guide .linkBtn_08 {
-    bottom: 49px;
-    left: 384px;
-    height: 80px;
+    bottom: 65px;
+    left: 509px;
+    height: 107px;
 }
 
 .indv__guide.mb3 {
@@ -3562,7 +3567,6 @@ a.ui-button:active,
 }
 
 .indv101002__item.w368 {
-    max-width: max-content;
     width: 100%;
 }
 
@@ -3815,6 +3819,7 @@ a.ui-button:active,
     margin: 0;
     position: relative;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .checkbox.disabled {
@@ -4078,7 +4083,7 @@ a.ui-button:active,
 .indv__item {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 46rem;
 }
 
 .indv__link {
@@ -4219,8 +4224,9 @@ a.ui-button:active,
 
 .indv__plist {
     display: grid;
-    grid-template-columns: 36rem 36rem 1fr;
-    gap: 1rem;
+    grid-template-columns: 46rem 46rem;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .indv__plink {
@@ -4711,6 +4717,7 @@ a.ui-button:active,
     align-items: center;
     justify-content: space-between;
     height: 6rem;
+    gap: .5rem;
 }
 
 .guide__tab ul li {
@@ -4727,6 +4734,7 @@ a.ui-button:active,
     height: 100%;
     cursor: pointer;
     transition: all 0.3s;
+    width: 100%;
 }
 
 .guide__tab ul li:hover,

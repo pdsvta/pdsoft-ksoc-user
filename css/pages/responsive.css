@@ -3589,7 +3589,7 @@
     }
 
     .tour101003__indvType {
-        padding: 3rem 1rem 0;
+        padding: 3rem 0 0;
     }
 
     .tour101003__plist {
@@ -16267,6 +16267,14 @@
 
     .hpy004009__input .hpy-reg__input--max200 {
         max-width: 100%;
+    }
+
+    .indv__list {
+        grid-template-columns: 1fr;
+    }
+
+    .indv__item {
+        width: 100%;
     }
 }
 
