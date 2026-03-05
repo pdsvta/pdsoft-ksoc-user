@@ -4721,7 +4721,7 @@ legend {
 }
 
 .ply-hdr .inner {
-	max-width: 110rem;
+	max-width: 140rem;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -4872,7 +4872,7 @@ legend {
 }
 
 .ply-nav .inner {
-	max-width: 110rem;
+	max-width: 140rem;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -5007,7 +5007,7 @@ legend {
 
 .ply-nav__inner {
 	width: 100%;
-	max-width: 110rem;
+	max-width: 140rem;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -5119,7 +5119,7 @@ legend {
 }
 
 .ply .ply-inner {
-	max-width: 110rem;
+	max-width: 140rem;
 }
 
 .ply__tit {
@@ -5172,7 +5172,7 @@ legend {
 }
 
 .ply-ftr .inner {
-	max-width: 110rem;
+	max-width: 140rem;
 }
 
 .ply-ftr--gray .inner {
