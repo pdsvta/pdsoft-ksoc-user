@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지도자등록 신청안내</title>
+    <link rel="stylesheet" href="css/styleCert.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header class="ply-hdr">
+            <div class="inner">
+                <div class="ply-hdr__lf">
+                    <h1 class="ply-hdr__logo">
+                        <img src="images/ptu_m1_0501/image01.png" alt="">
+                        <span>(사)대한골프협회 인터넷 증명서발급</span>
+                    </h1>
+                    <div class="ply-hdr__pop">
+                        <div class="game__pop">
+                            <div class="game__tit">
+                                <span><b>대한골프협회</b> 경기인 선택</span>
+                            </div>
+                            <ul class="game__list">
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/player-icon.png" alt="">
+                                        <span>선수</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/director-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/judgment-icon.png" alt="">
+                                        <span>지도자</span>
+                                    </a>
+                                </li>
+                                <li class="game__item">
+                                    <a href="#" class="game__link">
+                                        <img src="images/icons/manager-icon.png" alt="">
+                                        <span>선수관리<br>담당자</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="game__desc">신청 유형을 선택하세요.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ply-hdr__rt">
+                    <ul class="ply-hdr__list">
+                        <li>
+                            <a href="#">종목변경</a>
+                        </li>
+                        <li>
+                            <a href="#">스포츠지원포털</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">화면번호</a>
+                        </li> -->
+                    </ul>
+                    <!-- <div class="ply-hdr__help">
+                        <a href="#"><b>430</b></a>
+                        <a href="#">화면도움말</a>
+                    </div> -->
+                    <button type="button" class="menu-btn menu-btn-ply ">
+                        <span class="blind">전체메뉴 펼치기</span>
+                        <div class="menu-btn__icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+        <!-- gnb -->
+        <nav class="ply-nav">
+            <div class="inner">
+                <ul class="ply-nav__list">
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__home">
+                            <img src="images/icons/home-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">증명서 발급</a>
+                        <ul class="sub-menu">
+                            <div class="inner">
+                                <li><a href="#"><span>증명서발급 안내</span></a></li>
+                                <li><a href="#"><span>증명서발급 신청</span></a></li>
+                                <li><a href="#"><span>증명서발급 내역</span></a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">정정요청</a>
+                        <ul class="sub-menu">
+                            <div class="inner">
+                                <li><a href="#"><span>정정요청</span></a></li>
+                                <li><a href="#"><span>정정요청 내역</span></a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">원본 검증조회</a>
+                    </li>
+                    <li class="ply-nav__item">
+                        <a href="#" class="ply-nav__link">등록이력 조회</a>
+                    </li>
+                </ul>
+                <div class="ply-nav__rt">
+                    <ul class="ply-nav__quik">
+                        <li>
+                            <a href="#">다운로드센터</a>
+                        </li>
+                        <li>
+                            <a href="#">사용자메뉴얼</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">자주하는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1문의</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="ply-nav__logout">로그아웃</button>
+                </div>
+            </div>
+        </nav>
+        <!-- // gnb -->
+
+        <!-- contents -->
+        <section class="ply pt5 tour102002__main tour102009">
+            <div class="inner">
+                <div class="ply__group tour102002__rowTop">
+                    <div class="ply__tit tour102002__tit">
+                        <h3>인터넷 증명서발급 내역</h3>
+                    </div>
+                    <div class="ply__group--list tour102002__list">
+                        <div class="ply__group--item tour102002__item">
+                            <img src="images/u-102-002/image01.png" alt="">
+                            <p>증명서 발급</p>
+                        </div>
+                        <div class="ply__group--item tour102002__item">
+                            <img src="images/u-102-002/image02.png" alt="">
+                            <p>정정요청</p>
+                        </div>
+                        <div class="ply__group--item tour102002__item">
+                            <img src="images/u-102-002/image03.png" alt="">
+                            <p>원본검증</p>
+                        </div>
+                        <div class="ply__group--item tour102002__item">
+                            <img src="images/u-102-002/image04.png" alt="">
+                            <p>등록이력</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contArea">
+                    <div class="ply__wrapper mt5 tour102009__box tour102002__boxMain">
+                        <div class="boardTop clearFix">
+                            <div class="calendar">
+                                <input type="date" class="useDatepicker dateFrom hasDatepicker">
+                                <span class="space">-</span>
+                                <input type="date" class="useDatepicker dateTo hasDatepicker">
+                                <button type="button" class="button">기간조회</button>
+                            </div>
+                            <p>승인대기 상태에서는 종목단체 승인 후에 발급이 가능합니다.</p>
+
+                            <div class="counseling">
+                                <img src="images/u-102-009/image01.png" alt="">
+                                02-2144-8141
+                            </div>
+                        </div>
+
+                        <div class="ply102009__table tour102009__table">
+                            <table class="hpy02__table hpy02__box">
+                                <colgroup>
+                                    <col style="width: 32rem;">
+                                    <col style="width: 12rem;">
+                                    <col style="width: 12rem;">
+                                    <col style="width: 12rem;">
+                                    <col style="width: 12rem;">
+                                    <col style="width: 12rem;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>증명서 종류</th>
+                                        <th>신청일</th>
+                                        <th>발급일</th>
+                                        <th>결제금액</th>
+                                        <th>결제종류</th>
+                                        <th>처리상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="ply102009__text">
+                                                선수실적증명서 <div class="ply102009__tag">블록체인</div>
+                                            </div>
+                                        </td>
+                                        <td>2003-11-27</td>
+                                        <td></td>
+                                        <td>1000원</td>
+                                        <td></td>
+                                        <td>발급완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ply102009__text">
+                                                선수실적증명서 <div class="ply102009__tag">블록체인</div>
+                                            </div>
+                                        </td>
+                                        <td>2003-11-27</td>
+                                        <td>2003-11-29</td>
+                                        <td>1000원</td>
+                                        <td></td>
+                                        <td>발급완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ply102009__text">
+                                                선수실적증명서 <div class="ply102009__tag">블록체인</div>
+                                            </div>
+                                        </td>
+                                        <td>2003-11-25</td>
+                                        <td></td>
+                                        <td>1000원</td>
+                                        <td></td>
+                                        <td>발급완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ply102009__text">
+                                                선수실적증명서 <div class="ply102009__tag">블록체인</div>
+                                            </div>
+                                        </td>
+                                        <td>2003-11-25</td>
+                                        <td></td>
+                                        <td>1000원</td>
+                                        <td></td>
+                                        <td>승인완료 <br>
+                                            (발급가능)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ply102009__text">
+                                                선수실적증명서 <div class="ply102009__tag">블록체인</div>
+                                            </div>
+                                        </td>
+                                        <td>2003-11-25</td>
+                                        <td></td>
+                                        <td>1000원</td>
+                                        <td></td>
+                                        <td>발급완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ply102009__text">
+                                                선수실적증명서 <div class="ply102009__tag">블록체인</div>
+                                            </div>
+                                        </td>
+                                        <td>2003-11-25</td>
+                                        <td></td>
+                                        <td>1000원</td>
+                                        <td></td>
+                                        <td>발급완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ply102009__text">
+                                                선수실적증명서 <div class="ply102009__tag">블록체인</div>
+                                            </div>
+                                        </td>
+                                        <td>2003-11-25</td>
+                                        <td></td>
+                                        <td>1000원</td>
+                                        <td></td>
+                                        <td>승인완료 <br>
+                                            (발급가능)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="paging-ui">
+                        <ul>
+                            <li>
+                                <a href="#" class="first-move">
+                                    <span class="blind">첫 페이지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="prev-move">
+                                    <span class="blind">이전 페이지</span>
+                                </a>
+                            </li>
+                            <li class="current">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#" class="next-move">
+                                    <span class="blind">다음 페이지</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="last-move">
+                                    <span class="blind">끝 페이지</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ply__note">
+                        <p>• 증명서 출력은 발급가능 시점에서 가능하며, 발급은 1회만 가능하오니 최종 인쇄 전에 꼭 테스트 인쇄를 하시기 바랍니다.</p>
+                        <p>• 신청한 증명서의 취소는 발급완료 이전에만 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // contents -->
+
+
+        <!-- footer -->
+        <footer class="ply-ftr">
+            <div class="inner">
+                <h2 class="ply-ftr__tit">(사)대한골프협회</h2>
+                <div class="ply-ftr__adr">
+                    <dl>
+                        <dt>연락처</dt>
+                        <dd>031-540-5700 (안내2번)</dd>
+                        <dd>031-540-5731</dd>
+                    </dl>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>(10881) 경기도 파주시 회동길 174(문발동)</dd>
+                    </dl>
+                    <dl>
+                        <dt>사업자등록번호</dt>
+                        <dd>141-82-01607</dd>
+                    </dl>
+                </div>
+                <a href="#" class="ply-ftr__link">개인정보처리방침</a>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+
+    <script>
+        $(document).on("click", ".menu-btn-ply", function () {
+            const $btn = $(this);
+            const $header = $(".ply-hdr");
+
+            if ($header.hasClass("ply-menu-open")) {
+                $header.removeClass("ply-menu-open");
+                $btn.removeClass("is-open");
+            } else {
+                $header.addClass("ply-menu-open");
+                $btn.addClass("is-open");
+            }
+        });
+        $(document).ready(function () {
+
+            function setupThirdMenu() {
+                const isMobile = window.innerWidth < 1200;
+
+                const $list = $('.ply-nav__list');
+                const $items = $list.find('.ply-nav__item');
+                const $first = $items.first();
+                const $others = $items.not(':first');
+
+                if (isMobile) {
+                    $others.hide();
+
+                    $first.addClass('has-arrow');
+
+                    $first.off('click.mobileToggle').on('click.mobileToggle', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $others.slideToggle(200);
+                        $first.toggleClass('open');
+                    });
+
+                } else {
+                    $others.show();
+                    $first.removeClass('has-arrow open');
+                    $first.off('click.mobileToggle');
+                }
+            }
+
+            setupThirdMenu();
+
+            $(window).on('resize', function () {
+                setupThirdMenu();
+            });
+        });
+
+    </script>
+</body>
+
+</html>
