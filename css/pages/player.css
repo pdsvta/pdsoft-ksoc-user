@@ -2656,7 +2656,7 @@
 
 .ply-reg__label {
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #333;
     white-space: nowrap;
 }
@@ -2668,7 +2668,7 @@
 
 .ply-pop__label {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #333;
 }
@@ -2680,7 +2680,7 @@
 }
 
 .ply-reg__label.small {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .ply-reg__card--row .ply-reg__label {
@@ -2718,7 +2718,7 @@
 
 .ply-reg__input {
     width: 100%;
-    height: 4rem;
+    height: 4.5rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     background: #fff;
@@ -2730,6 +2730,7 @@
 .ply-reg__input--placeholder {
     padding: 1.7rem;
     resize: none;
+    font-size: 1.5rem;
 }
 
 .ply-reg__input--h250 {
@@ -2779,6 +2780,11 @@
 
 .ply-reg__input--max400 {
     max-width: 40rem;
+}
+
+.ply-reg__input--max300 {
+    max-width: 30rem;
+    min-width: 30rem;
 }
 
 .ply-reg__input--max450 {
@@ -2875,6 +2881,11 @@
 .ply-reg__btn:disabled {
     background: #ddd;
     color: #fff;
+    font-size: 1.5rem;
+}
+
+.ply-reg__input:valid {
+    font-size: 1.5rem;
 }
 
 .ply-reg__input::placeholder {
@@ -3365,11 +3376,11 @@
     align-items: center;
     justify-content: center;
     min-width: 10rem;
-    height: 4rem;
+    height: 4.5rem;
     padding: 1.2rem 1.5rem;
     border-radius: 0.5rem;
     background: #666;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #fff;
     border: 0;
     transition: all 0.3s;

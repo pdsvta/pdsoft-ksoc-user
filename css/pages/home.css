@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     line-height: 1.38;
     font-weight: 600;
 }
@@ -65,7 +65,7 @@
     margin-top: 0.8rem;
     text-align: left;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: var(--line-height-normal);
     color: var(--color-text-muted);
     word-break: keep-all;
@@ -421,7 +421,7 @@
     text-align: center;
     gap: 1.4rem;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .popup__tit img {
@@ -488,7 +488,7 @@
 .find__block {
     border: var(--border-base);
     border-radius: var(--border-radius-lg);
-    padding: 3.2rem 4rem;
+    padding: 3.2rem 3rem;
     background: #fff;
 }
 
@@ -523,6 +523,7 @@
 .find__name {
     margin-top: 1.6rem;
     font-weight: 600;
+    font-size: 1.9rem;
 }
 
 .find__link {
@@ -542,7 +543,7 @@
 .find__list li {
     margin-top: 3.2rem;
     font-weight: 400;
-    font-size: var(--font-size-label);
+    font-size: 1.5rem;
     line-height: var(--line-height-label);
     color: var(--color-text-muted);
     word-break: auto-phrase;
@@ -578,6 +579,7 @@
 .find__form .input-base::placeholder {
     font-weight: 300;
     color: #666;
+    font-size: 1.5rem;
 }
 
 .find__form .input-button {

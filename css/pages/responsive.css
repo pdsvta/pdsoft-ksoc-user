@@ -16276,6 +16276,11 @@
     .indv__item {
         width: 100%;
     }
+
+    .ply-reg__input--max300 {
+        max-width: 100%;
+        min-width: auto;
+    }
 }
 
 @media (max-width: 414px) {
