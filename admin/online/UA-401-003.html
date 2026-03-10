@@ -250,7 +250,6 @@
     <script src="./js/gamer.js"></script>
 
     <script>
-        // Mở Popup khi click vào ảnh
         document.querySelectorAll('.tour401003__imgCerti img').forEach(img => {
             img.addEventListener('click', function () {
                 document.getElementById('imgPopupView').src = this.src;
@@ -258,12 +257,10 @@
             });
         });
 
-        // Đóng popup khi nhấn nút X
         document.getElementById('imgPopupClose').addEventListener('click', function () {
             document.getElementById('imgPopup').style.display = 'none';
         });
 
-        // Đóng popup khi click nền overlay
         document.querySelector('.imgPopup__overlay').addEventListener('click', function () {
             document.getElementById('imgPopup').style.display = 'none';
         });

@@ -319,15 +319,12 @@ $(function() {
 
         const text = $(this).find('span').text().trim();
 
-        // Xóa wrapper popup cũ
         $('.tour101001-game-pop-wrapper').remove();
 
-        // Lấy popup gốc
         const $pop1 = $('.game__pop').first().clone();
         $pop1.removeClass('clone');
         $pop1.find('.game__tit span b').text(text);
 
-        // Nếu là 야구소프트볼 → tạo 2 popup
         if (text === '야구소프트볼') {
 
             const $popA = $('.game__pop').first().clone();
@@ -339,14 +336,12 @@ $(function() {
             $popA.find('.game__tit span b').text('야구');
             $popB.find('.game__tit span b').text('소프트볼');
 
-            // Tạo wrapper
             const $wrapper = $('<div class="tour101001-game-pop-wrapper"></div>');
             $wrapper.append($popA).append($popB);
 
             $('body').append($wrapper);
 
         } else {
-            // Các môn khác → 1 popup
             const $wrapper = $('<div class="tour101001-game-pop-wrapper"></div>');
 
             const $single = $('.game__pop').first().clone();
@@ -358,7 +353,6 @@ $(function() {
         }
     });
 
-    // Đóng popup khi click ngoài
     $(document).click(function(e) {
         if (!$(e.target).closest('.tour101001-game-pop-wrapper, .chc__link').length) {
             $('.tour101001-game-pop-wrapper').remove();
@@ -366,7 +360,6 @@ $(function() {
     });
 
 
-    // Toggle và click outside giữ nguyên
     $('#popToggleBtn').click(function(e) {
         e.stopPropagation();
         $(this).next().toggleClass('on');
@@ -381,7 +374,7 @@ $(function() {
 
 });
 
-// datepicker
+
 $.datepicker.setDefaults({
     dateFormat: "yy-mm-dd",
     dayNames: ["S", "M", "T", "W", "T", "F", "S"],
@@ -421,7 +414,7 @@ $(function() {
     $('.datepicker').datepicker();
 });
 
-// selectbox 커스텀
+
 $(document).ready(function () {
     $('.selectbox').each(function () {
         const $select = $(this);
@@ -477,7 +470,7 @@ $(function() {
     // 추가정보 입력 탭
     $('.adtn__tab button').click(function() {
         let currentIndex = $(this).index();
-//        console.log(currentIndex);
+
         $('.adtn__tab button').removeClass('active');
         $(this).addClass('active');
         $('.adtn__section').removeClass('active');

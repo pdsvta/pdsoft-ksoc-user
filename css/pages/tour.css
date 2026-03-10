@@ -14594,7 +14594,7 @@ caption {
 }
 
 .screen1-home__box {
-    padding: 4rem;
+    padding: 4rem 3.5rem;
     border-radius: 0 0 1rem 1rem;
     background: #2e6955a1;
     margin: 0 0 1.5rem;
@@ -14654,7 +14654,7 @@ caption {
 
 .screen1-home__row {
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .screen1-home__row button {
@@ -14665,6 +14665,7 @@ caption {
     padding: .3rem 1.5rem;
     font-weight: 600;
     font-size: 1.5rem;
+    white-space: nowrap;
 }
 
 .screen1-home__row div {
@@ -14676,7 +14677,7 @@ caption {
     height: 1.5rem;
     width: 1px;
     background: #ddd;
-    margin: 0 2rem;
+    margin: 0 1.3rem;
 }
 
 .screen1-home__row div:first-child {

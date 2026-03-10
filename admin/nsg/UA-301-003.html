@@ -965,49 +965,39 @@
     <script src="./js/common.js"></script>
     <script src="./js/gamer.js"></script>
     <script>
-        // jQuery: thêm vào sau khi DOM sẵn sàng
         $(function () {
         const $rows = $('.boardTableCol tbody tr');
 
-        // mouseenter / mouseleave cho mỗi row
         $rows.on('mouseenter', function () {
             const $thisRow = $(this);
-            const rowIndex = $rows.index($thisRow); // 0-based index within tbody
+            const rowIndex = $rows.index($thisRow);
 
-            // highlight chính hàng đang hover
             $thisRow.addClass('hover-row');
 
-            // tìm tất cả td có rowspan trong cùng tbody
             $('.boardTableCol tbody td[rowspan]').each(function () {
             const $td = $(this);
             const $ownerRow = $td.closest('tr');
             const ownerIndex = $rows.index($ownerRow);
             const span = parseInt($td.attr('rowspan'), 10) || 1;
 
-            // nếu hàng hiện tại nằm trong khoảng ownerIndex .. ownerIndex + span - 1
             if (rowIndex >= ownerIndex && rowIndex <= ownerIndex + span - 1) {
-                // đánh dấu td này để hiện như hover
                 $td.addClass('hover-join');
             }
             });
         });
 
         $rows.on('mouseleave', function () {
-            // remove all hover classes
             $rows.removeClass('hover-row');
             $('.boardTableCol tbody td.hover-join').removeClass('hover-join');
         });
         });
     </script>
     <script>
-        // Lấy element
         const popup = document.querySelector('.tour301003__popup');
         const overlay = document.querySelector('.tour301003__overlay');
 
-        // Lấy tất cả nút "수정"
         const editButtons = document.querySelectorAll('.tour301003__btn-edit');
 
-        // Khi click nút "수정" -> mở popup
         editButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 popup.style.display = 'block';
@@ -1015,7 +1005,6 @@
             });
         });
 
-        // Click overlay -> đóng popup
         overlay.addEventListener('click', () => {
             popup.style.display = 'none';
             overlay.style.display = 'none';
