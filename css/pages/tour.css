@@ -8758,7 +8758,7 @@ caption {
 }
 
 .tour503001__item {
-    border-radius: 2rem;
+    border-radius: 3rem;
     border: 1px solid #ddd;
     width: calc((100% - 6rem)/4);
 }
@@ -8772,7 +8772,7 @@ caption {
 }
 
 .tour503001__text p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #111;
     font-weight: 400;
 }
@@ -8780,7 +8780,7 @@ caption {
 .tour503001__text span {
     font-weight: 600;
     color: #111;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .tour503001__note {
