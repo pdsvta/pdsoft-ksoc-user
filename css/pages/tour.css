@@ -5457,11 +5457,12 @@ caption {
     display: flex;
     align-items: center;
     gap: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #666;
     padding: 1rem 2rem 2rem;
     font-weight: 400;
     border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 2rem;
 }
 
 .tour403002__list>div {
@@ -5514,7 +5515,7 @@ caption {
 .tour403002__attachment-list li a {
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #666;
     text-decoration: underline;
@@ -5533,7 +5534,7 @@ caption {
     padding-bottom: 3rem;
     color: #666;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 150%;
 }
 
@@ -5602,7 +5603,7 @@ caption {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1.25rem 1rem;
     text-align: center;
 }
 
@@ -5704,7 +5705,7 @@ caption {
     position: relative;
     margin-left: 0;
     line-height: 150%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #666;
     font-weight: 400;
 }
@@ -5943,8 +5944,8 @@ caption {
     color: #fff;
     border-radius: 5px;
     width: 13rem;
-    height: 4rem;
-    font-size: 1.3rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
     font-weight: 600;
     display: block;
     margin: 50px auto 0;
@@ -5983,7 +5984,7 @@ caption {
 }
 
 .tour405001__textRight {
-    width: 76rem;
+    width: 100%;
     height: 12rem;
     border-top: 1px solid #DDDDDD;
     border-bottom: 1px solid #DDDDDD;
@@ -6000,7 +6001,7 @@ caption {
 .tour405001__note {
     background-color: #F5F5F5;
     color: #666666;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     padding: 6px 10px;
     margin-top: 5px;
@@ -6117,7 +6118,7 @@ caption {
 .tour405003__item {
     border: 1px solid #DDDDDD;
     border-radius: 2rem;
-    width: 14.5rem;
+    width: 15.5rem;
     height: 14.1rem;
     display: flex;
     flex-direction: column;
@@ -6188,22 +6189,22 @@ caption {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
 }
 
 .tour405004__itemHandbook {
     border: 1px solid #DDDDDD;
-    border-radius: 20px;
+    border-radius: 30px;
+    width: calc((100% - 6rem)/4);
 }
 
 .tour405004__itemHandbook img {
-    width: 21.5rem;
+    width: 100%;
     height: auto;
 }
 
 .tour405004__itemHandbook p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #111111;
     text-align: center;
@@ -6394,9 +6395,8 @@ caption {
     gap: 2.5rem;
 }
 
-.tour405006__item img {
-    width: 290px;
-    height: auto;
+.tour405006__boxImg a {
+    width: calc((100% - 5rem) /3);
 }
 
 .tour405006__desc {
@@ -6404,7 +6404,7 @@ caption {
 }
 
 .tour405006__text1 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #111111;
     margin-bottom: 0.5rem;
@@ -6579,7 +6579,7 @@ caption {
 
 .tour405008__postRelated .tour405008__textRelated,
 .tour405008__timeRelated {
-    font-size: 1.3rem;
+    font-size:1.7rem;
     font-weight: 400;
 }
 
@@ -7124,8 +7124,8 @@ caption {
 }
 
 .tour501001__item p {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.7rem;
+    font-weight: 600;
     color: #111;
     padding: 2rem 2rem;
 }
@@ -7134,7 +7134,7 @@ caption {
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #666;
     font-weight: 400;
 }
@@ -8606,7 +8606,7 @@ caption {
 }
 
 .tour502002__section {
-    width: 60rem;
+    width: 70rem;
     min-width: 0;
 }
 
@@ -8616,7 +8616,7 @@ caption {
 }
 
 .tour502002__video img {
-    width: 60rem;
+    width: 70rem;
     height: auto;
 }
 
@@ -8680,7 +8680,7 @@ caption {
 
 .tour502002__tab {
     padding: .5rem 1.8rem .4rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #111;
     background: #F5F5F5;
@@ -8711,33 +8711,33 @@ caption {
 }
 
 .tour502002__img img {
-    width: 15rem;
+    width: 17rem;
     height: auto;
 }
 
 .tour502002__text p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #111;
     margin-bottom: .2rem;
 }
 
 .tour502002__text span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #666;
     letter-spacing: -1px;
 }
 
 .tour502002__item .tour502002__number {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 0;
     margin-top: 1rem;
     gap: 1rem;
 }
 
 .tour502002__item .tour502002__number span {
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 0;
 }
 
@@ -13444,7 +13444,7 @@ caption {
     font-size: 2.1rem;
     color: #1b4fd8;
     height: 7rem;
-    width: 70rem;
+    width: 100rem;
     margin-left: auto;
 }
 
@@ -13456,11 +13456,13 @@ caption {
     list-style: none;
     padding: 0;
     margin: 0 0 5rem;
+    width: 100rem;
+    margin-left: auto;
 }
 
 .hpy406001__icon-item {
     text-align: center;
-    width: 16rem;
+    width: calc((100% - 6rem)/4);
     height: 16rem;
     border-radius: 1rem;
     border: 1px solid #0C54B8;
@@ -14147,19 +14149,19 @@ caption {
     gap: 3rem;
 }
 
-.hpy003001__note button {
+.hpy003001__note a {
     position: relative;
-    padding: 0 2rem;
+    padding: 0 .5rem;
 }
 
-.hpy003001__note button:not(:last-child)::after {
+.hpy003001__note a:not(:last-child)::after {
     content: '';
     position: absolute;
     right: -1.7rem;
     top: 50%;
     transform: translateY(-50%);
     width: 1px;
-    height: 2rem;
+    height: 1.7rem;
     background: #37383C9C;
 }
 
