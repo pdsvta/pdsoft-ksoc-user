@@ -2921,6 +2921,10 @@ input.indent-0 {
   color: #3d3d3d;
   padding-top: 6rem;
 }
+
+.title.pt0 {
+  padding-top: 0;
+}
 .searchBox {
   width: 100%;
   margin: 0 0 80px;

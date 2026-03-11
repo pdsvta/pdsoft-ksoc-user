@@ -1126,23 +1126,23 @@ input[type='radio']:focus+label:before {
 /* input */
 .ply-reg__input {
 	width: 100%;
-	height: 4rem;
+	height: 4.5rem;
 	border: 1px solid #ddd;
 	border-radius: 0.5rem;
 	background: #fff;
 	padding: 0 1rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: #111;
 }
 
 .hpy-reg__input {
 	width: 100%;
-	height: 4rem;
+	height: 4.5rem;
 	border: 1px solid #ddd;
 	border-radius: 0.5rem;
 	background: #fff;
 	padding: 0 1rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	color: #111111;
 }
@@ -1150,6 +1150,7 @@ input[type='radio']:focus+label:before {
 .hpy-reg__input::placeholder {
 	font-weight: 400;
 	color: #999;
+	font-size: 1.5rem;
 }
 
 
@@ -1251,17 +1252,21 @@ input[type='radio']:focus+label:before {
 
 .hpy-reg__btn {
 	min-width: 12rem;
-	height: 4rem;
+	height: 4.5rem;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 0.5rem;
 	background: #666;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	color: #fff;
 	border: 0;
 	cursor: pointer;
+}
+
+.ply__tit.flex-start {
+	justify-content: flex-start;
 }
 
 
@@ -2161,7 +2166,7 @@ input.useDatepicker {
 
 .contArea .subTit {
 	margin-bottom: 15px;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: bold;
 	color: #3d3d3d;
 }
@@ -5428,7 +5433,7 @@ legend {
 	padding: 0 2rem 3rem;
 	color: #111;
 	font-weight: 600;
-	font-size: 2.1rem;
+	font-size: 2.4rem;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 2rem;
 }
@@ -5477,7 +5482,7 @@ legend {
 	display: flex;
 	align-items: end;
 	justify-content: center;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	width: 2rem;
 	height: 2rem;
 }
@@ -5820,7 +5825,7 @@ legend {
 	appearance: none;
 	width: auto;
 	min-width: 11rem;
-	height: 4rem;
+	height: 4.5rem;
 	border-radius: 0.5rem;
 	border: 1px solid #ddd;
 	padding: 0.5rem 1.7rem;
@@ -5829,7 +5834,7 @@ legend {
 	background-color: #fff;
 	position: relative;
 	font-weight: 400;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: #333333;
 	cursor: pointer;
 }
@@ -5851,11 +5856,11 @@ legend {
 	align-items: center;
 	justify-content: center;
 	min-width: 10rem;
-	height: 4rem;
+	height: 4.5rem;
 	padding: 1.2rem 1.5rem;
 	border-radius: 0.5rem;
 	background: #666;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: #fff;
 	border: 0;
 	transition: all 0.3s;
@@ -5998,7 +6003,7 @@ legend {
 
 .ply-reg__label {
 	padding: 1rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: #333;
 	white-space: nowrap;
 }
@@ -6010,7 +6015,7 @@ legend {
 
 .ply-pop__label {
 	display: block;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	color: #333;
 }
@@ -6055,7 +6060,7 @@ legend {
 	align-items: center;
 	gap: 3rem;
 	color: #111;
-	font-size: 1.5rem;
+	font-size: 18px;
 }
 
 .ply102002__row.blue {
@@ -6097,7 +6102,7 @@ legend {
 }
 
 .ply102002__note {
-	font-size: 1.3rem;
+	font-size: 15px;
 	font-weight: 400;
 	color: #666;
 	padding-left: 2rem;
@@ -6157,7 +6162,7 @@ legend {
 }
 
 .ply102003__text.fs13 {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 .ply102003__text.mb0 {
@@ -6249,14 +6254,15 @@ legend {
 
 .ply102007__label {
 	font-weight: 400;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: #0C54B8;
+    white-space: nowrap;
 	flex: 1;
 }
 
 .ply102007__note {
 	font-weight: 400;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	color: #666;
 	margin-top: .5rem;
 	text-align: right;
@@ -6271,7 +6277,7 @@ legend {
 	align-items: center;
 	justify-content: center;
 	gap: .4rem;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-weight: 600;
 	color: #333;
 	width: 14.4rem;
@@ -6421,7 +6427,7 @@ legend {
 
 .hpy02__label.fs13 {
 	color: #666;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	letter-spacing: -1px;
 }
 
@@ -6448,7 +6454,7 @@ legend {
 	height: 5rem;
 	padding: 1.6rem 0;
 	font-weight: 600;
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	vertical-align: middle;
 }
 
@@ -6481,13 +6487,13 @@ legend {
 }
 
 .paging-ui ul li a {
-	width: 3rem;
-	height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-weight: 600;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	border-radius: 0.5rem;
 	transition: all 0.3s;
 	color: #666;
@@ -6504,8 +6510,8 @@ legend {
 }
 
 .paging-ui ul li a {
-	width: 3rem;
-	height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
 	position: relative;
 }
 
@@ -6570,7 +6576,7 @@ legend {
 
 .ply102011__box {
 	width: 100%;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: #111;
 	border-top: 1px solid #ddd;
 }
@@ -6777,7 +6783,7 @@ legend {
 	border-top: 1px solid #e6e6e6;
 	border-bottom: 1px solid #e6e6e6;
 	margin-top: 3rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	color: #333;
 	padding: 3rem 2rem;
@@ -6796,7 +6802,7 @@ legend {
 }
 
 .ply102018__note {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	color: #333;
 	padding: 3rem 2rem 0;
@@ -6847,14 +6853,14 @@ legend {
 	padding: 2rem;
 	border: 1px solid #ddd;
 	border-radius: 1rem;
-	width: 19rem;
+	width: 24rem;
 	color: #111;
 }
 
 .ply102021__row {
 	display: flex;
 	gap: 1rem;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 }
 
 .ply102021__row span {
@@ -6873,7 +6879,7 @@ legend {
 .ply102022__text li {
 	position: relative;
 	margin-left: 2rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	color: #666;
 }
@@ -6900,7 +6906,7 @@ legend {
 }
 
 .ply102022__note {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	color: #666;
 	line-height: 150%;
@@ -6921,7 +6927,7 @@ legend {
 .ply102022__item {
 	border: 1px solid #ddd;
 	border-radius: 1rem;
-	width: 18rem;
+	width: 22rem;
 	height: 10.7rem;
 	display: flex;
 	flex-direction: column;
@@ -6929,7 +6935,7 @@ legend {
 	justify-content: center;
 	gap: 1rem;
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 	font-weight: 600;
 	color: #111;
 }
@@ -6947,7 +6953,7 @@ legend {
 
 .ply102022__des {
 	font-weight: 400;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: #666;
 	text-align: center;
 	line-height: 150%;
@@ -6969,7 +6975,7 @@ legend {
 }
 
 .ply__total {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	color: #111;
 	font-weight: 400;
 }
@@ -7644,7 +7650,7 @@ legend {
 	border: 1px solid #ddd;
 	border-radius: 2rem;
 	padding: 0 1rem;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	color: #111;
 	height: 100%;
@@ -7989,7 +7995,7 @@ legend {
 
 .initial__block p {
 	grid-column: 6 / 10;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 	padding-left: 1.4rem;
 }
@@ -8039,7 +8045,7 @@ legend {
 .initial__desc {
 	margin-top: 1.9rem;
 	font-weight: 400;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 .chc__block {
@@ -8491,7 +8497,7 @@ legend {
 }
 
 .tour102026__card .sms__note {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 	width: 100%;
 	padding-top: 0;
 	padding-left: 0.6rem;

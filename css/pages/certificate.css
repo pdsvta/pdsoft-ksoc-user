@@ -3287,7 +3287,7 @@ a.ui-button:active,
 }
 
 .indv__block h4 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     word-break: auto-phrase;
 }
@@ -3932,13 +3932,13 @@ a.ui-button:active,
 
 .indv__btn2 {
     border: 0;
-    height: 4rem;
+    height: 4.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     background: #666;
     color: #fff;
     line-height: 0;
@@ -4096,7 +4096,7 @@ a.ui-button:active,
     border-radius: 3rem;
     border: 1px solid #ddd;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     background: #fff;
 }
 
@@ -4182,7 +4182,7 @@ a.ui-button:active,
 
 .indv__cap {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #666;
     padding: 1rem;
 }

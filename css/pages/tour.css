@@ -356,7 +356,7 @@ caption {
 .tour__info-list dl {
     display: flex;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 2.6rem;
     color: #000000;
 }
@@ -1084,7 +1084,7 @@ caption {
     gap: 2rem;
     padding: 0 2rem;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #666;
 }
 
@@ -1111,7 +1111,7 @@ caption {
 }
 
 .dtl__box .dtl__table td {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0 1.7rem;
     height: 4rem;
 }
@@ -1119,7 +1119,7 @@ caption {
 .dtl__box .dtl__note {
     width: 44rem;
     min-width: 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: -1px;
 }
@@ -1146,7 +1146,7 @@ caption {
 
 .dtl__wrapper .dtl__work p {
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .dtl__table {
@@ -1507,6 +1507,15 @@ caption {
     min-width: 15rem;
 }
 
+.hpy__select--min220 {
+    min-width: 22.5rem;
+}
+
+
+.hpy__select--min220 select{
+    width: 100%;
+}
+
 .hpy__select--min150 select {
     width: 100%;
 }
@@ -1538,7 +1547,7 @@ caption {
 .hpy__input {
     width: 100%;
     max-width: 42rem;
-    height: 4rem;
+    height: 4.5rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
     padding: 1.2rem 1.7rem;
@@ -1556,7 +1565,7 @@ caption {
 .hpy__search-btn {
     display: inline-block;
     min-width: 5rem;
-    height: 4rem;
+    height: 4.5rem;
     border-radius: 0.5rem;
     border: 0;
     background: #666;
@@ -1657,7 +1666,7 @@ caption {
     vertical-align: middle;
     border-bottom: 1px solid #ddd;
     word-break: keep-all;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: -1px;
     line-height: 130%;
 }
@@ -1668,7 +1677,7 @@ caption {
 
 .hpy__tbl-link {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 130%;
     color: #333;
     transition: all 0.3s;
@@ -1736,7 +1745,7 @@ caption {
     justify-content: space-between;
     gap: 2rem;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     margin-bottom: 2rem;
 }
 
@@ -1804,11 +1813,11 @@ caption {
 
 .hpy-reg__select {
     width: 100%;
-    max-width: 21.5rem;
 }
 
 .hpy-reg__select .selectbox--h35 {
-    height: 3.5rem;
+    height: 4rem;
+    width: 100%;
 }
 
 .selectbox.min80 {
@@ -1932,7 +1941,7 @@ caption {
 }
 
 .hpy-reg__input--h35 {
-    height: 3.5rem;
+    height:4rem;
 }
 
 .hpy-reg__input--h30 {
@@ -2122,7 +2131,7 @@ caption {
 }
 
 .hpy-reg__btn--h35 {
-    height: 3.5rem;
+    height: 4rem;
 }
 
 .hpy-reg__btn--h30 {
@@ -2131,6 +2140,7 @@ caption {
 
 .hpy-reg__btn--h25 {
     height: 2.5rem;
+    font-size: 1.3rem;
 }
 
 .hpy-reg__btn--min70 {
@@ -2197,6 +2207,14 @@ caption {
     min-width: 19rem;
 }
 
+.hpy-reg__btn--min200 {
+    min-width: 20rem;
+    max-width: 20rem;
+}
+
+.hpy-reg__btn--min340 {
+    min-width: 34rem;
+}
 .hpy-reg__btn--min500 {
     min-width: 50rem;
 }
@@ -2383,7 +2401,7 @@ caption {
 
 .lsn__excel-btn {
     min-width: 21.4rem;
-    height: 4rem;
+    height: 4.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2453,7 +2471,7 @@ caption {
 .lsn__table td {
     padding: 1.4rem;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
     vertical-align: middle;
     border-bottom: 1px solid #ddd;
@@ -2650,7 +2668,7 @@ caption {
 }
 
 .hpy0707__wrapper .hpy-reg__tit p {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     color: #111;
     font-weight: 600;
     margin: 0;
@@ -2661,7 +2679,7 @@ caption {
 }
 
 .hpy0707__wrapper .hpy-reg__warn {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #111;
     font-weight: 500;
 }
@@ -2717,8 +2735,8 @@ caption {
 
 .hpy0707__item p {
     color: #666666;
-    font-size: 1.1rem;
-    font-weight: 4rem;
+    font-size: 1.3rem;
+    font-weight: 400;
     margin: 1rem 1rem 0;
 }
 
@@ -2766,7 +2784,7 @@ caption {
 
 .hpy0707__button button {
 
-    height: 4rem;
+    height: 4.5rem;
     display: flex;
     align-items: center;
     gap: 1.1rem;
@@ -2799,7 +2817,7 @@ caption {
 }
 
 .hpy0707__button span {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #666666;
     font-weight: 400;
 }
@@ -2826,7 +2844,7 @@ caption {
     border: 1px solid #ddd;
     height: 10rem;
     color: #666;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 0 2rem;
 }
@@ -3034,6 +3052,10 @@ caption {
     gap: 2rem;
 }
 
+.hpy02__input.w50 {
+    width: 50%;
+}
+
 .hpy02__row {
     display: flex;
     align-items: center;
@@ -3099,7 +3121,7 @@ caption {
 
 .hpy02__total {
     padding: 5rem 2rem 3rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #111;
 }
@@ -3172,7 +3194,6 @@ caption {
     font-size: 1.5rem;
     vertical-align: middle;
     color: #111;
-    text-align: justify;
 }
 
 .hpy02__table tbody tr:last-child td {
@@ -3204,7 +3225,7 @@ caption {
 }
 
 .tour103001__total {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
@@ -3217,7 +3238,7 @@ caption {
     color: #fff;
     height: 2.5rem;
     width: 8rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -3262,7 +3283,7 @@ caption {
 
 .hpy02__title h3 {
     font-weight: 600;
-    font-size: 2.1rem;
+    font-size: 2.6rem;
     color: #111;
     padding: 0 2rem 3rem;
 }
@@ -3527,6 +3548,11 @@ caption {
     gap: .5rem;
 }
 
+.tour__group--input.tour401005__groupSelect .hpy__select.tour401005__itemSelect.hpy__select--min200 {
+    max-width: 27.7rem;
+    min-width: 27.7rem;
+}
+
 .tour__group--input.gap10 {
     gap: 1rem;
 }
@@ -3540,12 +3566,12 @@ caption {
 }
 
 .tour__table .tour__btn {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #111;
     font-weight: 400;
     width: 4rem;
     min-width: 4rem;
-    height: 2rem;
+    height: 2.5rem;
     padding: 0;
     border-radius: .5rem;
     border: 1px solid #ddd;
@@ -4145,7 +4171,7 @@ caption {
 }
 
 .tour401007__title {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -4192,7 +4218,7 @@ caption {
 }
 
 .tour401007__result {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     color: #666;
     margin-bottom: 3rem;
@@ -4215,21 +4241,21 @@ caption {
 }
 
 .tour401007__cardinfo h4 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     margin: 1rem 0 .5rem;
     color: #000;
 }
 
 .tour401007__cardinfo p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #666;
     font-weight: 400;
     margin-bottom: .5rem;
 }
 
 .tour401007__cardinfo b {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #666;
     font-weight: 400;
     display: flex;
@@ -4293,7 +4319,7 @@ caption {
 }
 
 .tour401007-popup__wrapper .tour401007__searchbox {
-    margin: 0 5rem 3rem;
+    margin: 0 5rem 2rem;
 }
 
 .tour401007-popup__wrapper .tour401007__result {
@@ -4503,7 +4529,7 @@ caption {
     border-radius: .5rem;
     padding: .4rem .9rem;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
@@ -4517,13 +4543,13 @@ caption {
 }
 
 .school-card__image {
-    flex: 0 0 36rem;
+    flex: 0 0 40rem;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .school-card__image img {
-    width: 36rem;
+    width: 40rem;
     height: 30rem;
     object-fit: cover;
 }
@@ -4562,12 +4588,12 @@ caption {
 }
 
 .school-card__list .w260 {
-    width: 26rem;
+    width: 40%;
 }
 
 
 .school-card__list .w250 {
-    width: 25rem;
+    width: 60%;
 }
 
 .info-list.bd0 {
@@ -4590,7 +4616,8 @@ caption {
 }
 
 .tour401010__item.w580 {
-    width: 58rem;
+    flex: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -4658,7 +4685,7 @@ caption {
 
 .school-detail .label {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #111;
     position: relative;
     padding: 1.3rem 2rem 1.3rem 2rem;
@@ -4679,7 +4706,7 @@ caption {
     padding: 1.3rem 0;
     word-break: keep-all;
     border-bottom: 1px solid #ddd;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: -1px;
 }
 
@@ -4716,6 +4743,7 @@ caption {
     height: 5rem;
     display: flex;
     align-items: center;
+    font-size: 1.7rem;
 }
 
 .info-list .label::before {
@@ -4729,8 +4757,8 @@ caption {
     word-break: keep-all;
     overflow-wrap: break-word;
     border-bottom: 1px solid #ddd;
-    padding-left: 2rem;
-    font-size: 1.3rem;
+    padding-left: 4rem;
+    font-size: 1.5rem;
     letter-spacing: -1px;
     height: 5rem;
     display: flex;
@@ -4769,7 +4797,7 @@ caption {
 }
 
 .tour401010__text3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid #DDDDDD;
     text-align: center;
     color: #666;
@@ -4813,12 +4841,12 @@ caption {
     border: 1px solid #ddd;
     border-radius: .5rem;
     background-color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #333;
     gap: 1.5rem;
-    height: 4rem;
-    min-width: 15rem;
+    height: 4.5rem;
+    min-width: 16rem;
     width: 100%;
 }
 
@@ -4926,7 +4954,7 @@ caption {
     padding: 1.7rem 0;
     text-align: left;
     vertical-align: middle;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     height: 7rem;
 }
@@ -4955,14 +4983,14 @@ caption {
 
 .tour402001__table .day-row td.day {
     font-weight: 600;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     text-align: center;
     line-height: 100%;
     vertical-align: top;
 }
 
 .tour402001__table .day-row td.day span {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .tour402001__table td {
@@ -5120,7 +5148,7 @@ caption {
 
 .tour402002__box .section ul {
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 2rem 3rem;
     color: #111;
 }
@@ -5276,15 +5304,15 @@ caption {
 }
 
 .tour402004__item {
-    width: 13rem;
-    height: 5rem;
+    width: 14rem;
+    height: 5.5rem;
     border-radius: .5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -5341,7 +5369,7 @@ caption {
     display: flex;
     align-items: center;
     gap: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #111;
     margin-top: 5rem;
@@ -6314,7 +6342,7 @@ caption {
 
 .tour405006__select2 {
     width: 9rem;
-    height: 4rem;
+    height: 4.5rem;
     color: #333333;
     padding: 0.8rem 1rem;
     border: 1px solid #DDDDDD;
@@ -6323,7 +6351,7 @@ caption {
 }
 
 .tour405006__select2 option {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -6345,7 +6373,7 @@ caption {
 
 .tour405006__btnFilter {
     width: 7rem;
-    height: 4rem;
+    height: 4.5rem;
     border: 0;
     border-radius: 0.5rem;
     background: #666666;
@@ -8497,7 +8525,7 @@ caption {
     grid-template-columns: max-content 1fr;
     column-gap: 2rem;
     row-gap: .5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #666;
     padding: 0 2rem 2rem;
@@ -9183,7 +9211,7 @@ caption {
     align-items: center;
     padding-left: 2rem;
     color: #666666;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -9265,12 +9293,12 @@ caption {
 
 .tour004040__allBtn button {
     background: #666666;
-    width: 22rem;
-    height: 4rem;
+    width: 25rem;
+    height: 4.5rem;
     border: 0;
     border-radius: 0.5rem;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
     /* padding: 1.2rem 0; */
@@ -9781,7 +9809,7 @@ caption {
 }
 
 .tour004047__desc {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #666666;
     margin-top: 0.5rem;
@@ -11163,7 +11191,7 @@ caption {
 }
 
 .hpy004004__item p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #111;
     padding: 2rem;
@@ -11194,8 +11222,6 @@ caption {
 }
 
 .hpy004005__item {
-    width: 19rem;
-    height: 20.8rem;
     border-radius: 2rem;
     border: 1px solid #ddd;
 }
@@ -11218,10 +11244,14 @@ caption {
 }
 
 .hpy004005__content {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     padding: 2.5rem 1.4rem;
     color: #666;
+}
+
+.hpy02__table.tour401013__table.tour004006__table tbody td {
+    padding: 0 2rem;
 }
 
 .hpy004005__content b {
@@ -11240,7 +11270,7 @@ caption {
 
 .hpy004005__note {
     padding: 0 2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     color: #666;
     line-height: 150%;
@@ -11292,14 +11322,14 @@ caption {
 
 .hpy004007__text h4 {
     color: #111;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .hpy004007__text p {
     color: #666;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 0;
 }
@@ -11321,7 +11351,7 @@ caption {
 .hpy004008__item h4 {
     color: #111;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid #ddd;
@@ -11404,13 +11434,13 @@ caption {
 
 .hpy004014__img img {
     width: auto;
-    height: 4rem;
+    height: 4.5rem;
     margin: 0 auto;
 }
 
 .hpy004014__img p {
     margin: 1rem 0 3rem;
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     font-weight: 600;
     color: #111;
 }
@@ -11479,12 +11509,12 @@ caption {
 }
 
 .hpy004016__title p {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     margin-bottom: 1rem;
 }
 
 .hpy004016__title span {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .hpy004016__title span.fw400 {
@@ -11527,7 +11557,7 @@ caption {
 
 .hpy004016__group.sp-bw {
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     padding: 0 2rem 2rem;
 }
@@ -11762,7 +11792,7 @@ caption {
 }
 
 .hpy004017__table2 table tr:first-child td p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #666;
     margin-top: .5rem;
@@ -11774,7 +11804,7 @@ caption {
 }
 
 .hpy004017__table2 table tr td.table-checkbox {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #666;
     padding: 2rem;
@@ -12043,6 +12073,15 @@ caption {
     align-items: center;
 }
 
+.hpy004047-2__text button {
+    border: none;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    background: #666;
+    color: #fff;
+}
+
 .hpy004047-2__filter {
     background: #F5F5F5;
     border: 1px solid #ddd;
@@ -12176,6 +12215,10 @@ caption {
 
 .tour104001__btnFilter {
     margin-left: 2rem;
+}
+
+.tour104001__btnFilter.ml0 {
+    margin-left: 0;
 }
 
 .tour108005__bold {
@@ -13055,8 +13098,8 @@ caption {
 
 .hpy004015__item {
     position: relative;
-    width: 21.5rem;
-    height: 29rem;
+    width: calc((100% - 6rem)/4);
+    height: 30rem;
     border: 1px solid #ddd;
     border-radius: 1rem;
     display: flex;
@@ -13077,15 +13120,16 @@ caption {
 }
 
 .hpy004015__text strong {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
 .hpy004015__text p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 150%;
     margin-top: 1rem;
+    text-align: justify;
 }
 
 .hpy004015__text p.mt05 {
@@ -13184,6 +13228,7 @@ caption {
     flex-direction: column;
     gap: 2rem;
     padding: 3.5rem 4.7rem 2rem;
+    width: 100%;
     background: url('../../images/u-004-015/image07.png') center 0 no-repeat;
 }
 
@@ -13205,8 +13250,7 @@ caption {
 }
 
 .hpy004015__card {
-    width: 16rem;
-    height: 14rem;
+    width: calc((100% - 12rem) / 5);
     border: 1px solid #0C54B8;
     border-radius: 2rem;
     gap: 2rem;
@@ -13220,7 +13264,7 @@ caption {
     border-radius: 2rem 2rem 0 0;
     background: #0C54B8;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     text-align: center;
     height: 4rem;
@@ -13240,6 +13284,10 @@ caption {
 .hpy004015__picture img {
     width: auto;
     height: 3.5rem;
+}
+
+.hpy02__table.tour404003__table  tbody td{
+    text-align: center;
 }
 
 .hpy004015__picture span {
@@ -13520,7 +13568,7 @@ caption {
 .indv306001__row {
     display: flex;
     gap: 3rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #000;
 }
 
