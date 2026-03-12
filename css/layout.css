@@ -2162,10 +2162,8 @@ legend {
     top: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(-10px);
-
     width: 100vw;
-  height:var(--submenu-height,0px);
-
+    height: 133px;
     background: #fff;
     border-top: 1px solid #ddd;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);

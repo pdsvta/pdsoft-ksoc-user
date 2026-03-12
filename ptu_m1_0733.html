@@ -525,6 +525,7 @@
                         <ul class="brdc__submenu">
                             <li><a href="#">증명서 발급</a></li>
                             <li><a href="#">증명서 발급</a></li>
+                            <li><a href="#">증명서 발급</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -1329,19 +1330,6 @@
 
         });
 
-    </script>
-
-    <script>
-        const brdc = document.querySelector('.brdc');
-        const submenu = document.querySelector('.brdc__submenu');
-
-        function updateHeight(){
-        const h = submenu.offsetHeight;
-        brdc.style.setProperty('--submenu-height', h + 'px');
-        }
-
-        updateHeight();
-        window.addEventListener('resize', updateHeight);
     </script>
 </body>
 

@@ -1336,7 +1336,7 @@
     background-color: #fff;
     position: relative;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #333333;
     cursor: pointer;
 }
@@ -2862,7 +2862,7 @@ a.ui-button:active,
     margin-top: 5rem;
 }
 
-/* 
+/*
 .paging-ui ul {
     display: flex;
     align-items: center;
@@ -3198,11 +3198,13 @@ a.ui-button:active,
 .indv__title {
     margin-bottom: 2rem;
 }
+
 .indv__title.mb50 {
     margin-bottom: 5rem;
 }
+
 .indv__tit {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     margin-bottom: 2rem;
     font-weight: 600;
 }
@@ -3241,8 +3243,8 @@ a.ui-button:active,
 
 .indv__block {
     border: 1px solid #ddd;
-    border-radius: 30px;
-    padding: 5rem;
+    border-radius: 20px;
+    padding: 2rem;
     background: #fff;
     overflow: hidden;
 }
@@ -3277,7 +3279,7 @@ a.ui-button:active,
 }
 
 .indv__block p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     word-break: auto-phrase;
 }
@@ -3347,33 +3349,33 @@ a.ui-button:active,
 }
 
 .indv__guide a {
-	position: absolute;
-	display: inline-block;
-	border: 2px solid #0C54B8;
-	border-radius: 28px;
-	opacity: 0;
-	transition: 0.3s;
-	width: 20rem;
-	height: 20rem;
+    position: absolute;
+    display: inline-block;
+    border: 2px solid #0C54B8;
+    border-radius: 28px;
+    opacity: 0;
+    transition: 0.3s;
+    width: 20rem;
+    height: 20rem;
 }
 
 .indv__guide a.linkBtn_multi {
-	border: 2px solid transparent;
+    border: 2px solid transparent;
 }
 
 
 .indv__guide a.linkBtn_multi>div {
-	position: absolute;
-	display: inline-block;
-	border: 2px solid #0C54B8;
-	border-radius: 28px;
-	transition: 0.3s;
-	width: 20rem;
-	height: 20rem;
+    position: absolute;
+    display: inline-block;
+    border: 2px solid #0C54B8;
+    border-radius: 28px;
+    transition: 0.3s;
+    width: 20rem;
+    height: 20rem;
 }
 
 .indv__guide a:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 .indv__guide a.linkBtn_01 {
@@ -3393,13 +3395,13 @@ a.ui-button:active,
 }
 
 .indv__guide .linkBtn_03_1 {
-	left: -.3rem;
-	top: 0;
+    left: -.3rem;
+    top: 0;
 }
 
 .indv__guide .linkBtn_03_2 {
-	top: 0;
-	left: 221px;
+    top: 0;
+    left: 221px;
 }
 
 .indv__guide a.linkBtn_04 {
@@ -3419,42 +3421,42 @@ a.ui-button:active,
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_06_1 {
-	top: 0;
-	left: -.6rem;
-	width: 20rem;
+    top: 0;
+    left: -.6rem;
+    width: 20rem;
 }
 
 .indv__guide .linkBtn_06_2 {
-	left:219px;
+    left: 219px;
 }
 
 .indv__guide a.linkBtn_07 {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 50%, 0 50%);
-	width: 653px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 50%, 0 50%);
+    width: 653px;
     top: 289px;
     left: 508px;
     height: 427px;
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_07_1 {
-	left: 0;
-	top: 0;
-	width: 20rem;
+    left: 0;
+    top: 0;
+    width: 20rem;
 }
 
 .indv__guide .linkBtn_07_2 {
-	left: 224px;
-	top: 0;
+    left: 224px;
+    top: 0;
 }
 
 .indv__guide .linkBtn_07_3 {
-	left: 450px;
-	top: 0;
+    left: 450px;
+    top: 0;
 }
 
 .indv__guide .linkBtn_07_4 {
-	right: 0;
-	bottom: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .indv__guide .linkBtn_08 {
@@ -4726,9 +4728,9 @@ a.ui-button:active,
     align-items: center;
     justify-content: center;
     border: 1px solid #ddd;
-    border-radius: 2rem;
+    border-radius: 1.2rem;
     padding: 0 1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #111;
     height: 100%;
@@ -5102,7 +5104,7 @@ a.ui-button:active,
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     color: #666;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     margin: 0 2rem;
 }
