@@ -514,9 +514,18 @@
                     </li>
                     <li class="brdc__item">
                         <a href="#" class="brdc__link">스포츠원클릭</a>
+                        <ul class="brdc__submenu">
+                            <li><a href="#">스포츠원클릭</a></li>
+                            <li><a href="#">스포츠원클릭</a></li>
+                            <li><a href="#">스포츠원클릭</a></li>
+                        </ul>
                     </li>
                     <li class="brdc__item">
                         <a href="#" class="brdc__link">증명서 발급</a>
+                        <ul class="brdc__submenu">
+                            <li><a href="#">증명서 발급</a></li>
+                            <li><a href="#">증명서 발급</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -1320,6 +1329,19 @@
 
         });
 
+    </script>
+
+    <script>
+        const brdc = document.querySelector('.brdc');
+        const submenu = document.querySelector('.brdc__submenu');
+
+        function updateHeight(){
+        const h = submenu.offsetHeight;
+        brdc.style.setProperty('--submenu-height', h + 'px');
+        }
+
+        updateHeight();
+        window.addEventListener('resize', updateHeight);
     </script>
 </body>
 

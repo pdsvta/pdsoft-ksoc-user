@@ -10472,7 +10472,7 @@ caption {
 
 .tour401002__listChecked .tour__group--item .tour__group--checked {
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .tour401002__listChecked .tour__group--item .tour__group--checked .ply-reg__agree {
@@ -10498,7 +10498,7 @@ caption {
 
 .tour401002__listChecked .tour401002__group {
     flex: 1;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: flex-end;
 }
 

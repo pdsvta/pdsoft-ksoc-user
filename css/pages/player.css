@@ -3640,7 +3640,7 @@
 }
 
 .ply-reg__agree label {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .ply-reg__display .ply-reg__agree {
@@ -3653,7 +3653,7 @@
     border: 1px solid #ddd;
     display: block;
     margin: 2rem auto 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     height: 4rem;
 }
 
