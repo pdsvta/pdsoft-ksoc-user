@@ -12285,6 +12285,11 @@ caption {
     justify-content: space-between;
 }
 
+.hpy511001__item img {
+    height: 20rem;
+    object-fit: cover;
+}
+
 .hpy511001__tag {
     position: absolute;
     top: 1rem;
@@ -15534,4 +15539,8 @@ caption {
     background: #F5F5F5;
     font-size: 1.5rem;
     padding: 2px 7px;
+}
+
+.tour401001__table .tour__group .hpy-reg__btn {
+    font-size: 1.3rem;
 }
