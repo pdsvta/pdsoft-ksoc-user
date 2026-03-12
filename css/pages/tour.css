@@ -15507,3 +15507,31 @@ caption {
     width: auto;
     height: 1.8rem;
 }
+
+.tour401001__table .tour__text--left p span {
+    display: flex;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.tour401001__table .tour__text--left p span:first-child img {
+    height: 12px;
+    width: auto;
+}
+
+.tour401001__table .tour__text--left p span img {
+    height: 16px;
+    width: auto;
+}
+
+.tour401001__table .tour__text--left p span:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.tour401001__table .tour__text--left div span {
+    border-radius: .5rem;
+    background: #F5F5F5;
+    font-size: 1.5rem;
+    padding: 2px 7px;
+}
