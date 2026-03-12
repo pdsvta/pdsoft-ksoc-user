@@ -15534,6 +15534,12 @@ caption {
     margin-right: 1.5rem;
 }
 
+.tour401001__table .tour__text--left div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+
 .tour401001__table .tour__text--left div span {
     border-radius: .5rem;
     background: #F5F5F5;
