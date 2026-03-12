@@ -819,16 +819,17 @@ video {
 
 /* button */
 .button {
-	display: inline-block;
-	height: 40px;
-	line-height: 38px;
-	padding: 0 35px;
-	border-radius: 20px;
-	background-color: #3d3d3d;
-	vertical-align: middle;
-	font-size: 18px;
-	color: #fff;
-	cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    line-height: 38px;
+    padding: 0 2rem;
+    border-radius: .5rem;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    background: #666666;
+    border: 0;
 }
 
 .button-type01 {
@@ -2171,20 +2172,16 @@ input.useDatepicker {
 	color: #3d3d3d;
 }
 
-.contArea .subTit::before {
-	content: '';
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	margin: 0 10px 0 0;
-	border: solid 4px #3d3d3d;
-	border-radius: 50%;
-	background-color: #fff;
-}
 
 .contArea .issue-certificate {
-	margin-bottom: 65px;
-	position: relative;
+    border-radius: 5rem;
+    border: 1px solid #DDDDDD;
+    padding: 5rem;
+	margin-bottom: 2rem;
+}
+
+.contArea .issue-certificate:first-child {
+    margin-top: 5rem;
 }
 
 .contArea .issue-certificate:last-child {
@@ -2193,12 +2190,22 @@ input.useDatepicker {
 
 [class*=boxType] {
 	width: 100%;
-	border-radius: 10px;
-	border: solid 1px #c4c4c4;
-	background-color: #f7f7f7;
 	box-sizing: border-box;
 	overflow: hidden;
 	position: relative;
+}
+
+.issue-certificate .applicantInfor >div {
+    display: flex;
+	flex-direction: column;
+	gap: 2rem;
+    color: #3d3d3d;
+    font-size: 18px;
+}
+
+.issue-certificate .applicantInfor .ply102002__selectbox {
+	flex-direction: row;
+	gap: 0;
 }
 
 .issue-certificate .subTit {
@@ -2210,21 +2217,33 @@ input.useDatepicker {
 }
 
 .issue-certificate .boxType01 {
-	margin: 13px 0 20px;
-	padding: 27px 34px;
+    display: flex;
+    padding: 0 2rem;
+	margin: 2rem 0;
+	gap: .5rem;
+}
+
+.issue-certificate .boxType01.m200 {
+	margin: 2rem 0 0;
+}
+
+.issue-certificate .boxType01.m0500 {
+	margin: .5rem 0 0;
 }
 
 .issue-certificate .boxType01 a {
-	display: inline-block;
-	height: 34px;
-	line-height: 33px;
-	margin: 0 15px 15px 0;
-	padding: 0 20px;
-	border-radius: 16px;
-	border: solid 1px #9e9e9e;
-	background-color: #fff;
-	font-size: 16px;
-	transition: 0.3s;
+    border-radius: .5rem;
+    border: 1px solid #ddd;
+    margin: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    transition: 0.3s;
+    line-height: 33px;
 }
 
 .issue-certificate .boxType01 a:hover {
@@ -2250,15 +2269,16 @@ input.useDatepicker {
 }
 
 .issue-certificate [class*=boxType] a.disabled {
-	border: solid 1px #c4c4c4;
-	background-color: #f7f7f7;
-	color: #ccc;
-	cursor: unset;
+    border: none;
+    background: #ddd;
+    color: #fff;
 }
 
 .issue-certificate .guideTxt {
-	font-size: 15px;
-	color: #3d3d3d;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    padding-left: 2rem;
 }
 
 .issue-certificate .guideTxt::before {
@@ -2275,34 +2295,19 @@ input.useDatepicker {
 .issue-certificate .applicantInfor {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: flex-start;
+	margin-bottom: 2rem;
 }
 
 .issue-certificate .applicantInfor p {
-	font-size: 18px;
-	color: #3d3d3d;
+	font-weight: 400;
+	display: flex;
+	gap: 3rem;
+	font-size: 2rem;
 }
 
 .issue-certificate .applicantInfor p strong {
-	display: inline-block;
-	margin-left: 15px;
-	font-weight: 500;
-}
-
-.issue-certificate .applicantInfor p strong:first-child {
-	margin: 0 17px 0 15px;
-	padding-right: 25px;
-	position: relative;
-}
-
-.issue-certificate .applicantInfor p strong:first-child::after {
-	content: '';
-	width: 1px;
-	height: 17px;
-	background-color: #b1b1b1;
-	position: absolute;
-	top: 6px;
-	right: 0;
+	font-weight: 600;
 }
 
 .issue-certificate .applicantInfor select {
@@ -2321,10 +2326,7 @@ input.useDatepicker {
 }
 
 .issue-certificate .applyBox01 p strong {
-	display: inline-block;
-	margin-left: 5px;
-	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .issue-certificate .applyBox01 .inquiryTxt {
@@ -5475,6 +5477,10 @@ legend {
 	background: transparent;
 }
 
+.ply__title.blue .subTit {
+	color: #0C54B8;
+}
+
 .ply__wrapper.bd-blue .ply__title.blue span {
 	color: #fff;
 	background: #0C54B8;
@@ -8466,256 +8472,6 @@ legend {
 	text-align: center;
 	float: right;
 }
-
-.tour102026__card {
-    display: flex;
-	align-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.tour102026__card.itemCard,
-.tour102026__card.itemCardText {
-	align-items: flex-start;
-}
-
-.tour102026__card.itemCard label {
-	padding-top: 1rem;
-}
-
-.tour102026__card .selectbox {
-    width: 32%;
-}
-
-.tour102026__card label {
-    width: 10%;
-}
-
-.tour102026__card input,
-.tour102026__card textarea,
-.ply102026__group.tour102026__group {
-    flex: 1;
-}
-
-.tour102026__card .sms__note {
-    font-size: 1.5rem;
-	width: 100%;
-	padding-top: 0;
-	padding-left: 0.6rem;
-}
-
-/* .tour102026__card .sms__note {
-    position: relative;
-    padding-left: 2.5rem;
-    padding-top: 0;
-} */
-
-.tour102026__card .sms__note::before {
-    display: none;
-}
-
-.tour102026__checkRadio {
-	display: flex;
-	align-items: center;
-	margin-top: 1rem;
-}
-
-.tour102026__checkRadio input[type='radio'] {
-	width: 2rem;
-	height: 2rem;
-	border: 1px solid #ddd;
-	overflow: visible;
-	position: unset;
-	clip: unset;
-}
-
-.tour102026__btnVoice {
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
-
-.tour102006 .contArea {
-    margin-top: 5rem;
-}
-
-.tour102006 .contArea .issue-certificate {
-    border-radius: 5rem;
-    border: 1px solid #DDDDDD;
-    padding: 5rem;
-
-}
-
-.tour102006 .contArea .issue-certificate [class*=boxType] {
-	border: none;
-	background: none;
-}
-
-.tour102006 .contArea .issue-certificate .boxType01 {
-	margin: 0 ;
-	padding: 0 2rem;
-	align-items: flex-start;
-}
-
-.tour102006 .issue-certificate .applicantInfor p strong:first-child {
-	padding-right: 0;
-}
-
-.tour102006 .issue-certificate .applicantInfor p strong:first-child::after {
-	display: none;
-}
-
-.tour102006 .contArea .issue-certificate {
-	margin-bottom: 2rem;
-}
-
-.issue-certificate .applicantInfor .ply102002__info p {
-	margin-bottom: 2rem;
-}
-
-.tour102006 .issue-certificate .applicantInfor p {
-	font-weight: 400;
-}
-
-.tour102006 .issue-certificate .applicantInfor p strong {
-	font-weight: 600;
-	font-size: 20px;
-}
-
-.tour102006 .issue-certificate .guideTxt {
-	padding: 0 2rem;
-}
-
-.tour102006 .issue-certificate .applicantInfor select {
-	font-size: 1.5rem;
-	margin-right: 0;
-}
-
-.tour102006 .contArea .subTit::before {
-	display: none;
-}
-
-.ply__title.blue .subTit{
-    color: #0C54B8;
-    display: flex;
-    align-items: center;
-    gap: .8rem;
-    background: transparent;
-}
-
-.tour102006 .contArea .issue-certificate .boxType01.applyBox03 {
-	display: flex;
-	align-items: center;
-	gap: .5rem;
-	margin: 2rem 0;
-}
-
-.tour102006 .contArea .issue-certificate .boxType01.applyBox03.m200 {
-	margin: 2rem 0 0;
-}
-.tour102006 .contArea .issue-certificate .boxType01.applyBox03.m0500 {
-	margin: .5rem 0 0;
-}
-
-.tour102006 .contArea .issue-certificate .boxType01 a {
-	border-radius: .5rem;
-	border: 1px solid #ddd;
-	margin: 0;
-	height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	font-weight: 400;
-	font-size: 1.5rem;
-}
-
-.tour102006 .contArea .issue-certificate .boxType01 a.disabled {
-	border: none;
-    background: #ddd;
-	color: #fff;
-}
-
-.tour102006 .contArea .issue-certificate .applicantInfor .button{
-    display: inline-block;
-    height: 40px;
-    line-height: 38px;
-    padding: 0 2rem;
-    border-radius: .5rem;
-    vertical-align: middle;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    background: #666666;
-    border: 0;
-}
-.tour102009 .boardTop.clearFix {
-	position: relative;
-	padding: 0 2rem;
-	margin: 0 0 3rem;
-    display: flex;
-    align-items: center;
-}
-.tour102009 .boardTop .calendar {
-	display: flex;
-	align-items: center;
-	margin-right: 0;
-}
-
-.tour102009 .boardTop p {
-    font-weight: 400;
-    white-space: nowrap;
-    color: #666;
-    font-size: 1.5rem;
-	padding: 0;
-	margin-left: .5rem;
-}
-
-.tour102009 input.useDatepicker {
-    font-size: 1.5rem;
-    color: #111;
-    font-weight: 400;
-    padding: 1rem;
-    height: 4rem;
-    text-align: center;
-    max-width: 15rem;
-    min-width: 15rem;
-}
-
-.tour102009 .boardTop .calendar .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 400;
-    min-width: 8rem;
-    background: #666666;
-    border: 0;
-    color: #fff;
-}
-
-.tour102009 .boardTop .counseling {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .4rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    border: 1px solid #DDDDDD;
-    border-radius: .5rem;
-    height: 4rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-	padding: 0;
-	position: absolute;
-	right: 2rem;
-	top: 0;
-}
-
-.tour102009 .boardTop .counseling img {
-    width: auto;
-    height: 1.8rem;
-}
-
 @media (max-width: 912px) {
 	.chc__list--img {
         column-gap: 1rem;

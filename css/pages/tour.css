@@ -15551,3 +15551,146 @@ caption {
 .tour401001__table .tour__group .hpy-reg__btn {
     font-size: 1.3rem;
 }
+
+
+
+.content .double {
+    display: grid;
+    grid-template-columns: 1fr 26rem;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.content .double--left {
+    padding: 5rem;
+    border: 1px solid #ddd;
+    border-radius: 3rem;
+    width: 100%;
+}
+
+.content-body .double.print .double-header {
+    padding: 0;
+    border-bottom: none;
+}
+
+.content-body .double.print .double-header h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+}
+
+.content-body .double.print .double-header p {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-body .double.print .double-body .print-list  {
+    margin-top: 2.2rem;
+}
+
+.content-body .double.print .double-body .print-list ul {
+    background: #F5F5F5;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.content-body .double.print .double-body .print-list ul li {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.5rem;
+    position: relative;
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+.content-body .double.print .double-body .print-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.content-body .double.print .double-body .print-list ul li p.subject {
+    width: 10rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.content-body .double.print .double-body .print-list ul li.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 0;
+    justify-content: flex-start;
+}
+
+.content-body .double.print .btn {
+    border-radius: 3.5rem;
+    padding: 1.5rem 1.8rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: #0C54B8;
+    border: 0;
+    font-weight: 400;
+    min-width: 10rem;
+    height: 5rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    float: right;
+}
+
+.content .double--right .call {
+    position: sticky;
+    top: 12.8rem;
+}
+
+.content .double--right .call-item {    
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    background: #F5F5F5;
+    border: 1px solid #ddd;
+    border-radius: 2.5rem;
+    padding: 2.6rem 2rem;
+}
+
+.content .double--right .call-item figure {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.content .double--right .call-item figure img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.content .double--right .call-item >div {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .double--right .call-item >div span,
+.content .double--right .call-item >div h6 {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.content .double--right .call-item.system {
+    margin-top: 2rem;
+}
