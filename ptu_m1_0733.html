@@ -1334,26 +1334,17 @@
     <script>
         const brdc = document.querySelector('.brdc');
         const items = document.querySelectorAll('.brdc__item');
-
         items.forEach(item => {
-
             item.addEventListener('mouseenter', () => {
-
                 const submenu = item.querySelector('.brdc__submenu');
-
                 let h = 0;
-
                 if(submenu){
                     h = submenu.scrollHeight;
                 }
-
                 brdc.style.setProperty('--submenubrdc-height', h + 'px');
                 brdc.classList.add('active');
-
             });
-
         });
-
         brdc.addEventListener('mouseleave', () => {
             brdc.classList.remove('active');
         });
