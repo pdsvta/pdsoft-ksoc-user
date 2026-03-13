@@ -841,14 +841,18 @@ video {
 }
 
 .button-type02 {
-	height: 34px;
-	line-height: 32px;
-	padding: 0 15px;
-	border-radius: 3px;
-	border: solid 1px #b1b1b1;
-	background-color: #f5f5f5;
-	font-size: 16px;
-	color: #3d3d3d;
+    min-width: 9rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: #666;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
 }
 
 .btnRight {
@@ -861,8 +865,13 @@ video {
 }
 
 /* table */
+
+.tableType01.table-hover.p02 {
+	padding: 0 2rem;
+}
+
 .tableType01 table {
-	border-top: 1px solid #777;
+	border-top: 1px solid #d2d2d2;
 	border-right: 1px solid #d2d2d2;
 }
 
@@ -884,7 +893,7 @@ video {
 	border-left: solid 1px #d2d2d2;
 	background-color: #fff;
 	text-align: center;
-	font-size: 16px;
+	font-size: 15px;
 	vertical-align: middle;
 }
 
@@ -1544,15 +1553,19 @@ select.readonly {
 
 /*  Datepicker */
 input.useDatepicker {
-	width: 138px;
-	height: 40px;
+    max-width: 15rem;
+    min-width: 15rem;
+	height: 45px;
 	padding: 9px 10px 10px;
-	border-radius: 3px;
 	border: solid 1px #b1b1b1;
 	background: #fff url('../../../../images/spo/cert/assets/img_date.svg') no-repeat 89% 9px;
-	font-size: 16px;
-	color: #3d3d3d;
+	font-size: 15px;
+	color: #111;
 	cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
 }
 
 #ui-datepicker-div {
@@ -1985,10 +1998,10 @@ input.useDatepicker {
 
 /* 증명서 발급 */
 .contTop {
-	margin-bottom: 50px;
-	padding: 0 0 30px 0;
-	border-bottom: 1px solid #c4c4c4;
-	position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
 }
 
 .contTop h3 {
@@ -2062,12 +2075,8 @@ input.useDatepicker {
 }
 
 .contTop .notifyIcon {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: absolute;
-	top: 13px;
-	right: 0;
+    display: flex;
+    gap: .5rem;
 }
 
 .contTop .notifyIcon li {
@@ -2311,8 +2320,24 @@ input.useDatepicker {
 }
 
 .issue-certificate .applicantInfor select {
-	width: 209px;
-	margin-right: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    min-width: 17rem;
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1.7rem;
+    padding-right: 3.5rem;
+    background: url(../../../images/icons/select-icon.png) no-repeat calc(100% - 10px) 50% / 12px auto;
+    background-color: #fff;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333333;
+    cursor: pointer;
+	margin-right: 5px;
 }
 
 .issue-certificate .applyBox01 {
@@ -2716,8 +2741,11 @@ input.useDatepicker {
 }
 
 .boxType02 {
-	margin-top: 50px;
-	padding: 20px 20px 20px 32px;
+    border-radius: 10px;
+    border: solid 1px #c4c4c4;
+    background-color: #f7f7f7;
+    margin-top: 5rem;
+    padding: 2rem 2rem 2rem 3.2rem;
 }
 
 .boxType02 p {
@@ -2852,13 +2880,22 @@ input.useDatepicker {
 
 /* 증명사 발급내역 */
 .boardTop {
-	overflow: hidden;
-	margin: 55px 0 25px 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.clearFix:before, .clearFix:after {
+	display: none;
 }
 
 .boardTop .calendar {
-	float: left;
-	margin-right: 35px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .boardTop .calendar .space {
@@ -2867,43 +2904,54 @@ input.useDatepicker {
 }
 
 .boardTop .calendar .button {
-	width: 89px;
-	margin-left: 5px;
-	padding: 0 15px;
-	border-radius: 3px;
-	border: solid 1px #b1b1b1;
-	background-color: #f5f5f5;
-	font-size: 16px;
-	color: #3d3d3d;
+    min-width: 8rem;
+    height: 4.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: #666;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
 }
 
 .boardTop p {
-	float: left;
-	padding: 7px 0 0 25px;
-	font-size: 15px;
-	font-weight: 500;
-	line-height: 2.07;
-	color: #025ac6;
-	background: url(../../../../images/spo/cert/assets/bg_txtIcon01.svg) no-repeat 0 13px;
+    white-space: nowrap;
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .boardTop .counseling {
-	float: right;
-	width: 160px;
-	height: 40px;
-	padding: 11px 17px 8px 40px;
-	border-radius: 20px;
-	border: solid 1px #b1b1b1;
-	background: #fff url(../../../../images/spo/cert/assets/ico_counseling.svg) no-repeat 13px center;
-	box-sizing: border-box;
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: bold;
-	color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    width: 15.4rem;
+    border: 1px solid #DDDDDD;
+    border-radius: .5rem;
+    height: 4.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boardTop .counseling:hover {
+	border: 1px solid #0043B7;
+}
+
+.boardTop .counseling img {
+    width: auto;
+    height: 1.751rem;
+
 }
 
 .tableType01.table-hover table {
-	border-top: 2px solid #3d3d3d;
 	border-bottom: 1px solid #d2d2d2;
 }
 
@@ -2918,7 +2966,7 @@ input.useDatepicker {
 }
 
 .tableType01.table-hover table tbody td {
-	border-top: 1px solid #d2d2d2;
+	border-top: 1px solid #ddd;
 	border-bottom: 0;
 	cursor: pointer;
 }
@@ -2990,67 +3038,69 @@ input.useDatepicker {
 
 /* 원본검증 */
 .original-verification {
-	margin-top: 45px;
-	padding: 0 0 0 0;
-	background: url(../../../../images/spo/cert/assets/img_original-verification.png) no-repeat 400px 12px;
+    border-radius: 5rem;
+    border: 1px solid #DDDDDD;
+    padding: 5rem;
+	margin-top: 5rem;
 }
 
 .original-verification .txt01 {
-	margin-bottom: 20px;
-	font-size: 22px;
-	font-weight: bold;
-	line-height: 1.41;
-	color: #3d3d3d;
+    color: #111;
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding: 0 2rem 2rem;
 }
 
 .original-verification .txt02 {
-	margin-bottom: 200px;
-	padding-left: 13px;
-	font-size: 15px;
-	line-height: 1.6;
-	color: #3d3d3d;
-	position: relative;
+    position: relative;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #666;
+    padding: 0 2rem 3rem;
 }
 
 .original-verification .txt02::before {
-	display: block;
-	content: '';
-	width: 6px;
-	height: 6px;
-	background-color: #7a7a7a;
-	border-radius: 50%;
-	position: absolute;
-	top: 10px;
-	left: 0;
+	content: '•';
+    color: #666;
+    position: absolute;
+    left: -.5rem;
+    right: 0;
 }
 
 .original-verification .boxType01 {
-	height: 94px;
-	padding: 27px 169px;
+    background: #F5F5F5;
+    height: 9.5rem;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
+    padding: 0 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.original-verification .ply102019__box {
+	margin: 0 2rem;
 }
 
 .original-verification .boxType01 strong {
-	display: inline-block;
-	margin-right: 20px;
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 1.72;
-	color: #3d3d3d;
-	vertical-align: middle;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111;
+    white-space: nowrap;
 }
 
 .original-verification .boxType01 input[type=text] {
-	width: 110px;
-	height: 40px;
-	padding: 8px 0;
-	border-radius: 20px;
-	border: solid 1px #3d3d3d;
-	background-color: #fff;
-	text-align: center;
-	font-family: Roboto;
-	font-size: 18px;
-	font-weight: 500;
-	color: #3d3d3d;
+    width: 100%;
+    height: 4.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    background: #fff;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111111;
 }
 
 .original-verification .boxType01 .space {
@@ -3061,7 +3111,9 @@ input.useDatepicker {
 }
 
 .original-verification .boxType01 .button {
-	margin-left: 20px;
+	margin-left: 0;
+    min-width: 12rem;
+    height: 4.5rem;
 }
 
 .original-verification-result h4 {
@@ -3140,34 +3192,29 @@ input.useDatepicker {
 }
 
 /* 등록이력 안내 */
-.issue-certificate .registration-history {
-	margin: 13px 0 0 0;
-	padding: 35px;
+.registHistoryList{
+    background: #F5F5F5;
+    margin: 0 2rem;
+    padding: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
 }
 
-.issue-certificate .registration-history .registHistoryList {
-	display: flex;
-	justify-content: start;
+.issue-certificate .registration-history {
+	margin: 0;
+	padding: 0;
 }
 
 .issue-certificate .registration-history .registHistoryList li {
-	width: 220px;
-	height: 80px;
-	margin-right: 20px;
-	padding: 15px 30px;
-	border-radius: 10px;
-	border: solid 1px #c4c4c4;
-	background-color: #fff;
-	font-size: 16px;
-	color: #3d3d3d;
-	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+    font-size: 2rem;
+	font-weight: 400;
 }
 
 .issue-certificate .registration-history .registHistoryList li strong {
-	display: block;
-	margin-top: 3px;
-	font-size: 18px;
-	font-weight: 500;
+    font-weight: 500;
 }
 
 /* 공지사항, 1:1 문의사항 */
@@ -3746,7 +3793,7 @@ input.useDatepicker {
 
 
 /* 231127 edited by mylee */
-.original-verification .extraBtn {
+.contArea .extraBtn {
 	margin-top: 20px;
 	text-align: center;
 }
