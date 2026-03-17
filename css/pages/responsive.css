@@ -2048,7 +2048,7 @@
     }
 
     .footer-main__menu-item+.footer-main__menu-item::before {
-        margin: 0 0.6rem;
+        margin: 0 1.2rem;
     }
 
     .footer-main__menu-item a {
@@ -16301,11 +16301,18 @@
 
     .headerMain-top {
         order: 2;
+        padding: .8rem 0;
     }
 
     .headerMain-top img {
-        width: 1.3rem;
-        height: 1.3rem;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4c4c4c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
     }
 
     .headerMain-list {
@@ -16339,6 +16346,15 @@
         display: flex;
     }
 
+    .headerMain-list li:last-child.headerMain-btns a {
+        display: none;
+    }
+
+    .headerMainmenu-btn span,
+    .headerMainmenu-btn span:nth-child(2) {
+        width: 20px;
+    }
+
     .headerMain-logo {
         height: 3.2rem;
     }
@@ -16349,7 +16365,11 @@
     }
 
     .screen1-home {
-        padding-top: 12rem;
+        padding-top: 11rem;
+    }
+
+    .screen1-home.header-closed {
+        padding-top: 6rem;
     }
 
     .home-back .inner {
@@ -16551,6 +16571,12 @@
     .screen1-home__box {
         padding: 3rem 2rem;
         background: #1A575180;
+    }
+
+    .screen1-home__click {
+        gap: .9rem;
+        top: 4%
+        ;
     }
 
     .screen1-home__ic1, .screen1-home__ic2 {
@@ -16943,6 +16969,61 @@
         display: inline-block;
         padding-right: 0;
         min-width: 6rem;
+    }
+
+    .footer-main__inner {
+        flex-direction: column;
+    }
+
+    .footer-homeMain .footer-main__sponsors {
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+
+    .footer-main__menu {
+        margin: 0;
+    }
+
+    .footer-main__copyright, .footer-main__address {
+        text-align: left;
+    }
+    .footer-homeMain .footer-main__address, 
+    .footer-homeMain .footer-main__copyright {
+        font-size: 1.4rem;
+    }
+
+    .footer-homeMain .footer-homeMain-logo {
+        margin-bottom: 2rem;
+        height: 3rem;
+    }
+
+    .footer-homeMain .footer-main__sponsor-logos {
+        gap: 1rem;
+        flex-wrap: nowrap;
+    }
+
+    .footer-homeMain .footer-main__logo3 {
+        height: 1.8rem;
+    }
+
+    .footer-homeMain .footer-main__logo2 {
+        height: 1.8rem;
+    }
+
+    .footer-homeMain .footer-main__logo1 {
+        height: 2.3rem;
+    }
+
+    .footer-homeMain .footer-main__sponsor-text{
+        font-size: 1.2rem;
+    }
+
+    .footer-main {
+        padding: 6rem 0;
+    }
+
+    .footer-homeMain .footer-cal {
+        padding: 2rem 3rem;
     }
 }
 
