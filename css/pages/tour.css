@@ -15694,3 +15694,16 @@ caption {
 .content .double--right .call-item.system {
     margin-top: 2rem;
 }
+
+.screen5-home-schedule-table td {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.screen5-home-schedule-table th {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}

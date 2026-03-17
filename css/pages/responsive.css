@@ -16281,6 +16281,668 @@
         max-width: 100%;
         min-width: auto;
     }
+
+    .headerMain-text button {
+        font-size: 1.2rem;
+        border-radius: 2rem;
+        padding: .5rem 1.5rem;
+        white-space: nowrap;
+    }
+
+    .headerMain-text p span,
+    .headerMain-text p {
+        font-size: 1.2rem;
+    }
+
+    .header-homeMain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerMain-top {
+        order: 2;
+    }
+
+    .headerMain-top img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .headerMain-list {
+        width:85%;
+    }
+
+    .headerMain-text p span, .headerMain-text p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerMain-slider{
+        height: 35px;
+    }
+
+    .headerMain-bottom .headerMain-list {
+        width: 100%;
+    }
+
+    .headerMain-bottom {
+        height: 6rem;
+        order: 1;
+    }
+
+    .home-back-menu,
+    .headerMain-list li {
+        display: none;
+    }
+
+    .headerMain-list li:last-child.headerMain-btns {
+        display: flex;
+    }
+
+    .headerMain-logo {
+        height: 3.2rem;
+    }
+
+    .home-back {
+        background: none;
+        padding: 0;
+    }
+
+    .screen1-home {
+        padding-top: 12rem;
+    }
+
+    .home-back .inner {
+        flex-direction: column;
+        padding: 0 ;
+    }
+
+    .screen1-home__left {
+        width: 100%;
+        padding: 4rem 3.6rem;
+        background: url('../../images/home-main/back1-mb.jpg') center 0 no-repeat;
+        background-size: cover;
+    }
+
+    .screen1-home__title {
+        font-size: 2.3rem;
+        margin-bottom: 0;
+    }
+
+    .screen1-home__subtitle {
+        font-size: 1.4rem;
+    }
+
+    .screen1-home__list {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0 2rem;
+    }
+
+    .screen1-home__item {
+        width: calc((100% - 1rem) / 2);
+    }
+
+    .screen1-home__item img {
+        height: 3rem;
+    }
+
+    .screen1-home__item p {
+        font-size: 1.4rem;
+    }
+
+    .screen1-home__item:hover {
+        transform: translateY(0);
+        background: #fff;
+    }
+
+    .screen1-home__groups {
+        flex-wrap: wrap;
+        gap: .5rem;
+        padding: 0 2rem;
+    }
+
+    .screen1-home__select {
+        width: 100%;
+    }
+
+    .screen1-home__select button {
+        background: #0C54B8;
+        height: 4rem;
+    }
+
+    .screen1-home__select .selectbox {
+        font-size: 1.3rem;
+        height: 4rem;
+    }
+
+    .screen1-home__line {
+        margin: 2rem 0;
+    }
+
+    .screen1-home__list.gap01 {
+        flex-wrap: wrap;
+        gap: .5rem;
+        padding: 0 2rem;
+        margin: 0;
+    }
+
+    .screen1-home__card {
+        width: calc((100% - 1.5rem) / 3);
+        padding: 1rem 0;
+    }
+
+    .screen1-home__card img {
+        height: 2.7rem;
+    }
+
+    .screen1-home__card p {
+        font-size: 1.3rem;
+    }
+
+    .screen1-home__title2 {
+        font-size: 1.7rem;
+        padding-bottom: 2rem;
+    }
+
+    .screen1-home__note {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .screen1-home__noteText img {
+        width: 1.7rem;
+    }
+
+    .screen1-home__noteText {
+        font-size: 1.4rem;
+    }
+
+    .screen1-home__title2.mb20 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .screen1-home__select.w100 {
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    .screen1-home__select.w100 .selectbox:first-child{
+        width: 100%;
+    }
+
+    .screen1-home__select.w100 .selectbox:nth-child(2){
+        width: calc(70% - .25rem);
+    }
+
+    .screen1-home__select.w100 .tour__btn{
+        width: calc(30% - .25rem);
+    }
+
+    .screen1-home__note .screen1-home__select button {
+        min-width: unset;
+        padding: 0 1rem;
+        white-space: nowrap;
+    }
+
+    .screen1-home__right {
+        width: 100%;
+        padding: 4rem 3.6rem;
+        background: url('../../images/home-main/back2-mb.jpg') center 0 no-repeat;
+        background-size: cover;
+    }
+
+    .screen1-home__title4 {
+        font-size: 1.5rem;
+        height: 4.5rem;
+    }
+
+    .screen1-home__section {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .screen1-home__value {
+        width: calc((100% - 2rem)/2);
+    }
+
+    .screen1-home__value::after {
+        right: -1rem;
+    }
+
+    .screen1-home__value p {
+        font-size: 1.7rem;
+    }
+
+    .screen1-home__value::after {
+        height: 3rem;
+    }
+
+    .screen1-home__value:nth-child(2)::after {
+        display: none;
+    }
+
+    .screen1-home__row {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    .screen1-home__row button {
+        width: 11rem;
+        font-size: 1.3rem;
+        padding: .6rem 1.5rem;
+    }
+
+    .screen1-home__row div span {
+        font-size: 1.4rem;
+    }
+
+    .screen1-home__row div b {
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+
+    .screen1-home__row .line {
+        margin: 0 1rem ;
+    }
+
+    .screen1-home__box {
+        padding: 3rem 2rem;
+        background: #1A575180;
+    }
+
+    .screen1-home__ic1, .screen1-home__ic2 {
+        width: 1.1rem;
+        height: auto;
+    }
+
+    .screen1-home__ic3 {
+        width: .7rem;
+        height: auto;
+    }
+
+    .screen1-home__row div {
+        align-items: normal;
+    }
+
+    .screen1-home__content {
+        padding: 2rem 2rem 4rem;
+    }
+
+    .screen1-home__des {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 1.1rem;
+        line-height: 138%;
+    }
+
+    .screen1-home__info h3 {
+        font-size: 1.4rem;
+    }
+
+    .screen1-home__info p,
+    .screen1-home__info h5 {
+        font-size: 1.3rem;
+    }
+
+    .screen1-home__more.abs {
+        font-size: 1.4rem;
+        position: absolute;
+        right: 2rem;
+        top: 12rem;
+    }
+
+    .screen1-home__flex {
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 2rem;
+        justify-content: space-around;
+    }
+
+    .screen1-home__flex img:first-child {
+        order: 1;
+        height: 9rem;
+    }
+    .screen1-home__flex img:last-child {
+        order: 2;
+        height: 10rem;
+    }
+
+    .screen1-home__text {
+        order: 3;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .screen1-home__text h5 {
+        font-size: 1.5rem;
+    }
+
+    .screen1-home__text p {
+        text-align: justify;
+    }
+
+    .screen1-home__more {
+        text-align: right;
+        font-size: 1.4rem;
+    }
+
+    .screen1-home__title3 {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.3rem;
+        height: auto;
+        padding: 1rem 2rem;
+        gap: 0;
+    }
+
+    .screen1-home__title3 span {
+        font-size: 1.3rem;
+    }
+
+    .screen2-home {
+        padding: 4rem 0;
+    }
+
+    .screen2-home__box {
+        flex-wrap: wrap;
+        margin: 3rem 0 0;
+        gap: .5rem;
+    }
+
+    .screen-home__title {
+        font-size: 2.5rem;
+    }
+
+    .screen2-home .screen-home__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .screen2-home__card {
+        width: calc((100% - .5rem)/2);
+        margin-top: .5rem;
+    }
+
+    .screen2-home__item p {
+        font-size: 1.4rem;
+    }
+
+    .screen2-home__item span {
+        font-size: 1rem;
+    }
+
+    .screen2-home__item {
+        line-height: 100%;
+    }
+
+    .screen2-home__title {
+        font-size: 1.7rem;
+        padding: .8rem 3rem;
+    }
+
+    .screen2-home__title img {
+        width: 2rem;
+    }
+
+    .screen2-home__note {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+
+    .screen3-home__tabs {
+        flex-wrap: wrap;
+    }
+
+    .screen3-home__tab {
+        font-size: 1.3rem;
+        padding: .5rem 2.2rem;
+    }
+
+    .screen3-home {
+        padding: 4rem 0;
+    }
+
+    .screen-home__subtitle {
+        font-size: 1.7rem;
+    }
+
+    .screen5-home__box {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .screen5-home__left {
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .screen5-home__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .screen5-home__title h3 {
+        font-size: 1.8rem;
+    }
+
+    .screen5-home__title h5 {
+        font-size: 1.8rem;
+    }
+
+    .screen5-home .tab .date {
+        font-size: 1rem;
+    }
+
+    .screen5-home .tabs {
+        margin: 0 1rem;
+    }
+
+    .screen5-home .tab .day {
+        font-size: 1rem;
+    }
+
+    .screen5-home .tab {
+        padding: 8px 0;
+        line-height: 100%;
+    }
+
+    .schedule-tabs .nav {
+        width: 1.7rem;
+        height: 1.7rem;
+        font-size: 1.5rem;
+        line-height: 90%;
+    }
+
+    .screen5-home__right {
+        width: 100%;
+    }
+
+    .screen5-home__card {
+        padding: 2rem;
+    }
+
+    .screen5-home__card .screen5-home__title {
+        margin-bottom: 1rem;
+    }
+
+    .screen5-home__text h5 {
+        font-size: 1.4rem;
+    }
+
+    .screen5-home__text p,
+    .screen5-home__text span {
+        font-size: 1.2rem;
+    }
+
+    .screen5-home__cta {
+        bottom: -4.5rem;
+    }
+
+    .screen5-home__cta button {
+        font-size: 1.2rem;
+    }
+
+    .screen5-home {
+        padding: 4rem 0 2.5rem;
+    }
+
+    .screen6-home__box {
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .screen6-home__item {
+        width: calc((100% - .5rem) / 2);
+        border-radius: 0;
+        margin-top: 1.5rem;
+    }
+
+    .screen6-home__text p {
+        font-size: 1.3rem;
+    }
+
+    .screen6-home__text span {
+        font-size: 1.2rem;
+    }
+
+    .screen6-home__text {
+        line-height: 100%;
+    }
+
+    .screen6-home {
+        padding: 0 0 4rem;
+    }
+
+    .screen7-home__item {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .screen7-home__text b {
+        font-size: 1.1rem;
+    }
+
+    .screen7-home__text p {
+        font-size: 1.5rem;
+    }
+
+    .screen7-home__text span{
+        font-size: 1.2rem;
+        line-height: 150%;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .screen7-home__text {
+        line-height: 100%;
+    }
+
+    .screen7-home__item img {
+        width: 55%;
+    }
+
+    .screen7-home__box {
+        gap: 1rem;
+    }
+
+    .screen8-home {
+        padding: 4rem 0;
+    }
+
+    .screen8-home__box {
+        gap: .5rem;
+        flex-wrap: wrap;
+        margin: 2rem 1.5rem 0;
+    }
+
+    .screen8-home__item {
+        width: calc((100% - .5rem)/2);
+    }
+
+    .screen5-home-schedule-table {
+        border: none;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .screen5-home-schedule-table thead {
+        display: none;
+    }
+
+    .screen5-home-schedule-table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .screen5-home-schedule-table tbody tr:last-child {
+        margin-bottom: 0;
+    }
+
+    .screen5-home-schedule-table tbody tr td {
+        display: flex;
+        text-align: left;
+        padding: 1.1rem 1rem;
+        border: none;
+        height: auto;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #ddd;
+        margin: 0 2rem;
+        color: #666;
+    }
+
+    .screen5-home-schedule-table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .screen5-home-schedule-table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #000;
+        order: 1;
+    }
+
+    .screen5-home-schedule-table tbody tr td:nth-child(1) {
+        order: 2;
+    }
+
+    .screen5-home-schedule-table tbody tr td:nth-child(3) {
+        order: 3;
+    }
+
+    .screen5-home-schedule-table tbody tr td:nth-child(1)::before {
+        content: "구분";
+    }
+
+    .screen5-home-schedule-table tbody tr td:nth-child(3)::before {
+        content: "기간";
+    }
+
+
+    .screen5-home-schedule-table tbody tr td:nth-child(1)::before,
+    .screen5-home-schedule-table tbody tr td:nth-child(3)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 6rem;
+    }
 }
 
 @media (max-width: 414px) {
