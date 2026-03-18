@@ -16575,8 +16575,7 @@
 
     .screen1-home__click {
         gap: .9rem;
-        top: 4%
-        ;
+        top: 4rem;
     }
 
     .screen1-home__ic1, .screen1-home__ic2 {
@@ -16675,9 +16674,11 @@
     }
 
     .screen2-home__box {
-        flex-wrap: wrap;
         margin: 3rem 0 0;
         gap: .5rem;
+        column-count: 2;
+        column-gap: 5px;
+        display: block;
     }
 
     .screen-home__title {
@@ -16689,8 +16690,10 @@
     }
 
     .screen2-home__card {
-        width: calc((100% - .5rem)/2);
-        margin-top: .5rem;
+        display: inline-block;
+        width: 100%;           
+        break-inside: avoid;
+        margin-bottom: 1rem;
     }
 
     .screen2-home__item p {
@@ -16706,12 +16709,24 @@
     }
 
     .screen2-home__title {
-        font-size: 1.7rem;
-        padding: .8rem 3rem;
+        font-size: 1.6rem;
+        padding: .8rem 0 .8rem 2.5rem;
     }
 
     .screen2-home__title img {
         width: 2rem;
+    }
+
+    .screen2-home__list {
+        padding: 5rem 2rem 1rem;
+    }
+
+    .screen2-home__card:nth-child(2) .screen2-home__item:last-child,
+    .screen2-home__card:nth-child(4) .screen2-home__item:last-child,
+    .screen2-home__card:last-child .screen2-home__item:nth-child(2) {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .screen2-home__note {
@@ -17024,6 +17039,12 @@
 
     .footer-homeMain .footer-cal {
         padding: 2rem 3rem;
+    }
+
+    .screen4__slide-arrow {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2.5rem;
     }
 }
 

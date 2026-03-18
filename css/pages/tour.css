@@ -15058,11 +15058,11 @@ caption {
     background: #3169b4;
 }
 
-.screen2-home__card:nth-child(2) .screen2-home__title {
+.screen2-home__card:nth-child(3) .screen2-home__title {
     background: #f5990a;
 }
 
-.screen2-home__card:nth-child(3) .screen2-home__title {
+.screen2-home__card:nth-child(2) .screen2-home__title {
     background: #009a44;
 }
 
@@ -15072,6 +15072,26 @@ caption {
 
 .screen2-home__card:nth-child(5) .screen2-home__title {
     background: #a40102;
+}
+
+.screen2-home__card:nth-child(1) {
+    order: 1;
+}
+
+.screen2-home__card:nth-child(3) {
+    order: 2;
+}
+
+.screen2-home__card:nth-child(2) {
+    order: 3;
+}
+
+.screen2-home__card:nth-child(4) {
+    order: 4;
+}
+
+.screen2-home__card:nth-child(5) {
+    order: 5;
 }
 
 
