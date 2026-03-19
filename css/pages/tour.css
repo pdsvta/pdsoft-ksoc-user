@@ -1841,7 +1841,7 @@ caption {
 }
 
 .hpy-reg__select--max170 {
-    max-width: 170rem;
+    max-width: 17rem;
 }
 
 .hpy-reg__select--max223 {
@@ -15732,4 +15732,80 @@ caption {
     padding: 1rem;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+}
+
+.hpy601001__filter {
+    padding: 5rem;
+    border-radius: 2rem;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hpy601001__select,
+.hpy601001__group {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.hpy601001__group .hpy02__label {
+    margin-right: 1rem;
+}
+
+.hpy601001__title {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: .5rem;
+}
+
+.hpy601001__wrapper {
+    padding: 5rem;
+}
+
+.hpy601001__item {
+    padding: 0 2rem 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.hpy601001__item:last-child {
+    margin-bottom: 0;
+}
+
+.hpy601001__lable {
+    color: #0C54B8;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.hpy601001__row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hpy601001__row p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111;
+}
+
+.hpy601001__row p span {
+    padding: .3rem 1rem;
+    border-radius: .5rem;
+    color: #666;
+    border: 2px solid #ddd;
+}
+
+.hpy601001__row p:first-child span {
+    padding: .3rem 1rem;
+    border-radius: .5rem;
+    color: #40ffff;
+    border: 2px solid #40ffff;
 }
