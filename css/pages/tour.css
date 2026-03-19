@@ -14771,8 +14771,9 @@ caption {
 
 .screen1-home__section {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .screen1-home__value {
@@ -14781,18 +14782,23 @@ caption {
     font-size: 1.3rem;
     text-align: center;
     position: relative;
+    width: calc((100% - 4rem)/3);
+}
+
+.screen1-home__value:nth-child(3)::after {
+    display: none;
 }
 
 .screen1-home__value::after {
     content: '';
     width: 1px;
-    height: 3.5rem;
+    height: 3rem;
     background: #F5F5F5;
     display: block;
     position: absolute;
     top: 1rem;
     transform: translateX(-50%);
-    right: -3rem;
+    right: -1rem;
 }
 
 .screen1-home__value:last-child::after {

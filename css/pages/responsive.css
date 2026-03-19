@@ -17046,6 +17046,18 @@
         height: 3rem;
         font-size: 2.5rem;
     }
+
+    
+    .screen1-home__value:nth-child(3)::after {
+        display: block;
+    }
+
+    
+    .screen1-home__value:nth-child(4)::after {
+        display: none;
+    }
+
+
 }
 
 @media (max-width: 414px) {
