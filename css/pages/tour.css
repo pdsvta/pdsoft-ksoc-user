@@ -1307,6 +1307,10 @@ caption {
     color: #333;
 }
 
+.hpy.pt15 {
+    padding-top: 15rem;
+}
+
 .hpy.pt8 {
     padding-top: 8rem;
 }
@@ -15749,8 +15753,13 @@ caption {
     gap: .5rem;
 }
 
-.hpy601001__group .hpy02__label {
-    margin-right: 1rem;
+.hpy601001__groups .hpy02__label {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.hpy601001__groups .selectbox,
+.hpy601001__groups .hpy601001__group {
+    margin-top: .5rem;
 }
 
 .hpy601001__title {
