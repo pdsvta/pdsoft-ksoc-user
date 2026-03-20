@@ -254,14 +254,150 @@
                 </div>
             </div>
         </header>
-
+        <!-- breadcrumbs -->
+        <div class="brdc brdc-homemain">
+            <div class="inner">
+                <ul class="brdc__list">
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__home">
+                            <img src="images/icons/home-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__link">스포츠원클릭</a>
+                        <ul class="brdc__submenu">
+                            <li><a href="#">스포츠원클릭</a></li>
+                            <li><a href="#">스포츠원클릭</a></li>
+                            <li><a href="#">스포츠원클릭</a></li>
+                        </ul>
+                    </li>
+                    <li class="brdc__item">
+                        <a href="#" class="brdc__link">증명서 발급</a>
+                        <ul class="brdc__submenu">
+                            <li><a href="#">증명서 발급</a></li>
+                            <li><a href="#">증명서 발급</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- // breadcrumbs -->
         <!-- contents -->
-        <section class="hpy">
+        <section class="hpy pt15">
             <div class="inner">
                 <div class="title">
                     <h2>기록물 아카이브 검색</h2>
                 </div>
+
                 <div class="hpy02__wrapper hpy601001__wrapper">
+                    <div class="hpy601002__box">
+                        <h3>관리 정보</h3>
+                        <div class="hpy601002__item">
+                            <dl>
+                                <dt>기록건제목</dt>
+                                <dd>2025년 1월 국가대표 강화훈련 계획서 제출(복싱)</dd>
+                            </dl>
+                            <dl>
+                                <dt>기록철제목</dt>
+                                <dd>강화훈련 월별계획</dd>
+                            </dl>
+                            <dl>
+                                <dt>연결된분류자</dt>
+                                <dd>기능분류체계 > 국가대표관리</dd>
+                            </dl>
+                            <dl>
+                                <dt>접수자</dt>
+                                <dd>함난희</dd>
+                            </dl>
+                            <dl>
+                                <dt>접수일자</dt>
+                                <dd>2024-12-31</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="hpy601002__box">
+                        <h3>기본 정보</h3>
+                        <div class="hpy601002__item">
+                            <dl>
+                                <dt>생산기관</dt>
+                                <dd>대한체육회(B551013)</dd>
+                            </dl>
+                            <dl>
+                                <dt>기록물번호</dt>
+                                <dd>JHOMS243664910064000</dd>
+                            </dl>
+                            <dl>
+                                <dt>기록물유형</dt>
+                                <dd>없음</dd>
+                            </dl>
+                            <dl>
+                                <dt>기록물형태</dt>
+                                <dd>일반문서</dd>
+                            </dl>
+                            <dl>
+                                <dt>접수자</dt>
+                                <dd>함난희</dd>
+                            </dl>
+                            <dl>
+                                <dt>보존기간</dt>
+                                <dd>3년</dd>
+                            </dl>
+                            <dl>
+                                <dt>접수부서</dt>
+                                <dd>대한체육회 > 선수촌장 > 훈련본부 > 훈련기획부</dd>
+                            </dl>
+                            <dl>
+                                <dt>관리부서</dt>
+                                <dd>훈련기획부</dd>
+                            </dl>
+                            <dl>
+                                <dt>문서번호</dt>
+                                <dd>훈련기획부-12130</dd>
+                            </dl>
+                            <dl>
+                                <dt>등록유형</dt>
+                                <dd>접수</dd>
+                            </dl>
+                            <dl>
+                                <dt>전자기록물여부</dt>
+                                <dd>전자</dd>
+                            </dl>
+                            <dl>
+                                <dt>생산시스템</dt>
+                                <dd>전자결재</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="hpy601002__box">
+                        <h3>결재 정보</h3>
+                        <div class="hpy601002__item">
+                            <table class="hpy02__table hpy601002__table">
+                                <thead>
+                                    <th>이름</th>
+                                    <th>직책</th>
+                                    <th>처리유형</th>
+                                    <th>처리일시</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>함난희</td>
+                                        <td>대리</td>
+                                        <td>확인</td>
+                                        <td>2024-12-31 14:41:42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>신동광</td>
+                                        <td>부장</td>
+                                        <td>확인</td>
+                                        <td>2024-12-31 15:52:45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="hpy601002__cta">
+                        <button type="button" class="hpy-reg__btn hpy-reg__btn--min100 blue">목록</button>
+                    </div>
                 </div>
             </div>
 
@@ -851,6 +987,25 @@
 
         menu.addEventListener('mouseleave', () => {
             menu.classList.remove('active');
+        });
+    </script>
+
+    <script>
+        const brdc = document.querySelector('.brdc');
+        const items = document.querySelectorAll('.brdc__item');
+        items.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const submenu = item.querySelector('.brdc__submenu');
+                let h = 0;
+                if(submenu){
+                    h = submenu.scrollHeight;
+                }
+                brdc.style.setProperty('--submenubrdc-height', h + 'px');
+                brdc.classList.add('active');
+            });
+        });
+        brdc.addEventListener('mouseleave', () => {
+            brdc.classList.remove('active');
         });
     </script>
 </body>

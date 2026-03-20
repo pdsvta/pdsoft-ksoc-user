@@ -2129,7 +2129,6 @@ legend {
     background: #fff;
     border: 1px solid #ddd;
     border-top: none;
-    border-bottom: none;
     min-width: 100%;
     width: 19.1rem;
     padding: 10px 0;
@@ -2138,7 +2137,7 @@ legend {
     transform: translateY(-8px);
     z-index: 1;
     transition: all .25s ease;
-    /* box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08); */
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
 }
 
 .brdc__submenu li{
@@ -2163,27 +2162,4 @@ legend {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-}
-
-.brdc::after{
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-10px);
-    width: 100vw;
-    height: var(--submenubrdc-height);
-    background: #fff;
-    border-top: 1px solid #ddd;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-    opacity: 0;
-    visibility: hidden;
-    transition: all .25s ease;
-    /* padding-bottom: 1rem; */
-}
-
-.brdc:has(.brdc__link:hover)::after{
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
 }

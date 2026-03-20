@@ -15815,6 +15815,73 @@ caption {
 .hpy601001__row p:first-child span {
     padding: .3rem 1rem;
     border-radius: .5rem;
-    color: #40ffff;
-    border: 2px solid #40ffff;
+    color: #49bce1;
+    border: 2px solid #49bce1;
+}
+
+.hpy601002__box {
+    margin: 0 2rem 2rem;
+}
+
+.hpy601002__box:last-child {
+    margin: 0 2rem 0;
+}
+
+.hpy601002__box h3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #111;
+    width: 30rem;
+    border: 1px solid #ddd;
+    border-radius: 2rem 2rem 0 0;
+    border-bottom: none;
+
+}
+
+.hpy601002__item dl {
+    display: flex;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.hpy601002__item dt {
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #111;
+    background: #f5f5f5;
+    width: 25rem;
+    border-right: 1px solid #ddd;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.hpy601002__item dl:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.hpy601002__item dd {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.hpy601002__table {
+    border-bottom: 1px solid #ddd;
+}
+
+.hpy601002__table th {
+    width: 25%;
+}
+
+.hpy601002__cta {
+    text-align: center;
 }

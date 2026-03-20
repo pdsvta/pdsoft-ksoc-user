@@ -294,6 +294,7 @@
                         <div class="hpy601001__groups">
                             <label for="" class="hpy02__label">기록물 형태</label>
                             <select name="" id="" class="selectbox min175">
+                                <option value="전체">전체</option>
                                 <option value="일반문서">일반문서</option>
                                 <option value="사진/필름">사진/필름</option>
                                 <option value="음성/영상">음성/영상</option>
@@ -307,6 +308,7 @@
                         <div class="hpy601001__groups">
                             <label for="" class="hpy02__label">기록물 유형</label>
                             <select name="" id="" class="selectbox min175">
+                                <option value="전체">전체</option>
                                 <option value="없음">없음</option>
                                 <option value="표준전자문서">표준전자문서</option>
                                 <option value="수기결재문서">수기결재문서</option>
@@ -315,6 +317,7 @@
                         <div class="hpy601001__groups">
                             <label for="" class="hpy02__label">전자여부</label>
                             <select name="" id="" class="selectbox min175">
+                                <option value="전체">전체</option>
                                 <option value="전자">전자</option>
                                 <option value="비전자">비전자</option>
                                 <option value="혼합">혼합</option>
@@ -1010,25 +1013,6 @@
 
         menu.addEventListener('mouseleave', () => {
             menu.classList.remove('active');
-        });
-    </script>
-
-    <script>
-        const brdc = document.querySelector('.brdc');
-        const items = document.querySelectorAll('.brdc__item');
-        items.forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                const submenu = item.querySelector('.brdc__submenu');
-                let h = 0;
-                if(submenu){
-                    h = submenu.scrollHeight;
-                }
-                brdc.style.setProperty('--submenubrdc-height', h + 'px');
-                brdc.classList.add('active');
-            });
-        });
-        brdc.addEventListener('mouseleave', () => {
-            brdc.classList.remove('active');
         });
     </script>
 </body>
