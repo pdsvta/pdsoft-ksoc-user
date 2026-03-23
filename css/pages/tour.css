@@ -15411,13 +15411,13 @@ caption {
 
 .screen6-home__item {
     width: calc((100% - 6rem)/4);
-    border-radius: 2rem;
+    border-radius: 1rem;
     overflow: hidden;
 }
 
 .screen6-home__item img {
     width: 100%;
-    height: auto;
+    height: 200px;
     margin: 1rem 0;
     border-radius: 2rem;
     transition: all 0.3s ease;
@@ -15426,6 +15426,11 @@ caption {
 .screen6-home__item img:hover {
     transform: scale(1.02);
 }
+
+.screen6-home__item span {
+    cursor: pointer;
+}
+
 
 .screen6-home__text p {
     font-size: 1.8rem;
@@ -15618,7 +15623,7 @@ caption {
     border-bottom: 1px solid #ddd;
 }
 
-.content-body .double.print .double-body .print-list  {
+.content-body .double.print .double-body .print-list {
     margin-top: 2.2rem;
 }
 
@@ -15681,7 +15686,7 @@ caption {
     top: 12.8rem;
 }
 
-.content .double--right .call-item {    
+.content .double--right .call-item {
     display: flex;
     align-items: center;
     gap: 1.6rem;
@@ -15707,7 +15712,7 @@ caption {
     object-fit: contain;
 }
 
-.content .double--right .call-item >div {
+.content .double--right .call-item>div {
     font-weight: 600;
     font-size: 2rem;
     color: #333;
@@ -15715,8 +15720,8 @@ caption {
     flex-direction: column;
 }
 
-.content .double--right .call-item >div span,
-.content .double--right .call-item >div h6 {
+.content .double--right .call-item>div span,
+.content .double--right .call-item>div h6 {
     font-weight: 500;
     font-size: 1.4rem;
 }
@@ -15757,6 +15762,7 @@ caption {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
 .hpy601001__groups .selectbox,
 .hpy601001__groups .hpy601001__group {
     margin-top: .5rem;
@@ -15962,12 +15968,13 @@ caption {
     display: flex;
     gap: 5rem;
 }
+
 .hpy602002__item img {
     width: 35rem;
     height: 100%;
     object-fit: contain;
     height: auto;
-} 
+}
 
 .hpy602002__content {
     flex: 1;
@@ -16077,7 +16084,7 @@ caption {
 }
 
 .hpy602002__table1 .hpy02__table,
-.hpy602002__table2 .hpy02__table{
+.hpy602002__table2 .hpy02__table {
     border-bottom: 1px solid #ddd;
     margin-bottom: 3rem;
 }
@@ -16142,7 +16149,7 @@ caption {
 .popup602002__overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .popup602002__content {
