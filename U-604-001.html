@@ -417,7 +417,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="yellow">금</div></td>
+                                    <td>
+                                        <div class="yellow">금</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>하정호</td>
@@ -431,7 +433,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="silver">은</div></td>
+                                    <td>
+                                        <div class="silver">은</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>전정우</td>
@@ -445,7 +449,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="copper">동</div></td>
+                                    <td>
+                                        <div class="copper">동</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>임동규</td>
@@ -459,7 +465,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="copper">동</div></td>
+                                    <td>
+                                        <div class="copper">동</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>이현승</td>
@@ -473,7 +481,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="copper">동</div></td>
+                                    <td>
+                                        <div class="copper">동</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>이총민</td>
@@ -487,7 +497,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="copper">동</div></td>
+                                    <td>
+                                        <div class="copper">동</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>이연승</td>
@@ -501,7 +513,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="copper">동</div></td>
+                                    <td>
+                                        <div class="copper">동</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>이승재</td>
@@ -515,7 +529,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="copper">동</div></td>
+                                    <td>
+                                        <div class="copper">동</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>이민재</td>
@@ -529,7 +545,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="copper">동</div></td>
+                                    <td>
+                                        <div class="copper">동</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>이무영</td>
@@ -543,7 +561,9 @@
                                     <td>제9회 하얼빈 동계아시아경기대회</td>
                                     <td>2025</td>
                                     <td>하얼빈</td>
-                                    <td><div class="copper">동</div></td>
+                                    <td>
+                                        <div class="copper">동</div>
+                                    </td>
                                     <td>아이스하키</td>
                                     <td>남자대표팀</td>
                                     <td>오인교</td>
@@ -1201,6 +1221,16 @@
         });
         brdc.addEventListener('mouseleave', () => {
             brdc.classList.remove('active');
+        });
+    </script>
+    <script>
+        const checkAll = document.querySelector('.hpy02__table thead input[type="checkbox"]');
+        const checkboxes = document.querySelectorAll('.hpy02__table tbody input[type="checkbox"]');
+
+        checkAll.addEventListener('change', function () {
+            checkboxes.forEach(cb => {
+                cb.checked = checkAll.checked;
+            });
         });
     </script>
 </body>
