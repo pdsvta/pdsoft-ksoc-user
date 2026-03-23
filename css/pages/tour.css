@@ -16268,3 +16268,71 @@ caption {
     background: #cd7f32;
     display: block;
 }
+
+.hpy603001__title {
+    padding: 0 2rem;
+}
+
+.hpy603001__title p {
+    color: #111;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.hpy603001__title strong {
+    margin-right: 1rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.hpy603001__title em {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.hpy603001__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.hpy603001__card {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    background: #fff;
+}
+
+.hpy603001__card .name {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.hpy603001__card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hpy603001__card ul li {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+    color: #111;
+}
+
+.hpy603001__card ul li:last-child {
+    margin-bottom: 0;
+}
+
+.hpy603001__card ul li span {
+    color: #0C54B8;
+    width: 8rem;
+    font-weight: 500;
+}
+
+.hpy603001__card ul li strong {
+    font-weight: 600;
+}
