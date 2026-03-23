@@ -484,7 +484,7 @@
                             </div>
                         </div>
                         <div class="hpy602002__contenttab">
-                            <div class="hpy602002__title">포토</div>
+                            <div class="hpy602002__title">사진</div>
                             <div class="hpy602002__imgs">
                                 <div class="hpy602002__img">
                                     <img src="images/u-602-001/img1-1.jpg" alt="">
@@ -517,7 +517,7 @@
                 <img src="" alt="" class="popup602002__img">
             </div>
         </div>
-        
+
         <!-- footer -->
         <footer id="footer-main" class="footer-main footer-homeMain">
             <div class="inner">
@@ -1137,44 +1137,38 @@
         });
     </script>
     <script>
-const popup602002 = {
-    init() {
-        this.items = document.querySelectorAll('.hpy602002__img img');
-        this.popup = document.querySelector('.popup602002');
-        this.popupImg = document.querySelector('.popup602002__img');
-        this.closeBtn = document.querySelector('.popup602002__close');
-        this.overlay = document.querySelector('.popup602002__overlay');
+        const popup602002 = {
+            init() {
+                this.items = document.querySelectorAll('.hpy602002__img img');
+                this.popup = document.querySelector('.popup602002');
+                this.popupImg = document.querySelector('.popup602002__img');
+                this.closeBtn = document.querySelector('.popup602002__close');
+                this.overlay = document.querySelector('.popup602002__overlay');
 
-        this.bindEvents();
-    },
+                this.bindEvents();
+            },
+            open(src) {
+                this.popup.classList.add('active');
+                this.popupImg.src = src;
+            },
+            close() {
+                this.popup.classList.remove('active');
+            },
+            bindEvents() {
+                this.items.forEach(img => {
+                    img.addEventListener('click', () => {
+                        this.open(img.src);
+                    });
+                });
 
-    open(src) {
-        this.popup.classList.add('active');
-        this.popupImg.src = src;
-    },
+                this.closeBtn.addEventListener('click', () => this.close());
+                this.overlay.addEventListener('click', () => this.close());
+            }
+        };
 
-    close() {
-        this.popup.classList.remove('active');
-    },
-
-    bindEvents() {
-        // click ảnh
-        this.items.forEach(img => {
-            img.addEventListener('click', () => {
-                this.open(img.src);
-            });
+        document.addEventListener('DOMContentLoaded', () => {
+            popup602002.init();
         });
-
-        // đóng
-        this.closeBtn.addEventListener('click', () => this.close());
-        this.overlay.addEventListener('click', () => this.close());
-    }
-};
-
-// init
-document.addEventListener('DOMContentLoaded', () => {
-    popup602002.init();
-});
     </script>
 </body>
 
