@@ -16279,6 +16279,10 @@ caption {
     font-weight: 500;
 }
 
+.hpy603001__title.fw600 p {
+    font-weight: 600;
+}
+
 .hpy603001__title strong {
     margin-right: 1rem;
     font-size: 2.3rem;
@@ -16335,4 +16339,58 @@ caption {
 
 .hpy603001__card ul li strong {
     font-weight: 600;
+}
+
+.hpy604001__table {
+    margin: 2rem 2rem 0;
+}
+
+.hpy604001__table .hpy02__table tbody td {
+    font-size: 1.5rem;
+}
+
+.hpy604001__table .hpy02__table {
+    border-bottom: 1px solid #ddd;
+}
+
+.hpy604001__table .hpy02__table tbody td .yellow {
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 10rem;
+    background: #ffd700;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hpy604001__table .hpy02__table tbody td .silver {
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 10rem;
+    background: #bfbfbf;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hpy604001__table .hpy02__table tbody td .copper {
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 10rem;
+    background: #c55a11;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
