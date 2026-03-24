@@ -16534,3 +16534,64 @@ caption {
 .hpy605006__des {
     margin-top: 1rem;
 }
+
+.hpy605007__bread {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #0C54B8;
+    font-weight: 600;
+}
+
+.hpy605007__bread a {
+    color: #0C54B8;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.hpy605007__cta {
+    margin: 2rem 0 1rem;
+}
+
+.hpy605007__cta button {
+    background: #0C54B8;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+}
+
+.hpy605007__text h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 2rem;
+}
+
+.hpy605007__text p {
+    color: #666;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 138%;
+    text-align: justify;
+}
+
+.hpy605007__text small {
+    color: #666;
+    font-size: 1.3rem;
+}
+
+.hpy605007__text img {
+    margin: 2rem 0 .5rem;
+    max-width: 100%;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+}
+
+.hpy605007__text {
+    margin: 0 2rem;
+}
