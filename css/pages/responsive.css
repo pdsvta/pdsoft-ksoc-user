@@ -17057,6 +17057,53 @@
         display: none;
     }
 
+    .hpy601001__filter {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hpy601001__groups .hpy02__label {
+        font-size: 1.3rem;
+    }
+
+    .hpy601001__select .hpy601001__groups {
+        width: calc((100% - 1rem)/3);
+    }
+
+    .hpy601001__row {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hpy601001__item {
+        padding: 0 0 2rem;
+    }
+
+    .hpy601001__lable {
+        font-size: 1.6rem;
+    }
+
+    .hpy601001__row p {
+        font-size: 1.3rem;
+        gap: .5rem;
+    }
+
+    .hpy601001__title {
+        font-size: 2.4rem;
+    }
+
+    .hpy02__total p {
+        font-size: 1.5rem;
+    }
+
+    .brdc.brdc-homemain {
+        margin-top: 1rem;
+    }
+
+    .hpy.pt15 {
+        padding-top: 11rem;
+    }
 
 }
 
