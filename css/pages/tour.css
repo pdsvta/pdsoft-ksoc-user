@@ -16500,3 +16500,37 @@ caption {
     width: 16px;
     height: auto;
 }
+
+.hpy605006__card {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hpy605006__text p {
+    font-weight: 600;
+    color: #111;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.hpy605006__text strong {
+    font-size: 1.8rem;
+    line-height: 138%;
+}
+
+.hpy605006__des p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #999;
+}
+
+.hpy605006__des span {
+    color: #111;
+}
+
+.hpy605006__des {
+    margin-top: 1rem;
+}
