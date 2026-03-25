@@ -6867,7 +6867,13 @@
 }
 
 .ply__total span {
-    color: #0C54B8;
+    color: #000;
+    font-weight: bold;
+}
+
+.ply__total strong {
+    color: #025ac6;
+    font-weight: bold;
 }
 
 .ply102024__question {

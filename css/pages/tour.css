@@ -3013,9 +3013,8 @@ caption {
 }
 
 .hpy02__wrapper {
-    padding: 2rem;
-    border: 1px solid #DDDDDD;
-    border-radius: 2rem;
+    padding: 0 0 2rem;
+    border-bottom: 1px solid #DDDDDD;
 }
 
 .hpy02__wrapper.mt20 {
@@ -3171,8 +3170,7 @@ caption {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    border-left: none;
 }
 
 .hpy02__table.bd {
@@ -3183,11 +3181,15 @@ caption {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     height: 5rem;
-    padding: 1.6rem 0;
     font-weight: 600;
     font-size: 1.7rem;
     vertical-align: middle;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #3d3d3d;
+    padding: 1.5rem 0;
 }
+
 
 .hpy02__table tbody td {
     border-top: none;
@@ -3199,6 +3201,8 @@ caption {
     font-size: 1.7rem;
     vertical-align: middle;
     color: #111;
+    border-left: none;
+    border-right: none;
 }
 
 .hpy02__table tbody tr:last-child td {
@@ -5755,7 +5759,7 @@ caption {
 
 .tour403006__list {
     background: #F5F5F5;
-    border-radius: 5rem;
+    border-radius: 0;
     border: 1px solid #DDDDDD;
     padding: 5rem;
     margin-top: 2rem;
@@ -8069,7 +8073,8 @@ caption {
 }
 
 .tour001001__mainBox {
-    background: #fff;
+    border-bottom: none;
+    /* background: #fff; */
 }
 
 .tour001001__tabs {
@@ -8077,7 +8082,7 @@ caption {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .tour001001__itemTab {
@@ -8206,12 +8211,12 @@ caption {
 }
 
 .tour001002__btn {
-    width: 15rem;
+    width: auto;
     height: 4.5rem;
     background: #666666;
     border: 0;
     border-radius: 0.5rem;
-    padding: 1.2rem 0;
+    padding: 1.2rem 2rem;
     color: #fff;
     font-size: 1.7rem;
     font-weight: 600;
@@ -8275,7 +8280,7 @@ caption {
 }
 
 .tour001003__btn {
-    width: 16rem;
+    width: 20rem;
 }
 
 .tour001003__boxBottomTabs {
@@ -8295,8 +8300,7 @@ caption {
     text-align: center;
     border: 1px solid #DDDDDD;
     border-radius: 0.5rem;
-    width: 20rem;
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 2rem;
 }
 
 .tour001003__tabRight {
@@ -11056,7 +11060,7 @@ caption {
 
 .hpy004004__title h3 {
     font-weight: 600;
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     color: #111;
 }
 
@@ -11295,14 +11299,10 @@ caption {
 }
 
 .hpy004007__filter {
-    padding: 3rem;
-    border-radius: 2rem;
-    border: 1px solid #ddd;
-    background: #f5f5f5;
     display: flex;
     gap: 1rem;
     margin: 0 2rem 3rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .hpy004007__filter.gap5 {
@@ -11310,8 +11310,6 @@ caption {
 }
 
 .hpy004007__filter.bd50 {
-    padding: 5rem;
-    border-radius: 5rem;
     margin: 0 0 2rem;
 }
 
@@ -11375,12 +11373,6 @@ caption {
 
 .hpy004009__wrapper.mt20 {
     margin-top: 2rem;
-}
-
-.hpy004009__box {
-    padding: 5rem;
-    border-radius: 5rem;
-    border: 1px solid #ddd;
 }
 
 .hpy004009__box .hpy004004__item p {
@@ -11761,7 +11753,7 @@ caption {
 
 .hpy004017__table .text-left {
     text-align: left;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
 }
 
 .hpy004017__table2 {
@@ -16356,6 +16348,8 @@ caption {
 
 .hpy604001__table .hpy02__table thead th {
     padding: 1.6rem 1rem;
+    border-left: none;
+    border-right: none;
 }
 
 .hpy604001__table .hpy02__table {

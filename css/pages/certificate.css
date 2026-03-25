@@ -2987,6 +2987,7 @@ a.ui-button:active,
     background-position: center;
     background-size: .4rem .8rem;
     position: relative;
+    border: 1px solid #ddd;
 }
 
 .orgnl {
@@ -3214,6 +3215,10 @@ a.ui-button:active,
 
 .indv__tit.mb30 {
     margin-bottom: 3rem;
+}
+
+.indv__tit.mb10 {
+    margin-bottom: 1rem;
 }
 
 .indv__tit.mb5 {
