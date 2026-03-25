@@ -1420,14 +1420,6 @@ legend {
     content: '|';
     margin: 0 1rem;
     color: #37383C9C;
-    /* display: block;
-    width: 1px;
-    height: 10px;
-    background: #999;
-    position: absolute;
-    top: 50%;
-    left: -2rem;
-    transform: translateY(-50%); */
 }
 
 
@@ -2199,4 +2191,38 @@ legend {
 .screen1-home__menu-submenuBack p img {
     width: 16px;
     height: auto;
+}
+
+.footer-main__top {
+    margin: 0 0 3rem;
+}
+
+.footer-main__top ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-main__menu-top a {
+    font-size: 1.7rem;
+    color: #717171;
+    transition: all 0.3s ease;
+}
+
+.footer-main__menu-top a:hover {
+    color: #0C54B8;
+}
+
+.footer-main__menu-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer-main__menu-top+.footer-main__menu-top::before {
+    content: '|';
+    margin: 0 1.5rem;
+    color: #37383C9C;
+}
+.footer-dropdown__head {
+    display: none;
 }
