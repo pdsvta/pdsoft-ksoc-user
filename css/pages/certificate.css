@@ -4269,8 +4269,6 @@ a.ui-button:active,
 }
 
 .indv__prv {
-    border: 1px solid #ddd;
-    border-radius: 5rem;
     padding: 5rem 7rem;
     font-weight: 400;
     font-size: 1.5rem;

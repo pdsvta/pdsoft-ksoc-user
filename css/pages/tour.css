@@ -1563,7 +1563,7 @@ caption {
 .hpy__input::placeholder {
     font-weight: 400;
     color: #ccc;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 .hpy__search-btn {
@@ -1816,6 +1816,10 @@ caption {
 }
 
 .hpy-reg__select {
+    width: 100%;
+}
+
+.hpy-reg__select .selectbox {
     width: 100%;
 }
 
@@ -2986,10 +2990,6 @@ caption {
     margin-bottom: 0;
 }
 
-.hpy0720__box {
-    padding: 0 2rem;
-}
-
 .hpy0720__table2.mt30 {
     margin-top: 3rem;
 }
@@ -3291,18 +3291,18 @@ caption {
 }
 
 .hpy02__title h3 {
-    font-weight: 600;
-    font-size: 2.6rem;
+    font-weight: 700;
+    font-size: 2.8rem;
     color: #111;
-    padding: 0 2rem 3rem;
+    padding: 0 0rem 3rem;
 }
 
 .hpy02__title--pd20 h3 {
-    padding: 0 2rem 2rem;
+    padding: 0 0 2rem;
 }
 
 .hpy0220__box {
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
     margin-bottom: 3rem;
     border-bottom: 1px solid #ddd;
 
@@ -6318,7 +6318,7 @@ caption {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 5rem 2rem 5rem;
+    margin: 0 0 2rem 0;
 }
 
 .tour405006__text {
@@ -6327,8 +6327,14 @@ caption {
     color: #111111;
 }
 
-.tour405006__text span {
+.tour405006__text strong {
     color: #0C54B8;
+    font-weight: bold;
+}
+
+.tour405006__text span {
+    color: #111;
+    font-weight: bold;
 }
 
 .tour405006__boxInput {
@@ -6605,7 +6611,7 @@ caption {
 .tour405008__btnRelated {
     display: flex;
     justify-content: flex-end;
-    margin: 4rem 5.2rem 0 0;
+    margin: 0 5.2rem 0 0;
 }
 
 .tour405008__btnRelated button {
@@ -8875,10 +8881,6 @@ caption {
     opacity: 0.7;
 }
 
-.tour003006__mainBox {
-    background: #fff;
-}
-
 .tour003006__boxTitle {
     display: flex;
     align-items: center;
@@ -9023,13 +9025,13 @@ caption {
 
 .tour003006__formCode button {
     background: #666666;
-    width: 11rem;
     height: 4.5rem;
     border: 1px solid #666666;
     border-radius: 0.5rem;
     color: #fff;
     font-size: 1.7rem;
     font-weight: 400;
+    padding: 0 2rem;
 }
 
 .tour003006__btnMain button {
@@ -9037,10 +9039,6 @@ caption {
     height: 5rem;
     font-size: 1.7rem;
     font-weight: 600;
-}
-
-.tour003007__mainBox {
-    background: #fff;
 }
 
 .tour003007__titleChild {
@@ -9237,11 +9235,11 @@ caption {
 }
 
 .tour004034__itemTab {
-    width: 14.5rem;
+    width: 16.5rem;
 }
 
 .tour004034__filter {
-    padding: 0 2rem;
+    padding: 0;
     justify-content: flex-end;
 }
 
@@ -9301,7 +9299,7 @@ caption {
 
 .tour004040__allBtn button {
     background: #666666;
-    width: 25rem;
+    width: auto;
     height: 4.5rem;
     border: 0;
     border-radius: 0.5rem;
@@ -9309,7 +9307,7 @@ caption {
     font-size: 1.7rem;
     font-weight: 400;
     text-align: center;
-    /* padding: 1.2rem 0; */
+    padding: 0 2rem;
 }
 
 .tour004040__allBtn button:hover {
@@ -9755,6 +9753,7 @@ caption {
 
 .tour004042__boxTitle p span {
     color: #0C54B8;
+    font-weight: bold;
 }
 
 .tour004042__filter p {
@@ -10931,12 +10930,12 @@ caption {
 
 .hpy004003__top {
     border-bottom: 1px solid #ddd;
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
     margin-bottom: 3rem;
 }
 
 .hpy004003__text {
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .hpy004003__text {
@@ -10971,11 +10970,11 @@ caption {
 }
 
 .hpy004003__text.p023 {
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
 }
 
 .hpy004003__text.p322 {
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .hpy004003__text .text p {
@@ -11039,11 +11038,11 @@ caption {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem 2rem;
+    padding: 0 0 2rem;
 }
 
 .hpy004004__title.p023 {
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
 }
 
 .hpy004004__title.p020 {
@@ -11051,7 +11050,7 @@ caption {
 }
 
 .hpy004004__title.p322 {
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .hpy004004__title.fs17 h3 {
@@ -11076,7 +11075,7 @@ caption {
 }
 
 .hpy004004__title.bd-bt {
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
     border-bottom: 1px solid #ddd;
     margin-bottom: 3rem;
 }
@@ -11128,7 +11127,7 @@ caption {
 }
 
 .hpy004004__text.bd-bt {
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
     border-bottom: 1px solid #ddd;
     margin-bottom: 3rem;
 }
@@ -11185,7 +11184,7 @@ caption {
 }
 
 .hpy004004__list {
-    padding: 0 2rem;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -11209,7 +11208,7 @@ caption {
 }
 
 .hpy004005__box {
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
     margin-bottom: 3rem;
     border-bottom: 1px solid #ddd;
     display: flex;
@@ -11288,7 +11287,7 @@ caption {
 }
 
 .hpy004007__title {
-    padding: 0 2rem 2rem;
+    padding: 0 0 2rem;
     font-size: 1.7rem;
     font-weight: 400;
     color: #111;
@@ -11301,8 +11300,7 @@ caption {
 .hpy004007__filter {
     display: flex;
     gap: 1rem;
-    margin: 0 2rem 3rem;
-    justify-content: space-between;
+    margin: 0 0 3rem;
 }
 
 .hpy004007__filter.gap5 {
@@ -11343,7 +11341,7 @@ caption {
     display: flex;
     flex-wrap: wrap;
     gap: 2.5rem;
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .hpy004008__item {
@@ -11366,7 +11364,8 @@ caption {
     padding: 0;
 }
 
-.hpy004009__wrapper {
+.hpy004009__wrapper,
+.hpy02__wrapper.hpy004011__wrapper {
     padding: 0;
     border: none;
 }
@@ -11383,7 +11382,7 @@ caption {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 5rem 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .hpy004009__group.p023 {
@@ -11489,14 +11488,15 @@ caption {
 }
 
 .hpy004016__img {
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
     position: relative;
 }
 
 .hpy004016__img img {
-    width: 92rem;
-    height: auto;
+    width: 100%;
+    height: 23rem;
     position: relative;
+    object-fit: cover;
 }
 
 .hpy004016__title {
@@ -11537,11 +11537,11 @@ caption {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .hpy004016__filter.p223 {
-    padding: 2rem 2rem 3rem;
+    padding: 2rem 0 3rem;
 }
 
 .hpy004016__group {
@@ -11577,7 +11577,14 @@ caption {
 }
 
 .hpy004016__filter span {
+    color: #111;
+    font-weight: bold;
+}
+
+
+.hpy004016__filter strong {
     color: #0C54B8;
+    font-weight: bold;
 }
 
 .hpy004016__links {
@@ -11611,10 +11618,6 @@ caption {
 .hpy004016__links .link {
     font-weight: 600;
     color: #0C54B8;
-}
-
-.hpy004016__table {
-    padding: 0 2rem;
 }
 
 .hpy004016__table .hpy02__table {
@@ -11665,7 +11668,7 @@ caption {
 .hpy004017__videos {
     display: flex;
     gap: 2.5rem;
-    padding: 2rem 2rem 4rem;
+    padding: 2rem 0 4rem;
 }
 
 .hpy004017__img {
@@ -11744,7 +11747,7 @@ caption {
 }
 
 .hpy004017__table {
-    padding: 3rem 2rem 0;
+    padding: 3rem 0 0;
 }
 
 .hpy004017__table .hpy02__table {
@@ -11873,7 +11876,7 @@ caption {
 .hpy004017__box4 .hpy-reg__tit--mb3 {
     border-bottom: 1px solid #ddd;
     margin-bottom: 3rem;
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
 }
 
 .hpy004017__box4 .dry__editor {
@@ -11906,10 +11909,6 @@ caption {
 
 .hpy004028__wrapper .hpy004016__title span {
     font-weight: 400;
-}
-
-.hpy004028__table {
-    padding: 0 2rem;
 }
 
 .hpy004028__group {
@@ -11961,6 +11960,10 @@ caption {
     border-top: none;
 }
 
+.hpy004028__groups .hpy004028__group {
+    width: 50%;
+}
+
 .hpy004029__video img {
     width: 70rem;
     height: auto;
@@ -11969,6 +11972,11 @@ caption {
 
 .hpy004029__btn {
     text-align: center;
+}
+
+.hpy004029__btn .hpy-reg__btn--max180 {
+    min-width: max-content;
+    padding: 0 2rem;
 }
 
 .hpy004029__btn.text-right {
@@ -12032,7 +12040,6 @@ caption {
     font-weight: 400;
     color: #111;
     margin-bottom: .5rem;
-    padding: 0 2rem;
 }
 
 .hpy004046-2__text {
@@ -12041,10 +12048,6 @@ caption {
     font-weight: 400;
     color: #666;
 
-}
-
-.hpy004047-2__table {
-    padding: 0 2rem;
 }
 
 .hpy004047-2__table .hpy02__table {
@@ -12082,13 +12085,8 @@ caption {
 }
 
 .hpy004047-2__filter {
-    background: #F5F5F5;
-    border: 1px solid #ddd;
-    border-radius: 5rem;
     display: flex;
-    justify-content: center;
-    padding: 5rem;
-    gap: 4rem;
+    justify-content: space-between;
     margin-bottom: 2rem;
 }
 
@@ -12739,7 +12737,7 @@ caption {
 .hpy003009__row {
     display: flex;
     gap: 2rem;
-    padding: 0 2rem 2rem;
+    padding: 0 0 2rem;
     width: 100%;
 }
 
@@ -12797,7 +12795,6 @@ caption {
 .hpy004001__box {
     display: flex;
     gap: 5rem;
-    padding: 0 2rem;
 }
 
 .hpy004001__avatar {
@@ -12854,7 +12851,7 @@ caption {
     display: flex;
     align-items: center;
     gap: 3rem;
-    padding: 8rem 2rem;
+    padding: 8rem 0;
 }
 
 .hpy004001__time img {
@@ -13101,7 +13098,7 @@ caption {
     display: flex;
     gap: 2rem;
     margin-top: 2rem;
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .hpy004015__item {
@@ -13180,7 +13177,7 @@ caption {
     display: flex;
     align-items: center;
     gap: 7rem;
-    padding: 2rem 2rem 6rem;
+    padding: 2rem 0 6rem;
 }
 
 .hpy004015__box1 img {
@@ -13235,7 +13232,7 @@ caption {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 3.5rem 4.7rem 2rem;
+    padding: 3.5rem 0 2rem;
     width: 100%;
     background: url('../../images/u-004-015/image07.png') center 0 no-repeat;
 }
@@ -13626,7 +13623,7 @@ caption {
 
 .hpy004001__year {
     position: relative;
-    padding: 4rem 2rem;
+    padding: 4rem 0;
 }
 
 
@@ -14277,14 +14274,7 @@ caption {
     display: flex;
 }
 
-.ply101021__wrapper {
-    padding: 5rem;
-    border-radius: 5rem;
-    border: 1px solid #ddd;
-}
-
 .ply101021__box {
-    padding: 0 5rem;
     display: flex;
     align-items: flex-start;
     gap: 10rem;
@@ -14368,12 +14358,6 @@ caption {
     margin-left: .5rem;
     width: 2.2rem;
     height: auto;
-}
-
-.tour004034__boxInput {
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 2rem;
 }
 
 .home-back-menu {
@@ -15597,9 +15581,6 @@ caption {
 }
 
 .content .double--left {
-    padding: 5rem;
-    border: 1px solid #ddd;
-    border-radius: 3rem;
     width: 100%;
 }
 
@@ -15612,11 +15593,9 @@ caption {
     font-size: 2.6rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    padding: 0 2rem;
 }
 
 .content-body .double.print .double-header p {
-    padding: 0 2rem;
     font-size: 1.5rem;
     font-weight: 400;
     padding-bottom: 1.8rem;
@@ -16596,4 +16575,41 @@ caption {
 
 .hpy605007__text {
     margin: 0 2rem;
+}
+.hpy02__table.tour401013__table.tour004006__table tbody td {
+    
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.hpy02__table.tour401013__table.tour004006__table tbody td:last-child{
+    border-right: none;
+}
+.hpy02__table.tour401013__table.tour004006__table tbody td:first-child {
+    border-left: none;
+}
+
+.hpy004016__filter .total span {
+    font-weight: bold;
+    color: #111;
+}
+
+.hpy004016__filter .total strong {
+    color: #0C54B8;
+    font-weight: bold;
+}
+
+.hpy02__wrapper.hpy004007__wrapper,
+.hpy02__wrapper.hpy004008__wrapper,
+.hpy02__wrapper.hpy004028__wrapper,
+.hpy02__wrapper.hpy00431__wrapper,
+.hpy02__wrapper.hpy004032__wrapper,
+.hpy02__wrapper.tour004033__wrapper,
+.hpy02__wrapper.hpy004038__wrapper,
+.hpy02__wrapper.hpy004039__wrapper,
+.hpy02__wrapper.tour004042__wrapper,
+.hpy02__wrapper.hpy004047-2__wrapper,
+.hpy02__wrapper.hpy004048-2__wrapper,
+.hpy02__wrapper.tour004054__wrapper,
+.hpy02__wrapper.tour004056__wrapper {
+    border-bottom: none;
 }
