@@ -17060,6 +17060,7 @@
 
     .footer-main__menu {
         margin: 0;
+        justify-content: flex-start;
     }
 
     .footer-main__copyright, .footer-main__address {
@@ -17166,6 +17167,10 @@
 
     .hpy.pt15 {
         padding-top: 11rem;
+    }
+
+    .screen6-home__item img {
+        height: auto;
     }
 
 }

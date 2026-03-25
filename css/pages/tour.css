@@ -15424,6 +15424,7 @@ caption {
     margin: 1rem 0;
     border-radius: 2rem;
     transition: all 0.3s ease;
+    object-fit: cover;
 }
 
 .screen6-home__item img:hover {
