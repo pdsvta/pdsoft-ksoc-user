@@ -1298,7 +1298,7 @@
     }
 
     .popup-main__container {
-        border-radius: 2rem;
+        border-radius: 0;
     }
 
     .popup-main__col-title {
@@ -1372,13 +1372,17 @@
         justify-content: space-between;
         flex-wrap: wrap;
         position: unset;
-        padding: 2rem 1.6rem 2rem;
         background: #F5F5F5;
+        border-radius: 0;
+    }
+
+    .popup-main__menu {
+        padding: 0;
     }
 
     .popup-main__close img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3rem;
+        height: 3rem;
     }
 
     .popup-main__btns a {
@@ -1429,6 +1433,9 @@
     .popup-main__linksMb {
         display: flex;
         height: 4rem;
+        background: #666;
+        justify-content: flex-end;
+        padding-right: 3rem;
     }
 
     .popup-main__linksMb a {
@@ -1438,14 +1445,13 @@
         text-align: center;
         background: #666;
         color: #fff;
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         font-weight: 600;
-        width: 50%;
         height: 4rem;
     }
 
     .popup-main__linksMb a:last-child {
-        border-left: 1px solid #fff;
+        margin-left: 3rem;
     }
 
     .popup-main__cols {
@@ -16300,8 +16306,13 @@
     }
 
     .headerMain-top {
-        order: 2;
         padding: .8rem 0;
+    }
+    
+    .popup-main__close img.popup-main__logoMb {
+        width: auto;
+        height: 3rem;
+        display: block;
     }
 
     .headerMain-top img {

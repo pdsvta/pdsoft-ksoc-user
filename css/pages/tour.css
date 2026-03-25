@@ -13543,13 +13543,14 @@ caption {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 5rem;
 }
 
 .indv306001__item {
     position: relative;
     padding: 3rem 5rem;
     border: 1px solid #ddd;
-    border-radius: 2rem;
+    border-radius: 0;
     background: #fff;
 }
 
@@ -13557,6 +13558,8 @@ caption {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2rem;
 }
 
 .indv306001__download {
