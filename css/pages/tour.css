@@ -260,7 +260,7 @@ caption {
     justify-content: center;
     padding: 1.4rem;
     border: 1px solid #333;
-    border-radius: 2rem;
+    border-radius: 3rem;
     font-weight: 600;
     font-size: 1.7rem;
     color: #333;
@@ -11059,7 +11059,7 @@ caption {
 }
 
 .hpy004004__title h3 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2.8rem;
     color: #111;
 }
@@ -12617,16 +12617,20 @@ caption {
 }
 
 .hpy003008__title {
-    padding: 0 2rem 2rem;
+    padding: 0 0 2rem;
     display: flex;
     align-items: center;
     gap: 5rem;
 }
 
 .hpy003008__title h3 {
-    font-weight: 600;
-    font-size: 2.6rem;
+    font-weight: 700;
+    font-size: 2.8rem;
     color: #111;
+}
+
+.tour403001__boxMain {
+    border-bottom: none;
 }
 
 .hpy003008__title p {
@@ -12643,7 +12647,7 @@ caption {
 }
 
 .hpy003008__text {
-    padding: 0 2rem;
+    padding: 0;
     font-size: 1.7rem;
     font-weight: 400;
     color: #111;
@@ -12660,9 +12664,9 @@ caption {
 }
 
 .hpy003008__box {
-    padding: 3rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid #ddd;
+    padding: 2rem 0rem;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12670,11 +12674,11 @@ caption {
 }
 
 .hpy003008__box.mt30 {
-    margin: 3rem 2rem 0;
+    margin: 3rem 0 0;
 }
 
 .hpy003008__box.mt10 {
-    margin: 1rem 2rem 0;
+    margin: 0 0 0;
 }
 
 .hpy003008__box button {
