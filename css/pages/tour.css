@@ -1044,12 +1044,8 @@ caption {
 
 .dtl {
     margin-bottom: 5rem;
-}
-
-.dtl__wrapper {
-    border-radius: 5rem;
-    border: 1px solid #DDDDDD;
-    padding: 5rem 7rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5rem;
 }
 
 .dtl__wrapper .dtl__tit {
@@ -1073,9 +1069,10 @@ caption {
 }
 
 .dtl__tit h3 {
-    font-weight: 600;
-    font-size: 2.1rem;
+    font-weight: 700;
+    font-size: 2.8rem;
     padding: 1rem 2rem;
+    color: #111;
 }
 
 .dtl__tit ul {
@@ -1332,13 +1329,6 @@ caption {
     justify-content: center;
 }
 
-.hpy__box {
-    border-radius: 5rem;
-    border: 1px solid #DDDDDD;
-    margin-top: 2rem;
-    padding: 2rem 5rem 5rem;
-}
-
 .hpy__bg {
     width: 31rem;
     position: absolute;
@@ -1347,10 +1337,11 @@ caption {
 }
 
 .hpy__tit {
-    font-weight: 600;
-    font-size: 2.4rem;
-    padding: 0 2rem 2rem;
+    font-weight: 700;
+    font-size: 2.8rem;
+    padding: 0 0 2rem;
     margin-top: 3rem;
+    font-weight: bold;
 }
 
 .hpy__tit--pl10 {
@@ -1411,15 +1402,13 @@ caption {
 
 .hpy__wrapped {
     display: flex;
+    align-items: end;
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .hpy__card {
     width: 74rem;
-    padding: 2rem 7rem 5rem;
-    border-radius: 5rem;
-    border: 1px solid #DDDDDD;
 }
 
 .hpy__list {
@@ -1428,9 +1417,6 @@ caption {
     gap: 2.7rem;
     flex: 1;
     flex-shrink: 0;
-    padding: 5rem;
-    border-radius: 5rem;
-    border: 1px solid #DDDDDD;
 }
 
 .hpy__video {
@@ -1450,7 +1436,7 @@ caption {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5rem 2rem;
+    padding: 0 0 2rem;
 }
 
 .hpy__search {
@@ -1501,6 +1487,8 @@ caption {
 
 .hpy__select--min200 {
     min-width: 20rem;
+    max-width: 100%;
+    width: 100%;
 }
 
 .hpy__select--min200 select {
@@ -1550,7 +1538,7 @@ caption {
 
 .hpy__input {
     width: 100%;
-    max-width: 42rem;
+    max-width: 52rem;
     height: 4.5rem;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
@@ -1585,7 +1573,7 @@ caption {
 }
 
 .hpy__total {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #111111;
     padding: 1rem 0;
     margin-top: 1rem;
@@ -1593,7 +1581,13 @@ caption {
 }
 
 .hpy__total span {
-    color: #0C54B8;
+    color: #000;
+    font-weight: bold;
+}
+
+.hpy__total strong {
+    color: #1d4ed8;
+    font-weight: bold;
 }
 
 .hpy__total.p003 {
@@ -1602,18 +1596,15 @@ caption {
 }
 
 .hpy__total.fs15 {
-    font-size: 1.7rem;
+    font-size:2rem;
 }
 
 .hpy__card--table {
-    border-radius: 5rem;
-    border: 1px solid #ddd;
-    padding: 5rem;
 }
 
 .hpy__table {
     width: 100%;
-    border-top: 1px solid #333;
+    border-top: 2px solid #3d3d3d;
 }
 
 .hpy__table tbody tr:hover {
@@ -2398,7 +2389,6 @@ caption {
 
 .ply__note {
     border-radius: 10px;
-    border: solid 1px #c4c4c4;
     background-color: #f7f7f7;
     margin-top: 5rem;
     padding: 2rem 2rem 2rem 3.2rem;
@@ -2446,13 +2436,10 @@ caption {
 
 .lsn__table {
     width: 100%;
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #3d3d3d;
     margin-bottom: 4rem;
 }
 
-.hpy0709__table {
-    padding: 0 2rem;
-}
 
 .hpy0709__table .lsn__table {
     margin-bottom: 1rem;
@@ -2660,16 +2647,8 @@ caption {
     flex: 1;
 }
 
-.hpy0707__wrapper {
-    padding: 5rem;
-    border: 1px solid #DDDDDD;
-    border-radius: 5rem;
-}
-
 .hpy0707__wrapper .hpy-reg__tit {
     margin-bottom: 2rem;
-    padding: 0 2rem 3rem;
-    border-bottom: 1px solid #DDDDDD;
 }
 
 .hpy0707__wrapper .hpy-reg__tit--mb3 {
@@ -2677,9 +2656,9 @@ caption {
 }
 
 .hpy0707__wrapper .hpy-reg__tit p {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: #111;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -2699,7 +2678,6 @@ caption {
     align-items: end;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 0 2rem;
     margin-bottom: 1rem;
 }
 
@@ -2768,7 +2746,7 @@ caption {
 
 .hpy0707__wrapper .hpy-reg__tit--bb {
     border-bottom: none;
-    padding: 3rem 2rem 0;
+    padding: 3rem 0 0;
 }
 
 .hpy0707__wrapper .ply-reg__agree {
@@ -2776,7 +2754,6 @@ caption {
 }
 
 .hpy0707__note {
-    padding: 0 2rem;
     font-size: 1.3rem;
     color: #666666;
     font-weight: 400;
@@ -2855,7 +2832,6 @@ caption {
     color: #666;
     font-size: 1.7rem;
     font-weight: 500;
-    margin: 0 2rem;
 }
 
 .hpy0707__tag p {
@@ -2894,7 +2870,6 @@ caption {
 }
 
 .hpy0709__box {
-    padding: 0 2rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -3014,7 +2989,6 @@ caption {
 
 .hpy02__wrapper {
     padding: 0 0 2rem;
-    border-bottom: 1px solid #DDDDDD;
 }
 
 .hpy02__wrapper.mt20 {
@@ -3024,12 +2998,12 @@ caption {
 
 .hpy02__wrapper.back-f5 {
     background: #f5f5f5;
+    padding: 3rem;
 }
 
 .hpy02__filter {
     display: flex;
     gap: 3.2rem;
-    padding: 0 2rem;
 }
 
 .hpy02__filter--mb30 {
@@ -3125,7 +3099,7 @@ caption {
 
 .hpy02__total {
     padding: 5rem 2rem 3rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #111;
 }
@@ -3146,13 +3120,13 @@ caption {
 }
 
 .hpy02__total--p322 {
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 0 2rem;
 
 }
 
 .hpy02__total span {
-    color: #0C54B8;
-    font-weight: 600;
+    color: #000;
+    font-weight: bold;
 }
 
 .hpy02__box {
@@ -3189,6 +3163,7 @@ caption {
     border-top: 2px solid #3d3d3d;
     padding: 1.5rem 0;
 }
+
 
 
 .hpy02__table tbody td {
@@ -3239,7 +3214,7 @@ caption {
 }
 
 .tour103001__total b {
-    color: #0C54B8;
+    color: #000;
 }
 
 .hpy02__btn {
@@ -3302,9 +3277,7 @@ caption {
 }
 
 .hpy0220__box {
-    padding: 0 0 3rem;
     margin-bottom: 3rem;
-    border-bottom: 1px solid #ddd;
 
 }
 
@@ -3486,9 +3459,6 @@ caption {
 }
 
 .tour__wrapper {
-    border-radius: 2rem;
-    border: 1px solid #dddddd96;
-    padding: 2rem;
     width: 100%;
 }
 
@@ -3500,11 +3470,6 @@ caption {
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: 0 2rem;
-}
-
-.tour__group.p05 {
-    padding: 0 5rem;
 }
 
 .tour__group.jc-ct {
@@ -3555,6 +3520,7 @@ caption {
     display: flex;
     align-items: center;
     gap: .5rem;
+    width: 100%;
 }
 
 .tour__group--input.tour401005__groupSelect .hpy__select.tour401005__itemSelect.hpy__select--min200 {
@@ -3568,10 +3534,6 @@ caption {
 
 .tour__group--input.gap30 {
     gap: 3rem;
-}
-
-.tour__group--input.p02 {
-    padding: 0 2rem;
 }
 
 .tour__table .tour__btn {
@@ -3591,7 +3553,6 @@ caption {
 
 .tour__footer {
     width: 100%;
-    border: 1px solid #ddd;
     border-radius: 2rem;
     padding: 3rem 7rem;
     background: #f5f5f5;
@@ -3616,7 +3577,6 @@ caption {
 }
 
 .tour__box002 {
-    padding: 0 2rem;
     border-bottom: none;
 }
 
@@ -4048,10 +4008,10 @@ caption {
 }
 
 .tour204002__title {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     color: #111;
-    font-weight: 600;
-    padding: 0 2rem 2rem;
+    font-weight: 700;
+    padding: 0 0 2rem;
 }
 
 .tour204002__title span {
@@ -4071,7 +4031,6 @@ caption {
 }
 
 .hpy02__wrapper--401005 .tour204002__title {
-    padding: 0 2rem;
     font-weight: 400;
 }
 
@@ -4080,7 +4039,7 @@ caption {
 }
 
 .hpy02__wrapper--401005 .tour204002__line {
-    margin: 3rem 2rem 0;
+    margin: 3rem 0 0;
     padding: 3rem 0;
 }
 
@@ -4124,7 +4083,7 @@ caption {
     gap: 1rem;
     padding: 3rem 0 0;
     border-top: 1px solid #DDDDDD;
-    margin: 3rem 2rem 0;
+    margin: 3rem 0 0;
 }
 
 .tour401005-3__item {
@@ -4175,7 +4134,7 @@ caption {
 
 .tour401007__sidebar {
     flex: 0 0 32rem;
-    border-radius: 5rem;
+    border-radius: 2rem;
     padding: 5rem;
     border: 1px solid #DDDDDD;
 }
@@ -4307,7 +4266,7 @@ caption {
 
 .tour401007__map {
     flex: 1;
-    border-radius: 5rem;
+    border-radius: 2rem;
     overflow: hidden;
     padding: 1.5rem;
     border: 1px solid #DDDDDD;
@@ -4498,12 +4457,10 @@ caption {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 0 2rem;
     margin-top: 3rem;
 }
 
 .tour401008__item {
-    border-radius: 2rem;
     border: 1px solid #ddd;
     padding: 3rem 4rem;
     height: 14.9rem;
@@ -4549,7 +4506,6 @@ caption {
     align-items: center;
     gap: 5rem;
     box-sizing: border-box;
-    padding: 0 2rem;
 }
 
 .school-card__image {
@@ -4580,12 +4536,11 @@ caption {
 
 .school-card__title.fs21 {
     font-size: 2.1rem;
-    padding: 0 2rem 2rem;
+    padding: 0 0 2rem;
 }
 
 .school-card__title.bd1 {
-    border-top: 1px solid #DDDDDD;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding-top: 3rem;
 }
 
@@ -4621,7 +4576,7 @@ caption {
     height: 26.5rem;
     width: 46rem;
     background: #F5F5F5;
-    border-radius: 5rem;
+    border-radius: 0rem;
     border: 1px solid #DDDDDD;
 }
 
@@ -4735,7 +4690,7 @@ caption {
     border-top: 1px solid #ddd;
     display: grid;
     grid-template-columns: max-content 1fr;
-    margin: 2rem 2rem 0;
+    margin: 2rem 0 0;
 }
 
 .info-list li {
@@ -4802,7 +4757,6 @@ caption {
 }
 
 .tour401010__card3 {
-    padding: 0 2rem;
     text-align: center;
 }
 
@@ -4818,7 +4772,6 @@ caption {
 .tour401010__image {
     display: flex;
     gap: 2rem;
-    padding: 0 2rem;
 }
 
 .tour401008__item:hover {
@@ -4904,7 +4857,7 @@ caption {
     align-items: center;
     justify-content: center;
     height: 8rem;
-    border-radius: 2rem;
+    border-radius: 0;
     border: 1px solid #ddd;
     margin: 2rem 0;
 }
@@ -4940,7 +4893,6 @@ caption {
     width: 100%;
     color: #333;
     line-height: 1.6;
-    padding: 0 2rem;
 }
 
 .tour402001__table tbody tr:hover {
@@ -4957,6 +4909,7 @@ caption {
     border-collapse: collapse;
     color: #111;
     border: 1px solid #ddd;
+    border-top: 2px solid #3d3d3d;
 }
 
 .tour402001__table td {
@@ -5030,9 +4983,7 @@ caption {
 
 .tour402002__box .calendar-box {
     width: 100%;
-    border: 1px solid #e5e5e5;
-    border-radius: 5rem;
-    padding: 5rem;
+    padding: 0 2rem;
 }
 
 .tour402002__box .calendar-header {
@@ -5131,9 +5082,6 @@ caption {
 
 .tour402002__box .list-box {
     flex: 1;
-    border: 1px solid #e5e5e5;
-    border-radius: 5rem;
-    padding: 5rem;
 }
 
 .tour402002__box .section {
@@ -5291,9 +5239,6 @@ caption {
     justify-content: end;
 }
 
-.tour402004__filter.p05 {
-    padding: 0 5rem;
-}
 
 .tour402004__filter.m302 {
     margin: 3rem 0 2rem;
@@ -5313,7 +5258,7 @@ caption {
 }
 
 .tour402004__item {
-    width: 14rem;
+    width: 17rem;
     height: 5.5rem;
     border-radius: .5rem;
     text-align: center;
@@ -5361,7 +5306,7 @@ caption {
 }
 
 .tour402004__filter .hpy__total span {
-    color: #0C54B8;
+    color: #000;
 }
 
 .tour402004__table tbody tr:hover {
@@ -5447,13 +5392,13 @@ caption {
 
 .tour403001__groupInput {
     display: flex;
+    width: 100%;
     gap: 0.5rem;
 }
 
 .tour403002__title {
-    padding: 0 2rem;
-    font-size: 2.1rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 700;
     color: #111;
     margin-bottom: 2rem;
 }
@@ -5468,7 +5413,7 @@ caption {
     gap: 2rem;
     font-size: 1.7rem;
     color: #666;
-    padding: 1rem 2rem 2rem;
+    padding: 1rem 0 2rem;
     font-weight: 400;
     border-bottom: 1px solid #DDDDDD;
     margin-bottom: 2rem;
@@ -5484,7 +5429,6 @@ caption {
 }
 
 .tour403002__box {
-    padding: 0 2rem;
     border-bottom: 1px solid #ddd;
     margin-bottom: 3rem;
 }
@@ -5760,7 +5704,6 @@ caption {
 .tour403006__list {
     background: #F5F5F5;
     border-radius: 0;
-    border: 1px solid #DDDDDD;
     padding: 5rem;
     margin-top: 2rem;
 }
@@ -5878,7 +5821,7 @@ caption {
     border: 1px solid #DDDDDD;
     border-radius: 5px;
     color: #000;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     padding: 10px 12px;
 }
 
@@ -5963,14 +5906,8 @@ caption {
 .tour404004__btn:hover {
     opacity: 0.7;
 }
-
-.tour405001__titleChild {
-    padding: 0 1.6rem;
-}
-
 .tour405001__box {
     display: block;
-    padding: 0 1.6rem;
 }
 
 .tour405001__box1 {
@@ -6322,7 +6259,7 @@ caption {
 }
 
 .tour405006__text {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 400;
     color: #111111;
 }
@@ -6407,12 +6344,11 @@ caption {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .tour405006__boxImg a {
-    width: calc((100% - 5rem) /3);
+    width: calc((100% - 6rem) /4);
 }
 
 .tour405006__desc {
@@ -6569,8 +6505,7 @@ caption {
 .tour405008__related {
     background-color: #F5F5F5;
     padding: 5rem;
-    border: 1px solid #DDDDDD;
-    border-radius: 5rem;
+    border-radius: 2rem;
     margin-top: 2rem;
 }
 
@@ -6611,7 +6546,7 @@ caption {
 .tour405008__btnRelated {
     display: flex;
     justify-content: flex-end;
-    margin: 0 5.2rem 0 0;
+    margin: 3rem 5.2rem 0 0;
 }
 
 .tour405008__btnRelated button {
@@ -6828,7 +6763,6 @@ caption {
 .tour407003__box {
     display: flex;
     gap: 5rem;
-    padding: 0 2rem;
 }
 
 .tour407003__banner img {
@@ -6923,6 +6857,7 @@ caption {
 
 .tour701002__boxFile {
     display: flex;
+    width: 100%;
 }
 
 .tour701002__boxFileLeft {
@@ -6942,7 +6877,7 @@ caption {
 }
 
 .tour701002__boxFileRight {
-    width: 76rem;
+    flex: 1;
 }
 
 .tour701002__itemFile {
@@ -7050,12 +6985,11 @@ caption {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .tour701001-1__item1 {
-    width: calc((100% - 5rem)/3);
+    width: calc((100% - 6rem) / 4);
 }
 
 .tour701001-1__titlePost {
@@ -7120,10 +7054,9 @@ caption {
 }
 
 .tour501001__box {
-    padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .tour501001__box.p120 {
@@ -7131,7 +7064,7 @@ caption {
 }
 
 .tour501001__item {
-    width: calc((100% - 5rem)/3);
+    width: calc((100% - 6rem)/4);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8768,7 +8701,6 @@ caption {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 0 2rem;
 }
 
 .tour503001__item {
@@ -9436,7 +9368,7 @@ caption {
     gap: 5rem;
     border-bottom: 1px solid #ddd;
     margin-bottom: 3rem;
-    padding: 0 2rem 3rem;
+    padding: 0 0 3rem;
 }
 
 .tour504001__item:last-child {
@@ -9477,9 +9409,8 @@ caption {
 
 .tour505001__box {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
-    padding: 0 2rem;
 }
 
 .tour505001__text {
@@ -9500,7 +9431,7 @@ caption {
 }
 
 .tour505001__item {
-    width: calc((100% - 5rem)/3);
+    width: calc((100% - 6rem)/4);
     cursor: pointer;
 }
 
@@ -9509,7 +9440,7 @@ caption {
 }
 
 .tour506001__item {
-    width: calc((100% - 5rem)/3);
+    width: calc((100% - 6rem)/4);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10423,7 +10354,6 @@ caption {
 }
 
 .tour201003__total {
-    font-size: 1.7rem;
     margin: 0;
     padding-top: 0;
 }
@@ -12177,10 +12107,6 @@ caption {
     padding: 0;
 }
 
-.tour__box104001 {
-    padding: 0 2rem;
-}
-
 .tour__box104001 .hpy02__table {
     border-bottom: 1px solid #ddd;
 }
@@ -12194,7 +12120,7 @@ caption {
 
 .tour__box104001 .ply__total {
     margin-bottom: 2rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .tour104001__groupFilter .tour__group--input {
@@ -12267,7 +12193,6 @@ caption {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 0 2rem;
 }
 
 .hpy511001__item {
@@ -13029,6 +12954,8 @@ caption {
 .hpy102031__text {
     padding: 0 2rem 3rem;
     display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 3rem;
 }
 
 .hpy102031__text button {
@@ -14063,14 +13990,6 @@ caption {
 
 .tour304001__setupWallet .tour304001__close button {
     position: unset;
-}
-
-.tour401013__boxTable {
-    padding: 0 2rem;
-}
-
-.tour401013__groupInput.p02 {
-    padding: 0 2rem;
 }
 
 .tour402002__box .section:last-child {
@@ -15171,7 +15090,7 @@ caption {
 }
 
 .screen5-home__left {
-    width: 53%;
+    width: 56%;
     border-bottom: 1px solid #ddd;
 }
 
@@ -15305,9 +15224,13 @@ caption {
 }
 
 .screen5-home__right {
-    width: 45%;
+    flex: 1;
     display: flex;
     gap: 1rem;
+}
+
+.screen5-home-schedule-table th:first-child {
+    width: 8rem;
 }
 
 .screen5-home__card {
@@ -15755,7 +15678,6 @@ caption {
 }
 
 .hpy601001__wrapper {
-    padding: 5rem;
 }
 
 .hpy601001__item {
@@ -15934,8 +15856,8 @@ caption {
 }
 
 .hpy602002__title {
-    font-size: 2.4rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 700;
     margin-bottom: 2rem;
 }
 
@@ -16162,9 +16084,6 @@ caption {
 }
 
 .hpy603001__filter {
-    border-radius: 2rem;
-    border: 1px solid #ddd;
-    padding: 5rem 7rem;
     margin-bottom: 2rem;
 }
 
@@ -16248,14 +16167,11 @@ caption {
     display: block;
 }
 
-.hpy603001__title {
-    padding: 0 2rem;
-}
 
 .hpy603001__title p {
     color: #111;
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 .hpy603001__title.fw600 p {
@@ -16278,7 +16194,6 @@ caption {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-top: 2rem;
-    padding: 0 2rem;
 }
 
 .hpy603001__card {
@@ -16321,7 +16236,7 @@ caption {
 }
 
 .hpy604001__table {
-    margin: 2rem 2rem 0;
+    margin: 2rem 0 0;
 }
 
 .hpy604001__table .hpy02__table tbody td {
@@ -16382,8 +16297,8 @@ caption {
 }
 
 .hpy604002__title {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 700;
     color: #111;
     padding: 0 2rem 2rem;
 }
@@ -16545,8 +16460,8 @@ caption {
 }
 
 .hpy605007__text h3 {
-    font-size: 2.4rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 700;
     color: #111;
     margin-bottom: 2rem;
 }
@@ -16573,9 +16488,6 @@ caption {
     height: auto;
 }
 
-.hpy605007__text {
-    margin: 0 2rem;
-}
 .hpy02__table.tour401013__table.tour004006__table tbody td {
     
     border-left: 1px solid #ddd;

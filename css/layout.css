@@ -849,7 +849,7 @@ legend {
 }
 
 .popup-main__sidebar {
-    width: 28rem;
+    width: 21rem;
     padding: 0 0 5rem;
     display: flex;
     flex-direction: column;
@@ -858,10 +858,11 @@ legend {
 
 .popup-main__menu {
     width: 100%;
-    padding: 0 5rem;
+    padding: 0 2rem;
 }
 
 .popup-main__title {
+    left: 1rem;
     font-size: 2rem;
     margin-bottom: 5rem;
     font-weight: 600;
@@ -871,7 +872,7 @@ legend {
     align-items: center;
     gap: 1.5rem;
     width: 100%;
-    justify-content: center;
+    justify-content: end;
     background: #e8eff8;
     height: 6rem;
     border-radius: 2rem 0 0 0;

@@ -16359,6 +16359,9 @@
 
     .headerMain-top {
         padding: .8rem 0;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
     }
     
     .popup-main__close img.popup-main__logoMb {

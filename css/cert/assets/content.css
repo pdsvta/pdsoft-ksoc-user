@@ -872,14 +872,13 @@ video {
 
 .tableType01 table {
 	border-top: 1px solid #d2d2d2;
-	border-right: 1px solid #d2d2d2;
 }
 
 .tableType01 table thead th {
 	height: 45px;
 	padding: 11px 0 10px 0;
 	border-bottom: 1px solid #d2d2d2;
-	border-left: 1px solid #d2d2d2;
+	border-top: 2px solid #3d3d3d;
 	background-color: #f5f5f5;
 	font-size: 16px;
 	font-weight: 500;
@@ -890,7 +889,6 @@ video {
 	height: 45px;
 	padding: 11px 0 10px 0;
 	border-bottom: solid 1px #d2d2d2;
-	border-left: solid 1px #d2d2d2;
 	background-color: #fff;
 	text-align: center;
 	font-size: 15px;
@@ -2176,17 +2174,23 @@ input.useDatepicker {
 
 .contArea .subTit {
 	margin-bottom: 15px;
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 2.8rem;
+	font-weight: 700;
 	color: #3d3d3d;
 }
 
 
 .contArea .issue-certificate {
-    border-radius: 5rem;
+    border-radius: 2rem;
     border: 1px solid #DDDDDD;
-    padding: 5rem;
+    padding: 2rem;
 	margin-bottom: 2rem;
+}
+
+.tour102016__main .contArea .issue-certificate {
+	border-radius: 0;
+	border: none;
+	padding: 0;
 }
 
 .contArea .issue-certificate:first-child {
@@ -3038,9 +3042,8 @@ input.useDatepicker {
 
 /* 원본검증 */
 .original-verification {
-    border-radius: 5rem;
-    border: 1px solid #DDDDDD;
-    padding: 5rem;
+    border-radius: 0;
+    padding: 0;
 	margin-top: 5rem;
 }
 
@@ -3069,11 +3072,8 @@ input.useDatepicker {
 }
 
 .original-verification .boxType01 {
-    background: #F5F5F5;
     height: 9.5rem;
-    border: 1px solid #ddd;
     border-radius: 2rem;
-    padding: 0 4rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -5357,7 +5357,13 @@ legend {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 7rem;
+}
+
+.tour102026__card {
+	margin-bottom: 1rem;
+}
+.tour102026__card input {
+	margin: .5rem 0 0;
 }
 
 .ply__group.p5 {
@@ -5387,9 +5393,9 @@ legend {
 }
 
 .ply__tit h3 {
-	font-size: 3rem;
+	font-size: 3.2rem;
 	font-weight: 600;
-	color: #111;
+	color: #3d3d3d;
 }
 
 .ply__tit .ply-reg__btn {
@@ -5456,14 +5462,10 @@ legend {
 	content: url("../../../images/u-102-002/image08.png");
 }
 
-.ply__wrapper {
-	border-radius: 5rem;
+.tour102002__main .ply__wrapper {
+	border-radius: 2rem;
 	border: 1px solid #DDDDDD;
-	padding: 5rem;
-}
-
-.ply__wrapper.bf5 {
-	background: #F5F5F5;
+	padding: 2rem;
 }
 
 .ply__wrapper.mt5 {
@@ -5479,10 +5481,10 @@ legend {
 }
 
 .ply__title {
-	padding: 0 2rem 3rem;
+	padding: 0 0 3rem;
 	color: #111;
-	font-weight: 600;
-	font-size: 2.4rem;
+	font-weight: 700;
+	font-size: 2.8rem;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 2rem;
 }
@@ -6208,7 +6210,6 @@ legend {
 .ply102003__text {
 	color: #666;
 	font-size: 1.5rem;
-	padding: 0 2rem;
 	font-weight: 400;
 	line-height: 150%;
 	margin-bottom: 2rem;
@@ -6282,7 +6283,7 @@ legend {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	padding: 0 2rem;
+	padding: 0;
 }
 
 .ply102007__groupChild .ply-reg__card {
@@ -6496,14 +6497,13 @@ legend {
 	width: 100%;
 	border-collapse: collapse;
 	text-align: center;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
 	table-layout: auto;
 }
 
 .hpy02__table thead th {
 	background-color: #f5f5f5;
-	border: 1px solid #ddd;
+	border-top: 2px solid #3d3d3d;
+	border-bottom: 1px solid #ddd;
 	height: 5rem;
 	padding: 1.6rem 0;
 	font-weight: 600;
@@ -6514,8 +6514,6 @@ legend {
 .hpy02__table tbody td {
 	border-top: none;
 	border-bottom: 1px solid #ddd;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
 	height: 5rem;
 	font-weight: 400;
 	font-size: 1.5rem;
@@ -7031,6 +7029,16 @@ legend {
 	font-size: 2rem;
 	color: #111;
 	font-weight: 400;
+}
+
+.ply__total span {
+	color: #111;
+	font-weight: bold;
+}
+
+.ply__total strong {
+	color: #0043B7;
+	font-weight: bold;
 }
 
 .ply102024__question {
@@ -8454,7 +8462,7 @@ legend {
     justify-content: center;
     align-items: center;
     color: #111111;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     cursor: pointer;
 }
