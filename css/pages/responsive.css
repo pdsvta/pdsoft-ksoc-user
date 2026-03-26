@@ -2451,10 +2451,6 @@
         margin-bottom: 4rem;
     }
 
-    .title h2 {
-        font-size: 2.1rem;
-    }
-
     .title.mb10 {
         margin-bottom: 1rem;
     }
@@ -4599,9 +4595,10 @@
     }
 
     .tour__btn {
-        height: 3.5rem;
-        font-size: 1.2rem;
+        height: 4.5rem;
+        font-size: 1.5rem;
         min-width: max-content;
+        padding: 0 2rem;
     }
 
     .tour__bm--end-p4 {
@@ -6080,6 +6077,10 @@
     .hpy {
         padding-bottom: 6rem;
         padding-top: 10rem;
+    }
+
+    .hpy.pt8 {
+        padding-top: 3rem;
     }
 
 
@@ -10620,7 +10621,7 @@
     }
 
     .tour403006__list {
-        border-radius: 2rem;
+        border-radius: 0;
         padding: 2rem;
         margin-top: 1rem;
     }
@@ -12729,9 +12730,9 @@
     .ply__wrapper.mt2.tour102002__boxMain.hpy108008__wrapper,
     .tour401008__wrapper,
     .tour001001__mainBox {
-        padding: 2rem;
-        border: 1px solid #ddd;
-        border-radius: 2rem;
+        padding: 2rem 0;
+        border: none;
+        border-radius: 0;
     }
 
     .hpy004007__text p {
@@ -12787,10 +12788,6 @@
 
     .hpy004004__title.p023 {
         padding: 0 0 2rem;
-    }
-
-    .hpy004004__title h3 {
-        font-size: 1.5rem;
     }
 
     .hpy004016__img,
@@ -13674,12 +13671,6 @@
         font-size: 1.2rem;
         margin: 1rem 0;
     }
-    .tour701002__infoPost,
-    .hpy0010002__wrapper {
-        padding: 2rem;
-        border: 1px solid #ddd;
-        border-radius: 2rem;
-    }
     .tour701002-1__titlePost p {
         font-size: 1.2rem;
         margin-bottom: 2rem;
@@ -13701,7 +13692,7 @@
         margin-top: 1rem;
     }
     .hpy0010002__title {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         padding: 0;
     }
     .hpy0010002__wrapper .hpy004004__title {
@@ -13712,18 +13703,18 @@
     }
     .hpy0010002__text {
         padding: 0;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .hpy0010002__bold {
-        font-size: 1.1rem;
-        width: 8rem;
-        height: 3.5rem;
+        font-size: 1.5rem;
+        width: 10rem;
+        height: 4.5rem;
         padding: 0 1rem;
     }
     .hpy0010002__value {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         flex: 1;
-        height: 3.5rem;
+        height: 4.5rem;
         padding: 0 1rem;
     }
     .hpy0010002__box.p220 {
@@ -16401,6 +16392,7 @@
     .headerMain-bottom {
         height: 6rem;
         order: 1;
+        border-bottom: 1px solid #ddd;
     }
 
     .home-back-menu,
@@ -17174,6 +17166,11 @@
 
     .screen6-home__item img {
         height: auto;
+    }
+
+    .tour403006__item b,
+    .tour403006__item p {
+        font-size: 1.5rem;
     }
 
 }

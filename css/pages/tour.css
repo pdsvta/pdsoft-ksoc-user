@@ -3520,7 +3520,6 @@ caption {
     display: flex;
     align-items: center;
     gap: .5rem;
-    width: 100%;
 }
 
 .tour__group--input.tour401005__groupSelect .hpy__select.tour401005__itemSelect.hpy__select--min200 {
@@ -4000,6 +3999,7 @@ caption {
     font-size: 2.1rem;
     color: #111;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .tour204002__map img {
@@ -5233,6 +5233,7 @@ caption {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3rem;
+    gap: .5rem;
 }
 
 .tour402004__filter.end {
@@ -6372,17 +6373,18 @@ caption {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.6rem;
+    gap: .7rem;
     margin-top: 4rem;
 }
 
 .tour405006__pagination-arrow.icon {
     display: flex;
     align-items: center;
-    width: 25px;
-    height: 25px;
+    width: 34px;
+    height: 34px;
+    border-radius: .5rem;
     line-height: 25px;
-    border-radius: 50%;
+    border: 1px solid #ddd;
     cursor: pointer;
 }
 
@@ -6439,6 +6441,7 @@ caption {
     color: #666666;
     font-size: 1.7rem;
     line-height: 1.6rem;
+    border: 1px solid #ddd;
 }
 
 .tour405006__pagination-number li.active a,
@@ -11320,7 +11323,7 @@ caption {
 }
 
 .hpy004009__group.p020 {
-    padding: 0 2rem 0rem;
+    padding: 0 0 0rem;
 }
 
 .hpy004009__select {
@@ -16524,4 +16527,8 @@ caption {
 .hpy02__wrapper.tour004054__wrapper,
 .hpy02__wrapper.tour004056__wrapper {
     border-bottom: none;
+}
+
+.tour404003__table {
+    border-bottom: 1px solid #ddd;
 }
