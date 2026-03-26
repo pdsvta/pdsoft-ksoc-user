@@ -11007,10 +11007,10 @@ caption {
     padding-left: 1rem; */
 }
 
-.hpy004004__title.bd-bt {
-    padding: 0 0 3rem;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 3rem;
+.hpy004004__title.bd-bt,
+.tour701001-1__main {
+    padding: 3rem 0 0;
+    border-top: 1px solid #ddd;
 }
 
 .hpy004004__title p {
