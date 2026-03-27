@@ -1596,11 +1596,10 @@ caption {
 }
 
 .hpy__total.fs15 {
-    font-size:2rem;
+    font-size: 2rem;
 }
 
-.hpy__card--table {
-}
+.hpy__card--table {}
 
 .hpy__table {
     width: 100%;
@@ -5907,6 +5906,7 @@ caption {
 .tour404004__btn:hover {
     opacity: 0.7;
 }
+
 .tour405001__box {
     display: block;
 }
@@ -12713,6 +12713,7 @@ caption {
     font-size: 2rem;
     font-weight: 600;
     color: #111;
+    cursor: pointer;
 }
 
 .hpy004001__wrapper .hpy004004__title p img {
@@ -15677,8 +15678,7 @@ caption {
     margin-bottom: .5rem;
 }
 
-.hpy601001__wrapper {
-}
+.hpy601001__wrapper {}
 
 .hpy601001__item {
     padding: 0 2rem 2rem;
@@ -16489,13 +16489,15 @@ caption {
 }
 
 .hpy02__table.tour401013__table.tour004006__table tbody td {
-    
+
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
 }
-.hpy02__table.tour401013__table.tour004006__table tbody td:last-child{
+
+.hpy02__table.tour401013__table.tour004006__table tbody td:last-child {
     border-right: none;
 }
+
 .hpy02__table.tour401013__table.tour004006__table tbody td:first-child {
     border-left: none;
 }
