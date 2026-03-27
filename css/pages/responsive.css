@@ -149,13 +149,12 @@
         padding: 200px 30px 50px; 
     }
 
-    .hpy__banner__tit {
-        font-size: 60px;
-        margin-bottom: 30px;
-    }
-
     .hpy603002__item {
         padding: 40px 30px;
+    }
+
+    .hpy__banner-inner {
+        column-gap: 70px;
     }
 }
 
@@ -1307,8 +1306,7 @@
     }
 
     .hpy__banner__tit {
-        font-size: 40px;
-        margin-bottom: 30px;
+        font-size: 21px;
     }
 }
 
@@ -1652,6 +1650,10 @@
     .info-box .row div,
     .hpy603002__filter .info-box .item-info {
         width: 50%;
+    }
+
+    .hpy603002__avatar {
+        margin-bottom: 30px;
     }
 }
 
@@ -17416,12 +17418,12 @@
         padding: 30px 15px;
     }
 
-    .hpy__banner__tit {
-        font-size: 34px;
-    }
-
     .hpy__banner__desc {
         font-size: 15px;
+    }
+
+    .hpy__intro__banner {
+        padding: 60px 20px 60px; 
     }
 }
 
