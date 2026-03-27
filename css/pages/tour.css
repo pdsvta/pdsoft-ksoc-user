@@ -16564,9 +16564,22 @@ caption {
 
 .hpy__banner-inner {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    column-gap: 100px;
 }
+
+.hpy603002__avatar {
+    max-width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hpy__banner__tit {
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
 
 .hpy__banner-info dl {
     display: flex;
@@ -16590,24 +16603,6 @@ caption {
 .hpy__banner-info dd {
     color: #000;
     font-size: 15px;
-}
-
-.hpy__banner-text {
-    text-align: right;
-    color: #fff;
-}
-
-.hpy__banner__tit {
-    font-weight: 700;
-    font-size: 80px;
-    margin-bottom: 73px;
-    color: #000;
-}
-
-.hpy__banner__desc {
-    font-weight: 600;
-    font-size: 18px;
-    color: #000;
 }
 
 .hpy603002 .title {
