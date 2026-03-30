@@ -16607,7 +16607,7 @@ caption {
 
 .hpy603002 .title {
     justify-content: left;
-    margin: 0 0 30px 70px;;
+    margin: 0 0 30px 70px;
 }
 
 .hpy603002__item {
@@ -16664,37 +16664,51 @@ caption {
     margin-bottom: 0;
 }   
 
-.info-box {
+.hpy603002__wrap__box .info-box {
     background: #F5F5F5;
     border-radius: 15px;
     padding: 40px 40px;
 }
 
-.info-box .row {
+.hpy603002__wrap__box .info-box .row {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
 
-.info-box .row div {
-    width: 33.33%;
+.hpy603002__wrap__box .info-box .row div {
     font-size: 18px;
     color: #333;
 }
 
-.info-box strong {
+.hpy603002__wrap__box .info-box strong {
     font-weight: 600;
     margin-right: 6px;
     color: #111;
 }
 
-.info-box .row:last-child {
+.hpy603002__wrap__box .info-box .row:last-child {
     margin-bottom: 0;
 }
 
-.item-info  > span {
-    display: inline-flex;
-    margin-right: 20px;
+.hpy603002__wrap__box .info-box {
+  display: grid;
+  grid-template-columns: repeat(3, max-content 1fr);
+  column-gap: 20px;
+  row-gap: 12px;
+}
+
+.item-info {
+  display: contents;
+}
+
+.item-info span {
+  white-space: nowrap;
+  color: #999;
+}
+
+.item-info strong {
+  font-weight: 600;
 }
 
 .hpy603002__filter__row {
@@ -16794,4 +16808,58 @@ caption {
 
 .hpy606001__content {
     padding: 2rem 1rem 1rem;
+}
+
+.hpy603002__grid__blogs {
+    margin-top: 50px;
+}
+
+.hpy603002__grid__blogs .heading {
+    color: #111111;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hpy603002__grid__content {
+    margin: 20px 0 0;
+}
+
+.heading__new {
+    color: #111111;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.list_new li {
+    margin-bottom: 3px;
+}
+
+.list_new li:last-child {
+    margin-bottom: 0;
+}
+
+.hpy603002__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4rem;
+    row-gap: 5rem;
+}
+
+.hpy603002__grid__item {
+    cursor: pointer;
+}
+
+.hv__zoom__out {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.hv__zoom__out img {
+    transition: all .2s;
+}
+
+.hv__zoom__out:hover img {
+    transform: scale(1.07);
 }
