@@ -17328,6 +17328,77 @@
     .hpy__intro__banner {
         padding: 20px 20px 40px;
     }
+
+    .login__top .icon__file img {
+        max-width: 150px;
+    }
+    .login__top .account__name {
+        font-size: 22px;
+    }
+
+    .login__bottom a {
+        font-size: 16px;
+    }
+
+     .find .inner.hpy0030023__inner {
+        max-width: 100%;
+    }
+
+    .hpy0030023__box {
+        margin-top: 2.5rem;
+        padding: 2rem;
+    }
+
+    .hpy0030023__desc {
+        font-size: 1.8rem;
+    }
+
+    .hpy0030023__line {
+        margin-top: 1.4rem;
+    }
+
+    .hpy0030023__row {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 2rem 0;
+    }
+
+    .hpy0030023__label {
+        flex: unset;
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .hpy0030023__field {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hpy0030023__input {
+        width: 100%;
+        height: 4.2rem;
+        font-size: 1.4rem;
+    }
+
+    .hpy0030023__guide {
+        margin-top: 1.2rem;
+        padding-left: 1.6rem;
+    }
+
+    .hpy0030023__guide li {
+        font-size: 1.3rem;
+        line-height: 1.7;
+    }
+
+    .hpy0030023__actions {
+        padding-top: 3rem;
+    }
+
+    .hpy0030023__btn {
+        width: 100%;
+        min-width: 0;
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 414px) {
@@ -17452,6 +17523,27 @@
     .hpy603002__grid {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 3rem;
+    }
+
+    .login__top {
+        display: block;
+        text-align: center;
+    }
+
+    .login__top .icon__file img {
+        margin: 0 auto -10px;
+    }
+
+    .login__top .account__info {
+        text-align: center;
+    }
+
+    .account__meta {
+        justify-content: center;
+    }
+
+    .login__bottom {
+        gap: 5px;
     }
 }
 
