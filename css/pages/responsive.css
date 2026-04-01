@@ -15,6 +15,10 @@
     .hpy603002__item {
         padding: 50px 50px;
     }
+
+    .search__box {
+        padding: 30px 20px 35px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -164,6 +168,10 @@
         column-gap: 3rem;
         row-gap: 4rem;
     }
+
+    .search__box .filter__select > select {
+        min-width: 17rem;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -305,6 +313,16 @@
     .info-box {
         padding: 40px 30px;
     }
+
+    .search__box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .input__search {
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 912px) {
@@ -17675,6 +17693,36 @@
         width: 100%;
         min-width: 0;
         font-size: 1.8rem;
+    }
+
+    .search__box .filter__select > select {
+        min-width: 15rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .search__box {
+        display: block;
+    } 
+
+    .filter__select {
+        margin-bottom: 18px;
+    }
+
+    .search__box .filter__select > select {
+        min-width: 100%;
+    }
+
+    .input__search {
+        position: relative;
+        padding-top: 31px;
+    }
+
+    .input__search > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
     }
 }
 
