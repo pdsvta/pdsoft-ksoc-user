@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행복나눔교실 강습일지</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="header-homeMain">
+            <div class="headerMain-bottom">
+                <div class="inner">
+                    <img src="images/home-main/logo1.png" alt="" class="headerMain-logo">
+                    <div>
+                        <ul class="headerMain-list">
+                            <li class="headerMain-search">
+                                <div class="headerMain-searchbox">
+                                    <input type="text">
+                                    <button class="headerMain-searchbtn">
+                                        <img src="images/icons/search-blue-icon.png" alt="">
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">로그인</a>
+                            </li>
+                            <li><a href="#">이용안내</a></li>
+                            <li class="headerMain-btns">
+                                <button class="headerMainmenu-btn ">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <a href="#"> 전체메뉴</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-back-menu">
+                <div class="screen1-home__menu">
+                    <ul>
+                        <li>
+                            <a href="#">개인 원클릭</a>
+                            <ul class="screen1-home__menu-submenu">
+                                <li><a href="#">경기인 등록</a></li>
+                                <li><a href="#">제증명서 발급</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">증명서 발급</a></li>
+                                        <li><a href="#">교육수료증 발급</a></li>
+                                        <li><a href="#">증명서 검증</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">온라인 상장발급</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">수상이력 조회</a></li>
+                                        <li><a href="#">상장발급 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">클럽대회 참가확인서</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">참가이력 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">메디컬센터 진료기록</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">발급 이력</a></li>
+                                        <li><a href="#">발급 신청</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">클럽강좌 수강신청</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">클럽강좌 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">태릉국제스케이트장 강습신청</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">강습신청 안내</a></li>
+                                        <li><a href="#">정규강습 시간표 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                        <li><a href="#">방학특강 시간표 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                        <li><a href="#">강사 현황 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">선수촌 견학</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">견학신청 및 조회</a></li>
+                                        <li><a href="#">견학 후기</a></li>
+                                        <li><a href="#">사진갤러리</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">단체 원클릭</a>
+                            <ul class="screen1-home__menu-submenu">
+                                <li><a href="#">행복나눔교실 참가신청</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">프로그램 소개</a></li>
+                                        <li><a href="#">강습회 신청</a></li>
+                                        <li><a href="#">내가 신청한 강습회</a></li>
+                                        <li><a href="#">강습일지</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">클럽대회 참가신청</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">클럽대회 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스포츠클럽 대관신청</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">스포츠클럽 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">태릉국제스케이트장 대관신청</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">대관안내</a></li>
+                                        <li><a href="#">신청안내 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">문의 및 상담</a>
+                            <ul class="screen1-home__menu-submenu">
+                                <li><a href="#">경기인등록 안내</a></li>
+                                <li><a href="#">증명서발급 안내</a></li>
+                                <li><a href="#">체육인 전자지갑 안내</a></li>
+                                <li><a href="#">전자증명서 서비스 안내</a></li>
+                                <li><a href="#">문의처 안내</a></li>
+                                <li><a href="#">회원종목단체 경영공시</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">체육종합정보</a>
+                            <ul class="screen1-home__menu-submenu">
+                                <li><a href="#">체육시설 안내</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">근거리 스포츠클럽 검색</a></li>
+                                        <li><a href="#">지역 스포츠클럽 검색</a></li>
+                                        <li><a href="#">운영종목 검색</a></li>
+                                        <li><a href="#">지정 스포츠클럽 검색</a></li>
+                                        <li><a href="#">내 주변 체육시설 검색</a></li>
+                                        <li><a href="#">체육시설 알리미 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">대회정보 안내</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">대회 일정</a></li>
+                                        <li><a href="#">국내 대회</a></li>
+                                        <li><a href="#">종목별 대회</a></li>
+                                        <li><a href="#">기준기록</a></li>
+                                        <li><a href="#">국제대회</a></li>
+                                        <li><a href="#">국제스포츠캘런더 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                        <li><a href="#">국제스포츠동향 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스포츠 채용정보</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">체육단체 채용정보</a></li>
+                                        <li><a href="#">국제스포츠 채용정보</a></li>
+                                        <li><a href="#">스포츠클럽 채용정보</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스포츠 프로그램</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">청소년스포츠한마당</a></li>
+                                        <li><a href="#">해달맞이 생활체육교실</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스포츠 안전</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">스포츠안전 소개</a></li>
+                                        <li><a href="#">스포츠안전 연구</a></li>
+                                        <li><a href="#">스포츠안전 공제</a></li>
+                                        <li><a href="#">스포츠안전 매뉴얼</a></li>
+                                        <li><a href="#">스포츠안전 교육영상 <img src="images/icons/icon-menu.png" alt=""></a>
+                                        </li>
+                                        <li><a href="#">스포츠안전 뉴스레터</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스포츠 교육</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">스포츠교육비전 2030</a></li>
+                                        <li><a href="#">체육인재개발원</a></li>
+                                        <li><a href="#">스포츠교육 소식</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">뉴스와 정보</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">체육단체 소식</a></li>
+                                        <li><a href="#">체육자료</a></li>
+                                        <li><a href="#">스포츠클럽 공지 <img src="images/icons/icon-menu.png" alt=""></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">통계정보</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">한눈에 보는 체육통계</a></li>
+                                        <li><a href="#">등록현황</a></li>
+                                        <li><a href="#">대회현황</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">스포츠미디어</a>
+                            <ul class="screen1-home__menu-submenu">
+                                <li><a href="#">홍보영상</a></li>
+                                <li><a href="#">대회경기영상</a></li>
+                                <li><a href="#">스포츠 히어로</a></li>
+                                <li><a href="#">동호회/클럽</a></li>
+                                <li><a href="#">스포츠 스토리 </a></li>
+                                <li><a href="#">스포츠클럽 영상갤러리</a></li>
+                                <li><a href="#">스포츠 아카데미</a></li>
+                                <li><a href="#">스포츠 하이라이트</a></li>
+                                <li><a href="#">스포츠원 이복</a></li>
+                                <li><a href="#">카드뉴스</a></li>
+                                <li><a href="#">포토뱅크</a></li>
+                                <li><a href="#">스포츠클럽 포토갤러리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">아카이브</a>
+                            <ul class="screen1-home__menu-submenu">
+                                <li><a href="#">기록물 아카이브 검색</a></li>
+                                <li><a href="#">스포츠 영웅</a></li>
+                                <li><a href="#">국가대표 아카이브</a></li>
+                                <li><a href="#">메달리스트</a></li>
+                                <li><a href="#">디지털 컬렉션</a>
+                                    <ul class="screen1-home__menu-submenu-child">
+                                        <li><a href="#">디지털 전시</a></li>
+                                        <li><a href="#">체육106년, 감동 100선</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스포츠기증관</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">7330 & 스포츠안전</a>
+                            <ul class="screen1-home__menu-submenu">
+                                <li><a href="#">7330 캠페인</a></li>
+                                <li><a href="#">스포츠안전 캠페인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- contents -->
+        <section class="hpy">
+            <div class="inner">
+                <div class="title">
+                    <h2>기록물 아카이브 검색</h2>
+                </div>
+                <div class="hpy02__wrapper tour402004__wrapper mt20">
+                    <div class="tour__group--input gap5 p02 tour403001__groupFilter">
+                        <select name="" id="" class="selectbox min200">
+                            <option value="">담당부서 전체</option>
+                        </select>
+                        <select name="" id="" class="selectbox min200">
+                            <option value="">제목+내용</option>
+                        </select>
+                        <div class="tour403001__groupInput">
+                            <input type="text" class="hpy__input" placeholder="검색 시작일">
+                            <input type="text" class="hpy__input" placeholder="검색 종료일">
+                            <input type="text" class="hpy__input" placeholder="검색어를 입력하세요">
+                        </div>
+                        <button type="button" class="hpy-reg__btn hpy-reg__btn--min70 ply-reg__btn--gray">검색</button>
+                    </div>
+                    <div class="tour402001__boxMain tour403001__boxMain">
+                        <div class="tour402004__filter m302 p02 tour403001__filter">
+                            <p class="hpy__total fs15">
+                                현재페이지 <span>1</span>/470
+                            </p>
+                            <select name="" id="" class="selectbox min130">
+                                <option value="">10개씩 보기</option>
+                            </select>
+                        </div>
+                        <div class="hpy02__box tour403001__table">
+                            <table class="hpy02__table tour402004__table tour401013__table">
+                                <colgroup>
+                                    <col style="width: 7rem;">
+                                    <col style="width: 49rem;">
+                                    <col style="width: 6rem;">
+                                    <col style="width: 11rem;">
+                                    <col style="width: 9rem;">
+                                    <col style="width: 10rem;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>파일</th>
+                                        <th>담당부서</th>
+                                        <th>담당자</th>
+                                        <th>등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>공지</td>
+                                        <td>[대한체육회] 신입직원 채용 합격이야기 게시</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>인사총무부</td>
+                                        <td>최선규</td>
+                                        <td>2025.08.22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4690</td>
+                                        <td>대한레슬링협회 신규직원 채용 최종 합격자 공고</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>대한레슬링협회</td>
+                                        <td>송정국</td>
+                                        <td>2025.10.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4689</td>
+                                        <td>2026년 의령군청 직장운동경기부(궁도) 선수 채용공고 안내</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>의령군청</td>
+                                        <td>최민수</td>
+                                        <td>2025.10.29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4688</td>
+                                        <td>[대한바이애슬론연맹] 정규직(사무행정) 신규직원 공개채용 공고</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>대한바이애슬론
+                                            연맹</td>
+                                        <td>김동희</td>
+                                        <td>2025.10.29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4687</td>
+                                        <td>대한수영연맹 사무처 신입(계약직) 직원 공개채용 공고(사무행정)</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>대한수영연맹</td>
+                                        <td>정두진</td>
+                                        <td>2025.10.28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4686</td>
+                                        <td>2025 대한펜싱협회 「여자 사브르 및 에뻬 종목」 국가대표 전담팀(기술트레이너) 공개채용 공고</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>경기운영부부</td>
+                                        <td>대한펜싱협회</td>
+                                        <td>2025.10.27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4685</td>
+                                        <td>2025 대한펜싱협회 「남자 사브르 종목」 국가대표 전담팀(기술트레이너) 공개채용 공고</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>경기운영부</td>
+                                        <td>대한펜싱협회</td>
+                                        <td>2025.10.27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4684</td>
+                                        <td>(사)대한보디빌딩협회 정규직(국제사업) 채용 공고</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>대한보디빌딩협
+                                            회</td>
+                                        <td>이시연</td>
+                                        <td>2025.10.22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4683</td>
+                                        <td>전북특별자치도체육회 신규(경력)직원 채용</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>전북특별자치도
+                                            체육회</td>
+                                        <td>이준희</td>
+                                        <td>2025.10.22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4682</td>
+                                        <td>(사)대한핸드볼협회 사무처 정규직(회계) 공개채용 공고</td>
+                                        <td><img src="images/u-403-001/image01.png" alt=""></td>
+                                        <td>대한핸드볼협회</td>
+                                        <td>김은아</td>
+                                        <td>2025.10.17</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="paging-ui">
+                            <ul>
+                                <li>
+                                    <a href="#" class="first-move">
+                                        <span class="blind">첫 페이지</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="prev-move">
+                                        <span class="blind">이전 페이지</span>
+                                    </a>
+                                </li>
+                                <li class="current">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="next-move">
+                                        <span class="blind">다음 페이지</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="last-move">
+                                        <span class="blind">끝 페이지</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // contents -->
+
+        <!-- footer -->
+        <footer id="footer-main" class="footer-main footer-homeMain">
+            <div class="inner">
+                <div class="footer-main__inner">
+                    <div>
+                        <img src="images/home-main/logo2.png" alt="" class="footer-homeMain-logo">
+                        <ul class="footer-main__menu">
+                            <li class="footer-main__menu-item"><a href="#">개인정보처리방침</a></li>
+                            <li class="footer-main__menu-item"><a href="#">이용약관</a></li>
+                            <li class="footer-main__menu-item"><a href="#">이메일무단수집거부</a></li>
+                        </ul>
+
+                        <p class="footer-main__address">
+                            주소: 서울특별시 송파구 올림픽로 424 (방이동, 올림픽회관)
+                        </p>
+
+                        <p class="footer-main__copyright">
+                            Copyright © 2026 대한체육회. All rights reserved.
+                        </p>
+                    </div>
+
+                    <div class="footer-main__sponsors">
+                        <div class="footer-social">
+                            <div class="footer-cal">
+                                <img src="images/home-main/ic21.png" alt="">
+                                <div>
+                                    <p>고객센터</p>
+                                    <span>1234-5678</span>
+                                </div>
+                            </div>
+                            <div class="footer-ic">
+                                <a href="#"><img src="images/home-main/ic22.png" alt=""></a>
+                                <a href="#"><img src="images/home-main/ic23.png" alt=""></a>
+                                <a href="#"><img src="images/home-main/ic24.png" alt=""></a>
+                                <a href="#"><img src="images/home-main/ic25.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer-main__sponsor-logos">
+                                <img src="images/main-pc/footer01.png" alt="logo" class="footer-main__logo1">
+                                <img src="images/main-pc/footer02.png" alt="logo" class="footer-main__logo2">
+                                <img src="images/main-pc/footer03.png" alt="logo" class="footer-main__logo3">
+                            </div>
+
+                            <p class="footer-main__sponsor-text">
+                                본 사업은 문화체육관광부 국민체육진흥법에 재정후원을 받고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+
+    <div class="popup">
+        <div class="popup-main">
+            <div class="popup-main__close">
+                <div class="popup-main__btns">
+                    <a href="">로그인</a>
+                    <a href="">회원가입</a>
+                </div>
+                <img class="popup-close" src="images/main-pc/close.png" alt="">
+                <div class="popup-main__input">
+                    <input type="text">
+                    <button class="popup-main__searchbtn">
+                        <img src="images/icons/search-blk-icon.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="popup-main__linksMb">
+                <a href="">스포츠원클릭</a>
+                <a href="">스포츠허브</a>
+            </div>
+            <div class="popup-main__container">
+                <!-- LEFT MENU -->
+                <aside class="popup-main__sidebar">
+                    <h2 class="popup-main__title">사이트맵</h2>
+
+                    <ul class="popup-main__menu">
+                        <li class="popup-main__menu-item popup-main__menu-item--active" data-tab="tab1">
+                            <div class="popup-main__menu-btn">개인 원클릭</div>
+                        </li>
+                        <li class="popup-main__menu-item" data-tab="tab2">
+                            <div class="popup-main__menu-btn">단체 원클릭</div>
+                        </li>
+                        <li class="popup-main__menu-item" data-tab="tab3">
+                            <div class="popup-main__menu-btn">문의 및 상담</div>
+                        </li>
+                        <li class="popup-main__menu-item" data-tab="tab4">
+                            <div class="popup-main__menu-btn">체육종합정보</div>
+                        </li>
+                        <li class="popup-main__menu-item" data-tab="tab5">
+                            <div class="popup-main__menu-btn">스포츠미디어</div>
+                        </li>
+                        <li class="popup-main__menu-item" data-tab="tab6">
+                            <div class="popup-main__menu-btn">아카이브</div>
+                        </li>
+                        <li class="popup-main__menu-item" data-tab="tab7">
+                            <div class="popup-main__menu-btn">이벤트&캠페인</div>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- RIGHT CONTENT AREA -->
+                <div class="popup-main__content">
+                    <!-- TAB 1 -->
+                    <div class="popup-main__tab popup-main__tab--active" id="tab1">
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">경기인 등록</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="#">경기인 등록</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">제증명서 발급</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">증명서 발급</a></li>
+                                    <li><a href="">교육수료증 발급</a></li>
+                                    <li><a href="">증명서 검증</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">온라인상장 발급</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">수상이력 조회</a></li>
+                                    <li><a href="">상장발급 내역</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">클럽대회 참가확인서</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">참가이력 조회</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="popup-main__cols mt5">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">메디컬센터 <br>
+                                    진료기록</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="#">발급안내</a></li>
+                                    <li><a href="">발급신청</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">클럽강좌 수강신청</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">클럽강좌 조회</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">태릉국제스케이트장 <br>
+                                    강습신청</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">강습신청 안내</a></li>
+                                    <li><a href="">정규강습 시간표</a></li>
+                                    <li><a href="">방학특강 시간표</a></li>
+                                    <li><a href="">강사현황</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">선수촌 견학</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">견학신청 및 조회</a></li>
+                                    <li><a href="">견학후기</a></li>
+                                    <li><a href="">사진갤러리</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 (active default) -->
+                    <div class="popup-main__tab" id="tab2">
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">행복나눔교실 참가신청</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="#">프로그램 소개</a></li>
+                                    <li><a href="#">강습회 신청</a></li>
+                                    <li><a href="#">내가 신청한 강습회</a></li>
+                                    <li><a href="#">강습일지</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">클럽대회 참가신청</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">클럽대회 조회</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠클럽 대관신청</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">스포츠클럽 조회</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">태릉국제스케이트장 <br>
+                                    대관신청</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">대관안내</a></li>
+                                    <li><a href="">신청현황</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 -->
+                    <div class="popup-main__tab" id="tab3">
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">경기인등록 안내</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">증명서발급 안내</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">체육인 전자지갑 안내</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">전자증명서 서비스 안내</a>
+                            </div>
+                        </div>
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">문의처 안내</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">회원종목단체 경영공시</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4 -->
+                    <div class="popup-main__tab" id="tab4">
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">체육시설 안내</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="#">스포츠클럽 검색</a></li>
+                                    <li><a href="">지역 스포츠클럽 검색</a></li>
+                                    <li><a href="">운영종목 검색</a></li>
+                                    <li><a href="">지정 스포츠클럽 검색</a></li>
+                                    <li><a href="">내 주변 체육시설 검색</a></li>
+                                    <li><a href="">개방학교 찾기</a></li>
+                                    <li><a href="">체육시설 알리미[새창]</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">대회정보 안내</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">국내대회</a></li>
+                                    <li><a href="">종목별대회</a></li>
+                                    <li><a href="">기준기록</a></li>
+                                    <li><a href="">국제대회</a></li>
+                                    <li><a href="">국제스포츠캘린더[새창]</a></li>
+                                    <li><a href="">국제스포츠동향[새창]</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠 채용정보</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">채용정보</a></li>
+                                    <li><a href="">국제스포츠 채용정보</a></li>
+                                    <li><a href="">스포츠클럽 채용정보</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠 프로그램</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">주말체육학교</a></li>
+                                    <li><a href="">청소년스포츠 한마당</a></li>
+                                    <li><a href="">해달맞이 생활체육교실</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="popup-main__cols mt5">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">스포츠 안전</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="#">스포츠안전 소개</a></li>
+                                    <li><a href="">스포츠안전 연구</a></li>
+                                    <li><a href="">스포츠안전 공제</a></li>
+                                    <li><a href="">스포츠안전 매뉴얼</a></li>
+                                    <li><a href="">스포츠안전 교육영상</a></li>
+                                    <li><a href="">스포츠안전 뉴스레터</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠 교육</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">스포츠교육비전 2030</a></li>
+                                    <li><a href="">대한민국체육인재개발원</a></li>
+                                    <li><a href="">스포츠교육 소식</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">뉴스와 정보</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">체육단체소식</a></li>
+                                    <li><a href="">체육자료</a></li>
+                                    <li><a href="">스포츠클럽 공지사항[새창]</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- TAB 5 -->
+                    <div class="popup-main__tab" id="tab5">
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">홍보영상</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">대회경기영상</a>
+                            </div>
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">스포츠 히어로</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">동호회/클럽</a>
+                            </div>
+                        </div>
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">스포츠 스타</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠클럽 영상갤러리</a>
+                            </div>
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">배워봅시다</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">생생스포츠</a>
+                            </div>
+                        </div>
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">스포츠원 이북</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">카드뉴스</a>
+                            </div>
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">포토뱅크</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠클럽 포토갤러리</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 6 -->
+                    <div class="popup-main__tab" id="tab6">
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">기록물 아카이브 검색</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠 영웅</a>
+                            </div>
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">국가대표 아카이브</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">메달 리스트</a>
+                            </div>
+                        </div>
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">디지털 컬렉션</a>
+                                <ul class="popup-main__links">
+                                    <li><a href="">디지털 전시</a></li>
+                                    <li><a href="">스포츠역사</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠 기증관</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 7 -->
+                    <div class="popup-main__tab" id="tab7">
+                        <div class="popup-main__cols">
+                            <div class="popup-main__col">
+                                <a href="#" class="popup-main__col-title">7330 캠페인</a>
+                            </div>
+
+                            <div class="popup-main__col">
+                                <a class="popup-main__col-title">스포츠안전캠페인</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).on('click', '.headerMain-btns', function () {
+            const $popup = $('.popup-main').parent().addClass('on');
+
+            const $firstMenu = $('.popup-main__menu-item')
+                .removeClass('popup-main__menu-item--active')
+                .first()
+                .addClass('popup-main__menu-item--active');
+
+            const firstTabId = $firstMenu.data('tab');
+
+            $('.popup-main__tab')
+                .stop(true, true)
+                .hide()
+                .removeClass('popup-main__tab--active')
+                .filter('#' + firstTabId)
+            [window.innerWidth < 1200 ? 'slideDown' : 'fadeIn']()
+                .addClass('popup-main__tab--active');
+
+            if (window.innerWidth < 1200) {
+                $('.popup-main__col').removeClass('open');
+                $('.popup-main__links').hide();
+            } else {
+                $('.popup-main__col').addClass('open');
+                $('.popup-main__links').show();
+            }
+        });
+        $(document).on('click', '.popup-close', function () {
+            $('.popup-main').parent().removeClass('on');
+        });
+
+
+        function activateMobileAccordion() {
+            if (window.innerWidth < 1200) {
+                $('.popup-main__menu-item').off('click').on('click', function () {
+                    let tabId = $(this).data('tab');
+
+                    if ($(this).hasClass('popup-main__menu-item--active')) {
+                        $(this).removeClass('popup-main__menu-item--active');
+                        $('#' + tabId).slideUp();
+                        return;
+                    }
+
+                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                    $(this).addClass('popup-main__menu-item--active');
+
+                    $('.popup-main__tab').slideUp();
+                    $('#' + tabId).slideDown();
+                });
+
+                $('.popup-main__col').removeClass('open');
+                $('.popup-main__links').hide();
+
+            } else {
+                $('.popup-main__menu-item').off('click').on('click', function () {
+                    let tabId = $(this).data('tab');
+
+                    $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
+                    $(this).addClass('popup-main__menu-item--active');
+
+                    $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
+                    $('#' + tabId).fadeIn(150).addClass('popup-main__tab--active');
+
+                    $('.popup-main__col').addClass('open');
+                    $('.popup-main__links').show();
+                });
+
+                $('.popup-main__col').addClass('open');
+                $('.popup-main__links').show();
+            }
+        }
+
+        $(document).ready(function () {
+            activateMobileAccordion();
+        });
+
+        $(window).on('resize', function () {
+            activateMobileAccordion();
+        });
+
+        $(document).ready(function () {
+
+            $(document).on('click', '.popup-main__col-title', function (e) {
+                e.preventDefault();
+            });
+
+            $(document).on('click', '.popup-main__col', function (e) {
+
+                if (window.innerWidth >= 1200) return;
+                let submenu = $(this).find('.popup-main__links');
+                if (submenu.length === 0) return;
+
+                e.stopPropagation();
+
+                if ($(this).hasClass('open')) {
+                    $(this).removeClass('open');
+                    submenu.slideUp(200);
+                    return;
+                }
+
+                $(this)
+                    .closest('.popup-main__cols')
+                    .find('.popup-main__col.open')
+                    .removeClass('open')
+                    .find('.popup-main__links')
+                    .slideUp(200);
+
+                $(this).addClass('open');
+                submenu.slideDown(200);
+            });
+
+            $(document).on('click', '.popup-main__links a', function (e) {
+                e.stopPropagation();
+            });
+
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const table = document.querySelector('.tour401013__table');
+            if (!table) return;
+
+            const mediaQuery = window.matchMedia('(max-width: 767px)');
+
+            const originalHTML = table.innerHTML;
+
+            function applyMobileTable() {
+                if (table.classList.contains('is-mobile')) return;
+
+                table.classList.add('is-mobile');
+
+                const headers = [...table.querySelectorAll('thead th')]
+                    .map(th => th.textContent.trim());
+
+                const numberIndex = headers.indexOf('번호');
+                const schoolIndex = headers.indexOf('제목');
+
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const tds = [...row.querySelectorAll('td')];
+
+                    if (tds[schoolIndex]) {
+                        const title = document.createElement('div');
+                        title.className = 'mobile-card-title';
+                        title.textContent = tds[schoolIndex].textContent.trim();
+                        row.prepend(title);
+                    }
+
+                    [numberIndex, schoolIndex]
+                        .sort((a, b) => b - a)
+                        .forEach(i => tds[i] && tds[i].remove());
+
+                    const labels = headers.filter(
+                        (_, i) => i !== numberIndex && i !== schoolIndex
+                    );
+
+                    [...row.querySelectorAll('td')].forEach((td, i) => {
+                        td.setAttribute('data-label', labels[i]);
+                    });
+                });
+            }
+
+            function restoreDesktopTable() {
+                if (!table.classList.contains('is-mobile')) return;
+
+                table.classList.remove('is-mobile');
+                table.innerHTML = originalHTML;
+            }
+
+            function handleResponsive(e) {
+                if (e.matches) {
+                    applyMobileTable();   // mobile
+                } else {
+                    restoreDesktopTable(); // desktop
+                }
+            }
+
+            handleResponsive(mediaQuery);
+
+            mediaQuery.addEventListener('change', handleResponsive);
+        });
+    </script>
+    <script>
+        function equalSubmenuHeight() {
+            const submenus = document.querySelectorAll('.screen1-home__menu-submenu');
+
+            submenus.forEach(submenu => {
+                const items = submenu.querySelectorAll(':scope > li');
+
+                let maxHeight = 0;
+                items.forEach(item => {
+                    item.style.height = 'auto';
+                });
+
+                items.forEach(item => {
+                    if (item.offsetHeight > maxHeight) {
+                        maxHeight = item.offsetHeight;
+                    }
+                });
+
+                items.forEach(item => {
+                    item.style.height = maxHeight + 'px';
+                });
+            });
+        }
+
+        const menu = document.querySelector('.home-back-menu');
+        const itemsMenu = document.querySelectorAll('.screen1-home__menu > ul > li');
+
+        itemsMenu.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const submenu = item.querySelector('.screen1-home__menu-submenu');
+                const subChild = item.querySelector('.screen1-home__menu-submenu-child');
+
+                let h = 0;
+
+                if (submenu) h = submenu.scrollHeight;
+                if (subChild) h = Math.max(h, subChild.scrollHeight);
+
+                menu.style.setProperty('--submenu-height', h + 'px');
+                menu.classList.add('active');
+                setTimeout(equalSubmenuHeight, 50);
+            });
+        });
+
+        menu.addEventListener('mouseleave', () => {
+            menu.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>
