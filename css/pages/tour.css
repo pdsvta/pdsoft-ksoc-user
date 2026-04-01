@@ -16875,3 +16875,52 @@ caption {
 .hv__zoom__out:hover img {
     transform: scale(1.07);
 }
+.search__box {
+    border: 4px solid #ddd;
+    padding: 30px 25px 35px;
+    border-radius: 2px;
+    align-items: end;
+    gap: 14px;
+}
+
+.input__search {
+    align-items: center;  
+    justify-content: end;  
+}
+
+.input__search > input {
+    max-width: 46rem;
+}
+
+.input__search > span {
+    margin: 0 20px;
+    color: #111;
+    font-weight: 500;
+    min-width: 30px;
+}
+
+.filter__select label {
+    color: #111;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.input__search button {
+    background-color: #0C54B8 !important;
+    margin-left: 10px;
+}
+
+.input__search input:focus {
+    outline: revert;
+}
+
+.search__box .filter__select > select {
+    min-width: 20rem;
+}
+
+.tour402001__boxMain.tour403001__boxMain .hpy02__box,
+.tour402001__boxMain.tour403001__boxMain .hpy02__table,
+.tour402001__boxMain.tour403001__boxMain .tour402004__filter {
+    padding: 0;
+}
