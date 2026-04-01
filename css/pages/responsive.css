@@ -1,4 +1,5 @@
 @media (max-width:1400px) {
+
     .inner,
     .ply-hdr .inner,
     .ply-nav .inner,
@@ -8,13 +9,14 @@
     }
 
     .hpy__intro__banner {
-        padding: 270px 50px 50px; 
+        padding: 270px 50px 50px;
     }
 
     .hpy603002__item {
         padding: 50px 50px;
     }
 }
+
 @media (max-width: 1200px) {
     .screen1-main .inner {
         padding: 0 2rem;
@@ -146,7 +148,7 @@
     }
 
     .hpy__intro__banner {
-        padding: 200px 30px 50px; 
+        padding: 200px 30px 50px;
     }
 
     .hpy603002__item {
@@ -279,7 +281,7 @@
         object-fit: cover;
         border-radius: 1rem;
     }
-    
+
     .hpy004004__img2 img {
         width: 100%;
         margin: 2rem auto 1rem;
@@ -288,7 +290,7 @@
     .hpy004003__text img.hpy004029__maps {
         width: 100%;
     }
-    
+
     .hpy004029__video img {
         width: 100%;
         margin: 1rem auto 3rem;
@@ -542,7 +544,7 @@
     .tour402007__select--pc {
         display: none;
     }
-    
+
     .tour402007__select--mb {
         display: block;
     }
@@ -608,7 +610,7 @@
     .tour102020__row {
         flex-wrap: wrap;
         gap: 2rem;
-    } 
+    }
 
     .ply102019__box .tour__group {
         height: unset;
@@ -1308,7 +1310,7 @@
     }
 
     .hpy__intro__banner {
-        padding: 200px 30px 30px; 
+        padding: 200px 30px 30px;
     }
 
     .hpy__banner__tit {
@@ -1642,7 +1644,7 @@
     }
 
     .hpy__intro__banner {
-        padding: 100px 20px 50px; 
+        padding: 100px 20px 50px;
     }
 
     .hpy__banner-inner {
@@ -2271,7 +2273,7 @@
         color: #171719;
     }
 
-    .brdc__link.selectbox{    
+    .brdc__link.selectbox {
         background: url('../../images/icons/select-icon.png') no-repeat calc(100% - 10px) 50% / 12px auto;
     }
 
@@ -3583,7 +3585,7 @@
     .tour102026__card label br {
         display: none;
     }
-    
+
     .tour102026__card.itemCard label {
         padding-top: 0;
     }
@@ -4213,7 +4215,7 @@
         width: 50%;
         justify-content: center;
     }
-    
+
     .transfer-buttons .transfer-btn {
         flex: 1 1 50%;
         padding: 0.5rem;
@@ -7986,6 +7988,7 @@
         flex-direction: column;
         gap: 1rem;
     }
+
     .tour401007__card img {
         width: 16rem;
         height: 9.5rem;
@@ -7999,10 +8002,12 @@
         background: #F5F5F5;
         margin-bottom: 1.5rem;
     }
+
     .tour401007__cardinfo p,
     .tour401007__cardinfo b {
         font-size: 1rem;
     }
+
     .tour401007__cardinfo h4 {
         font-size: 1.3rem;
         margin: 0 0 .5rem;
@@ -8012,11 +8017,13 @@
         font-size: 1.5rem;
         padding: 0 2rem;
     }
+
     .tour401007__btns .hpy-reg__btn {
         height: 2rem;
         font-size: 1rem;
         width: 4rem;
     }
+
     .tour401007__btns {
         margin-top: .5rem;
     }
@@ -8098,6 +8105,7 @@
         flex: 1;
         width: 100%;
     }
+
     .tour401008__boxfilter .hpy-reg__btn.hpy-reg__btn--min70 {
         margin-top: .5rem;
     }
@@ -8760,9 +8768,9 @@
         font-size: 1.1rem;
     }
 
-    
+
     .tour402004__groupInput.w50 .hpy__input,
-    .tour402004__groupInput.w50 .tour__group--checkbox{
+    .tour402004__groupInput.w50 .tour__group--checkbox {
         width: calc((100% - .5rem)/2);
     }
 
@@ -9163,54 +9171,54 @@
     }
 
     .ply102011__item {
-		flex-direction: column;
-		align-items: unset;
-		gap: 0;
-		padding: 0;
-		border: 1px solid #ddd;
-		border-radius: 1rem;
-	}
+        flex-direction: column;
+        align-items: unset;
+        gap: 0;
+        padding: 0;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+    }
 
-	.ply102011__check {
-		text-align: right;
-		background: #F5F5F5;
-		border-radius: 1rem 1rem 0 0;
-		padding: 1.2rem;
-	}
+    .ply102011__check {
+        text-align: right;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1.2rem;
+    }
 
-	.ply102011__content {
-		padding: 0 2rem;
-		gap: 0;
-	}
+    .ply102011__content {
+        padding: 0 2rem;
+        gap: 0;
+    }
 
-	.ply102011__row {
-		gap: 0;
-		flex-direction: column;
-	}
+    .ply102011__row {
+        gap: 0;
+        flex-direction: column;
+    }
 
-	.ply102011__group {		
-		border-bottom: 1px solid #ddd;
-		padding: 1.2rem;
-		gap: 0;
-	}
+    .ply102011__group {
+        border-bottom: 1px solid #ddd;
+        padding: 1.2rem;
+        gap: 0;
+    }
 
-	.ply102011__content .ply102011__row:last-child .ply102011__group:last-child {
-		border-bottom: 0;
-	}
+    .ply102011__content .ply102011__row:last-child .ply102011__group:last-child {
+        border-bottom: 0;
+    }
 
-	.ply102011__label {
-		flex: 1;
-		display: block;
+    .ply102011__label {
+        flex: 1;
+        display: block;
         font-weight: 400;
         font-size: 1.5rem;
-	}
+    }
 
-	.ply102011__value {
-		flex: 1 1 30%;
-		display: block;
+    .ply102011__value {
+        flex: 1 1 30%;
+        display: block;
         font-weight: 400;
         font-size: 1.5rem;
-	}
+    }
 
     .tour102016__boxTable .hpy02__table.hpy02__box tbody td {
         height: 4rem;
@@ -9685,8 +9693,8 @@
 
     .tour102028__row .ply102011__group,
     .tour102029__row .ply102011__group {
-      order: 10;
-      margin: 0 2rem;
+        order: 10;
+        margin: 0 2rem;
     }
 
     .tour102029__row .ply102011__group.is-title {
@@ -9778,7 +9786,7 @@
         column-gap: 1rem;
         row-gap: 1rem;
     }
-    
+
 
     .tour108007__table .hpy02__table thead th,
     .tour108007__table .hpy02__table tbody td {
@@ -9790,6 +9798,7 @@
     .hpy004001__section.tour108007__boxChild .bold {
         width: 12rem;
     }
+
     .hpy004017__table.tour108007__table {
         padding: 2rem 0 0;
     }
@@ -10741,6 +10750,7 @@
         width: 100%;
         flex-wrap: nowrap;
     }
+
     .tour404003__boxInput input[type="text"]:nth-child(1) {
         width: 100%;
     }
@@ -10755,7 +10765,7 @@
 
     .tour405006__text {
         font-size: 1.5rem;
-        position: absolute;
+        /* position: absolute; */
         top: 22.5rem;
     }
 
@@ -11307,10 +11317,12 @@
         height: auto;
         border-radius: 2rem;
     }
+
     .hpy003004__item img {
         height: 5.5rem;
         width: auto;
     }
+
     .hpy003004__item p {
         font-size: 1.5rem;
     }
@@ -11524,7 +11536,7 @@
     .tour003012__itemInput {
         width: 48%;
     }
-    
+
     .tour405007__select {
         width: 11rem;
     }
@@ -11616,7 +11628,7 @@
 
     .tour405007__select1 {
         position: absolute;
-        top: 13rem;
+        top: 17rem;
         right: 4rem;
         font-size: 1.3rem;
     }
@@ -13576,51 +13588,65 @@
         align-items: flex-start;
         margin-bottom: 3rem;
     }
+
     .tour502002__img img,
     .tour502002__img {
         width: 100%;
     }
+
     .tour502002__item .tour502002__number span,
     .tour501001__icon {
         font-size: 1.3rem;
     }
+
     .tour502002__item .tour502002__number {
         gap: 3rem;
     }
+
     .tour502002__item .tour501001__icon img {
         width: 1.7rem;
         height: auto;
     }
+
     .tour502002__text p {
         font-size: 1.5rem;
     }
+
     .tour502002__tab {
         padding: .7rem 1rem;
     }
+
     .tour503002__box {
         flex-direction: column;
         gap: 2rem;
         padding: 0 0 2rem;
     }
+
     .tour503002__title p,
     .tour503002__des p {
         font-size: 1.3rem;
     }
+
     .tour503002__title h4 {
         font-size: 2.1rem;
     }
+
     .tour503002__title {
         margin-bottom: .5rem;
     }
+
     .tour503002__des span {
         font-size: 1.7rem;
     }
+
     .tour503002__list {
         text-align: center;
     }
+
     .tour503002__note {
         flex-direction: column;
     }
+
     .tour503002__box img {
         width: 100%;
         height: auto;
@@ -13629,9 +13655,11 @@
     .tour503002__note img {
         height: 2rem;
     }
+
     .tour503002__note {
         white-space: nowrap;
     }
+
     .tour503002__section {
         margin: 0;
         padding: 2rem;
@@ -13642,49 +13670,61 @@
         font-size: 1.5rem;
         padding: 2rem 0;
     }
+
     .tour503002__content {
         padding: 0;
     }
+
     .tour503002__content p {
         font-size: 1.2rem;
     }
+
     .tour503002__content img {
         width: 100%;
         height: auto;
         margin-top: 2rem;
     }
+
     .tour510002__img img,
     .tour510002__img {
         width: 100%;
         height: auto;
     }
+
     .tour510002__box {
         flex-direction: column;
         padding: 0;
         gap: 2rem;
     }
+
     .tour510002__title {
         font-size: 1.5rem;
     }
+
     .tour510002__text {
         font-size: 1.2rem;
         margin: 1rem 0 2rem;
     }
+
     .tour510002__list {
         padding: 0;
         gap: .5rem;
     }
+
     .tour510002__list img {
         height: auto;
         width: calc((100% - 2.5rem)/6);
     }
+
     .tour510002__icons {
         justify-content: center;
     }
+
     .tour5110012__card {
         border: none;
         padding: 0;
     }
+
     .hpy5110012__btn img {
         width: 3rem;
         height: 3rem;
@@ -13694,16 +13734,20 @@
     .hpy5110012__wrapper .hpy004004__title {
         padding: 0 0 2rem;
     }
+
     .hpy511001__number.gap50 {
         gap: 2rem;
     }
+
     .hpy5110012__img {
         width: 100%;
         height: auto;
     }
+
     .hpy5110012__row {
         width: 100%;
     }
+
     .hpy5110012__row button {
         min-width: 6.5rem;
     }
@@ -13724,33 +13768,42 @@
         border: 1px solid #ddd;
         border-radius: 2rem;
     }
+
     .tour701002__mainChild {
         margin: 1rem 0;
     }
+
     .tour701002__boxFileLeft p {
         font-size: 1.1rem;
     }
+
     .tour701002__itemFile {
         padding: .8rem 1rem;
     }
+
     .tour701002__nameFile p {
         font-size: 1rem;
     }
+
     .tour701002__actionFile a {
         width: 2rem;
         height: 2rem;
     }
+
     .tour405008__related {
         margin-top: 1rem;
     }
+
     .tour701002__titleChild {
         font-size: 1.2rem;
         margin: 1rem 0;
     }
+
     .tour701002-1__titlePost p {
         font-size: 1.2rem;
         margin-bottom: 2rem;
     }
+
     .tour701002-1__imgPost img {
         width: 100%;
         margin: 2rem 0;
@@ -13761,50 +13814,63 @@
         padding: 0;
         border: none;
     }
+
     .tour0010002__list .tour403006__item p:last-child {
         padding: 0 0 1rem;
     }
+
     .tour0010002__list {
         margin-top: 1rem;
     }
+
     .hpy0010002__title {
         font-size: 1.7rem;
         padding: 0;
     }
+
     .hpy0010002__wrapper .hpy004004__title {
         padding: 0 0 1rem;
     }
+
     .hpy0010002__box {
         padding: 2rem 0;
     }
+
     .hpy0010002__text {
         padding: 0;
         font-size: 1.5rem;
     }
+
     .hpy0010002__bold {
         font-size: 1.5rem;
         width: 10rem;
         height: 4.5rem;
         padding: 0 1rem;
     }
+
     .hpy0010002__value {
         font-size: 1.5rem;
         flex: 1;
         height: 4.5rem;
         padding: 0 1rem;
     }
+
     .hpy0010002__box.p220 {
         padding: 2rem 0 0;
     }
+
     .hpy0010002__row {
         display: block;
     }
+
     .hpy0010002__row>div:first-child {
         border-bottom: 1px solid #ddd;
     }
+
     .hpy0010002__row.flex {
         display: flex;
     }
+
     .hpy004004__img2 p {
         font-size: 1.3rem;
     }
@@ -13815,43 +13881,53 @@
         padding: 0;
         flex-direction: column;
     }
+
     .ply101021__wrapper {
         border-radius: 2rem;
         padding: 2rem;
     }
+
     .ply101021__pic img {
         width: 100%;
         height: auto;
     }
+
     .ply101021__title {
         padding: 0;
         justify-content: center;
         gap: 1rem;
         font-size: 1.3rem;
     }
+
     .ply101021__title img {
         width: 2.5rem;
         height: 2.5rem;
     }
+
     .ply101021__item {
         border-radius: 1rem;
         height: 8rem;
         padding: 0 3rem;
         font-size: 1.3rem;
     }
+
     .ply101021__item img {
         width: 1.5rem;
     }
+
     .ply101021__content,
     .ply101021__pic {
         width: 100%;
     }
+
     .hpy004016__filter.p223 {
         padding: 2rem 0;
     }
+
     .hpy004016__filter p {
         font-size: 1.3rem;
     }
+
     .hpy004016__filter {
         flex-direction: column;
         justify-content: flex-start;
@@ -13859,33 +13935,42 @@
         padding: 0;
         width: 100%;
     }
+
     .hpy004016__table {
         padding: 0;
     }
+
     .hpy004016__group {
         width: 100%;
     }
+
     .selectbox.min120 {
         width: 100%;
         min-width: max-content;
     }
+
     .hpy004017__select {
         position: absolute;
         right: 2rem;
         top: 15.8rem;
     }
+
     .hpy004016__wrapper {
         position: relative;
     }
+
     .selectbox.min130 {
         min-width: 11rem;
     }
+
     .hpy004016__links {
         gap: 2rem;
     }
+
     .hpy004016__links .link::after {
         right: -1rem;
     }
+
     .hpy004016__table table {
         border: none;
         width: 100%;
@@ -13955,9 +14040,11 @@
     .hpy004016__table table tbody tr td:nth-child(6) {
         order: 5;
     }
+
     .hpy004016__table table tbody tr td:nth-child(7) {
         order: 6;
     }
+
     .hpy004016__table table tbody tr td:nth-child(8) {
         order: 7;
     }
@@ -13978,9 +14065,11 @@
     .hpy004016__table table tbody tr td:nth-child(6)::before {
         content: "행사일";
     }
+
     .hpy004016__table table tbody tr td:nth-child(7)::before {
         content: "작성자";
     }
+
     .hpy004016__table table tbody tr td:nth-child(8)::before {
         content: "조회수";
     }
@@ -13998,10 +14087,11 @@
         font-size: 1.2rem;
         color: #666;
     }
+
     .hpy004016__table .hpy02__table {
         border-bottom: none;
     }
-    
+
     .hpy004022__groupTitleChild.hpy004016__group.sp-bw {
         padding: 0 0 2rem;
     }
@@ -14040,57 +14130,72 @@
         padding: 0 0 2rem;
         font-size: 1rem;
     }
+
     .hpy004017__table2 {
         padding: 0;
     }
+
     .hpy004017__table2 table th {
         font-size: 1.1rem;
         width: 8rem;
         padding-left: 0;
         text-align: center;
     }
+
     .hpy004017__table2 table tr td {
         flex: 1;
         padding: .5rem;
     }
+
     .hpy004017__table2 table tr:first-child td {
         padding: .5rem;
     }
+
     .hpy-reg__input--max350 {
         max-width: 100%;
     }
+
     .selectbox.min350 {
         min-width: 100%;
         max-width: 100%;
     }
+
     .hpy004017__table2 .hpy__input,
     .hpy004017__table2 .hpy-reg__btn {
         height: 3rem;
         font-size: 1rem;
         min-width: 8rem;
     }
+
     .hpy004017__table2 table tr:first-child td p {
         font-size: 1.1rem;
         margin-top: 0;
     }
+
     .hpy004017__table2 table tr td.table-checkbox {
         padding: 2rem .5rem;
         font-size: 1rem;
     }
+
     .hpy004017__table2 table tr td.table-checkbox>div {
         padding: .5rem 0;
     }
+
     .hpy004017__table2 .ply-reg__agree .ply-reg__radio {
         min-width: auto;
     }
+
     .hpy004017__table2 table tr td.table-textarea {
         padding: 2rem .5rem;
     }
+
     .table-btns {
         margin-top: .5rem;
         gap: .5rem;
     }
-    .hpy004017__table2 .hpy__input, .hpy004017__table2 .hpy-reg__btn {
+
+    .hpy004017__table2 .hpy__input,
+    .hpy004017__table2 .hpy-reg__btn {
         padding: 0 1rem;
     }
 
@@ -14146,6 +14251,7 @@
         margin: 0;
         color: #111;
     }
+
     .hpy004124__table table tbody tr td:last-child {
         position: absolute;
         right: 0;
@@ -14169,9 +14275,11 @@
     .hpy004124__table table tbody tr td:nth-child(5)::before {
         content: "키/몸무게/발크기";
     }
+
     .hpy004124__table table tbody tr td:nth-child(6)::before {
         content: "기타";
     }
+
     .hpy004124__table table tbody tr td:nth-child(7)::before {
         content: "상태";
     }
@@ -14189,6 +14297,7 @@
         font-size: 1.2rem;
         color: #666;
     }
+
     .hpy004124__table table tbody tr:last-child {
         margin-bottom: 0;
     }
@@ -14250,9 +14359,11 @@
     .hpy004025__table table tbody tr td:nth-child(1) {
         order: 2;
     }
+
     .hpy004025__table table tbody tr td:nth-child(3) {
         order: 3;
     }
+
     .hpy004025__table table tbody tr td:nth-child(5) {
         order: 4;
     }
@@ -14260,7 +14371,7 @@
     .hpy004025__table table tbody tr td:nth-child(5) br {
         display: none;
     }
-    
+
     .hpy004025__table table tbody tr td:nth-child(4) {
         position: absolute;
         right: 0;
@@ -14268,6 +14379,7 @@
         padding: 0;
         border-bottom: none;
     }
+
     .hpy004025__table table tbody tr td:nth-child(1)::before {
         content: "종목";
     }
@@ -14284,7 +14396,7 @@
 
     .hpy004025__table table tbody tr td:nth-child(5)::before,
     .hpy004025__table table tbody tr td:nth-child(3)::before,
-    .hpy004025__table table tbody tr td:nth-child(1)::before{
+    .hpy004025__table table tbody tr td:nth-child(1)::before {
         font-weight: 500;
         display: inline-block;
         padding-right: 0;
@@ -14313,17 +14425,21 @@
     .hpy004025__group .selectbox.min120 {
         width: calc((100% - .5rem)/2);
     }
+
     .hpy-reg__input--max170 {
         max-width: 100%;
     }
+
     .hpy004025__filter {
         flex-direction: column-reverse;
         gap: 2rem;
     }
+
     .hpy004025__filter .hpy004016__group.gap20 {
         justify-content: space-between;
         flex-direction: row-reverse;
     }
+
     .hpy004017__table .hpy02__table {
         border-bottom: none;
     }
@@ -14333,9 +14449,11 @@
         padding: 0 0 2rem;
         margin-bottom: 2rem;
     }
+
     .hpy004017__box4 .dry__editor {
         min-height: 21rem;
     }
+
     .hpy004017__box4 .hpy-reg__btn {
         font-size: 1.2rem;
         padding: 0 .5rem;
@@ -14345,6 +14463,7 @@
     .hpy004003__filter.fl-row .hpy004003__btn {
         width: calc((100% - .5rem) / 2);
     }
+
     .hpy004003__filter.fl-row .hpy004003__btn br {
         display: none;
     }
@@ -14373,7 +14492,7 @@
     .hpy004049__table table thead,
     .hpy004049__table table colgroup,
     .hpy004050__table table thead,
-    .hpy004050__table table colgroup ,
+    .hpy004050__table table colgroup,
     .hpy004051__table table thead,
     .hpy004051__table table colgroup,
     .tour404057__wrapper table thead,
@@ -14382,11 +14501,11 @@
     }
 
     .hpy004038__table table tbody tr,
-    .tour004042__table table tbody tr ,
+    .tour004042__table table tbody tr,
     .hpy004047__table table tbody tr,
     .hpy004049__table table tbody tr,
     .hpy004050__table table tbody tr,
-    .hpy004051__table table tbody tr ,
+    .hpy004051__table table tbody tr,
     .tour404057__wrapper table tbody tr {
         display: flex;
         flex-direction: column;
@@ -14400,7 +14519,7 @@
     .hpy004038__table table tbody td,
     .tour004042__table table tbody td,
     .hpy004047__table table tbody td,
-    .hpy004049__table table tbody td ,
+    .hpy004049__table table tbody td,
     .hpy004050__table table tbody td,
     .hpy004051__table table tbody td,
     .tour404057__wrapper table tbody td {
@@ -14451,9 +14570,11 @@
     .hpy004038__table table tbody tr td:nth-child(3) {
         order: 4;
     }
+
     .hpy004038__table table tbody tr td:nth-child(5) {
         order: 5;
     }
+
     .hpy004038__table table tbody tr td:nth-child(6) {
         order: 6;
     }
@@ -14474,6 +14595,7 @@
     .hpy004038__table table tbody tr td:nth-child(5)::before {
         content: "대회기간";
     }
+
     .hpy004038__table table tbody tr td:nth-child(6)::before {
         content: "개최지";
     }
@@ -14490,6 +14612,7 @@
         font-size: 1.3rem;
         color: #666;
     }
+
     .hpy004038__wrapper .hpy02__table tbody td {
         height: auto;
     }
@@ -14520,15 +14643,19 @@
     .tour004042__table table tbody tr td:nth-child(3) {
         order: 4;
     }
+
     .tour004042__table table tbody tr td:nth-child(4) {
         order: 5;
     }
+
     .tour004042__table table tbody tr td:nth-child(6) {
         order: 6;
     }
+
     .tour004042__table table tbody tr td:nth-child(7) {
         order: 7;
     }
+
     .tour004042__table table tbody tr td:nth-child(8) {
         order: 8;
     }
@@ -14549,12 +14676,15 @@
     .tour004042__table table tbody tr td:nth-child(4)::before {
         content: "시도";
     }
+
     .tour004042__table table tbody tr td:nth-child(6)::before {
         content: "개인번호";
     }
+
     .tour004042__table table tbody tr td:nth-child(7)::before {
         content: "신청일";
     }
+
     .tour004042__table table tbody tr td:nth-child(8)::before {
         content: "진행상태";
     }
@@ -14573,6 +14703,7 @@
         font-size: 1.3rem;
         color: #666;
     }
+
     .hpy004038__wrapper .hpy02__table tbody td {
         height: auto;
     }
@@ -14581,52 +14712,64 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
     .tour004042__filter {
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
         margin-top: .5rem;
     }
+
     .tour004042__filter .selectbox {
         width: 100%;
     }
+
     .tour004042__boxTitle p,
     .tour004042__filter p {
         font-size: 1.2rem;
         white-space: nowrap;
 
     }
+
     .tour004042__filter .tour004042__filter {
         flex-direction: row;
         gap: .5rem;
         margin-top: 0;
         margin-bottom: 1rem;
     }
+
     .tour004035__table {
         margin-top: 2rem;
     }
-    .hpy004038__table table tbody tr:last-child, 
+
+    .hpy004038__table table tbody tr:last-child,
     .tour004042__table table tbody tr:last-child {
         margin-bottom: 0;
     }
+
     .tour004043__text {
         font-size: 1.2rem;
     }
+
     .hpy004046-2__title,
     .hpy004046-2__text {
         font-size: 1.2rem;
         padding: 0;
     }
+
     .hpy004029__btn.pt40 {
         padding-top: 2rem;
     }
+
     .hpy004029__btn.text-right {
         text-align: center;
         padding: 2rem 2rem 0;
     }
+
     .hpy004029__btn.text-right button {
         min-width: 14rem;
     }
+
     .hpy004047-2__filter {
         flex-direction: column;
         padding: 2rem;
@@ -14634,6 +14777,7 @@
         gap: 1rem;
         margin-bottom: 1rem;
     }
+
     .hpy02__label.fs17 {
         font-size: 1.3rem;
         padding: 0 1rem;
@@ -14642,9 +14786,10 @@
     .hpy004047-2__filter .hpy004016__group .selectbox,
     .hpy004047-2__filter .hpy004016__group .hpy__input,
     .hpy004047-2__filter .hpy004016__group .hpy-reg__input--date,
-    .hpy004047-2__filter .hpy004016__group .hpy-reg__btn{
+    .hpy004047-2__filter .hpy004016__group .hpy-reg__btn {
         height: 3.5rem;
     }
+
     /* .hpy004016__group.gap20 {
         gap: 1rem;
         flex-direction: column;
@@ -14654,6 +14799,7 @@
         min-width: 100%;
         max-width: 100%;
     }
+
     .hpy004016__group.gap05 .hpy-reg__input--max140 {
         max-width: 12rem;
         min-width: auto;
@@ -14662,9 +14808,11 @@
     .hpy004016__group.gap05 {
         width: auto;
     }
+
     .hpy004016__group.gap10 {
         gap: .5rem;
     }
+
     .hpy004047-2__table {
         padding: 0;
     }
@@ -14695,9 +14843,11 @@
     .hpy004038__table table tbody tr td:nth-child(3) {
         order: 4;
     }
+
     .hpy004038__table table tbody tr td:nth-child(5) {
         order: 5;
     }
+
     .hpy004038__table table tbody tr td:nth-child(6) {
         order: 6;
     }
@@ -14718,6 +14868,7 @@
     .hpy004038__table table tbody tr td:nth-child(5)::before {
         content: "대회기간";
     }
+
     .hpy004038__table table tbody tr td:nth-child(6)::before {
         content: "개최지";
     }
@@ -14734,6 +14885,7 @@
         font-size: 1.3rem;
         color: #666;
     }
+
     .hpy004038__wrapper .hpy02__table tbody td {
         height: auto;
     }
@@ -14764,15 +14916,19 @@
     .hpy004047__table table tbody tr td:nth-child(4) {
         order: 3;
     }
+
     .hpy004047__table table tbody tr td:nth-child(5) {
         order: 4;
     }
+
     .hpy004047__table table tbody tr td:nth-child(6) {
         order: 5;
     }
+
     .hpy004047__table table tbody tr td:nth-child(7) {
         order: 6;
     }
+
     .hpy004047__table table tbody tr td:nth-child(8) {
         order: 7;
     }
@@ -14788,12 +14944,15 @@
     .hpy004047__table table tbody tr td:nth-child(5)::before {
         content: "발급일";
     }
+
     .hpy004047__table table tbody tr td:nth-child(6)::before {
         content: "결제금액";
     }
+
     .hpy004047__table table tbody tr td:nth-child(7)::before {
         content: "결제종류";
     }
+
     .hpy004047__table table tbody tr td:nth-child(8)::before {
         content: "처리상태";
     }
@@ -14825,9 +14984,11 @@
         width: 100%;
         justify-content: space-between;
     }
+
     .hpy004047-2__table .hpy02__table {
         border-bottom: none;
     }
+
     .hpy004047__table table tbody tr:last-child {
         margin-bottom: 0;
     }
@@ -14858,12 +15019,15 @@
     .hpy004049__table table tbody tr td:nth-child(3) {
         order: 4;
     }
+
     .hpy004049__table table tbody tr td:nth-child(4) {
         order: 5;
     }
+
     .hpy004049__table table tbody tr td:nth-child(6) {
         order: 6;
     }
+
     .hpy004049__table table tbody tr td:nth-child(7) {
         order: 7;
     }
@@ -14884,9 +15048,11 @@
     .hpy004049__table table tbody tr td:nth-child(4)::before {
         content: "시도";
     }
+
     .hpy004049__table table tbody tr td:nth-child(6)::before {
         content: "개인번호 (선수번호)";
     }
+
     .hpy004049__table table tbody tr td:nth-child(7)::before {
         content: "등록일";
     }
@@ -14895,7 +15061,7 @@
     .hpy004049__table table tbody tr td:nth-child(3)::before,
     .hpy004049__table table tbody tr td:nth-child(2)::before,
     .hpy004049__table table tbody tr td:nth-child(4)::before,
-    .hpy004049__table table tbody tr td:nth-child(6)::before ,
+    .hpy004049__table table tbody tr td:nth-child(6)::before,
     .hpy004049__table table tbody tr td:nth-child(7)::before {
         font-weight: 500;
         display: inline-block;
@@ -14904,18 +15070,21 @@
         font-size: 1.3rem;
         color: #666;
     }
+
     .hpy004049__table .hpy02__table tbody tr:last-child td,
     .hpy004050__table .hpy02__table tbody tr:last-child td,
     .hpy004051__table .hpy02__table tbody tr:last-child td {
         border-bottom: 1px solid #ddd;
     }
+
     .hpy004049__table .hpy02__table tbody tr td:last-child,
     .hpy004050__table .hpy02__table tbody tr td:last-child,
     .hpy004051__table .hpy02__table tbody tr td:last-child {
         border-bottom: none;
     }
+
     .hpy004049__table .hpy02__table tbody tr:last-child,
-    .hpy004050__table .hpy02__table tbody tr:last-child ,
+    .hpy004050__table .hpy02__table tbody tr:last-child,
     .hpy004051__table .hpy02__table tbody tr:last-child {
         margin-bottom: 0;
     }
@@ -14945,15 +15114,19 @@
     .hpy004050__table table tbody tr td:nth-child(3) {
         order: 4;
     }
+
     .hpy004050__table table tbody tr td:nth-child(4) {
         order: 5;
     }
+
     .hpy004050__table table tbody tr td:nth-child(6) {
         order: 6;
     }
+
     .hpy004050__table table tbody tr td:nth-child(7) {
         order: 7;
     }
+
     .hpy004050__table table tbody tr td:nth-child(8) {
         order: 8;
     }
@@ -14974,12 +15147,15 @@
     .hpy004050__table table tbody tr td:nth-child(4)::before {
         content: "시도";
     }
+
     .hpy004050__table table tbody tr td:nth-child(6)::before {
         content: "구분";
     }
+
     .hpy004050__table table tbody tr td:nth-child(7)::before {
         content: "기간";
     }
+
     .hpy004050__table table tbody tr td:nth-child(8)::before {
         content: "등록일";
     }
@@ -14988,8 +15164,8 @@
     .hpy004050__table table tbody tr td:nth-child(3)::before,
     .hpy004050__table table tbody tr td:nth-child(2)::before,
     .hpy004050__table table tbody tr td:nth-child(4)::before,
-    .hpy004050__table table tbody tr td:nth-child(6)::before ,
-    .hpy004050__table table tbody tr td:nth-child(7)::before ,
+    .hpy004050__table table tbody tr td:nth-child(6)::before,
+    .hpy004050__table table tbody tr td:nth-child(7)::before,
     .hpy004050__table table tbody tr td:nth-child(8)::before {
         font-weight: 500;
         display: inline-block;
@@ -15025,12 +15201,15 @@
     .hpy004051__table table tbody tr td:nth-child(3) {
         order: 4;
     }
+
     .hpy004051__table table tbody tr td:nth-child(5) {
         order: 5;
     }
+
     .hpy004051__table table tbody tr td:nth-child(6) {
         order: 6;
     }
+
     .hpy004051__table table tbody tr td:nth-child(7) {
         order: 7;
     }
@@ -15051,18 +15230,21 @@
     .hpy004051__table table tbody tr td:nth-child(5)::before {
         content: "구분";
     }
+
     .hpy004051__table table tbody tr td:nth-child(6)::before {
         content: "자격명";
     }
+
     .hpy004051__table table tbody tr td:nth-child(7)::before {
         content: "등록일";
     }
+
     .hpy004051__table table tbody tr td:nth-child(1)::before,
     .hpy004051__table table tbody tr td:nth-child(3)::before,
     .hpy004051__table table tbody tr td:nth-child(2)::before,
     .hpy004051__table table tbody tr td:nth-child(5)::before,
-    .hpy004051__table table tbody tr td:nth-child(6)::before ,
-    .hpy004051__table table tbody tr td:nth-child(7)::before{
+    .hpy004051__table table tbody tr td:nth-child(6)::before,
+    .hpy004051__table table tbody tr td:nth-child(7)::before {
         font-weight: 500;
         display: inline-block;
         padding-right: 0;
@@ -15070,7 +15252,7 @@
         font-size: 1.3rem;
         color: #666;
     }
-    
+
     .hpy004051__table span {
         display: block;
     }
@@ -15107,16 +15289,20 @@
     .tour004046__boxFilter {
         margin: 5rem 0 1rem 0;
     }
+
     .tour004047__boxChild {
         width: 20rem;
         height: 12rem;
     }
+
     .tour004047__titleChild {
         font-size: 1.7rem;
     }
+
     .tour004047__desc {
         font-size: 1rem;
     }
+
     .tour004047__subTitle {
         font-size: 1.2rem;
         margin-bottom: 2rem;
@@ -15148,12 +15334,15 @@
     .tour404057__wrapper table tbody tr td:nth-child(3) {
         order: 3;
     }
+
     .tour404057__wrapper table tbody tr td:nth-child(4) {
         order: 4;
     }
+
     .tour404057__wrapper table tbody tr td:nth-child(6) {
         order: 5;
     }
+
     .tour404057__wrapper table tbody tr td:nth-child(7) {
         order: 6;
     }
@@ -15174,6 +15363,7 @@
     .tour404057__wrapper table tbody tr td:nth-child(6)::before {
         content: "수료증 발급";
     }
+
     .tour404057__wrapper table tbody tr td:nth-child(7)::before {
         content: "구분";
     }
@@ -15198,6 +15388,7 @@
     .tour404057__wrapper .hpy02__table tbody tr td:last-child {
         border-bottom: none;
     }
+
     .hpy02__wrapper.tour004047__popup {
         padding: 2rem;
         width: 90%;
@@ -15205,21 +15396,25 @@
         height: auto;
     }
 
-    .hpy02__wrapper.tour004047__popup .indv__tit{
+    .hpy02__wrapper.tour004047__popup .indv__tit {
         margin-bottom: 0;
     }
+
     .tour004047__closePopup {
         font-size: 1.5rem;
         width: 2.5rem;
         height: 2.5rem;
     }
+
     .tour004047__itemLeft {
         width: 8rem;
         font-size: 1.1rem;
     }
+
     .tour004047__itemRight {
         font-size: 1.1rem;
     }
+
     .tour004047__boxMain {
         margin-bottom: 1rem;
     }
@@ -15323,6 +15518,7 @@
         width: 4rem;
         height: 4rem;
     }
+
     .hpy003001__item img {
         height: 1.429rem;
     }
@@ -15335,34 +15531,42 @@
         flex-wrap: wrap;
         padding: 2rem;
     }
+
     .tour004049__boxContent.tour004049__boxRowContent {
         width: 100%;
         gap: 1rem;
     }
+
     .tour004049__contentLeft,
     .tour004049__contentMid.tour004049__contentTime {
         width: 100%;
     }
+
     .tour004049__itemInfo {
         flex-direction: column;
         padding: 2rem;
         gap: 2rem;
     }
+
     .tour004049__rowTop {
         flex-direction: column;
         gap: 1rem;
     }
+
     .tour004049__text {
         font-size: 1.2rem;
     }
+
     .tour004049__titleChild {
         font-size: 1.2rem;
         width: 9rem;
     }
+
     .tour004049__itemChild {
         margin-bottom: 1rem;
     }
-    .tour004049__action  {
+
+    .tour004049__action {
         width: 100%;
     }
 
@@ -15375,6 +15579,7 @@
         flex-direction: column;
         gap: 2rem;
     }
+
     .tour004049__addInfoLeft {
         width: 100%;
         border-right: none;
@@ -15384,6 +15589,7 @@
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
+
     .tour004049__addInfoLeft p {
         font-size: 1.5rem;
     }
@@ -15391,6 +15597,7 @@
     .tour004049__addInfoLeft p br {
         display: none;
     }
+
     .tour004049__addInfoLeft img {
         width: 3.3rem;
         height: auto;
@@ -15401,6 +15608,7 @@
         flex-direction: column;
         gap: 0;
     }
+
     .tour004049__itemAddInfo {
         flex-direction: column;
         align-items: flex-start;
@@ -15411,26 +15619,33 @@
         width: 100%;
         gap: .5rem;
     }
+
     .tour004049__nameSchool {
         width: 100%;
     }
+
     .tour004049__addInfoRight {
         padding-left: 0;
         flex: unset;
     }
+
     .tour004049__itemAddInfo input {
         width: 100%;
     }
+
     .tour004049__itemAddInfo .selectbox {
         width: 100%;
     }
+
     .tour004049__itemAddInfo p {
         width: auto;
         padding: 0 1rem;
     }
+
     .tour004049__addInfoFilter {
         gap: .5rem;
     }
+
     .tour004049__itemAddInfo .tour004049__itemAddInfo {
         margin-bottom: 0;
     }
@@ -15439,11 +15654,13 @@
         margin-bottom: 0;
         width: 100%;
     }
-    .tour004049__popup  {
+
+    .tour004049__popup {
         width: 30.3rem;
         border-radius: 2rem;
         padding: 3rem 3rem 1rem;
     }
+
     .tour004049__popupHeaderRight {
         font-size: 1rem;
     }
@@ -15452,19 +15669,24 @@
         font-size: 1rem;
         width: 10rem;
     }
+
     .tour004047__popupHeader .indv__tit {
         margin-bottom: 0;
     }
+
     .tour004049__popupFilter input {
         width: 100%;
     }
+
     .tour0040582__popup .tour404003__table thead th,
-    .tour0040582__popup .tour404003__table colgroup{
+    .tour0040582__popup .tour404003__table colgroup {
         display: none;
     }
+
     .tour004049__force-overflow {
         min-height: 27rem;
     }
+
     /* .tour404003__table tbody td {
         border: 1px solid #ddd;
         padding: 2rem;
@@ -15475,26 +15697,32 @@
         margin-top: 2rem;
 
     }
+
     .tour004049__btnPopup button {
         width: 8rem;
         height: 4rem;
     }
+
     .tour004049__popupFilter button,
     .tour004049__popupFilter input {
         height: 3.5rem;
     }
+
     .tour004049__boxContent {
         flex-direction: column;
         gap: 1rem;
         width: 100%;
     }
-    .tour004049__contentMid, .tour004049__contentRight {
+
+    .tour004049__contentMid,
+    .tour004049__contentRight {
         width: 100%;
     }
 
     .tour004050__rowAddInfo {
         flex-direction: column;
     }
+
     .tour004049__itemAddInfo input {
         padding: 1.2rem 1.2rem;
     }
@@ -15502,10 +15730,12 @@
     .tour0040612__wrapper .tour004049__addInfoRight {
         width: 100%;
     }
+
     .tour0040612__wrapper .tour004049__itemAddInfo .selectbox,
     .tour0040602__wrapper .tour004049__itemAddInfo .selectbox {
         padding: 1.2rem;
     }
+
     .tour003005__subTitle {
         font-size: 1.3rem;
         margin-bottom: 4rem;
@@ -15514,9 +15744,11 @@
     .title.mbmb10 {
         margin-bottom: 1rem;
     }
+
     .tour004049__itemAddInfo p.tour004060__textLabel {
         width: 100%;
     }
+
     .tour108007__table tbody tr:last-child td {
         border-bottom: 1px solid #ddd;
     }
@@ -15530,8 +15762,8 @@
         padding: 1rem 0 2rem;
     }
 
-    .hpy003001__input .hpy__input ,
-    .hpy003001__group .hpy-reg__btn{
+    .hpy003001__input .hpy__input,
+    .hpy003001__group .hpy-reg__btn {
         height: 4rem;
         font-size: 1.3rem;
     }
@@ -15550,9 +15782,9 @@
         font-size: 1.3rem;
     }
 
-    .hpy003006__item  {
+    .hpy003006__item {
         width: 100%;
-        padding:0 3rem;
+        padding: 0 3rem;
     }
 
     .hpy003006__card {
@@ -15560,9 +15792,11 @@
         padding: 3rem 0;
         gap: 1rem;
     }
+
     .hpy003006__card img {
         height: 5rem;
     }
+
     .hpy003006__card h3 {
         font-size: 1.7rem;
     }
@@ -15571,14 +15805,17 @@
         font-size: 1.1rem;
         padding-top: .5rem;
     }
+
     .hpy003006__box {
         padding-top: 2rem;
         gap: 2rem;
     }
+
     .hpy003006__text {
         padding: 0;
         font-size: 1.2rem;
     }
+
     .hpy0030062__title {
         padding: 0 0 2rem;
     }
@@ -15597,40 +15834,49 @@
 
     .tour101006__itemStep .ply-bsc__block,
     .tour204002__main,
-    .hpy204003__wrapper  {
+    .hpy204003__wrapper {
         padding: 0;
         border-radius: 0;
         border: none;
     }
+
     .ply-bsc__bm-group {
         gap: .5rem;
     }
+
     .tour101003-1__note,
     .tour101003-1__boxLeft {
         padding: 2rem;
     }
+
     .pstn__print,
     .mmb__empty {
         font-size: 1.3rem;
     }
+
     .mmb__tit {
         margin-bottom: 0;
     }
+
     .ply102003__text {
         font-size: 1.3rem;
         margin-bottom: 2rem;
     }
+
     .tour102002__boxMain .ply102003__info {
         padding: 0;
     }
+
     .ply102003__info dl {
         row-gap: 1rem;
         column-gap: 1rem;
         font-size: 1.2rem;
     }
+
     .ply102003__info dd .note {
         margin-top: 2rem;
     }
+
     .ply102019__text li {
         font-size: 1.3rem;
     }
@@ -15638,7 +15884,7 @@
     .ply102019__text {
         padding: 0 0 2rem;
     }
-    
+
     .ply102011__box {
         margin-top: 1rem;
     }
@@ -15667,6 +15913,7 @@
     .ply__wrapper.mt2.tour102002__boxMain .tour102020__row.tour102020__row.tour102020__rowLine .ply102011__group:last-child .ply102011__value {
         border-bottom: none;
     }
+
     .ply__wrapper.mt2.tour102002__boxMain .tour102020__row.tour102020__row .ply102011__group .ply102011__value {
         padding: 1rem;
         border-bottom: 1px solid #ddd;
@@ -15687,6 +15934,7 @@
         color: #111;
         font-size: 1.5rem;
     }
+
     .hpy004029__btn button {
         min-width: unset;
         width: fit-content;
@@ -15696,7 +15944,7 @@
     .tour004040__allBtn {
         flex-direction: column;
     }
-    
+
     .tour004041__list p {
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
@@ -15712,6 +15960,7 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
     .hpy102031__text:last-child {
         padding: 0 0 0 1rem;
     }
@@ -15736,6 +15985,7 @@
         border: none;
         padding: 0;
     }
+
     .tour104001__btnFilter {
         margin-left: 0;
     }
@@ -15743,10 +15993,12 @@
     .tour104001__wrapper .tour104001__groupFilter.tour__group--mb30 {
         margin-bottom: 1rem;
     }
+
     .tour104001__wrapper .tour__box104001 .tour401013__table.hpy02__table tbody td:nth-child(5) {
         border-bottom: none;
     }
-    .tour__box104001 .hpy02__table tbody tr:last-child{
+
+    .tour__box104001 .hpy02__table tbody tr:last-child {
         margin-bottom: 0;
     }
 
@@ -15763,14 +16015,17 @@
         padding: 1rem;
         border-radius: 2rem;
     }
-    .tour401007__sidebar{
+
+    .tour401007__sidebar {
         flex: 1;
         padding: 2rem 0;
         border-radius: 2rem;
     }
+
     .tour401007__searchbox {
         margin: 0 2rem 2rem;
     }
+
     .tour401007__result {
         font-size: 1.3rem;
         margin: 0 2rem .5rem;
@@ -15798,9 +16053,11 @@
         border: 1px solid #ddd;
         border-radius: 2rem;
     }
+
     .hpy__select--min200 {
         min-width: auto;
     }
+
     .tour402001__table .mobile-card:last-child {
         margin-bottom: 0;
     }
@@ -15822,7 +16079,7 @@
     }
 
     .tour405006__filter.bdmb {
-        padding: 2rem ;
+        padding: 2rem;
         border: 1px solid #ddd;
         border-radius: 2rem;
         margin: 0 0 1rem;
@@ -15856,6 +16113,7 @@
     .certificate__list li a {
         font-size: 1.2rem;
     }
+
     .certificate__list li a img {
         width: 1.5rem;
         height: 1.5rem;
@@ -15941,6 +16199,7 @@
     .tour__table0102 tbody tr td:nth-child(2)::before {
         content: "신청일";
     }
+
     .tour__table0102 tbody tr td:nth-child(3)::before {
         content: "발급일";
     }
@@ -15952,6 +16211,7 @@
     .tour__table0102 tbody tr td:nth-child(5)::before {
         content: "결제종류";
     }
+
     .tour__table0102 tbody tr td:nth-child(6)::before {
         content: "처리상태";
     }
@@ -15968,6 +16228,7 @@
         font-size: 1.3rem;
         color: #666;
     }
+
     .tour__box .tour0102__link {
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -16019,6 +16280,7 @@
     .tour__table0102--2 tbody tr td:nth-child(1) {
         order: 2;
     }
+
     .tour__table0102--2 tbody tr td:nth-child(3) {
         order: 3;
     }
@@ -16030,6 +16292,7 @@
     .tour__table0102--2 tbody tr td:nth-child(1)::before {
         content: "등록년도";
     }
+
     .tour__table0102--2 tbody tr td:nth-child(3)::before {
         content: "소속시도";
     }
@@ -16068,6 +16331,7 @@
     .hpy0709__table table tbody tr {
         position: relative;
     }
+
     .hpy0709__table table tbody tr td:nth-child(1) {
         font-size: 1.5rem;
         font-weight: 600;
@@ -16091,6 +16355,7 @@
     .hpy0709__table table tbody tr td:nth-child(2)::before {
         content: "생년월일";
     }
+
     .hpy0709__table table tbody tr td:nth-child(3)::before {
         content: "학교구분";
     }
@@ -16102,9 +16367,11 @@
     .hpy0709__table table tbody tr td:nth-child(5)::before {
         content: "키/몸무게/발크기";
     }
+
     .hpy0709__table table tbody tr td:nth-child(6)::before {
         content: "기타";
     }
+
     .hpy0709__table table tbody tr td:nth-child(7)::before {
         content: "상태";
     }
@@ -16128,9 +16395,11 @@
         gap: 1rem;
     }
 
-    .hpy0707__item, .hpy0707__item.flex .hpy0707__group {
+    .hpy0707__item,
+    .hpy0707__item.flex .hpy0707__group {
         width: 100%;
     }
+
     .hpy0707__item.flex .hpy0707__input {
         width: calc((100% - 1rem) / 3);
     }
@@ -16159,7 +16428,7 @@
         position: relative;
     }
 
-    .nmbr__table645-3 tbody td{
+    .nmbr__table645-3 tbody td {
         border-left: none;
         border-right: none;
         padding: 1.2rem 1rem;
@@ -16210,7 +16479,7 @@
         color: #666;
     }
 
-    
+
     .nmbr__table645-3 tbody tr td a {
         font-size: 1.3rem;
         color: #666;
@@ -16225,12 +16494,12 @@
         min-width: 7rem;
     }
 
-    
+
     .tour001002__itemContent .indv__tit span {
         font-size: 1.3rem;
     }
 
-    
+
     .hpy004048-2__flex.row {
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -16239,7 +16508,7 @@
     }
 
     .hpy004048-2__flex.row .hpy004016__group.gap10 {
-        padding: 2rem ;
+        padding: 2rem;
         border-radius: 2rem;
         border: 1px solid #ddd;
         margin-left: 0;
@@ -16252,7 +16521,7 @@
     }
 
     .hpy004048__wrapper {
-        
+
         border: 1px solid #ddd;
         border-radius: 2rem;
         padding: 2rem;
@@ -16260,7 +16529,7 @@
         position: relative;
     }
 
-    .hpy004048-2__flex.row .hpy004046-2__title{
+    .hpy004048-2__flex.row .hpy004046-2__title {
         padding: 0 2rem;
     }
 
@@ -16283,7 +16552,7 @@
         position: relative;
     }
 
-    .hpy004048-2__table table tbody td{
+    .hpy004048-2__table table tbody td {
         border-left: none;
         border-right: none;
         padding: 1.2rem 1rem;
@@ -16308,6 +16577,7 @@
         color: #111;
         order: 1;
     }
+
     .hpy004048-2__table .hpy02__table tbody tr:last-child td {
         border-bottom: 1px solid #ddd;
     }
@@ -16377,7 +16647,7 @@
         align-items: flex-start;
     }
 
-    .tour004034__itemTab  br {
+    .tour004034__itemTab br {
         display: none;
     }
 
@@ -16430,7 +16700,7 @@
         display: flex;
         align-items: center;
     }
-    
+
     .popup-main__close img.popup-main__logoMb {
         width: auto;
         height: 3rem;
@@ -16438,26 +16708,27 @@
     }
 
     .headerMain-top img {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #4c4c4c;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #4c4c4c;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
     }
 
     .headerMain-list {
-        width:85%;
+        width: 85%;
     }
 
-    .headerMain-text p span, .headerMain-text p {
+    .headerMain-text p span,
+    .headerMain-text p {
         display: flex;
         flex-direction: column;
     }
 
-    .headerMain-slider{
+    .headerMain-slider {
         height: 35px;
     }
 
@@ -16508,7 +16779,7 @@
 
     .home-back .inner {
         flex-direction: column;
-        padding: 0 ;
+        padding: 0;
     }
 
     .screen1-home__left {
@@ -16623,15 +16894,16 @@
         flex-wrap: wrap;
         gap: .5rem;
     }
-    .screen1-home__select.w100 .selectbox:first-child{
+
+    .screen1-home__select.w100 .selectbox:first-child {
         width: 100%;
     }
 
-    .screen1-home__select.w100 .selectbox:nth-child(2){
+    .screen1-home__select.w100 .selectbox:nth-child(2) {
         width: calc(70% - .25rem);
     }
 
-    .screen1-home__select.w100 .tour__btn{
+    .screen1-home__select.w100 .tour__btn {
         width: calc(30% - .25rem);
     }
 
@@ -16699,7 +16971,7 @@
     }
 
     .screen1-home__row .line {
-        margin: 0 1rem ;
+        margin: 0 1rem;
     }
 
     .screen1-home__box {
@@ -16712,7 +16984,8 @@
         top: 4rem;
     }
 
-    .screen1-home__ic1, .screen1-home__ic2 {
+    .screen1-home__ic1,
+    .screen1-home__ic2 {
         width: 1.1rem;
         height: auto;
     }
@@ -16766,6 +17039,7 @@
         order: 1;
         height: 9rem;
     }
+
     .screen1-home__flex img:last-child {
         order: 2;
         height: 10rem;
@@ -16825,7 +17099,7 @@
 
     .screen2-home__card {
         display: inline-block;
-        width: 100%;           
+        width: 100%;
         break-inside: avoid;
         margin-bottom: 1rem;
     }
@@ -17006,7 +17280,7 @@
         font-size: 1.5rem;
     }
 
-    .screen7-home__text span{
+    .screen7-home__text span {
         font-size: 1.2rem;
         line-height: 150%;
         display: -webkit-box;
@@ -17134,10 +17408,12 @@
         justify-content: flex-start;
     }
 
-    .footer-main__copyright, .footer-main__address {
+    .footer-main__copyright,
+    .footer-main__address {
         text-align: left;
     }
-    .footer-homeMain .footer-main__address, 
+
+    .footer-homeMain .footer-main__address,
     .footer-homeMain .footer-main__copyright {
         font-size: 1.4rem;
     }
@@ -17164,7 +17440,7 @@
         height: 2.3rem;
     }
 
-    .footer-homeMain .footer-main__sponsor-text{
+    .footer-homeMain .footer-main__sponsor-text {
         font-size: 1.2rem;
     }
 
@@ -17182,12 +17458,12 @@
         font-size: 2.5rem;
     }
 
-    
+
     .screen1-home__value:nth-child(3)::after {
         display: block;
     }
 
-    
+
     .screen1-home__value:nth-child(4)::after {
         display: none;
     }
@@ -17253,7 +17529,7 @@
         padding: 30px 20px;
     }
 
-    .item-info > span {
+    .item-info>span {
         min-width: 100px;
     }
 
@@ -17332,6 +17608,7 @@
     .login__top .icon__file img {
         max-width: 150px;
     }
+
     .login__top .account__name {
         font-size: 22px;
     }
@@ -17340,7 +17617,7 @@
         font-size: 16px;
     }
 
-     .find .inner.hpy0030023__inner {
+    .find .inner.hpy0030023__inner {
         max-width: 100%;
     }
 
@@ -17548,10 +17825,13 @@
 }
 
 @media (max-width: 390px) {
-    .brdc__link, .brdc__link.selectbox, .tour402001__selectMenu {
+
+    .brdc__link,
+    .brdc__link.selectbox,
+    .tour402001__selectMenu {
         padding-right: 2.5rem;
     }
-    
+
     .brdc__link::after {
         content: '';
         display: block;
@@ -17877,7 +18157,7 @@
     .hpy004028__group span:last-child {
         font-size: 1rem;
     }
-    
+
     .hpy004016__group.gap05 .hpy-reg__input--max140 {
         max-width: 10rem;
     }
@@ -17885,8 +18165,10 @@
 
 @media (max-width: 360px) {
 
-    
-    .brdc__link, .brdc__link.selectbox, .tour402001__selectMenu {
+
+    .brdc__link,
+    .brdc__link.selectbox,
+    .tour402001__selectMenu {
         padding-right: 2.3rem;
     }
 
@@ -18020,7 +18302,7 @@
         font-size: 1.1rem;
     }
 
-    
+
     .hpy004016__group.gap05 .hpy-reg__input--max140 {
         max-width: 9.5rem;
     }
