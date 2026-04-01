@@ -16875,8 +16875,9 @@ caption {
 .hv__zoom__out:hover img {
     transform: scale(1.07);
 }
+
 .search__box {
-    border: 4px solid #ddd;
+    border: 1px solid #ddd;
     padding: 30px 25px 35px;
     border-radius: 2px;
     align-items: end;
@@ -16884,15 +16885,15 @@ caption {
 }
 
 .input__search {
-    align-items: center;  
-    justify-content: end;  
+    align-items: center;
+    justify-content: end;
 }
 
-.input__search > input {
+.input__search>input {
     max-width: 46rem;
 }
 
-.input__search > span {
+.input__search>span {
     margin: 0 20px;
     color: #111;
     font-weight: 500;
@@ -16915,7 +16916,7 @@ caption {
     outline: revert;
 }
 
-.search__box .filter__select > select {
+.search__box .filter__select>select {
     min-width: 20rem;
 }
 
