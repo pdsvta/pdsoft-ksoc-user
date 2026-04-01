@@ -1203,7 +1203,7 @@ legend {
 }
 
 .brdc__link {
-    width: 19rem;
+    width: 20rem;
     display: flex;
     align-items: center;
     padding: 0 1.8rem;
@@ -1410,6 +1410,10 @@ legend {
 .footer-main__menu li {
     display: flex;
     color: #37383C9C;
+}
+
+.footer-main__menu li:nth-child(2) a {
+    color: #1D3994;
 }
 
 .footer-main__menu-item {
@@ -1689,6 +1693,7 @@ legend {
 .headerMain-logo {
     width: auto;
     height: 6.3rem;
+    cursor: pointer;
 }
 
 .headerMain-searchbox {
@@ -1771,7 +1776,8 @@ legend {
 }
 
 .footer-homeMain .footer-main__menu-item a {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: #717171;
 }
 
@@ -1862,7 +1868,7 @@ legend {
     gap: 3rem;
 }
 
-/* 
+/*
 
 .screen1-home__menu li a::after {
     content: "";
