@@ -260,7 +260,7 @@ caption {
     justify-content: center;
     padding: 1.4rem;
     border: 1px solid #333;
-    border-radius: 3rem;
+    border-radius: 1rem;
     font-weight: 600;
     font-size: 1.7rem;
     color: #333;
@@ -12812,7 +12812,7 @@ caption {
 .popup004002-pop {
     max-width: 80rem;
     width: 100%;
-    padding: 5rem 7rem;
+    padding: 5rem;
     border-radius: 5rem;
     background: #fff;
     position: absolute;
