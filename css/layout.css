@@ -1896,8 +1896,7 @@ legend {
     left: 0;
     padding: 10px 0;
     opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
+    pointer-events: none;
     display: flex;
     width: 100%;
     padding-right: 0 !important;
@@ -1907,8 +1906,8 @@ legend {
     position: absolute;
     left: 0;
     right: 0;
+    transition: 0.3s;
 }
-
 
 .screen1-home__menu li .screen1-home__menu-submenu li {
     height: 100%;
@@ -1942,13 +1941,14 @@ legend {
 
 .screen1-home__menu li:hover .screen1-home__menu-submenu {
     opacity: 1;
-    visibility: visible;
+    pointer-events: auto;
     padding-top: 1.5rem;
 }
 
 .home-back-menu {
     position: relative;
     z-index: 10;
+    transition: all 10s;
 }
 
 .home-back-menu::before {
@@ -1977,7 +1977,6 @@ legend {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
 }
-
 
 .home-back-menu:hover {
     background: #fff;
@@ -2034,7 +2033,6 @@ legend {
 .screen1-home__menu li:nth-child(6) .screen1-home__menu-submenu li .screen1-home__menu-submenu-child li {
     padding: 0;
 }
-
 
 .home-back-menu:hover .screen1-home__menu ul li a {
     text-align: center;
