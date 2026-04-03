@@ -1906,7 +1906,6 @@ legend {
     position: absolute;
     left: 0;
     right: 0;
-    transition: 0.3s;
 }
 
 .screen1-home__menu li .screen1-home__menu-submenu li {
@@ -1943,12 +1942,12 @@ legend {
     opacity: 1;
     pointer-events: auto;
     padding-top: 1.5rem;
+    transition: 0.7s;
 }
 
 .home-back-menu {
     position: relative;
     z-index: 10;
-    transition: all 10s;
 }
 
 .home-back-menu::before {
