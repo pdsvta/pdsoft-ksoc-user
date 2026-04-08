@@ -15,10 +15,6 @@
     .hpy603002__item {
         padding: 50px 50px;
     }
-
-    .search__box {
-        padding: 30px 20px 35px;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -162,16 +158,6 @@
     .hpy__banner-inner {
         column-gap: 70px;
     }
-
-    .hpy603002__grid {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 3rem;
-        row-gap: 4rem;
-    }
-
-    .search__box .filter__select > select {
-        min-width: 17rem;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -313,16 +299,6 @@
     .info-box {
         padding: 40px 30px;
     }
-
-    .search__box {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .input__search {
-        justify-content: center;
-    }
-
 }
 
 @media (max-width: 912px) {
@@ -1334,15 +1310,6 @@
     .hpy__banner__tit {
         font-size: 21px;
     }
-
-    .hpy603002__wrap__box .info-box {
-        grid-template-columns: repeat(2, max-content 1fr);
-        padding: 40px 30px;
-    }
-
-    .hpy603002__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 819px) {
@@ -1680,6 +1647,11 @@
 
     .hpy__banner__desc {
         font-size: 16px;
+    }
+
+    .info-box .row div,
+    .hpy603002__filter .info-box .item-info {
+        width: 50%;
     }
 
     .hpy603002__avatar {
@@ -10783,7 +10755,7 @@
 
     .tour405006__text {
         font-size: 1.5rem;
-        /* position: absolute; */
+        /*position: absolute;*/
         top: 22.5rem;
     }
 
@@ -11896,6 +11868,126 @@
         display: inline-block;
         padding-right: 0;
         min-width: 6rem;
+        font-size: 1.3rem;
+        color: #666;
+    }
+
+
+
+    .tour__medal table {
+        border: none;
+        width: 100%;
+    }
+
+    .tour__medal table thead,
+    .tour__medal table colgroup {
+        display: none;
+    }
+
+    .tour__medal table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 1rem;
+        background: #fff;
+        position: relative;
+    }
+
+    .tour__medal table tbody td {
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1rem;
+        margin: 0 2rem;
+        height: auto;
+        text-align: left;
+        color: #666;
+        font-size: 1.3rem;
+    }
+
+    .tour__medal table tbody tr td:first-child {
+        display: none;
+    }
+
+    .tour__medal table tbody tr td:last-child {
+        border-bottom: none;
+    }
+
+    .tour__medal table tbody tr td:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: #F5F5F5;
+        border-radius: 1rem 1rem 0 0;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: #111;
+        order: 1;
+    }
+
+    .tour__medal table tbody tr td:nth-child(2) {
+        order: 0;
+    }
+
+    .tour__medal table tbody tr td:nth-child(4) {
+        order: 3;
+    }
+
+    .tour__medal table tbody tr td:nth-child(5) {
+        order: 4;
+    }
+
+    .tour__medal table tbody tr td:nth-child(6) {
+        order: 5;
+    }
+
+    .tour__medal table tbody tr td:nth-child(3)::before {
+        content: "개최 연도";
+    }
+
+    .tour__medal table tbody tr td:nth-child(4)::before {
+        content: "단체명";
+    }
+
+    .tour__medal table tbody tr td:nth-child(5)::before {
+        content: "작성일";
+    }
+
+    .tour__medal table tbody tr td:nth-child(6)::before {
+        content: "조회수";
+    }
+
+    .tour__medal table tbody tr td:nth-child(7)::before {
+        content: "상세 종목 정보";
+    }
+
+    .tour__medal table tbody tr td:nth-child(8)::before {
+        content: "이름";
+    }
+
+    .tour__medal table tbody tr td:nth-child(9)::before {
+        content: "성별";
+    }
+
+    .tour__medal table tbody tr td:nth-child(10)::before {
+        content: "소속";
+    }
+
+    .tour__medal table tbody tr td:nth-child(4)::before,
+    .tour__medal table tbody tr td:nth-child(1)::before,
+    .tour__medal table tbody tr td:nth-child(3)::before,
+    .tour__medal table tbody tr td:nth-child(5)::before,
+    .tour__medal table tbody tr td:nth-child(6)::before,
+    .tour__medal table tbody tr td:nth-child(7)::before,
+    .tour__medal table tbody tr td:nth-child(9)::before,
+    .tour__medal table tbody tr td:nth-child(10)::before,
+    .tour__medal table tbody tr td:nth-child(8)::before {
+        font-weight: 500;
+        display: inline-block;
+        padding-right: 0;
+        min-width: 10rem;
         font-size: 1.3rem;
         color: #666;
     }
@@ -16788,7 +16880,7 @@
     }
 
     .screen1-home {
-        padding-top: 11rem;
+        padding-top: 6rem;
     }
 
     .screen1-home.header-closed {
@@ -17547,6 +17639,11 @@
         padding: 30px 20px;
     }
 
+    .info-box .row div,
+    .hpy603002__filter .info-box .item-info {
+        width: 100%;
+    }
+
     .item-info>span {
         min-width: 100px;
     }
@@ -17604,125 +17701,6 @@
 
     .hpy606001__content {
         padding: 1.6rem 0 0;
-    }
-
-    .hpy603002 .title {
-        margin: 0 0 30px;
-    }
-
-    .hpy603002__wrap__box .info-box {
-        grid-template-columns: repeat(1, max-content 1fr);
-        padding: 30px 20px;
-    }
-
-    .hpy603002__avatar {
-        max-width: 100%;
-    }
-
-    .hpy__intro__banner {
-        padding: 20px 20px 40px;
-    }
-
-    .login__top .icon__file img {
-        max-width: 150px;
-    }
-
-    .login__top .account__name {
-        font-size: 22px;
-    }
-
-    .login__bottom a {
-        font-size: 16px;
-    }
-
-    .find .inner.hpy0030023__inner {
-        max-width: 100%;
-    }
-
-    .hpy0030023__box {
-        margin-top: 2.5rem;
-        padding: 2rem;
-    }
-
-    .hpy0030023__desc {
-        font-size: 1.8rem;
-    }
-
-    .hpy0030023__line {
-        margin-top: 1.4rem;
-    }
-
-    .hpy0030023__row {
-        flex-direction: column;
-        gap: 1.2rem;
-        padding: 2rem 0;
-    }
-
-    .hpy0030023__label {
-        flex: unset;
-        padding-top: 0;
-        font-size: 1.5rem;
-    }
-
-    .hpy0030023__field {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .hpy0030023__input {
-        width: 100%;
-        height: 4.2rem;
-        font-size: 1.4rem;
-    }
-
-    .hpy0030023__guide {
-        margin-top: 1.2rem;
-        padding-left: 1.6rem;
-    }
-
-    .hpy0030023__guide li {
-        font-size: 1.3rem;
-        line-height: 1.7;
-    }
-
-    .hpy0030023__actions {
-        padding-top: 3rem;
-    }
-
-    .hpy0030023__btn {
-        width: 100%;
-        min-width: 0;
-        font-size: 1.8rem;
-    }
-
-    .search__box .filter__select > select {
-        min-width: 15rem;
-    }
-}
-
-@media (max-width: 575px) {
-    .search__box {
-        display: block;
-    } 
-
-    .filter__select {
-        margin-bottom: 18px;
-    }
-
-    .search__box .filter__select > select {
-        min-width: 100%;
-    }
-
-    .input__search {
-        position: relative;
-        padding-top: 31px;
-    }
-
-    .input__search > span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 0;
     }
 }
 
@@ -17840,35 +17818,8 @@
         font-size: 15px;
     }
 
-    .button__plus svg {
-        width: 45px;
-        height: 45px;
-    }
-
-    .hpy603002__grid {
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 3rem;
-    }
-
-    .login__top {
-        display: block;
-        text-align: center;
-    }
-
-    .login__top .icon__file img {
-        margin: 0 auto -10px;
-    }
-
-    .login__top .account__info {
-        text-align: center;
-    }
-
-    .account__meta {
-        justify-content: center;
-    }
-
-    .login__bottom {
-        gap: 5px;
+    .hpy__intro__banner {
+        padding: 60px 20px 60px;
     }
 }
 

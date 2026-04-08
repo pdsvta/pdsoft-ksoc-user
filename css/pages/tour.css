@@ -6734,8 +6734,8 @@ caption {
 }
 
 .tour__medal table tbody td:nth-child(3) {
-    text-align: left;
-    /*padding: 0 2rem;*/
+    text-align: center;
+    padding: 0 2rem;
     letter-spacing: -1px;
 }
 
@@ -14312,7 +14312,7 @@ caption {
 }
 
 .screen1-home {
-    padding-top: 23rem;
+    padding-top: 17rem;
 }
 
 .screen1-home.header-closed {
