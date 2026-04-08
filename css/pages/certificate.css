@@ -3378,8 +3378,8 @@ a.ui-button:active,
     border: 2px solid #0C54B8;
     border-radius: 28px;
     transition: 0.3s;
-    width: 20rem;
-    height: 20rem;
+    width: 217px;
+    height: 214px;
 }
 
 .indv__guide a:hover {
@@ -3387,19 +3387,18 @@ a.ui-button:active,
 }
 
 .indv__guide a.linkBtn_01 {
-    left: 284px;
-    top: 178px;
+    left: 308px;
+    top: 194px;
 }
 
 .indv__guide a.linkBtn_02 {
-    left: 509px;
-    top: 66px;
+    left: 551px;
+    top: 72px;
 }
 
 .indv__guide a.linkBtn_03 {
-    left: 511px;
-    top: 289px;
-    width: 424px;
+    left: 553px;
+    top: 315px;
 }
 
 .indv__guide .linkBtn_03_1 {
@@ -3409,17 +3408,17 @@ a.ui-button:active,
 
 .indv__guide .linkBtn_03_2 {
     top: 0;
-    left: 221px;
+    left: 241px;
 }
 
 .indv__guide a.linkBtn_04 {
-    left: 959px;
-    top: 178px;
+    left: 1040px;
+    top: 194px;
 }
 
 .indv__guide a.linkBtn_05 {
-    left: 959px;
-    top: 404px;
+    left: 1039px;
+    top: 440px;
 }
 
 .indv__guide a.linkBtn_06 {
@@ -3429,48 +3428,47 @@ a.ui-button:active,
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_06_1 {
-    top: 0;
-    left: -.6rem;
-    width: 20rem;
+    top: 5px;
+    left: 37px;
 }
 
 .indv__guide .linkBtn_06_2 {
-    left: 219px;
+    left: 280px;
+    top: 5px;
 }
 
 .indv__guide a.linkBtn_07 {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 50%, 0 50%);
-    width: 653px;
+    width: 710px;
     top: 289px;
-    left: 508px;
-    height: 427px;
+    left: 551px;
+    height: 487px;
 }
 
 .indv__guide a.linkBtn_multi>div.linkBtn_07_1 {
-    left: 0;
-    top: 0;
-    width: 20rem;
+    left: -1px;
+    top: 26px;
 }
 
 .indv__guide .linkBtn_07_2 {
-    left: 224px;
-    top: 0;
+    left: 242px;
+    top: 25px;
 }
 
 .indv__guide .linkBtn_07_3 {
-    left: 450px;
-    top: 0;
+    right: 2px;
+    top: 26px;
 }
 
 .indv__guide .linkBtn_07_4 {
-    right: 0;
+    right: 2px;
     bottom: 0;
 }
 
 .indv__guide .linkBtn_08 {
-    bottom: 65px;
-    left: 509px;
-    height: 107px;
+    bottom: 72px;
+    left: 552px;
+    height: 116px;
 }
 
 .indv__guide.mb3 {
@@ -3931,7 +3929,7 @@ a.ui-button:active,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 2.5rem;
+    border-radius: 1rem;
     font-weight: 600;
     font-size: 1.7rem;
     background: #666;

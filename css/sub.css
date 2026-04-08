@@ -3441,7 +3441,7 @@ input.indent-0 {
   font-size: 25px;
   font-weight: bold;
   color: #3d3d3d;
-  padding-top: 6rem;
+  padding-top: 7rem;
 }
 
 .title.pt0 {
@@ -4585,10 +4585,17 @@ input.indent-0 {
   width: 47px;
   height: 29px;
   position: absolute;
-  background: url(../../img/ssp/mouse_drag.svg) no-repeat;
+  background: url(../images/icons/mouse_drag.svg) no-repeat;
   left: 50%;
   transform: translateX(-50%);
   bottom: -30px;
+}
+
+.icon-deskTop {
+  display: inline-block;
+  width: 24px;
+  height: 21px;
+  background: url(../images/icons/icon-share.svg) no-repeat center/100%;
 }
 
 .b-right {

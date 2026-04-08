@@ -842,11 +842,9 @@ caption {
 .rvw__search {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 3px;
     padding: 1rem;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
 }
 
 .rvw__search .custom-select-wrapper {
@@ -1029,6 +1027,10 @@ caption {
     text-overflow: ellipsis;
     margin: 1.5rem 2rem;
     font-weight: 600;
+}
+
+.rvw__sbj a:hover {
+    color: #0C54B8;
 }
 
 .rvw__view {
@@ -1313,7 +1315,7 @@ caption {
 }
 
 .hpy .title {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .hpy__intro {
@@ -1610,13 +1612,8 @@ caption {
     background: #0C54B81A;
 }
 
-.hpy__table tbody tr:hover td {
-    font-weight: 600;
-    color: #0C54B8;
-}
-
-.hpy__table tbody tr:hover td a {
-    font-weight: 600;
+.hpy__table tbody tr:hover td,
+.hpy__table tbody tr:hover td * {
     color: #0C54B8;
 }
 
@@ -3188,8 +3185,8 @@ caption {
     cursor: pointer;
 }
 
-.hpy02__103001 .hpy02__table tbody tr:hover td:nth-child(2) {
-    font-weight: 600;
+.hpy02__103001 .hpy02__table tbody tr:hover td,
+.hpy02__103001 .hpy02__table tbody tr:hover td * {
     color: #0C54B8;
 }
 
@@ -3469,6 +3466,7 @@ caption {
     display: flex;
     align-items: center;
     gap: 2rem;
+    justify-content: end;
 }
 
 .tour__group.jc-ct {
@@ -4788,7 +4786,6 @@ caption {
 }
 
 .tour305001__table tbody tr:hover td:nth-child(2) {
-    font-weight: 600;
     color: #0C54B8;
 }
 
@@ -5314,8 +5311,10 @@ caption {
     cursor: pointer;
 }
 
-.tour402004__table tbody tr:hover td:nth-child(1) {
-    font-weight: 600;
+.tour402004__table tbody tr:hover td *,
+.tour402004__table tbody tr:hover td,
+.tour407002__table table tbody tr:hover td,
+.tour407002__table table tbody tr:hover td * {
     color: #0C54B8;
 }
 
@@ -5356,8 +5355,9 @@ caption {
     cursor: pointer;
 }
 
-.tour402007__table tbody tr:hover td:nth-child(2) {
-    font-weight: 600;
+.tour402007__table tbody tr:hover td,
+.tour402007__table tbody tr:hover td * {
+
     color: #0C54B8;
 }
 
@@ -5379,8 +5379,8 @@ caption {
     cursor: pointer;
 }
 
-.tour403001__table tbody tr:hover td:nth-child(2) {
-    font-weight: 600;
+.tour403001__table tbody tr:hover td,
+.tour403001__table tbody tr:hover td * {
     color: #0C54B8;
 }
 
@@ -6240,7 +6240,7 @@ caption {
     background: #666666;
     border: 1px solid #666666;
     color: #fff;
-    border-radius: 35px;
+    border-radius: 10px;
     width: 11rem;
     /* height: 5rem; */
     font-size: 1.7rem;
@@ -6549,14 +6549,14 @@ caption {
 .tour405008__btnRelated {
     display: flex;
     justify-content: flex-end;
-    margin: 3rem 5.2rem 0 0;
+    margin: 3rem 0 0 0;
 }
 
 .tour405008__btnRelated button {
     background-color: #0C54B8;
     color: #fff;
     border: 0;
-    border-radius: 3.5rem;
+    border-radius: 10px;
     padding: 1.5rem 3rem;
 }
 
@@ -6706,14 +6706,36 @@ caption {
     cursor: pointer;
 }
 
-.tour4070011__table table tbody tr:hover td:nth-child(3) {
-    font-weight: 600;
+.tour4070011__table table tbody tr:hover td,
+.tour4070011__table table tbody tr:hover td *,
+.hpy02__table.tour404003__table tbody tr:hover td,
+.hpy02__table.tour404003__table tbody tr:hover td * {
     color: #0C54B8;
 }
 
 .tour4070011__table table tbody td:nth-child(3) {
     text-align: left;
     padding: 0 2rem;
+    letter-spacing: -1px;
+}
+
+.tour__medal table {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.tour__medal table tbody tr:hover {
+    background-color: #f9fbff;
+    cursor: pointer;
+}
+
+.tour__medal table tbody tr:hover td,
+.tour__medal table tbody tr:hover td * {
+    color: #0C54B8;
+}
+
+.tour__medal table tbody td:nth-child(3) {
+    text-align: left;
+    /*padding: 0 2rem;*/
     letter-spacing: -1px;
 }
 
@@ -6752,8 +6774,8 @@ caption {
     cursor: pointer;
 }
 
-.tour407002__table table tbody tr:hover td:nth-child(2) {
-    font-weight: 600;
+.tour407002__table table tbody tr:hover td,
+.tour407002__table table tbody tr:hover td * {
     color: #0C54B8;
 }
 

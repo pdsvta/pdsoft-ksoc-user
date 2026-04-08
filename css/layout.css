@@ -1203,7 +1203,7 @@ legend {
 }
 
 .brdc__link {
-    width: 20rem;
+    width: 22rem;
     display: flex;
     align-items: center;
     padding: 0 1.8rem;
@@ -1770,9 +1770,10 @@ legend {
 }
 
 .footer-homeMain .footer-homeMain-logo {
-    height: 3.5rem;
+    height: 4rem;
     width: auto;
     margin-bottom: 1.5rem;
+    filter: grayscale(1);
 }
 
 .footer-homeMain .footer-main__menu-item a {
@@ -2124,7 +2125,7 @@ legend {
 }
 
 .screen1-home__menu li .screen1-home__menu-submenu li {
-    width: calc((100% - 6rem)/4) !important;
+    width: calc((100% - 6rem) / 4) !important;
 }
 
 .screen1-home__menu-submenu-child img {
