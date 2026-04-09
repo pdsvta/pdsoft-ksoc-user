@@ -2694,7 +2694,7 @@ caption {
 
 .hpy0707__item,
 .hpy0707__item.flex .hpy0707__group {
-    width: calc((100% - 2rem) /2)
+    width: calc((100% - 2rem) / 2)
 }
 
 .hpy0707__item.flex {
@@ -2705,7 +2705,7 @@ caption {
 }
 
 .hpy0707__item.flex .hpy0707__input {
-    width: calc((100% - 4rem) /3)
+    width: calc((100% - 4rem) / 3)
 }
 
 .hpy0707__item--w100 {
@@ -3159,7 +3159,6 @@ caption {
     border-top: 2px solid #3d3d3d;
     padding: 1.5rem 0;
 }
-
 
 
 .hpy02__table tbody td {
@@ -5548,7 +5547,7 @@ caption {
     color: #111;
     font-size: 1.7rem;
     font-weight: 600;
-    width: calc((100% - 2rem) /3);
+    width: calc((100% - 2rem) / 3);
     border: 1px solid #DDDDDD;
     border-radius: 1rem;
     transition: all 0.2s ease;
@@ -6142,7 +6141,7 @@ caption {
 .tour405004__itemHandbook {
     border: 1px solid #DDDDDD;
     border-radius: 30px;
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
 }
 
 .tour405004__itemHandbook img {
@@ -6349,7 +6348,7 @@ caption {
 }
 
 .tour405006__boxImg a {
-    width: calc((100% - 6rem) /4);
+    width: calc((100% - 6rem) / 4);
 }
 
 .tour405006__desc {
@@ -6735,7 +6734,7 @@ caption {
 
 .tour__medal table tbody td:nth-child(3) {
     text-align: center;
-    padding: 0 2rem;
+    /*padding: 0 2rem;*/
     letter-spacing: -1px;
 }
 
@@ -6827,7 +6826,7 @@ caption {
 }
 
 .tour701001__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     height: 33.2rem;
     border: 1px solid #DDDDDD;
     border-radius: 3rem;
@@ -7089,7 +7088,7 @@ caption {
 }
 
 .tour501001__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7270,7 +7269,7 @@ caption {
 }
 
 .screen2__item {
-    width: calc((100% - 5rem)/3);
+    width: calc((100% - 5rem) / 3);
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -7480,7 +7479,7 @@ caption {
 }
 
 .screen2__card {
-    width: calc((100% - 2rem)/2);
+    width: calc((100% - 2rem) / 2);
     padding: 3rem;
     border: 1px solid #ddd;
     border-radius: 3rem;
@@ -7558,7 +7557,7 @@ caption {
 }
 
 .screen3__item {
-    width: calc((100% - 5rem)/3);
+    width: calc((100% - 5rem) / 3);
     border-radius: 2rem;
     border: 1px solid #ddd;
     padding: 3rem;
@@ -7578,7 +7577,7 @@ caption {
 }
 
 .screen3__card {
-    width: calc((100% - 1rem)/2);
+    width: calc((100% - 1rem) / 2);
     border-radius: 2rem;
     border: 1px solid #ddd;
     height: 9.1rem;
@@ -7749,12 +7748,12 @@ caption {
 }
 
 .screen4__item {
-    width: calc((100% - 8rem) /4);
+    width: calc((100% - 8rem) / 4);
     padding: 2.5rem;
     background: #ffffffe0;
     border: 1px solid #ddd;
     border-radius: 2rem;
-    min-width: calc((100% - 8rem) /4);
+    min-width: calc((100% - 8rem) / 4);
     cursor: pointer;
     margin-right: 1.5rem;
 }
@@ -7838,7 +7837,7 @@ caption {
 }
 
 .screen5__item {
-    width: calc((100% - 5rem)/3);
+    width: calc((100% - 5rem) / 3);
     border-radius: 0 3rem;
     background: #fff;
 }
@@ -8512,7 +8511,7 @@ caption {
 }
 
 .tour502001__btnTab {
-    width: calc((100% - 4rem)/5);
+    width: calc((100% - 4rem) / 5);
     min-width: unset;
 }
 
@@ -8731,7 +8730,7 @@ caption {
 .tour503001__item {
     border-radius: 3rem;
     border: 1px solid #ddd;
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
 }
 
 .tour503001__item img {
@@ -9456,7 +9455,7 @@ caption {
 }
 
 .tour505001__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     cursor: pointer;
 }
 
@@ -9465,7 +9464,7 @@ caption {
 }
 
 .tour506001__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9500,7 +9499,7 @@ caption {
 }
 
 .tour509001__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     border-radius: 2rem;
     border: 1px solid #ddd;
 }
@@ -10656,7 +10655,7 @@ caption {
 }
 
 .tour304001__itemInputCerti {
-    width: calc((100% - 4rem)/3);
+    width: calc((100% - 4rem) / 3);
 }
 
 .tour304001__itemInputCerti.mb20 {
@@ -10665,7 +10664,7 @@ caption {
 }
 
 .tour304001__itemInputCerti.inputChild {
-    width: calc((100% - 2rem)/2);
+    width: calc((100% - 2rem) / 2);
 }
 
 .tour304001__itemInputCerti input {
@@ -10802,17 +10801,13 @@ caption {
     gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 16rem 2rem;
+    padding: 0 3rem 2rem;
 }
 
 .hpy004003__filter.p002 {
     padding: 0 0 2rem;
 }
 
-.hpy004003__filter.fl-row .hpy004003__btn {
-    width: 15.5rem;
-    text-align: center;
-}
 
 .hpy003005__filter.fl-row .hpy004003__btn {
     flex-direction: column;
@@ -10829,10 +10824,10 @@ caption {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #111;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     transition: all 0.3s ease;
     border-radius: 1rem;
     cursor: pointer;
@@ -10840,12 +10835,32 @@ caption {
 
 .hpy004003__btn:hover {
     color: #0C54B8;
-    border: 1px solid #0C54B8;
+    border: 2px solid #0C54B8 !important;
 }
 
 .hpy004003__btn.active {
     color: #0C54B8;
-    border: 1px solid #0C54B8;
+    border: 2px solid #0C54B8;
+}
+
+.hpy004003__btn.common {
+    border: 2px solid #edcecc;
+}
+
+.hpy004003__btn.kid {
+    border: 2px solid #f8e5cf;
+}
+
+.hpy004003__btn.youth {
+    border: 2px solid #dde9d5;
+}
+
+.hpy004003__btn.adult {
+    border: 2px solid #d3e0e3;
+}
+
+.hpy004003__btn.senior {
+    border: 2px solid #ccdaf6;
 }
 
 .hpy004003__box {
@@ -10992,7 +11007,7 @@ caption {
 .hpy004004__title {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 0 2rem;
 }
 
@@ -11146,7 +11161,7 @@ caption {
 }
 
 .hpy004004__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     border-radius: 2rem;
     border: 1px solid #d9d9d9;
 }
@@ -11300,7 +11315,7 @@ caption {
 }
 
 .hpy004008__item {
-    width: calc((100% - 5rem) /3);
+    width: calc((100% - 5rem) / 3);
     border-radius: 2rem;
     border: 1px solid #ddd;
     padding: 3rem;
@@ -11627,7 +11642,7 @@ caption {
 }
 
 .hpy004017__img {
-    width: calc((100% - 5rem)/3);
+    width: calc((100% - 5rem) / 3);
 }
 
 .hpy004017__btns {
@@ -12221,7 +12236,7 @@ caption {
 }
 
 .hpy511001__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     border-radius: 2rem;
     border: 1px solid #ddd;
     position: relative;
@@ -13056,7 +13071,7 @@ caption {
 
 .hpy004015__item {
     position: relative;
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     height: 30rem;
     border: 1px solid #ddd;
     border-radius: 1rem;
@@ -13420,7 +13435,7 @@ caption {
 
 .hpy406001__icon-item {
     text-align: center;
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     height: 16rem;
     border-radius: 1rem;
     border: 1px solid #0C54B8;
@@ -14409,7 +14424,7 @@ caption {
 }
 
 .screen1-home__item {
-    width: calc((100% - 4.5rem)/4);
+    width: calc((100% - 4.5rem) / 4);
     border: 1px solid #fff;
     border-radius: 1rem;
     padding: 2.8rem 2rem;
@@ -14444,7 +14459,7 @@ caption {
 .screen1-home__select {
     display: flex;
     gap: .5rem;
-    width: calc((100% - 1.5rem)/2);
+    width: calc((100% - 1.5rem) / 2);
 }
 
 .screen1-home__select.w100 {
@@ -14509,7 +14524,7 @@ caption {
 
 .screen1-home__card {
     transition: all 0.3s ease;
-    width: calc((100% - 1.5rem)/6);
+    width: calc((100% - 1.5rem) / 6);
     padding: 1rem .5rem;
     display: flex;
     flex-direction: column;
@@ -14714,7 +14729,7 @@ caption {
     font-size: 1.3rem;
     text-align: center;
     position: relative;
-    width: calc((100% - 4rem)/3);
+    width: calc((100% - 4rem) / 3);
 }
 
 .screen1-home__value:nth-child(3)::after {
@@ -15017,11 +15032,11 @@ caption {
 }
 
 .screen2-home__card:nth-child(3) {
-    order: 2;
+    order: 3;
 }
 
 .screen2-home__card:nth-child(2) {
-    order: 3;
+    order: 2;
 }
 
 .screen2-home__card:nth-child(4) {
@@ -15086,7 +15101,7 @@ caption {
 }
 
 .screen3-home__item {
-    width: calc((100% - 3rem)/4);
+    width: calc((100% - 3rem) / 4);
     background: #ffffff82;
     border-radius: 1rem;
     padding: 2rem;
@@ -15163,6 +15178,7 @@ caption {
     display: flex;
     flex: 1;
     margin: 0 1.5rem;
+    justify-content: center;
 }
 
 .screen5-home .tab {
@@ -15263,7 +15279,7 @@ caption {
     padding: 3rem;
     border-radius: 1rem;
     border: 1px solid #ddd;
-    width: calc((100% - 1rem)/2);
+    width: calc((100% - 1rem) / 2);
 }
 
 .screen5-home__img {
@@ -15342,7 +15358,7 @@ caption {
 }
 
 .screen6-home__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -15394,7 +15410,7 @@ caption {
 }
 
 .screen7-home__item {
-    width: calc((100% - 2rem)/2);
+    width: calc((100% - 2rem) / 2);
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -15457,8 +15473,9 @@ caption {
 }
 
 .screen8-home__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .screen8-home__item:hover {
@@ -15519,7 +15536,6 @@ caption {
 .tour401001__table .tour__group .hpy-reg__btn {
     font-size: 1.3rem;
 }
-
 
 
 .content .double {
@@ -15824,7 +15840,7 @@ caption {
 
 .hpy602001__item {
     color: #111;
-    width: calc((100% - 4rem)/3);
+    width: calc((100% - 4rem) / 3);
 }
 
 .hpy602001__item img {
@@ -16048,7 +16064,7 @@ caption {
     cursor: pointer;
     height: 21.5rem;
     overflow: hidden;
-    width: calc((100% - 3rem)/4);
+    width: calc((100% - 3rem) / 4);
 }
 
 .hpy602002__img img {
@@ -16115,7 +16131,7 @@ caption {
 }
 
 .hpy603001__item {
-    width: calc((100% - 6rem)/4);
+    width: calc((100% - 6rem) / 4);
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
@@ -16355,7 +16371,7 @@ caption {
 }
 
 .hpy604002__item {
-    width: calc((100% - 2rem)/2);
+    width: calc((100% - 2rem) / 2);
     padding: 1.5rem 2rem;
     border-radius: 2rem;
     border: 1px solid #ddd;
