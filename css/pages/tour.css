@@ -14851,13 +14851,17 @@ caption {
     top: 0;
 }
 
+.screen1-home__heading {
+    font-size: 16px;
+}
+
 .screen1-home__title3 {
     background: #2e6955;
     border-radius: 1rem 1rem 0 0;
-    height: 6rem;
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     gap: .5rem;
     font-size: 1.7rem;
     font-weight: 500;
@@ -14867,6 +14871,11 @@ caption {
 .screen1-home__title3 span {
     color: #80c269;
     font-size: 1.7rem;
+    display: block;
+}
+
+.screen1-home__title3 .screen1-home__more {
+    color: #fff;
 }
 
 .screen1-home__flex {
@@ -14874,9 +14883,6 @@ caption {
     align-items: center;
     gap: 3rem;
     justify-content: space-between;
-    background: #fff;
-    border-radius: 0 0 1rem 1rem;
-    padding: 4rem 3.8rem;
 }
 
 .screen1-home__flex img {
@@ -15276,10 +15282,11 @@ caption {
 }
 
 .screen5-home__card {
-    padding: 3rem;
+    padding: 3.5rem 2.5rem 3rem;
     border-radius: 1rem;
     border: 1px solid #ddd;
     width: calc((100% - 1rem) / 2);
+    position: relative;
 }
 
 .screen5-home__img {
@@ -16963,3 +16970,43 @@ caption {
 .tour402001__boxMain.tour403001__boxMain .tour402004__filter {
     padding: 0;
 }
+
+.heading-more__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.screen5-home__card .screen1-home__more {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+/* Start css style Box slide */
+.screen1-home-box-slide {
+    background: #fff;
+    border-radius: 0 0 1rem 1rem;
+    padding: 4rem 3.8rem;
+}
+.screen1-home-box-slide .slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.screen1-home-box-slide .slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.screen1-home-box-slide .slide {
+  min-width: 100%;
+}
+
+.screen1-home__detail .screen1-home__more:hover {
+    color: #80c269 !important;
+}
+/* End */

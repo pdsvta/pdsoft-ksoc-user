@@ -17138,10 +17138,13 @@
         top: 12rem;
     }
 
+    .screen1-home-box-slide {
+        padding: 3rem 2rem;
+    }
+
     .screen1-home__flex {
         flex-wrap: wrap;
         gap: 0;
-        padding: 2rem;
         justify-content: space-around;
     }
 
@@ -17285,7 +17288,7 @@
     }
 
     .screen5-home__title h3 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .screen5-home__title h5 {
@@ -17321,7 +17324,7 @@
     }
 
     .screen5-home__card {
-        padding: 2rem;
+        padding: 3.5rem 2rem 3rem;
     }
 
     .screen5-home__card .screen5-home__title {
