@@ -34,7 +34,8 @@ caption {
 }
 
 .paging-ui ul li a {
-    width: 3.5rem;
+    width: fit-content;
+    min-width: 3.5rem;
     height: 3.5rem;
     display: flex;
     align-items: center;
@@ -44,6 +45,7 @@ caption {
     border-radius: 0.5rem;
     transition: all 0.3s;
     color: #666;
+    position: relative;
 }
 
 .paging-ui ul li a::after {
@@ -54,12 +56,6 @@ caption {
 .paging-ui ul li.current a {
     background-color: #0C54B8 !important;
     color: #fff;
-}
-
-.paging-ui ul li a {
-    width: 3.5rem;
-    height: 3.5rem;
-    position: relative;
 }
 
 .paging-ui ul li a.first-move {
@@ -14521,11 +14517,12 @@ caption {
 .screen1-home__list.gap01 {
     gap: .3rem;
     margin: 1rem 0 0;
+    justify-content: center;
 }
 
 .screen1-home__card {
     transition: all 0.3s ease;
-    width: calc((100% - 1.5rem) / 6);
+    width: calc((100% - 1.5rem) / 4);
     padding: 1rem .5rem;
     display: flex;
     flex-direction: column;
