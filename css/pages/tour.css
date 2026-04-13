@@ -8886,7 +8886,8 @@ caption {
     color: #FF0000;
 }
 
-.tour003006__itemForm input[type="text"] {
+.tour003006__itemForm input[type="text"],
+.tour003006__itemForm input[type="password"] {
     width: 100%;
     height: 4.5rem;
     margin: 1rem 0 0 0;
@@ -16991,22 +16992,24 @@ caption {
     border-radius: 0 0 1rem 1rem;
     padding: 4rem 3.8rem;
 }
+
 .screen1-home-box-slide .slider {
-  overflow: hidden;
-  width: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 .screen1-home-box-slide .slides {
-  display: flex;
-  transition: transform 0.6s ease-in-out;
-  will-change: transform;
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;
 }
 
 .screen1-home-box-slide .slide {
-  min-width: 100%;
+    min-width: 100%;
 }
 
 .screen1-home__detail .screen1-home__more:hover {
     color: #80c269 !important;
 }
+
 /* End */
