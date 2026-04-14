@@ -6718,21 +6718,6 @@ caption {
     border-bottom: 1px solid #DDDDDD;
 }
 
-.tour__medal table tbody tr:hover {
-    background-color: #f9fbff;
-    cursor: pointer;
-}
-
-.tour__medal table tbody tr:hover td,
-.tour__medal table tbody tr:hover td * {
-    color: #0C54B8;
-}
-
-.tour__medal table tbody td:nth-child(3) {
-    text-align: center;
-    /*padding: 0 2rem;*/
-    letter-spacing: -1px;
-}
 
 .tour4070012__card {
     gap: 5rem;
@@ -17008,9 +16993,10 @@ caption {
 .screen1-home__detail .screen1-home__more:hover {
     color: #80c269 !important;
 }
+
 /* End */
 
-.flex { 
+.flex {
     display: flex;
 }
 
@@ -17185,7 +17171,7 @@ caption {
     border: 1px solid rgba(221, 221, 221, 1);
     cursor: pointer;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
@@ -17229,9 +17215,9 @@ caption {
 
 .close svg {
     transition: all .2s;
-}  
+}
 
 .close:hover svg {
     transform: rotate(180deg);
 
-} 
+}

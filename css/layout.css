@@ -1203,7 +1203,8 @@ legend {
 }
 
 .brdc__link {
-    width: 22rem;
+    min-width: 22rem;
+    width: fit-content;
     display: flex;
     align-items: center;
     padding: 0 1.8rem;
@@ -2165,6 +2166,7 @@ legend {
     text-decoration: none;
     color: #333;
     font-size: 15px;
+    display: flex;
 }
 
 .brdc__submenu li a:hover {
