@@ -17778,6 +17778,7 @@
         top: 6.4rem;
         z-index: 1;
         border: 1px solid #ddd;
+        background-color: #fff;
     }
 
     .brdc__list .brdc__item:last-child .brdc__link {
