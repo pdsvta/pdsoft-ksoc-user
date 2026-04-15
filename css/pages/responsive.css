@@ -16866,6 +16866,9 @@
     .headerMain-text p {
         display: flex;
         flex-direction: column;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .headerMain-slider {
