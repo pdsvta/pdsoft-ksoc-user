@@ -1988,13 +1988,9 @@ legend {
 
 }
 
-/* .home-back-menu:hover .screen1-home__menu ul {
-    justify-content: center;
-    gap: 0;
-    width: calc(100vw - 4rem);
+.home-back-menu:hover .screen1-home__menu ul {
     align-items: flex-start;
-    gap: 0 !important;
-} */
+}
 
 /* .home-back-menu:hover .screen1-home__menu ul li:last-child .screen1-home__menu-submenu {
     justify-content: flex-end;
@@ -2080,6 +2076,18 @@ legend {
     width: calc(100% / 7);
     border-right: 1px solid #ddd;
 } */
+
+.home-back-menu .screen1-home__menu-submenu li:nth-child(-n+3) {
+    margin-right: 0;
+}
+
+.home-back-menu .screen1-home__menu-submenu li:nth-child(3) {
+    margin-right: 0;
+}
+
+.home-back-menu .screen1-home__menu-submenu li:nth-child(n+4) {
+    margin-right: 0;
+}
 
 .screen1-home__menu-submenu li {
     display: flex;
