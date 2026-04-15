@@ -317,6 +317,11 @@
     .brdc__list .brdc__item {
         width: calc(100% - 4.9rem);
     }
+
+    .paging-ui .first-move,
+    .paging-ui .last-move {
+        display: none;
+    }   
 }
 
 @media (max-width: 912px) {
@@ -18267,8 +18272,6 @@
 }
 
 @media (max-width: 360px) {
-
-
     .brdc__link,
     .brdc__link.selectbox,
     .tour402001__selectMenu {
