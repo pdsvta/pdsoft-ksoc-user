@@ -10674,7 +10674,7 @@ caption {
 }
 
 .tour304001__boxRadioCerti label {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #333333;
 }
@@ -10684,7 +10684,7 @@ caption {
 }
 
 .tour304001__noteCerti {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #666666;
     margin: 3rem 0;
@@ -10739,7 +10739,7 @@ caption {
 
 .tour304001__noteCerti.noteChild {
     margin-bottom: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .tour304001__noteCerti.noteBottom,
