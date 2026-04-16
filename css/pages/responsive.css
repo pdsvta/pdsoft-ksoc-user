@@ -2294,7 +2294,7 @@
     .brdc__link,
     .brdc__link.selectbox,
     .tour402001__selectMenu {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         color: #171719;
         padding: 0 1rem;
         width: auto;
@@ -17918,7 +17918,7 @@
     }
 
     .profile-section {
-        padding: 20px 16px 20px;
+        padding: 30px 16px 20px;
     }
 
     .video-box video {
