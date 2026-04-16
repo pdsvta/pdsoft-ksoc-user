@@ -14384,7 +14384,31 @@ caption {
     background: #3169b3;
     color: #fff;
     border-radius: 10px;
+    height: 310px;
+    margin: 1.5rem 0;
 }
+
+.screen1-home__left .hpy511001__item {
+    width: calc((100% - 4rem) / 3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.screen1-home__left .hpy511001__list {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.screen1-home__left .hpy511001__item img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.screen1-home__left .hpy511001__item p {
+    padding: 1rem;
+}
+
 
 .screen1-home__right {
     width: calc(100% / 2);
