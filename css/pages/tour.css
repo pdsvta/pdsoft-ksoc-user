@@ -17185,6 +17185,27 @@ caption {
     margin-top: 50px;
 }
 
+.profile-section__content {
+    overflow-x: auto;
+}
+
+.profile-career__table {
+    min-width: 450px;
+}
+
+.profile-section__content::-webkit-scrollbar {
+    height: 3px;
+}
+
+.profile-section__content::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+.profile-section__content::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 0;
+}
+
 .profile-career__table {
     width: 100%;
     border-collapse: collapse;
@@ -17204,18 +17225,31 @@ caption {
     color: #111111;
 }
 
+.profile-career__table td {
+    font-size: 15px;
+}
 
-.video-box {
+.video-box { 
     position: relative;
     background: #f1f1f1;
     border-radius: 10px;
     overflow: hidden;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    border: none;
+    transition: opacity 0.3s ease;
 }
 
 .video-box video {
     width: 100%;
     display: block;
-    min-height: 520px;
 }
 
 .play-btn {
@@ -17266,7 +17300,6 @@ caption {
     display: none;
     position: fixed;
     z-index: 999;
-    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
@@ -17275,6 +17308,15 @@ caption {
 }
 
 .popup-content {
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+}
+
+.popup-content__inner {
     position: relative;
     overflow: hidden;
     display: block;
@@ -17299,4 +17341,51 @@ caption {
 .close:hover svg {
     transform: rotate(180deg);
 
+}
+
+.user-info__list {
+    column-gap: 50px;
+}
+
+.user-info__list ul li {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #111111;
+}
+
+.user-info__list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.popup__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.popup__nav:hover {
+    background: rgba(255,255,255,0.7);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.popup__nav--prev {
+    left: 20px;
+}
+
+.popup__nav--next {
+    right: 20px;
+}
+
+.popup__nav svg {
+    width: 24px;
+    height: 24px;
 }
