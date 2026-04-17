@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="js/jquery-ui.css">
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js"></script>
+    <script type="application/ld+json">
+		{
+			"@context" : "https://schema.org",
+			"@type" : "WebSite",
+			"name" : "대한민국 스포츠 영웅의 전당",
+			"url" : "https://www.sports.or.kr/hero"
+		}
+	</script>
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -332,13 +341,16 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>1984년 로스엔젤레스 올림픽 –95kg부문에서 한국 유도 역사상 최초의 올림픽 금메달로, 한국 스포츠사에 큰 획을 그었음. 당시 경제적으로 어려운 시기를 겪던 대한민국에 큰 감동과 희망을 안겨줌.</td>
+                                                <td>1984년 로스엔젤레스 올림픽 –95kg부문에서 한국 유도 역사상 최초의 올림픽 금메달로, 한국 스포츠사에 큰 획을
+                                                    그었음. 당시 경제적으로 어려운 시기를 겪던 대한민국에 큰 감동과 희망을 안겨줌.</td>
                                             </tr>
                                             <tr>
-                                                <td>아시아 유도 선수권 대회에서 한국 최초 무제한급 금메달을 획득하고 첫 일본 선수와의 승리로 한국 유도의 강세를 입증하는 등 뛰어난 업적을 달성함.</td>
+                                                <td>아시아 유도 선수권 대회에서 한국 최초 무제한급 금메달을 획득하고 첫 일본 선수와의 승리로 한국 유도의 강세를 입증하는 등
+                                                    뛰어난 업적을 달성함.</td>
                                             </tr>
                                             <tr>
-                                                <td>은퇴 이후에도 대학교수로서 37년간 재직하면서 후진 양성을 위해 활동함. 또한, 체육계에서 다방면으로 활동하며 한국 체육의 발전과 국제적 위상 강화에 크게 기여함.</td>
+                                                <td>은퇴 이후에도 대학교수로서 37년간 재직하면서 후진 양성을 위해 활동함. 또한, 체육계에서 다방면으로 활동하며 한국 체육의
+                                                    발전과 국제적 위상 강화에 크게 기여함.</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -491,14 +503,18 @@
                                 <div class="profile-section__content">
                                     <div class="video-wrapper">
                                         <div class="video-box">
-                                            <video id="videoPlayer" poster="">
+                                            <video id="myVideo" width="1220" height="685"
+                                                class="video-js vjs-default-skin" webkit-playsinline></video>
+                                            <!-- <video id="videoPlayer" poster="">
                                                 <source src="" type="video/mp4">
                                             </video>
                                             <button class="play-btn">
                                                 <svg width="107" height="120" viewBox="0 0 107 120" fill="none">
-                                                    <path d="M100.554 48.7985C109.149 53.7769 109.149 66.2231 100.554 71.2015L19.3373 118.248C10.743 123.226 2.51502e-06 117.003 2.95025e-06 107.046L7.06317e-06 12.9537C7.4984e-06 2.99678 10.743 -3.22627 19.3374 1.75217L100.554 48.7985Z" fill="#DDDDDD"/>
+                                                    <path
+                                                        d="M100.554 48.7985C109.149 53.7769 109.149 66.2231 100.554 71.2015L19.3373 118.248C10.743 123.226 2.51502e-06 117.003 2.95025e-06 107.046L7.06317e-06 12.9537C7.4984e-06 2.99678 10.743 -3.22627 19.3374 1.75217L100.554 48.7985Z"
+                                                        fill="#DDDDDD" />
                                                 </svg>
-                                            </button>
+                                            </button> -->
                                         </div>
                                     </div>
                                 </div>
@@ -507,7 +523,7 @@
                             <!-- step 03 -->
                             <div class="tour101006__itemStep profile-section profile-section__image">
                                 <div class="profile-section__content">
-                                    <div class="image-grid">    
+                                    <div class="image-grid">
                                         <div class="grid-item">
                                             <img src="images/u-602-001-1/gallery1-1.jpg" class="js-popup-image">
                                         </div>
@@ -528,19 +544,22 @@
                                         <div class="popup-content">
                                             <div class="popup-content__inner">
                                                 <span class="close">
-                                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M22.906 14.156L19.5621 17.5L22.906 20.844C23.4762 21.4142 23.4762 22.3358 22.906 22.906C22.6217 23.1904 22.2483 23.3333 21.875 23.3333C21.5017 23.3333 21.1283 23.1904 20.844 22.906L17.5 19.5621L14.156 22.906C13.8717 23.1904 13.4983 23.3333 13.125 23.3333C12.7517 23.3333 12.3783 23.1904 12.094 22.906C11.5237 22.3358 11.5237 21.4142 12.094 20.844L15.4379 17.5L12.094 14.156C11.5237 13.5858 11.5237 12.6642 12.094 12.094C12.6642 11.5237 13.5858 11.5237 14.156 12.094L17.5 15.4379L20.844 12.094C21.4142 11.5237 22.3358 11.5237 22.906 12.094C23.4762 12.6642 23.4762 13.5858 22.906 14.156ZM35 17.5C35 27.1498 27.1498 35 17.5 35C7.85021 35 0 27.1498 0 17.5C0 7.85021 7.85021 0 17.5 0C27.1498 0 35 7.85021 35 17.5ZM32.0833 17.5C32.0833 9.45875 25.5412 2.91667 17.5 2.91667C9.45875 2.91667 2.91667 9.45875 2.91667 17.5C2.91667 25.5412 9.45875 32.0833 17.5 32.0833C25.5412 32.0833 32.0833 25.5412 32.0833 17.5Z" fill="white"/>
+                                                    <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M22.906 14.156L19.5621 17.5L22.906 20.844C23.4762 21.4142 23.4762 22.3358 22.906 22.906C22.6217 23.1904 22.2483 23.3333 21.875 23.3333C21.5017 23.3333 21.1283 23.1904 20.844 22.906L17.5 19.5621L14.156 22.906C13.8717 23.1904 13.4983 23.3333 13.125 23.3333C12.7517 23.3333 12.3783 23.1904 12.094 22.906C11.5237 22.3358 11.5237 21.4142 12.094 20.844L15.4379 17.5L12.094 14.156C11.5237 13.5858 11.5237 12.6642 12.094 12.094C12.6642 11.5237 13.5858 11.5237 14.156 12.094L17.5 15.4379L20.844 12.094C21.4142 11.5237 22.3358 11.5237 22.906 12.094C23.4762 12.6642 23.4762 13.5858 22.906 14.156ZM35 17.5C35 27.1498 27.1498 35 17.5 35C7.85021 35 0 27.1498 0 17.5C0 7.85021 7.85021 0 17.5 0C27.1498 0 35 7.85021 35 17.5ZM32.0833 17.5C32.0833 9.45875 25.5412 2.91667 17.5 2.91667C9.45875 2.91667 2.91667 9.45875 2.91667 17.5C2.91667 25.5412 9.45875 32.0833 17.5 32.0833C25.5412 32.0833 32.0833 25.5412 32.0833 17.5Z"
+                                                            fill="white" />
                                                     </svg>
                                                 </span>
                                                 <span class="popup__nav popup__nav--prev">
                                                     <svg width="30" height="30" viewBox="0 0 24 24">
-                                                        <path d="M15 6l-6 6 6 6" stroke="white" fill="none"/>
+                                                        <path d="M15 6l-6 6 6 6" stroke="white" fill="none" />
                                                     </svg>
                                                 </span>
                                                 <img id="popupImg">
                                                 <span class="popup__nav popup__nav--next">
                                                     <svg width="30" height="30" viewBox="0 0 24 24">
-                                                        <path d="M9 6l6 6-6 6" stroke="white" fill="none"/>
+                                                        <path d="M9 6l6 6-6 6" stroke="white" fill="none" />
                                                     </svg>
                                                 </span>
                                             </div>
@@ -991,6 +1010,18 @@
             </div>
         </div>
     </div>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <script>
+        var player = videojs("myVideo", {
+            sources: [{
+                src: "https://sports.or.kr/hero/hero/m03/241/stream",
+                type: "video/mp4"
+            }],
+            controls: true,
+            playsinline: true,
+            preload: "metadata"
+        });
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const tabs = document.querySelectorAll(".tour001001__itemTab");
