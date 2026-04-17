@@ -262,54 +262,53 @@
                         <h2 class="hall-of-fame__title">스포츠 영웅의 전당</h2>
                         <strong class="hall-of-fame__subtitle">Sports Hero of Fame</strong>
                         <p class="hall-of-fame__desc">
-                            이 시대의 귀감이 되고, 사회통합과 국위선양에 기여한<br>
-                            대한민국 스포츠영웅을 만나보세요.
+                            이 시대에 귀감이 되고, 사회통합과 국위선양에 기여한  대한민국의 자랑스러운 스포츠인을 대한민국 국민이 직접 투표합니다.
                         </p>
                     </div>
                     <div class="hall-of-fame__showcase">
                         <div class="hall-of-fame__stage">
                             <button type="button" class="hall-of-fame__nav hall-of-fame__nav--prev" aria-label="이전 영웅 보기"></button>
                             <div class="hall-of-fame__cards" aria-live="polite">
-                                <button type="button" class="hall-of-fame__card" data-index="0">
+                                <div class="hall-of-fame__card" data-index="0">
                                     <span class="hall-of-fame__cardMedia" style="background-image: url('images/u-602-001-2/avatar1.png');"></span>
                                     <span class="hall-of-fame__cardInfo">
                                         <strong>하형주</strong>
                                         <em>금빛 매치기</em>
                                         <span>2024년 스포츠영웅</span>
                                     </span>
-                                </button>
-                                <button type="button" class="hall-of-fame__card" data-index="1">
+                                </div>
+                                <div class="hall-of-fame__card" data-index="1">
                                     <span class="hall-of-fame__cardMedia" style="background-image: url('images/u-602-001-2/avatar2.png');"></span>
                                     <span class="hall-of-fame__cardInfo">
                                         <strong>故 남승룡</strong>
                                         <em>마라톤 불사조</em>
                                         <span>2023년 스포츠영웅</span>
                                     </span>
-                                </button>
-                                <button type="button" class="hall-of-fame__card" data-index="2">
+                                </div>
+                                <div class="hall-of-fame__card" data-index="2">
                                     <span class="hall-of-fame__cardMedia" style="background-image: url('images/u-602-001-2/avatar3.png');"></span>
                                     <span class="hall-of-fame__cardInfo">
                                         <strong>이봉주</strong>
                                         <em>국민 마라토너</em>
                                         <span>2022년 스포츠영웅</span>
                                     </span>
-                                </button>
-                                <button type="button" class="hall-of-fame__card" data-index="3">
+                                </div>
+                                <div class="hall-of-fame__card" data-index="3">
                                     <span class="hall-of-fame__cardMedia" style="background-image: url('images/u-602-001-2/avatar4.png');"></span>
                                     <span class="hall-of-fame__cardInfo">
                                         <strong>故 김홍빈</strong>
                                         <em>히말라야 14좌 완등</em>
                                         <span>2021년 스포츠영웅</span>
                                     </span>
-                                </button>
-                                <button type="button" class="hall-of-fame__card" data-index="4">
+                                </div>
+                                <div class="hall-of-fame__card" data-index="4">
                                     <span class="hall-of-fame__cardMedia" style="background-image: url('images/u-602-001-2/avatar5.png');"></span>
                                     <span class="hall-of-fame__cardInfo">
                                         <strong>故 조오련</strong>
                                         <em>아시아의 물개</em>
                                         <span>2020년 스포츠영웅</span>
                                     </span>
-                                </button>
+                                </div>
                             </div>
                             <div class="hall-of-fame__pedestal">
                                 <img src="images/u-602-001-2/image1.png" alt="스포츠 영웅의 전당 받침대">
@@ -816,88 +815,9 @@
                     activeIndex = (activeIndex + 1) % $cards.length;
                     renderHeroSlider();
                 });
-                $cards.each(function (index) {
-                    $(this).on('click', function () {
-                        activeIndex = index;
-                        renderHeroSlider();
-                    });
-                });
                 $(window).on('resize', renderHeroSlider);
                 renderHeroSlider();
             })();
-            $(document).on('click', '.headerMain-btns', function () {
-                const $popupWrapper = $('.popup-main').parent().addClass('on');
-                const $firstMenu = $('.popup-main__menu-item')
-                    .removeClass('popup-main__menu-item--active')
-                    .first()
-                    .addClass('popup-main__menu-item--active');
-                const firstTabId = $firstMenu.data('tab');
-                $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
-                if (window.innerWidth < 1200) {
-                    $('#' + firstTabId).slideDown().addClass('popup-main__tab--active');
-                    $('.popup-main__col').removeClass('open');
-                    $('.popup-main__links').hide();
-                } else {
-                    $('#' + firstTabId).fadeIn(150).addClass('popup-main__tab--active');
-                    $('.popup-main__col').addClass('open');
-                    $('.popup-main__links').show();
-                }
-            });
-            $(document).on('click', '.popup-close', function () {
-                $('.popup-main').parent().removeClass('on');
-            });
-            function activateMenuItems() {
-                $('.popup-main__menu-item').off('click').on('click', function () {
-                    const tabId = $(this).data('tab');
-                    const $tab = $('#' + tabId);
-                    if (window.innerWidth >= 1200) {
-                        $('.popup-main__tab').hide().removeClass('popup-main__tab--active');
-                        $tab.fadeIn(150).addClass('popup-main__tab--active');
-                        $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                        $(this).addClass('popup-main__menu-item--active');
-                        $('.popup-main__col').addClass('open');
-                        $('.popup-main__links').show();
-                    } else {
-                        if (!$(this).hasClass('popup-main__menu-item--active')) {
-                            $('.popup-main__menu-item').removeClass('popup-main__menu-item--active');
-                            $(this).addClass('popup-main__menu-item--active');
-                            $('.popup-main__tab').slideUp().removeClass('popup-main__tab--active');
-                            $tab.slideDown().addClass('popup-main__tab--active');
-                        }
-                        $('.popup-main__col').removeClass('open');
-                        $('.popup-main__links').hide();
-                    }
-                });
-            }
-            activateMenuItems();
-            $(window).on('resize', function () {
-                activateMenuItems();
-            });
-            $(document).on('click', '.popup-main__col', function (e) {
-                if (window.innerWidth >= 1200) return;
-                const submenu = $(this).find('.popup-main__links');
-                if (submenu.length === 0) return;
-                e.stopPropagation();
-                if ($(this).hasClass('open')) {
-                    $(this).removeClass('open');
-                    submenu.slideUp(200);
-                    return;
-                }
-                $(this)
-                    .closest('.popup-main__cols')
-                    .find('.popup-main__col.open')
-                    .removeClass('open')
-                    .find('.popup-main__links')
-                    .slideUp(200);
-                $(this).addClass('open');
-                submenu.slideDown(200);
-            });
-            $(document).on('click', '.popup-main__links a', function (e) {
-                e.stopPropagation();
-            });
-            $(document).on('click', '.popup-main__col-title', function (e) {
-                e.preventDefault();
-            });
         });
     </script>
     <script>
