@@ -17416,7 +17416,8 @@ iframe {
 }
 
 .hall-of-fame__desc {
-    margin-top: 1.8rem;
+    max-width: 600px;
+    margin: 1.8rem auto 0;
     font-size: 2.4rem;
     line-height: 1.65;
     font-weight: 300;
@@ -17530,7 +17531,7 @@ iframe {
 
 .hall-of-fame__cardInfo strong {
     display: block;
-    font-size: 3.4rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -17603,9 +17604,9 @@ iframe {
 
 .hall-of-fame__pedestalText {
     position: absolute;
-    left: 50%;
+    right: 0;
+    left: 0;
     bottom: 3rem;
-    transform: translateX(-50%);
     text-align: center;
     color: #ffffff;
 }

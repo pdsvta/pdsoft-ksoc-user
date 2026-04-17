@@ -1,5 +1,4 @@
 @media (max-width: 1400px) {
-
     .inner,
     .ply-hdr .inner,
     .ply-nav .inner,
@@ -14,6 +13,61 @@
 
     .hpy603002__item {
         padding: 50px 50px;
+    }
+
+    .hall-of-fame__nav {
+        top: 15rem;
+    }
+
+    .hall-of-fame__nav--prev {
+        left: 8rem;
+    }
+
+    .hall-of-fame__nav--next {
+        right: 8rem;
+    }
+
+    .hall-of-fame__card {
+        width: 20rem;
+        height: 33.2rem;
+        bottom: -5rem;
+    }
+
+    .hall-of-fame__card.is-left-1 {
+        transform: translateX(calc(-50% - 21.5rem)) translateY(0) scale(1);
+    }
+
+    .hall-of-fame__card.is-right-1 {
+        transform: translateX(calc(-50% + 21.5rem)) translateY(0) scale(1);
+    }
+
+    .hall-of-fame__card.is-left-2 {
+        transform: translateX(calc(-50% - 36.6rem)) translateY(0) scale(1);
+    }
+
+    .hall-of-fame__card.is-right-2 {
+        transform: translateX(calc(-50% + 36.6rem)) translateY(0) scale(1);
+    }
+
+    .hall-of-fame__cardInfo strong {
+        font-size: 3rem;
+    }
+
+    .hall-of-fame__cardInfo em,
+    .hall-of-fame__cardInfo span {
+        font-size: 1.35rem;
+    }
+
+    .hall-of-fame__pedestalText {
+        bottom: 2.1rem;
+    }
+
+    .hall-of-fame__pedestalText strong {
+        font-size: 3.8rem;
+    }
+
+    .hall-of-fame__pedestalText span {
+        font-size: 2.1rem;
     }
 }
 
@@ -163,6 +217,75 @@
         padding: 40px 30px;
     }
 
+    .hall-of__fame {
+        padding-top: 5rem;
+    }
+
+    .hall-of-fame__title {
+        font-size: 4.4rem;
+    }
+
+    .hall-of-fame__subtitle {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    .hall-of-fame__showcase {
+        margin-top: 11rem;
+    }
+
+    .hall-of-fame__nav {
+        top: 17%;
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+
+    .hall-of-fame__nav::before {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .hall-of-fame__nav--prev {
+        left: 7rem;
+    }
+
+    .hall-of-fame__nav--next {
+        right: 7rem;
+    }
+
+    .hall-of-fame__cards {
+        height: 23rem;
+    }
+
+    .hall-of-fame__cardInfo {
+        bottom: 1.7rem;
+    }
+
+    .hall-of-fame__cardInfo strong {
+        font-size: 2.6rem;
+    }
+
+    .hall-of-fame__cardInfo em,
+    .hall-of-fame__cardInfo span {
+        font-size: 1.2rem;
+    }
+
+    .hall-of-fame__pedestalText {
+        bottom: 2.5rem;
+    }
+
+    .hall-of-fame__pedestalText strong {
+        font-size: 3.2rem;
+    }
+
+    .hall-of-fame__pedestalText span {
+        font-size: 1.8rem;
+    }
+
+    .hall-of-fame__desc {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -321,6 +444,62 @@
     .paging-ui .first-move,
     .paging-ui .last-move {
         display: none;
+    }
+
+    
+
+
+
+
+
+    .hall-of__fame {
+        padding-top: 4rem;
+    }
+
+    .hall-of-fame__title {
+        font-size: 3.8rem;
+    }
+
+    .hall-of-fame__subtitle {
+        font-size: 2.6rem;
+    }
+
+    .hall-of-fame__desc {
+        font-size: 1.5rem;
+    }
+
+    .hall-of-fame__nav {
+        width: 4.6rem;
+        height: 4.6rem;
+    }
+
+    .hall-of-fame__nav--prev {
+        left: 2.6rem;
+    }
+
+    .hall-of-fame__nav--next {
+        right: 2.6rem;
+    }
+
+    .hall-of-fame__cardInfo strong {
+        font-size: 2.4rem;
+    }
+
+    .hall-of-fame__cardInfo em,
+    .hall-of-fame__cardInfo span {
+        font-size: 1.15rem;
+    }
+
+    .hall-of-fame__pedestalText strong {
+        font-size: 2.7rem;
+    }
+
+    .hall-of-fame__pedestalText span {
+        font-size: 1.5rem;
+    }
+
+    .hall-of-fame__showcase {
+        margin-top: 10rem;
     }
 }
 
@@ -1341,6 +1520,26 @@
     .user-info__avatar {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .hall-of-fame__card {
+        bottom: -3rem;
+    }
+
+    .hall-of-fame__nav--next {
+        right: 0%;
+    }
+
+    .hall-of-fame__nav--prev {
+        left: 0%;
+    }
+
+    .hall-of-fame__pedestalText {
+        bottom: 2.5rem;
+    }
+
+    .hall-of-fame__pedestalText {
+        bottom: 2rem;
     }
 }
 
@@ -17790,6 +17989,110 @@
         width: auto;
         left: -1px;
         right: -1px;
+    }
+
+    .hall-of-fame__nav--prev {
+        left: -1%;
+    }
+
+    .hall-of-fame__nav--next {
+        right: -1%;
+    }
+
+    .hall-of-fame__pedestalText {
+        bottom: 1.5rem;
+    }
+
+    .hall-of__fame {
+        padding-top: 0;
+    }
+
+    .hall-of-fame__title {
+        font-size: 3rem;
+    }
+
+    .hall-of-fame__subtitle {
+        font-size: 2.1rem;
+    }
+
+    .hall-of-fame__desc {
+        padding: 0 2rem;
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .hall-of-fame__desc br {
+        display: none;
+    }
+
+    .hall-of-fame__showcase {
+        margin-top: 3rem;
+    }
+
+    .hall-of-fame__nav {
+        top: 10.6rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .hall-of-fame__nav::before {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-width: 0.24rem;
+    }
+
+    .hall-of-fame__card {
+        width: 13.4rem;
+        height: 26.2rem;
+        bottom: -3.4rem;
+    }
+
+    .hall-of-fame__card.is-left-1 {
+        transform: translateX(calc(-50% - 14.15rem)) translateY(0) scale(1);
+    }
+
+    .hall-of-fame__card.is-right-1 {
+        transform: translateX(calc(-50% + 14.15rem)) translateY(0) scale(1);
+    }
+
+    .hall-of-fame__cardInfo {
+        bottom: 1.4rem;
+    }
+
+    .hall-of-fame__cardInfo strong {
+        font-size: 2rem;
+    }
+
+    .hall-of-fame__cardInfo em,
+    .hall-of-fame__cardInfo span {
+        font-size: 1rem;
+    }
+    
+    .hall-of-fame__pedestalText strong {
+        font-size: 2rem;
+    }
+
+    .hall-of-fame__pedestalText span {
+        font-size: 1.2rem;
+    }
+
+    .hall-of-fame__card {
+        bottom: -3rem;
+    }
+
+    .hall-of-fame__pedestal > img {
+        min-height: 135px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hall-of-fame__card {
+        width: 17rem;
+        height: 28rem;
+    }
+
+    .hall-of-fame__showcase {
+        margin-top: 5rem;
     }
 }
 
