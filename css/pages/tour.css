@@ -46,6 +46,7 @@ caption {
     transition: all 0.3s;
     color: #666;
     position: relative;
+    line-height: 2;
 }
 
 .paging-ui ul li a::after {

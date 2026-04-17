@@ -446,12 +446,6 @@
         display: none;
     }
 
-    
-
-
-
-
-
     .hall-of__fame {
         padding-top: 4rem;
     }
@@ -1887,6 +1881,46 @@
 
     .hpy603002__avatar {
         margin-bottom: 30px;
+    }
+
+    .paging-ui li {
+        display: none;
+    }
+
+    .paging-ui li.first,
+    .paging-ui li.last,
+    .paging-ui li.prev,
+    .paging-ui li.current,
+    .paging-ui li.next,
+    .paging-ui li.ellipsis {
+        display: inline-block;
+    }
+
+    .paging-ui li.next {
+        padding-left: 23px;
+        position: relative;
+    }   
+
+    .paging-ui li:has(.prev-move),
+    .paging-ui li:has(.next-move) {
+        display: inline-block;
+    }
+
+    .paging-ui li .prev-move,
+    .paging-ui li .next-move {
+        min-width: 30px;
+    }
+
+    .paging-ui li.prev::before,
+    .paging-ui li.next::after {
+        content: none;
+        top: 2px;
+    }
+    .paging-ui li.next::after {
+        content: "...";
+        color: #999;
+        position: absolute;
+        left: 3px;
     }
 }
 
