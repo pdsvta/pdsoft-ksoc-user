@@ -498,7 +498,6 @@
 }
 
 @media (max-width: 912px) {
-
     .header-main .nav__item {
         padding: 0 1.7rem;
     }
@@ -1543,11 +1542,6 @@
 }
 
 @media (max-width: 819px) {
-
-    /* .popup {
-        background-color: #fff !important;
-        padding: 0 !important;
-    } */
     .popup.on {
         padding: 0;
     }
@@ -1929,7 +1923,13 @@
     }
 
     .tour510002__box {
-        display: block;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img"
+            "list"
+            "content";
+        padding: 0;
+        gap: 1.5rem 0;
     }
 
     .tour510002__img {
@@ -1941,12 +1941,16 @@
         height: 100%;
     }
 
+    .tour510002__list {
+        margin-top: 2rem;
+    }
+
     .tour510002__content {
-        margin-top: 35px;
+        margin-top: 25px;
     }
 
     .tour510002__text {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .tour510002__list {
@@ -1955,7 +1959,8 @@
 
     .hpy .tour__bm.tour__bm--end {
         justify-content: flex-start;
-        padding: 20px 0 0 20px;
+        padding: 20px 0 0 65px;
+        margin-top: -83px;
     }
 }
 
@@ -14116,12 +14121,7 @@
 
     .tour510002__text {
         font-size: 1.5rem;
-        margin: 1rem 0 2rem;
-    }
-
-    .tour510002__list {
-        padding: 0;
-        gap: .5rem;
+        margin: 1rem 0 4rem;
     }
 
     .tour510002__list img {
@@ -18146,14 +18146,18 @@
     }
 
     .hpy .tour__bm.tour__bm--end {
-        justify-content: flex-start;
-        padding: 15px 0 0 0;
+        padding: 20px 0 0 60px;
+        margin-top: -80px;
     }
 
     .tour510002__list {
         overflow-x: auto;
-        overflow-y: none;
         padding-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .tour510002__content {
+        margin-top: 10px;
     }
 
     .tour510002__list::-webkit-scrollbar {
@@ -18183,10 +18187,6 @@
 
     .hall-of-fame__showcase {
         margin-top: 5rem;
-    }
-
-    .tour510002__content {
-        margin-top: 30px;
     }
 
     .tour510002__title {
@@ -18331,6 +18331,10 @@
 
     .image-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tour510002__list img {
+        width: calc((100% - 3rem) / 4);
     }
 }
 
