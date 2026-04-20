@@ -9536,6 +9536,8 @@ caption {
 .tour510002__img img {
     width: 42rem;
     height: 42rem;
+    object-fit: contain;
+    transition: opacity 0.1s ease;
 }
 
 .tour510002__content {
