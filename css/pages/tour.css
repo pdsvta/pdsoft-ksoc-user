@@ -10784,7 +10784,7 @@ caption {
 
 .hpy004003__filter {
     display: flex;
-    justify-content: center;
+    justify-content: normal;
     gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
@@ -17079,6 +17079,7 @@ caption {
 .screen1-home__detail .screen1-home__more:hover {
     color: #80c269 !important;
 }
+
 /* End */
 
 .flex {
@@ -17235,7 +17236,7 @@ caption {
     font-size: 15px;
 }
 
-.video-box { 
+.video-box {
     position: relative;
     background: #f1f1f1;
     border-radius: 10px;
@@ -17373,13 +17374,13 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     transition: all 0.2s ease;
 }
 
 .popup__nav:hover {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -17428,7 +17429,7 @@ iframe {
     line-height: 1.65;
     font-weight: 300;
     color: #111111;
-    
+
 }
 
 .hall-of-fame__showcase {
@@ -17628,4 +17629,5 @@ iframe {
     font-size: 2.4rem;
     font-weight: 500;
 }
+
 /* End */
