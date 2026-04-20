@@ -9529,6 +9529,8 @@ caption {
 
 .tour510002__img {
     width: 42rem;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .tour510002__img img {
@@ -9590,13 +9592,14 @@ caption {
 .tour510002__list {
     display: flex;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 0 2rem;
 }
 
 .tour510002__list img {
     width: 10rem;
     height: 10rem;
+    border-radius: 10px;
 }
 
 .tour505002-overlay {

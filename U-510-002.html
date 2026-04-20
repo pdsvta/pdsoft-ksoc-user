@@ -263,7 +263,7 @@
                 <div class="hpy02__wrapper mt20 tour510002__wrapper">
                     <div class="tour510002__box">
                         <div class="tour510002__img">
-                            <img src="images/u-510-002/image03.png" alt="">
+                            <img id="tour510002-main-img" src="images/u-510-002/image01.jpg" alt="" style="object-fit:contain;transition:opacity 0.1s ease;">
                         </div>
                         <div class="tour510002__content">
                             <div class="tour510002__title">
@@ -281,22 +281,23 @@
                                 소개해 드리겠습니다!
                             </div>
                             <div class="tour510002__icons">
-                                <div class="tour510002__icon">
-                                    <img src="images/u-510-002/image01.png" alt="">
+                                <div class="tour510002__icon" id="tour510002-btn-play" style="cursor:pointer" onclick="tour510002Play()">
+                                    <img src="images/u-510-002/image01.png" alt="play">
                                 </div>
-                                <div class="tour510002__icon">
-                                    <img src="images/u-510-002/image02.png" alt="">
+                                <div class="tour510002__icon" id="tour510002-btn-pause" style="cursor:pointer;display:none" onclick="tour510002Pause()">
+                                    <img src="images/u-510-002/image02.png" alt="pause">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tour510002__list">
-                        <img src="images/u-510-002/image04.png" alt="">
-                        <img src="images/u-510-002/image05.png" alt="">
-                        <img src="images/u-510-002/image06.png" alt="">
-                        <img src="images/u-510-002/image07.png" alt="">
-                        <img src="images/u-510-002/image08.png" alt="">
-                        <img src="images/u-510-002/image09.png" alt="">
+                        <img src="images/u-510-002/image01.jpg" alt="" style="cursor:pointer" onclick="tour510002ShowImg(this)">
+                        <img src="images/u-510-002/image02.jpg" alt="" style="cursor:pointer" onclick="tour510002ShowImg(this)">
+                        <img src="images/u-510-002/image03.jpg" alt="" style="cursor:pointer" onclick="tour510002ShowImg(this)">
+                        <img src="images/u-510-002/image04.jpg" alt="" style="cursor:pointer" onclick="tour510002ShowImg(this)">
+                        <img src="images/u-510-002/image05.jpg" alt="" style="cursor:pointer" onclick="tour510002ShowImg(this)">
+                        <img src="images/u-510-002/image06.jpg" alt="" style="cursor:pointer" onclick="tour510002ShowImg(this)">
+                        <img src="images/u-510-002/image07.jpg" alt="" style="cursor:pointer" onclick="tour510002ShowImg(this)">
                     </div>
                 </div>
                 <div class="tour__bm tour__bm--end tour__bm--end-p4">
@@ -740,6 +741,45 @@
             </div>
         </div>
     </div>
+    <script>
+        (function () {
+            var slideInterval = null;
+            var currentIndex = 0;
+
+            function tour510002FadeImg(src) {
+                var $img = $('#tour510002-main-img');
+                $img.css('opacity', '0');
+                setTimeout(function () {
+                    $img.attr('src', src).css('opacity', '1');
+                }, 100);
+            }
+
+            window.tour510002ShowImg = function (el) {
+                var $listImgs = $('.tour510002__list img');
+                tour510002FadeImg($(el).attr('src'));
+                $listImgs.each(function (i) {
+                    if (this === el) { currentIndex = i; return false; }
+                });
+            };
+
+            window.tour510002Play = function () {
+                $('#tour510002-btn-play').hide();
+                $('#tour510002-btn-pause').show();
+                slideInterval = setInterval(function () {
+                    var $listImgs = $('.tour510002__list img');
+                    currentIndex = (currentIndex + 1) % $listImgs.length;
+                    tour510002FadeImg($listImgs.eq(currentIndex).attr('src'));
+                }, 3500);
+            };
+
+            window.tour510002Pause = function () {
+                $('#tour510002-btn-play').show();
+                $('#tour510002-btn-pause').hide();
+                clearInterval(slideInterval);
+                slideInterval = null;
+            };
+        })();
+    </script>
     <script>
         $(document).on('click', '.headerMain-btns', function () {
             const $popup = $('.popup-main').parent().addClass('on');
