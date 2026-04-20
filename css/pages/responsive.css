@@ -1535,6 +1535,11 @@
     .hall-of-fame__pedestalText {
         bottom: 2rem;
     }
+
+    .tour510002__list img {
+        width: 8rem;
+        height: 8rem;
+    }
 }
 
 @media (max-width: 819px) {
@@ -1921,6 +1926,36 @@
         color: #999;
         position: absolute;
         left: 3px;
+    }
+
+    .tour510002__box {
+        display: block;
+    }
+
+    .tour510002__img {
+        width: 100%;
+    }
+
+    .tour510002__img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .tour510002__content {
+        margin-top: 35px;
+    }
+
+    .tour510002__text {
+        margin-bottom: 30px;
+    }
+
+    .tour510002__list {
+        gap: 1rem;
+    }
+
+    .hpy .tour__bm.tour__bm--end {
+        justify-content: flex-start;
+        padding: 20px 0 0 20px;
     }
 }
 
@@ -14079,12 +14114,8 @@
         gap: 2rem;
     }
 
-    .tour510002__title {
-        font-size: 1.5rem;
-    }
-
     .tour510002__text {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin: 1rem 0 2rem;
     }
 
@@ -14096,10 +14127,6 @@
     .tour510002__list img {
         height: auto;
         width: calc((100% - 2.5rem) / 6);
-    }
-
-    .tour510002__icons {
-        justify-content: center;
     }
 
     .tour5110012__card {
@@ -18117,6 +18144,35 @@
     .hall-of-fame__pedestal > img {
         min-height: 135px;
     }
+
+    .hpy .tour__bm.tour__bm--end {
+        justify-content: flex-start;
+        padding: 15px 0 0 0;
+    }
+
+    .tour510002__list {
+        overflow-x: auto;
+        overflow-y: none;
+        padding-bottom: 5px;
+    }
+
+    .tour510002__list::-webkit-scrollbar {
+        height: 3px;
+        margint-top: 10px;
+    }
+
+    .tour510002__list::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .tour510002__list::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+
+    .tour510002__list::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
 
 @media (max-width: 550px) {
@@ -18127,6 +18183,19 @@
 
     .hall-of-fame__showcase {
         margin-top: 5rem;
+    }
+
+    .tour510002__content {
+        margin-top: 30px;
+    }
+
+    .tour510002__title {
+        font-size: 1.8rem;
+    }
+
+    .tour510002__list img {
+        height: auto;
+        width: calc((100% - 2.5rem) / 5);
     }
 }
 
