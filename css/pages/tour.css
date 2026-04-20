@@ -9521,27 +9521,48 @@ caption {
 }
 
 .tour510002__box {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: 42rem 1fr;
+    grid-template-areas:
+        "img content"
+        "list list";
+    gap: 0 5rem;
     padding: 0 2rem;
+    align-items: start;
 }
 
 .tour510002__img {
+    grid-area: img;
     width: 42rem;
     border-radius: 20px;
     overflow: hidden;
 }
 
 .tour510002__img img {
-    width: 42rem;
-    height: 42rem;
+    width: 100%;
+    height: auto;
     object-fit: contain;
     transition: opacity 0.1s ease;
 }
 
 .tour510002__content {
-    flex: 1;
+    grid-area: content;
+    align-self: center;
+}
+
+.tour510002__list {
+    grid-area: list;
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.tour510002__list img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .tour510002__title {
@@ -9556,7 +9577,7 @@ caption {
     font-weight: 400;
     color: #666;
     line-height: 150%;
-    margin: 1.7rem 0 5rem;
+    margin: 1.7rem 0 3rem;
 }
 
 .tour510002__icons {
@@ -9589,19 +9610,6 @@ caption {
 .tour510002__icon img:first-child {
     width: 1rem;
     height: 1.6rem;
-}
-
-.tour510002__list {
-    display: flex;
-    gap: 2rem;
-    margin-top: 3rem;
-    padding: 0 2rem;
-}
-
-.tour510002__list img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 10px;
 }
 
 .tour505002-overlay {
@@ -13931,12 +13939,6 @@ caption {
 .tour0703 .tour__info>img {
     top: auto;
 }
-
-/*
-.title.text-left {
-    text-align: left;
-    justify-content: flex-start;
-} */
 
 .tour07313 .tour-reg__input {
     border-radius: 0.5rem;
