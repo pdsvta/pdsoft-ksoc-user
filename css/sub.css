@@ -157,7 +157,7 @@ html {
 
 .container.cycle .container-inner .info-con__detail .icon-wrap .user-pop__con .formInput-radio label::before {
   border-radius: 100%;
-  background: url("../../img/common/check-round.svg") no-repeat center #8d8d8d;
+  background: url("../images/icons/check-round.svg") no-repeat center #8d8d8d;
   border: 1px solid #8d8d8d;
   width: 27px;
   height: 27px;
@@ -301,6 +301,12 @@ html {
   color: #fff;
   text-align: center;
   line-height: 100px;
+}
+
+@media (max-width: 767px) {
+  .container.cycle .container-inner .contents .history-circle--inner {
+    line-height: 75px;
+  }
 }
 
 .container.cycle .container-inner .contents .history-circle__top {
