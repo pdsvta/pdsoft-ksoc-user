@@ -7079,13 +7079,16 @@ caption {
     font-size: 1.7rem;
     font-weight: 600;
     color: #111;
-    padding: 2rem 2rem;
+    padding: 1rem 0;
+}
+
+..tour501001__item img {
+    cursor: pointer;
 }
 
 .tour501001__number {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
     font-size: 1.7rem;
     color: #666;
     font-weight: 400;
@@ -8480,7 +8483,7 @@ caption {
     font-size: 1.7rem;
     font-weight: 400;
     color: #666;
-    padding: 0 2rem 2rem;
+    padding: 0 0 2rem;
 }
 
 .tour502001__section .bold {
