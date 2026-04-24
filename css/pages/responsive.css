@@ -1,4 +1,5 @@
 @media (max-width: 1400px) {
+
     .inner,
     .ply-hdr .inner,
     .ply-nav .inner,
@@ -289,6 +290,7 @@
 }
 
 @media (max-width: 1024px) {
+
     .indv__guide a,
     .indv__guide a.linkBtn_multi>div {
         width: 14rem;
@@ -501,7 +503,8 @@
 
     .container.cycle {
         padding: 20px 0 40px;
-    }   
+    }
+
     .container.cycle .container-inner .info-con__photo {
         width: 150px;
         margin-right: 30px;
@@ -1923,9 +1926,9 @@
         margin-bottom: 30px;
     }
 
-    .paging-ui li {
+    /*    .paging-ui li {
         display: none;
-    }
+    }*/
 
     .paging-ui li.first,
     .paging-ui li.last,
@@ -1939,7 +1942,7 @@
     .paging-ui li.next {
         padding-left: 23px;
         position: relative;
-    }   
+    }
 
     .paging-ui li:has(.prev-move),
     .paging-ui li:has(.next-move) {
@@ -1956,6 +1959,7 @@
         content: none;
         top: 2px;
     }
+
     .paging-ui li.next::after {
         content: "...";
         color: #999;
@@ -18169,7 +18173,7 @@
     .hall-of-fame__cardInfo span {
         font-size: 1rem;
     }
-    
+
     .hall-of-fame__pedestalText strong {
         font-size: 2rem;
     }
@@ -18182,7 +18186,7 @@
         bottom: -3rem;
     }
 
-    .hall-of-fame__pedestal > img {
+    .hall-of-fame__pedestal>img {
         min-height: 135px;
     }
 
@@ -18231,7 +18235,7 @@
 
     .hpy02__wrapper.hpy004001__wrapper .container.cycle .container-inner .info {
         margin-bottom: 30px;
-    } 
+    }
 
     .container.cycle .container-inner .info-con__photo .img {
         width: 120px;
@@ -18261,37 +18265,37 @@
         left: -14px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul {
+    .container.cycle .container-inner .contents .history-con>ul {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 100px 0 0 87px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .center-bar {
+    .container.cycle .container-inner .contents .history-con>ul .center-bar {
         left: 50px;
         transform: none;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .history-con__left .item-tit::after,
-    .container.cycle .container-inner .contents .history-con > ul .history-con__right .item-tit::after {
+    .container.cycle .container-inner .contents .history-con>ul .history-con__left .item-tit::after,
+    .container.cycle .container-inner .contents .history-con>ul .history-con__right .item-tit::after {
         width: 30px;
         left: -34px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .history-con__left .item-tit::before,
-    .container.cycle .container-inner .contents .history-con > ul .history-con__right .item-tit::before {
+    .container.cycle .container-inner .contents .history-con>ul .history-con__left .item-tit::before,
+    .container.cycle .container-inner .contents .history-con>ul .history-con__right .item-tit::before {
         left: -10px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .history-con__left .item-tit,
-    .container.cycle .container-inner .contents .history-con > ul .history-con__right .item-tit {
+    .container.cycle .container-inner .contents .history-con>ul .history-con__left .item-tit,
+    .container.cycle .container-inner .contents .history-con>ul .history-con__right .item-tit {
         right: auto;
         left: 0;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .history-con__left .item-tit > a,
-    .container.cycle .container-inner .contents .history-con > ul .history-con__right .item-tit > a {
+    .container.cycle .container-inner .contents .history-con>ul .history-con__left .item-tit>a,
+    .container.cycle .container-inner .contents .history-con>ul .history-con__right .item-tit>a {
         margin-left: 15px;
     }
 
@@ -18323,32 +18327,32 @@
         padding-bottom: 60px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .item-tit span::after {
+    .container.cycle .container-inner .contents .history-con>ul .item-tit span::after {
         right: auto;
         left: -13px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .item-tit .blue::after {
+    .container.cycle .container-inner .contents .history-con>ul .item-tit .blue::after {
         border-left: none;
         border-right: 16px solid #006dbc;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .item-tit .red::after {
+    .container.cycle .container-inner .contents .history-con>ul .item-tit .red::after {
         border-left: none;
         border-right: 16px solid #e30826;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .item-tit .yellow::after {
+    .container.cycle .container-inner .contents .history-con>ul .item-tit .yellow::after {
         border-left: none;
         border-right: 16px solid #ffbb00;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .item-list {
+    .container.cycle .container-inner .contents .history-con>ul .item-list {
         padding-left: 0;
         padding-right: 0;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .item-list__ch h5::after {
+    .container.cycle .container-inner .contents .history-con>ul .item-list__ch h5::after {
         right: auto;
         left: -23px;
     }
@@ -18358,18 +18362,32 @@
         gap: 8px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .history-con__left,
-    .container.cycle .container-inner .contents .history-con > ul .history-con__right {
+    .container.cycle .container-inner .contents .history-con>ul .history-con__left,
+    .container.cycle .container-inner .contents .history-con>ul .history-con__right {
         display: contents;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .history-con__left > .item:nth-child(1) { order: 1; }
-    .container.cycle .container-inner .contents .history-con > ul .history-con__right > .item:nth-child(1) { order: 2; }
-    .container.cycle .container-inner .contents .history-con > ul .history-con__left > .item:nth-child(2) { order: 3; }
-    .container.cycle .container-inner .contents .history-con > ul .history-con__right > .item:nth-child(2) { order: 4; }
-    .container.cycle .container-inner .contents .history-con > ul .history-con__left > .item:nth-child(3) { order: 5; }
+    .container.cycle .container-inner .contents .history-con>ul .history-con__left>.item:nth-child(1) {
+        order: 1;
+    }
 
-    .container.cycle .container-inner .contents .history-con > ul .item {
+    .container.cycle .container-inner .contents .history-con>ul .history-con__right>.item:nth-child(1) {
+        order: 2;
+    }
+
+    .container.cycle .container-inner .contents .history-con>ul .history-con__left>.item:nth-child(2) {
+        order: 3;
+    }
+
+    .container.cycle .container-inner .contents .history-con>ul .history-con__right>.item:nth-child(2) {
+        order: 4;
+    }
+
+    .container.cycle .container-inner .contents .history-con>ul .history-con__left>.item:nth-child(3) {
+        order: 5;
+    }
+
+    .container.cycle .container-inner .contents .history-con>ul .item {
         width: 100%;
         text-align: left;
         top: 0 !important;
@@ -18405,11 +18423,11 @@
         left: 40px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul {
+    .container.cycle .container-inner .contents .history-con>ul {
         padding: 60px 0 0 75px;
     }
 
-    .container.cycle .container-inner .contents .history-con > ul .center-bar {
+    .container.cycle .container-inner .contents .history-con>ul .center-bar {
         left: 38px;
     }
 
@@ -18438,7 +18456,7 @@
     .hpy004001__time {
         padding: 0 0 9rem;
     }
-    
+
     .hpy004001__wrapper.hpy02__wrapper {
         padding: 0;
     }
@@ -18449,7 +18467,8 @@
 
     .hpy02__wrapper.hpy004001__wrapper .hpy004004__title {
         justify-content: center !important;
-    }   
+    }
+
     .open-pops {
         display: flex;
         align-items: center;

@@ -16373,7 +16373,7 @@ caption {
     border-bottom: 1px solid #ddd;
 }
 
-.hpy604001__table .hpy02__table tbody td .yellow {
+.medal.금 {
     color: #fff;
     font-weight: 600;
     padding: 5px;
@@ -16387,7 +16387,7 @@ caption {
     margin: 0 auto;
 }
 
-.hpy604001__table .hpy02__table tbody td .silver {
+.medal.은 {
     color: #fff;
     font-weight: 600;
     padding: 5px;
@@ -16401,7 +16401,7 @@ caption {
     margin: 0 auto;
 }
 
-.hpy604001__table .hpy02__table tbody td .copper {
+.medal.동 {
     color: #fff;
     font-weight: 600;
     padding: 5px;
@@ -16413,6 +16413,37 @@ caption {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 2.5rem;
+    row-gap: .8rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.card-item {
+    border: 1px solid #878787;
+    border-radius: 4px;
+    padding: 12px;
+    background: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .hpy604002__title {

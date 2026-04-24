@@ -1663,6 +1663,7 @@ legend {
     background: #3169b3;
     color: #fff;
     font-weight: 600;
+    cursor: default;
 }
 
 .headerMain-text p {
@@ -2059,7 +2060,7 @@ legend {
     margin-right: 0;
 }
 
-/* 
+/*
 .home-back-menu:hover .screen1-home__menu ul li:nth-child(-n+3) {
     margin-right: 0;
 }
@@ -2239,6 +2240,7 @@ legend {
     position: relative;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .footer-main__menu-top+.footer-main__menu-top::before {
