@@ -10809,7 +10809,7 @@ caption {
 
 .hpy003005__filter.fl-row .hpy004003__btn {
     flex-direction: column;
-    line-height: 100%;
+    line-height: 20px;
 }
 
 .hpy004003__filter.fl-row .hpy004003__btn span {

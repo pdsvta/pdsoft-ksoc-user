@@ -2247,6 +2247,7 @@ legend {
     content: '|';
     margin: 0 1.5rem;
     color: #37383C9C;
+    cursor: default;
 }
 
 .footer-dropdown__head {
