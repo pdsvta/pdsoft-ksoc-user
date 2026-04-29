@@ -17225,14 +17225,6 @@
         padding: 0;
     }
 
-    .screen1-home {
-        padding-top: 6rem;
-    }
-
-    .screen1-home.header-closed {
-        padding-top: 6rem;
-    }
-
     .home-back .inner {
         flex-direction: column;
         padding: 0;
