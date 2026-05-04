@@ -2450,15 +2450,10 @@
         margin-bottom: 0;
     }
 
-    .scroll-bg img {
-        width: 1.2rem;
-        height: auto;
-    }
-
     .scroll-bg {
-        width: 3.5rem;
-        height: 3.5rem;
-        right: 2.5rem;
+        width: 60px;
+        height: 60px;
+        right: 20px;
     }
 
     .tool-main {
@@ -18390,6 +18385,16 @@
         text-align: left;
         top: 0 !important;
         position: relative;
+    }
+
+    .floating {
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .floating a {
+        width: 60px;
+        height: 60px;
     }
 }
 
