@@ -7082,7 +7082,7 @@ caption {
     padding: 1rem 0;
 }
 
-..tour501001__item img {
+.tour501001__item img {
     cursor: pointer;
 }
 
