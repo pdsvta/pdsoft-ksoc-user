@@ -14729,6 +14729,17 @@ caption {
     opacity: 0;
 }
 
+.screen1-home__row.exit-down {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.screen1-home__row.from-top {
+    transform: translateY(-100%) !important;
+    opacity: 0 !important;
+    transition: none !important;
+}
+
 .screen1-home__row {
     display: flex;
     gap: 2.5rem;

@@ -2020,7 +2020,8 @@
         const rows = document.querySelectorAll('.screen1-home__slider .screen1-home__row');
         const buttons = document.querySelectorAll('.screen1-home__click button');
 
-        let currentRow = 0;
+        let currentRow = [...rows].findIndex(r => r.classList.contains('active'));
+        if (currentRow === -1) currentRow = 0;
         let interval;
 
         function slide(next) {
@@ -2043,12 +2044,17 @@
             clearInterval(interval);
         }
 
-        buttons.forEach((btn, index) => {
-            btn.addEventListener('click', () => {
-                stopAuto();
-                slide(index);
-                startAuto();
-            });
+        // buttons[0] = ic11 (prev), buttons[1] = ic13 (middle), buttons[2] = ic12 (next)
+        buttons[0].addEventListener('click', () => {
+            stopAuto();
+            slide((currentRow - 1 + rows.length) % rows.length);
+            startAuto();
+        });
+
+        buttons[2].addEventListener('click', () => {
+            stopAuto();
+            slide((currentRow + 1) % rows.length);
+            startAuto();
         });
 
         startAuto();
