@@ -2121,6 +2121,9 @@
 
         itemsMenu.forEach(item => {
             item.addEventListener('mouseenter', () => {
+                itemsMenu.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+
                 const submenu = item.querySelector('.screen1-home__menu-submenu');
                 const subChild = item.querySelector('.screen1-home__menu-submenu-child');
 
@@ -2136,6 +2139,7 @@
         });
 
         menu.addEventListener('mouseleave', () => {
+            itemsMenu.forEach(i => i.classList.remove('active'));
             menu.classList.remove('active');
         });
     </script>

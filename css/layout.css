@@ -1937,7 +1937,8 @@ legend {
     justify-content: flex-start;
 }
 
-.screen1-home__menu li:hover .screen1-home__menu-submenu {
+.screen1-home__menu li:hover .screen1-home__menu-submenu,
+.screen1-home__menu li.active .screen1-home__menu-submenu {
     opacity: 1;
     pointer-events: auto;
     padding-top: 1.5rem;
