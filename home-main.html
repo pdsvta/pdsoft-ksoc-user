@@ -2020,44 +2020,42 @@
         const rows = document.querySelectorAll('.screen1-home__slider .screen1-home__row');
         const buttons = document.querySelectorAll('.screen1-home__click button');
 
-        let currentRow = [...rows].findIndex(r => r.classList.contains('active'));
-        if (currentRow === -1) currentRow = 0;
-        let interval;
+        const slider = document.querySelector('.screen1-home__slider');
+        const DUR = 500;
+        let cur = [...rows].findIndex(r => r.classList.contains('active'));
+        if (cur < 0) cur = 0;
+        let timer, busy = false;
 
-        function slide(next) {
-            rows.forEach(row => row.classList.remove('active', 'prev'));
+        rows.forEach((r, i) => Object.assign(r.style, {
+            transition: 'none',
+            transform: i === cur ? 'translateY(0)' : 'translateY(100%)',
+            opacity:   i === cur ? '1' : '0'
+        }));
+        slider.style.height = rows[cur].offsetHeight + 'px';
 
-            rows[currentRow].classList.add('prev');
-            rows[next].classList.add('active');
+        function slide(next, dir = 'next') {
+            if (busy || next === cur) return;
+            busy = true;
+            const inn = rows[next], out = rows[cur];
+            const t = `transform ${DUR}ms ease, opacity ${DUR}ms ease`;
 
-            currentRow = next;
+            Object.assign(inn.style, { transition: 'none', transform: dir === 'prev' ? 'translateY(-100%)' : 'translateY(100%)', opacity: '0' });
+            inn.offsetHeight;
+            Object.assign(inn.style, { transition: t, transform: 'translateY(0)', opacity: '1' });
+            Object.assign(out.style, { transition: t, transform: dir === 'prev' ? 'translateY(100%)' : 'translateY(-100%)', opacity: '0' });
+
+            cur = next;
+            setTimeout(() => { Object.assign(out.style, { transition: 'none', transform: 'translateY(100%)' }); busy = false; }, DUR);
         }
 
-        function startAuto() {
-            interval = setInterval(() => {
-                let next = (currentRow + 1) % rows.length;
-                slide(next);
-            }, 5000);
+        function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(() => slide((cur + 1) % rows.length), 5000);
         }
 
-        function stopAuto() {
-            clearInterval(interval);
-        }
-
-        // buttons[0] = ic11 (prev), buttons[1] = ic13 (middle), buttons[2] = ic12 (next)
-        buttons[0].addEventListener('click', () => {
-            stopAuto();
-            slide((currentRow - 1 + rows.length) % rows.length);
-            startAuto();
-        });
-
-        buttons[2].addEventListener('click', () => {
-            stopAuto();
-            slide((currentRow + 1) % rows.length);
-            startAuto();
-        });
-
-        startAuto();
+        buttons[0].onclick = () => { slide((cur - 1 + rows.length) % rows.length, 'prev'); resetTimer(); };
+        buttons[2].onclick = () => { slide((cur + 1) % rows.length); resetTimer(); };
+        resetTimer();
     </script>
 
     <script>
