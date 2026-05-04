@@ -1295,7 +1295,7 @@ caption {
 }
 
 .hpy {
-    padding-top: 6rem;
+    padding-top: 9rem;
     padding-bottom: 10rem;
     font-weight: 400;
     font-size: 1.7rem;
@@ -1309,10 +1309,6 @@ caption {
 
 .hpy.pt8 {
     padding-top: 8rem;
-}
-
-.hpy .title {
-    padding-top: 30px;
 }
 
 .hpy__intro {
@@ -13823,7 +13819,7 @@ caption {
     line-height: 1.38;
     margin-bottom: 4rem;
     color: #333;
-    padding-top: 8rem;
+    padding-top: 3rem;
     text-align: center;
 }
 
