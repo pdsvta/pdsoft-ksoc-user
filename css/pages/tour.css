@@ -14713,20 +14713,6 @@ caption {
 .screen1-home__row {
     position: absolute;
     width: 100%;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: all 0.5s ease;
-}
-
-.screen1-home__row.active {
-    opacity: 1;
-    transform: translateY(0);
-    position: relative;
-}
-
-.screen1-home__row.prev {
-    transform: translateY(-100%);
-    opacity: 0;
 }
 
 .screen1-home__row {
