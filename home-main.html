@@ -1698,6 +1698,16 @@
             </div>
         </div>
     </div>
+
+    <!-- 플로팅 버튼 -->
+    <div class="floating">
+        <a href="javascript:moveChatbot();" title="새창으로 열기">알리</a>
+    </div>
+
+    <div class="scroll-bg">
+        <img src="images/icons/icon-scroll-top.png" alt="">
+    </div>
+
     <script>
         $(document).ready(function () {
 
@@ -2155,6 +2165,24 @@
             .addEventListener('click', () => {
                 dropdown.classList.toggle('active');
             });
+    </script>
+    <script>
+        $(document).ready(function () {
+            const $btn = $(".scroll-bg");
+            const $floating = $(".floating");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 150) {
+                    $btn.fadeIn(200);
+                    $floating.css("bottom", $(window).width() <= 767 ? "95px" : "115px");
+                } else {
+                    $btn.fadeOut(200);
+                    $floating.css("bottom", "35px");
+                }
+            });
+            $btn.click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 10);
+            });
+        });
     </script>
 </body>
 
