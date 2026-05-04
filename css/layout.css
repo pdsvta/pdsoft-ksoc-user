@@ -59,9 +59,6 @@ legend {
     overflow: hidden;
 }
 
-#wrap {
-    padding-top: 12rem;
-}
 
 #wrap.wrap.pt0 {
     padding-top: 0;
@@ -1127,7 +1124,6 @@ legend {
     position: fixed;
     width: 100%;
     z-index: 1;
-    margin-top: 25px;
 }
 
 .brdc.brdc-homemain {
