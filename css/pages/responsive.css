@@ -18397,7 +18397,8 @@
         height: 60px;
     }
 
-    .heading {
+    .heading,
+    .stats-sub.heading {
         font-size: 2rem;
     }
 
