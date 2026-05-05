@@ -17717,7 +17717,7 @@ iframe {
 .stats-table th,
 .stats-table td {
     border: 1px solid #999;
-    padding: 8px 10px;
+    padding: 8px 9px;
     text-align: center;
 }
 
@@ -17773,6 +17773,37 @@ table .total {
 }
 /* End */
 
+/* Start css U-408-001 */
+.stats-table th,
+.stats-table td {
+    text-align: center;
+    vertical-align: middle;
+}
 
+.stats-sub.heading {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
 
+.stats-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
 
+.stats-list li {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    font-style: 18px;
+}
+
+.stats-list li:last-child {
+    margin-bottom: 0;
+}
+
+.stats-list__bullet {
+    margin-right: 6px;
+}
+/* End */
