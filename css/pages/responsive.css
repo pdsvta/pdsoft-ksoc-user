@@ -18396,6 +18396,14 @@
         width: 60px;
         height: 60px;
     }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .stats-sub {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 550px) {
