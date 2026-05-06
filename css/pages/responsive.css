@@ -18405,6 +18405,23 @@
     .stats-sub {
         font-size: 18px;
     }
+
+    .slg-box {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.6rem;
+    }
+
+    .slg-item {
+        flex: none;
+        width: 100%;
+    }
+
+    .slg-note {
+        white-space: normal;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 550px) {
