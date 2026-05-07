@@ -14379,7 +14379,7 @@ caption {
 }
 
 .screen1-home__left .services {
-    background: #3169b3;
+    background: #3169b39c;
     color: #fff;
     border-radius: 10px;
     height: 310px;
@@ -17680,6 +17680,7 @@ iframe {
     background-position: center bottom;
     background-size: 45px;
 }
+
 /* End */
 
 /* Start css U-408-001 */
@@ -17703,6 +17704,7 @@ iframe {
     margin-top: 10px;
     font-size: 16px;
 }
+
 .text-right {
     text-align: right;
 }
@@ -17771,6 +17773,7 @@ table .total {
     background: #999;
     border-radius: 2px;
 }
+
 /* End */
 
 /* Start css U-408-001 */
@@ -17806,6 +17809,7 @@ table .total {
 .stats-list__bullet {
     margin-right: 6px;
 }
+
 /* End */
 
 /* Start css select-link-group */
@@ -17813,7 +17817,7 @@ table .total {
     margin-top: 4rem;
 }
 
-.select-link-group + .select-link-group {
+.select-link-group+.select-link-group {
     margin-top: 2.4rem;
 }
 
@@ -17930,4 +17934,5 @@ table .total {
     flex-shrink: 0;
     white-space: nowrap;
 }
+
 /* End */
