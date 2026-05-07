@@ -17641,7 +17641,7 @@ iframe {
 
 .floating {
     position: fixed;
-    bottom: 60px;
+    bottom: 110px;
     right: 40px;
     transition: 0.2s ease-in-out;
     z-index: 200;
