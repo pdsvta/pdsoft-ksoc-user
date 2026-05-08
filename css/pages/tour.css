@@ -17934,6 +17934,7 @@ table .total {
     flex-shrink: 0;
     white-space: nowrap;
 }
+
 /* End */
 
 /* Start css step-flow */
@@ -17958,7 +17959,7 @@ table .total {
 
 .item-card {
     position: absolute;
-    
+
 }
 
 .card-step__inner {
@@ -17984,7 +17985,7 @@ table .total {
     right: 10px;
     bottom: 5px;
     font-size: 60px;
-    color: rgba(0,0,0,0.05);
+    color: rgba(0, 0, 0, 0.05);
     font-weight: bold;
 }
 
@@ -18018,30 +18019,37 @@ table .total {
     --card-width: 170px;
     --gap: 20px;
 }
-.s1 { 
-    left: 0; 
+
+.s1 {
+    left: 0;
     top: 120px;
 }
-.s2 { 
+
+.s2 {
     left: calc(var(--card-width) + var(--gap));
-    top: 120px; 
+    top: 120px;
 }
-.s3-top { 
+
+.s3-top {
     left: calc((var(--card-width) + var(--gap)) * 2);
-    top: 30px; 
+    top: 30px;
 }
-.s3-bottom { 
+
+.s3-bottom {
     left: calc((var(--card-width) + var(--gap)) * 2);
-    top: 220px; 
+    top: 220px;
 }
-.s4 { 
+
+.s4 {
     left: calc((var(--card-width) + var(--gap)) * 3);
-    top: 220px; 
+    top: 220px;
 }
+
 .s5-top {
     left: calc((var(--card-width) + var(--gap)) * 4);
     top: -15px;
 }
+
 .s5-bottom {
     left: calc((var(--card-width) + var(--gap)) * 4);
     top: 230px;
@@ -18070,7 +18078,7 @@ table .total {
     line-height: 1.5;
 }
 
-.item-card.s5-top > p {
+.item-card.s5-top>p {
     max-width: none;
 }
 
@@ -18078,15 +18086,50 @@ table .total {
     min-height: 590px;
 }
 
-.vf-s1 { left: 0; top: 120px; }
-.vf-s2 { left: calc(var(--card-width) + var(--gap)); top: 120px; }
-.vf-s3-top { left: calc((var(--card-width) + var(--gap)) * 2); top: 20px; }
-.vf-s3-mid { left: calc((var(--card-width) + var(--gap)) * 2); top: 210px; }
-.vf-s4-top { left: calc((var(--card-width) + var(--gap)) * 3); top: 20px; }
-.vf-s4-mid { left: calc((var(--card-width) + var(--gap)) * 3); top: 210px; }
-.vf-s5-top { left: calc((var(--card-width) + var(--gap)) * 4); top: 100px; }
-.vf-s5-bottom { left: calc((var(--card-width) + var(--gap)) * 4); top: 305px; }
-.vf-s6 { left: calc((var(--card-width) + var(--gap)) * 2); top: 380px; }
+.vf-s1 {
+    left: 0;
+    top: 120px;
+}
+
+.vf-s2 {
+    left: calc(var(--card-width) + var(--gap));
+    top: 120px;
+}
+
+.vf-s3-top {
+    left: calc((var(--card-width) + var(--gap)) * 2);
+    top: 20px;
+}
+
+.vf-s3-mid {
+    left: calc((var(--card-width) + var(--gap)) * 2);
+    top: 210px;
+}
+
+.vf-s4-top {
+    left: calc((var(--card-width) + var(--gap)) * 3);
+    top: 20px;
+}
+
+.vf-s4-mid {
+    left: calc((var(--card-width) + var(--gap)) * 3);
+    top: 210px;
+}
+
+.vf-s5-top {
+    left: calc((var(--card-width) + var(--gap)) * 4);
+    top: 100px;
+}
+
+.vf-s5-bottom {
+    left: calc((var(--card-width) + var(--gap)) * 4);
+    top: 305px;
+}
+
+.vf-s6 {
+    left: calc((var(--card-width) + var(--gap)) * 2);
+    top: 380px;
+}
 
 .vf-label-left {
     left: 310px;
@@ -18186,4 +18229,5 @@ table .total {
 .hide-desktop {
     display: none;
 }
+
 /* End */

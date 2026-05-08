@@ -576,7 +576,7 @@
         height: 20px;
         width: 2px;
         background-color: #0C54B8;
-    }   
+    }
 
     .step-3__group,
     .step-2__group {
@@ -659,7 +659,7 @@
     .item-card {
         margin-bottom: 20px;
     }
-    
+
     .step-3__group,
     .step-5__group,
     .step-2__group {
@@ -667,7 +667,7 @@
         justify-content: center;
         gap: 20px;
     }
-    
+
     .item-card.s5-top {
         display: flex;
         flex-direction: column;
@@ -10380,7 +10380,7 @@
     }
 
     .guide__tab ul li {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 120%;
         height: 5rem;
         border-radius: 1rem;
@@ -18707,14 +18707,15 @@
     }
 
     .item-card p {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .step-5__group {
         left: -5px;
     }
 
-    .step-3__group, .step-5__group {
+    .step-3__group,
+    .step-5__group {
         gap: 10px;
     }
 
@@ -18722,7 +18723,7 @@
     .step-5__group::before {
         width: 132px;
     }
-    
+
     .step-2__group::before {
         width: 141px;
     }
