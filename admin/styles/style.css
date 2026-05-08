@@ -481,22 +481,6 @@
     background: #c00000;
 }
 
-.post-nav__item {
-    margin-bottom: 3px;
-}
-
-.post-nav .post-nav__title {
-    font-size: 14px;
-    font-weight: 600;
-    color: #3d3d3d;
-    padding-right: 5px;
-}
-
-.post-nav .post-nav__text {
-    font-size: 14px;
-    padding: 4px 0;
-}
-
 .btnWrap button {
     padding: 0 15px;
     height: 36px;
