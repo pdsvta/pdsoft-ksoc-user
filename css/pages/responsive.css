@@ -609,7 +609,7 @@
 
     .step-5__group::before {
         left: auto;
-        transform: translateX(10px);
+        transform: translateX(0px);
     }
 
     .step-5__group .card-step__inner::before {
@@ -624,6 +624,28 @@
     .item-card.vf-s3-mid .card-step__inner::after,
     .item-card.vf-s3-top .card-step__inner::after {
         top: -20px;
+    }
+
+    .item-card.vf-s3-mid .card-step__inner::before,
+    .item-card.vf-s4-mid .card-step__inner::before {
+        top: 90px;
+        left: -5px;
+        width: 7px;
+        height: 2px;
+    }
+
+    .item-card__s3__bottom {
+        position: relative;
+    }
+
+    .item-card__s3__bottom::before {
+        position: absolute;
+        content: '';
+        top: 91px;
+        left: -8px;
+        height: 390px;
+        width: 2px;
+        background-color: #0C54B8;
     }
 
     .item-card .step-des {
@@ -659,7 +681,6 @@
     .item-card__s5 {
         position: relative;
         top: 0;
-        right: -95px;
     }
 
     .card-step__arrow {
@@ -667,18 +688,19 @@
         margin: 0 auto;
     }
 
-    .item-card.vf-s6 {
-        margin-top: -20px;
-        transform: translateX(94px);
-    }
-
     .card-step__inner,
     .item-card {
         overflow: visible;
     }
 
-    .number-item__card {
+    .number-item__card,
+    .hide-mobile,
+    .item-card.vf-s6 .card-step__inner::after {
         display: none;
+    }
+
+    .hide-desktop {
+        display: block;
     }
 }
 
@@ -18696,7 +18718,8 @@
         gap: 10px;
     }
 
-    .step-3__group::before {
+    .step-3__group::before,
+    .step-5__group::before {
         width: 132px;
     }
     
@@ -18708,20 +18731,20 @@
         margin: 20px 0;
     }
 
-    .item-card__s5 {
-        right: -70px;
-    }
-    .item-card.vf-s6 {
-        transform: translateX(70px);
+    .item-card.vf-s6 .arrow-des__left {
+        left: 25px;
     }
 
     .item-card.vf-s6 .arrow-des__right {
-        right: 15px;
+        right: -10px;
     }
 
-    .step-5__group::before {
-        transform: translateX(-8px);
-        width: 145px;
+    .item-card.s5-bottom .step-des {
+        max-width: 120px;
+    }
+
+    .item-card__s3__bottom::before {
+        height: 372px;
     }
 }
 
