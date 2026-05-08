@@ -17971,23 +17971,12 @@ table .total {
     width: 170px;
     height: 170px;
     transition: all 0.2s;
-    cursor: pointer;
 }
 
-/* .item-card__s5 .card-step__inner {
-    overflow: visible;
-} */
-
-.item-card.s3-bottom:hover .card-step__inner,
-.item-card.s3-bottom:hover ~ .item-card.s4 .card-step__inner,
-.step-group__hover:has(.item-card.s4:hover) .item-card.s3-bottom .card-step__inner,
-.item-card.s4:hover .card-step__inner,
-.card-step__inner:hover,
-.vf-s3-mid:hover .card-step__inner,
-.vf-s3-mid:hover ~ .vf-s4-mid .card-step__inner,
-.item-card__s3__bottom:has(.vf-s4-mid:hover) .vf-s3-mid .card-step__inner,
-.vf-s4-mid:hover .card-step__inner {
+.item-card__hv .card-step__inner:hover,
+.step-group__hover:hover .card-step__inner {
     border-color: #0C54B8;
+    cursor: pointer;
 }
 
 .item-card span {
@@ -18192,5 +18181,9 @@ table .total {
     color: #0C54B8;
     opacity: 0.07;
     font-weight: 800;
+}
+
+.hide-desktop {
+    display: none;
 }
 /* End */
