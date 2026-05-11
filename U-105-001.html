@@ -362,11 +362,17 @@
                                     <option value="">증명서</option>
                                 </select>
                             </div>
-                            <input type="date"
-                                class="hpy-reg__input hpy-reg__input--date hpy-reg__input--max140 hpy-reg__input--h35">
+                            <input
+                                type="date"
+                                id="startDate"
+                                class="hpy-reg__input hpy-reg__input--date hpy-reg__input--max140 hpy-reg__input--h35"
+                            >
                             <span class="hpy02__dash">-</span>
-                            <input type="date"
-                                class="hpy-reg__input hpy-reg__input--date hpy-reg__input--max140 hpy-reg__input--h35">
+                            <input
+                                type="date"
+                                id="endDate"
+                                class="hpy-reg__input hpy-reg__input--date hpy-reg__input--max140 hpy-reg__input--h35"
+                            >
                         </div>
                         <div class="tour__group--input gapMb10">
                             <button type="button"
@@ -861,6 +867,52 @@
             </div>
         </div>
     </div>
+    <script>
+        const startDateInput = document.getElementById('startDate');
+        const endDateInput = document.getElementById('endDate');
+
+        function isValidDate(input) {
+            if (input.validity.badInput) return false;
+            const value = input.value;
+            if (!value) return true;
+            const [year, month, day] = value.split('-').map(Number);
+            const date = new Date(value);
+            if (isNaN(date.getTime())) return false;
+            return (
+                date.getFullYear() === year &&
+                date.getMonth() + 1 === month &&
+                date.getDate() === day
+            );
+        }
+
+        function validateInput(input) {
+            if (!isValidDate(input)) {
+                alert('올바른 형식("YYYY-MM-DD")이 아닙니다.');
+                input.value = '';
+                return false;
+            }
+            return true;
+        }
+
+        function validateDateRange() {
+            if (!validateInput(startDateInput)) return;
+            if (!validateInput(endDateInput)) return;
+
+            const startValue = startDateInput.value;
+            const endValue = endDateInput.value;
+
+            if (startValue && endValue && endValue < startValue) {
+                alert('종료일자는 시작일자 이후여야 합니다.');
+                endDateInput.value = '';
+            }
+        }
+
+        startDateInput.addEventListener('change', validateDateRange);
+        startDateInput.addEventListener('blur', validateDateRange);
+        endDateInput.addEventListener('change', validateDateRange);
+        endDateInput.addEventListener('blur', validateDateRange);
+    </script>
+
     <script>
         $(document).ready(function () {
 
