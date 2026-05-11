@@ -14357,9 +14357,14 @@
         gap: 2rem;
     }
 
+    .hpy5110012__box {
+        padding: 0;
+    }
+
     .hpy5110012__img {
         width: 100%;
         height: auto;
+        border-radius: 10px;
     }
 
     .hpy5110012__row {

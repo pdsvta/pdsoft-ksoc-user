@@ -290,13 +290,13 @@
                             </div>
                         </div>
                         <div class="hpy5110012__box">
-                            <div class="hpy5110012__icon">
+                            <div class="hpy5110012__icon nav-button">
                                 <img src="images/u-511-001-2/icon1.png" alt="">
                             </div>
                             <div class="hpy5110012__img">
                                 <img src="images/u-511-001-2/image01.png" alt="">
                             </div>
-                            <div class="hpy5110012__icon">
+                            <div class="hpy5110012__icon nav-button">
                                 <img src="images/u-511-001-2/icon2.png" alt="">
                             </div>
                         </div>
@@ -943,6 +943,59 @@
 
         menu.addEventListener('mouseleave', () => {
             menu.classList.remove('active');
+        });
+    </script>
+    <script>
+        $(function () {
+            var $items = $('.hpy511001__list .hpy511001__item');
+            var $mainImg = $('.hpy5110012__img img');
+            var $icons = $('.hpy5110012__icon');
+            var $prevBtn = $icons.eq(0);
+            var $nextBtn = $icons.eq(1);
+            var currentIndex = -1;
+            var autoTimer = null;
+            var AUTO_DELAY = 5000;
+            if ($items.length === 0) {
+                $prevBtn.hide();
+                $nextBtn.hide();
+            }
+            function goTo(index) {
+                if ($items.length === 0) return;
+                if (index < 0) index = $items.length - 1;
+                if (index >= $items.length) index = 0;
+                currentIndex = index;
+                var src = $items.eq(currentIndex).find('img').attr('src');
+                $items.removeClass('active');
+                $items.eq(currentIndex).addClass('active');
+                var preload = new Image();
+                preload.onload = function () {
+                    $mainImg.stop(true).fadeOut(200, function () {
+                        $(this).attr('src', src).fadeIn(200);
+                    });
+                };
+                preload.src = src;
+            }
+            function startAuto() {
+                clearInterval(autoTimer);
+                autoTimer = setInterval(function () {
+                    goTo(currentIndex + 1);
+                }, AUTO_DELAY);
+            }
+            $items.on('click', function () {
+                goTo($items.index(this));
+                startAuto();
+            });
+            $prevBtn.on('click', function () {
+                goTo(currentIndex - 1);
+                startAuto();
+            });
+            $nextBtn.on('click', function () {
+                goTo(currentIndex + 1);
+                startAuto();
+            });
+            if ($items.length > 0) {
+                startAuto();
+            }
         });
     </script>
 </body>

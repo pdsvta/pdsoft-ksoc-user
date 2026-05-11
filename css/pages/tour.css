@@ -12313,6 +12313,8 @@ caption {
 .hpy5110012__img {
     width: 100%;
     height: auto;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .hpy5110012__btn {
@@ -18229,5 +18231,8 @@ table .total {
 .hide-desktop {
     display: none;
 }
-
 /* End */
+
+.nav-button {
+    cursor: pointer;
+}
