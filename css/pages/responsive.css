@@ -18599,6 +18599,18 @@
         padding: 0;
         background-color: transparent;
     }
+
+    .tour004049__addMore {
+        width:40px;
+        height: 40px;
+        line-height: 46px;
+        margin: 2rem auto;
+    } 
+
+    .tour004049__addMore svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (max-width: 550px) {
