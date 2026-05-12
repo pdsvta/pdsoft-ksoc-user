@@ -9947,23 +9947,6 @@ caption {
     cursor: pointer;
 }
 
-.tour004049__addMore {
-    width: 50px;
-    height: 50px;
-    line-height: 60px;
-    background-color: #0C54B8;
-    text-align: center;
-    border-radius: 5px;
-    display: block;
-    margin: 4rem auto;
-    cursor: pointer;
-    transition: all 0.25s ease;
-}
-
-.tour004049__addMore:hover {
-    background-color: #666666;
-}
-
 .tour004049__boxAddInfo {
     display: flex;
     align-items: center;
@@ -10014,7 +9997,7 @@ caption {
     border: 1px solid #DDDDDD;
     border-radius: 0.5rem;
     padding: 1.2rem 1.7rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -12330,8 +12313,6 @@ caption {
 .hpy5110012__img {
     width: 100%;
     height: auto;
-    border-radius: 30px;
-    overflow: hidden;
 }
 
 .hpy5110012__btn {
@@ -18248,8 +18229,5 @@ table .total {
 .hide-desktop {
     display: none;
 }
-/* End */
 
-.nav-button {
-    cursor: pointer;
-}
+/* End */
