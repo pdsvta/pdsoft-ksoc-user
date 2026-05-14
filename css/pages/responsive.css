@@ -70,6 +70,22 @@
     .hall-of-fame__pedestalText span {
         font-size: 2.1rem;
     }
+
+    .tour__group.tour401002__listChecked {
+        display: block;
+    }
+
+    .tour401002__listChecked .tour401002__groupInput {
+        justify-content: center;
+        margin: 0 auto 15px;
+
+    }
+
+    .tour401002__listChecked .tour__group--item .tour__group--checked {
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem 3rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -290,6 +306,10 @@
 
     .flow-wrap-section {
         padding: 40px 20px 20px;
+    }
+
+    .tour401005__itemSelect {
+        min-width: unset;
     }
 }
 
@@ -1341,6 +1361,7 @@
     .tour401002__listChecked,
     .tour401002__listChecked .tour401002__group {
         flex-direction: column;
+        width: 100%;
     }
 
     .tour401002__listChecked.tour__group,
@@ -1977,6 +1998,7 @@
         margin-bottom: 0;
         height: auto;
         width: 100%;
+        display: flex;
     }
 
     .popup-main__links {
@@ -1995,6 +2017,7 @@
     .popup-main__links li a {
         font-size: 1.3rem;
         font-weight: 400;
+        display: flex;
     }
 
     .hpy004015__title {
@@ -2309,6 +2332,10 @@
 }
 
 @media (max-width: 767px) {
+    .paging-ui ul {
+        flex-wrap: wrap;
+    }
+
     .paging-ui ul li a {
         min-width: 2.5rem;
         height: 3rem;
@@ -5280,10 +5307,10 @@
         width: 100%;
     }
 
-    .tour__103001 .hpy02__table thead,
-    .tour__103001 .hpy02__table colgroup {
-        display: none;
-    }
+    /*.tour__103001 .hpy02__table thead,*/
+    /*.tour__103001 .hpy02__table colgroup {*/
+    /*    display: none;*/
+    /*}*/
 
     .tour__103001 .hpy02__table tbody tr {
         display: block;
@@ -5435,6 +5462,16 @@
 
     .tour__group {
         padding: 0;
+        display: block;
+    }
+
+    .tour__group--item {
+        margin-bottom: 20px;
+    }
+
+    .tour401001__map {
+        justify-content: center;
+        margin-bottom: 15px;
     }
 
     .tour__103001 .hpy02__table.tour__103001--table tbody tr td:last-child {
@@ -7028,7 +7065,7 @@
     }
 
     .hpy-reg__btn {
-        min-width: 10rem;
+        min-width: auto;
     }
 
     .hpy0707__input {
@@ -7883,6 +7920,11 @@
         justify-content: center;
     }
 
+    .tour401001__table .tour__text--left p {
+        flex-wrap: wrap;
+        margin: .5rem 0 1rem;
+    }
+
     .hpy204001__table2 {
         border: none;
         width: 100%;
@@ -8345,10 +8387,6 @@
         border-radius: 1rem;
     }
 
-    .tour401001__map {
-        display: none;
-    }
-
     .tour401001__group--select {
         display: block;
         flex: 1;
@@ -8364,24 +8402,24 @@
         background: #fff;
     }
 
-    .tour401001__table {
+    .hpy02__table {
         border: 0;
     }
 
-    .tour401001__table,
-    .tour401001__table thead,
-    .tour401001__table tbody,
-    .tour401001__table tr,
-    .tour401001__table td {
+    .hpy02__table,
+    .hpy02__table thead,
+    .hpy02__table tbody,
+    .hpy02__table tr,
+    .hpy02__table td {
         display: block;
         width: 100%;
     }
 
-    .tour401001__table thead {
+    .hpy02__table thead {
         display: none;
     }
 
-    .tour401001__table tbody tr {
+    .hpy02__table tbody tr {
         background: #fff;
         border: 1px solid #e5e5e5;
         border-radius: 1rem;
@@ -8389,13 +8427,13 @@
         padding: 0 0 1.2rem 0;
     }
 
-    .tour401001__table tbody td {
+    .hpy02__table tbody td {
         padding: 0;
         border: none;
         height: unset;
     }
 
-    .tour401001__table td:first-child {
+    .hpy02__table td:first-child {
         background-color: #F5F5F5;
         font-weight: 600;
         font-size: 1.5rem;
@@ -8406,28 +8444,28 @@
         text-align: left;
     }
 
-    .tour401001__table td:nth-child(2) {
+    .hpy02__table td:nth-child(2) {
         font-size: 1.3rem;
         font-weight: 400;
         line-height: 1.5;
         color: #666666;
-        padding: 1rem 3rem 0;
+        padding: 1rem 2rem 0;
         border: 0;
     }
 
-    .tour401001__table td:last-child {
+    .hpy02__table td:last-child {
         border: 0;
         height: unset;
     }
 
-    .tour401001__table td:last-child .tour__group {
+    .hpy02__table td:last-child .tour__group {
         display: flex;
         flex-direction: row;
         gap: 0.8rem;
-        padding: 1rem 3rem 0;
+        padding: 2rem 2rem 2rem;
     }
 
-    .tour401001__table td:last-child button {
+    .hpy02__table td:last-child button {
         flex: 1;
         height: 36px;
         font-size: 13px;
@@ -8453,11 +8491,12 @@
 
     .tour401002__listChecked.tour__group,
     .tour401005__listChecked.tour__group {
-        padding: 2rem;
+        padding: 0;
     }
 
     .tour401002__listChecked .tour401002__groupInput {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .tour401002__listChecked .tour401002__groupInput .hpy__select {
@@ -8476,6 +8515,7 @@
     .tour401002__listChecked .tour__group--item .tour__group--checked,
     .tour401002__listChecked .tour__group--item {
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .tour401002__listChecked .tour__group--item .tour__group--checked .ply-reg__agree {
@@ -9347,140 +9387,139 @@
         height: 4rem;
     }
 
-    .tour204002__table {
-        border: none;
-        width: 100%;
+    .hpy02__table tbody tr {
+        padding-bottom: 0;
     }
 
-    .tour204002__table thead,
-    .tour204002__table colgroup {
-        display: none;
-    }
+    /*.tour204002__table {*/
+    /*    border: none;*/
+    /*    width: 100%;*/
+    /*}*/
 
-    .tour204002__table tbody tr {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 1rem;
-        background: #fff;
-        position: relative;
-    }
+    /*.tour204002__table tbody tr {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    margin-bottom: 1rem;*/
+    /*    border: 1px solid #ddd;*/
+    /*    border-radius: 1rem;*/
+    /*    background: #fff;*/
+    /*    position: relative;*/
+    /*}*/
 
-    .tour204002__table tbody tr:last-child {
-        margin-bottom: 0;
-    }
+    /*.tour204002__table tbody tr:last-child {*/
+    /*    margin-bottom: 0;*/
+    /*}*/
 
-    .tour204002__table tbody tr td {
-        display: flex;
-        text-align: left;
-        padding: 1.1rem 1rem;
-        border: none;
-        height: auto;
-        font-size: 1.3rem;
-        border-bottom: 1px solid #ddd;
-        margin: 0 2rem;
-        color: #666;
-    }
+    /*.tour204002__table tbody tr td {*/
+    /*    display: flex;*/
+    /*    text-align: left;*/
+    /*    padding: 1.1rem 1rem;*/
+    /*    border: none;*/
+    /*    height: auto;*/
+    /*    font-size: 1.3rem;*/
+    /*    border-bottom: 1px solid #ddd;*/
+    /*    margin: 0 2rem;*/
+    /*    color: #666;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(2) {
-        font-size: 1.5rem;
-        font-weight: 600;
-        height: auto;
-        display: flex;
-        align-items: center;
-        background: #F5F5F5;
-        border-radius: 1rem 1rem 0 0;
-        padding: 1rem 2rem;
-        margin: 0;
-        color: #000;
-        order: 1;
-    }
+    /*.tour204002__table tbody tr td:nth-child(2) {*/
+    /*    font-size: 1.5rem;*/
+    /*    font-weight: 600;*/
+    /*    height: auto;*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    background: #F5F5F5;*/
+    /*    border-radius: 1rem 1rem 0 0;*/
+    /*    padding: 1rem 2rem;*/
+    /*    margin: 0;*/
+    /*    color: #000;*/
+    /*    order: 1;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(2) br {
-        display: none;
-    }
+    /*.tour204002__table tbody tr td:nth-child(2) br {*/
+    /*    display: none;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:first-child {
-        display: none;
-    }
+    /*.tour204002__table tbody tr td:first-child {*/
+    /*    display: none;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(3) {
-        order: 2;
-    }
+    /*.tour204002__table tbody tr td:nth-child(3) {*/
+    /*    order: 2;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(4) {
-        order: 3;
-    }
+    /*.tour204002__table tbody tr td:nth-child(4) {*/
+    /*    order: 3;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(5) {
-        order: 4;
-    }
+    /*.tour204002__table tbody tr td:nth-child(5) {*/
+    /*    order: 4;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(6) {
-        order: 5;
-    }
+    /*.tour204002__table tbody tr td:nth-child(6) {*/
+    /*    order: 5;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(7) {
-        order: 6;
-    }
+    /*.tour204002__table tbody tr td:nth-child(7) {*/
+    /*    order: 6;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(8) {
-        order: 7;
-    }
+    /*.tour204002__table tbody tr td:nth-child(8) {*/
+    /*    order: 7;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(9) {
-        order: 8;
-    }
+    /*.tour204002__table tbody tr td:nth-child(9) {*/
+    /*    order: 8;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(3)::before {
-        content: "대관일자";
-    }
+    /*.tour204002__table tbody tr td:nth-child(3)::before {*/
+    /*    content: "대관일자";*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(4)::before {
-        content: "대관시간";
-    }
+    /*.tour204002__table tbody tr td:nth-child(4)::before {*/
+    /*    content: "대관시간";*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(5)::before {
-        content: "대관인원";
-    }
+    /*.tour204002__table tbody tr td:nth-child(5)::before {*/
+    /*    content: "대관인원";*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(6)::before {
-        content: "대관금액";
-    }
+    /*.tour204002__table tbody tr td:nth-child(6)::before {*/
+    /*    content: "대관금액";*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(7)::before {
-        content: "결제일자";
-    }
+    /*.tour204002__table tbody tr td:nth-child(7)::before {*/
+    /*    content: "결제일자";*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(8)::before {
-        content: "취소일자";
-    }
+    /*.tour204002__table tbody tr td:nth-child(8)::before {*/
+    /*    content: "취소일자";*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(9)::before {
-        content: "결제취소";
-    }
+    /*.tour204002__table tbody tr td:nth-child(9)::before {*/
+    /*    content: "결제취소";*/
+    /*}*/
 
-    .tour204002__table tbody tr td:nth-child(4)::before,
-    .tour204002__table tbody tr td:nth-child(3)::before,
-    .tour204002__table tbody tr td:nth-child(5)::before,
-    .tour204002__table tbody tr td:nth-child(6)::before,
-    .tour204002__table tbody tr td:nth-child(7)::before,
-    .tour204002__table tbody tr td:nth-child(8)::before,
-    .tour204002__table tbody tr td:nth-child(9)::before {
-        font-weight: 500;
-        display: inline-block;
-        padding-right: 0;
-        min-width: 6rem;
-    }
+    /*.tour204002__table tbody tr td:nth-child(4)::before,*/
+    /*.tour204002__table tbody tr td:nth-child(3)::before,*/
+    /*.tour204002__table tbody tr td:nth-child(5)::before,*/
+    /*.tour204002__table tbody tr td:nth-child(6)::before,*/
+    /*.tour204002__table tbody tr td:nth-child(7)::before,*/
+    /*.tour204002__table tbody tr td:nth-child(8)::before,*/
+    /*.tour204002__table tbody tr td:nth-child(9)::before {*/
+    /*    font-weight: 500;*/
+    /*    display: inline-block;*/
+    /*    padding-right: 0;*/
+    /*    min-width: 6rem;*/
+    /*}*/
 
-    .tour204002__table tbody tr:last-child td {
-        border-bottom: 1px solid #ddd;
-    }
+    /*.tour204002__table tbody tr:last-child td {*/
+    /*    border-bottom: 1px solid #ddd;*/
+    /*}*/
 
-    .tour204002__table tbody tr td:last-child {
-        border-bottom: none;
-    }
+    /*.tour204002__table tbody tr td:last-child {*/
+    /*    border-bottom: none;*/
+    /*}*/
 
     .hpy204003__table2 {
         border: none;
@@ -10330,7 +10369,6 @@
         row-gap: 1rem;
     }
 
-
     .tour108007__table .hpy02__table thead th,
     .tour108007__table .hpy02__table tbody td {
         font-size: 1.2rem;
@@ -10638,6 +10676,10 @@
 
     .hpy02__wrapper--401005.hpy02__wrapper.mt20 {
         margin-top: 1rem;
+    }
+
+    .hpy02__wrapper.back-f5 {
+        padding: 3rem 2rem;
     }
 
     .tour303001__qrCode {
@@ -12986,6 +13028,8 @@
 
     .tour__group--input {
         width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .tour503001__note {
@@ -18719,6 +18763,15 @@
     .container.registration .lookup.lookup__list .lookup-header .formInput {
         margin-top: 15px;
     }
+
+    .tour401002__listChecked .tour401002__groupInput {
+        display: block;
+    }
+
+    .tour401002__listChecked .tour401002__groupInput .hpy__select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -19016,6 +19069,7 @@
         padding: 0 0;
     }
 }
+
 
 @media (max-width: 390px) {
 

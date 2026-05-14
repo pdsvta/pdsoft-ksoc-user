@@ -18234,5 +18234,25 @@ table .total {
     cursor: pointer;
 }
 
-/* End */
 
+.graph-scroll--table table thead th,
+.graph-scroll--table .container table thead tr td {
+    max-height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.graph-scroll--table .parent .container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.graph-scroll--table .parent .container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.graph-scroll--table .parent .container::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+    border-radius: 99px;
+}
+
+/* End */
