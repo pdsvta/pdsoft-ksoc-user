@@ -948,49 +948,95 @@
     <script>
         $(function () {
             var $items = $('.hpy511001__list .hpy511001__item');
-            var $mainImg = $('.hpy5110012__img img');
+            var $imgContainer = $('.hpy5110012__img');
             var $icons = $('.hpy5110012__icon');
             var $prevBtn = $icons.eq(0);
             var $nextBtn = $icons.eq(1);
             var currentIndex = -1;
             var autoTimer = null;
             var AUTO_DELAY = 5000;
+            var isAnimating = false;
+            var SLIDE_DURATION = 400;
+            $imgContainer.css({ position: 'relative', overflow: 'hidden' });
             if ($items.length === 0) {
                 $prevBtn.hide();
                 $nextBtn.hide();
             }
-            function goTo(index) {
-                if ($items.length === 0) return;
+            function goTo(index, direction) {
+                if ($items.length === 0 || isAnimating) return;
                 if (index < 0) index = $items.length - 1;
                 if (index >= $items.length) index = 0;
+                var prevIndex = currentIndex;
                 currentIndex = index;
                 var src = $items.eq(currentIndex).find('img').attr('src');
                 $items.removeClass('active');
                 $items.eq(currentIndex).addClass('active');
+                var $currentImg = $imgContainer.find('img');
+                if (prevIndex === -1) {
+                    $currentImg.attr('src', src);
+                    return;
+                }
+                if (direction === undefined) {
+                    direction = index >= prevIndex ? 'next' : 'prev';
+                }
+                var enterFrom = direction === 'next' ? '100%' : '-100%';
+                var exitTo   = direction === 'next' ? '-100%' : '100%';
+
                 var preload = new Image();
                 preload.onload = function () {
-                    $mainImg.stop(true).fadeOut(200, function () {
-                        $(this).attr('src', src).fadeIn(200);
+                    var containerH = $imgContainer.height();
+                    $imgContainer.height(containerH);
+
+                    var $newImg = $('<img>').attr({ src: src, alt: '' }).css({
+                        position: 'absolute',
+                        top: 0, left: 0,
+                        width: '100%', height: '100%',
+                        objectFit: 'cover',
+                        transform: 'translateX(' + enterFrom + ')',
+                        transition: 'transform ' + SLIDE_DURATION + 'ms ease'
                     });
+
+                    $currentImg.css({
+                        position: 'absolute',
+                        top: 0, left: 0,
+                        width: '100%', height: '100%',
+                        objectFit: 'cover',
+                        transition: 'transform ' + SLIDE_DURATION + 'ms ease'
+                    });
+
+                    isAnimating = true;
+                    $imgContainer.append($newImg);
+                    $newImg[0].offsetHeight;
+
+                    $currentImg.css('transform', 'translateX(' + exitTo + ')');
+                    $newImg.css('transform', 'translateX(0)');
+
+                    setTimeout(function () {
+                        $currentImg.remove();
+                        $newImg.css({ position: '', top: '', left: '', width: '', height: '', objectFit: '', transform: '', transition: '' });
+                        $imgContainer.height('');
+                        isAnimating = false;
+                    }, SLIDE_DURATION + 20);
                 };
                 preload.src = src;
             }
             function startAuto() {
                 clearInterval(autoTimer);
                 autoTimer = setInterval(function () {
-                    goTo(currentIndex + 1);
+                    goTo(currentIndex + 1, 'next');
                 }, AUTO_DELAY);
             }
             $items.on('click', function () {
-                goTo($items.index(this));
+                var newIndex = $items.index(this);
+                goTo(newIndex, newIndex >= currentIndex ? 'next' : 'prev');
                 startAuto();
             });
             $prevBtn.on('click', function () {
-                goTo(currentIndex - 1);
+                goTo(currentIndex - 1, 'prev');
                 startAuto();
             });
             $nextBtn.on('click', function () {
-                goTo(currentIndex + 1);
+                goTo(currentIndex + 1, 'next');
                 startAuto();
             });
             if ($items.length > 0) {

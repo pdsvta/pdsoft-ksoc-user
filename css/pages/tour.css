@@ -18230,4 +18230,9 @@ table .total {
     display: none;
 }
 
+.nav-button {
+    cursor: pointer;
+}
+
 /* End */
+
