@@ -19011,6 +19011,10 @@
     .tour510002__list img {
         width: calc((100% - 3rem) / 4);
     }
+
+    .hpy5110012__box {
+        padding: 0 0;
+    }
 }
 
 @media (max-width: 390px) {
