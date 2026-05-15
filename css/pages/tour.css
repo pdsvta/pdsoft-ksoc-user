@@ -1024,6 +1024,7 @@ caption {
     text-overflow: ellipsis;
     margin: 1.5rem 2rem;
     font-weight: 600;
+    height: 45px;
 }
 
 .rvw__sbj a:hover {
