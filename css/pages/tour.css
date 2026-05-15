@@ -12313,7 +12313,19 @@ caption {
 
 .hpy5110012__img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.hpy5110012__img .main-slide-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease;
 }
 
 .hpy5110012__btn {

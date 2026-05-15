@@ -13231,7 +13231,7 @@
     }
 
     .hpy004009__box {
-        padding: 2rem;
+        padding: 2rem 0;
         border-radius: 2rem;
     }
 
@@ -14430,9 +14430,13 @@
         gap: 2rem;
     }
 
+    .hpy5110012__box {
+        gap: 1rem;
+    }
+
     .hpy5110012__img {
-        width: 100%;
-        height: auto;
+        border-radius: 10px;
+
     }
 
     .hpy5110012__row {
