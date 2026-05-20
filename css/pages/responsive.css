@@ -17431,14 +17431,27 @@
         height: 35px;
     }
 
-    .headerMain-bottom .headerMain-list {
-        width: 100%;
-    }
-
     .headerMain-bottom {
-        height: 6rem;
+        height: auto;
         order: 1;
         border-bottom: 1px solid #ddd;
+        padding: .8rem 0 1rem;
+    }
+
+    .headerMain-bottom .inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        row-gap: 1.4rem;
+    }
+
+    .headerMain-bottom .inner:not(:has(.headerMain-slogan)) {
+        padding-top: 6px;
+        padding-bottom: 3px;
+        row-gap: 0;
+    }
+
+    .headerMain-bottom .headerMain-list {
+        width: auto;
     }
 
     .home-back-menu,
@@ -17461,6 +17474,57 @@
 
     .headerMain-logo {
         height: 3.2rem;
+    }
+
+    .headerMain-col-left {
+        display: contents;
+        flex: 1 1 0;
+    }
+
+    .headerMain-slogan {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        display: flex;
+        gap: .35rem;
+        width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        border-left: 0;
+        padding-left: 0;
+        padding-bottom: .2rem;
+        font-size: 14px;
+        white-space: nowrap;
+        scrollbar-width: none;
+        margin-top: 3px;
+        justify-content: center;
+    }
+
+    .headerMain-slogan::-webkit-scrollbar {
+        display: none;
+    }
+
+    .headerMain-logo {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .headerMain-bottom .inner>div:last-child {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: center;
+    }
+
+    .headerMain-slogan__point {
+        height: 2.4rem;
+        padding: 0 .5rem;
+        border-radius: .5rem;
+    }
+
+    .headerMain-slogan__brand {
+        height: 2.4rem;
+        padding: 0 .6rem;
+        border-radius: .5rem;
     }
 
     .home-back {

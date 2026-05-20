@@ -1694,6 +1694,65 @@ legend {
     cursor: pointer;
 }
 
+.headerMain-col-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.headerMain-slogan {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin: 0;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0;
+    white-space: nowrap;
+    position: relative;
+    border-left: 2px solid #ededed;
+    padding-left: 20px;
+}
+
+.headerMain-slogan__point,
+.headerMain-slogan__brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.headerMain-slogan__point {
+    padding: 0 6px;
+    height: 28px;
+    background: #f4d6fb;
+    color: #9f35bf;
+}
+
+.headerMain-slogan__point--wide {
+    padding-right: .9rem;
+    padding-left: .9rem;
+}
+
+.headerMain-slogan__brand {
+    height: 28px;
+    padding: 0 6px;
+    background: #c8fbf4;
+    color: #13aaa6;
+}
+
+.headerMain-slogan__portal {
+    color: #009d9d;
+}
+
+.headerMain-slogan__character {
+    color: #9f35bf;
+}
+
 .headerMain-searchbox {
     position: relative;
 }
